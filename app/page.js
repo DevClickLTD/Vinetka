@@ -1,6 +1,9 @@
 import HeroSection from "../components/hero";
 import { WebVitals } from "./web-vitals";
 import dynamic from "next/dynamic";
+import ServicesLoop from "../components/servicesLoop";
+import { getServices } from "../services/services";
+import { Suspense } from "react";
 
 // Динамично зареждане на компоненти с lazy loading
 const Incentives = dynamic(() => import("../components/incentives"), {
@@ -55,12 +58,33 @@ export const metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const allServices = await getServices();
+
   return (
     <>
       <WebVitals />
       <HeroSection />
-      <Incentives />
+      {/* <Incentives /> */}
+      <section className="py-12 sm:py-16 bg-gray-50">
+        <div className="mx-auto w-full px-6 lg:px-8">
+          <div className="mb-10 text-center">
+            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-display">
+              Нашите Услуги
+            </h2>
+            <p className="mt-4 text-lg text-gray-600">
+              Купете или проверете винетка онлайн с един клик!
+            </p>
+          </div>
+          <Suspense
+            fallback={
+              <div className="text-center py-10">Зареждане на услугите...</div>
+            }
+          >
+            <ServicesLoop services={allServices} />
+          </Suspense>
+        </div>
+      </section>
       <Team />
       <CTA />
       <Clients />

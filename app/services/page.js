@@ -5,8 +5,8 @@ import { Suspense } from "react";
 import dynamic from "next/dynamic";
 import Script from "next/script";
 
-// Динамично зареждане на компонента със списъка с услуги
-const ServicesList = dynamic(() => import("../../components/ServicesList"), {
+// Динамично зареждане на новия компонент със списъка с услуги
+const ServicesLoop = dynamic(() => import("../../components/servicesLoop.js"), {
   ssr: true,
   loading: () => (
     <div className="animate-pulse h-96 bg-gray-100 rounded-md"></div>
@@ -85,11 +85,6 @@ export default async function Services() {
               <h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
                 Нашите услуги
               </h1>
-              <p className="mx-auto mt-6 max-w-xl text-lg/8 text-pretty text-gray-300">
-                Разгледайте нашите професионални услуги и открийте как можем да
-                ви помогнем.
-              </p>
-
               <svg
                 viewBox="0 0 1024 1024"
                 aria-hidden="true"
@@ -104,8 +99,8 @@ export default async function Services() {
                 />
                 <defs>
                   <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
-                    <stop stopColor="#129160" />
-                    <stop offset={1} stopColor="#129160" />
+                    <stop stopColor="#803487" />
+                    <stop offset={1} stopColor="#803487" />
                   </radialGradient>
                 </defs>
               </svg>
@@ -113,13 +108,13 @@ export default async function Services() {
           </div>
         </div>
         <div className="bg-white py-12 sm:py-12">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto w-full px-6 lg:px-8">
             <Suspense
               fallback={
                 <div className="animate-pulse h-96 bg-gray-100 rounded-md"></div>
               }
             >
-              <ServicesList services={services} />
+              <ServicesLoop services={services} />
             </Suspense>
           </div>
         </div>
