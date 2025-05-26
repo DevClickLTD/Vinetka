@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import ServicesLoop from "../components/servicesLoop";
 import { getServices } from "../services/services";
 import { Suspense } from "react";
+import ExpandableInfoRow from "@/components/ExpandableInfoRow";
 
 // Динамично зареждане на компоненти с lazy loading
 const Incentives = dynamic(() => import("../components/incentives"), {
@@ -68,12 +69,12 @@ export default async function Home() {
       {/* <Incentives /> */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="mx-auto w-full px-6 lg:px-8">
-          <div className="mb-10 text-center">
+          <div className="text-center">
             <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-display">
               Нашите Услуги
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Купете или проверете винетка онлайн с един клик!
+              Купи или провери винетка онлайн с един клик!
             </p>
           </div>
           <Suspense
@@ -85,12 +86,18 @@ export default async function Home() {
           </Suspense>
         </div>
       </section>
-      <Team />
+      {/* <Team /> */}
       <CTA />
+      {/* <ExpandableInfoRow /> */}
       <Clients />
       <Newsletter />
       <Testimonial />
       <Lastestposts />
+      {/* <Features /> */}
+      {/* <Testimonials /> */}
+      {/* <Pricing /> */}
+      {/* <Blog /> */}
+      {/* <Contact /> */}
     </>
   );
 }

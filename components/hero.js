@@ -153,6 +153,7 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import LazyImageObserver from "./LazyImageObserver";
+import Image from "next/image";
 
 const navigation = [
   { name: "Product", href: "#" },
@@ -198,10 +199,13 @@ export default function Example() {
               </div>
             </div>
             <div className="mt-10 lg:mt-0 lg:w-1/2 lg:flex-shrink-0">
-              <img
-                alt=""
-                src="https://images.unsplash.com/photo-1567532900872-f4e906cbf06a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1280&q=80"
-                className="aspect-6/5 w-full rounded-2xl object-cover"
+              <Image
+                src="/купи-винетка.jpg"
+                alt="Онлайн винетки - лесно и бързо закупуване на винетка за България"
+                width={608}
+                height={506}
+                className="aspect-[6/5] w-full rounded-2xl object-cover"
+                priority
               />
             </div>
           </div>

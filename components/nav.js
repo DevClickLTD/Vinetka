@@ -42,7 +42,7 @@ export default function Navigation() {
     ],
     pages: [
       { name: "Начало", href: "/" },
-      { name: "Екип", href: "/team" },
+      // { name: "Екип", href: "/team" },
       { name: "Блог", href: "/blog" },
       { name: "Контакти", href: "/contact" },
     ],
