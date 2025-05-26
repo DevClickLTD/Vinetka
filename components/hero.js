@@ -167,7 +167,7 @@ export default function Example() {
 
   return (
     <div className="bg-gray-800">
-      <div className="relative isolate overflow-hidden bg-linear-to-b from-indigo-100/20 pt-14">
+      <div className="relative isolate overflow-hidden bg-linear-to-b from-indigo-100/20 pt-2">
         <div
           aria-hidden="true"
           className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:-mr-80 lg:-mr-96"
