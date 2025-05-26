@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState, useRef } from "react";
-import LazyImageObserver from "./LazyImageObserver";
 
 /**
  * Компонент за рендиране на списъка с услуги
@@ -61,7 +60,7 @@ export default function ServicesList({ services }) {
   return (
     <>
       {/* Добавяме LazyImageObserver компонент за мониторинг на изображенията */}
-      <LazyImageObserver />
+      {/* <LazyImageObserver /> */}
 
       <div className="mx-auto w-full">
         <div className="flex flex-col mt-8 space-y-20 lg:mt-8 lg:space-y-20">
