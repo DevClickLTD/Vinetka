@@ -166,20 +166,20 @@ export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-white">
+    <div className="bg-gray-800">
       <div className="relative isolate overflow-hidden bg-linear-to-b from-indigo-100/20 pt-14">
         <div
           aria-hidden="true"
-          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:-mr-80 lg:-mr-96"
+          className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:-mr-80 lg:-mr-96"
         />
         <div className="mx-auto max-w-7xl px-6 py-6 sm:py-10 lg:px-8">
           <div className="max-w-2xl mx-auto lg:max-w-none lg:mx-0 lg:flex lg:flex-row lg:items-start lg:gap-x-16">
             <div className="lg:w-1/2 lg:flex-shrink-0">
-              <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
-                Купете или проверете винетка онлайн
+              <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+                Купи или провери винетка онлайн
               </h1>
               <div className="mt-6">
-                <p className="text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+                <p className="text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
                   Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
                   qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
                   occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non
@@ -192,8 +192,11 @@ export default function Example() {
                   >
                     Услуги
                   </Link>
-                  <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                    Learn more <span aria-hidden="true">→</span>
+                  <a
+                    href="/contact"
+                    className="text-sm/6 font-semibold text-indigo-400"
+                  >
+                    Контакти <span aria-hidden="true">→</span>
                   </a>
                 </div>
               </div>
@@ -210,7 +213,7 @@ export default function Example() {
             </div>
           </div>
         </div>
-        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-white sm:h-32" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-24 bg-linear-to-t from-gray-800 sm:h-32" />
       </div>
     </div>
   );

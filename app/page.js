@@ -5,6 +5,8 @@ import ServicesLoop from "../components/servicesLoop";
 import { getServices } from "../services/services";
 import { Suspense } from "react";
 import ExpandableInfoRow from "@/components/ExpandableInfoRow";
+import CardsRow from "@/components/CardsRow";
+import CtasRow from "@/components/CtasRow";
 
 // Динамично зареждане на компоненти с lazy loading
 const Incentives = dynamic(() => import("../components/incentives"), {
@@ -86,6 +88,8 @@ export default async function Home() {
           </Suspense>
         </div>
       </section>
+      <CardsRow />
+      <CtasRow />
       {/* <Team /> */}
       <CTA />
       {/* <ExpandableInfoRow /> */}
