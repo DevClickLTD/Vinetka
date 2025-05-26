@@ -1,6 +1,6 @@
 import { headers } from "next/headers";
 import Navigation from "../components/nav";
-import CookieConsentBanner from "../components/cookieConsentBanner";
+// import CookieConsentBanner from "../components/cookieConsentBanner";
 import Footer from "../components/footer";
 import Script from "next/script";
 import ImagePreloader from "../components/ImagePreloader";
@@ -8,6 +8,14 @@ import { CriticalCSS } from "./critical-css";
 import NextTopLoader from "nextjs-toploader";
 import "../styles/globals.css";
 import { Roboto } from "next/font/google";
+// import dynamic from "next/dynamic"; // Вече не е нужен тук
+
+// Динамичното импортиране е преместено в DynamicCookieConsentBanner.js
+// const CookieConsentBanner = dynamic(
+//   () => import("../components/cookieConsentBanner"),
+//   { ssr: false }
+// );
+import DynamicCookieConsentBanner from "../components/DynamicCookieConsentBanner";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
@@ -102,7 +110,8 @@ export default function RootLayout({ children }) {
         <ImagePreloader />
         <Navigation />
         <main>{children}</main>
-        <CookieConsentBanner />
+        {/* <CookieConsentBanner /> // Старото използване */}
+        <DynamicCookieConsentBanner /> {/* Новото използване */}
         <Footer />
         <Script
           id="structured-data"
