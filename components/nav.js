@@ -151,8 +151,8 @@ export default function Navigation() {
               </button>
               <div className="ml-4">
                 <Image
-                  src="/next-level-logo.png"
-                  alt=""
+                  src="/vinetka-logo.svg"
+                  alt="Vinetka.bg лого"
                   width={180}
                   height={40}
                   className="h-10 w-auto"
@@ -245,12 +245,12 @@ export default function Navigation() {
               {/* Секция 1: Лого */}
               <div className="w-1/4 lg:w-1/5 flex items-center justify-start">
                 <Link href="/" className="block">
-                  <span className="sr-only">NextLevel Theme</span>
+                  <span className="sr-only">Vinetka.bg</span>
                   <Image
                     width={180}
                     height={40}
-                    alt=""
-                    src="/next-level-logo.png"
+                    alt="Vinetka.bg лого"
+                    src="/vinetka-logo.svg"
                     className="w-auto transition-all duration-300 ease-in-out"
                   />
                 </Link>

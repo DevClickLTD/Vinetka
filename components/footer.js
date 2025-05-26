@@ -77,32 +77,34 @@ export default function Footer() {
 
   return (
     <footer className="relative bg-white border border-t-[#eaeaea]">
-      <div className="absolute right-0 top-0 bottom-0 z-10 w-1/3 h-full flex items-center justify-center pointer-events-none">
+      <div className="absolute left-0 top-0 bottom-0 z-10 w-2/5 h-full flex items-center justify-center pointer-events-none">
         <svg
-          className="absolute w-full h-full opacity-80 hidden md:block sm:viewBox-[-150_0_500_1000] md:viewBox-[-150_0_500_800] lg:viewBox-[0_0_500_800]"
-          viewBox="0 0 500 800"
+          className="absolute w-full h-full opacity-70 hidden md:block"
+          viewBox="0 0 300 800"
           fill="none"
-          preserveAspectRatio="none"
+          preserveAspectRatio="xMinYMid meet"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M80 0 C160 150, 340 250, 420 400 S480 600, 350 800"
+            d="M20 800 L180 0"
             stroke="#803487"
-            strokeWidth="1.5"
-            fill="none"
-          />
-          <path
-            d="M140 0 C180 170, 320 270, 440 420 S500 650, 320 800"
-            stroke="#803487"
-            strokeWidth="1.2"
+            strokeWidth="3.5"
             opacity="0.8"
             fill="none"
           />
           <path
-            d="M200 0 C200 190, 300 290, 460 440 S520 700, 290 800"
+            d="M65 800 L240 0"
+            stroke="#803487"
+            strokeWidth="2"
+            opacity="0.6"
+            strokeDasharray="40 25"
+            fill="none"
+          />
+          <path
+            d="M110 800 L300 0"
             stroke="#803487"
             strokeWidth="1"
-            opacity="0.6"
+            opacity="0.4"
             fill="none"
           />
         </svg>
@@ -110,7 +112,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div>
-            <img alt="" src="/next-level-logo.png" width={180} height={40} />
+            <img
+              alt="Vinetka.bg лого"
+              src="/vinetka-logo.svg"
+              width={180}
+              height={40}
+            />
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="md:grid md:grid-cols-2 md:gap-8">
