@@ -86,7 +86,9 @@ export default async function Team() {
                     height={375}
                     alt={member.name || "Член на екипа"}
                     src={member.profilepicture || "/placeholder.webp"}
-                    className="rounded-2xl object-cover"
+                    sizes="(max-width: 640px) 100vw, 250px"
+                    quality={75}
+                    className="rounded-2xl object-cover h-auto w-full sm:w-auto"
                   />
                 </Link>
                 <div className="max-w-xl flex-auto">

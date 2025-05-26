@@ -79,12 +79,16 @@ export default async function Blog({ searchParams }) {
                       <Image
                         width={380}
                         height={250}
-                        alt=""
+                        alt={
+                          post.title.rendered || "Изображение към публикация"
+                        }
                         src={
                           post.yoast_head_json?.og_image?.[0]?.url ||
                           "/placeholder.webp"
                         }
-                        className="aspect-video w-full rounded-2xl bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        quality={75}
+                        className="w-full h-auto rounded-2xl bg-gray-100 object-cover"
                       />
                       <div className="absolute inset-0 rounded-2xl ring-1 ring-gray-900/10 ring-inset" />
                     </div>

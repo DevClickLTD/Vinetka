@@ -307,9 +307,12 @@ export default function Navigation() {
                                           <Image
                                             width={560}
                                             height={560}
-                                            alt=""
+                                            alt="Представително изображение за навигационно меню"
                                             src="/menu-hero-image.jpg"
-                                            className="w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75"
+                                            sizes="(max-width: 1024px) 50vw, 280px"
+                                            quality={75}
+                                            loading="lazy"
+                                            className="w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75 h-auto"
                                           />
                                         </div>
                                       </div>

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const incentives = [
   {
     name: "Lorem ipsum 1",
@@ -39,10 +41,15 @@ export default function Incentives() {
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </div>
-            <img
-              alt=""
+            <Image
+              alt="Представително изображение за предимства"
               src="/menu-hero-image.jpg"
-              className="aspect-3/2 w-full rounded-lg bg-gray-100 object-cover"
+              width={600}
+              height={400}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              quality={75}
+              loading="lazy"
+              className="aspect-[3/2] w-full rounded-lg bg-gray-100 object-cover h-auto"
             />
           </div>
           <div className="mt-16 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3">
@@ -51,10 +58,11 @@ export default function Incentives() {
                 <div className="sm:shrink-0">
                   <div className="h-14 w-14 flex items-center justify-center rounded-full bg-[#803487]">
                     <img
-                      alt=""
+                      alt={incentive.name}
                       src={incentive.imageSrc}
                       className="h-10 w-10"
                       style={{ filter: "brightness(0) invert(1)" }}
+                      loading="lazy"
                     />
                   </div>
                 </div>

@@ -1,4 +1,5 @@
 import { getPostBySlug } from "../../../services/posts";
+import Image from "next/image";
 
 // Добавяне на ISR ревалидиране на всеки час
 export const revalidate = 3600;
@@ -12,8 +13,11 @@ export async function generateMetadata({ params }) {
   }
 
   const meta = post[0].yoast_head_json;
-  const ogImage =
-    meta.og_image && meta.og_image.length > 0 ? meta.og_image[0].url : "";
+  const ogImageObject =
+    meta.og_image && meta.og_image.length > 0 ? meta.og_image[0] : null;
+  const ogImage = ogImageObject ? ogImageObject.url : null;
+  const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
+  const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
   return {
     title: meta.title,
@@ -39,8 +43,11 @@ export default async function PostPage({ params }) {
     }
 
     const meta = post[0].yoast_head_json;
-    const ogImage =
-      meta.og_image && meta.og_image.length > 0 ? meta.og_image[0].url : "";
+    const ogImageObject =
+      meta.og_image && meta.og_image.length > 0 ? meta.og_image[0] : null;
+    const ogImage = ogImageObject ? ogImageObject.url : null;
+    const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
+    const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
     return (
       <>
@@ -78,9 +85,14 @@ export default async function PostPage({ params }) {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <article className="mx-auto max-w-8xl w-full">
               {ogImage && (
-                <img
+                <Image
                   src={ogImage}
-                  alt={meta.og_title}
+                  alt={meta.og_title || post[0].title.rendered}
+                  width={ogImageWidth}
+                  height={ogImageHeight}
+                  sizes="(max-width: 768px) 100vw, 80vw"
+                  quality={80}
+                  priority={true}
                   className="w-full h-auto mb-8 rounded-xl shadow-lg"
                 />
               )}

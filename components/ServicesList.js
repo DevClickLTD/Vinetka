@@ -90,7 +90,6 @@ export default function ServicesList({ services }) {
                       "/placeholder.webp"
                     }
                     className="absolute inset-0 size-full rounded-2xl bg-gray-50 object-cover"
-                    format="webp"
                     decoding={index === 0 ? "sync" : "async"}
                     fetchPriority={index === 0 ? "high" : "auto"}
                   />
