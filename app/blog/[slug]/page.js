@@ -1,5 +1,8 @@
 import { getPostBySlug } from "../../../services/posts";
 
+// Добавяне на ISR ревалидиране на всеки час
+export const revalidate = 3600;
+
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);

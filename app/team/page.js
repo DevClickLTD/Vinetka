@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { getMembers } from "../../services/members";
 
+// Добавяне на ISR ревалидиране на всеки час
+export const revalidate = 3600;
+
 export const metadata = {
   title: "Екип - NextLevel Theme",
   description:
