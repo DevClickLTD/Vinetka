@@ -4,10 +4,10 @@ import { useEffect } from "react";
 
 // Списък с изображения, които трябва да се заредят предварително
 const CRITICAL_IMAGES = [
-  "/купи-винетка.jpg", // Актуално LCP изображение от HeroSection
-  // "/hero-image-mobile.jpg", // Премахнато, ако не се използва като LCP
-  // "/hero-image-desktop.jpg", // Премахнато, ако не се използва като LCP
+  // "/купи-винетка.jpg", // Премахнато, тъй като LCP се зарежда с next/image priority
 ];
+// Ако този масив остане празен, ImagePreloader компонентът може да не е необходим
+// и може да бъде премахнат от app/layout.js.
 
 /**
  * Компонент за предварително зареждане на критични изображения
@@ -15,6 +15,10 @@ const CRITICAL_IMAGES = [
  */
 export default function ImagePreloader() {
   useEffect(() => {
+    if (CRITICAL_IMAGES.length === 0) {
+      return;
+    }
+
     const preloadImage = (src) => {
       const img = new Image();
       // fetchPriority може да не е валиден атрибут директно върху Image инстанция по този начин

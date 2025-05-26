@@ -86,8 +86,8 @@ export default function RootLayout({ children }) {
         />
         <link rel="dns-prefetch" href="https://vinetka.admin-panels.com" />
 
-        {/* Директно използване на preload тагове с правилния синтаксис */}
-        <link
+        {/* Премахнати остарели preload тагове. LCP изображението се зарежда с next/image priority. */}
+        {/* <link
           rel="preload"
           as="image"
           href="/hero-image-mobile.jpg"
@@ -101,7 +101,7 @@ export default function RootLayout({ children }) {
           href="/hero-image-desktop.jpg"
           type="image/jpg"
           media="(min-width: 641px)"
-        />
+        /> */}
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
