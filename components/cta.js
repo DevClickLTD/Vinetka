@@ -3,7 +3,7 @@ import ExpandableInfoRow from "@/components/ExpandableInfoRow";
 export default function CTA() {
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-10/10 py-0 sm:px-6 sm:py-0 lg:px-0">
+      <div className="mx-auto max-w-10/10">
         <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:px-16">
           {/* <h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
             Lorem ipsum

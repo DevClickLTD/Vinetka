@@ -70,7 +70,7 @@ export default async function Home() {
       <HeroSection />
       {/* <Incentives /> */}
       <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="mx-auto w-full px-6 lg:px-8">
+        <div className="mx-auto w-full">
           <div className="text-center">
             <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-display">
               Нашите Услуги

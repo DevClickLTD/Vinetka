@@ -68,8 +68,9 @@ export default function ServicesLoop({ services: initialServices }) {
   // Няма нужда от if (loading) ... тъй като компонентът разчита на Suspense в родителя
 
   return (
-    <div className="mx-auto 2xl:w-4/5">
-      <div className="w-full px-6 lg:px-8 py-12 sm:py-16">
+    // <div className="mx-auto 2xl:w-4/5">
+    <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="w-full py-12 sm:py-16">
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:w-full lg:mx-auto lg:grid-cols-2">
           {services.map((service) => (
             <div
