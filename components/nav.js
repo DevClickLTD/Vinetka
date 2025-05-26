@@ -155,7 +155,7 @@ export default function Navigation() {
                   alt="Vinetka.bg лого"
                   width={180}
                   height={40}
-                  className="h-10 w-auto"
+                  className="h-12 w-auto"
                 />
               </div>
             </div>
@@ -243,7 +243,7 @@ export default function Navigation() {
               </button>
 
               {/* Секция 1: Лого */}
-              <div className="w-1/4 lg:w-1/5 flex items-center justify-start">
+              <div className="flex items-center justify-start lg:w-1/5 pl-2 pr-4">
                 <Link href="/" className="block">
                   <span className="sr-only">Vinetka.bg</span>
                   <Image
@@ -251,7 +251,7 @@ export default function Navigation() {
                     height={40}
                     alt="Vinetka.bg лого"
                     src="/vinetka-logo.svg"
-                    className="w-auto transition-all duration-300 ease-in-out"
+                    className="h-12 w-auto transition-all duration-300 ease-in-out"
                   />
                 </Link>
               </div>
