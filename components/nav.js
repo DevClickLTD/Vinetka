@@ -151,7 +151,7 @@ export default function Navigation() {
               </button>
               <div className="ml-4">
                 <Image
-                  src="/vinetka-logo.svg"
+                  src="/vinetka.bg-logo.png"
                   alt="Vinetka.bg лого"
                   width={180}
                   height={40}
@@ -250,7 +250,7 @@ export default function Navigation() {
                     width={180}
                     height={40}
                     alt="Vinetka.bg лого"
-                    src="/vinetka-logo.svg"
+                    src="/vinetka.bg-logo.png"
                     className="h-12 w-auto transition-all duration-300 ease-in-out"
                   />
                 </Link>

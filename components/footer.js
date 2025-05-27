@@ -114,7 +114,7 @@ export default function Footer() {
           <div>
             <img
               alt="Vinetka.bg лого"
-              src="/vinetka-logo.svg"
+              src="/vinetka.bg-logo.png"
               width={180}
               height={40}
             />
