@@ -73,10 +73,10 @@ export default async function Home() {
         <div className="mx-auto w-full">
           <div className="text-center">
             <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-display">
-              Нашите Услуги
+              Винетки онлайн
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Купи или провери винетка онлайн с един клик!
+              Електронни винетки за леки автомобили до 3.5 т
             </p>
           </div>
           <Suspense
@@ -88,14 +88,15 @@ export default async function Home() {
           </Suspense>
         </div>
       </section>
-      <CardsRow />
+      <CTA />
+
       <CtasRow />
       {/* <Team /> */}
-      <CTA />
+      <CardsRow />
       {/* <ExpandableInfoRow /> */}
       <Clients />
-      <Newsletter />
-      <Testimonial />
+      {/* <Newsletter />
+      <Testimonial /> */}
       <Lastestposts />
       {/* <Features /> */}
       {/* <Testimonials /> */}

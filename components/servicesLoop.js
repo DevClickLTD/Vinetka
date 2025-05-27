@@ -103,7 +103,7 @@ export default function ServicesLoop({ services: initialServices }) {
                     href={service.href}
                     className="inline-block rounded-md bg-[#803487] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487]"
                   >
-                    Повече
+                    Купи
                   </Link>
                 </div>
               </div>

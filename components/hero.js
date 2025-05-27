@@ -29,28 +29,25 @@ export default function HeroSection() {
           <div className="max-w-2xl mx-auto lg:max-w-none lg:mx-0 lg:flex lg:flex-row lg:items-start lg:gap-x-16">
             <div className="lg:w-1/2 lg:flex-shrink-0">
               <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                Купи или провери винетка онлайн
+                Купи винетка онлайн
               </h1>
               <div className="mt-6">
                 <p className="text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                  occaecat fugiat aliqua. Anim aute id magna aliqua ad ad non
-                  deserunt sunt. Qui irure qui lorem cupidatat commodo.
+                  Купи електронна винетка със сигурно плащане на нашия сайт.
                 </p>
                 <div className="mt-10 flex items-center gap-x-6">
                   <Link
-                    href="/services"
+                    href="/services/купи-електронна-винетка"
                     className="rounded-md bg-[#803487] hover:bg-[#037672] px-3 py-2 text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    Услуги
+                    Купи
                   </Link>
-                  <a
+                  {/* <a
                     href="/contact"
                     className="text-sm/6 font-semibold text-indigo-400"
                   >
                     Контакти <span aria-hidden="true">→</span>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
