@@ -4,24 +4,12 @@ import dynamic from "next/dynamic";
 import ServicesLoop from "../components/servicesLoop";
 import { getServices } from "../services/services";
 import { Suspense } from "react";
-import ExpandableInfoRow from "@/components/ExpandableInfoRow";
 import CardsRow from "@/components/CardsRow";
 import CtasRow from "@/components/CtasRow";
 import VignetteCheckerCTA from "@/components/VignetteCheckerCTA";
 
-// Динамично зареждане на компоненти с lazy loading
-const Incentives = dynamic(() => import("../components/incentives"), {
-  ssr: true,
-});
-const Team = dynamic(() => import("../components/team"), { ssr: true });
 const CTA = dynamic(() => import("../components/cta"), { ssr: true });
 const Clients = dynamic(() => import("../components/clients"), { ssr: true });
-const Newsletter = dynamic(() => import("../components/newsletter"), {
-  ssr: true,
-});
-const Testimonial = dynamic(() => import("../components/testimonial"), {
-  ssr: true,
-});
 const Lastestposts = dynamic(() => import("../components/latestposts"), {
   ssr: true,
 });
@@ -31,24 +19,24 @@ export const revalidate = 3600;
 
 // Добавяне на метаданни за главната страница
 export const metadata = {
-  title: "NextLevel Services - Професионални бизнес услуги",
+  title: "Винетка онлайн - Купи електронна винетка",
   description:
-    "Открийте нашите висококачествени бизнес услуги, които ще изведат вашия бизнес на следващо ниво. Консултирайте се с нашите експерти днес.",
+    "Винетка онлайн - Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
   keywords: [
-    "бизнес услуги",
-    "консултации",
-    "професионални услуги",
-    "NextLevel",
+    "винетка онлайн",
+    "електронна винетка",
+    "купи винетка",
+    "винетка",
   ],
   openGraph: {
-    title: "NextLevel Services - Професионални бизнес услуги",
-    description: "Открийте нашите висококачествени бизнес услуги",
+    title: "Винетка онлайн - Купи електронна винетка",
+    description: "Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
     images: [
       {
         url: "/hero-image-desktop.jpg",
         width: 1200,
         height: 630,
-        alt: "NextLevel Services",
+        alt: "Винетка онлайн - Купи електронна винетка",
       },
     ],
     locale: "bg_BG",
@@ -56,8 +44,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NextLevel Services - Професионални бизнес услуги",
-    description: "Открийте нашите висококачествени бизнес услуги",
+    title: "Винетка онлайн - Купи електронна винетка",
+    description: "Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
     images: ["/hero-image-desktop.jpg"],
   },
 };
@@ -90,22 +78,11 @@ export default async function Home() {
         </div>
       </section>
       <CTA />
-      
       <VignetteCheckerCTA />
-
       <CtasRow />
-      {/* <Team /> */}
       <CardsRow />
-      {/* <ExpandableInfoRow /> */}
       <Clients />
-      {/* <Newsletter />
-      <Testimonial /> */}
       <Lastestposts />
-      {/* <Features /> */}
-      {/* <Testimonials /> */}
-      {/* <Pricing /> */}
-      {/* <Blog /> */}
-      {/* <Contact /> */}
     </>
   );
 }

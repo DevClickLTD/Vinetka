@@ -1,6 +1,5 @@
 import { headers } from "next/headers";
 import Navigation from "../components/nav";
-// import CookieConsentBanner from "../components/cookieConsentBanner";
 import Footer from "../components/footer";
 import Script from "next/script";
 import ImagePreloader from "../components/ImagePreloader";
@@ -8,13 +7,6 @@ import { CriticalCSS } from "./critical-css";
 import NextTopLoader from "nextjs-toploader";
 import "../styles/globals.css";
 import { Roboto } from "next/font/google";
-// import dynamic from "next/dynamic"; // Вече не е нужен тук
-
-// Динамичното импортиране е преместено в DynamicCookieConsentBanner.js
-// const CookieConsentBanner = dynamic(
-//   () => import("../components/cookieConsentBanner"),
-//   { ssr: false }
-// );
 import DynamicCookieConsentBanner from "../components/DynamicCookieConsentBanner";
 
 const roboto = Roboto({
@@ -34,24 +26,24 @@ export async function generateMetadata() {
   return {
     metadataBase: new URL(`${protocol}://${host}`),
     title: {
-      template: "%s | NextLevel Services",
-      default: "NextLevel Services | Професионални бизнес услуги",
+      template: "%s | Винетка онлайн - Купи електронна винетка",
+      default: "Винетка онлайн - Купи електронна винетка",
     },
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Винетка онлайн - Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
     openGraph: {
-      title: "NextLevel Services | Професионални бизнес услуги",
+      title: "Винетка онлайн - Купи електронна винетка",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Винетка онлайн - Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
       images: "/lawyer.webp",
       type: "website",
       locale: "bg_BG",
-      siteName: "NextLevel Services",
+      siteName: "Винетка онлайн - Купи електронна винетка",
     },
     twitter: {
       card: "summary_large_image",
-      title: "NextLevel Services",
-      description: "Lorem ipsum dolor sit amet",
+      title: "Винетка онлайн - Купи електронна винетка",
+      description: "Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
       images: ["/lawyer.webp"],
     },
     robots: {
@@ -85,24 +77,6 @@ export default function RootLayout({ children }) {
           crossOrigin="anonymous"
         />
         <link rel="dns-prefetch" href="https://vinetka.admin-panels.com" />
-
-        {/* Премахнати остарели preload тагове. LCP изображението се зарежда с next/image priority. */}
-        {/* <link
-          rel="preload"
-          as="image"
-          href="/hero-image-mobile.jpg"
-          type="image/jpg"
-          media="(max-width: 640px)"
-        />
-
-        <link
-          rel="preload"
-          as="image"
-          href="/hero-image-desktop.jpg"
-          type="image/jpg"
-          media="(min-width: 641px)"
-        /> */}
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
       <body className={roboto.className}>
@@ -110,8 +84,7 @@ export default function RootLayout({ children }) {
         <ImagePreloader />
         <Navigation />
         <main>{children}</main>
-        {/* <CookieConsentBanner /> // Старото използване */}
-        <DynamicCookieConsentBanner /> {/* Новото използване */}
+        <DynamicCookieConsentBanner />
         <Footer />
         <Script
           id="structured-data"
