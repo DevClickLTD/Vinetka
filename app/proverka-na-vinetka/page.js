@@ -1,3 +1,4 @@
+import Link from "next/link";
 import VignetteChecker from "../../components/VignetteChecker";
 import Script from "next/script";
 import { 
@@ -275,18 +276,18 @@ export default function VignetteCheckPage() {
                 Ако проверката покаже, че винетката ви е изтекла, купете нова лесно и бързо онлайн.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a
+                <Link
                   href="/services"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
                 >
                   Купете винетка
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/ceni"
                   className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
                 >
                   Вижте цените <span aria-hidden="true">→</span>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
