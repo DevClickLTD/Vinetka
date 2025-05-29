@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Script from "next/script";
 import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
 
@@ -115,18 +116,18 @@ export default function TolTaksa() {
               Режим за тежкотоварни автомобили и автобуси
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="#info"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
                 Научете повече
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#toll-points"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
               >
                 Тол пунктове <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -268,18 +269,18 @@ export default function TolTaksa() {
               Предлагаме детайлна информация за всички тол пунктове и актуални цени.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="/contact"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
                 Свържете се с нас
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/services"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
               >
                 Всички услуги <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

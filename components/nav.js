@@ -42,6 +42,8 @@ export default function Navigation() {
     ],
     pages: [
       { name: "Начало", href: "/" },
+      { name: "Цени", href: "/tseni" },
+      { name: "Тол такса", href: "/toll-taksa" },
       // { name: "Екип", href: "/team" },
       { name: "Блог", href: "/blog" },
       { name: "Контакти", href: "/contact" },

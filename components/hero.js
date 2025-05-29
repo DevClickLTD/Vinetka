@@ -42,12 +42,6 @@ export default function HeroSection() {
                   >
                     Купи
                   </Link>
-                  {/* <a
-                    href="/contact"
-                    className="text-sm/6 font-semibold text-indigo-400"
-                  >
-                    Контакти <span aria-hidden="true">→</span>
-                  </a> */}
                 </div>
               </div>
             </div>
