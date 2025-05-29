@@ -277,7 +277,7 @@ export default function VignetteCheckPage() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="/services"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
                 >
                   Купете винетка
                 </a>
