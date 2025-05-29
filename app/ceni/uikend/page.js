@@ -7,7 +7,7 @@ import {
   FaClock,
   FaArrowLeft,
   FaRoute,
-  FaWeekend,
+  FaCalendarPlus,
   FaMapMarkedAlt
 } from "react-icons/fa";
 
@@ -57,7 +57,7 @@ export default function UikendVignette() {
       description: "Винетката е активна точно 48 часа от момента на закупуване"
     },
     {
-      icon: <FaWeekend className="w-6 h-6 text-purple-600" />,
+      icon: <FaCalendarPlus className="w-6 h-6 text-purple-600" />,
       title: "Идеална за уикенди",
       description: "Специално създадена за двудневни пътувания и кратки почивки"
     },
