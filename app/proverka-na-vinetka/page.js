@@ -283,7 +283,7 @@ export default function VignetteCheckPage() {
                   Купете винетка
                 </Link>
                 <Link
-                  href="/ceni"
+                  href="/tseni"
                   className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
                 >
                   Вижте цените <span aria-hidden="true">→</span>

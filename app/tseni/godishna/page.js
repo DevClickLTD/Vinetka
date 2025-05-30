@@ -48,7 +48,7 @@ export const metadata = {
     images: ["/annual-vignette-og.jpg"],
   },
   alternates: {
-    canonical: "/ceni/godishna",
+    canonical: "/tseni/godishna",
   },
 };
 
@@ -158,7 +158,7 @@ export default function GodishnaVignette() {
               <li>
                 <div className="flex items-center">
                   <span className="mx-2 text-gray-400">/</span>
-                  <Link href="/ceni" className="text-gray-400 hover:text-gray-500 transition-colors">
+                  <Link href="/tseni" className="text-gray-400 hover:text-gray-500 transition-colors">
                     Цени
                   </Link>
                 </div>
@@ -400,7 +400,7 @@ export default function GodishnaVignette() {
                 Купете годишна винетка
               </Link>
               <Link
-                href="/ceni"
+                href="/tseni"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors flex items-center"
               >
                 <FaArrowLeft className="mr-2 h-4 w-4" />

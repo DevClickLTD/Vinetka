@@ -47,7 +47,7 @@ export const metadata = {
     images: ["/monthly-vignette-og.jpg"],
   },
   alternates: {
-    canonical: "/ceni/mesechna",
+    canonical: "/tseni/mesechna",
   },
 };
 
@@ -140,7 +140,7 @@ export default function MesechnaVignette() {
               <li>
                 <div className="flex items-center">
                   <span className="mx-2 text-gray-400">/</span>
-                  <Link href="/ceni" className="text-gray-400 hover:text-gray-500 transition-colors">
+                  <Link href="/tseni" className="text-gray-400 hover:text-gray-500 transition-colors">
                     Цени
                   </Link>
                 </div>
@@ -333,7 +333,7 @@ export default function MesechnaVignette() {
                 Купете месечна винетка
               </Link>
               <Link
-                href="/ceni"
+                href="/tseni"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors flex items-center"
               >
                 <FaArrowLeft className="mr-2 h-4 w-4" />

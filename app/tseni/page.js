@@ -51,11 +51,11 @@ export const metadata = {
     images: ["/vignette-prices-og.jpg"],
   },
   alternates: {
-    canonical: "/ceni",
+    canonical: "/tseni",
   },
 };
 
-export default function Ceni() {
+export default function tseni() {
   const vignetteTypes = [
     {
       id: "uikend",
@@ -320,7 +320,7 @@ export default function Ceni() {
                 </ul>
                 
                 <Link
-                  href={`/ceni/${vignette.id}`}
+                  href={`/tseni/${vignette.id}`}
                   className="block w-full rounded-md bg-purple-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-colors"
                 >
                   Научете повече
