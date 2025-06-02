@@ -33,7 +33,7 @@ export const metadata = {
     description: "Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
     images: [
       {
-        url: "/hero-image-desktop.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Винетка онлайн - Купи електронна винетка",
@@ -46,7 +46,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Винетка онлайн - Купи електронна винетка",
     description: "Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
-    images: ["/hero-image-desktop.jpg"],
+    images: ["/default.webp"],
   },
 };
 

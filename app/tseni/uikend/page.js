@@ -29,7 +29,7 @@ export const metadata = {
     description: "Уикенд винетка за 2 дни - перфектна за кратки излети и спонтанни пътувания. Валидна 48 часа.",
     images: [
       {
-        url: "/weekend-vignette-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Уикенд винетка за 2 дни",
@@ -42,7 +42,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Уикенд винетка - 2 дни | Vinetka.bg",
     description: "Уикенд винетка за 2 дни - перфектна за кратки излети и спонтанни пътувания.",
-    images: ["/weekend-vignette-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/tseni/uikend",

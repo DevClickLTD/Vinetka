@@ -32,7 +32,7 @@ export const metadata = {
     description: "Годишна винетка за 365 дни - най-изгодното решение за всички, които пътуват редовно. Спестяване до 40%.",
     images: [
       {
-        url: "/annual-vignette-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Годишна винетка за 365 дни",
@@ -45,7 +45,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Годишна винетка - 365 дни | Vinetka.bg",
     description: "Годишна винетка за 365 дни - най-изгодното решение за всички, които пътуват редовно.",
-    images: ["/annual-vignette-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/tseni/godishna",

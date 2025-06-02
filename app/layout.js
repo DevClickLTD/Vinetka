@@ -35,7 +35,7 @@ export async function generateMetadata() {
       title: "Винетка онлайн - Купи електронна винетка",
       description:
         "Винетка онлайн - Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
-      images: "/lawyer.webp",
+      images: "/default.webp",
       type: "website",
       locale: "bg_BG",
       siteName: "Винетка онлайн - Купи електронна винетка",
@@ -44,7 +44,7 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: "Винетка онлайн - Купи електронна винетка",
       description: "Купи лесно електронна винетка с няколко клика, плати с карта и получи разписката",
-      images: ["/lawyer.webp"],
+      images: ["/default.webp"],
     },
     robots: {
       index: true,

@@ -31,7 +31,7 @@ export const metadata = {
     description: "Месечна винетка за 30 дни - най-популярният избор за редовни пътувания. Отличен баланс между цена и гъвкавост.",
     images: [
       {
-        url: "/monthly-vignette-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Месечна винетка за 30 дни",
@@ -44,7 +44,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Месечна винетка - 30 дни | Vinetka.bg",
     description: "Месечна винетка за 30 дни - най-популярният избор за редовни пътувания.",
-    images: ["/monthly-vignette-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/tseni/mesechna",

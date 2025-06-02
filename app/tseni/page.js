@@ -35,7 +35,7 @@ export const metadata = {
     description: "Открийте най-изгодните цени за всички типове електронни винетки в България! Конкурентни цени без скрити такси.",
     images: [
       {
-        url: "/vignette-prices-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Цени на електронни винетки",
@@ -48,7 +48,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Цени на електронни винетки - Vinetka.bg",
     description: "Открийте най-изгодните цени за всички типове електронни винетки в България!",
-    images: ["/vignette-prices-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/tseni",

@@ -30,7 +30,7 @@ export const metadata = {
     description: "Седмична винетка за 7 дни - идеалното решение за кратки почивки и бизнес командировки.",
     images: [
       {
-        url: "/weekly-vignette-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Седмична винетка за 7 дни",
@@ -43,7 +43,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Седмична винетка - 7 дни | Vinetka.bg",
     description: "Седмична винетка за 7 дни - идеалното решение за кратки почивки и бизнес командировки.",
-    images: ["/weekly-vignette-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/tseni/sedmichna",

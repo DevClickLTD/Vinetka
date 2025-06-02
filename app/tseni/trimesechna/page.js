@@ -33,7 +33,7 @@ export const metadata = {
     description: "Тримесечна винетка за 90 дни - икономичен избор за сезонни пътници. Спестяване до 15%.",
     images: [
       {
-        url: "/quarterly-vignette-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Тримесечна винетка за 90 дни",
@@ -46,7 +46,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Тримесечна винетка - 3 месеца | Vinetka.bg",
     description: "Тримесечна винетка за 90 дни - икономичен избор за сезонни пътници.",
-    images: ["/quarterly-vignette-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/tseni/trimesechna",

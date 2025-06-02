@@ -26,7 +26,7 @@ export const metadata = {
     description: "Разгледайте всички наши професионални услуги",
     images: [
       {
-        url: "/services-og-image.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Vinetka.bg Services",

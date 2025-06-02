@@ -31,7 +31,7 @@ export const metadata = {
     description: "Проверете Вашата винетка за секунди! Избягвайте глоби с бърза проверка на валидността.",
     images: [
       {
-        url: "/vignette-check-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Проверка на винетка",
@@ -44,7 +44,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Проверка на винетка - Бързо, лесно и сигурно | Vinetka.bg",
     description: "Проверете Вашата винетка за секунди! Избягвайте глоби с бърза проверка.",
-    images: ["/vignette-check-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
     canonical: "/proverka-na-vinetka",

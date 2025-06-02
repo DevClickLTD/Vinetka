@@ -23,7 +23,7 @@ export const metadata = {
     description: "Купете тол такса онлайн за тежкотоварни автомобили и автобуси в България. Бърз и лесен достъп до магистралите.",
     images: [
       {
-        url: "/toll-road-og.jpg",
+        url: "/default.webp",
         width: 1200,
         height: 630,
         alt: "Тол такса за тежкотоварни автомобили",
@@ -36,10 +36,10 @@ export const metadata = {
     card: "summary_large_image",
     title: "Тол такса онлайн - Режим за тежкотоварни автомобили",
     description: "Купете тол такса онлайн за тежкотоварни автомобили и автобуси в България.",
-    images: ["/toll-road-og.jpg"],
+    images: ["/default.webp"],
   },
   alternates: {
-    canonical: "/tol-taksa",
+    canonical: "/toll-taksa",
   },
 };
 
