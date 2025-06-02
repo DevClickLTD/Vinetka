@@ -82,7 +82,7 @@ export default async function ServicePage({ params }) {
       url: meta.canonical || `https://example.bg/services/${slug}`,
       provider: {
         "@type": "Organization",
-        name: "NextLevel Services",
+        name: "Vinetka.bg",
         url: "https://example.bg",
         logo: "https://example.bg/logo.png",
       },

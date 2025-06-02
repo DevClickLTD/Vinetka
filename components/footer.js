@@ -252,7 +252,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">
-            &copy; {year} NextLevel Theme, Inc. All rights reserved.
+            &copy; {year} Vinetka.bg, Inc. All rights reserved.
           </p>
         </div>
       </div>

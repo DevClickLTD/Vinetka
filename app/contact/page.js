@@ -8,7 +8,7 @@ import {
 
 export async function generateMetadata() {
   return {
-    title: "Контакти - NextLevel Theme",
+    title: "Контакти - Vinetka.bg",
     description:
       "Свържете се с нас чрез нашата форма за контакт или намерете нашите данни за контакт.",
   };

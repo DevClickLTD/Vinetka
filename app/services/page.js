@@ -17,19 +17,19 @@ const ServicesLoop = dynamic(() => import("../../components/servicesLoop.js"), {
 export const revalidate = 3600;
 
 export const metadata = {
-  title: "Услуги - NextLevel Theme",
+  title: "Услуги - Vinetka.bg",
   description:
     "Разгледайте всички наши професионални услуги, които предлагаме за бизнеса. Открийте как можем да помогнем на вашия бизнес да расте и да се развива.",
-  keywords: ["услуги", "бизнес услуги", "професионални услуги", "NextLevel"],
+  keywords: ["услуги", "бизнес услуги", "професионални услуги", "Vinetka.bg"],
   openGraph: {
-    title: "Професионални Услуги | NextLevel Services",
+    title: "Професионални Услуги | Vinetka.bg",
     description: "Разгледайте всички наши професионални услуги",
     images: [
       {
         url: "/services-og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "NextLevel Services",
+        alt: "Vinetka.bg Services",
       },
     ],
   },
@@ -63,7 +63,7 @@ export default async function Services() {
             "...",
           provider: {
             "@type": "Organization",
-            name: "NextLevel Services",
+            name: "Vinetka.bg",
             url: "https://example.bg",
           },
         },
