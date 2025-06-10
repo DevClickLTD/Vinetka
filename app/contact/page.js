@@ -26,12 +26,6 @@ export default function ContactPage() {
           href: null,
         },
         {
-          icon: PhoneIcon,
-          label: "Телефон",
-          value: "+359 876 99 51 77",
-          href: "tel:+359876995177",
-        },
-        {
           icon: EnvelopeIcon,
           label: "Имейл",
           value: "hq@insurance.bg",
