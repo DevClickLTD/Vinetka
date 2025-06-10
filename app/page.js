@@ -68,13 +68,13 @@ export default async function Home() {
               Електронни винетки за леки автомобили до 3.5 т
             </p>
           </div>
-          <Suspense
+          {/* <Suspense
             fallback={
               <div className="text-center py-10">Зареждане на услугите...</div>
             }
           >
             <ServicesLoop services={allServices} />
-          </Suspense>
+          </Suspense> */}
         </div>
       </section>
       <CTA />

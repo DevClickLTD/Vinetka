@@ -32,14 +32,14 @@ export default function Navigation() {
   const [showResults, setShowResults] = useState(false);
   const searchRef = useRef(null);
   const [navigation, setNavigation] = useState({
-    categories: [
-      {
-        id: "categories",
-        name: "Услуги",
-        featured: [],
-        services: [],
-      },
-    ],
+    // categories: [
+    //   {
+    //     id: "categories",
+    //     name: "Услуги",
+    //     featured: [],
+    //     services: [],
+    //   },
+    // ],
     pages: [
       { name: "Начало", href: "/" },
       { name: "Цени", href: "/tseni" },
@@ -50,50 +50,50 @@ export default function Navigation() {
     ],
   });
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        setLoading(true);
-        const services = await getServicesNav();
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       setLoading(true);
+  //       const services = await getServicesNav();
 
-        if (!services || !Array.isArray(services) || services.length === 0) {
-          console.warn("No services found from API");
-          return;
-        }
+  //       if (!services || !Array.isArray(services) || services.length === 0) {
+  //         console.warn("No services found from API");
+  //         return;
+  //       }
 
-        const featured = services.slice(0, 2);
-        const remainingServices = services.slice(2);
+  //       const featured = services.slice(0, 2);
+  //       const remainingServices = services.slice(2);
 
-        setNavigation((prev) => ({
-          ...prev,
-          categories: [
-            {
-              id: "categories",
-              name: "Услуги",
-              featured: featured.map((service) => ({
-                name: service.title.rendered,
-                href: `/services/${service.slug}`,
-                imageSrc:
-                  service.yoast_head_json?.og_image?.[0]?.url ||
-                  "/placeholder.webp",
-                imageAlt: service.title.rendered,
-              })),
-              services: remainingServices.map((service) => ({
-                id: service.id,
-                name: service.title.rendered,
-                href: `/services/${service.slug}`,
-              })),
-            },
-          ],
-        }));
-        setLoading(false);
-      } catch (error) {
-        console.error("Error fetching navigation data:", error);
-      }
-    };
+  //       setNavigation((prev) => ({
+  //         ...prev,
+  //         categories: [
+  //           {
+  //             id: "categories",
+  //             name: "Услуги",
+  //             featured: featured.map((service) => ({
+  //               name: service.title.rendered,
+  //               href: `/services/${service.slug}`,
+  //               imageSrc:
+  //                 service.yoast_head_json?.og_image?.[0]?.url ||
+  //                 "/placeholder.webp",
+  //               imageAlt: service.title.rendered,
+  //             })),
+  //             services: remainingServices.map((service) => ({
+  //               id: service.id,
+  //               name: service.title.rendered,
+  //               href: `/services/${service.slug}`,
+  //             })),
+  //           },
+  //         ],
+  //       }));
+  //       setLoading(false);
+  //     } catch (error) {
+  //       console.error("Error fetching navigation data:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   useEffect(() => {
     if (searchQuery.length < 3) {
@@ -177,7 +177,7 @@ export default function Navigation() {
                   </div>
                 ))}
               </div>
-              <div className="border-b border-gray-200">
+              {/* <div className="border-b border-gray-200">
                 <TabList className="-mb-px flex space-x-8 px-4">
                   {navigation.categories.map((category) => (
                     <Tab
@@ -188,14 +188,14 @@ export default function Navigation() {
                     </Tab>
                   ))}
                 </TabList>
-              </div>
+              </div> */}
               {/* Loader */}
               {loading && (
                 <div className="flex justify-center py-10">
                   <div className="w-12 h-12 border-4 border-gray-500 border-t-[#803487] rounded-full animate-spin"></div>
                 </div>
               )}
-              {!loading && (
+              {/* {!loading && (
                 <TabPanels as={Fragment}>
                   {navigation.categories.map((category) => (
                     <TabPanel
@@ -224,7 +224,7 @@ export default function Navigation() {
                     </TabPanel>
                   ))}
                 </TabPanels>
-              )}
+              )} */}
             </TabGroup>
           </DialogPanel>
         </div>
@@ -272,7 +272,7 @@ export default function Navigation() {
                         {page.name}
                       </Link>
                     ))}
-                    {navigation.categories.map((category) => (
+                    {/* {navigation.categories.map((category) => (
                       <Popover key={category.name} className="flex">
                         {({ open, close }) => (
                           <>
@@ -296,7 +296,6 @@ export default function Navigation() {
                               />
                               <div className="relative bg-white">
                                 <div className="mx-auto max-w-7xl px-8">
-                                  {/* Loader */}
                                   {loading && (
                                     <div className="flex justify-center py-10">
                                       <div className="w-12 h-12 border-4 border-gray-500 border-t-[#803487] rounded-full animate-spin"></div>
@@ -348,7 +347,7 @@ export default function Navigation() {
                           </>
                         )}
                       </Popover>
-                    ))}
+                    ))} */}
                   </div>
                 </PopoverGroup>
               </div>

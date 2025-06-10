@@ -35,14 +35,14 @@ export default function HeroSection() {
                 <p className="text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
                   Купи електронна винетка със сигурно плащане на нашия сайт.
                 </p>
-                <div className="mt-10 flex items-center gap-x-6">
+                {/* <div className="mt-10 flex items-center gap-x-6">
                   <Link
                     href="/services/купи-електронна-винетка"
                     className="rounded-md bg-[#803487] hover:bg-[#037672] px-3 py-2 text-sm font-semibold text-white shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Купи
                   </Link>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="mt-10 lg:mt-0 lg:w-1/2 lg:flex-shrink-0">
