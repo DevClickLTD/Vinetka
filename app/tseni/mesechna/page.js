@@ -171,7 +171,7 @@ export default function MesechnaVignette() {
             <p className="mt-6 text-lg leading-8 text-purple-100">
               Най-популярният избор за редовни пътувания!
             </p>
-            <div className="mt-8 flex items-center justify-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <div className="inline-flex items-center rounded-lg bg-purple-100 px-4 py-2">
                 <FaClock className="h-5 w-5 text-purple-600 mr-2" />
                 <span className="text-lg font-semibold text-purple-900">Валидна 30 дни</span>
@@ -179,6 +179,10 @@ export default function MesechnaVignette() {
               <div className="inline-flex items-center rounded-lg bg-yellow-100 px-4 py-2">
                 <FaStar className="h-5 w-5 text-yellow-600 mr-2" />
                 <span className="text-lg font-semibold text-yellow-900">Най-популярна</span>
+              </div>
+              <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
+                <span className="text-2xl font-bold text-purple-900">30,00 лв.</span>
+                <span className="text-sm text-gray-600">15,34 €</span>
               </div>
             </div>
           </div>

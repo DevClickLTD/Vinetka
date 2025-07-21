@@ -169,9 +169,15 @@ export default function SedmichnaVignette() {
             <p className="mt-6 text-lg leading-8 text-purple-100">
               Идеалното решение за кратки почивки и бизнес командировки!
             </p>
-            <div className="mt-8 inline-flex items-center rounded-lg bg-purple-100 px-4 py-2">
-              <FaClock className="h-5 w-5 text-purple-600 mr-2" />
-              <span className="text-lg font-semibold text-purple-900">Валидна 7 дни (168 часа)</span>
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+              <div className="inline-flex items-center rounded-lg bg-purple-100 px-4 py-2">
+                <FaClock className="h-5 w-5 text-purple-600 mr-2" />
+                <span className="text-lg font-semibold text-purple-900">Валидна 7 дни (168 часа)</span>
+              </div>
+              <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
+                <span className="text-2xl font-bold text-purple-900">15,00 лв.</span>
+                <span className="text-sm text-gray-600">7,67 €</span>
+              </div>
             </div>
           </div>
         </div>

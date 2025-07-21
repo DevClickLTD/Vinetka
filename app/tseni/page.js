@@ -62,6 +62,8 @@ export default function tseni() {
       icon: <FaCalendarDay className="w-8 h-8 text-purple-600" />,
       title: "Уикенд винетка",
       duration: "2 дни",
+      price: "10,00 лв.",
+      priceEur: "5,11 €",
       description: "Перфектна за кратки излети",
       features: [
         "Валидна 48 часа",
@@ -76,6 +78,8 @@ export default function tseni() {
       icon: <FaCalendarWeek className="w-8 h-8 text-purple-600" />,
       title: "Седмична винетка",
       duration: "7 дни",
+      price: "15,00 лв.",
+      priceEur: "7,67 €",
       description: "Идеална за кратки пътувания",
       features: [
         "Валидна точно 168 часа",
@@ -90,6 +94,8 @@ export default function tseni() {
       icon: <FaCalendarAlt className="w-8 h-8 text-purple-600" />,
       title: "Месечна винетка",
       duration: "30 дни",
+      price: "30,00 лв.",
+      priceEur: "15,34 €",
       description: "Подходяща за по-дълги пътувания",
       features: [
         "Валидна точно 30 дни",
@@ -104,6 +110,8 @@ export default function tseni() {
       icon: <FaCalendar className="w-8 h-8 text-purple-600" />,
       title: "Тримесечна винетка",
       duration: "3 месеца",
+      price: "54,00 лв.",
+      priceEur: "27,61 €",
       description: "Икономичен избор за сезонни пътници",
       features: [
         "Валидна точно 90 дни",
@@ -118,6 +126,8 @@ export default function tseni() {
       icon: <FaCalendar className="w-8 h-8 text-purple-600" />,
       title: "Годишна винетка",
       duration: "12 месеца",
+      price: "97,00 лв.",
+      priceEur: "49,60 €",
       description: "Най-изгодна за редовни шофьори",
       features: [
         "Валидна точно 365 дни",
@@ -302,9 +312,14 @@ export default function tseni() {
                   {vignette.title}
                 </h3>
                 
-                <p className="text-center text-sm text-gray-600 mb-4">
+                <p className="text-center text-sm text-gray-600 mb-2">
                   Валидна {vignette.duration}
                 </p>
+                
+                <div className="text-center mb-4">
+                  <div className="text-3xl font-bold text-purple-600">{vignette.price}</div>
+                  <div className="text-lg text-gray-500">{vignette.priceEur}</div>
+                </div>
                 
                 <p className="text-center text-gray-700 mb-6">
                   {vignette.description}

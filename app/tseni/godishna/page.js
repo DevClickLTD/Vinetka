@@ -202,6 +202,10 @@ export default function GodishnaVignette() {
                 <FaCrown className="h-5 w-5 text-yellow-600 mr-2" />
                 <span className="text-lg font-semibold text-yellow-900">Най-изгодна</span>
               </div>
+              <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
+                <span className="text-2xl font-bold text-purple-900">97,00 лв.</span>
+                <span className="text-sm text-gray-600">49,60 €</span>
+              </div>
             </div>
           </div>
         </div>

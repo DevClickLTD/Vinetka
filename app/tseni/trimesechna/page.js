@@ -188,7 +188,7 @@ export default function TrimesechnaVignette() {
             <p className="mt-6 text-lg leading-8 text-purple-100">
               Осигурете си спокойствие за цял сезон!
             </p>
-            <div className="mt-8 flex items-center justify-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <div className="inline-flex items-center rounded-lg bg-purple-100 px-4 py-2">
                 <FaClock className="h-5 w-5 text-purple-600 mr-2" />
                 <span className="text-lg font-semibold text-purple-900">Валидна 90 дни</span>
@@ -196,6 +196,10 @@ export default function TrimesechnaVignette() {
               <div className="inline-flex items-center rounded-lg bg-green-100 px-4 py-2">
                 <FaPercentage className="h-5 w-5 text-green-600 mr-2" />
                 <span className="text-lg font-semibold text-green-900">Спестяване 15%</span>
+              </div>
+              <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
+                <span className="text-2xl font-bold text-purple-900">54,00 лв.</span>
+                <span className="text-sm text-gray-600">27,61 €</span>
               </div>
             </div>
           </div>

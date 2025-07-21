@@ -18,7 +18,6 @@ const navigation = {
     { name: "Проверка на винетка", href: "/proverka-na-vinetka" },
     { name: "Цени", href: "/tseni" },
     { name: "Тол такса", href: "/toll-taksa" },
-    { name: "Услуги", href: "/services" },
   ],
   support: [
     { name: "Блог", href: "/blog" },
@@ -27,13 +26,10 @@ const navigation = {
   ],
   company: [
     { name: "За нас", href: "#" },
-    { name: "Екип", href: "/team" },
-    { name: "Кариери", href: "#" },
   ],
   legal: [
     { name: "Условия за ползване", href: "#" },
-    { name: "Политика за поверителност", href: "/privacy-policy" },
-    { name: "Лиценз", href: "#" },
+    { name: "Политика за поверителност", href: "/privacy-policy" }
   ],
   social: [
     {

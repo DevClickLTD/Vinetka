@@ -22,11 +22,6 @@ export default function CardsRow() {
             className="object-contain max-w-full h-auto sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
           />
         </div>
-        <div className="text-center">
-          <p className="text-xl text-gray-300 sm:text-2xl">
-            При нас можете да си купите винетка онлайн
-          </p>
-        </div>
         <svg
           viewBox="0 0 1024 1024"
           aria-hidden="true"

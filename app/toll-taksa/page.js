@@ -148,7 +148,6 @@ export default function TolTaksa() {
 
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed">
-                На vinetka.bg можете да закупите тол такса онлайн за бърз и лесен достъп до магистралите. 
                 За разлика от електронните винетки, предназначени за леки автомобили, тол таксите в България 
                 се отнасят за тежкотоварни превозни средства и автобуси.
               </p>
