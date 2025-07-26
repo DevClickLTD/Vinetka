@@ -1,7 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { CheckCircleIcon, MagnifyingGlassIcon, ShieldCheckIcon } from "@heroicons/react/24/outline";
+import {
+  CheckCircleIcon,
+  MagnifyingGlassIcon,
+  ShieldCheckIcon,
+} from "@heroicons/react/24/outline";
 
 export default function VignetteCheckerCTA() {
   return (
@@ -17,12 +21,15 @@ export default function VignetteCheckerCTA() {
         </div>
 
         <div className="mx-auto mt-12 max-w-4xl">
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#803487] to-[#037672] px-8 py-12 shadow-2xl sm:px-12 lg:px-16">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#803487] to-[#037672] px-4 py-4 shadow-2xl sm:px-12 lg:px-16">
             {/* Background Pattern */}
-            <div className="absolute inset-0 bg-white/5" style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-            }}></div>
-            
+            <div
+              className="absolute inset-0 bg-white/5"
+              style={{
+                backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='7' cy='7' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+              }}
+            ></div>
+
             <div className="relative">
               <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center">
                 {/* Left Content */}
@@ -33,10 +40,11 @@ export default function VignetteCheckerCTA() {
                       Проверка на винетка
                     </h3>
                   </div>
-                  
+
                   <p className="text-lg text-white/90 mb-6">
-                    Проверете дали вашата електронна винетка е валидна с официалния API на БГ ТОЛ. 
-                    Бърза, безплатна и надеждна услуга.
+                    Проверете дали вашата електронна винетка е валидна с
+                    официалния API на БГ ТОЛ. Бърза, безплатна и надеждна
+                    услуга.
                   </p>
 
                   {/* Features */}
@@ -82,7 +90,7 @@ export default function VignetteCheckerCTA() {
                             Въведете регистрационен номер
                           </p>
                         </div>
-                        
+
                         {/* Mock Form */}
                         <div className="space-y-4">
                           <div>
@@ -97,11 +105,13 @@ export default function VignetteCheckerCTA() {
                                 disabled
                               />
                               <div className="absolute inset-y-0 right-0 flex items-center pr-3">
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">BG</span>
+                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">
+                                  BG
+                                </span>
                               </div>
                             </div>
                           </div>
-                          
+
                           <button
                             disabled
                             className="w-full rounded-md bg-[#803487] px-3 py-2 text-sm font-semibold text-white"
@@ -142,27 +152,33 @@ export default function VignetteCheckerCTA() {
               <div className="mx-auto w-12 h-12 bg-[#803487]/10 rounded-lg flex items-center justify-center mb-4">
                 <MagnifyingGlassIcon className="h-6 w-6 text-[#803487]" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Бърза проверка</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Бърза проверка
+              </h3>
               <p className="text-sm text-gray-600">
                 Резултатът се показва за секунди
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="mx-auto w-12 h-12 bg-[#037672]/10 rounded-lg flex items-center justify-center mb-4">
                 <ShieldCheckIcon className="h-6 w-6 text-[#037672]" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Официален API</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Официален API
+              </h3>
               <p className="text-sm text-gray-600">
                 Данните идват директно от БГ ТОЛ
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="mx-auto w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                 <CheckCircleIcon className="h-6 w-6 text-green-600" />
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Безплатно</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                Безплатно
+              </h3>
               <p className="text-sm text-gray-600">
                 Няма такси или скрити разходи
               </p>
@@ -172,4 +188,4 @@ export default function VignetteCheckerCTA() {
       </div>
     </section>
   );
-} 
+}
