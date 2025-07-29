@@ -49,7 +49,7 @@ const CookieConsentBanner = () => {
     >
       <p className="text-sm md:text-base">
         Използваме бисквитки за подобряване на услугите.{" "}
-        <Link href="/privacy-policy" className="underline">
+        <Link href="/politika-za-biskvitki" className="underline">
           Научете повече
         </Link>
         .

@@ -28,8 +28,9 @@ const navigation = {
     { name: "За нас", href: "#" },
   ],
   legal: [
-    { name: "Условия за ползване", href: "#" },
-    { name: "Политика за поверителност", href: "/privacy-policy" }
+    { name: "Условия за ползване", href: "/uslovia-za-polzvane" },
+    { name: "Политика за поверителност", href: "/privacy-policy" },
+    { name: "Политика за бисквитки", href: "/politika-za-biskvitki" }
   ],
   social: [
     {
