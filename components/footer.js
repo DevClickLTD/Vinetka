@@ -28,21 +28,21 @@ const navigation = {
     { name: "За нас", href: "#" },
   ],
   legal: [
-    { name: "Условия за ползване", href: "/uslovia-za-polzvane" },
+    { name: "Общи условия", href: "/obshti-usloviya" },
     { name: "Политика за поверителност", href: "/privacy-policy" },
     { name: "Политика за бисквитки", href: "/politika-za-biskvitki" }
   ],
   social: [
     {
       name: "Facebook",
-      href: "https://www.facebook.com/example",
+      href: "https://www.facebook.com/vinetka.bg",
       icon: FaFacebook,
       target: "_blank",
       rel: "noopener noreferrer",
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/example",
+      href: "https://www.linkedin.com/company/vinetka.bg",
       icon: FaLinkedin,
       target: "_blank",
       rel: "noopener noreferrer",
