@@ -1,4 +1,4 @@
-import { getContactInfo } from "../../services/contacts";
+import { getContactInfo } from "@/services/contacts";
 import Link from "next/link";
 
 export async function generateMetadata() {

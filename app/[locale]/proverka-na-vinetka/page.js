@@ -1,5 +1,5 @@
 import Link from "next/link";
-import VignetteChecker from "../../components/VignetteChecker";
+import VignetteChecker from "@/components/VignetteChecker";
 import Script from "next/script";
 import { 
   FaSearch, 
