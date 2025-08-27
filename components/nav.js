@@ -1,6 +1,6 @@
 "use client";
 
-import { Fragment, useEffect, useState, useRef } from "react";
+import { Fragment, useEffect, useState } from "react";
 import {
   Dialog,
   DialogBackdrop,
@@ -17,38 +17,24 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 import Image from "next/image";
 import { getServicesNav } from "../services/services";
-import { searchContent } from "../services/search";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslations } from 'next-intl';
 
 export default function Navigation() {
+  const t = useTranslations('navigation');
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-  const [isSearching, setIsSearching] = useState(false);
-  const [showResults, setShowResults] = useState(false);
-  const searchRef = useRef(null);
-  const [navigation, setNavigation] = useState({
-    // categories: [
-    //   {
-    //     id: "categories",
-    //     name: "Услуги",
-    //     featured: [],
-    //     services: [],
-    //   },
-    // ],
-    pages: [
-      { name: "Начало", href: "/" },
-      { name: "Цени", href: "/tseni" },
-      { name: "Тол такса", href: "/toll-taksa" },
-      // { name: "Екип", href: "/team" },
-      { name: "Блог", href: "/blog" },
-      { name: "Контакти", href: "/contact" },
-    ],
-  });
+  
+  const pages = [
+    { name: t('home'), href: "/" },
+    { name: t('prices'), href: "/tseni" },
+    { name: t('tollTax'), href: "/toll-taksa" },
+    { name: t('blog'), href: "/blog" },
+    { name: t('contact'), href: "/contact" },
+  ];
 
   // useEffect(() => {
   //   const fetchData = async () => {
@@ -95,38 +81,7 @@ export default function Navigation() {
   //   fetchData();
   // }, []);
 
-  useEffect(() => {
-    if (searchQuery.length < 3) {
-      setSearchResults([]);
-      return;
-    }
 
-    console.log(searchQuery);
-
-    setIsSearching(true);
-    setShowResults(true);
-
-    const delayDebounceFn = setTimeout(async () => {
-      const results = await searchContent(searchQuery);
-      setSearchResults(results);
-      setIsSearching(false);
-    }, 300);
-
-    return () => clearTimeout(delayDebounceFn);
-  }, [searchQuery]);
-
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (searchRef.current && !searchRef.current.contains(event.target)) {
-        setShowResults(false);
-      }
-    }
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
     <div className="bg-white sticky shadow-md top-0 block w-full z-50">
@@ -164,7 +119,7 @@ export default function Navigation() {
             {/* Links */}
             <TabGroup className="mt-2">
               <div className="space-y-6 border-t border-gray-200 px-4 py-6">
-                {navigation.pages.map((page) => (
+                {pages.map((page) => (
                   <div key={page.name} className="flow-root">
                     <Link
                       href={page.href}
@@ -262,7 +217,7 @@ export default function Navigation() {
               <div className="hidden lg:flex lg:items-center lg:justify-center lg:flex-1">
                 <PopoverGroup className="flex">
                   <div className="flex space-x-8">
-                    {navigation.pages.map((page) => (
+                    {pages.map((page) => (
                       <Link
                         key={page.name}
                         href={page.href}
@@ -352,64 +307,9 @@ export default function Navigation() {
                 </PopoverGroup>
               </div>
 
-              {/* Секция 3: Търсачка - намален размер на мобилни устройства */}
-              <div
-                ref={searchRef}
-                className="flex justify-end w-28 sm:w-36 lg:w-1/6"
-              >
-                <div className="relative w-full lg:w-72">
-                  <input
-                    type="text"
-                    placeholder="Търсене..."
-                    value={searchQuery}
-                    onChange={(e) => {
-                      setSearchQuery(e.target.value);
-                      setShowResults(true);
-                    }}
-                    onFocus={() => {
-                      if (searchQuery.length >= 3) {
-                        setShowResults(true);
-                      }
-                    }}
-                    className="block w-full px-2 pr-8 lg:px-3 lg:pr-10 text-gray-900 placeholder:text-gray-400 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#803487] py-1 text-xs sm:text-sm lg:text-base"
-                  />
-                  <MagnifyingGlassIcon className="absolute right-1 lg:right-2 top-1/2 text-gray-500 -translate-y-1/2 h-4 w-4 lg:h-5 lg:w-5" />
-                </div>
-                {showResults && (
-                  <div className="absolute right-0 w-28 sm:w-36 lg:w-72 mt-2 bg-white shadow-lg rounded-md max-h-48 sm:max-h-56 lg:max-h-60 overflow-y-auto border border-gray-200">
-                    {isSearching ? (
-                      <div className="p-2 text-gray-500 text-sm text-center">
-                        Зареждане...
-                      </div>
-                    ) : searchResults.length > 0 ? (
-                      <ul className="divide-y divide-gray-200">
-                        {searchResults.map((result) => (
-                          <li
-                            key={result.id}
-                            className="p-1 sm:p-2 hover:bg-gray-100"
-                            onClick={() => {
-                              setSearchQuery("");
-                              setSearchResults([]);
-                              setShowResults(false);
-                            }}
-                          >
-                            <Link
-                              href={`/${result.type}/${result.slug}`}
-                              className="block w-full h-full p-1 sm:p-2 text-gray-900 hover:text-[#803487]"
-                              prefetch={true}
-                            >
-                              {result.title}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    ) : (
-                      <div className="p-2 text-gray-500 text-sm text-center">
-                        Няма намерени резултати
-                      </div>
-                    )}
-                  </div>
-                )}
+              {/* Секция 3: Language Switcher */}
+              <div className="flex justify-end items-center">
+                <LanguageSwitcher />
               </div>
             </div>
           </div>

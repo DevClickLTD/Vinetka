@@ -4,7 +4,8 @@ import { useState, useEffect } from "react";
 import { Pacifico } from "next/font/google";
 import useSubscribe from "../hooks/useSubscribe";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
+import { useTranslations } from 'next-intl';
+import { Link } from '../lib/navigation';
 
 const pacifico = Pacifico({
   subsets: ["latin", "cyrillic"],
@@ -13,47 +14,50 @@ const pacifico = Pacifico({
   display: "swap",
 });
 
-const navigation = {
-  services: [
-    { name: "Проверка на винетка", href: "/proverka-na-vinetka" },
-    { name: "Цени", href: "/tseni" },
-    { name: "Тол такса", href: "/toll-taksa" },
-  ],
-  support: [
-    { name: "Блог", href: "/blog" },
-    { name: "Контакти", href: "/contact" },
-    { name: "Често задавани въпроси", href: "#" },
-  ],
-  company: [
-    { name: "За нас", href: "#" },
-  ],
-  legal: [
-    { name: "Общи условия", href: "/obshti-usloviya" },
-    { name: "Политика за поверителност", href: "/privacy-policy" },
-    { name: "Политика за бисквитки", href: "/politika-za-biskvitki" }
-  ],
-  social: [
-    {
-      name: "Facebook",
-      href: "https://www.facebook.com/vinetka.bg",
-      icon: FaFacebook,
-      target: "_blank",
-      rel: "noopener noreferrer",
-    },
-    {
-      name: "LinkedIn",
-      href: "https://www.linkedin.com/company/vinetka.bg",
-      icon: FaLinkedin,
-      target: "_blank",
-      rel: "noopener noreferrer",
-    },
-  ],
-};
+
 
 export default function Footer() {
+  const t = useTranslations('footer');
   const [year, setYear] = useState(new Date().getFullYear());
   const [email, setEmail] = useState("");
   const { subscribe, loading } = useSubscribe();
+
+  const navigation = {
+    services: [
+      { name: t('services.vignetteCheck'), href: "/proverka-na-vinetka" },
+      { name: t('services.prices'), href: "/tseni" },
+      { name: t('services.tollTax'), href: "/toll-taksa" },
+    ],
+    support: [
+      { name: t('support.blog'), href: "/blog" },
+      { name: t('support.contact'), href: "/contact" },
+      { name: t('support.faq'), href: "#" },
+    ],
+    company: [
+      { name: t('company.aboutUs'), href: "#" },
+    ],
+    legal: [
+      { name: t('legal.terms'), href: "/obshti-usloviya" },
+      { name: t('legal.privacy'), href: "/privacy-policy" },
+      { name: t('legal.cookies'), href: "/politika-za-biskvitki" }
+    ],
+    social: [
+      {
+        name: "Facebook",
+        href: "https://www.facebook.com/vinetka.bg",
+        icon: FaFacebook,
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/company/vinetka.bg",
+        icon: FaLinkedin,
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+    ],
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -119,7 +123,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm/6 font-semibold text-gray-900">
-                  Услуги
+                  {t('sections.services')}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.services.map((item) => (
@@ -136,7 +140,7 @@ export default function Footer() {
               </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-sm/6 font-semibold text-gray-900">
-                  Поддръжка
+                  {t('sections.support')}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.support.map((item) => (
@@ -155,7 +159,7 @@ export default function Footer() {
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
                 <h3 className="text-sm/6 font-semibold text-gray-900">
-                  Компания
+                  {t('sections.company')}
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.company.map((item) => (
@@ -171,7 +175,7 @@ export default function Footer() {
                 </ul>
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">Правни</h3>
+                <h3 className="text-sm/6 font-semibold text-gray-900">{t('sections.legal')}</h3>
                 <ul role="list" className="mt-6 space-y-4">
                   {navigation.legal.map((item) => (
                     <li key={item.name}>
@@ -191,11 +195,10 @@ export default function Footer() {
         <div className="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24 lg:flex lg:items-center lg:justify-between">
           <div>
             <h3 className="text-sm/6 font-semibold text-gray-900">
-              Абонирайте се за нашия бюлетин
+              {t('newsletter.title')}
             </h3>
             <p className="mt-2 text-sm/6 text-gray-600">
-              Получавайте ценни съвети, анализи и актуални новини директно във
-              вашата поща.
+              {t('newsletter.description')}
             </p>
           </div>
           {loading && (
@@ -210,14 +213,14 @@ export default function Footer() {
             }`}
           >
             <label htmlFor="email-address" className="sr-only">
-              Email address
+              {t('newsletter.emailLabel')}
             </label>
             <input
               id="email-address"
               name="email-address"
               type="email"
               required
-              placeholder="Въведете Вашия имейл"
+              placeholder={t('newsletter.emailPlaceholder')}
               autoComplete="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -228,7 +231,7 @@ export default function Footer() {
                 type="submit"
                 className="flex w-full items-center justify-center rounded-md bg-[#803487] hover:bg-gray-300 cursor-pointer hover:text-[#000000] px-3 py-2 text-sm font-semibold text-black shadow-xs focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Абонирайте се
+                {t('newsletter.subscribe')}
               </button>
             </div>
           </form>
@@ -249,7 +252,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="mt-8 text-sm/6 text-gray-600 md:order-1 md:mt-0">
-            &copy; {year} Vinetka.bg, Inc. All rights reserved.
+            &copy; {year} {t('copyright')}
           </p>
         </div>
       </div>

@@ -4,30 +4,34 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
+import { getTranslations } from 'next-intl/server';
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 export async function generateMetadata() {
+  const t = await getTranslations('contact');
+  
   return {
-    title: "Контакти - Vinetka.bg",
-    description:
-      "Свържете се с нас чрез нашата форма за контакт или намерете нашите данни за контакт.",
+    title: t('pageTitle'),
+    description: t('pageDescription'),
   };
 }
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const t = await getTranslations('contact');
+  
   const officeContacts = [
     {
-      type: "Корпоративен офис",
+      type: t('officeType'),
       contacts: [
         {
           icon: BuildingOffice2Icon,
-          label: "Адрес",
-          value: "гр. София, ул. „Майор Юрий Гагарин“ 30Б",
+          label: t('address'),
+          value: "гр. София, ул. \"Майор Юрий Гагарин\" 30Б",
           href: null,
         },
         {
           icon: EnvelopeIcon,
-          label: "Имейл",
+          label: t('email'),
           value: "hq@insurance.bg",
           href: "mailto:hq@insurance.bg",
         },
@@ -41,7 +45,7 @@ export default function ContactPage() {
       <div className="isolate bg-white px-6 py-4 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Контакти
+            {t('title')}
           </h2>
           {/* <p className="mt-2 text-lg leading-8 text-gray-600">
             Aute magna irure deserunt veniam aliqua magna enim voluptate.
@@ -58,7 +62,7 @@ export default function ContactPage() {
                 htmlFor="first-name"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Вашето име
+                {t('form.firstName')}
               </label>
               <div className="mt-2.5">
                 <input
@@ -75,7 +79,7 @@ export default function ContactPage() {
                 htmlFor="email"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Вашият имейл
+                {t('form.email')}
               </label>
               <div className="mt-2.5">
                 <input
@@ -92,7 +96,7 @@ export default function ContactPage() {
                 htmlFor="phone-number"
                 className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Вашият телефон
+                {t('form.phone')}
               </label>
               <div className="mt-2.5">
                 <input

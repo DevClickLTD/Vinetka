@@ -13,102 +13,107 @@ import {
   FaPiggyBank,
   FaPercentage
 } from "react-icons/fa";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: "Тримесечна винетка - 3 месеца | Цена и информация | Vinetka.bg",
-  description:
-    "Тримесечна винетка за 90 дни - икономичен избор за сезонни пътници. Спестяване до 15% спрямо месечни винетки. Идеална за летния сезон или зимните месеци.",
-  keywords: [
-    "тримесечна винетка",
-    "90 дни винетка",
-    "три месеца винетка",
-    "сезонна винетка",
-    "летна винетка",
-    "зимна винетка",
-    "икономична винетка",
-    "спестяване 15%"
-  ],
-  openGraph: {
-    title: "Тримесечна винетка - 3 месеца | Цена и информация | Vinetka.bg",
-    description: "Тримесечна винетка за 90 дни - икономичен избор за сезонни пътници. Спестяване до 15%.",
-    images: [
-      {
-        url: "/default.webp",
-        width: 1200,
-        height: 630,
-        alt: "Тримесечна винетка за 90 дни",
-      },
+export async function generateMetadata() {
+  const t = await getTranslations('prices.quarterly');
+  
+  return {
+    title: t('pageTitle'),
+    description: t('pageDescription'),
+    keywords: [
+      "тримесечна винетка",
+      "90 дни винетка",
+      "три месеца винетка",
+      "сезонна винетка",
+      "летна винетка",
+      "зимна винетка",
+      "икономична винетка",
+      "спестяване 15%"
     ],
-    locale: "bg_BG",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Тримесечна винетка - 3 месеца | Vinetka.bg",
-    description: "Тримесечна винетка за 90 дни - икономичен избор за сезонни пътници.",
-    images: ["/default.webp"],
-  },
-  alternates: {
-    canonical: "/tseni/trimesechna",
-  },
-};
+    openGraph: {
+      title: t('pageTitle'),
+      description: t('pageDescription'),
+      images: [
+        {
+          url: "/default.webp",
+          width: 1200,
+          height: 630,
+          alt: t('title'),
+        },
+      ],
+      locale: "bg_BG",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('pageTitle'),
+      description: t('pageDescription'),
+      images: ["/default.webp"],
+    },
+    alternates: {
+      canonical: "/tseni/trimesechna",
+    },
+  };
+}
 
-export default function TrimesechnaVignette() {
+export default async function TrimesechnaVignette() {
+  const t = await getTranslations('prices.quarterly');
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
-      title: "Валидна 90 дни",
-      description: "Точно 3 месеца от момента на активиране"
+      title: t('features.valid90'),
+      description: t('features.valid90Desc')
     },
     {
       icon: <FaPercentage className="w-6 h-6 text-purple-600" />,
-      title: "Спестяване 15%",
-      description: "Значителна икономия спрямо месечни винетки поотделно"
+      title: t('features.save15'),
+      description: t('features.save15Desc')
     },
     {
       icon: <FaSun className="w-6 h-6 text-purple-600" />,
-      title: "Идеална за сезони",
-      description: "Перфектна за летния сезон или зимните месеци"
+      title: t('features.idealSeasons'),
+      description: t('features.idealSeasonsDesc')
     },
     {
       icon: <FaPiggyBank className="w-6 h-6 text-purple-600" />,
-      title: "Без допълнителни покупки",
-      description: "Забравете за винетките за период от 90 дни"
+      title: t('features.noPurchases'),
+      description: t('features.noPurchasesDesc')
     }
   ];
 
   const useCases = [
-    "Летен туристически сезон",
-    "Зимни месеци за ски туризъм",
-    "Сезонна работа в друг град",
-    "Дълготрайни проекти и командировки",
-    "Семейни почивки през сезона",
-    "Редовни пътувания за 3 месеца",
-    "Студенти през семестъра",
-    "Сезонни жители на курорти"
+    t('useCases.summerSeason'),
+    t('useCases.winterSki'),
+    t('useCases.seasonalWork'),
+    t('useCases.longProjects'),
+    t('useCases.familyHolidays'),
+    t('useCases.regular3Months'),
+    t('useCases.studentsSemester'),
+    t('useCases.resortResidents')
   ];
 
   const benefits = [
-    "Осигурете си спокойствие за цял сезон",
-    "Спестяване до 15% от общата стойност",
-    "Идеална за интензивни пътувания",
-    "Покрива всички нужди без допълнителни покупки",
-    "Моментална активация при онлайн поръчка",
-    "Валидна точно 90 дни от активирането"
+    t('benefits.seasonPeace'),
+    t('benefits.save15Percent'),
+    t('benefits.intensiveTravel'),
+    t('benefits.coversAllNeeds'),
+    t('benefits.instantActivation'),
+    t('benefits.valid90Days')
   ];
 
   const seasonInfo = [
     {
       icon: <FaSun className="w-8 h-8 text-yellow-500" />,
-      title: "Летен сезон",
-      description: "Перфектна за летните месеци, когато пътуванията са най-интензивни",
-      months: "Юни - Август"
+      title: t('seasonInfo.summer.title'),
+      description: t('seasonInfo.summer.description'),
+      months: t('seasonInfo.summer.months')
     },
     {
       icon: <FaSnowflake className="w-8 h-8 text-blue-500" />,
-      title: "Зимен сезон",
-      description: "Идеална за зимните месеци за любителите на ски туризма",
-      months: "Декември - Февруари"
+      title: t('seasonInfo.winter.title'),
+      description: t('seasonInfo.winter.description'),
+      months: t('seasonInfo.winter.months')
     }
   ];
 
@@ -165,7 +170,7 @@ export default function TrimesechnaVignette() {
               <li>
                 <div className="flex items-center">
                   <span className="mx-2 text-gray-400">/</span>
-                  <span className="text-gray-900 font-medium">Тримесечна винетка</span>
+                  <span className="text-gray-900 font-medium">{t('title')}</span>
                 </div>
               </li>
             </ol>
@@ -183,19 +188,19 @@ export default function TrimesechnaVignette() {
               </div>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Тримесечна винетка
+              {t('title')}
             </h1>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Осигурете си спокойствие за цял сезон!
+              {t('subtitle')}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <div className="inline-flex items-center rounded-lg bg-purple-100 px-4 py-2">
                 <FaClock className="h-5 w-5 text-purple-600 mr-2" />
-                <span className="text-lg font-semibold text-purple-900">Валидна 90 дни</span>
+                <span className="text-lg font-semibold text-purple-900">{t('features.valid90')}</span>
               </div>
               <div className="inline-flex items-center rounded-lg bg-green-100 px-4 py-2">
                 <FaPercentage className="h-5 w-5 text-green-600 mr-2" />
-                <span className="text-lg font-semibold text-green-900">Спестяване 15%</span>
+                <span className="text-lg font-semibold text-green-900">{t('features.save15')}</span>
               </div>
               <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
                 <span className="text-2xl font-bold text-purple-900">54,00 лв.</span>
@@ -212,16 +217,11 @@ export default function TrimesechnaVignette() {
           <div className="mx-auto max-w-3xl">
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Тримесечната винетка е перфектна за тези, които искат да забравят за винетките за период от 90 дни. 
-                Идеална за летния сезон, когато пътуванията са най-интензивни, или за зимните месеци за любителите 
-                на ски туризма.
+                {t('description1')}
               </p>
               
               <p className="text-gray-700 leading-relaxed">
-                Тримесечната винетка покрива всички ваши нужди без необходимост от допълнителни покупки. 
-                Значителна икономия спрямо покупката на месечни винетки поотделно - спестявате до 15% от общата 
-                стойност при избор на тримесечен период. Активира се моментално при онлайн поръчка и е валидна 
-                точно 90 дни.
+                {t('description2')}
               </p>
             </div>
           </div>
@@ -233,10 +233,10 @@ export default function TrimesechnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Сезонно покритие
+              {t('seasonInfo.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Идеална за различните сезони в годината
+              {t('seasonInfo.subtitle')}
             </p>
           </div>
           
@@ -264,10 +264,10 @@ export default function TrimesechnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Защо да изберете тримесечната винетка?
+              {t('features.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Предимства и характеристики на 90-дневната винетка
+              {t('features.subtitle')}
             </p>
           </div>
           
@@ -302,7 +302,7 @@ export default function TrimesechnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-12">
-              Кога да използвате тримесечна винетка?
+              {t('useCases.title')}
             </h2>
             
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -322,7 +322,7 @@ export default function TrimesechnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-12">
-              Основни предимства
+              {t('benefits.title')}
             </h2>
             
             <div className="space-y-4">
@@ -342,26 +342,26 @@ export default function TrimesechnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">
-              Важна информация
+              {t('info.title')}
             </h2>
             
             <div className="bg-white rounded-lg p-8 shadow-sm">
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Активация</h3>
-                  <p className="text-gray-600">Моментална активация при онлайн поръчка</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.activationTitle')}</h3>
+                  <p className="text-gray-600">{t('info.activation')}</p>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Валидност</h3>
-                  <p className="text-gray-600">Точно 90 дни (3 месеца) от активирането</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.validityTitle')}</h3>
+                  <p className="text-gray-600">{t('info.validity')}</p>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Икономия</h3>
-                  <p className="text-gray-600">До 15% спестяване спрямо месечни винетки</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.savingsTitle')}</h3>
+                  <p className="text-gray-600">{t('info.savings')}</p>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Превозни средства</h3>
-                  <p className="text-gray-600">Леки автомобили до 3.5 тона</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.vehiclesTitle')}</h3>
+                  <p className="text-gray-600">{t('info.vehicles')}</p>
                 </div>
               </div>
             </div>
@@ -374,24 +374,24 @@ export default function TrimesechnaVignette() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Планирате сезонни пътувания?
+              {t('cta.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Купете тримесечна винетка сега и спестете до 15% за 90 дни безгрижно пътуване.
+              {t('cta.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/services"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                Купете тримесечна винетка
+                {t('cta.button')}
               </Link>
               <Link
                 href="/tseni"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors flex items-center"
               >
                 <FaArrowLeft className="mr-2 h-4 w-4" />
-                Всички цени
+                {t('cta.allPrices')}
               </Link>
             </div>
           </div>

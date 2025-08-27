@@ -8,47 +8,46 @@ import {
   SparklesIcon,
   HeartIcon,
 } from "@heroicons/react/24/outline";
-
-const ctaItems = [
-  {
-    id: 1,
-    name: "Домашно имущество",
-    href: "/services/domashno-imushtestvo", // Примерна връзка
-    icon: HomeIcon,
-    description:
-      "Застраховка домашно имущество - изцяло онлайн. Лесна процедура, оценка на имота и адекватни покрития срещу пожар, природни бедствия, земетресение и кражба. Допълнителни клаузи. Подходяща за апартаменти, къщи и ваканционни имоти.",
-    buttonText: "Виж повече",
-  },
-  {
-    id: 2,
-    name: "При пътуване в чужбина",
-    href: "/services/patuvane-chujbina", // Примерна връзка
-    icon: GlobeAltIcon,
-    description:
-      "Застраховка при пътуване в чужбина с осигурен асистанс - онлайн! Покрития за пътувания зад граница - лични, служебни или за спортни състезания. Допълнителни клаузи, вкл. спасителни разноски, загуба на багаж, отговорност, покритие за COVID-19.",
-    buttonText: "Застраховай онлайн",
-  },
-  {
-    id: 3,
-    name: "Планинска застраховка",
-    href: "/services/planinska-zastrahovka", // Примерна връзка
-    icon: SparklesIcon, // Заменено с SparklesIcon поради липса на MountainIcon
-    description:
-      "Застраховка с покритие срещу злополуки в планината - за ски, сноуборд, планинско колоездене, катерене, трекинг и други екстремни спортове в България. Сключване лесно и сигурно онлайн! Спокойствие при всяко ходене в планината.",
-    buttonText: "Застраховай онлайн",
-  },
-  {
-    id: 4,
-    name: "Здравна застраховка",
-    href: "/services/zdravna-zastrahovka", // Примерна връзка
-    icon: HeartIcon,
-    description:
-      "Здравна застраховка с фиксирани пакети с обезщетения при определени медицински случаи: операция, болничен престой (вкл.раждане), при фрактури. Лесно и бързо сключване онлайн без нужда от попълване на подробна здравна декларация.",
-    buttonText: "Застраховай онлайн",
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function CtasRow() {
+  const t = useTranslations('components.ctasRow');
+  
+  const ctaItems = [
+    {
+      id: 1,
+      name: t('cta1Title'),
+      href: "/services/domashno-imushtestvo",
+      icon: HomeIcon,
+      description: t('cta1Description'),
+      buttonText: t('cta1Button'),
+    },
+    {
+      id: 2,
+      name: t('cta2Title'),
+      href: "/services/patuvane-chujbina",
+      icon: GlobeAltIcon,
+      description: t('cta2Description'),
+      buttonText: t('cta2Button'),
+    },
+    {
+      id: 3,
+      name: t('cta3Title'),
+      href: "/services/planinska-zastrahovka",
+      icon: SparklesIcon,
+      description: t('cta3Description'),
+      buttonText: t('cta3Button'),
+    },
+    {
+      id: 4,
+      name: t('cta4Title'),
+      href: "/services/zdravna-zastrahovka",
+      icon: HeartIcon,
+      description: t('cta4Description'),
+      buttonText: t('cta4Button'),
+    },
+  ];
+
   return (
     <section className="bg-gray-50 py-12 sm:py-16">
       {/* <div className="mx-auto w-full px-6 lg:px-8 xl:w-4/5 2xl:w-4/5 max-w-screen-2xl 2xl:px-0"> */}

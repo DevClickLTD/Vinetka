@@ -1,13 +1,10 @@
 import { headers } from "next/headers";
-import Navigation from "../components/nav";
-import Footer from "../components/footer";
 import Script from "next/script";
 import ImagePreloader from "../components/ImagePreloader";
 import { CriticalCSS } from "./critical-css";
 import NextTopLoader from "nextjs-toploader";
 import "../styles/globals.css";
 import { Roboto } from "next/font/google";
-import DynamicCookieConsentBanner from "../components/DynamicCookieConsentBanner";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
@@ -83,10 +80,7 @@ export default function RootLayout({ children }) {
       <body className={roboto.className}>
         <NextTopLoader showSpinner={false} color="#803487" />
         <ImagePreloader />
-        <Navigation />
         <main>{children}</main>
-        <DynamicCookieConsentBanner />
-        <Footer />
         <Script
           id="structured-data"
           type="application/ld+json"

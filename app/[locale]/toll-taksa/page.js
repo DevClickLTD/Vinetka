@@ -2,83 +2,89 @@ import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: "Тол такса онлайн - Режим за тежкотоварни автомобили | Vinetka.bg",
-  description:
-    "Купете тол такса онлайн за тежкотоварни автомобили и автобуси в България. Бърз и лесен достъп до магистралите. Заплатете предварително и избегнете спирането на физическите пунктове.",
-  keywords: [
-    "тол такса",
-    "тол такса онлайн",
-    "тежкотоварни автомобили",
-    "автобуси",
-    "тол пунктове България",
-    "мост Видин",
-    "мост Русе",
-    "тунел Топли дол",
-    "платени пътища България"
-  ],
-  openGraph: {
-    title: "Тол такса онлайн - Режим за тежкотоварни автомобили | Vinetka.bg",
-    description: "Купете тол такса онлайн за тежкотоварни автомобили и автобуси в България. Бърз и лесен достъп до магистралите.",
-    images: [
-      {
-        url: "/default.webp",
-        width: 1200,
-        height: 630,
-        alt: "Тол такса за тежкотоварни автомобили",
-      },
+export async function generateMetadata() {
+  const t = await getTranslations('tollTax');
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: [
+      "тол такса",
+      "тол такса онлайн",
+      "тежкотоварни автомобили",
+      "автобуси",
+      "тол пунктове България",
+      "мост Видин",
+      "мост Русе",
+      "тунел Топли дол",
+      "платени пътища България"
     ],
-    locale: "bg_BG",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Тол такса онлайн - Режим за тежкотоварни автомобили",
-    description: "Купете тол такса онлайн за тежкотоварни автомобили и автобуси в България.",
-    images: ["/default.webp"],
-  },
-  alternates: {
-    canonical: "/toll-taksa",
-  },
-};
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      images: [
+        {
+          url: "/default.webp",
+          width: 1200,
+          height: 630,
+          alt: t('pageTitle'),
+        },
+      ],
+      locale: "bg_BG",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('title'),
+      description: t('description'),
+      images: ["/default.webp"],
+    },
+    alternates: {
+      canonical: "/toll-taksa",
+    },
+  };
+}
 
-export default function TolTaksa() {
+export default async function TolTaksa() {
+  const t = await getTranslations('tollTax');
+  
   const tollPoints = [
-    { name: "Мост при Видин", description: "Дунав мост 1" },
-    { name: "Мост при Русе", description: "Дунав мост 2" },
-    { name: "Тунел Топли дол", description: "Автомагистрала А1" },
-    { name: "Други обекти", description: "Специфични пътни участъци" }
+    { name: t('tollPoints.vidinBridge'), description: t('tollPoints.vidinBridgeDesc') },
+    { name: t('tollPoints.ruseBridge'), description: t('tollPoints.ruseBridgeDesc') },
+    { name: t('tollPoints.topliDolTunnel'), description: t('tollPoints.topliDolTunnelDesc') },
+    { name: t('tollPoints.otherObjects'), description: t('tollPoints.otherObjectsDesc') }
   ];
 
   const benefits = [
     {
       icon: <FaClock className="w-8 h-8 text-purple-600" />,
-      title: "Спестете време",
-      description: "Избегнете спирането на физическите пунктове за събиране"
+      title: t('benefits.saveTime'),
+      description: t('benefits.saveTimeDesc')
     },
     {
       icon: <FaCreditCard className="w-8 h-8 text-purple-600" />,
-      title: "Онлайн плащане",
-      description: "Заплатете предварително с карта от удобството на дома си"
+      title: t('benefits.onlinePayment'),
+      description: t('benefits.onlinePaymentDesc')
     },
     {
       icon: <FaShieldAlt className="w-8 h-8 text-purple-600" />,
-      title: "Избегнете глоби",
-      description: "Осигурете си валидна тол такса и избегнете санкции"
+      title: t('benefits.avoidFines'),
+      description: t('benefits.avoidFinesDesc')
     },
     {
       icon: <FaRoute className="w-8 h-8 text-purple-600" />,
-      title: "Планирайте маршрута",
-      description: "Получете детайлна информация за всички тол пунктове"
+      title: t('benefits.planRoute'),
+      description: t('benefits.planRouteDesc')
     }
   ];
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Тол такса онлайн за тежкотоварни автомобили",
-    "description": "Онлайн услуга за закупуване на тол такси за тежкотоварни превозни средства и автобуси в България",
+    "name": t('heroTitle'),
+    "description": t('description'),
     "provider": {
       "@type": "Organization",
       "name": "Vinetka.bg",
@@ -88,10 +94,10 @@ export default function TolTaksa() {
       "@type": "Country",
       "name": "България"
     },
-    "serviceType": "Тол такса",
+    "serviceType": t('heroTitle'),
     "audience": {
       "@type": "Audience",
-      "audienceType": "Собственици на тежкотоварни автомобили и автобуси"
+      "audienceType": t('targetAudience.title')
     }
   };
 
@@ -110,23 +116,23 @@ export default function TolTaksa() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Тол такса онлайн
+              {t('heroTitle')}
             </h1>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Режим за тежкотоварни автомобили и автобуси
+              {t('heroSubtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="#info"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                Научете повече
+                {t('learnMore')}
               </Link>
               <Link
                 href="#toll-points"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
               >
-                Тол пунктове <span aria-hidden="true">→</span>
+                {t('tollPointsNav')} <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
@@ -139,28 +145,24 @@ export default function TolTaksa() {
           <div className="mx-auto max-w-3xl">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Какво е тол таксата?
+                {t('whatIsTollTax.title')}
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                Специален режим на таксуване за тежкотоварни превозни средства
+                {t('whatIsTollTax.subtitle')}
               </p>
             </div>
 
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed">
-                За разлика от електронните винетки, предназначени за леки автомобили, тол таксите в България 
-                се отнасят за тежкотоварни превозни средства и автобуси.
+                {t('whatIsTollTax.description1')}
               </p>
               
               <p className="text-gray-700 leading-relaxed">
-                Този режим е базиран на изминато разстояние и категория на превозното средство, осигурявайки 
-                справедливо таксуване за по-голямото натоварване на пътната инфраструктура.
+                {t('whatIsTollTax.description2')}
               </p>
 
               <p className="text-gray-700 leading-relaxed">
-                Разберете системата за тол таксуване, за да планирате маршрутите си и да управлявате 
-                плащанията ефективно. Тол таксите се събират за преминаване през определени мостове, 
-                тунели и специфични пътни участъци извън основната винетна система.
+                {t('whatIsTollTax.description3')}
               </p>
             </div>
           </div>
@@ -172,10 +174,10 @@ export default function TolTaksa() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Защо да изберете онлайн плащане?
+              {t('benefits.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Предимства на предварителното заплащане на тол таксите
+              {t('benefits.subtitle')}
             </p>
           </div>
           
@@ -204,10 +206,10 @@ export default function TolTaksa() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Основни тол пунктове в България
+              {t('tollPoints.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Места където се събират тол такси
+              {t('tollPoints.subtitle')}
             </p>
           </div>
           
@@ -241,17 +243,13 @@ export default function TolTaksa() {
           <div className="mx-auto max-w-3xl text-center">
             <FaTruck className="mx-auto h-16 w-16 text-purple-600" />
             <h2 className="mt-8 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              За кого е предназначена услугата?
+              {t('targetAudience.title')}
             </h2>
             <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-              Независимо дали сте собственик на транспортна фирма или шофьор на тежкотоварен автомобил, 
-              нашата цел е да улесним Вашата работа и да осигурим безпроблемно преминаване по платените 
-              пътни участъци.
+              {t('targetAudience.description1')}
             </p>
             <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-              Нашата платформа ви предлага възможност да заплатите тол таксите предварително онлайн, 
-              като избегнете спирането на физическите пунктове за събиране. Това е особено удобно при 
-              интензивен трафик или при пътуване в неработно време.
+              {t('targetAudience.description2')}
             </p>
           </div>
         </div>
@@ -262,23 +260,23 @@ export default function TolTaksa() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Спести време – избегни глоби!
+              {t('cta.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Предлагаме детайлна информация за всички тол пунктове и актуални цени.
+              {t('cta.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/contact"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                Свържете се с нас
+                {t('cta.contactUs')}
               </Link>
               <Link
                 href="/services"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
               >
-                Всички услуги <span aria-hidden="true">→</span>
+                {t('cta.allServices')} <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>

@@ -1,4 +1,4 @@
-import { getPostBySlug } from "../../../services/posts";
+import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
 
 // Добавяне на ISR ревалидиране на всеки час

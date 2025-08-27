@@ -1,11 +1,9 @@
 "use client";
 
 import { useState } from "react";
-// import { Dialog, DialogPanel } from "@headlessui/react"; // Не се използва
-// import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"; // Не се използва
 import Link from "next/link";
-// import LazyImageObserver from "./LazyImageObserver"; // Не се използва в активния код
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 // const navigation = [ // Не се използва
 //   { name: "Product", href: "#" },
@@ -15,8 +13,7 @@ import Image from "next/image";
 // ];
 
 export default function HeroSection() {
-  // Преименувано от Example на HeroSection
-  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false); // Не се използва
+  const t = useTranslations('components.hero');
 
   return (
     <div className="bg-gray-800">
@@ -29,18 +26,18 @@ export default function HeroSection() {
           <div className="max-w-2xl mx-auto lg:max-w-none lg:mx-0 lg:flex lg:flex-row lg:items-start lg:gap-x-16">
             <div className="lg:w-1/2 lg:flex-shrink-0">
               <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
-                Информация за винетка онлайн
+                {t('title')}
               </h1>
               <div className="mt-6">
                 <p className="text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-                  Научете повече за онлайн винетка лесно и бързо на нашия сайт.
+                  {t('subtitle')}
                 </p>
               </div>
             </div>
             <div className="mt-10 lg:mt-0 lg:w-1/2 lg:flex-shrink-0">
               <Image
                 src="/купи-винетка.jpg"
-                alt="Онлайн винетки - лесно и бързо закупуване на винетка за България"
+                alt={t('title')}
                 width={608}
                 height={506}
                 className="aspect-[6/5] w-full rounded-2xl object-cover"

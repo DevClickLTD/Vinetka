@@ -1,0 +1,736 @@
+{
+  "meta": {
+    "title": "Online Vignette - Electronic Vignette Information",
+    "description": "Online Vignette - Electronic Vignette Information",
+    "titleTemplate": "%s | Online Vignette - Electronic Vignette Information"
+  },
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "prices": "Prices",
+    "blog": "Blog",
+    "contact": "Contact",
+    "vignetteChecker": "Vignette Check",
+    "tollTax": "Toll Tax"
+  },
+  "footer": {
+    "sections": {
+      "services": "Services",
+      "support": "Support",
+      "company": "Company",
+      "legal": "Legal"
+    },
+    "services": {
+      "vignetteCheck": "Vignette Check",
+      "prices": "Prices",
+      "tollTax": "Toll Tax"
+    },
+    "support": {
+      "blog": "Blog",
+      "contact": "Contact",
+      "faq": "Frequently Asked Questions"
+    },
+    "company": {
+      "aboutUs": "About Us"
+    },
+    "legal": {
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy"
+    },
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "description": "Get valuable tips, analysis and current news directly in your inbox.",
+      "emailLabel": "Email address",
+      "emailPlaceholder": "Enter your email",
+      "subscribe": "Subscribe"
+    },
+    "copyright": "Vinetka.bg, Inc. All rights reserved."
+  },
+  "home": {
+    "hero": {
+      "title": "Online Vignettes",
+      "subtitle": "Electronic vignettes for light vehicles up to 3.5 t",
+      "heroTitle": "Online Vignette Information",
+      "heroSubtitle": "Learn more about online vignettes easily and quickly on our website."
+    },
+    "loading": "Loading services...",
+    "vignetteSection": {
+      "title": "Online Vignettes",
+      "subtitle": "Electronic vignettes for light vehicles up to 3.5 t"
+    },
+    "expandableInfoRow": {
+      "title": "Vignette for Bulgaria - Everything You Need to Know",
+      "less": "Less",
+      "more": "See More",
+      "whatType": "What type of vignette to choose?",
+      "howToBuy": "How to buy a vignette?",
+      "check": "Vignette Check",
+      "description": "If you are planning to travel with a car in Bulgaria, you must purchase a vignette for Bulgaria. This is an electronic toll for using the national road network, which is valid for light and heavy vehicles. Without a valid vignette, you risk a fine, so it is important to inform yourself in advance.",
+      "whatTypeDescription": "There are several types of vignettes – daily, weekend, weekly, monthly, quarterly and annual. The most common type for tourists is the weekend vignette, while for frequent travelers it is the annual vignette. The electronic system makes the purchase and check easier, as it can be purchased online or at a toll booth.",
+      "howToBuyDescription": "You can easily purchase an electronic vignette for Bulgaria through the official website http://bgtoll.bg or through mobile applications. You only need to enter the registration number of the vehicle, the country of registration and select the validity period.",
+      "checkDescription": "The validity check is done through cameras and mobile teams. You can check the status of your vignette online. Make sure the entered data is correct, as the system does not allow corrections after activation."
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "pageTitle": "Contact - Vinetka.bg",
+    "pageDescription": "Contact us through our contact form or find our contact information.",
+    "officeType": "Corporate Office",
+    "address": "Address",
+    "email": "Email",
+    "phone": "Phone",
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send Message",
+      "agree": "I agree with",
+      "privacyPolicy": "privacy policy"
+    }
+  },
+  "prices": {
+    "title": "Electronic Vignette Prices - Choose the Most Suitable",
+    "description": "Discover the best prices for all types of electronic vignettes in Bulgaria! Competitive prices for weekend, weekly, monthly, quarterly and annual vignettes. No hidden fees.",
+    "pageTitle": "Vignette Prices",
+    "pageSubtitle": "Choose the most suitable vignette type for your needs",
+    "weekly": "Weekly",
+    "monthly": "Monthly",
+    "quarterly": "Quarterly", 
+    "annual": "Annual",
+    "breadcrumb": {
+      "home": "Home",
+      "prices": "Prices"
+    },
+    "weekend": "Weekend",
+    "weekendTitle": "Weekend Vignette Price",
+    "weeklyTitle": "Weekly Vignette Price",
+    "monthlyTitle": "Monthly Vignette Price",
+    "quarterlyTitle": "Quarterly Vignette Price",
+    "annualTitle": "Annual Vignette Price",
+    "features": {
+      "instantIssue": "Instant Issue",
+      "securePayment": "Secure Payment",
+      "customerSupport": "Customer Support",
+      "mobileOptimized": "Mobile Optimized",
+      "noHiddenFees": "No Hidden Fees",
+      "fastDelivery": "Fast Delivery"
+    },
+    "buyNow": "Buy Now",
+    "validFor": "Valid for",
+    "days": "days",
+    "hero": {
+      "title": "Electronic Vignette Prices",
+      "subtitle": "Choose the most suitable option for your needs",
+      "viewPrices": "View Prices",
+      "benefits": "Benefits"
+    },
+    "intro": {
+      "title": "Competitive prices for all types of vignettes",
+      "description1": "At vinetka.bg we offer competitive prices for all types of vignettes. Our price list is always current and synchronized with the official tariffs of NA \"Avtomaginstrali\" EAD.",
+      "description2": "We offer various vignette options that cover all your needs - from short trips to full annual coverage. Every vignette is valid for all paid highways and expressways in Bulgaria."
+    },
+    "benefits": {
+      "competitive": {
+        "title": "Competitive Prices",
+        "description": "Best prices on the market synchronized with official tariffs"
+      },
+      "noHiddenFees": {
+        "title": "No Hidden Fees",
+        "description": "All prices include taxes and commissions - no additional costs"
+      },
+      "vatIncluded": {
+        "title": "VAT Included",
+        "description": "All prices include VAT and are valid for light vehicles up to 3.5 tons"
+      },
+      "instantActivation": {
+        "title": "Instant Activation",
+        "description": "Vignette is activated immediately after payment without waiting"
+      }
+    },
+    "weekend": {
+      "title": "Weekend Vignette - 2 days | Price and Information | Vinetka.bg",
+      "description": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
+      "mainTitle": "Weekend Vignette",
+      "subtitle": "Perfect for short escapes from everyday life!",
+      "duration": "2 days",
+      "description1": "The weekend vignette is specially created for two-day trips and covers the needs for short holidays without unnecessary expenses. Valid for a period of 48 hours from the moment of activation, which makes it ideal for Friday to Sunday trips or any other two-day period.",
+      "description2": "The weekend vignette offers the best value for money for short trips. Ideal for spontaneous decisions for short travel and provides complete freedom of movement on all toll highways in Bulgaria.",
+      "feature1": "Valid for 48 hours",
+      "feature2": "Ideal for spontaneous travels",
+      "feature3": "Best value for short trips",
+      "feature4": "Friday to Sunday",
+      "highlight": "Short Getaways",
+      "pageTitle": "Weekend Vignette - 2 days | Price and Information",
+      "pageDescription": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
+      "price": "10.00 BGN",
+      "priceEur": "5.11 €",
+      "perfectFor": "Perfect for short trips and spontaneous travels",
+      "validFrom": "Valid for 48 hours from activation",
+      "valid48Hours": "Valid 2 days (48 hours)",
+      "features": {
+        "valid48": "Valid 48 hours",
+        "valid48Desc": "The vignette is active for exactly 48 hours from the moment of purchase",
+        "idealWeekends": "Ideal for weekends",
+        "idealWeekendsDesc": "Specially created for two-day trips and short holidays",
+        "spontaneous": "Spontaneous decisions",
+        "spontaneousDesc": "Perfect for unexpected decisions for short travel",
+        "allHighways": "All highways",
+        "allHighwaysDesc": "Valid for all toll highways in Bulgaria",
+        "title": "Why choose the weekend vignette?",
+        "subtitle": "Advantages and characteristics of the 2-day vignette"
+      },
+      "useCases": {
+        "title": "When to use a weekend vignette?",
+        "fridayToSunday": "Travel from Friday to Sunday",
+        "shortHolidays": "Short holidays outside the city",
+        "twoDayTrips": "Two-day excursions",
+        "visitFriends": "Visiting friends and family",
+        "businessTrips2Days": "Business trips up to 2 days",
+        "spontaneousTrips": "Spontaneous trips to the sea or mountains"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The vignette is activated instantly after payment",
+        "validityTitle": "Validity",
+        "validity": "Exactly 48 hours from the moment of activation",
+        "coverageTitle": "Coverage",
+        "coverage": "All toll highways in Bulgaria",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Ready for a short trip?",
+        "subtitle": "Buy a weekend vignette now and hit the road in seconds.",
+        "button": "Buy Weekend Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "weekly": {
+      "title": "Weekly Vignette",
+      "subtitle": "The ideal solution for short vacations and business trips!",
+      "duration": "7 days",
+      "description": "Ideal for short trips",
+      "description1": "The weekly vignette is valid for a period of 7 consecutive days and covers all your needs for short-term travel around Bulgaria. The weekly vignette is activated at the moment of purchase and is valid for exactly 168 hours (7 days) from the moment of activation.",
+      "description2": "It is perfect for tourists who come for a long weekend, or for business trips lasting up to one week. We recommend the weekly vignette for everyone who plans to travel by car to the sea, mountains or to visit different cities in the country within one week.",
+      "feature1": "Valid for exactly 168 hours",
+      "feature2": "Perfect for tourists",
+      "feature3": "Suitable for business trips",
+      "feature4": "Covers long weekend",
+      "highlight": "Popular Choice",
+      "pageTitle": "Weekly Vignette - 7 days | Price and Information",
+      "pageDescription": "Weekly vignette for 7 days - the ideal solution for short vacations and business trips. Valid for 168 hours (7 days) from activation. Perfect for tourists and business travel.",
+      "mainTitle": "Weekly Vignette",
+      "price": "15.00 BGN",
+      "priceEur": "7.67 €",
+      "perfectFor": "The ideal solution for short vacations and business trips",
+      "validFrom": "Valid for 168 hours (7 days) from activation",
+      "features": {
+        "valid168": "Valid 168 hours",
+        "valid168Desc": "Exactly 7 consecutive days from the moment of activation",
+        "perfectForTourists": "Perfect for tourists",
+        "perfectForTouristsDesc": "Ideal for visitors who come for a long weekend",
+        "businessTravel": "Business travel",
+        "businessTravelDesc": "Suitable for business trips lasting up to one week",
+        "allDestinations": "All destinations",
+        "allDestinationsDesc": "Covers travel to the sea, mountains or different cities",
+        "title": "Why choose the weekly vignette?",
+        "subtitle": "Advantages and characteristics of the 7-day vignette"
+      },
+      "useCases": {
+        "title": "When to use a weekly vignette?",
+        "longWeekendTourists": "Tourists for long weekend",
+        "businessTrips7Days": "Business trips up to 7 days",
+        "seaTravelWeek": "Travel to the sea for one week",
+        "mountainVacations": "Mountain vacations",
+        "cityVisits": "Visiting different cities in the country",
+        "familyHolidays": "Family holidays up to a week",
+        "culturalTours": "Cultural tours around Bulgaria",
+        "festivalsEvents": "Festivals and events"
+      },
+      "benefits": {
+        "title": "Main benefits",
+        "instantActivation": "Activated at the moment of purchase",
+        "coversAllNeeds": "Covers all needs for short-term travel",
+        "popularChoice": "Most popular choice for tourists",
+        "excellentValue": "Excellent value for money",
+        "noWorries7Days": "No worries for 7 full days"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The vignette is activated at the moment of purchase",
+        "validityTitle": "Validity",
+        "validity": "Exactly 7 consecutive days (168 hours)",
+        "coverageTitle": "Coverage",
+        "coverage": "All toll highways and expressways",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Planning a weekly trip?",
+        "subtitle": "Buy a weekly vignette now and enjoy 7 days of worry-free travel.",
+        "button": "Buy Weekly Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "monthly": {
+      "title": "Monthly Vignette",
+      "subtitle": "The most popular choice for regular travel!",
+      "duration": "30 days",
+      "description": "Suitable for longer trips",
+      "description1": "The most popular choice for regular work travel, for people with business trips or those who simply love to travel around the country. It offers an excellent balance between price and flexibility.",
+      "description2": "The monthly vignette provides complete freedom of movement on all toll roads in Bulgaria for a period of 30 days. It activates immediately after payment and is valid for exactly 30 days from the moment of activation.",
+      "feature1": "Valid for exactly 30 days",
+      "feature2": "Excellent price-flexibility balance",
+      "feature3": "For regular travels",
+      "feature4": "Complete freedom of movement",
+      "highlight": "Most Popular",
+      "pageTitle": "Monthly Vignette - 30 days | Price and Information",
+      "pageDescription": "Monthly vignette for 30 days - the most popular choice among drivers. Excellent value for money for regular travel. Valid for 720 hours (30 days) from activation.",
+      "mainTitle": "Monthly Vignette",
+      "price": "30.00 BGN",
+      "priceEur": "15.34 €",
+      "perfectFor": "The most popular choice among drivers",
+      "validFrom": "Valid for 720 hours (30 days) from activation",
+      "features": {
+        "valid30": "Valid 30 days",
+        "valid30Desc": "Exactly 30 days from the moment of activation",
+        "excellentBalance": "Excellent balance",
+        "excellentBalanceDesc": "Perfect ratio between price and flexibility",
+        "forWorking": "For working people",
+        "forWorkingDesc": "Ideal for people with regular business trips",
+        "fullFreedom": "Complete freedom",
+        "fullFreedomDesc": "Complete freedom of movement on all toll roads",
+        "mostPopular": "Most popular",
+        "title": "Why choose the monthly vignette?",
+        "subtitle": "Advantages and characteristics of the 30-day vignette"
+      },
+      "useCases": {
+        "title": "When to use a monthly vignette?",
+        "regularWork": "Regular work travel",
+        "businessTrips": "People with business trips",
+        "countryTravelers": "Travelers around the country",
+        "familyTrips": "Family trips during the month",
+        "students": "Students with frequent travel needs",
+        "businessMeetings": "Business meetings and clients",
+        "tourists": "Tourists for long vacations",
+        "secondHome": "People with a second home"
+      },
+      "benefits": {
+        "title": "Main benefits",
+        "mostPopularChoice": "Most popular choice among customers",
+        "excellentValue": "Excellent value for money",
+        "idealForRegular": "Ideal for regular travel",
+        "fullCoverage": "Full coverage for a whole month",
+        "instantActivation": "Instant activation upon payment",
+        "noAdditionalPurchases": "No need for additional purchases"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The vignette is activated immediately after payment",
+        "validityTitle": "Validity",
+        "validity": "Exactly 30 days from the moment of activation",
+        "coverageTitle": "Coverage",
+        "coverage": "All toll roads in Bulgaria",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Need monthly coverage?",
+        "subtitle": "Buy a monthly vignette now and enjoy complete freedom for 30 days.",
+        "button": "Buy Monthly Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "quarterly": {
+      "title": "Quarterly Vignette",
+      "subtitle": "Secure peace of mind for a whole season!",
+      "duration": "3 months",
+      "description": "Economical choice for seasonal travelers",
+      "description1": "The quarterly vignette is perfect for those who want to forget about vignettes for a period of 90 days. Ideal for the summer season when travel is most intensive, or for the winter months for ski tourism enthusiasts.",
+      "description2": "The quarterly vignette covers all your needs without the necessity of additional purchases. Significant savings compared to buying monthly vignettes separately - you save up to 15% of the total cost when choosing a quarterly period. Activates instantly with online order and is valid for exactly 90 days.",
+      "feature1": "Valid for exactly 90 days",
+      "feature2": "Save up to 15%",
+      "feature3": "Ideal for seasons",
+      "feature4": "No additional purchases",
+      "highlight": "Save 15%",
+      "pageTitle": "Quarterly Vignette - 90 days | Price and Information",
+      "pageDescription": "Quarterly vignette for 90 days - excellent value for frequent travelers. Ideal for seasonal workers and regular business trips. Valid for 2160 hours (90 days).",
+      "mainTitle": "Quarterly Vignette",
+      "duration90": "90 days",
+      "price": "60.00 BGN",
+      "priceEur": "30.68 €",
+      "perfectFor": "Excellent value for frequent travelers",
+      "validFrom": "Valid for 2160 hours (90 days) from activation",
+      "features": {
+        "valid90": "Valid 90 days",
+        "valid90Desc": "Exactly 3 months from the moment of activation",
+        "save15": "Save 15%",
+        "save15Desc": "Significant savings compared to monthly vignettes separately",
+        "idealSeasons": "Ideal for seasons",
+        "idealSeasonsDesc": "Perfect for summer season or winter months",
+        "noPurchases": "No additional purchases",
+        "noPurchasesDesc": "Forget about vignettes for a period of 90 days",
+        "title": "Why choose the quarterly vignette?",
+        "subtitle": "Advantages and characteristics of the 90-day vignette"
+      },
+      "seasonInfo": {
+        "title": "Seasonal Coverage",
+        "subtitle": "Ideal for different seasons of the year",
+        "summer": {
+          "title": "Summer Season",
+          "description": "Perfect for summer months when travel is most intensive",
+          "months": "June - August"
+        },
+        "winter": {
+          "title": "Winter Season",
+          "description": "Ideal for winter months for ski tourism enthusiasts",
+          "months": "December - February"
+        }
+      },
+      "useCases": {
+        "title": "When to use a quarterly vignette?",
+        "summerSeason": "Summer tourist season",
+        "winterSki": "Winter months for ski tourism",
+        "seasonalWork": "Seasonal work in another city",
+        "longProjects": "Long-term projects and business trips",
+        "familyHolidays": "Family holidays during the season",
+        "regular3Months": "Regular travel for 3 months",
+        "studentsSemester": "Students during semester",
+        "resortResidents": "Seasonal resort residents"
+      },
+      "benefits": {
+        "title": "Main Benefits",
+        "seasonPeace": "Secure peace of mind for a whole season",
+        "save15Percent": "Save up to 15% of the total cost",
+        "intensiveTravel": "Ideal for intensive travel",
+        "coversAllNeeds": "Covers all needs without additional purchases",
+        "instantActivation": "Instant activation with online order",
+        "valid90Days": "Valid for exactly 90 days from activation"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "Instant activation with online order",
+        "validityTitle": "Validity",
+        "validity": "Exactly 90 days (3 months) from activation",
+        "savingsTitle": "Savings",
+        "savings": "Up to 15% savings compared to monthly vignettes",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Planning seasonal travel?",
+        "subtitle": "Buy a quarterly vignette now and save up to 15% for 90 days of worry-free travel.",
+        "button": "Buy Quarterly Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "annual": {
+      "title": "Annual Vignette",
+      "subtitle": "The most advantageous solution for everyone who travels regularly!",
+      "duration": "12 months",
+      "description": "Most advantageous for regular drivers",
+      "description1": "The annual vignette is mandatory for all car owners who regularly use the paid roads in Bulgaria. It offers the best value for money and eliminates the need for frequent purchases.",
+      "description2": "With an annual vignette you save up to 40% compared to buying monthly vignettes throughout the year. Especially advantageous for everyone who doesn't want to worry about their vignette status. The annual vignette is activated instantly and is valid for exactly 365 days from the date of activation.",
+      "feature1": "Valid for exactly 365 days",
+      "feature2": "Save up to 40%",
+      "feature3": "Maximum convenience",
+      "feature4": "No worries about status",
+      "highlight": "Save 40%",
+      "pageTitle": "Annual Vignette - 365 days | Price and Information | Vinetka.bg",
+      "pageDescription": "Annual vignette for 365 days - the most advantageous solution for everyone who travels regularly. Save up to 40% compared to monthly vignettes. Maximum convenience without worries.",
+      "mainTitle": "Annual Vignette",
+      "duration365": "365 days",
+      "price": "97.00 BGN",
+      "priceEur": "49.60 €",
+      "perfectFor": "The most economical solution for regular travelers",
+      "validFrom": "Valid until January 31st of the following year",
+      "features": {
+        "valid365": "Valid 365 days",
+        "valid365Desc": "Exactly one full year from the moment of activation",
+        "save40": "Save 40%",
+        "bestValue": "Best Value",
+        "save40Desc": "Maximum savings compared to purchasing monthly vignettes",
+        "maxConvenience": "Maximum convenience",
+        "maxConvenienceDesc": "The most convenient solution for a full 365 days",
+        "noWorries": "No worries",
+        "noWorriesDesc": "Forget about vignette status for an entire year",
+        "title": "Why choose the annual vignette?",
+        "subtitle": "Advantages and characteristics of the 365-day vignette"
+      },
+      "useCases": {
+        "title": "Who is the annual vignette suitable for?",
+        "regularUsers": "Car owners with regular use",
+        "dailyCommuters": "People who travel daily for work",
+        "businessOwners": "Business owners with frequent trips",
+        "activeFamilies": "Families with an active lifestyle",
+        "salesReps": "Sales representatives",
+        "multiCityResidents": "People with homes in different cities",
+        "professionalDrivers": "Professional drivers",
+        "noWorryUsers": "Anyone who doesn't want worries"
+      },
+      "benefits": {
+        "title": "Main Benefits",
+        "bestSolution": "The most advantageous solution for the whole year",
+        "save40Percent": "Save up to 40% compared to monthly vignettes",
+        "eliminateFrequentPurchases": "Eliminates the need for frequent purchases",
+        "instantActivation": "Instant activation upon order",
+        "valid365Days": "Valid for exactly 365 days from activation",
+        "necessaryForRegular": "Essential for regular users",
+        "bestValueForMoney": "Best value for money",
+        "fullPeaceOfMind": "Complete peace of mind for the whole year"
+      },
+      "comparison": {
+        "title": "Cost Comparison",
+        "subtitle": "See how much you can save with an annual vignette",
+        "recommended": "Recommended",
+        "cost": "Cost",
+        "savings": "Savings",
+        "convenience": "Convenience",
+        "monthly": "Monthly vignettes",
+        "monthlyCost": "12x monthly price",
+        "monthlyConvenience": "Frequent replacement",
+        "annual": "Annual vignette",
+        "annualCost": "Fixed price",
+        "annualSavings": "Up to 40%",
+        "annualConvenience": "Once a year"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The annual vignette is activated instantly",
+        "validityTitle": "Validity",
+        "validity": "Exactly 365 days from the date of activation",
+        "savingsTitle": "Savings",
+        "savings": "Up to 40% savings compared to monthly vignettes",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Ready for a whole year of worry-free travel?",
+        "subtitle": "Buy an annual vignette now and save up to 40% for 365 days of complete freedom.",
+        "button": "Buy Annual Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "backToPrices": "Back to Prices",
+    "chooseVignette": "Choose Your Vignette",
+    "orderNow": "Order Now",
+    "benefitsSection": {
+      "title": "Why Choose Us?",
+      "subtitle": "Advantages of our pricing policy"
+    },
+    "pricingSection": {
+      "title": "Choose Your Vignette",
+      "subtitle": "Compare different options and choose the most suitable for your needs",
+      "validFor": "Valid for",
+      "learnMore": "Learn More"
+    },
+    "infoSection": {
+      "title": "Complete and Up-to-Date Information",
+      "description1": "At vinetka.bg you will find complete and up-to-date information about the prices of all types of electronic vignettes in Bulgaria. Our prices include all taxes and commissions - no hidden costs or additional fees when paying.",
+      "description2": "Compare different options and choose the most suitable for your needs. All prices include VAT and are valid for light vehicles up to 3.5 tons.",
+      "paymentText": "Card payment - fast and secure"
+    },
+    "ctaSection": {
+      "title": "Ready to Travel?",
+      "subtitle": "Choose the right vignette and pay online in seconds.",
+      "buyButton": "Buy Vignette",
+      "questionsText": "Have Questions?"
+    }
+  },
+  "tollTax": {
+    "title": "Online Toll Tax - System for Heavy Vehicles",
+    "description": "Buy toll tax online for heavy vehicles and buses in Bulgaria. Fast and easy access to highways. Pay in advance and avoid stopping at physical toll points.",
+    "pageTitle": "Toll Tax for Heavy Vehicles",
+    "pageSubtitle": "Fast and convenient way to pay road tolls",
+    "heroTitle": "Online Toll Tax",
+    "heroSubtitle": "Mode for heavy vehicles and buses",
+    "learnMore": "Learn More",
+    "tollPointsNav": "Toll Points",
+    "whatIsTollTax": {
+      "title": "What is toll tax?",
+      "subtitle": "Special charging regime for heavy vehicles",
+      "description1": "Unlike electronic vignettes intended for light vehicles, toll taxes in Bulgaria apply to heavy vehicles and buses.",
+      "description2": "This regime is based on distance traveled and vehicle category, ensuring fair charging for the greater load on road infrastructure.",
+      "description3": "Understand the toll charging system to plan your routes and manage payments effectively. Toll taxes are collected for passage through certain bridges, tunnels and specific road sections outside the main vignette system."
+    },
+    "benefits": {
+      "title": "Why choose online payment?",
+      "subtitle": "Benefits of prepaying toll taxes",
+      "saveTime": "Save time",
+      "saveTimeDesc": "Avoid stopping at physical collection points",
+      "onlinePayment": "Online payment",
+      "onlinePaymentDesc": "Pay in advance with a card from the comfort of your home",
+      "avoidFines": "Avoid fines",
+      "avoidFinesDesc": "Ensure you have a valid toll tax and avoid penalties",
+      "planRoute": "Plan your route",
+      "planRouteDesc": "Get detailed information about all toll points"
+    },
+    "tollPoints": {
+      "title": "Main toll points in Bulgaria",
+      "subtitle": "Places where toll taxes are collected",
+      "vidinBridge": "Vidin Bridge",
+      "ruseBridge": "Ruse Bridge",
+      "topliDolTunnel": "Topli Dol Tunnel",
+      "otherObjects": "Other objects",
+      "vidinBridgeDesc": "Danube Bridge 1",
+      "ruseBridgeDesc": "Danube Bridge 2",
+      "topliDolTunnelDesc": "Motorway A1",
+      "otherObjectsDesc": "Specific road sections"
+    },
+    "targetAudience": {
+      "title": "Who is this service for?",
+      "description1": "Whether you are the owner of a transport company or a heavy vehicle driver, our goal is to facilitate your work and ensure trouble-free passage on toll road sections.",
+      "description2": "Our platform offers you the opportunity to pay toll taxes in advance online, avoiding stopping at physical collection points. This is especially convenient during heavy traffic or when traveling outside working hours."
+    },
+    "cta": {
+      "title": "Save time – avoid fines!",
+      "subtitle": "We provide detailed information about all toll points and current prices.",
+      "contactUs": "Contact Us",
+      "allServices": "All Services"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "pageTitle": "Blog - News and Tips for Vignettes",
+    "pageDescription": "Latest news, tips and information about electronic vignettes and travel in Bulgaria.",
+    "readMore": "Read more",
+    "noArticles": "No articles available at the moment.",
+    "loading": "Loading articles..."
+  },
+  "services": {
+    "title": "Services",
+    "pageTitle": "Services - Everything for Vignettes and Travel",
+    "pageDescription": "Browse our services for electronic vignettes, toll taxes and other travel services.",
+    "loading": "Loading services...",
+    "noServices": "No services available at the moment.",
+    "contactForPrice": "Contact us for pricing"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Privacy Policy",
+      "pageTitle": "Privacy Policy - Vinetka.bg",
+      "pageDescription": "Learn how we collect, use and protect your personal data."
+    },
+    "cookiePolicy": {
+      "title": "Cookie Policy",
+      "pageTitle": "Cookie Policy - Vinetka.bg", 
+      "pageDescription": "Information about the use of cookies on our website."
+    },
+    "termsOfService": {
+      "title": "Terms of Service",
+      "pageTitle": "Terms of Service - Vinetka.bg",
+      "pageDescription": "Terms and conditions for using our services and website."
+    }
+  },
+  "vignetteChecker": {
+    "title": "Vignette Check",
+    "pageTitle": "Vignette Check - Vinetka.bg",
+    "pageDescription": "Check the status of your electronic vignette quickly and easily.",
+    "checkButton": "Check Vignette",
+    "enterPlateNumber": "Enter license plate number",
+    "checkStatus": "Check vignette status"
+  },
+  "common": {
+    "readMore": "Read more",
+    "contactUs": "Contact us",
+    "learnMore": "Learn more",
+    "buyNow": "Buy Now",
+    "getStarted": "Get Started",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "close": "Close",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "selectLanguage": "Select Language"
+  },
+  "components": {
+    "hero": {
+      "title": "Online Vignette Information",
+      "subtitle": "Learn more about online vignettes easily and quickly on our website.",
+      "ctaButton": "Get Started",
+      "learnMore": "Learn More"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Start using our services today",
+      "button": "Get Started"
+    },
+    "vignetteChecker": {
+      "title": "Vignette Check",
+      "subtitle": "Check the status of your electronic vignette",
+      "inputPlaceholder": "Enter license plate number",
+      "checkButton": "Check",
+      "validVignette": "Valid vignette",
+      "invalidVignette": "Invalid vignette",
+      "errorMessage": "An error occurred during the check"
+    },
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "subtitle": "Get the latest news and updates",
+      "emailPlaceholder": "Enter your email",
+      "subscribeButton": "Subscribe",
+      "successMessage": "Successfully subscribed!",
+      "errorMessage": "An error occurred. Please try again."
+    },
+    "latestPosts": {
+      "title": "Latest Posts",
+      "viewAll": "View All",
+      "readMore": "Read More",
+      "noArticles": "No articles available"
+    },
+    "cardsRow": {
+      "title": "We Accept",
+      "altText": "Accepted cards - Visa, Mastercard"
+    },
+    "ctasRow": {
+      "cta1Title": "Home Property Insurance",
+      "cta1Description": "Home property insurance - completely online. Easy procedure, property assessment and adequate coverage against fire, natural disasters, earthquakes and theft. Additional clauses. Suitable for apartments, houses and vacation properties.",
+      "cta1Button": "Learn More",
+      "cta2Title": "Travel Abroad Insurance",
+      "cta2Description": "Travel abroad insurance with secured assistance - online! Coverage for trips abroad - personal, business or sports competitions. Additional clauses, incl. rescue costs, baggage loss, liability, COVID-19 coverage.",
+      "cta2Button": "Insure Online",
+      "cta3Title": "Mountain Insurance",
+      "cta3Description": "Insurance with coverage against accidents in the mountains - for skiing, snowboarding, mountain biking, climbing, trekking and other extreme sports in Bulgaria. Easy and secure online enrollment! Peace of mind for every mountain trip.",
+      "cta3Button": "Insure Online",
+      "cta4Title": "Health Insurance",
+      "cta4Description": "Health insurance with fixed packages with compensation for specific medical cases: surgery, hospital stay (incl. childbirth), fractures. Easy and quick online enrollment without the need to fill out a detailed health declaration.",
+      "cta4Button": "Insure Online"
+    },
+    "vignetteCheckerCTA": {
+      "title": "Check Your Vignette",
+      "subtitle": "Fast and free verification of electronic vignette validity",
+      "realTimeCheck": "Real-time Check",
+      "officialAPI": "Official BG Toll API",
+      "freeService": "Free Service",
+      "noRegistration": "No Registration",
+      "checkVignette": "Check Vignette Now",
+      "enterRegistrationNumber": "Enter registration number",
+      "registrationNumber": "Registration number",
+      "vignetteValid": "Valid vignette",
+      "validityUntil": "Validity until: 31.12.2024",
+      "quickCheck": "Quick Check",
+      "resultShownInSeconds": "Result shown in seconds",
+      "dataDirectlyFromBGToll": "Data directly from BG Toll",
+      "noTaxesOrHiddenFees": "No taxes or hidden fees"
+    }
+  }
+}

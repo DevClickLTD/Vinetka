@@ -1,20 +1,22 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 export default function CardsRow() {
+  const t = useTranslations('components.cardsRow');
   return (
     <section className="relative isolate overflow-hidden bg-gray-900 py-12 sm:py-16">
       <div className="mx-auto w-full px-6 lg:px-8 xl:w-4/5 2xl_w-4/5 max-w-screen-2xl 2xl_px-0 text-center">
         <div className="mb-8 sm:mb-12">
           <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-            Ние приемаме
+            {t('title')}
           </h2>
         </div>
         <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
           <Image
             src="/accepted-cards.jpg"
-            alt="Приемани карти - Visa, Mastercard"
+            alt={t('altText')}
             width={800}
             height={100}
             quality={85}

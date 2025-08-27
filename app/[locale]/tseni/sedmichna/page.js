@@ -11,86 +11,91 @@ import {
   FaMapMarkedAlt,
   FaPlane
 } from "react-icons/fa";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: "Седмична винетка - 7 дни | Цена и информация | Vinetka.bg",
-  description:
-    "Седмична винетка за 7 дни - идеалното решение за кратки почивки и бизнес командировки. Валидна 168 часа (7 дни) от момента на активиране. Перфектна за туристи и бизнес пътувания.",
-  keywords: [
-    "седмична винетка",
-    "7 дни винетка",
-    "винетка 168 часа",
-    "една седмица винетка",
-    "туристическа винетка",
-    "бизнес винетка",
-    "командировка винетка"
-  ],
-  openGraph: {
-    title: "Седмична винетка - 7 дни | Цена и информация | Vinetka.bg",
-    description: "Седмична винетка за 7 дни - идеалното решение за кратки почивки и бизнес командировки.",
-    images: [
-      {
-        url: "/default.webp",
-        width: 1200,
-        height: 630,
-        alt: "Седмична винетка за 7 дни",
-      },
+export async function generateMetadata() {
+  const t = await getTranslations('prices.weekly');
+  
+  return {
+    title: t('pageTitle'),
+    description: t('pageDescription'),
+    keywords: [
+      "седмична винетка",
+      "7 дни винетка",
+      "винетка 168 часа",
+      "една седмица винетка",
+      "туристическа винетка",
+      "бизнес винетка",
+      "командировка винетка"
     ],
-    locale: "bg_BG",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Седмична винетка - 7 дни | Vinetka.bg",
-    description: "Седмична винетка за 7 дни - идеалното решение за кратки почивки и бизнес командировки.",
-    images: ["/default.webp"],
-  },
-  alternates: {
-    canonical: "/tseni/sedmichna",
-  },
-};
+    openGraph: {
+      title: t('pageTitle'),
+      description: t('pageDescription'),
+      images: [
+        {
+          url: "/default.webp",
+          width: 1200,
+          height: 630,
+          alt: t('title'),
+        },
+      ],
+      locale: "bg_BG",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('pageTitle'),
+      description: t('pageDescription'),
+      images: ["/default.webp"],
+    },
+    alternates: {
+      canonical: "/tseni/sedmichna",
+    },
+  };
+}
 
-export default function SedmichnaVignette() {
+export default async function SedmichnaVignette() {
+  const t = await getTranslations('prices.weekly');
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
-      title: "Валидна 168 часа",
-      description: "Точно 7 последователни дни от момента на активиране"
+      title: t('features.valid168'),
+      description: t('features.valid168Desc')
     },
     {
       icon: <FaPlane className="w-6 h-6 text-purple-600" />,
-      title: "Перфектна за туристи",
-      description: "Идеална за посетители, които идват за дълъг уикенд"
+      title: t('features.perfectForTourists'),
+      description: t('features.perfectForTouristsDesc')
     },
     {
       icon: <FaBriefcase className="w-6 h-6 text-purple-600" />,
-      title: "Бизнес пътувания",
-      description: "Подходяща за командировки с продължителност до една седмица"
+      title: t('features.businessTravel'),
+      description: t('features.businessTravelDesc')
     },
     {
       icon: <FaMapMarkedAlt className="w-6 h-6 text-purple-600" />,
-      title: "Всички дестинации",
-      description: "Покрива пътувания до морето, планината или различни градове"
+      title: t('features.allDestinations'),
+      description: t('features.allDestinationsDesc')
     }
   ];
 
   const useCases = [
-    "Туристи за дълъг уикенд",
-    "Бизнес командировки до 7 дни",
-    "Пътуване до морето за една седмица",
-    "Планински ваканции",
-    "Посещение на различни градове в страната",
-    "Семейни почивки до седмица",
-    "Културни обиколки из България",
-    "Фестивали и събития"
+    t('useCases.longWeekendTourists'),
+    t('useCases.businessTrips7Days'),
+    t('useCases.seaTravelWeek'),
+    t('useCases.mountainVacations'),
+    t('useCases.cityVisits'),
+    t('useCases.familyHolidays'),
+    t('useCases.culturalTours'),
+    t('useCases.festivalsEvents')
   ];
 
   const benefits = [
-    "Активира се в момента на закупуване",
-    "Покрива всички нужди за кратковременно пътуване",
-    "Най-популярният избор за туристи",
-    "Отлично съотношение цена-качество",
-    "Без притеснения за 7 пълни дни"
+    t('benefits.instantActivation'),
+    t('benefits.coversAllNeeds'),
+    t('benefits.popularChoice'),
+    t('benefits.excellentValue'),
+    t('benefits.noWorries7Days')
   ];
 
   const structuredData = {
@@ -146,7 +151,7 @@ export default function SedmichnaVignette() {
               <li>
                 <div className="flex items-center">
                   <span className="mx-2 text-gray-400">/</span>
-                  <span className="text-gray-900 font-medium">Седмична винетка</span>
+                  <span className="text-gray-900 font-medium">{t('title')}</span>
                 </div>
               </li>
             </ol>
@@ -164,15 +169,15 @@ export default function SedmichnaVignette() {
               </div>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Седмична винетка
+              {t('title')}
             </h1>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Идеалното решение за кратки почивки и бизнес командировки!
+              {t('subtitle')}
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <div className="inline-flex items-center rounded-lg bg-purple-100 px-4 py-2">
                 <FaClock className="h-5 w-5 text-purple-600 mr-2" />
-                <span className="text-lg font-semibold text-purple-900">Валидна 7 дни (168 часа)</span>
+                <span className="text-lg font-semibold text-purple-900">{t('features.valid168')}</span>
               </div>
               <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
                 <span className="text-2xl font-bold text-purple-900">15,00 лв.</span>
@@ -189,16 +194,11 @@ export default function SedmichnaVignette() {
           <div className="mx-auto max-w-3xl">
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed text-lg">
-                Седмичната винетка е валидна за период от 7 последователни дни и покрива всички ваши нужди 
-                за кратковременно пътуване из България. Седмичната винетка се активира в момента на закупуване 
-                и е валидна точно 168 часа (7 дни) от момента на активиране.
+                {t('description1')}
               </p>
               
               <p className="text-gray-700 leading-relaxed">
-                Тя е перфектна за туристи, които идват за дълъг уикенд, или за бизнес пътувания с 
-                продължителност до една седмица. Препоръчваме седмичната винетка за всички, които планират 
-                пътуване с автомобил до морето, планината или за посещение на различни градове в страната 
-                в рамките на една седмица.
+                {t('description2')}
               </p>
             </div>
           </div>
@@ -210,10 +210,10 @@ export default function SedmichnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Защо да изберете седмичната винетка?
+              {t('features.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Предимства и характеристики на 7-дневната винетка
+              {t('features.subtitle')}
             </p>
           </div>
           
@@ -248,7 +248,7 @@ export default function SedmichnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-12">
-              Кога да използвате седмична винетка?
+              {t('useCases.title')}
             </h2>
             
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
@@ -268,7 +268,7 @@ export default function SedmichnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-12">
-              Основни предимства
+              {t('benefits.title')}
             </h2>
             
             <div className="space-y-4">
@@ -288,26 +288,26 @@ export default function SedmichnaVignette() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 mb-8">
-              Важна информация
+              {t('info.title')}
             </h2>
             
             <div className="bg-gray-50 rounded-lg p-8 shadow-sm">
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Активация</h3>
-                  <p className="text-gray-600">Винетката се активира в момента на закупуване</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.activationTitle')}</h3>
+                  <p className="text-gray-600">{t('info.activation')}</p>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Валидност</h3>
-                  <p className="text-gray-600">Точно 7 последователни дни (168 часа)</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.validityTitle')}</h3>
+                  <p className="text-gray-600">{t('info.validity')}</p>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Покритие</h3>
-                  <p className="text-gray-600">Всички платени магистрали и скоростни пътища</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.coverageTitle')}</h3>
+                  <p className="text-gray-600">{t('info.coverage')}</p>
                 </div>
                 <div className="text-left">
-                  <h3 className="font-semibold text-gray-900 mb-2">Превозни средства</h3>
-                  <p className="text-gray-600">Леки автомобили до 3.5 тона</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">{t('info.vehiclesTitle')}</h3>
+                  <p className="text-gray-600">{t('info.vehicles')}</p>
                 </div>
               </div>
             </div>
@@ -320,24 +320,24 @@ export default function SedmichnaVignette() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Планирате седмично пътуване?
+              {t('cta.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Купете седмична винетка сега и се наслаждавайте на 7 дни безгрижно пътуване.
+              {t('cta.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/services"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                Купете седмична винетка
+                {t('cta.button')}
               </Link>
               <Link
                 href="/tseni"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors flex items-center"
               >
                 <FaArrowLeft className="mr-2 h-4 w-4" />
-                Всички цени
+                {t('cta.allPrices')}
               </Link>
             </div>
           </div>

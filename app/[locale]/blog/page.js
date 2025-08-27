@@ -1,13 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: "Блог - Vinetka.bg",
-  description:
-    "Научете повече за винетите и какво могат да ви предложат. Научете повече за винетите и какво могат да ви предложат. Научете повече за винетите и какво могат да ви предложат.",
-};
+export async function generateMetadata() {
+  const t = await getTranslations('blog');
+  
+  return {
+    title: t('pageTitle'),
+    description: t('pageDescription'),
+  };
+}
 
 export default async function Blog({ searchParams }) {
+  const t = await getTranslations('blog');
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;
   const perPage = 9;
@@ -23,7 +28,7 @@ export default async function Blog({ searchParams }) {
   if (!response.ok) {
     return (
       <p className="text-gray-600 text-center mt-10">
-        Неуспешно зареждане на публикации!
+        {t('loading')}
       </p>
     );
   }
@@ -39,7 +44,7 @@ export default async function Blog({ searchParams }) {
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-12 text-center shadow-2xl sm:px-12">
             <div className="mx-auto max-w-2xl text-center">
               <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                От нашия блог
+                {t('title')}
               </h1>
             </div>
             <svg

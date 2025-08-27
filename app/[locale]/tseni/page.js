@@ -14,151 +14,158 @@ import {
   FaTags
 } from "react-icons/fa";
 
-export const metadata = {
-  title: "Цени на електронни винетки - Изберете най-подходящата | Vinetka.bg",
-  description:
-    "Открийте най-изгодните цени за всички типове електронни винетки в България! Конкурентни цени за уикенд, седмична, месечна, тримесечна и годишна винетка. Без скрити такси.",
-  keywords: [
-    "цени винетки",
-    "електронна винетка цена",
-    "винетка онлайн цени",
-    "уикенд винетка цена",
-    "седмична винетка цена",
-    "месечна винетка цена",
-    "тримесечна винетка цена",
-    "годишна винетка цена",
-    "виnetka.bg цени",
-    "Bulgaria vignette prices"
-  ],
-  openGraph: {
-    title: "Цени на електронни винетки - Изберете най-подходящата | Vinetka.bg",
-    description: "Открийте най-изгодните цени за всички типове електронни винетки в България! Конкурентни цени без скрити такси.",
-    images: [
-      {
-        url: "/default.webp",
-        width: 1200,
-        height: 630,
-        alt: "Цени на електронни винетки",
-      },
-    ],
-    locale: "bg_BG",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Цени на електронни винетки - Vinetka.bg",
-    description: "Открийте най-изгодните цени за всички типове електронни винетки в България!",
-    images: ["/default.webp"],
-  },
-  alternates: {
-    canonical: "/tseni",
-  },
-};
+import { getTranslations } from 'next-intl/server';
 
-export default function tseni() {
+export async function generateMetadata() {
+  const t = await getTranslations('prices');
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    keywords: [
+      "цени винетки",
+      "електронна винетка цена",
+      "винетка онлайн цени",
+      "уикенд винетка цена",
+      "седмична винетка цена",
+      "месечна винетка цена",
+      "тримесечна винетка цена",
+      "годишна винетка цена",
+      "виnetka.bg цени",
+      "Bulgaria vignette prices"
+    ],
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      images: [
+        {
+          url: "/default.webp",
+          width: 1200,
+          height: 630,
+          alt: t('title'),
+        },
+      ],
+      locale: "bg_BG",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('title'),
+      description: t('description'),
+      images: ["/default.webp"],
+    },
+    alternates: {
+      canonical: "/tseni",
+    },
+  };
+}
+
+export default async function tseni() {
+  const t = await getTranslations('prices');
+  
   const vignetteTypes = [
     {
       id: "uikend",
       icon: <FaCalendarDay className="w-8 h-8 text-purple-600" />,
-      title: "Уикенд винетка",
-      duration: "2 дни",
+      title: t('weekend.title'),
+      duration: t('weekend.duration'),
       price: "10,00 лв.",
       priceEur: "5,11 €",
-      description: "Перфектна за кратки излети",
+      description: t('weekend.description'),
       features: [
-        "Валидна 48 часа",
-        "Идеална за спонтанни пътувания",
-        "Най-добра стойност за кратки пътувания",
-        "От петък до неделя"
+        t('weekend.feature1'),
+        t('weekend.feature2'),
+        t('weekend.feature3'),
+        t('weekend.feature4')
       ],
-      highlight: "Кратки бягства"
+      highlight: t('weekend.highlight')
     },
     {
       id: "sedmichna",
       icon: <FaCalendarWeek className="w-8 h-8 text-purple-600" />,
-      title: "Седмична винетка",
-      duration: "7 дни",
+      title: t('weekly.title'),
+      duration: t('weekly.duration'),
       price: "15,00 лв.",
       priceEur: "7,67 €",
-      description: "Идеална за кратки пътувания",
+      description: t('weekly.description'),
       features: [
-        "Валидна точно 168 часа",
-        "Перфектна за туристи",
-        "Подходяща за бизнес пътувания",
-        "Покрива дълъг уикенд"
+        t('weekly.feature1'),
+        t('weekly.feature2'),
+        t('weekly.feature3'),
+        t('weekly.feature4')
       ],
-      highlight: "Популярен избор"
+      highlight: t('weekly.highlight')
     },
     {
       id: "mesechna",
       icon: <FaCalendarAlt className="w-8 h-8 text-purple-600" />,
-      title: "Месечна винетка",
-      duration: "30 дни",
+      title: t('monthly.title'),
+      duration: t('monthly.duration'),
       price: "30,00 лв.",
       priceEur: "15,34 €",
-      description: "Подходяща за по-дълги пътувания",
+      description: t('monthly.description'),
       features: [
-        "Валидна точно 30 дни",
-        "Отличен баланс цена-гъвкавост",
-        "За редовни пътувания",
-        "Пълна свобода на движение"
+        t('monthly.feature1'),
+        t('monthly.feature2'),
+        t('monthly.feature3'),
+        t('monthly.feature4')
       ],
-      highlight: "Най-популярна"
+      highlight: t('monthly.highlight')
     },
     {
       id: "trimesechna",
       icon: <FaCalendar className="w-8 h-8 text-purple-600" />,
-      title: "Тримесечна винетка",
-      duration: "3 месеца",
+      title: t('quarterly.title'),
+      duration: t('quarterly.duration'),
       price: "54,00 лв.",
       priceEur: "27,61 €",
-      description: "Икономичен избор за сезонни пътници",
+      description: t('quarterly.description'),
       features: [
-        "Валидна точно 90 дни",
-        "Спестяване до 15%",
-        "Идеална за сезони",
-        "Без допълнителни покупки"
+        t('quarterly.feature1'),
+        t('quarterly.feature2'),
+        t('quarterly.feature3'),
+        t('quarterly.feature4')
       ],
-      highlight: "Спестяване 15%"
+      highlight: t('quarterly.highlight')
     },
     {
       id: "godishna",
       icon: <FaCalendar className="w-8 h-8 text-purple-600" />,
-      title: "Годишна винетка",
-      duration: "12 месеца",
+      title: t('annual.title'),
+      duration: t('annual.duration'),
       price: "97,00 лв.",
       priceEur: "49,60 €",
-      description: "Най-изгодна за редовни шофьори",
+      description: t('annual.description'),
       features: [
-        "Валидна точно 365 дни",
-        "Спестяване до 40%",
-        "Максимално удобство",
-        "Без притеснения за статуса"
+        t('annual.feature1'),
+        t('annual.feature2'),
+        t('annual.feature3'),
+        t('annual.feature4')
       ],
-      highlight: "Спестяване 40%"
+      highlight: t('annual.highlight')
     }
   ];
 
   const benefits = [
     {
       icon: <FaEuroSign className="w-8 h-8 text-green-600" />,
-      title: "Конкурентни цени",
-      description: "Най-изгодните цени на пазара със синхронизация с официалните тарифи"
+      title: t('benefits.competitive.title'),
+      description: t('benefits.competitive.description')
     },
     {
       icon: <FaShieldAlt className="w-8 h-8 text-green-600" />,
-      title: "Без скрити такси",
-      description: "Всички цени включват такси и комисионни - няма допълнителни разходи"
+      title: t('benefits.noHiddenFees.title'),
+      description: t('benefits.noHiddenFees.description')
     },
     {
       icon: <FaTags className="w-8 h-8 text-green-600" />,
-      title: "Включен ДДС",
-      description: "Всички цени са с включен ДДС и са валидни за леки автомобили до 3.5 тона"
+      title: t('benefits.vatIncluded.title'),
+      description: t('benefits.vatIncluded.description')
     },
     {
       icon: <FaClock className="w-8 h-8 text-green-600" />,
-      title: "Моментална активация",
-      description: "Винетката се активира веднага след плащането без изчакване"
+      title: t('benefits.instantActivation.title'),
+      description: t('benefits.instantActivation.description')
     }
   ];
 
@@ -204,23 +211,23 @@ export default function tseni() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              Цени на електронни винетки
+              {t('hero.title')}
             </h1>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Изберете най-подходящата опция за вашите нужди
+              {t('hero.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="#pricing"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                Вижте цените
+                {t('hero.viewPrices')}
               </Link>
               <Link
                 href="#benefits"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
               >
-                Предимства <span aria-hidden="true">→</span>
+                {t('hero.benefits')} <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
@@ -232,16 +239,13 @@ export default function tseni() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Конкурентни цени за всички видове винетки
+              {t('intro.title')}
             </h2>
             <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-              На vinetka.bg предлагаме конкурентни цени за всички видове винетки. Нашата ценова листа е винаги 
-              актуална и синхронизирана с официалните тарифи на НК "Автомагистрали" ЕАД.
+              {t('intro.description1')}
             </p>
             <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-              Предлагаме различни варианти на винетки, които покриват всички ваши нужди - от кратко пътуване 
-              до цялостно годишно покритие. Всяка винетка е валидна за всички платени магистрали и скоростни 
-              пътища в България.
+              {t('intro.description2')}
             </p>
           </div>
         </div>
@@ -252,10 +256,10 @@ export default function tseni() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Защо да изберете нас?
+              {t('benefitsSection.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Предимства на нашата ценова политика
+              {t('benefitsSection.subtitle')}
             </p>
           </div>
           
@@ -284,10 +288,10 @@ export default function tseni() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              Изберете вашата винетка
+              {t('pricingSection.title')}
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Сравнете различните опции и изберете най-подходящата за вашите нужди
+              {t('pricingSection.subtitle')}
             </p>
           </div>
           
@@ -313,7 +317,7 @@ export default function tseni() {
                 </h3>
                 
                 <p className="text-center text-sm text-gray-600 mb-2">
-                  Валидна {vignette.duration}
+                  {t('pricingSection.validFor')} {vignette.duration}
                 </p>
                 
                 <div className="text-center mb-4">
@@ -338,7 +342,7 @@ export default function tseni() {
                   href={`/tseni/${vignette.id}`}
                   className="block w-full rounded-md bg-purple-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-purple-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-colors"
                 >
-                  Научете повече
+                  {t('pricingSection.learnMore')}
                 </Link>
               </div>
             ))}
@@ -351,19 +355,16 @@ export default function tseni() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-8">
-              Пълна и актуална информация
+              {t('infoSection.title')}
             </h2>
             
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed">
-                На vinetka.bg ще намерите пълна и актуална информация за цените на всички видове електронни 
-                винетки в България. Нашите цени включват всички такси и комисионни - няма скрити разходи 
-                или допълнителни такси при плащане.
+                {t('infoSection.description1')}
               </p>
               
               <p className="text-gray-700 leading-relaxed">
-                Сравнете различните опции и изберете най-подходящата за вашите нужди. Всички цени са с 
-                включен ДДС и са валидни за леки автомобили до 3.5 тона.
+                {t('infoSection.description2')}
               </p>
             </div>
             
@@ -371,7 +372,7 @@ export default function tseni() {
               <div className="inline-flex items-center rounded-lg bg-white px-6 py-4 shadow-sm">
                 <FaCreditCard className="h-6 w-6 text-purple-600 mr-3" />
                 <span className="text-lg font-semibold text-gray-900">
-                  Плащане с карта - бързо и сигурно
+                  {t('infoSection.paymentText')}
                 </span>
               </div>
             </div>
@@ -384,23 +385,23 @@ export default function tseni() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Готови за пътуване?
+              {t('ctaSection.title')}
             </h2>
             <p className="mt-6 text-lg leading-8 text-purple-100">
-              Изберете подходящата винетка и заплатете онлайн за няколко секунди.
+              {t('ctaSection.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/services"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
-                Купете винетка
+                {t('ctaSection.buyButton')}
               </Link>
               <Link
                 href="/contact"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
               >
-                Имате въпроси? <span aria-hidden="true">→</span>
+                {t('ctaSection.questionsText')} <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
