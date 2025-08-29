@@ -81,15 +81,26 @@
     "email": "Email",
     "phone": "Phone",
     "form": {
-      "firstName": "First Name",
+      "firstName": "Name",
       "lastName": "Last Name",
       "company": "Company",
       "email": "Email",
       "phone": "Phone",
+      "subject": "Subject",
       "message": "Message",
-      "submit": "Send Message",
+      "submit": "Send Inquiry",
       "agree": "I agree with",
-      "privacyPolicy": "privacy policy"
+      "privacyPolicy": "privacy policy",
+      "success": {
+        "title": "Successfully sent!",
+        "message": "Expect a response soon : )"
+      },
+      "error": {
+        "title": "Error sending!",
+        "message": "Please try again later.",
+        "networkTitle": "Failed to send!",
+        "networkMessage": "Check your internet connection and try again."
+      }
     }
   },
   "prices": {

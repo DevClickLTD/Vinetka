@@ -2,11 +2,15 @@
 
 import { useState } from "react";
 import Swal from "sweetalert2";
+import { useTranslations } from 'next-intl';
+import Link from "next/link";
 
 const URL_FORM =
   "https://vinetka.admin-panels.com/wp-json/contact-form-7/v1/contact-forms/43/feedback";
 
 export default function ContactForm() {
+  const t = useTranslations('contact.form');
+  const tCommon = useTranslations('common');
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
@@ -47,8 +51,8 @@ export default function ContactForm() {
       } else if (response.status === "mail_sent") {
         Swal.fire({
           icon: "success",
-          title: "Успешно изпратено!",
-          text: "Очаквайте отговор скоро : )",
+          title: t('success.title'),
+          text: t('success.message'),
           timer: 4000,
         });
         setErrors({});
@@ -56,15 +60,15 @@ export default function ContactForm() {
       } else {
         Swal.fire({
           icon: "error",
-          title: "Грешка при изпращане!",
-          text: "Моля, опитайте отново по-късно.",
+          title: t('error.title'),
+          text: t('error.message'),
         });
       }
     } catch (error) {
       Swal.fire({
         icon: "error",
-        title: "Неуспешно изпращане!",
-        text: "Проверете връзката с интернет и опитайте отново.",
+        title: t('error.networkTitle'),
+        text: t('error.networkMessage'),
       });
     }
 
@@ -80,26 +84,26 @@ export default function ContactForm() {
       )}
       <form
         onSubmit={handleSubmit}
-        className={`px-6 pt-20 pb-24 sm:pb-24 lg:px-8 lg:py-24 ${
+        className={`${
           loading ? "opacity-50 pointer-events-none" : ""
         }`}
       >
-        <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
+        <div className="w-full">
           <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-            <div className="sm:col-span-2">
+            <div>
               <label
                 htmlFor="name"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Име*
+                {t('firstName')}
               </label>
               <div className="mt-2.5">
                 <input
                   id="name"
                   name="name"
                   type="text"
-                  autoComplete="name"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  autoComplete="given-name"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
               {errors["your-name"] && (
@@ -108,12 +112,12 @@ export default function ContactForm() {
                 </p>
               )}
             </div>
-            <div className="sm:col-span-2">
+            <div>
               <label
                 htmlFor="email"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Имейл*
+                {t('email')}
               </label>
               <div className="mt-2.5">
                 <input
@@ -121,7 +125,7 @@ export default function ContactForm() {
                   name="email"
                   type="email"
                   autoComplete="email"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
               {errors["your-email"] && (
@@ -133,9 +137,9 @@ export default function ContactForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="phone-number"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Телефон*
+                {t('phone')}
               </label>
               <div className="mt-2.5">
                 <input
@@ -143,7 +147,7 @@ export default function ContactForm() {
                   name="phone-number"
                   type="tel"
                   autoComplete="tel"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
               {errors["your-tel"] && (
@@ -155,16 +159,16 @@ export default function ContactForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="subject"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Тема*
+                {t('subject')}
               </label>
               <div className="mt-2.5">
                 <input
                   id="subject"
                   name="subject"
                   type="text"
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
               </div>
               {errors["your-subject"] && (
@@ -176,28 +180,51 @@ export default function ContactForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block text-sm/6 font-semibold text-gray-900"
+                className="block text-sm font-semibold leading-6 text-gray-900"
               >
-                Съобщение
+                {t('message')}
               </label>
               <div className="mt-2.5">
                 <textarea
                   id="message"
                   name="message"
                   rows={4}
-                  className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600"
+                  className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   defaultValue={""}
                 />
               </div>
             </div>
+            <div className="flex gap-x-4 sm:col-span-2">
+              <div className="flex h-6 items-center">
+                <input
+                  id="agree"
+                  name="agree"
+                  type="checkbox"
+                  className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600"
+                />
+              </div>
+              <label
+                htmlFor="agree"
+                className="text-sm leading-6 text-gray-600"
+              >
+                {t('agree')}{" "}
+                <Link
+                  href="/privacy-policy"
+                  className="font-semibold text-indigo-600"
+                >
+                  {t('privacyPolicy')}
+                </Link>
+                .
+              </label>
+            </div>
           </div>
-          <div className="mt-8 flex justify-end">
+          <div className="mt-10">
             <button
               type="submit"
-              className="rounded-md bg-[#803487] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-gray-300 cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="block w-full rounded-md bg-[#803487] px-3.5 py-2.5 text-center cursor-pointer text-sm font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               disabled={loading}
             >
-              Изпрати запитване
+              {t('submit')}
             </button>
           </div>
         </div>
