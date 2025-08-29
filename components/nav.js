@@ -31,7 +31,7 @@ export default function Navigation() {
   const pages = [
     { name: t('home'), href: "/" },
     { name: t('prices'), href: "/tseni" },
-    { name: t('tollTax'), href: "/toll-taksa" },
+    { name: t('tollTax'), href: "/toll-taksi" },
     { name: t('blog'), href: "/blog" },
     { name: t('contact'), href: "/contact" },
   ];
