@@ -9,7 +9,10 @@ export default createMiddleware({
   defaultLocale,
   
   // Redirect to default locale if none is specified
-  localePrefix: 'always'
+  localePrefix: 'always',
+  
+  // Disable automatic locale detection to ensure bg is always default
+  localeDetection: false
 });
 
 export const config = {
