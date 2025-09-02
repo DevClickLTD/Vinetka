@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl';
 import Link from "next/link";
 
 const URL_FORM =
-  "https://vinetka.admin-panels.com/wp-json/contact-form-7/v1/contact-forms/43/feedback";
+  "https://vinetka.admin-panels.com/wp-json/contact-form-7/v1/contact-forms/6/feedback";
 
 export default function ContactForm() {
   const t = useTranslations('contact.form');
@@ -16,6 +16,18 @@ export default function ContactForm() {
 
   async function handleSubmit(e) {
     e.preventDefault();
+    
+    // Check if privacy policy checkbox is checked
+    const agreeCheckbox = e.target.agree.checked;
+    if (!agreeCheckbox) {
+      Swal.fire({
+        icon: "warning",
+        title: t('validation.agreementRequired'),
+        text: t('validation.agreementMessage'),
+      });
+      return;
+    }
+
     setLoading(true);
 
     const formData = new FormData();

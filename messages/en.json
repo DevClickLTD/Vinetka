@@ -100,6 +100,10 @@
         "message": "Please try again later.",
         "networkTitle": "Failed to send!",
         "networkMessage": "Check your internet connection and try again."
+      },
+      "validation": {
+        "agreementRequired": "Agreement Required",
+        "agreementMessage": "Please agree to the privacy policy before submitting the form."
       }
     }
   },
