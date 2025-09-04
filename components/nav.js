@@ -17,7 +17,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ChevronDownIcon } from "@heroicons/react/24/solid";
-import Link from "next/link";
+import { Link } from "../lib/navigation";
 import Image from "next/image";
 import { getServicesNav } from "../services/services";
 import LanguageSwitcher from "./LanguageSwitcher";

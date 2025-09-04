@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "../../../lib/navigation";
 import VignetteChecker from "@/components/VignetteChecker";
 import Script from "next/script";
 import { 

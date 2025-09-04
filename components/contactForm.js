@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Swal from "sweetalert2";
 import { useTranslations } from 'next-intl';
-import Link from "next/link";
+import { Link } from "../lib/navigation";
 
 const URL_FORM =
   "https://vinetka.admin-panels.com/wp-json/contact-form-7/v1/contact-forms/6/feedback";

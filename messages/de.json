@@ -1,0 +1,978 @@
+{
+  "meta": {
+    "title": "Vignette online - Informationen zur elektronischen Vignette",
+    "description": "Vignette online - Informationen zur elektronischen Vignette",
+    "titleTemplate": "%s | Vignette online - Informationen zur elektronischen Vignette"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "prices": "Preise",
+    "blog": "Blog",
+    "contact": "Kontakt",
+    "vignetteChecker": "Vignetten-Prüfung",
+    "tollTax": "Mautgebühr"
+  },
+  "footer": {
+    "sections": {
+      "services": "Dienstleistungen",
+      "support": "Support",
+      "company": "Unternehmen",
+      "legal": "Rechtliches"
+    },
+    "services": {
+      "vignetteCheck": "Vignetten-Prüfung",
+      "prices": "Preise",
+      "tollTax": "Mautgebühr"
+    },
+    "support": {
+      "blog": "Blog",
+      "contact": "Kontakt",
+      "faq": "Häufig gestellte Fragen"
+    },
+    "company": {
+      "aboutUs": "Über uns"
+    },
+    "legal": {
+      "terms": "Allgemeine Geschäftsbedingungen",
+      "privacy": "Datenschutzerklärung",
+      "cookies": "Cookie-Richtlinie"
+    },
+    "newsletter": {
+      "title": "Abonnieren Sie unseren Newsletter",
+      "description": "Erhalten Sie wertvolle Tipps, Analysen und aktuelle Nachrichten direkt in Ihr Postfach.",
+      "emailLabel": "E-Mail-Adresse",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "subscribe": "Abonnieren"
+    },
+    "copyright": "Vinetka.bg, Inc. Alle Rechte vorbehalten."
+  },
+  "home": {
+    "hero": {
+      "title": "Vignetten online",
+      "subtitle": "Elektronische Vignetten für Pkw bis 3,5 t",
+      "heroTitle": "Informationen zur Online-Vignette",
+      "heroSubtitle": "Erfahren Sie mehr über Online-Vignetten einfach und schnell auf unserer Website."
+    },
+    "loading": "Lade Dienstleistungen...",
+    "vignetteSection": {
+      "title": "Vignetten online",
+      "subtitle": "Elektronische Vignetten für Pkw bis 3,5 t"
+    },
+    "expandableInfoRow": {
+      "title": "Vignette für Bulgarien – alles, was Sie wissen müssen",
+      "less": "Weniger",
+      "more": "Mehr anzeigen",
+      "whatType": "Welche Art von Vignette sollen Sie wählen?",
+      "howToBuy": "Wie kaufen Sie eine Vignette?",
+      "check": "Vignetten-Prüfung",
+      "description": "Wenn Sie eine Reise mit dem Auto nach Bulgarien planen, ist es obligatorisch, eine Vignette für Bulgarien zu kaufen. Dies ist eine elektronische Gebühr für die Nutzung des republikanischen Straßennetzes, die für Pkw und Lkw gilt. Ohne gültige Vignette riskieren Sie ein Bußgeld, daher ist es wichtig, sich im Voraus zu informieren.",
+      "whatTypeDescription": "Es gibt verschiedene Arten von Vignetten – täglich, Wochenend-, wöchentlich, monatlich, dreimonatlich und jährlich. Für Touristen wird am häufigsten die Wochenend-Vignette verwendet, für häufige Reisen – die jährliche. Das elektronische System erleichtert den Kauf und die Überprüfung, da es online oder an der Kasse gekauft werden kann.",
+      "howToBuyDescription": "Sie können einfach eine elektronische Vignette für Bulgarien über die offizielle Website http://bgtoll.bg oder über mobile Anwendungen kaufen. Sie müssen nur das Kennzeichen des Autos, das Registrierungsland eingeben und den Gültigkeitszeitraum wählen.",
+      "checkDescription": "Die Gültigkeitsprüfung erfolgt über Kameras und mobile Teams. Sie können den Status Ihrer Vignette online überprüfen. Stellen Sie sicher, dass die eingegebenen Daten korrekt sind, da das System nach der Aktivierung keine Korrekturen zulässt."
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "pageTitle": "Kontakt - Vinetka.bg",
+    "pageDescription": "Kontaktieren Sie uns über unser Kontaktformular oder finden Sie unsere Kontaktdaten.",
+    "officeType": "Firmenbüro",
+    "address": "Adresse",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "form": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "company": "Unternehmen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "subject": "Betreff",
+      "message": "Nachricht",
+      "submit": "Anfrage senden",
+      "agree": "Ich stimme der",
+      "privacyPolicy": "Datenschutzerklärung zu",
+      "success": {
+        "title": "Erfolgreich gesendet!",
+        "message": "Erwarten Sie bald eine Antwort : )"
+      },
+      "error": {
+        "title": "Fehler beim Senden!",
+        "message": "Bitte versuchen Sie es später erneut.",
+        "networkTitle": "Senden fehlgeschlagen!",
+        "networkMessage": "Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut."
+      },
+      "validation": {
+        "agreementRequired": "Zustimmung erforderlich",
+        "agreementMessage": "Bitte stimmen Sie der Datenschutzerklärung zu, bevor Sie das Formular absenden."
+      }
+    }
+  },
+  "prices": {
+    "title": "Preise für elektronische Vignetten - Wählen Sie die beste Option",
+    "description": "Entdecken Sie die günstigsten Preise für alle Arten elektronischer Vignetten in Bulgarien! Wettbewerbsfähige Preise für Wochenend-, Wöchentlich-, Monatlich-, Dreimonatlich- und Jahresvignetten. Ohne versteckte Gebühren.",
+    "pageTitle": "Vignettenpreise",
+    "pageSubtitle": "Wählen Sie den am besten geeigneten Vignettentyp für Ihre Bedürfnisse",
+    "breadcrumb": {
+      "home": "Startseite",
+      "prices": "Preise"
+    },
+    "weekendTitle": "Wochenend-Vignetten Preis",
+    "weeklyTitle": "Wöchentliche Vignetten Preis",
+    "monthlyTitle": "Monatliche Vignetten Preis",
+    "quarterlyTitle": "Dreimonatliche Vignetten Preis",
+    "annualTitle": "Jährliche Vignetten Preis",
+    "features": {
+      "instantIssue": "Sofortige Ausstellung",
+      "securePayment": "Sichere Zahlung",
+      "customerSupport": "Kundensupport",
+      "mobileOptimized": "Mobiloptimiert",
+      "noHiddenFees": "Keine versteckten Gebühren",
+      "fastDelivery": "Schnelle Lieferung"
+    },
+    "buyNow": "Jetzt kaufen",
+    "validFor": "Gültig für",
+    "days": "Tage",
+    "hero": {
+      "title": "Preise für elektronische Vignetten",
+      "subtitle": "Wählen Sie die am besten geeignete Option für Ihre Bedürfnisse",
+      "viewPrices": "Preise anzeigen",
+      "benefits": "Vorteile"
+    },
+    "intro": {
+      "title": "Wettbewerbsfähige Preise für alle Vignettentypen",
+      "description1": "Auf vinetka.bg bieten wir wettbewerbsfähige Preise für alle Vignettentypen. Unsere Preisliste ist immer aktuell und mit den offiziellen Tarifen der NK \"Autobahnen\" EAD synchronisiert.",
+      "description2": "Wir bieten verschiedene Vignettenvarianten, die alle Ihre Bedürfnisse abdecken - von kurzen Reisen bis zur ganzjährigen Abdeckung. Jede Vignette ist gültig für alle mautpflichtigen Autobahnen und Schnellstraßen in Bulgarien."
+    },
+    "benefits": {
+      "competitive": {
+        "title": "Wettbewerbsfähige Preise",
+        "description": "Die günstigsten Preise auf dem Markt mit Synchronisation zu den offiziellen Tarifen"
+      },
+      "noHiddenFees": {
+        "title": "Keine versteckten Gebühren",
+        "description": "Alle Preise enthalten Steuern und Provisionen - keine zusätzlichen Kosten"
+      },
+      "vatIncluded": {
+        "title": "MwSt. enthalten",
+        "description": "Alle Preise enthalten die MwSt. und gelten für Pkw bis 3,5 Tonnen"
+      },
+      "instantActivation": {
+        "title": "Sofortige Aktivierung",
+        "description": "Die Vignette wird sofort nach der Zahlung ohne Wartezeit aktiviert"
+      }
+    },
+    "weekend": {
+      "title": "Wochenend-Vignette - 2 Tage | Preis und Informationen | Vinetka.bg",
+      "description": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
+      "mainTitle": "Wochenend-Vignette",
+      "subtitle": "Perfekt für kurze Ausflüge aus dem Alltag!",
+      "duration": "2 Tage",
+      "description1": "Die Wochenend-Vignette ist speziell für zweitägige Reisen konzipiert und deckt die Bedürfnisse für kurze Urlaubspausen ohne unnötige Kosten ab. Sie ist für einen Zeitraum von 48 Stunden ab dem Zeitpunkt der Aktivierung gültig, was sie ideal für Reisen von Freitag bis Sonntag oder für jeden anderen zweitägigen Zeitraum macht.",
+      "description2": "Die Wochenend-Vignette bietet das beste Preis-Leistungs-Verhältnis für kurze Reisen. Ideal für spontane Entscheidungen für eine kurze Reise und bietet vollständige Bewegungsfreiheit auf allen mautpflichtigen Autobahnen in Bulgarien.",
+      "feature1": "Gültig 48 Stunden",
+      "feature2": "Ideal für spontane Reisen",
+      "feature3": "Bester Wert für kurze Reisen",
+      "feature4": "Von Freitag bis Sonntag",
+      "highlight": "Kurze Ausflüge",
+      "pageTitle": "Wochenend-Vignette - 2 Tage | Preis und Informationen",
+      "pageDescription": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
+      "price": "10,00 BGN",
+      "priceEur": "5,11 €",
+      "perfectFor": "Perfekt für kurze Ausflüge und spontane Reisen",
+      "validFrom": "Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung",
+      "valid48Hours": "Gültig 2 Tage (48 Stunden)",
+      "features": {
+        "valid48": "Gültig 48 Stunden",
+        "valid48Desc": "Die Vignette ist genau 48 Stunden ab dem Zeitpunkt des Kaufs aktiv",
+        "idealWeekends": "Ideal für Wochenenden",
+        "idealWeekendsDesc": "Speziell für zweitägige Reisen und kurze Urlaubspausen entwickelt",
+        "spontaneous": "Spontane Entscheidungen",
+        "spontaneousDesc": "Perfekt für unerwartete Entscheidungen für eine kurze Reise",
+        "allHighways": "Alle Autobahnen",
+        "allHighwaysDesc": "Gültig für alle mautpflichtigen Autobahnen in Bulgarien",
+        "title": "Warum die Wochenend-Vignette wählen?",
+        "subtitle": "Vorteile und Eigenschaften der 2-Tage-Vignette"
+      },
+      "useCases": {
+        "title": "Wann sollten Sie eine Wochenend-Vignette verwenden?",
+        "fridayToSunday": "Reisen von Freitag bis Sonntag",
+        "shortHolidays": "Kurze Ausflüge außerhalb der Stadt",
+        "twoDayTrips": "Zweitägige Exkursionen",
+        "visitFriends": "Besuch bei Freunden und Familie",
+        "businessTrips2Days": "Geschäftsreisen bis zu 2 Tagen",
+        "spontaneousTrips": "Spontane Ausflüge ans Meer oder in die Berge"
+      },
+      "info": {
+        "title": "Wichtige Informationen",
+        "activationTitle": "Aktivierung",
+        "activation": "Die Vignette wird sofort nach der Zahlung aktiviert",
+        "validityTitle": "Gültigkeit",
+        "validity": "Genau 48 Stunden ab dem Zeitpunkt der Aktivierung",
+        "coverageTitle": "Abdeckung",
+        "coverage": "Alle mautpflichtigen Autobahnen in Bulgarien",
+        "vehiclesTitle": "Fahrzeuge",
+        "vehicles": "Pkw bis 3,5 Tonnen"
+      },
+      "cta": {
+        "title": "Bereit für eine kurze Reise?",
+        "subtitle": "Kaufen Sie jetzt eine Wochenend-Vignette und starten Sie in Sekunden.",
+        "button": "Wochenend-Vignette kaufen",
+        "allPrices": "Alle Preise"
+      }
+    },
+    "weekly": {
+      "title": "Wöchentliche Vignette",
+      "subtitle": "Die ideale Lösung für kurze Urlaube und Geschäftsreisen!",
+      "duration": "7 Tage",
+      "description": "Ideal für kurze Reisen",
+      "description1": "Die Wöchentliche Vignette ist für einen Zeitraum von 7 aufeinanderfolgenden Tagen gültig und deckt alle Ihre Bedürfnisse für kurzfristige Reisen in Bulgarien ab. Die Wöchentliche Vignette wird zum Zeitpunkt des Kaufs aktiviert und ist genau 168 Stunden (7 Tage) ab dem Zeitpunkt der Aktivierung gültig.",
+      "description2": "Sie ist perfekt für Touristen, die für ein langes Wochenende kommen, oder für Geschäftsreisen mit einer Dauer von bis zu einer Woche. Wir empfehlen die Wöchentliche Vignette für alle, die eine Reise mit dem Auto ans Meer, in die Berge oder zum Besuch verschiedener Städte im Land innerhalb einer Woche planen.",
+      "feature1": "Gültig genau 168 Stunden",
+      "feature2": "Perfekt für Touristen",
+      "feature3": "Geeignet für Geschäftsreisen",
+      "feature4": "Deckt langes Wochenende ab",
+      "highlight": "Beliebte Wahl",
+      "pageTitle": "Wöchentliche Vignette - 7 Tage | Preis und Informationen",
+      "pageDescription": "Wöchentliche Vignette für 7 Tage - die ideale Lösung für kurze Urlaube und Geschäftsreisen. Gültig 168 Stunden (7 Tage) ab dem Zeitpunkt der Aktivierung. Perfekt für Touristen und Geschäftsreisen.",
+      "mainTitle": "Wöchentliche Vignette",
+      "price": "15,00 BGN",
+      "priceEur": "7,67 €",
+      "perfectFor": "Die ideale Lösung für kurze Urlaube und Geschäftsreisen",
+      "validFrom": "Gültig 168 Stunden (7 Tage) ab dem Zeitpunkt der Aktivierung",
+      "features": {
+        "valid168": "Gültig 168 Stunden",
+        "valid168Desc": "Genau 7 aufeinanderfolgende Tage ab dem Zeitpunkt der Aktivierung",
+        "perfectForTourists": "Perfekt für Touristen",
+        "perfectForTouristsDesc": "Ideal für Besucher, die für ein langes Wochenende kommen",
+        "businessTravel": "Geschäftsreisen",
+        "businessTravelDesc": "Geeignet für Dienstreisen mit einer Dauer von bis zu einer Woche",
+        "allDestinations": "Alle Reiseziele",
+        "allDestinationsDesc": "Deckt Reisen ans Meer, in die Berge oder in verschiedene Städte ab",
+        "title": "Warum die wöchentliche Vignette wählen?",
+        "subtitle": "Vorteile und Eigenschaften der 7-Tage-Vignette"
+      },
+      "useCases": {
+        "title": "Wann sollten Sie eine wöchentliche Vignette verwenden?",
+        "longWeekendTourists": "Touristen für langes Wochenende",
+        "businessTrips7Days": "Geschäftsreisen bis zu 7 Tagen",
+        "seaTravelWeek": "Reise ans Meer für eine Woche",
+        "mountainVacations": "Bergurlaub",
+        "cityVisits": "Besuch verschiedener Städte im Land",
+        "familyHolidays": "Familienurlaub bis zu einer Woche",
+        "culturalTours": "Kulturelle Rundreisen durch Bulgarien",
+        "festivalsEvents": "Festivals und Veranstaltungen"
+      },
+      "benefits": {
+        "title": "Hauptvorteile",
+        "instantActivation": "Wird zum Zeitpunkt des Kaufs aktiviert",
+        "coversAllNeeds": "Deckt alle Bedürfnisse für kurzfristige Reisen ab",
+        "popularChoice": "Die beliebteste Wahl für Touristen",
+        "excellentValue": "Ausgezeichnetes Preis-Leistungs-Verhältnis",
+        "noWorries7Days": "Keine Sorgen für 7 volle Tage"
+      },
+      "info": {
+        "title": "Wichtige Informationen",
+        "activationTitle": "Aktivierung",
+        "activation": "Die Vignette wird zum Zeitpunkt des Kaufs aktiviert",
+        "validityTitle": "Gültigkeit",
+        "validity": "Genau 7 aufeinanderfolgende Tage (168 Stunden)",
+        "coverageTitle": "Abdeckung",
+        "coverage": "Alle mautpflichtigen Autobahnen und Schnellstraßen",
+        "vehiclesTitle": "Fahrzeuge",
+        "vehicles": "Pkw bis 3,5 Tonnen"
+      },
+      "cta": {
+        "title": "Planen Sie eine wöchentliche Reise?",
+        "subtitle": "Kaufen Sie jetzt eine wöchentliche Vignette und genießen Sie 7 Tage sorgenfreies Reisen.",
+        "button": "Wöchentliche Vignette kaufen",
+        "allPrices": "Alle Preise"
+      }
+    },
+    "monthly": {
+      "title": "Monatliche Vignette",
+      "subtitle": "Die beliebteste Wahl für regelmäßige Reisen!",
+      "duration": "30 Tage",
+      "description": "Geeignet für längere Reisen",
+      "description1": "Die beliebteste Wahl für regelmäßige Reisen zur Arbeit, für Personen mit Dienstreisen oder diejenigen, die einfach gerne durch das Land reisen. Sie bietet ein ausgezeichnetes Gleichgewicht zwischen Preis und Flexibilität.",
+      "description2": "Die monatliche Vignette bietet vollständige Bewegungsfreiheit auf allen mautpflichtigen Straßen in Bulgarien für einen Zeitraum von 30 Tagen. Sie wird sofort nach der Zahlung aktiviert und ist genau 30 Tage ab dem Zeitpunkt der Aktivierung gültig.",
+      "feature1": "Gültig genau 30 Tage",
+      "feature2": "Ausgezeichnetes Preis-Flexibilitäts-Verhältnis",
+      "feature3": "Für regelmäßige Reisen",
+      "feature4": "Vollständige Bewegungsfreiheit",
+      "highlight": "Am beliebtesten",
+      "pageTitle": "Monatliche Vignette - 30 Tage | Preis und Informationen",
+      "pageDescription": "Monatliche Vignette für 30 Tage - die beliebteste Wahl unter Fahrern. Ausgezeichnetes Preis-Leistungs-Verhältnis für regelmäßige Reisen. Gültig 720 Stunden (30 Tage) ab dem Zeitpunkt der Aktivierung.",
+      "mainTitle": "Monatliche Vignette",
+      "price": "30,00 BGN",
+      "priceEur": "15,34 €",
+      "perfectFor": "Die beliebteste Wahl unter Fahrern",
+      "validFrom": "Gültig 720 Stunden (30 Tage) ab dem Zeitpunkt der Aktivierung",
+      "features": {
+        "valid30": "Gültig 30 Tage",
+        "valid30Desc": "Genau 30 Tage ab dem Zeitpunkt der Aktivierung",
+        "excellentBalance": "Ausgezeichnetes Gleichgewicht",
+        "excellentBalanceDesc": "Perfektes Verhältnis zwischen Preis und Flexibilität",
+        "forWorking": "Für Berufstätige",
+        "forWorkingDesc": "Ideal für Personen mit regelmäßigen Dienstreisen",
+        "fullFreedom": "Vollständige Freiheit",
+        "fullFreedomDesc": "Vollständige Bewegungsfreiheit auf allen mautpflichtigen Straßen",
+        "mostPopular": "Am beliebtesten",
+        "title": "Warum die monatliche Vignette wählen?",
+        "subtitle": "Vorteile und Eigenschaften der 30-Tage-Vignette"
+      },
+      "useCases": {
+        "title": "Wann sollten Sie eine monatliche Vignette verwenden?",
+        "regularWork": "Regelmäßige Reisen zur Arbeit",
+        "businessTrips": "Personen mit Dienstreisen",
+        "countryTravelers": "Reisende im Land",
+        "familyTrips": "Familienreisen während des Monats",
+        "students": "Studenten mit häufigem Reisebedarf",
+        "businessMeetings": "Geschäftstreffen und Kunden",
+        "tourists": "Touristen für längere Urlaube",
+        "secondHome": "Personen mit Zweitwohnsitz"
+      },
+      "benefits": {
+        "title": "Hauptvorteile",
+        "mostPopularChoice": "Die beliebteste Wahl unter Kunden",
+        "excellentValue": "Ausgezeichnetes Preis-Leistungs-Verhältnis",
+        "idealForRegular": "Ideal für regelmäßige Reisen",
+        "fullCoverage": "Vollständige Abdeckung für einen ganzen Monat",
+        "instantActivation": "Sofortige Aktivierung bei Zahlung",
+        "noAdditionalPurchases": "Keine zusätzlichen Käufe erforderlich"
+      },
+      "info": {
+        "title": "Wichtige Informationen",
+        "activationTitle": "Aktivierung",
+        "activation": "Die Vignette wird sofort nach der Zahlung aktiviert",
+        "validityTitle": "Gültigkeit",
+        "validity": "Genau 30 Tage ab dem Zeitpunkt der Aktivierung",
+        "coverageTitle": "Abdeckung",
+        "coverage": "Alle mautpflichtigen Straßen in Bulgarien",
+        "vehiclesTitle": "Fahrzeuge",
+        "vehicles": "Pkw bis 3,5 Tonnen"
+      },
+      "cta": {
+        "title": "Benötigen Sie monatliche Abdeckung?",
+        "subtitle": "Kaufen Sie jetzt eine monatliche Vignette und genießen Sie vollständige Freiheit für 30 Tage.",
+        "button": "Monatliche Vignette kaufen",
+        "allPrices": "Alle Preise"
+      }
+    },
+    "quarterly": {
+      "title": "Dreimonatliche Vignette",
+      "subtitle": "Sichern Sie sich Ruhe für eine ganze Saison!",
+      "duration": "3 Monate",
+      "description": "Wirtschaftliche Wahl für Saisonreisende",
+      "description1": "Die dreimonatliche Vignette ist perfekt für diejenigen, die Vignetten für einen Zeitraum von 90 Tagen vergessen möchten. Ideal für die Sommersaison, wenn Reisen am intensivsten sind, oder für die Wintermonate für Ski-Tourismus-Liebhaber.",
+      "description2": "Die dreimonatliche Vignette deckt alle Ihre Bedürfnisse ohne zusätzliche Käufe ab. Erhebliche Einsparungen gegenüber dem separaten Kauf monatlicher Vignetten - Sie sparen bis zu 15% der Gesamtkosten bei der Wahl eines dreimonatigen Zeitraums. Wird sofort bei Online-Bestellung aktiviert und ist genau 90 Tage gültig.",
+      "feature1": "Gültig genau 90 Tage",
+      "feature2": "Ersparnis bis zu 15%",
+      "feature3": "Ideal für Saisons",
+      "feature4": "Keine zusätzlichen Käufe",
+      "highlight": "Ersparnis 15%",
+      "pageTitle": "Dreimonatliche Vignette - 90 Tage | Preis und Informationen",
+      "pageDescription": "Dreimonatliche Vignette für 90 Tage - ausgezeichneter Wert für häufige Reisende. Ideal für Saisonarbeiter und regelmäßige Dienstreisen. Gültig 2160 Stunden (90 Tage).",
+      "mainTitle": "Dreimonatliche Vignette",
+      "duration90": "90 Tage",
+      "price": "60,00 BGN",
+      "priceEur": "30,68 €",
+      "perfectFor": "Ausgezeichneter Wert für häufige Reisende",
+      "validFrom": "Gültig 2160 Stunden (90 Tage) ab dem Zeitpunkt der Aktivierung",
+      "features": {
+        "valid90": "Gültig 90 Tage",
+        "valid90Desc": "Genau 3 Monate ab dem Zeitpunkt der Aktivierung",
+        "save15": "Ersparnis 15%",
+        "save15Desc": "Erhebliche Ersparnis gegenüber einzelnen monatlichen Vignetten",
+        "idealSeasons": "Ideal für Saisons",
+        "idealSeasonsDesc": "Perfekt für die Sommersaison oder die Wintermonate",
+        "noPurchases": "Keine zusätzlichen Käufe",
+        "noPurchasesDesc": "Vergessen Sie Vignetten für einen Zeitraum von 90 Tagen",
+        "title": "Warum die dreimonatliche Vignette wählen?",
+        "subtitle": "Vorteile und Eigenschaften der 90-Tage-Vignette"
+      },
+      "seasonInfo": {
+        "title": "Saisonale Abdeckung",
+        "subtitle": "Ideal für die verschiedenen Jahreszeiten",
+        "summer": {
+          "title": "Sommersaison",
+          "description": "Perfekt für die Sommermonate, wenn Reisen am intensivsten sind",
+          "months": "Juni - August"
+        },
+        "winter": {
+          "title": "Wintersaison",
+          "description": "Ideal für die Wintermonate für Ski-Tourismus-Liebhaber",
+          "months": "Dezember - Februar"
+        }
+      },
+      "useCases": {
+        "title": "Wann sollten Sie eine dreimonatliche Vignette verwenden?",
+        "summerSeason": "Sommer-Tourismus-Saison",
+        "winterSki": "Wintermonate für Ski-Tourismus",
+        "seasonalWork": "Saisonarbeit in einer anderen Stadt",
+        "longProjects": "Langfristige Projekte und Dienstreisen",
+        "familyHolidays": "Familienurlaub während der Saison",
+        "regular3Months": "Regelmäßige Reisen für 3 Monate",
+        "studentsSemester": "Studenten während des Semesters",
+        "resortResidents": "Saisonbewohner von Resorts"
+      },
+      "benefits": {
+        "title": "Hauptvorteile",
+        "seasonPeace": "Sichern Sie sich Ruhe für eine ganze Saison",
+        "save15Percent": "Ersparnis bis zu 15% der Gesamtkosten",
+        "intensiveTravel": "Ideal für intensive Reisen",
+        "coversAllNeeds": "Deckt alle Bedürfnisse ohne zusätzliche Käufe ab",
+        "instantActivation": "Sofortige Aktivierung bei Online-Bestellung",
+        "valid90Days": "Gültig genau 90 Tage ab der Aktivierung"
+      },
+      "info": {
+        "title": "Wichtige Informationen",
+        "activationTitle": "Aktivierung",
+        "activation": "Sofortige Aktivierung bei Online-Bestellung",
+        "validityTitle": "Gültigkeit",
+        "validity": "Genau 90 Tage (3 Monate) ab der Aktivierung",
+        "savingsTitle": "Ersparnis",
+        "savings": "Bis zu 15% Ersparnis gegenüber monatlichen Vignetten",
+        "vehiclesTitle": "Fahrzeuge",
+        "vehicles": "Pkw bis 3,5 Tonnen"
+      },
+      "cta": {
+        "title": "Planen Sie saisonale Reisen?",
+        "subtitle": "Kaufen Sie jetzt eine dreimonatliche Vignette und sparen Sie bis zu 15% für 90 Tage sorgenfreies Reisen.",
+        "button": "Dreimonatliche Vignette kaufen",
+        "allPrices": "Alle Preise"
+      }
+    },
+    "annual": {
+      "title": "Jährliche Vignette",
+      "subtitle": "Die wirtschaftlichste Lösung für alle, die regelmäßig reisen!",
+      "duration": "12 Monate",
+      "description": "Am günstigsten für Regelfahrer",
+      "description1": "Die jährliche Vignette ist obligatorisch für alle Autobesitzer, die regelmäßig mautpflichtige Straßen in Bulgarien nutzen. Sie bietet das beste Preis-Leistungs-Verhältnis und eliminiert die Notwendigkeit häufiger Käufe.",
+      "description2": "Mit einer jährlichen Vignette sparen Sie bis zu 40% gegenüber dem Kauf monatlicher Vignetten über das ganze Jahr. Besonders vorteilhaft für alle, die sich keine Sorgen über den Status ihrer Vignette machen wollen. Die jährliche Vignette wird sofort aktiviert und ist genau 365 Tage ab dem Aktivierungsdatum gültig.",
+      "feature1": "Gültig genau 365 Tage",
+      "feature2": "Ersparnis bis zu 40%",
+      "feature3": "Maximaler Komfort",
+      "feature4": "Keine Sorgen über den Status",
+      "highlight": "Ersparnis 40%",
+      "pageTitle": "Jährliche Vignette - 365 Tage | Preis und Informationen | Vinetka.bg",
+      "pageDescription": "Jährliche Vignette für 365 Tage - die wirtschaftlichste Lösung für alle, die regelmäßig reisen. Ersparnis bis zu 40% gegenüber monatlichen Vignetten. Maximaler Komfort ohne Sorgen.",
+      "mainTitle": "Jährliche Vignette",
+      "duration365": "365 Tage",
+      "price": "97,00 BGN",
+      "priceEur": "49,60 €",
+      "perfectFor": "Die wirtschaftlichste Lösung für ständige Reisende",
+      "validFrom": "Gültig bis 31. Januar des folgenden Jahres",
+      "features": {
+        "valid365": "Gültig 365 Tage",
+        "valid365Desc": "Genau ein ganzes Jahr ab dem Zeitpunkt der Aktivierung",
+        "save40": "Ersparnis 40%",
+        "bestValue": "Am günstigsten",
+        "save40Desc": "Maximale Ersparnis gegenüber dem Kauf monatlicher Vignetten",
+        "maxConvenience": "Maximaler Komfort",
+        "maxConvenienceDesc": "Die bequemste Lösung für ganze 365 Tage",
+        "noWorries": "Keine Sorgen",
+        "noWorriesDesc": "Vergessen Sie den Vignettenstatus für ein ganzes Jahr",
+        "title": "Warum die jährliche Vignette wählen?",
+        "subtitle": "Vorteile und Eigenschaften der 365-Tage-Vignette"
+      },
+      "useCases": {
+        "title": "Für wen ist die jährliche Vignette geeignet?",
+        "regularUsers": "Autobesitzer mit regelmäßiger Nutzung",
+        "dailyCommuters": "Personen, die täglich zur Arbeit fahren",
+        "businessOwners": "Geschäftsinhaber mit häufigen Dienstreisen",
+        "activeFamilies": "Familien mit aktivem Lebensstil",
+        "salesReps": "Handelsvertreter",
+        "multiCityResidents": "Personen mit Wohnsitzen in verschiedenen Städten",
+        "professionalDrivers": "Berufskraftfahrer",
+        "noWorryUsers": "Alle, die keine Sorgen wollen"
+      },
+      "benefits": {
+        "title": "Hauptvorteile",
+        "bestSolution": "Die wirtschaftlichste Lösung für ein ganzes Jahr",
+        "save40Percent": "Ersparnis bis zu 40% gegenüber monatlichen Vignetten",
+        "eliminateFrequentPurchases": "Eliminiert die Notwendigkeit häufiger Käufe",
+        "instantActivation": "Sofortige Aktivierung bei Bestellung",
+        "valid365Days": "Gültig genau 365 Tage ab der Aktivierung",
+        "necessaryForRegular": "Notwendig für Regelnutzer",
+        "bestValueForMoney": "Bestes Preis-Leistungs-Verhältnis",
+        "fullPeaceOfMind": "Vollständige Ruhe für ein ganzes Jahr"
+      },
+      "comparison": {
+        "title": "Kostenvergleich",
+        "subtitle": "Sehen Sie, wie viel Sie mit einer jährlichen Vignette sparen können",
+        "recommended": "Empfohlen",
+        "cost": "Kosten",
+        "savings": "Ersparnis",
+        "convenience": "Komfort",
+        "monthly": "Monatliche Vignetten",
+        "monthlyCost": "12x monatlicher Preis",
+        "monthlyConvenience": "Häufiger Wechsel",
+        "annual": "Jährliche Vignette",
+        "annualCost": "Festpreis",
+        "annualSavings": "Bis zu 40%",
+        "annualConvenience": "Einmal pro Jahr"
+      },
+      "info": {
+        "title": "Wichtige Informationen",
+        "activationTitle": "Aktivierung",
+        "activation": "Die jährliche Vignette wird sofort aktiviert",
+        "validityTitle": "Gültigkeit",
+        "validity": "Genau 365 Tage ab dem Aktivierungsdatum",
+        "savingsTitle": "Ersparnis",
+        "savings": "Bis zu 40% Ersparnis gegenüber monatlichen Vignetten",
+        "vehiclesTitle": "Fahrzeuge",
+        "vehicles": "Pkw bis 3,5 Tonnen"
+      },
+      "cta": {
+        "title": "Bereit für ein ganzes Jahr sorgenfreies Reisen?",
+        "subtitle": "Kaufen Sie jetzt eine jährliche Vignette und sparen Sie bis zu 40% für 365 Tage vollständige Freiheit.",
+        "button": "Jährliche Vignette kaufen",
+        "allPrices": "Alle Preise"
+      }
+    },
+    "backToPrices": "Zurück zu den Preisen",
+    "chooseVignette": "Wählen Sie Ihre Vignette",
+    "orderNow": "Jetzt bestellen",
+    "benefitsSection": {
+      "title": "Warum uns wählen?",
+      "subtitle": "Vorteile unserer Preispolitik"
+    },
+    "pricingSection": {
+      "title": "Wählen Sie Ihre Vignette",
+      "subtitle": "Vergleichen Sie verschiedene Optionen und wählen Sie die am besten geeignete für Ihre Bedürfnisse",
+      "validFor": "Gültig für",
+      "learnMore": "Mehr erfahren"
+    },
+    "infoSection": {
+      "title": "Vollständige und aktuelle Informationen",
+      "description1": "Auf vinetka.bg finden Sie vollständige und aktuelle Informationen über die Preise aller Arten elektronischer Vignetten in Bulgarien. Unsere Preise enthalten alle Steuern und Provisionen - keine versteckten Kosten oder zusätzlichen Gebühren bei der Zahlung.",
+      "description2": "Vergleichen Sie verschiedene Optionen und wählen Sie die am besten geeignete für Ihre Bedürfnisse. Alle Preise enthalten die MwSt. und gelten für Pkw bis 3,5 Tonnen.",
+      "paymentText": "Kartenzahlung - schnell und sicher"
+    },
+    "ctaSection": {
+      "title": "Bereit zum Reisen?",
+      "subtitle": "Wählen Sie die geeignete Vignette und zahlen Sie online in Sekunden.",
+      "buyButton": "Vignette kaufen",
+      "questionsText": "Haben Sie Fragen?"
+    }
+  },
+  "tollTax": {
+    "title": "Mautgebühr online - Modus für Lkw",
+    "description": "Kaufen Sie Mautgebühren online für Lkw und Busse in Bulgarien. Schneller und einfacher Zugang zu Autobahnen. Zahlen Sie im Voraus und vermeiden Sie das Anhalten an physischen Mautstellen.",
+    "pageTitle": "Mautgebühr für Lkw",
+    "pageSubtitle": "Schnelle und bequeme Art, Straßengebühren zu zahlen",
+    "heroTitle": "Mautgebühr online",
+    "heroSubtitle": "Modus für Lkw und Busse",
+    "learnMore": "Mehr erfahren",
+    "tollPointsNav": "Mautstellen",
+    "whatIsTollTax": {
+      "title": "Was ist die Mautgebühr?",
+      "subtitle": "Spezieller Besteuerungsmodus für schwere Nutzfahrzeuge",
+      "description1": "Im Gegensatz zu elektronischen Vignetten, die für Pkw bestimmt sind, beziehen sich Mautgebühren in Bulgarien auf schwere Nutzfahrzeuge und Busse.",
+      "description2": "Dieser Modus basiert auf zurückgelegter Entfernung und Fahrzeugkategorie und gewährleistet eine faire Besteuerung für die größere Belastung der Straßeninfrastruktur.",
+      "description3": "Verstehen Sie das Mautsystem, um Ihre Routen zu planen und Zahlungen effektiv zu verwalten. Mautgebühren werden für das Passieren bestimmter Brücken, Tunnel und spezifischer Straßenabschnitte außerhalb des Hauptvignettensystems erhoben."
+    },
+    "benefits": {
+      "title": "Warum Online-Zahlung wählen?",
+      "subtitle": "Vorteile der Vorauszahlung von Mautgebühren",
+      "saveTime": "Zeit sparen",
+      "saveTimeDesc": "Vermeiden Sie das Anhalten an physischen Mautstellen",
+      "onlinePayment": "Online-Zahlung",
+      "onlinePaymentDesc": "Zahlen Sie im Voraus mit Karte bequem von zu Hause",
+      "avoidFines": "Bußgelder vermeiden",
+      "avoidFinesDesc": "Sichern Sie sich eine gültige Mautgebühr und vermeiden Sie Sanktionen",
+      "planRoute": "Route planen",
+      "planRouteDesc": "Erhalten Sie detaillierte Informationen über alle Mautstellen"
+    },
+    "tollPoints": {
+      "title": "Haupt-Mautstellen in Bulgarien",
+      "subtitle": "Orte, an denen Mautgebühren erhoben werden",
+      "vidinBridge": "Brücke Vidin",
+      "ruseBridge": "Brücke Ruse",
+      "topliDolTunnel": "Tunnel Topli Dol",
+      "otherObjects": "Andere Objekte",
+      "vidinBridgeDesc": "Donaubrücke 1",
+      "ruseBridgeDesc": "Donaubrücke 2",
+      "topliDolTunnelDesc": "Autobahn A1",
+      "otherObjectsDesc": "Spezifische Straßenabschnitte"
+    },
+    "targetAudience": {
+      "title": "Für wen ist der Service bestimmt?",
+      "description1": "Unabhängig davon, ob Sie Besitzer eines Transportunternehmens oder Lkw-Fahrer sind, ist es unser Ziel, Ihre Arbeit zu erleichtern und problemloses Passieren mautpflichtiger Straßenabschnitte zu gewährleisten.",
+      "description2": "Unsere Plattform bietet Ihnen die Möglichkeit, Mautgebühren im Voraus online zu zahlen und das Anhalten an physischen Mautstellen zu vermeiden. Dies ist besonders praktisch bei starkem Verkehr oder beim Reisen außerhalb der Arbeitszeiten."
+    },
+    "cta": {
+      "title": "Zeit sparen – Bußgelder vermeiden!",
+      "subtitle": "Wir bieten detaillierte Informationen zu allen Mautstellen und aktuellen Preisen.",
+      "contactUs": "Kontaktieren Sie uns",
+      "allServices": "Alle Dienstleistungen"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "pageTitle": "Blog - Nachrichten und Tipps zu Vignetten",
+    "pageDescription": "Neueste Nachrichten, Tipps und Informationen zu elektronischen Vignetten und Reisen in Bulgarien.",
+    "readMore": "Weiterlesen",
+    "noArticles": "Momentan sind keine Artikel verfügbar.",
+    "loading": "Artikel werden geladen..."
+  },
+  "services": {
+    "title": "Dienstleistungen",
+    "pageTitle": "Dienstleistungen - Alles über Vignetten und Reisen",
+    "pageDescription": "Entdecken Sie unsere Dienstleistungen für elektronische Vignetten, Mautgebühren und andere Reisedienstleistungen.",
+    "loading": "Dienstleistungen werden geladen...",
+    "noServices": "Momentan sind keine Dienstleistungen verfügbar.",
+    "contactForPrice": "Kontaktieren Sie uns für den Preis"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Datenschutzerklärung",
+      "pageTitle": "Datenschutzerklärung - Vinetka.bg",
+      "pageDescription": "Erfahren Sie, wie wir Ihre personenbezogenen Daten sammeln, verwenden und schützen."
+    },
+    "cookiePolicy": {
+      "title": "Cookie-Richtlinie",
+      "pageTitle": "Cookie-Richtlinie - Vinetka.bg", 
+      "pageDescription": "Informationen zur Verwendung von Cookies auf unserer Website."
+    },
+    "termsOfService": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "pageTitle": "Allgemeine Geschäftsbedingungen - Vinetka.bg",
+      "pageDescription": "Nutzungsbedingungen für unsere Dienstleistungen und Website."
+    }
+  },
+  "vignetteChecker": {
+    "title": "Vignetten-Prüfung",
+    "pageTitle": "Vignetten-Prüfung - Vinetka.bg",
+    "pageDescription": "Überprüfen Sie den Status Ihrer elektronischen Vignette schnell und einfach.",
+    "checkButton": "Vignette prüfen",
+    "enterPlateNumber": "Kennzeichen eingeben",
+    "checkStatus": "Status der Vignette prüfen"
+  },
+  "common": {
+    "readMore": "Weiterlesen",
+    "contactUs": "Kontaktieren Sie uns",
+    "learnMore": "Mehr erfahren",
+    "buyNow": "Jetzt kaufen",
+    "getStarted": "Jetzt starten",
+    "loading": "Wird geladen...",
+    "error": "Ein Fehler ist aufgetreten",
+    "success": "Erfolgreich",
+    "close": "Schließen",
+    "cancel": "Abbrechen",
+    "confirm": "Bestätigen",
+    "save": "Speichern",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Vorherige",
+    "search": "Suchen",
+    "filter": "Filter",
+    "sort": "Sortieren",
+    "selectLanguage": "Sprache wählen"
+  },
+  "components": {
+    "hero": {
+      "title": "Informationen zur Online-Vignette",
+      "subtitle": "Erfahren Sie mehr über Online-Vignetten einfach und schnell auf unserer Website.",
+      "ctaButton": "Jetzt starten",
+      "learnMore": "Mehr erfahren"
+    },
+    "cta": {
+      "title": "Sind Sie bereit anzufangen?",
+      "subtitle": "Beginnen Sie noch heute mit der Nutzung unserer Dienstleistungen",
+      "button": "Jetzt starten"
+    },
+    "vignetteChecker": {
+      "title": "Vignetten-Prüfung",
+      "subtitle": "Überprüfen Sie den Status Ihrer elektronischen Vignette",
+      "inputPlaceholder": "Kennzeichen eingeben",
+      "checkButton": "Prüfen",
+      "validVignette": "Gültige Vignette",
+      "invalidVignette": "Ungültige Vignette",
+      "errorMessage": "Fehler bei der Prüfung aufgetreten"
+    },
+    "newsletter": {
+      "title": "Abonnieren Sie unseren Newsletter",
+      "subtitle": "Erhalten Sie die neuesten Nachrichten und Updates",
+      "emailPlaceholder": "Geben Sie Ihre E-Mail ein",
+      "subscribeButton": "Abonnieren",
+      "successMessage": "Erfolgreich abonniert!",
+      "errorMessage": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+    },
+    "latestPosts": {
+      "title": "Neueste Beiträge",
+      "viewAll": "Alle anzeigen",
+      "readMore": "Weiterlesen",
+      "noArticles": "Keine Artikel verfügbar"
+    },
+    "cardsRow": {
+      "title": "Wir akzeptieren",
+      "altText": "Akzeptierte Karten - Visa, Mastercard"
+    },
+    "ctasRow": {
+      "cta1Title": "Hausratversicherung",
+      "cta1Description": "Hausratversicherung - vollständig online. Einfaches Verfahren, Immobilienbewertung und angemessene Deckung gegen Feuer, Naturkatastrophen, Erdbeben und Diebstahl. Zusätzliche Klauseln. Geeignet für Wohnungen, Häuser und Ferienimmobilien.",
+      "cta1Button": "Mehr sehen",
+      "cta2Title": "Bei Reisen ins Ausland",
+      "cta2Description": "Reiseversicherung für das Ausland mit garantierter Assistance - online! Deckung für Auslandsreisen - privat, geschäftlich oder für Sportwettkämpfe. Zusätzliche Klauseln, inkl. Rettungskosten, Gepäckverlust, Haftpflicht, COVID-19-Deckung.",
+      "cta2Button": "Online versichern",
+      "cta3Title": "Bergversicherung",
+      "cta3Description": "Versicherung mit Deckung gegen Unfälle in den Bergen - für Ski, Snowboard, Mountainbiking, Klettern, Trekking und andere Extremsportarten in Bulgarien. Einfacher und sicherer Online-Abschluss! Ruhe bei jedem Berggang.",
+      "cta3Button": "Online versichern",
+      "cta4Title": "Krankenversicherung",
+      "cta4Description": "Krankenversicherung mit festen Paketen mit Entschädigungen bei bestimmten medizinischen Fällen: Operation, Krankenhausaufenthalt (inkl. Geburt), bei Frakturen. Einfacher und schneller Online-Abschluss ohne die Notwendigkeit, eine detaillierte Gesundheitserklärung auszufüllen.",
+      "cta4Button": "Online versichern"
+    },
+    "vignetteCheckerCTA": {
+      "title": "Überprüfen Sie Ihre Vignette",
+      "subtitle": "Schnelle und kostenlose Überprüfung der Gültigkeit der elektronischen Vignette",
+      "realTimeCheck": "Echtzeit-Prüfung",
+      "officialAPI": "Offizielle API von BG TOLL",
+      "freeService": "Kostenloser Service",
+      "noRegistration": "Ohne Registrierung",
+      "checkVignette": "Vignette jetzt prüfen",
+      "enterRegistrationNumber": "Kennzeichen eingeben",
+      "registrationNumber": "Kennzeichen",
+      "vignetteValid": "Die Vignette ist gültig",
+      "validityUntil": "Gültigkeit bis: 31.12.2024",
+      "quickCheck": "Schnelle Prüfung",
+      "resultShownInSeconds": "Das Ergebnis wird in Sekunden angezeigt",
+      "dataDirectlyFromBGToll": "Die Daten kommen direkt von BG TOLL",
+      "noTaxesOrHiddenFees": "Keine Gebühren oder versteckten Kosten"
+    },
+    "privacyPolicy": {
+      "pageTitle": "Datenschutzerklärung - Vinetka.bg",
+      "pageDescription": "Datenschutzerklärung von Vinetka.bg - erfahren Sie mehr über die Verarbeitung personenbezogener Daten.",
+      "title": "DATENSCHUTZERKLÄRUNG",
+      "introduction": "Diese Datenschutzerklärung wird von \"Digital Policy Hub\" AG, UIN 207623030 (nachfolgend \"das Unternehmen\" oder \"DPH\" AG genannt) mit Sitz und Verwaltungsadresse: Sofia, PLZ 1113, Bezirk Isgrev, Str. \"Major Yuri Gagarin\" Nr. 30, Gebäude B – unabhängiger Administrator und Verarbeiter personenbezogener Daten angenommen. Das Unternehmen ist Partner der \"DIGITAL SMART INFRASTRUCTURE\" AG, UIN 205612035 (nachfolgend \"DSI\" AG genannt) mit Sitz und Verwaltungsadresse: Republik Bulgarien, Region Sofia-Stadt, Gemeinde Hauptstadt, Stadt Sofia, Bezirk Sredets, Str. \"Georgi S. Rakovski\" Nr. 96, welches Unternehmen als Nationaler Dienstleister bei der Agentur \"Straßeninfrastruktur\" registriert ist und das Recht hat, Straßenmauterhebung und andere Tätigkeiten auszuführen. \"DPH\" AG führt Tätigkeiten zur Bereitstellung der Möglichkeit für Nutzer aus, Vignettentaxen, Kompensationstaxen und \"Maximaler Tagesmaut\"-Gebühren im Namen und auf Rechnung der \"DSI\" AG über die Internetseite zu bezahlen.",
+      "contactInfo": "Nutzer der Internetseite www.vinetka.bg können sich mit \"Digital Policy Hub\" AG unter der oben genannten Adresse, telefonisch unter +359 876 995 177 oder unter folgender E-Mail-Adresse in Verbindung setzen: hello@insurance.bg",
+      "updatePolicy": "\"Digital Policy Hub\" AG behält sich das Recht vor, diese Datenschutzerklärung regelmäßig zu aktualisieren und zu ändern, um Änderungen in der Art der Verarbeitung Ihrer personenbezogenen Daten oder im Zusammenhang mit Änderungen der geltenden Gesetzgebung widerzuspiegeln. Im Falle solcher Änderungen wird \"Digital Policy Hub\" AG eine aktualisierte Version der Datenschutzerklärung auf der Internetseite www.vinetka.bg veröffentlichen.",
+      "sections": {
+        "definitions": {
+          "title": "DEFINITIONEN",
+          "personalData": "Personenbezogene Daten bedeuten alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person (\"betroffene Person\") beziehen. Als identifizierbar wird eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu einer Kennung wie einem Namen, einer Kennnummer, Standortdaten, einer Online-Kennung oder einem oder mehreren besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen, genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser natürlichen Person sind;",
+          "processing": "Verarbeitung bezeichnet jeden mit oder ohne Hilfe automatisierter Verfahren ausgeführten Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit personenbezogenen Daten wie das Erheben, das Erfassen, die Organisation, das Ordnen, die Speicherung, die Anpassung oder Veränderung, das Auslesen, das Abfragen, die Verwendung, die Offenlegung durch Übermittlung, Verbreitung oder eine andere Form der Bereitstellung, den Abgleich oder die Verknüpfung, die Einschränkung, das Löschen oder die Vernichtung;",
+          "personalDataFile": "Datei mit personenbezogenen Daten bezeichnet jede strukturierte Sammlung personenbezogener Daten, die nach bestimmten Kriterien zugänglich sind, unabhängig davon, ob diese Sammlung zentral, dezentral oder nach funktionalen oder geografischen Gesichtspunkten geordnet geführt wird;",
+          "controller": "Verantwortlicher ist die natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet; sind die Zwecke und Mittel dieser Verarbeitung durch das Unionsrecht oder das Recht der Republik Bulgarien vorgegeben, so kann der Verantwortliche beziehungsweise können die bestimmten Kriterien seiner Benennung nach dem Unionsrecht oder dem Recht der Republik Bulgarien vorgesehen werden;",
+          "processor": "Auftragsverarbeiter - natürliche oder juristische Person, Behörde, Einrichtung oder andere Stelle, die personenbezogene Daten im Auftrag des Verantwortlichen verarbeitet;",
+          "dataSubject": "Betroffene Person - natürliche Person, die identifiziert ist oder auf der Grundlage bestimmter Informationen, die personenbezogene Daten darstellen, direkt oder indirekt identifiziert werden kann;",
+          "consent": "Съгласие на субекта на данните - всяко свободно изразено, конкретно, информирано и недвусмислено указание за волята на субекта на данните, посредством изявление или ясно потвърждаващо действие, което изразява съгласието му свързаните с него лични данни да бъдат обработени;",
+          "dataBreach": "Нарушение на сигурността на лични данни - нарушение на сигурността, което води до случайно или неправомерно унищожаване, загуба, промяна, неразрешено разкриване или достъп до лични данни, които се предават, съхраняват или обработват по друг начин;",
+          "platform": "Платформа – интернет страницата (уебсайт), чрез която „ДПХ“ АД осъществява дейността си – www.vinetka.bg;",
+          "roadTaxes": "Пътни такси - е съвкупно понятие, означаващо винетни такси, компенсаторни такси и такси „максимален тол за деня“, както и други нормативно установени такси, събирани за ползване на платената пътна мрежа;",
+          "electronicVignette": "Електронна винетка – означава електронен документ по смисъла на чл. 3, ал. 1 от Закона за електронния документ и електронните удостоверителни услуги, удостоверяващ заплатената винетна такса. Електронната винетка съдържа уникален идентификационен номер, данни за регистрационния номер на пътното превозно средство, държавата, в която е регистрирано, неговата категория, датата на заплащане на таксата и период на валидност. Винетните такси се събират в съответствие с Тарифата за таксите, които се събират от Агенция „Пътна инфраструктура“, съобразно периода им на валидност;",
+          "compensatoryTax": "Компенсаторна такса – означава предвидената в чл. 10, ал. 2 от Закона за пътищата пътна такса, която може да се събере в полза на Агенция „Пътна инфраструктура“ при установено движение по платената пътна мрежа, когато за съответното пътно превозно средство не е заплатена съответната винетна такса или тол такса. Размерът на Компенсаторната такса е определен в Тарифа за таксите, които се събират от Агенция „Пътна инфраструктура“. В резултат от заплащането на компенсаторна такса, водачът на ППС, неговият собственик или ползвател се освобождава от административнонаказателна отговорност. В този случай се освобождават от административнонаказателна отговорност и всички други лица, които могат да носят такава във връзка с конкретното превозно средство."
+        },
+        "generalProvisions": {
+          "title": "ALLGEMEINE BESTIMMUNGEN",
+          "compliance": "Bei der Verarbeitung personenbezogener Daten hält das Unternehmen alle für seine Tätigkeit geltenden Datenschutzvorschriften ein, einschließlich, aber nicht ausschließlich, der Verordnung (EU) 2016/679 des Europäischen Parlaments und des Rates vom 27. April 2016 zum Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten und zum freien Datenverkehr sowie zur Aufhebung der Richtlinie 95/46/EG (Datenschutz-Grundverordnung, „DSGVO“) und des Datenschutzgesetzes.",
+          "internalProcedures": "Zur Umsetzung der Bestimmungen der DSGVO wendet das Unternehmen interne Verfahren zum Schutz personenbezogener Daten an und kontrolliert deren Einhaltung durch alle Mitarbeiter.",
+          "legitimateInterest": "Die DPH AG hat ein berechtigtes Interesse an der Aufrechterhaltung des Betriebs ihrer Website und verarbeitet in diesem Zusammenhang Daten aller Besucher und deren Aktivitäten."
+        },
+        "purposes": {
+          "title": "ZWECKE",
+          "principles": "Bei der Verarbeitung personenbezogener Daten folgt die DPH AG den Grundsätzen der Rechtmäßigkeit, Treu und Glauben und Transparenz, der Datenminimierung, der Genauigkeit durch rechtzeitige Löschung oder Berichtigung unrichtiger personenbezogener Daten sowie der Speicherbegrenzung. Das Unternehmen erhebt personenbezogene Daten für bestimmte, ausdrücklich angegebene und legitime Zwecke und verarbeitet die erhobenen personenbezogenen Daten nicht weiter in einer mit diesen Zwecken unvereinbaren Weise. Die DPH AG speichert personenbezogene Daten in einer Form, die die Identifizierung der betroffenen Person nur so lange ermöglicht, wie es für die Zwecke, für die die personenbezogenen Daten verarbeitet werden, erforderlich ist.",
+          "dataSharing": "Im Rahmen der Verbreitung von elektronischen Vignetten und der Zahlung anderer Straßenbenutzungsgebühren werden Ihre personenbezogenen Daten auch von der Agentur für Straßeninfrastruktur und/oder der DSI AG bereitgestellt und verarbeitet. Der Austausch personenbezogener Daten zwischen der DPH AG, der DSI AG und der Agentur für Straßeninfrastruktur erfolgt zu folgenden Zwecken gemäß den Angaben der Agentur für Straßeninfrastruktur als Verantwortlicher – zur Verbreitung elektronischer Vignetten und zur Durchführung aller damit verbundenen Maßnahmen; zur Zahlung anderer Straßenbenutzungsgebühren; zum Nachweis der ordnungsgemäßen Erfüllung der Verpflichtungen der DPH AG im Zusammenhang mit den gesetzlichen Anforderungen an die Erhebung von Straßenbenutzungsgebühren und zur Erfüllung aller sich aus dem Gesetz ergebenden Verpflichtungen, einschließlich des Versands von Benachrichtigungen gemäß Art. 10 Abs. 2a–2d des Straßenverkehrsgesetzes. Für diese Zwecke werden folgende personenbezogene Daten erhoben: persönliche Identifikatoren und Kontaktdaten. Zwischen den oben genannten Parteien werden nur die zur Erfüllung ihrer Verpflichtungen erforderlichen personenbezogenen Daten ausgetauscht; sie dürfen keine personenbezogenen Daten außerhalb dieses Rahmens weitergeben. Für die Erstellung statistischer Dokumente, Berichte usw. werden anonymisierte Daten verwendet.",
+          "dataCollection": "Die DPH AG erhebt Ihre personenbezogenen Daten direkt von Ihnen, sodass Sie selbst entscheiden, welche Informationen Sie uns zur Verfügung stellen. Ein Teil der Informationen, die wir von Ihnen erhalten, ist für die Registrierung auf unserer Plattform erforderlich. Das Unternehmen erhebt Ihre personenbezogenen Daten in folgenden Fällen:",
+          "userProfile": "- Wenn Sie ein Benutzerkonto auf unserer Website erstellen, übermitteln Sie uns Ihre E-Mail-Adresse sowie Ihren Vor- und Nachnamen. In diesen Fällen werden Ihre Daten nur für die Zwecke der Registrierung und der von uns angebotenen Dienstleistungen verarbeitet;",
+          "additionalInfo": "- Sie können Ihrem Benutzerprofil zusätzliche Informationen hinzufügen, wie: Mobiltelefonnummer, Festnetznummer und andere. Diese Informationen sind für die Registrierung nicht zwingend erforderlich; mit deren Angabe erklären Sie ausdrücklich Ihr Einverständnis, dass diese im Zusammenhang mit der Bereitstellung besserer Dienstleistungen unsererseits oder zur Klärung Ihrer Anfrage verarbeitet werden. Wenn Sie uns Ihre Kontaktdaten zur Verfügung gestellt haben, können wir diese auch für Direktmarketingzwecke verwenden. Die Verweigerung Ihrer Einwilligung führt nicht zu einer Ablehnung von Dienstleistungen oder anderen nachteiligen Folgen für Sie, verhindert jedoch, dass wir Ihnen unseren Newsletter zusenden und Sie über unsere neuesten Angebote informieren. Sie können Ihre Einwilligung zur Nutzung dieser Daten oder der Nutzung zu Direktmarketingzwecken jederzeit widerrufen oder widersprechen. Der Widerruf oder Widerspruch hat keinerlei Auswirkungen auf andere von der DPH AG bereitgestellte Dienstleistungen;",
+          "vignettePurchase": "- Wenn Sie über die Website eine elektronische Vignette kaufen, stellen Sie uns folgende Informationen zur Verfügung: Fahrzeugkategorie; Zulassungsstaat des Fahrzeugs; amtliches Kennzeichen; Gültigkeitszeitraum der elektronischen Vignette; Startdatum der Gültigkeit; E-Mail-Adresse für Benachrichtigungen über ablaufende Vignetten und festgestellte Verstöße, Vor- und Nachname, Rechnungsdaten, Zahlungsart, Telefonnummer, Kartendaten usw. Sie können den Kauf auch ohne Registrierung auf der Website durchführen; hierfür sind mindestens folgende Angaben erforderlich: amtliches Kennzeichen, Nationalität des Kennzeichens, Gültigkeitszeitraum der elektronischen Vignette, Startdatum der Gültigkeit, E-Mail-Adresse.",
+          "contactForm": "- Wenn Sie den Wunsch geäußert haben, Informationen oder Unterstützung über unser Kontaktformular zu erhalten, um Ihnen eine personalisierte Antwort zu senden;",
+          "comments": "- Wenn Sie Kommentare abgeben oder uns zusätzliche Informationen in einem Bereich der Website zur Verfügung stellen, der dies zulässt;",
+          "socialMedia": "- Sofern unsere Plattform dies zulässt, erhalten wir, wenn Sie sich mit Ihrem Profil in sozialen Medien wie LinkedIn, Twitter, Facebook, Instagram usw. registrieren oder die Plattform der DPH AG anderweitig nutzen, Zugriff auf die personenbezogenen Daten, die Sie in Ihrem Profil öffentlich gemacht haben. Sie können den Zugriff auf diese Daten über die Einstellungen Ihrer Social-Media-Profile verwalten;",
+          "browsing": "- Neben den genannten personenbezogenen Daten kann die DPH AG bestimmte Informationen über Ihr Surfverhalten auf unseren Plattformen erheben und verarbeiten, um Ihre Interessen zu personalisieren und Ihnen auf Ihr Profil zugeschnittene Angebote zu unterbreiten. Die DPH AG kann Informationen auch mittels Cookies und ähnlicher Technologien speichern und sammeln. Wir empfehlen Ihnen, mehr darüber im Abschnitt zur Cookie-Richtlinie auf www.vinetka.bg zu erfahren. Die DPH AG hat ein berechtigtes Interesse an der Aufrechterhaltung des Betriebs ihrer Website und verarbeitet in diesem Zusammenhang Daten aller Besucher und deren Aktivitäten;",
+          "sensitiveData": "- Wir erheben oder verarbeiten keine sensiblen Daten, die zu den besonderen Kategorien personenbezogener Daten gemäß der Datenschutz-Grundverordnung gehören."
+        },
+        "dataTransfer": {
+          "title": "ÜBERMITTLUNG ODER GEWÄHRUNG DES ZUGANGS ZU PERSONENBEZOGENEN DATEN",
+          "recipients": "Je nach Fall können wir einige Ihrer personenbezogenen Daten an folgende Kategorien von Empfängern übermitteln oder diesen Zugang gewähren:",
+          "dsiAd": "- „DSI“ AG – Die bereitgestellten Kontaktdaten werden auf Grundlage von Art. 10, Abs. 2a - 2d und Art. 10a, Art. 4a - 4v des Straßenverkehrsgesetzes im Zusammenhang mit der Versendung von Benachrichtigungen an Sie in den vorgesehenen Fällen verarbeitet – zum Zweck der Erfüllung der gesetzlichen Verpflichtungen der „DSI“ AG. Die DPH AG stellt der DSI AG die E-Mail-Adressen der Nutzer zur Verfügung – diese werden ausschließlich zur Erfüllung der Benachrichtigungspflicht gegenüber den Nutzern des Straßennetzes über das bevorstehende Ablaufdatum der über die Plattformen des Unternehmens erworbenen elektronischen Vignetten verwendet; wenn die DPH AG eine Beschwerde eines Nutzers im Zusammenhang mit der Zahlung einer Straßenbenutzungsgebühr, einschließlich eines Verstoßes über die Plattformen der DPH AG, erhält, übermittelt das Unternehmen der DSI AG den Einspruch zusammen mit den vom Nutzer bei der Beantragung der Straßenbenutzungsgebühr eingegebenen Daten.",
+          "api": "- Agentur für Straßeninfrastruktur;",
+          "courier": "- Anbieter von Kurierdiensten;",
+          "payment": "- Anbieter von Zahlungs-/Bankdienstleistungen;",
+          "legal": "- Im Falle einer gesetzlichen Verpflichtung oder wenn dies zum Schutz der berechtigten Interessen der DPH AG erforderlich ist, kann das Unternehmen bestimmte personenbezogene Daten auch an öffentliche Stellen weitergeben.",
+          "guarantee": "Wir garantieren, dass der Zugang zu Ihren Daten durch private Dritte gemäß den gesetzlichen Bestimmungen im Bereich Datenschutz und Informationssicherheit sowie auf Grundlage von mit ihnen geschlossenen Verträgen erfolgt. Diese Empfängerkategorien sind gesetzlich oder vertraglich verpflichtet, die Vertraulichkeit und Sicherheit Ihrer persönlichen Informationen und Daten zu wahren. Sie dürfen diese Informationen in keiner Weise verwenden, offenlegen oder ändern, außer zur Erfüllung der von uns übertragenen Dienstleistungen oder wenn dies gesetzlich vorgeschrieben ist.",
+          "apiProcessing": "Ungeachtet des Vorstehenden werden Ihre im Zusammenhang mit der Nutzung des gebührenpflichtigen Straßennetzes in Bulgarien erhobenen Daten, einschließlich der Zahlung von Vignetten-, Maut- und Kompensationsgebühren usw., an die Agentur für Straßeninfrastruktur übermittelt, die in Bezug auf diese Daten als Verantwortlicher handelt.",
+          "phoneRecording": "Im gesetzlich zulässigen Rahmen kann die DPH AG Telefongespräche (eingehende und ausgehende) mit Callcentern und Leitungen (Telefonnummern), die für den Kundendienst bestimmt sind, aufzeichnen. Die Aufzeichnung, Speicherung und Verarbeitung der Audioaufnahmen (zusammen mit den im Gespräch offenbarten personenbezogenen Daten) erfolgt zum Schutz der Rechte und berechtigten Interessen der DPH AG."
+        },
+        "security": {
+          "title": "TECHNISCHE UND ORGANISATORISCHE SICHERHEITSMASSNAHMEN FÜR DIE VERARBEITUNG",
+          "intro": "Unter Berücksichtigung der Art, des Umfangs, des Kontexts und der Zwecke der Verarbeitung sowie der Risiken für die Rechte und Freiheiten der Nutzer ergreift die DPH AG die erforderlichen technischen und organisatorischen Maßnahmen, die beispielhaft, aber nicht abschließend, wie folgt aufgeführt sind:",
+          "measures": [
+            "Verschlüsselung personenbezogener Daten.",
+            "Verwendung ausschließlich geprüfter und vorab genehmigter lizenzierter Software.",
+            "Einschränkende Maßnahmen, die die Installation und Nutzung nicht genehmigter Software, Anwendungen, sozialer Netzwerke, Messenger und ähnlicher Programme auf den Arbeitscomputern verhindern.",
+            "Verwendung von Antivirensoftware, Firewalls und Proxy-Servern.",
+            "Passwortschutz und persönliche Zugriffsrechte auf Computer, Geräte, Datenbanken und Verzeichnisse mit Kundeninformationen.",
+            "Automatische Sperrung inaktiver Arbeitscomputer im Netzwerk.",
+            "Schutz von Geräten, die die Geschäftsräume verlassen, wie Laptops oder andere.",
+            "Kontrolle des physischen Zugangs zu elektronischen und papierbasierten Dokumenten, die personenbezogene Daten enthalten, indem die Räume mit abschließbaren Vorrichtungen gesichert werden.",
+            "Ausstattung mit Alarm- und Sicherheitstechnik.",
+            "Anwendung angemessener interner Vorschriften und Schulungen des Personals im Zusammenhang mit der Verarbeitung, Speicherung und Sicherheit personenbezogener Daten und vertraulicher Informationen.",
+            "Archivierung aller Informationen mindestens einmal täglich, sowohl lokal vor Ort als auch auf einem entfernten Server mit verschlüsselter Verbindung.",
+            "Regelmäßige Überprüfung und Kontrolle der Wirksamkeit der Schutzmaßnahmen, Kontrollmechanismen, Systeme und Verfahren, einschließlich der Durchführung von Schwachstellenscans und Behebung festgestellter Schwachstellen.",
+            "Der physische Schutz personenbezogener Daten aus den von der Gesellschaft geführten Registern ist so organisiert, dass die technischen Mittel zu deren Verarbeitung und Speicherung sowie die Dokumente in Papierform in abschließbaren Räumen mit eingeschränktem Zugang verarbeitet und aufbewahrt werden. Der Geschäftsführer und die Mitarbeiter der Gesellschaft haben Zugriffsrechte.",
+            "Jeder Computer, der zur Verarbeitung personenbezogener Daten verwendet wird, ist mit einem passwortgeschützten Betriebssystem, einem Antivirenprogramm, technischen Einschränkungen für das Kopieren von Daten und mit Zugriffsleveln ausgestattet, die jeweils durch separate Passwörter geschützt sind. Jeder Mitarbeiter der Gesellschaft erhält die entsprechenden Zugangspasswörter je nach zugewiesener Aufgabe und Umfang der Verarbeitung personenbezogener Daten. Der Geschäftsführer hat Zugang zu allen Computern und Passwörtern für die einzelnen Zugriffsebenen.",
+            "Unter Berücksichtigung des Stands der Technik, der Implementierungskosten sowie der Art, des Umfangs, des Kontexts und der Zwecke der Verarbeitung sowie der Risiken unterschiedlicher Wahrscheinlichkeit und Schwere für die Rechte und Freiheiten natürlicher Personen wendet das Unternehmen geeignete technische und organisatorische Maßnahmen an, um ein dem Risiko angemessenes Sicherheitsniveau zu gewährleisten, einschließlich – sofern angebracht – eines Prozesses zur regelmäßigen Überprüfung, Bewertung und Evaluierung der Wirksamkeit der technischen und organisatorischen Maßnahmen zur Gewährleistung der Sicherheit der Verarbeitung."
+          ],
+          "disclaimer": "Trotz der Maßnahmen, die wir zum Schutz Ihrer personenbezogenen Daten ergreifen, sind wir uns bewusst, dass die Übertragung von Informationen über das Internet oder andere öffentliche Netzwerke grundsätzlich nicht völlig sicher ist und das Risiko besteht, dass Daten von unbefugten Dritten eingesehen und genutzt werden können. Wir können für diese Schwachstellen von Systemen, die nicht unter unserer Kontrolle stehen, keine Verantwortung übernehmen."
+        },
+        "retention": {
+          "title": "AUFBEWAHRUNGSFRIST",
+          "period": "Die DPH AG speichert alle personenbezogenen Daten, die für die Nutzung der auf der Plattform www.vinetka.bg angebotenen Dienstleistungen erforderlich sind, für den Zeitraum, der zur Erfüllung des jeweiligen Zwecks, für den sie verarbeitet werden, oder gesetzlich vorgesehen ist."
+        },
+        "rights": {
+          "title": "RECHTE DER NUTZER/KUNDEN",
+          "informationRight": "- Recht auf Information (im Zusammenhang mit der Verarbeitung personenbezogener Daten durch die DPH AG) – Die betroffene Person hat das Recht, Informationen über die DPH AG als Verantwortlichen für personenbezogene Daten sowie über die Verarbeitung ihrer personenbezogenen Daten zu erhalten. Diese Informationen umfassen: Daten zur Identifizierung des Unternehmens sowie dessen Kontaktdaten, einschließlich der Kontaktdaten des Datenschutzbeauftragten; die Zwecke und die Rechtsgrundlage der Verarbeitung; die Empfänger oder Kategorien von Empfängern der personenbezogenen Daten, falls vorhanden; die Absicht des Verantwortlichen, personenbezogene Daten an Dritte zu übermitteln (sofern zutreffend); die Aufbewahrungsfrist der personenbezogenen Daten; das Bestehen einer automatisierten Entscheidungsfindung, einschließlich Profiling (sofern vorhanden); Informationen über alle Rechte, die die betroffene Person hat; das Recht auf Beschwerde bei der Aufsichtsbehörde. Das Unternehmen behält sich das Recht vor, auf eine erhaltene Anfrage nicht zu reagieren. Das Unternehmen trägt die Beweislast für die offensichtlich unbegründete oder übermäßige Natur der Anfrage. Die DPH AG erhebt keine Gebühr für die Ausübung von Rechten in Bezug auf Ihre personenbezogenen Daten, es sei denn, Ihr Antrag auf Auskunft ist unbegründet, wiederholt oder übermäßig, in welchem Fall wir eine angemessene Gebühr erheben. Wir werden Sie über etwaige anfallende Gebühren informieren, bevor wir Ihre Anfrage bearbeiten.",
+          "accessRight": "- Recht auf Zugang zu den eigenen personenbezogenen Daten – Die betroffene Person hat das Recht, von der DPH AG eine Bestätigung darüber zu erhalten, ob personenbezogene Daten, die sie betreffen, verarbeitet werden, und, falls dies der Fall ist, Zugang zu Informationen über den Zweck der Verarbeitung, die betreffenden Kategorien personenbezogener Daten, die Empfänger oder Kategorien von Empfängern der personenbezogenen Daten, falls vorhanden, die Absicht des Verantwortlichen, personenbezogene Daten an Dritte zu übermitteln (sofern zutreffend), die Aufbewahrungsfrist der personenbezogenen Daten; das Bestehen des Rechts auf Berichtigung personenbezogener Daten sowie das Recht auf Widerspruch gegen die Verarbeitung personenbezogener Daten, das Bestehen einer automatisierten Entscheidungsfindung, einschließlich Profiling (sofern vorhanden), Informationen über alle Rechte, die die betroffene Person hat, das Recht auf Beschwerde bei der Aufsichtsbehörde.",
+          "rectificationRight": "- Recht auf Berichtigung personenbezogener Daten (wenn die Daten unrichtig sind) – Die betroffene Person hat das Recht, von der DPH AG die unverzügliche Berichtigung unrichtiger personenbezogener Daten, die sie betreffen, zu verlangen.",
+          "erasureRight": {
+            "title": "- Recht auf Löschung personenbezogener Daten (Recht auf „Vergessenwerden“) – Die betroffene Person kann von der DPH AG die Löschung der sie betreffenden personenbezogenen Daten verlangen, wenn einer der folgenden Gründe vorliegt:",
+            "conditions": [
+              "Die personenbezogenen Daten sind für die Zwecke, für die sie erhoben oder auf sonstige Weise verarbeitet wurden, nicht mehr notwendig;",
+              "Die betroffene Person widerruft ihre Einwilligung, auf die sich die Verarbeitung stützt, und es gibt keine andere Rechtsgrundlage für die Verarbeitung (Verarbeitung aufgrund gesetzlicher Verpflichtung oder eines abgeschlossenen Vertrags);",
+              "Die betroffene Person legt Widerspruch gegen die Verarbeitung ein und es liegen keine vorrangigen berechtigten Gründe für die Verarbeitung vor;",
+              "Die personenbezogenen Daten wurden unrechtmäßig verarbeitet;",
+              "Die personenbezogenen Daten müssen zur Erfüllung einer rechtlichen Verpflichtung nach dem Recht der Europäischen Union oder dem Recht der Bundesrepublik Deutschland, das auf die DPH AG als unabhängigen Verantwortlichen anwendbar ist, gelöscht werden."
+            ],
+            "contact": "Sie können uns unter den oben angegebenen Kontaktdaten erreichen, um weitere Informationen zur Löschung Ihrer personenbezogenen Daten zu erhalten."
+          },
+          "restrictionRight": {
+            "title": "- Recht auf Einschränkung der Verarbeitung personenbezogener Daten: Die betroffene Person hat das Recht, die Einschränkung der Verarbeitung ihrer personenbezogenen Daten durch den Verantwortlichen zu verlangen, sofern bestimmte Bedingungen erfüllt sind, darunter:",
+            "conditions": [
+              "- Die Richtigkeit der personenbezogenen Daten wird von der betroffenen Person bestritten. In diesem Fall erfolgt die Einschränkung der Verarbeitung für einen Zeitraum, der es dem Verantwortlichen ermöglicht, die Richtigkeit der personenbezogenen Daten zu überprüfen;",
+              "- Die Verarbeitung ist unrechtmäßig, aber die betroffene Person lehnt die Löschung der personenbezogenen Daten ab und verlangt stattdessen die Einschränkung ihrer Nutzung;",
+              "- Der Verantwortliche benötigt die personenbezogenen Daten für die Zwecke der Verarbeitung nicht länger, aber die betroffene Person benötigt sie zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen;",
+              "- Die betroffene Person hat Widerspruch gegen die Verarbeitung eingelegt, solange noch nicht feststeht, ob die berechtigten Gründe des Verantwortlichen gegenüber denen der betroffenen Person überwiegen."
+            ]
+          },
+          "portabilityRight": "- Recht auf Übertragbarkeit personenbezogener Daten zwischen verschiedenen Verantwortlichen – die betroffene Person hat das Recht, die sie betreffenden personenbezogenen Daten, die sie der DPH AG bereitgestellt hat, in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten und diese Daten einem anderen Verantwortlichen ohne Behinderung durch die DPH AG, der die personenbezogenen Daten bereitgestellt wurden, zu übermitteln, sofern die Verarbeitung auf einer Einwilligung oder auf einem Vertrag beruht und die Verarbeitung automatisiert erfolgt. Bei Ausübung des Rechts auf Datenübertragbarkeit hat die betroffene Person auch das Recht, die direkte Übermittlung der personenbezogenen Daten von der DPH AG an einen anderen Verantwortlichen zu verlangen, soweit dies technisch machbar ist.",
+          "objectionRight": "- Recht auf Widerspruch gegen die Verarbeitung seiner personenbezogenen Daten – betroffene Personen haben das Recht, der Verarbeitung ihrer personenbezogenen Daten durch die DPH AG zu widersprechen. Das Unternehmen wird die Verarbeitung einstellen, es sei denn, es kann zwingende schutzwürdige Gründe für die Verarbeitung nachweisen, die die Interessen, Rechte und Freiheiten der betroffenen Person überwiegen, oder die Verarbeitung dient der Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen. Im Falle eines Widerspruchs gegen die Verarbeitung personenbezogener Daten zu Zwecken der Direktwerbung wird die DPH AG die Verarbeitung unverzüglich einstellen. Sollte Ihr Antrag Daten betreffen, die die DPH AG als Partner der DSI AG im Auftrag der Agentur für Straßeninfrastruktur verarbeitet, werden wir Ihr Anliegen weiterleiten und Sie entsprechend informieren. Wir verpflichten uns, die Weiterleitung so schnell wie möglich vorzunehmen, wobei die weitere Bearbeitung von der Agentur für Straßeninfrastruktur abhängt, die als Verantwortlicher für die Daten handelt und bestimmt, wie diese verarbeitet werden.",
+          "automatedDecisionRight": "- Die betroffene Person hat das Recht, nicht einer ausschließlich auf einer automatisierten Verarbeitung – einschließlich Profiling – beruhenden Entscheidung unterworfen zu werden.",
+          "profilingDefinition": "Profiling ist in Artikel 4 Nr. 4 der Verordnung definiert als jede Art der automatisierten Verarbeitung personenbezogener Daten, bei der diese Daten verwendet werden, um bestimmte persönliche Aspekte einer natürlichen Person zu analysieren oder vorherzusagen, insbesondere in Bezug auf Arbeitsleistung, wirtschaftliche Lage, Gesundheit, persönliche Vorlieben, Interessen, Zuverlässigkeit, Verhalten, Aufenthaltsort oder Ortswechsel dieser Person.",
+          "legalProtection": {
+            "title": "- Recht auf gerichtlichen oder administrativen Rechtsschutz, falls die Rechte der betroffenen Person verletzt wurden – wenn die betroffene Person der Ansicht ist, dass ihr Recht auf Schutz personenbezogener Daten und Privatsphäre verletzt wurde, kann sie eine Beschwerde einreichen bei:",
+            "supervisoryAuthority": "1) der zuständigen Aufsichtsbehörde – Kommission für den Schutz personenbezogener Daten: https://www.cpdp.bg/, Adresse: Sofia 1592, Blvd. „Prof. Tsvetan Lazarov“ Nr. 2, Informations- und Kontaktzentrum – Tel. 02/91-53-518, Sprechzeiten: 9:00 – 17:30 Uhr oder",
+            "court": "2) dem zuständigen Gericht. Sie können Ihre Rechte im Zusammenhang mit der Verarbeitung Ihrer personenbezogenen Daten gemäß der Verordnung (EU) 2016/679 ausüben, indem Sie einen Antrag an den Datenschutzbeauftragten der DPH AG auf eine der folgenden Arten senden:",
+            "email": "- per E-Mail an: hello@insurance.bg; Datenschutzbeauftragter: Momchil Fotev",
+            "mail": "- oder per Post oder Kurier an: Sofia, PLZ 1113, Bezirk Izgrev, ul. „Major Yuri Gagarin“ Nr. 30, Gebäude B. Datenschutzbeauftragter: Momchil Fotev",
+            "responseTime": "Die DPH AG wird auf alle gültigen Anfragen innerhalb von 14 (vierzehn) Kalendertagen antworten, es sei denn, die Anfrage ist besonders komplex oder es wurden mehrere Anfragen gestellt. In diesem Fall verpflichtet sich das Unternehmen, innerhalb von 1 (einem) Monat zu antworten. Sollte eine längere Antwortfrist erforderlich sein, wird das Unternehmen Sie kontaktieren. Wenn Ihre Anfrage die Rechte und Freiheiten anderer betroffener Personen negativ beeinflusst, kann sie abgelehnt werden.",
+            "questions": "Wenn Sie Fragen oder Beschwerden bezüglich der Einhaltung dieser Datenschutzrichtlinie durch uns haben oder Empfehlungen oder Kommentare zur Verbesserung der Qualität unserer Datenschutzrichtlinie abgeben möchten, schreiben Sie uns bitte an die oben angegebenen Kontaktdaten.",
+            "effectiveDate": "Diese Datenschutzrichtlinie wurde von der DPH AG genehmigt und gilt für die Tätigkeit des Unternehmens ab dem 01.08.2025."
+          }
+        }
+      }
+    },
+    "cookiePolicy": {
+      "pageTitle": "Cookie-Richtlinie - Vinetka.bg",
+      "pageDescription": "Cookie-Richtlinie von Vinetka.bg - Informationen über die Verwendung von Cookies.",
+      "title": "COOKIE-RICHTLINIE",
+      "introduction": "Diese Cookie-Richtlinie wurde von der Digital Policy Hub AG, USt-IdNr. 207623030 (im Folgenden „das Unternehmen“ oder „DPH“ AG genannt), mit Sitz und Geschäftsadresse: Sofia, PLZ 1113, Bezirk Izgrev, ul. „Major Yuri Gagarin“ Nr. 30, Gebäude B – unabhängiger Administrator und Verarbeiter personenbezogener Daten, angenommen. Das Unternehmen ist Partner der Digital Smart Infrastructure AG, USt-IdNr. 205612035 (im Folgenden „DSI“ AG genannt), mit Sitz und Geschäftsadresse: Republik Bulgarien, Region Sofia-Stadt, Gemeinde Sofia, Stadt Sofia, Bezirk Sredets, ul. „Georgi S. Rakovski“ Nr. 96, die als nationaler Dienstleister bei der Agentur für Straßeninfrastruktur registriert ist und berechtigt ist, Straßengebühren und andere zu erheben. Die DPH AG bietet den Nutzern die Möglichkeit, Vignettengebühren, Ausgleichsgebühren und „Maximal-Tagesmaut“-Gebühren im Namen und auf Rechnung der DSI AG über die Website zu bezahlen.",
+      "contactInfo": "Nutzer der Website www.vinetka.bg können die Digital Policy Hub AG unter der oben genannten Adresse, telefonisch unter: +359876995177 oder per E-Mail an: hello@insurance.bg kontaktieren.",
+      "updatePolicy": "Die Digital Policy Hub AG behält sich das Recht vor, diese Cookie-Richtlinie regelmäßig zu aktualisieren und zu ändern, um Änderungen in der Nutzung oder im anwendbaren Recht zu berücksichtigen. Im Falle solcher Änderungen wird die Digital Policy Hub AG eine aktualisierte Version der Cookie-Richtlinie auf der Website www.vinetka.bg veröffentlichen.",
+      "compliance": "Bei der Verwendung von Cookies auf der Website www.vinetka.bg werden alle Anforderungen des nationalen Rechts sowie des EU-Rechts eingehalten – Richtlinie 2002/58/EG des Europäischen Parlaments und des Rates vom 12. Juli 2002 über die Verarbeitung personenbezogener Daten und den Schutz der Privatsphäre in der elektronischen Kommunikation sowie die Verordnung (EU) 2018/1725 des Europäischen Parlaments und des Rates vom 23. Oktober 2018 über den Schutz natürlicher Personen bei der Verarbeitung personenbezogener Daten durch die Organe, Einrichtungen, Ämter und Agenturen der Union und über den freien Datenverkehr sowie zur Aufhebung der Verordnung (EG) Nr. 45/2001 und des Beschlusses Nr. 1247/2002/EG.",
+      "purpose": "Diese Richtlinie soll die Nutzer der Website www.vinetka.bg über die verwendeten Cookies, deren Zweck und die Auswirkungen auf die Nutzer informieren, falls sie deren Verwendung zulassen.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "Was sind Cookies und wofür werden sie verwendet:",
+          "definition": "Cookies sind kleine Textdateien, die Websites auf dem Gerät des Nutzers speichern, um Informationen über dessen Besuche zu speichern. Sie helfen Websites, Präferenzen zu speichern, Sitzungen aufrechtzuerhalten und Inhalte zu personalisieren. Cookies ermöglichen die Bereitstellung von Diensten auf möglichst nützliche und bequeme Weise für die Nutzer.",
+          "invitation": "Jedes Mal, wenn der Nutzer die Website www.vinetka.bg besucht, wird er aufgefordert, Cookies zu akzeptieren oder abzulehnen.",
+          "types": "Die DPH AG verwendet auf der Website www.vinetka.bg zwei Arten von Cookies: Session-Cookies und permanente Cookies. Session-Cookies sind temporäre Dateien, die auf dem Endgerät verbleiben, bis die Benutzersitzung beendet oder die Website geschlossen wird. Permanente Cookies verbleiben auf dem Endgerät des Nutzers für die in den Cookie-Parametern festgelegte Dauer oder bis sie vom Nutzer manuell gelöscht werden. Beim Besuch der Website www.vinetka.bg können folgende Arten von Cookies verwendet werden: unbedingt erforderliche Cookies für den Betrieb der Website, Analyse-Cookies und Werbe-Cookies."
+        },
+        "browserManagement": {
+          "title": "Verwaltung von Cookies über den Browser:",
+          "description": "Browser ermöglichen es dem Nutzer, die Verwendung von Cookies auf den von ihm besuchten Websites zu verwalten, zu löschen und/oder zu blockieren. Der Nutzer kann die Datenschutz- und Cookie-Einstellungen in seinem bevorzugten Browser überprüfen, um die von der Website www.vinetka.bg verwendeten Cookies zu steuern.",
+          "deletion": "Nutzer haben die Möglichkeit, alle auf dem Gerät gespeicherten Cookies zu löschen, das sie für den Zugriff auf www.vinetka.bg verwenden. Je nach verwendetem Browser kann dies wie auf den untenstehenden Seiten beschrieben erfolgen:",
+          "browsers": [
+            {
+              "name": "Mozilla Firefox:",
+              "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer"
+            },
+            {
+              "name": "Internet Explorer:",
+              "url": "https://support.microsoft.com/bg-bg/windows/изтриване-и-управление-на-бисквитки-168dab11-0753-043d-7c16-ede5947fc64d"
+            },
+            {
+              "name": "Google Chrome:",
+              "url": "https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=bg"
+            },
+            {
+              "name": "Safari:",
+              "url": "https://support.apple.com/bg-bg/HT201265"
+            },
+            {
+              "name": "Microsoft EDGE:",
+              "url": "https://support.microsoft.com/bg-bg/microsoft-edge/изтриване-на-бисквитките-в-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+            }
+          ],
+          "moreInfo": "Weitere Informationen zur Verwaltung von Cookies in verschiedenen Browsern finden Nutzer unter: https://www.aboutcookies.org/how-to-control-cookies/."
+        },
+        "blocking": {
+          "title": "Blockieren von Cookies:",
+          "consequences": "Wenn der Nutzer die Verwendung von Cookies blockiert, werden einige Funktionen der Website www.vinetka.bg deaktiviert, was zu Fehlfunktionen oder Fehlern bei der Nutzung führen kann.",
+          "settings": "Die meisten Browser sind standardmäßig so eingestellt, dass sie Cookies akzeptieren, aber Sie können Ihre Einstellungen ändern, um einige oder alle Cookies zu blockieren.",
+          "details": "Detaillierte Informationen zu den Möglichkeiten und Methoden der Verwaltung von Cookies finden Sie im Einstellungsbereich der Anwendung (Webbrowser)."
+        },
+        "contact": "Bei weiteren Fragen zu dieser Cookie-Richtlinie kontaktieren Sie uns bitte telefonisch unter: +359 876 99 51 77 oder per E-Mail an hello@insurance.bg",
+        "effectiveDate": "Diese Cookie-Richtlinie wurde von der DPH AG genehmigt und gilt für die Tätigkeit des Unternehmens ab dem 01.08.2025."
+      }
+    },
+    "termsOfUse": {
+      "pageTitle": "Allgemeine Nutzungsbedingungen - Vinetka.bg",
+      "pageDescription": "Allgemeine Nutzungsbedingungen der Website www.vinetka.bg – Regeln für den Kauf von elektronischen Vignetten.",
+      "title": "ALLGEMEINE NUTZUNGSBEDINGUNGEN DER WEBSITE WWW.VINETKA.BG",
+      "introduction": "Diese Allgemeinen Geschäftsbedingungen regeln die Nutzungsregeln der Website www.vinetka.bg und die Erbringung von Dienstleistungen im Zusammenhang mit dem Kauf und der Lieferung von elektronischen Vignetten sowie die Zahlung von „Maximal-Tagesmaut“- und Ausgleichsgebühren sowie anderer auf der Website www.vinetka.bg angebotener Waren und Dienstleistungen. Alle Nutzer erklären sich mit diesen Allgemeinen Geschäftsbedingungen sowie den geltenden Richtlinien und Dokumenten der Digital Policy Hub AG (im Folgenden „DPH“ AG oder das Unternehmen genannt) bei der Nutzung der Website einverstanden. Diese Allgemeinen Geschäftsbedingungen sind auf der Website www.vinetka.bg veröffentlicht und gelten als vom Nutzer mit der Nutzung der Website akzeptiert.",
+      "companyInfo": "Die Digital Policy Hub AG („DPH“ AG), im Folgenden auch „das Unternehmen“ genannt, ist eine Aktiengesellschaft mit Sitz und Geschäftsadresse: Sofia, PLZ 1113, Bezirk Izgrev, ul. „Major Yuri Gagarin“ Nr. 30, Gebäude B, eingetragen im Handelsregister und im Register der juristischen Personen mit gemeinnützigen Zwecken bei der Registrierungsagentur mit USt-IdNr. 207623030 und Umsatzsteuer-Identifikationsnummer: BG207623030. Das Unternehmen ist Eigentümer und Betreiber der Website www.vinetka.bg. Nutzer der Website können die Digital Policy Hub AG unter der oben genannten Adresse oder telefonisch kontaktieren",
+      "phone": "+359 876 99 51 77 oder per E-Mail an: hello@insurance.bg",
+      "partnership": "Die Digital Policy Hub AG ist Partner der Digital Smart Infrastructure AG („DSI“ AG), USt-IdNr. 205612035, die als nationaler Dienstleister bei der Agentur für Straßeninfrastruktur (API) registriert ist und berechtigt ist, Straßengebühren und andere Gebühren zu erheben. Die DPH AG bietet den Nutzern die Möglichkeit, Vignettengebühren, Ausgleichsgebühren und „Maximal-Tagesmaut“-Gebühren im Namen und auf Rechnung der DSI AG über die Website www.vinetka.bg zu bezahlen.",
+      "sections": {
+        "generalProvisions": {
+          "title": "I. ALLGEMEINE BESTIMMUNGEN. DEFINITIONEN.",
+          "description": "www.vinetka.bg ist eine Website (auch Internetseite genannt), über die die DPH AG den Nutzern die Möglichkeit bietet, Vignettengebühren, Ausgleichsgebühren und „Maximal-Tagesmaut“-Gebühren im Namen und auf Rechnung der DSI AG zu bezahlen.",
+          "termsRegulation": "Diese Allgemeinen Geschäftsbedingungen regeln die Beziehungen bezüglich Verkauf, Lieferung und Bezahlung von Produkten (Waren und Dienstleistungen) zwischen dem Unternehmen als Verkäufer und Eigentümer der Website www.vinetka.bg und jeder Person (im Folgenden kurz „Nutzer“ genannt), die die Website und/oder die über sie bereitgestellten Produkte (Waren und Dienstleistungen) nutzt.",
+          "updateRights": "Die Digital Policy Hub AG behält sich das Recht vor, diese Allgemeinen Geschäftsbedingungen regelmäßig zu aktualisieren und zu ändern, um Änderungen in der Nutzung der Website oder im anwendbaren Recht zu berücksichtigen."
+        },
+        "usageRules": {
+          "title": "II. NUTZUNGSREGELN DER WEBSITE WWW.VINETKA.BG.",
+          "registration": "Eine Registrierung auf der Website www.vinetka.bg ist keine Voraussetzung für die Nutzung der Seite. Jeder Nutzer hat die Möglichkeit, sich auf der Website www.vinetka.bg zu registrieren, indem er das entsprechende elektronische Anmeldeformular ausfüllt und den Allgemeinen Geschäftsbedingungen zustimmt.",
+          "emailRequirement": "Jeder Nutzer muss eine gültige E-Mail-Adresse für die Korrespondenz angeben und erklärt sich damit einverstanden, dass jede zukünftige Korrespondenz zwischen ihm und dem Unternehmen elektronisch an die von ihm angegebene E-Mail-Adresse erfolgt.",
+          "pricing": "Mit Ausnahme der Vignettengebühren/elektronischen Vignetten sowie der Zahlung von „Maximal-Tagesmaut“- oder Ausgleichsgebühren, die eine staatliche Gebühr für die Nutzung des nationalen Straßennetzes darstellen und für die keine Mehrwertsteuer erhoben wird, sind alle anderen Preise für Waren oder Dienstleistungen auf der Website www.vinetka.bg Endpreise, die in Lew (BGN) angegeben sind und die Mehrwertsteuer sowie alle anderen gesetzlich vorgeschriebenen Steuern oder Gebühren enthalten."
+        },
+        "intellectualProperty": {
+          "title": "III. RECHT AN GEISTIGEM EIGENTUM",
+          "content": "Alle Elemente des Inhalts der Website, einschließlich Design, Domain, Name, Marke, Datenbanken, Text, Zeichnungen, Grafiken, Skizzen, Industriedesign und andere Informationen oder Elemente, sind Gegenstand geistigen Eigentums im Sinne des Urheberrechtsgesetzes und verwandter Schutzrechte, des Markengesetzes und des Gesetzes über das Industriedesign und sind Eigentum der Digital Policy Hub AG oder wurden der Digital Policy Hub AG zur Nutzung überlassen und dürfen von keiner anderen Person verwendet werden."
+        },
+        "purchases": {
+          "title": "IV. KÄUFE VON WAREN UND DIENSTLEISTUNGEN",
+          "process": "Der Nutzer kann Einkäufe tätigen, indem er die Website www.vinetka.bg nutzt, die gewünschten Waren und/oder Dienstleistungen in den Warenkorb legt und den auf der Website angegebenen Schritten folgt, um die Bestellung abzuschließen und abzusenden.",
+          "vignetteRequirements": "Die Mindestangaben für den Kauf einer elektronischen Vignette sind: Fahrzeugkategorie; Zulassungsland des Fahrzeugs; amtliches Kennzeichen des Fahrzeugs; Gültigkeitsdauer der elektronischen Vignette; Startdatum der Gültigkeit der elektronischen Vignette; E-Mail-Adresse zur Benachrichtigung über ablaufende elektronische Vignetten und festgestellte Verstöße.",
+          "vignetteCheck": "Die Mindestangaben zur Überprüfung der Gültigkeit einer Vignette sind: amtliches Kennzeichen des Fahrzeugs."
+        },
+        "withdrawalRights": {
+          "title": "V. WAREN UND DIENSTLEISTUNGEN OHNE WIDERRUFSRECHT. REKLAMATIONEN.",
+          "timeLimit": "Sofern Dienstleistungen erbracht werden, für die dies zutrifft, bietet das Unternehmen den Nutzern im eigenen Namen und auf eigene Rechnung die Möglichkeit, eine genutzte Dienstleistung über www.vinetka.bg zu widerrufen und eine Rückerstattung spätestens 14 (vierzehn) Tage nach Inanspruchnahme der Dienstleistung zu erhalten.",
+          "noWithdrawal": "Das Widerrufsrecht gilt nicht in folgenden Fällen: für gekaufte und aktivierte elektronische Vignetten, für bezahlte „Maximal-Tagesmaut“- oder Ausgleichsgebühren, für die Erbringung von Dienstleistungen, bei denen die Dienstleistung vollständig erbracht wurde und die Ausführung mit ausdrücklicher vorheriger Zustimmung des Nutzers begonnen hat."
+        },
+        "dataProtection": {
+          "title": "VI. SCHUTZ PERSONENBEZOGENER DATEN",
+          "policy": "Der Nutzer erklärt sich damit einverstanden, dass seine personenbezogenen oder sonstigen Daten, die er der DPH AG zur Verfügung stellt, von der DPH AG gemäß der Datenschutzrichtlinie verarbeitet werden, die auf der Website unter folgender Adresse verfügbar ist: www.vinetka.bg/privacy-policy, und mit der sich der Nutzer vertraut gemacht hat."
+        },
+        "payments": {
+          "title": "VIII. ZAHLUNGEN",
+          "pricing": "Die Preise für elektronische Vignetten, „Maximal-Tagesmaut“- und Ausgleichsgebühren, die im Gebührentarif der von der API erhobenen Gebühren veröffentlicht sind, sind Endpreise. Gemäß geltendem Recht enthalten diese Gebühren keine Steuern, Zölle oder ähnliches, da sie eine staatliche Gebühr für die Nutzung des gebührenpflichtigen Straßennetzes darstellen."
+        },
+        "forcemajeure": {
+          "title": "IX. UNVORHERSEHBARE UND HÖHERE GEWALT",
+          "definition": "Keine der Parteien haftet für die Nichterfüllung ihrer vertraglichen Verpflichtungen, wenn diese Nichterfüllung auf höhere Gewalt zurückzuführen ist. Höhere Gewalt ist ein unvorhersehbares Ereignis außerhalb der Kontrolle der Parteien, das nicht vermieden werden kann."
+        },
+        "applicableLaw": {
+          "title": "X. ANWENDBARES RECHT",
+          "content": "Diese Allgemeinen Geschäftsbedingungen entsprechen dem geltenden bulgarischen Recht. Etwaige Streitigkeiten zwischen der Digital Policy Hub AG und den Nutzern werden einvernehmlich beigelegt oder, falls dies nicht möglich ist, vor den zuständigen bulgarischen Gerichten entschieden, ohne die Rechte der Nutzer zu beeinträchtigen.",
+          "effectiveDate": "Diese Allgemeinen Geschäftsbedingungen wurden von der Digital Policy Hub AG angenommen und treten am 01.08.2025 in Kraft."
+        }
+      }
+    }
+  }
+}

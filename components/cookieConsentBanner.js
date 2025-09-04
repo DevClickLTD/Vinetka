@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Link from "next/link";
+import { Link } from "../lib/navigation";
 
 const CookieConsent = dynamic(() => import("react-cookie-consent"), {
   ssr: false,
