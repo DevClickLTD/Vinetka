@@ -1,135 +1,114 @@
+import { getTranslations } from 'next-intl/server';
 import Link from "next/link";
 
 export async function generateMetadata() {
+  const t = await getTranslations('components.cookiePolicy');
+  
   return {
-    title: "Политика за използване на бисквитки - Vinetka.bg",
-    description:
-      "Политика за използване на бисквитки на Vinetka.bg - информация за използването на cookies.",
+    title: t('pageTitle'),
+    description: t('pageDescription'),
   };
 }
 
-export default function CookiesPolicy() {
+export default async function CookiesPolicy() {
+  const t = await getTranslations('components.cookiePolicy');
+
   return (
     <div className="container mx-auto p-6 max-w-5xl bg-white py-12">
       <div className="prose prose-lg max-w-none">
         <h1 className="text-3xl font-bold mb-6 text-gray-800">
-          ПОЛИТИКА ЗА ИЗПОЛЗВАНЕ НА БИСКВИТКИ
+          {t('title')}
         </h1>
         
+        <p className="mb-4" dangerouslySetInnerHTML={{ __html: t('introduction') }} />
         <p className="mb-4">
-          Настоящата политика за използване на бисквитки е приета от <strong>„Диджитъл Полиси Хъб" АД</strong>, ЕИК 207623030 (<em>наричано по-долу „Дружеството" или „ДПХ" АД),</em> със седалище и адрес на управление: гр. София, п.к. 1113, р-н Изгрев, ул. „Майор Юрий Гагарин" № 30, сграда Б – независим администратор и обработващ лични данни. Дружеството е партньор на „ДИДЖИТОЛ СМАРТ ИНФРАСТРУКТУРА" АД, ЕИК 205612035 (<em>наричано по-долу „ДСИ" АД</em>), със седалище и адрес на управление: Р. България, област София-столица, община Столична, град София, район Средец, ул. „Георги С. Раковски" №96, което дружество е регистрирано като Национален доставчик на услуги в Агенция „Пътна инфраструктура" и има право да извършва дейността по събиране на пътни такси и други. „ДПХ" АД осъществява дейности по осигуряване на възможност на потребителите за заплащане на винетни такси, компенсаторни такси и такси „максимален тол за деня" от името и за сметка на „ДСИ" АД чрез интернет страницата <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a>.
+          <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a>.
         </p>
 
         <p className="mb-4">
-          Потребителите на интернет страницата <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a> могат да се свържат с „Диджитъл Полиси Хъб" АД на посочения по-горе адрес, на телефон: +359876995177 или на следния адрес на електронна поща: hello@insurance.bg
+          {t('contactInfo')}
         </p>
 
         <p className="mb-4">
-          „Диджитъл Полиси Хъб" АД си запазва правото периодично да актуализира и изменя настоящата Политика за използване на бисквитки, с цел да отрази настъпили промени в начина на използването им или във връзка с изменения в приложимото законодателство. В случай на такива промени, „Диджитъл Полиси Хъб" АД ще публикува актуализирана версия на Политиката за използване на бисквитки на интернет страницата <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a>.
+          {t('updatePolicy')}
         </p>
 
         <p className="mb-6">
-          При използване на „бисквитки" в интернет страницата <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a> се спазват всички изисквания на националното законодателство, както и на законодателството на ЕС - Директива 2002/58/ЕО на Европейския парламент и на Съвета от 12 юли 2002 година относно обработката на лични данни и защита на правото на неприкосновеност на личния живот в сектора на електронните комуникации, заедно с Регламент (ЕС) 2018/1725 на Европейския парламент и на Съвета от 23 октомври 2018 година относно защитата на физическите лица във връзка с обработването на лични данни от институциите, органите, службите и агенциите на Съюза и относно свободното движение на такива данни и за отмяна на Регламент (ЕО) № 45/2001 и Решение № 1247/2002/ЕО.
+          {t('compliance')}
         </p>
 
         <p className="mb-6">
-          Настоящата политика има за цел да запознае Потребителите на уебсайта <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a> с "бисквитките", които се използват, предназначението им и ефекта спрямо Потребителите, в случай, че разрешат използването им.
+          {t('purpose')}
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800">
-          Какво са „бисквитките" и за какво се използват:
+          {t('sections.whatAreCookies.title')}
         </h2>
 
         <p className="mb-4">
-          „Бисквитките" (cookies) са малки текстови файлове, които уебсайтовете запазват на устройството на потребителя, за да съхраняват информация за неговите посещения. Те помагат на сайтовете да запомнят предпочитания, да поддържат сесии и да персонализират съдържанието. Бисквитките позволяват предоставянето на услуги по възможно най-полезен и удобен начин за Потребителите.
+          {t('sections.whatAreCookies.definition')}
         </p>
 
         <p className="mb-4">
-          Всеки път, когато Потребителят посещава уебсайта <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a> получава покана да приеме или откаже „бисквитките".
+          {t('sections.whatAreCookies.invitation')}
         </p>
 
         <p className="mb-6">
-          „ДПХ" АД използва в интернет страницата <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a> два вида бисквитки: сесийни и постоянни. Сесийните бисквитки са временни файлове, които остават в терминал до завършването на потребителската сесия или затваряне на интернет страницата. Постоянните бисквитки остават на терминала на потребителя за срока, определен от параметрите на бисквитката или докато не се изтрият ръчно от потребителя. Когато Потребителя посети уебсайта www.vinetka.bg, могат да бъдат използвани следните типове бисквитки, а именно: бисквитките, необходими за работата на интернет страницата, бисквитки за анализ и бисквитки за реклама.
+          {t('sections.whatAreCookies.types')}
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800">
-          Управление на „бисквитки" през браузъра:
+          {t('sections.browserManagement.title')}
         </h2>
 
         <p className="mb-4">
-          Браузърите позволяват Потребителят да управлява, изтрива и/или блокира използването на бисквитки в уебсайтовете, които посещава. Потребителят може да провери настройките за поверителност и бисквитки в предпочитания от него браузър за контрол върху използваните бисквитки от интернет страницата <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a>.
+          {t('sections.browserManagement.description')}
         </p>
 
         <p className="mb-4">
-          Потребителите имат възможност да изтрият всички бисквитки, запазени на устройството, което използват за достъп до www.vinetka.bg. В зависимост от браузъра, който използвате, това може да се направи по начина, описан в страниците по-долу:
+          {t('sections.browserManagement.deletion')}
         </p>
 
         <ul className="list-disc pl-6 mb-4 space-y-2">
-          <li>
-            Mozilla Firefox:
-            <br />
-            <a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" className="text-purple-600 hover:text-purple-800 break-all">
-              https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer
-            </a>
-          </li>
-          <li>
-            Internet Explorer:
-            <br />
-            <a href="https://support.microsoft.com/bg-bg/windows/изтриване-и-управление-на-бисквитки-168dab11-0753-043d-7c16-ede5947fc64d" className="text-purple-600 hover:text-purple-800 break-all">
-              https://support.microsoft.com/bg-bg/windows/изтриване-и-управление-на-бисквитки-168dab11-0753-043d-7c16-ede5947fc64d
-            </a>
-          </li>
-          <li>
-            Google Chrome:
-            <br />
-            <a href="https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=bg" className="text-purple-600 hover:text-purple-800 break-all">
-              https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=bg
-            </a>
-          </li>
-          <li>
-            Safari:
-            <br />
-            <a href="https://support.apple.com/bg-bg/HT201265" className="text-purple-600 hover:text-purple-800 break-all">
-              https://support.apple.com/bg-bg/HT201265
-            </a>
-          </li>
-          <li>
-            Microsoft EDGE:
-            <br />
-            <a href="https://support.microsoft.com/bg-bg/microsoft-edge/изтриване-на-бисквитките-в-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" className="text-purple-600 hover:text-purple-800 break-all">
-              https://support.microsoft.com/bg-bg/microsoft-edge/изтриване-на-бисквитките-в-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09
-            </a>
-          </li>
+          {t.raw('sections.browserManagement.browsers').map((browser, index) => (
+            <li key={index}>
+              {browser.name}
+              <br />
+              <a href={browser.url} className="text-purple-600 hover:text-purple-800 break-all">
+                {browser.url}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <p className="mb-6">
-          Повече информация за управлението на бисквитките за различните видове браузъри Потребителите могат да намерят на: <a href="https://www.aboutcookies.org/how-to-control-cookies/" className="text-purple-600 hover:text-purple-800">https://www.aboutcookies.org/how-to-control-cookies/</a>.
+          {t('sections.browserManagement.moreInfo')}
         </p>
 
         <h2 className="text-2xl font-bold mt-8 mb-4 text-gray-800">
-          Блокирането на „бисквитки":
+          {t('sections.blocking.title')}
         </h2>
 
         <p className="mb-4">
-          Ако Потребителят блокира използването на бисквитки, някои функции на уебсайта www.vinetka.bg ще бъдат спрени, а това може да създаде някои неизправности или грешки при използването му.
+          {t('sections.blocking.consequences')}
         </p>
 
         <p className="mb-4">
-          Повечето браузъри са настроени по подразбиране да приемат "бисквитки", но можете да промените Вашите настройки за блокиране на някои или всички бисквитки.
+          {t('sections.blocking.settings')}
         </p>
 
         <p className="mb-6">
-          Подробна информация за възможностите и начините на управление на бисквитките могат да бъдат намерени в зоната на настройките на приложението (уеб браузъра).
+          {t('sections.blocking.details')}
         </p>
 
         <p className="mb-4">
-          При допълнителни въпроси относно настоящата Политика за използване на бисквитки, моля свържете с нас на телефон: +359 876 99 51 77 или на електронен адрес hello@insurance.bg
+          {t('sections.contact')}
         </p>
 
         <p className="mb-4">
-          Настоящата Политика за използване на бисквитки е утвърдена от „ДПХ" АД и се прилага в дейността на Дружеството считано от 01.08.2025 г.
+          {t('sections.effectiveDate')}
         </p>
       </div>
     </div>
   );
-} 
+}

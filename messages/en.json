@@ -746,6 +746,238 @@
       "resultShownInSeconds": "Result shown in seconds",
       "dataDirectlyFromBGToll": "Data directly from BG Toll",
       "noTaxesOrHiddenFees": "No taxes or hidden fees"
+    },
+    "privacyPolicy": {
+      "pageTitle": "Privacy Policy - Vinetka.bg",
+      "pageDescription": "Privacy Policy of Vinetka.bg - learn more about personal data processing.",
+      "title": "PRIVACY POLICY",
+      "introduction": "This privacy policy is adopted by \"Digital Policy Hub\" JSC, UIC 207623030 (hereinafter referred to as \"the Company\" or \"DPH\" JSC), with headquarters and management address: Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B - independent administrator and personal data processor. The Company is a partner of \"DIGITAL SMART INFRASTRUCTURE\" JSC, UIC 205612035 (hereinafter referred to as \"DSI\" JSC), with headquarters and management address: Republic of Bulgaria, Sofia-capital region, Capital municipality, Sofia city, Sredets district, \"Georgi S. Rakovski\" str. No. 96, which company is registered as a National service provider with the Road Infrastructure Agency and has the right to carry out activities for collecting road taxes and others. \"DPH\" JSC carries out activities to provide opportunities for users to pay vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes on behalf and for the account of \"DSI\" JSC through the website",
+      "contactInfo": "Users of the website www.vinetka.bg can contact \"Digital Policy Hub\" JSC at the above-mentioned address, by phone: +359876995177 or at the following email address: hello@insurance.bg",
+      "updatePolicy": "\"Digital Policy Hub\" JSC reserves the right to periodically update and change this Privacy Policy in order to reflect changes in the way your personal data is processed or in connection with changes in applicable legislation. In case of such changes, \"Digital Policy Hub\" JSC will publish an updated version of the Privacy Policy on the website www.vinetka.bg.",
+      "sections": {
+        "definitions": {
+          "title": "DEFINITIONS",
+          "personalData": "Personal data means any information relating to an identified natural person or a natural person who can be identified (\"data subject\"). A natural person who can be identified is a person who can be identified, directly or indirectly, in particular by means of an identifier such as a name, identification number, location data, online identifier or by one or more factors specific to the physical, physiological, genetic, mental, intellectual, economic, cultural or social identity of that natural person;",
+          "processing": "Processing means any operation or set of operations performed on personal data or a set of personal data by automatic or other means such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction;",
+          "personalDataFile": "Personal data filing system means any structured set of personal data accessible according to specific criteria, whether centralized, decentralized or distributed on a functional or geographical basis;",
+          "controller": "Controller means any natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of personal data; where the purposes and means of such processing are determined by EU law or the law of the Republic of Bulgaria. The controller or the specific criteria for its designation may be provided for in EU law or the law of the Republic of Bulgaria;",
+          "processor": "Personal data processor - a natural or legal person, public authority, agency or other body which processes personal data on behalf of the controller;",
+          "dataSubject": "Data subject – is a natural person who is identified or who can be identified on the basis of certain information representing personal data directly or indirectly;",
+          "consent": "Consent of the data subject - any freely given, specific, informed and unambiguous indication of the data subject's wishes by a statement or by a clear affirmative action, which signifies agreement to the processing of personal data relating to him or her;",
+          "dataBreach": "Personal data breach - a breach of security leading to the accidental or unlawful destruction, loss, alteration, unauthorized disclosure of, or access to, personal data transmitted, stored or otherwise processed;",
+          "platform": "Platform – the website through which \"DPH\" JSC carries out its activity – www.vinetka.bg;",
+          "roadTaxes": "Road taxes - is a collective concept meaning vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes, as well as other normatively established taxes collected for use of the paid road network;",
+          "electronicVignette": "Electronic vignette – means an electronic document within the meaning of Art. 3, para. 1 of the Electronic Document and Electronic Certification Services Act, certifying the paid vignette tax. The electronic vignette contains a unique identification number, data on the registration number of the road vehicle, the country in which it is registered, its category, the date of payment of the tax and the validity period. Vignette taxes are collected in accordance with the Tariff for taxes collected by the Road Infrastructure Agency, according to their validity period;",
+          "compensatoryTax": "Compensatory tax – means the road tax provided for in Art. 10, para. 2 of the Roads Act, which may be collected in favor of the Road Infrastructure Agency when movement on the paid road network is established, when the corresponding vignette tax or toll tax has not been paid for the respective road vehicle. The amount of the compensatory tax is determined in the Tariff for taxes collected by the Road Infrastructure Agency. As a result of paying the compensatory tax, the driver of the vehicle, its owner or user is released from administrative-penal liability. In this case, all other persons who may bear such responsibility in connection with the specific vehicle are also released from administrative-penal liability."
+        },
+        "generalProvisions": {
+          "title": "GENERAL PROVISIONS",
+          "compliance": "When processing personal data, the Company complies with all applicable normative acts for the protection of personal data applicable to its activities, including but not limited to Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation) (\"Regulation\") and the Personal Data Protection Act (PDPA).",
+          "internalProcedures": "In implementation of the provisions of the Regulation, the company applies internal procedures for the protection of personal data and for monitoring their compliance by all employees.",
+          "legitimateInterest": "\"DPH\" JSC has a legitimate interest to maintain the functioning of its electronic website, and in this regard processes data for all visitors and their activity."
+        },
+        "purposes": {
+          "title": "PURPOSES",
+          "principles": "In its personal data processing activities, \"DPH\" JSC follows the principles of lawfulness, fairness and transparency, minimization of collected data, accuracy in timely deletion or correction of inaccurate personal data, storage limitation. The Company collects personal data for specific, explicitly stated and legitimate purposes and does not process the collected personal data further in a manner incompatible with those purposes. \"DPH\" JSC stores personal data in a form that allows identification of the data subject for a period no longer than necessary for the purposes for which the personal data are processed.",
+          "dataSharing": "When carrying out activities for the distribution of Electronic vignettes and payment of other road taxes, your personal data is also provided and processed by the Road Infrastructure Agency and/or \"DSI\" JSC. The sharing of personal data between \"DPH\" JSC, \"DSI\" JSC and the Road Infrastructure Agency is carried out for the following purposes in accordance with what is indicated by the Road Infrastructure Agency in its capacity as Personal Data Controller - for the purpose of distributing Electronic vignettes and performing all actions necessary in this regard; payment of other road taxes; proving the exact fulfillment of the obligations of \"DPH\" JSC in connection with the regulatory requirements regarding the collection of road taxes and fulfillment of all obligations arising from the law, including sending notifications provided for in Art. 10, para. 2a - 2d of the Roads Act. For these purposes, the following personal data are collected - personal identifiers and contact data. Between the above-mentioned entities, only the personal data necessary for the fulfillment of their obligations are exchanged, and they cannot provide personal data to each other outside these frameworks. For the purposes of preparing statistical documents, reports, etc., anonymized data are used.",
+          "dataCollection": "\"DPH\" JSC collects your personal data directly from you, so you decide what kind of information to provide us. Part of the information we receive from you is mandatory for the purposes of registration on our platform. The Company collects your personal data in the following cases:",
+          "userProfile": "- When you create a user profile on our website, you send us your email address, first and last name. In these cases, your data is processed only for the purposes of registration and the services we provide;",
+          "additionalInfo": "- You can also add additional information to your user profile such as: mobile phone number, landline phone number and others. This information is not required for registration, and by providing it you express explicit consent that you agree for it to be processed in connection with providing better quality services from us or clarifying your request. If your contact data has been provided to us, we may also use it for direct marketing purposes. Refusal to provide your consent will not lead to refusal of services or other adverse consequences for you, but will be an obstacle to sending you our newsletter and informing you about our latest offers. At any time you can withdraw your given consent for the use of this data or object to its use for direct marketing purposes. The withdrawal or objection will not affect in any way the other services provided by \"DPH\" JSC;",
+          "vignettePurchase": "- When you make a purchase of an electronic vignette through the website, you provide us with the following information: vehicle category; country of registration of the vehicle; registration number of the vehicle; validity period of the electronic vignette; start date of validity of the electronic vignette; email address for notification of expiring electronic vignettes and detected violations, first and last name, billing data, payment method, phone number, bank card data, etc. You can make the purchase without being a registered user of the site, for this purpose at least the following information is required when purchasing an electronic vignette: car registration number, nationality of the vehicle registration number, validity period of the electronic vignette; start date of validity of the electronic vignette; email address.",
+          "contactForm": "- When you have requested to receive information or assistance by filling out our contact form, so that we can send you a personalized response;",
+          "comments": "- When you make comments or provide us with additional information in a section of the website that allows this;",
+          "socialMedia": "- In case our platform allows it, if you use your profile on social media platforms such as LinkedIn, Twitter, Facebook, Instagram and others to register or otherwise use the \"DPH\" JSC platform, we will gain access to your personal data that you have made available on your profile. You can manage access to this data through the settings of your profiles on these social networks;",
+          "browsing": "- In addition to the mentioned personal data, \"DPH\" JSC has the ability to collect and subsequently process certain information regarding your browsing behavior on our platforms, in order to personalize your interests and prepare offers that are tailored to your profile. \"DPH\" JSC may store and collect information through cookies and similar technologies. We encourage you to learn more in this regard by reading the processing section in our Cookie Usage Policy, which is available on the website www.vinetka.bg. \"DPH\" JSC has a legitimate interest to maintain the functioning of its electronic website, and in this regard processes data for all visitors and their activity;",
+          "sensitiveData": "- We do not collect or otherwise process sensitive data included in special categories of personal data in the General Data Protection Regulation."
+        },
+        "dataTransfer": {
+          "title": "TRANSFER OR PROVISION OF ACCESS TO PERSONAL DATA",
+          "recipients": "Depending on the case, we may transfer or provide access to some of your personal data to the following categories of recipients:",
+          "dsiAd": "- \"DSI\" JSC – The provided contact data is processed on the basis of Art. 10, para. 2a - 2d and Art. 10a, Art. 4a - 4c of the Roads Act in connection with sending notifications to you in the provided cases - for the purposes of fulfilling the legal obligations of \"DSI\" JSC. \"DPH\" JSC provides \"DSI\" JSC with the email addresses of users – they are used only for the purposes of fulfilling the obligation to notify users of the road network of the upcoming expiration of electronic vignettes purchased through the company's platforms; when \"DPH\" JSC receives a complaint from its user related to payment of road tax, including violation through \"DPH\" JSC platforms, the company provides \"DSI\" JSC with the objection, together with accompanying information regarding data entered by the user when requesting the road tax;",
+          "api": "- Road Infrastructure Agency;",
+          "courier": "- courier service providers;",
+          "payment": "- payment/banking service providers;",
+          "legal": "- in case there is a legal obligation, or if this is necessary to protect the legitimate interests of \"DPH\" JSC, the company may disclose certain personal data to public authorities.",
+          "guarantee": "We guarantee that access to your data from private third parties is carried out in accordance with legal provisions in the field of data protection and information confidentiality, based on contracts concluded with them. These categories of recipients are legally or contractually obliged to maintain the confidentiality and security of any of your personal information and data. They have no right to use, disclose or modify this information in any way, except for the purposes of performing the services assigned by us or if required by law.",
+          "apiProcessing": "Regardless of the above, your data collected in connection with the use of the paid road network in Bulgaria, including payment of vignette, toll and compensatory taxes, etc., is provided to the Road Infrastructure Agency, which acts as a controller in relation to this data.",
+          "phoneRecording": "Within the limits permitted by law, \"DPH\" JSC may record telephone conversations (incoming and outgoing) with call centers and lines (telephone numbers) intended for customer service. Recording telephone conversations and storing and processing audio recordings (together with personal data disclosed during conversations) is carried out for the purposes of protecting the rights and legitimate interests of \"DPH\" JSC."
+        },
+        "security": {
+          "title": "TECHNICAL AND ORGANIZATIONAL SECURITY MEASURES FOR PROCESSING",
+          "intro": "Taking into account the nature, scope, context and purposes of processing, as well as the risks to the rights and freedoms of users, \"DPH\" JSC applies the necessary technical and organizational measures, listed non-exhaustively, namely:",
+          "measures": [
+            "Encryption of personal data;",
+            "Use only of verified and pre-approved licensed software;",
+            "Restrictive measures preventing the installation and use of unregulated software, applications, social networks, messengers and other similar on work computers;",
+            "Use of antivirus software, firewalls and proxy server;",
+            "Password protection and personal access rights to computers, equipment, databases and directories with client information;",
+            "Automatic locking of idle work computers on the network;",
+            "Protection of devices that leave the company premises, such as laptops or others;",
+            "Control of physical access to electronic and paper documents containing personal data, with premises secured with locking devices;",
+            "Equipment with signal-security equipment;",
+            "Application of adequate internal rules and training of personnel in connection with processing, storage and security of personal data and confidential information;",
+            "Archiving all information at least once a day, both locally on site and on a remote server with encrypted connection to it;",
+            "Regular checking and monitoring of the effectiveness of its protective measures, control mechanisms, systems and procedures, including conducting vulnerability scanning and correction of identified vulnerabilities;",
+            "The physical protection of personal data from the Company's maintained registers is organized, with the technical means for their processing and storage, as well as paper documents, being processed and stored in lockable premises with limited access rights. The executive director and employees of the Company have access rights.",
+            "Every computer used for personal data processing has an installed lockable operating system with password, antivirus program, technical restrictions for data copying, introduced access levels unlocked with specific passwords for each level. Each employee of the Company is provided with the appropriate access passwords depending on their assigned work and scope of personal data processing. The executive director has access to all computers and passwords for individual access levels.",
+            "Taking into account the achievements of technical progress, the costs of implementation and the nature, scope, context and purposes of processing, as well as the risks of varying likelihood and severity to the rights and freedoms of natural persons, the Company applies appropriate technical and organizational measures to ensure a level of security appropriate to that risk, including where appropriate - a process of regular testing, assessment and evaluation of the effectiveness of technical and organizational measures in order to ensure the security of processing."
+          ],
+          "disclaimer": "Despite the measures we apply to protect your personal data, we are aware that in principle the transmission of information over the internet or other public networks is not completely secure, and there is a risk that data could be viewed and used by unauthorized third parties. We cannot take responsibility for these vulnerabilities of systems that are not under our control."
+        },
+        "retention": {
+          "title": "RETENTION PERIOD",
+          "period": "\"DPH\" JSC stores all personal data necessary for using the services offered on the platform www.vinetka.bg for the period necessary to fulfill the specific purpose for which they are processed or which is provided by law."
+        },
+        "rights": {
+          "title": "RIGHTS OF USERS/CLIENTS",
+          "informationRight": "- Right to information (in connection with the processing of personal data of the data subject by \"DPH\" JSC) – the natural person who is a data subject has the right to receive information about \"DPH\" JSC as a personal data controller, as well as about the processing of their personal data. This information includes: data identifying the company, as well as its contact coordinates, incl. contact coordinates with the data protection officer; the purposes and legal basis for processing; recipients or categories of recipients of personal data, if any; the controller's intention to transfer personal data to a third party (when applicable); the retention period of personal data; the existence of automated decision-making, including profiling (if any); information about all rights that the data subject has; the right to complain to the supervisory authority. The Company reserves the right to refuse to take action on a received request. The Company bears the burden of proving the manifestly unfounded or excessive nature of the request. \"DPH\" JSC will not charge a fee for exercising any rights regarding your personal data, except when your request for access to information is unfounded, repeated or unnecessarily repetitive, in which case we will charge a reasonable amount. We will inform you of any applicable fees before considering your request.",
+          "accessRight": "- Right of access to own personal data – the data subject has the right to obtain from \"DPH\" JSC confirmation whether personal data relating to them is being processed, and if so, to obtain access to information regarding the purpose of processing, the relevant categories of personal data, recipients or categories of recipients of personal data, if any, the controller's intention to transfer personal data to a third party (when applicable), the retention period of personal data; existence of the right to rectification of personal data, as well as the right to object to the processing of personal data, existence of automated decision-making, including profiling (if any), information about all rights that the data subject has, the right to complain to the supervisory authority.",
+          "rectificationRight": "- Right to rectification of personal data (if the data is inaccurate) – the data subject has the right to request \"DPH\" JSC to rectify without undue delay inaccurate personal data relating to them.",
+          "erasureRight": {
+            "title": "- Right to erasure of personal data (right \"to be forgotten\") – the data subject may request \"DPH\" JSC to erase personal data relating to them if one of the following conditions is met:",
+            "conditions": [
+              "personal data is no longer necessary for the purposes for which it was collected or otherwise processed;",
+              "the data subject withdraws their consent on which the processing is solely based and there is no other legal ground for processing /processing based on regulatory obligation or concluded contract/;",
+              "the data subject objects to processing and there are no overriding legitimate grounds for processing;",
+              "personal data has been unlawfully processed;",
+              "personal data must be erased for compliance with a legal obligation under EU law or the law of the Republic of Bulgaria that applies to \"DPH\" JSC in its capacity as an independent controller."
+            ],
+            "contact": "You can contact us at the contact coordinates mentioned above to obtain additional information regarding the erasure of your personal data."
+          },
+          "restrictionRight": {
+            "title": "- Right to restriction of processing of personal data: the data subject has the right to restrict the processing of personal data by the controller, but for this purpose the existence of specific conditions is required, including:",
+            "conditions": [
+              "- The accuracy of personal data is contested by the data subject. In this case, the restriction of processing is for a period that allows the controller to verify the accuracy of the personal data;",
+              "- Processing is unlawful, but the data subject does not want personal data to be erased and instead requires restriction of their use;",
+              "- The controller no longer needs personal data for processing purposes, but the data subject requires them for establishing, exercising or defending legal claims;",
+              "- The data subject has objected to processing pending verification of whether the controller's legitimate grounds override the interests of the data subject."
+            ]
+          },
+          "portabilityRight": "- Right to data portability between individual controllers – the data subject has the right to receive personal data concerning them and which they have provided to \"DPH\" JSC in a structured, commonly used and machine-readable format and has the right to transmit that data to another controller without hindrance from \"DPH\" JSC to which the personal data have been provided, where processing is based on consent or contractual obligation and processing is carried out by automated means. When exercising their right to data portability, the data subject has the right to obtain direct transmission of personal data from \"DPH\" JSC to another controller, where technically feasible.",
+          "objectionRight": "- Right to object to the processing of their personal data - data subjects have the right to object to \"DPH\" JSC against the processing of their personal data, and the company will cease processing unless it demonstrates compelling legitimate grounds for processing that override the interests, rights and freedoms of the data subject, or for establishing, exercising or defending legal claims. When objecting to the processing of personal data for direct marketing purposes, \"DPH\" JSC will cease processing immediately. If your request concerns data that \"DPH\" JSC processes in its capacity as a partner of \"DSI\" JSC, collected on behalf of the Road Infrastructure Agency, we will forward your request and notify you accordingly. We undertake to forward it as soon as possible, and its subsequent processing depends on the Road Infrastructure Agency, which acts as a controller in relation to the data and determines how they should be processed.",
+          "automatedDecisionRight": "- The data subject has the right not to be subject to automated decision-making, including profiling.",
+          "profilingDefinition": "Profiling is defined in Article 4, point 4 of the Regulation as any form of automated processing of personal data using personal data to analyze or predict personal aspects of the natural person, which relate, for example, to the performance of their professional duties, economic situation, health, interests, reliability, behavior, movement and others.",
+          "legalProtection": {
+            "title": "- Right to protection through judicial or administrative procedure, in case the rights of the data subject have been violated – if the data subject considers that their right to protection of personal data and privacy has been violated, they may file a complaint before:",
+            "supervisoryAuthority": "1) the relevant supervisory authority - Commission for Personal Data Protection: https://www.cpdp.bg/, address: Sofia 1592, \"Prof. Tsvetan Lazarov\" blvd. No. 2, Information and contacts center - tel. 02/91-53-518, Reception - working hours 9:00 - 17:30 or",
+            "court": "2) before the relevant competent court. You can exercise your rights in connection with the processing of your personal data under Regulation (EU) 2016/679 by sending a request to the data protection officer of \"DPH\" JSC at any time in one of the following ways:",
+            "email": "-by email to address: hello@insurance.bg; Data Protection Officer: Momchil Fotev",
+            "mail": "- or by regular mail or courier to address: Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B. Data Protection Officer: Momchil Fotev",
+            "responseTime": "\"DPH\" JSC will respond to all valid requests within 14 (fourteen) calendar days, except when the request is particularly complex, or if multiple requests have been made, in which case the Company undertakes to respond within 1 (one) month, and if a longer response time is needed, the Company will contact you. If your request adversely affects the rights and freedoms of other data subjects, it may be rejected.",
+            "questions": "If you have questions or complaints regarding our compliance with this Privacy Policy, or if you want to make recommendations or comments regarding improving the quality of our Privacy Policy, write to us at the contact details mentioned above.",
+            "effectiveDate": "This Privacy Policy is approved by \"DPH\" JSC and is applied in the Company's activities as of 01.08.2025."
+          }
+        }
+      }
+    },
+    "cookiePolicy": {
+      "pageTitle": "Cookie Usage Policy - Vinetka.bg",
+      "pageDescription": "Cookie Usage Policy of Vinetka.bg - information about the use of cookies.",
+      "title": "COOKIE USAGE POLICY",
+      "introduction": "This cookie usage policy is adopted by \"Digital Policy Hub\" JSC, UIC 207623030 (hereinafter referred to as \"the Company\" or \"DPH\" JSC), with headquarters and management address: Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B - independent administrator and personal data processor. The Company is a partner of \"DIGITAL SMART INFRASTRUCTURE\" JSC, UIC 205612035 (hereinafter referred to as \"DSI\" JSC), with headquarters and management address: Republic of Bulgaria, Sofia-capital region, Capital municipality, Sofia city, Sredets district, \"Georgi S. Rakovski\" str. No. 96, which company is registered as a National service provider with the Road Infrastructure Agency and has the right to carry out activities for collecting road taxes and others. \"DPH\" JSC carries out activities to provide opportunities for users to pay vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes on behalf and for the account of \"DSI\" JSC through the website",
+      "contactInfo": "Users of the website www.vinetka.bg can contact \"Digital Policy Hub\" JSC at the above-mentioned address, by phone: +359876995177 or at the following email address: hello@insurance.bg",
+      "updatePolicy": "\"Digital Policy Hub\" JSC reserves the right to periodically update and change this Cookie Usage Policy in order to reflect changes in the way they are used or in connection with changes in applicable legislation. In case of such changes, \"Digital Policy Hub\" JSC will publish an updated version of the Cookie Usage Policy on the website www.vinetka.bg.",
+      "compliance": "When using \"cookies\" on the website www.vinetka.bg, all requirements of national legislation as well as EU legislation are observed - Directive 2002/58/EC of the European Parliament and of the Council of 12 July 2002 concerning the processing of personal data and the protection of privacy in the electronic communications sector, together with Regulation (EU) 2018/1725 of the European Parliament and of the Council of 23 October 2018 on the protection of natural persons with regard to the processing of personal data by the Union institutions, bodies, offices and agencies and on the free movement of such data, and repealing Regulation (EC) No 45/2001 and Decision No 1247/2002/EC.",
+      "purpose": "This policy aims to familiarize Users of the website www.vinetka.bg with the \"cookies\" that are used, their purpose and effect on Users, in case they allow their use.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "What are \"cookies\" and what are they used for:",
+          "definition": "\"Cookies\" are small text files that websites store on the user's device to store information about their visits. They help sites remember preferences, maintain sessions and personalize content. Cookies enable the provision of services in the most useful and convenient way for Users.",
+          "invitation": "Every time the User visits the website www.vinetka.bg they receive an invitation to accept or reject \"cookies\".",
+          "types": "\"DPH\" JSC uses two types of cookies on the website www.vinetka.bg: session and persistent. Session cookies are temporary files that remain on the terminal until the end of the user session or closing of the website. Persistent cookies remain on the user's terminal for the period determined by the cookie parameters or until they are manually deleted by the user. When the User visits the website www.vinetka.bg, the following types of cookies may be used, namely: cookies necessary for the operation of the website, cookies for analysis and cookies for advertising."
+        },
+        "browserManagement": {
+          "title": "Managing \"cookies\" through the browser:",
+          "description": "Browsers allow the User to manage, delete and/or block the use of cookies on websites they visit. The User can check the privacy and cookie settings in their preferred browser to control the cookies used by the website www.vinetka.bg.",
+          "deletion": "Users have the ability to delete all cookies stored on the device they use to access www.vinetka.bg. Depending on the browser you use, this can be done as described in the pages below:",
+          "browsers": [
+            {
+              "name": "Mozilla Firefox:",
+              "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer"
+            },
+            {
+              "name": "Internet Explorer:",
+              "url": "https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+            },
+            {
+              "name": "Google Chrome:",
+              "url": "https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=en"
+            },
+            {
+              "name": "Safari:",
+              "url": "https://support.apple.com/en-us/HT201265"
+            },
+            {
+              "name": "Microsoft EDGE:",
+              "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+            }
+          ],
+          "moreInfo": "More information about cookie management for different types of browsers can be found at: https://www.aboutcookies.org/how-to-control-cookies/."
+        },
+        "blocking": {
+          "title": "Blocking \"cookies\":",
+          "consequences": "If the User blocks the use of cookies, some functions of the website www.vinetka.bg will be stopped, and this may create some malfunctions or errors when using it.",
+          "settings": "Most browsers are set by default to accept \"cookies\", but you can change your settings to block some or all cookies.",
+          "details": "Detailed information about the possibilities and ways of managing cookies can be found in the settings area of the application (web browser)."
+        },
+        "contact": "For additional questions regarding this Cookie Usage Policy, please contact us by phone: +359 876 99 51 77 or by email: hello@insurance.bg",
+        "effectiveDate": "This Cookie Usage Policy is approved by \"DPH\" JSC and is applied in the Company's activities as of 01.08.2025."
+      }
+    },
+    "termsOfUse": {
+      "pageTitle": "Terms of Use - Vinetka.bg",
+      "pageDescription": "Terms of use for the website www.vinetka.bg - rules for purchasing electronic vignettes.",
+      "title": "TERMS OF USE FOR THE WEBSITE WWW.VINETKA.BG",
+      "introduction": "These Terms of Use regulate the rules for using the website www.vinetka.bg and the provision of services related to the purchase and delivery of electronic vignettes and payment of \"maximum toll for the day\" taxes and compensatory taxes and other goods and services offered to users of the website www.vinetka.bg. All users provide consent to these Terms of Use and the applicable policies and documents of \"Digital Policy Hub\" JSC (referred to briefly as \"DPH\" JSC or the Company) when using the website. These Terms of Use are published on the website www.vinetka.bg and are considered accepted by the User when using the website.",
+      "companyInfo": "\"Digital Policy Hub\" JSC (\"DPH\" JSC), also called \"the Company\", is a joint stock company with headquarters and management address in Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B, registered in the Commercial Register and the register of legal entities for non-profit purposes at the Registration Agency with UIC 207623030 and VAT identification number: BG207623030. The Company is the owner and administrator of the website www.vinetka.bg. Users of the website can contact \"Digital Policy Hub\" JSC at the above-mentioned address, by phone",
+      "phone": "+359 876 99 51 77 or at the following email address: hello@insurance.bg",
+      "partnership": "\"Digital Policy Hub JSC\" is a partner of \"Digital Smart Infrastructure\" JSC (\"DSI\" JSC) UIC 205612035, which company is registered as a National service provider with the Road Infrastructure Agency (RIA) and has the right to carry out activities for collecting road taxes and others. \"DPH\" JSC carries out activities to provide opportunities for users to pay vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes on behalf and for the account of \"DSI\" JSC through the website www.vinetka.bg.",
+      "sections": {
+        "generalProvisions": {
+          "title": "I. GENERAL PROVISIONS. DEFINITIONS.",
+          "description": "www.vinetka.bg is a website (also called an internet page) through which \"DPH\" JSC carries out activities to provide opportunities for users to pay vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes on behalf and for the account of \"DSI\" JSC.",
+          "termsRegulation": "These Terms of Use regulate the relationships for sale, delivery and payment of products /goods and services/ between the Company as a seller and as owner of the website www.vinetka.bg and any person /referred to below as \"User\"/, who uses the website and/or the products (goods and services) provided through it.",
+          "updateRights": "\"Digital Policy Hub\" JSC reserves the right to periodically update and change these Terms of Use in order to reflect changes in the way the website is used or in connection with changes in applicable legislation."
+        },
+        "usageRules": {
+          "title": "II. RULES FOR USING THE WEBSITE WWW.VINETKA.BG.",
+          "registration": "Registration on the website www.vinetka.bg is not a condition for using the site. Every User has the opportunity to register on the website www.vinetka.bg by filling out the appropriate electronic application form for registration on www.vinetka.bg and expressing consent to these Terms of Use.",
+          "emailRequirement": "Every User is required to provide a valid e-mail address for correspondence and give their consent that all future correspondence between them and the Company be carried out electronically at the e-mail address they have provided.",
+          "pricing": "With the exception of vignette taxes/electronic vignettes, as well as when paying \"maximum toll for the day\" taxes or compensatory taxes, which are state taxes for using the republican road network and VAT is not charged for them, all other prices of goods or services on the website www.vinetka.bg are final, announced in leva (BGN) with included VAT and all other taxes or fees required by law."
+        },
+        "intellectualProperty": {
+          "title": "III. INTELLECTUAL PROPERTY RIGHTS",
+          "content": "All elements of the site content, including design, domain, name, trademark, databases, text, drawings, graphics, sketches, industrial design and other information or elements, represent objects of intellectual property within the meaning of the Copyright and Related Rights Act, the Trademarks and Geographical Indications Act and the Industrial Design Act and are intellectual property of \"Digital Policy Hub\" JSC or are provided for use by \"Digital Policy Hub\" JSC and cannot be used by any other person."
+        },
+        "purchases": {
+          "title": "IV. PURCHASES OF GOODS AND SERVICES",
+          "process": "The User can make purchases using the website www.vinetka.bg by adding the desired goods and/or services to \"My Cart\" for purchases, following the steps indicated on the website to complete and send the corresponding order.",
+          "vignetteRequirements": "The minimum required data for making a purchase of an electronic vignette are: vehicle category; country of registration of the vehicle; registration number of the vehicle; validity period of the Electronic vignette; start date of validity of the Electronic vignette; email address for notification of expiring Electronic vignettes and detected violations.",
+          "vignetteCheck": "The minimum required data for checking the validity of a vignette are: registration number of the road vehicle."
+        },
+        "withdrawalRights": {
+          "title": "V. GOODS AND SERVICES WITHOUT RIGHT OF WITHDRAWAL. COMPLAINTS.",
+          "timeLimit": "In case services are provided for which it is applicable, the Company offers Users on its own behalf and for its own account the possibility to withdraw from a used service through www.vinetka.bg and return a made payment no later than 14 (fourteen) days from the date of using the service.",
+          "noWithdrawal": "The right of withdrawal from the contract does not apply in the following cases: for purchased and activated electronic vignettes, for paid \"maximum toll for the day\" taxes or compensatory taxes, for provision of services where the service has been provided in full and its performance has begun with the express prior consent of the user."
+        },
+        "dataProtection": {
+          "title": "VI. PERSONAL DATA PROTECTION",
+          "policy": "The User agrees, by providing their personal or other data to \"DPH\" JSC, that their personal data will be processed by \"DPH\" JSC in accordance with the Privacy Policy, which is available on the website at the following address: www.vinetka.bg/privacy-policy, and with which the User declares to have familiarized themselves."
+        },
+        "payments": {
+          "title": "VIII. PAYMENTS",
+          "pricing": "The prices of electronic vignettes, \"maximum toll for the day\" taxes and compensatory taxes, which are announced in the Tariff for taxes collected by the RIA, are final. In accordance with applicable legislation, these taxes do not include any taxes, duties or similar, as they represent a state tax for using the paid road network."
+        },
+        "forcemajeure": {
+          "title": "IX. UNFORESEEN AND FORCE MAJEURE CIRCUMSTANCES",
+          "definition": "Neither party shall be liable for non-performance of their contractual obligations if such non-performance is due to Force Majeure circumstances. A Force Majeure circumstance is an unforeseeable event beyond the control of the parties that cannot be avoided."
+        },
+        "applicableLaw": {
+          "title": "X. APPLICABLE LAW",
+          "content": "These Terms of Use are in accordance with applicable Bulgarian legislation. Any disputes arising between \"Digital Policy Hub\" JSC and Users will be resolved by mutual agreement or if this is impossible, disputes will be resolved before competent Bulgarian courts, without violating consumer rights.",
+          "effectiveDate": "These Terms of Use are adopted by \"Digital Policy Hub\" JSC and come into force as of 01.08.2025."
+        }
+      }
     }
   }
 }
