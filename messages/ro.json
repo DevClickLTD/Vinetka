@@ -1,0 +1,984 @@
+{
+"meta": {
+  "title": "Vignetă online - Informații despre vignetă electronică",
+  "description": "Vignetă online - Informații despre vignetă electronică",
+  "titleTemplate": "%s | Vignetă online - Informații despre vignetă electronică"
+},
+"navigation": {
+  "home": "Acasă",
+  "services": "Servicii",
+  "prices": "Prețuri",
+  "blog": "Blog",
+  "contact": "Contact",
+  "vignetteChecker": "Verificare vignetă",
+  "tollTax": "Taxă de drum"
+},
+"footer": {
+  "sections": {
+    "services": "Servicii",
+    "support": "Suport",
+    "company": "Companie",
+    "legal": "Legal"
+  },
+  "services": {
+    "vignetteCheck": "Verificare vignetă",
+    "prices": "Prețuri",
+    "tollTax": "Taxă de drum"
+  },
+  "support": {
+    "blog": "Blog",
+    "contact": "Contact",
+    "faq": "Întrebări frecvente"
+  },
+  "company": {
+    "aboutUs": "Despre noi"
+  },
+  "legal": {
+    "terms": "Termeni și condiții",
+    "privacy": "Politica de confidențialitate",
+    "cookies": "Politica de cookie-uri"
+  },
+  "newsletter": {
+    "title": "Abonează-te la newsletter-ul nostru",
+    "description": "Primește sfaturi valoroase, analize și știri actualizate direct în căsuța ta de e-mail.",
+    "emailLabel": "Adresă de e-mail",
+    "emailPlaceholder": "Introduceți adresa dvs. de e-mail",
+    "subscribe": "Abonează-te"
+  },
+  "copyright": "Vinetka.bg, Inc. Toate drepturile rezervate."
+},
+"home": {
+  "hero": {
+    "title": "Vignete online",
+    "subtitle": "Vignete electronice pentru autoturisme până la 3.5 t",
+    "heroTitle": "Informații despre vignetă online",
+    "heroSubtitle": "Află mai multe despre vigneta online rapid și ușor pe site-ul nostru."
+  },
+  "loading": "Se încarcă serviciile...",
+  "vignetteSection": {
+    "title": "Vignete online",
+    "subtitle": "Vignete electronice pentru autoturisme până la 3.5 t"
+  },
+  "expandableInfoRow": {
+    "title": "Vigneta pentru Bulgaria – tot ce trebuie să știi",
+    "less": "Mai puțin",
+    "more": "Vezi mai mult",
+    "whatType": "Ce tip de vignetă să alegi?",
+    "howToBuy": "Cum să cumperi o vignetă?",
+    "check": "Verificare vignetă",
+    "description": "Dacă plănuiești o călătorie cu mașina în Bulgaria, este obligatoriu să achiziționezi o vignetă pentru Bulgaria. Aceasta este o taxă electronică pentru utilizarea rețelei rutiere naționale, valabilă pentru autoturisme și vehicule de marfă. Fără o vignetă valabilă riști amendă, de aceea este important să te informezi din timp.",
+    "whatTypeDescription": "Există mai multe tipuri de vignete – zilnică, de weekend, săptămânală, lunară, trimestrială și anuală. Pentru turiști, cel mai des se folosește vignetă de weekend, iar pentru călătorii frecvente – cea anuală. Sistemul electronic facilitează achiziția și verificarea, putând fi cumpărată online sau la ghișeu.",
+    "howToBuyDescription": "Poți cumpăra ușor o vignetă electronică pentru Bulgaria prin site-ul oficial http://bgtoll.bg sau prin aplicații mobile. Trebuie doar să introduci numărul de înmatriculare al mașinii, țara de înmatriculare și să alegi perioada de valabilitate.",
+    "checkDescription": "Verificarea valabilității se face prin camere și echipe mobile. Poți verifica online statusul vignetei tale. Asigură-te că datele introduse sunt corecte, deoarece sistemul nu permite corecții după activare."
+  }
+},
+"contact": {
+  "title": "Contact",
+  "pageTitle": "Contact - Vinetka.bg",
+  "pageDescription": "Contactează-ne prin formularul nostru sau găsește datele noastre de contact.",
+  "officeType": "Birou corporativ",
+  "address": "Adresă",
+  "email": "E-mail",
+  "phone": "Telefon",
+  "form": {
+    "firstName": "Prenume",
+    "lastName": "Nume",
+    "company": "Companie",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "subject": "Subiect",
+    "message": "Mesaj",
+    "submit": "Trimite cererea",
+    "agree": "Sunt de acord cu",
+    "privacyPolicy": "politica de confidențialitate",
+    "success": {
+      "title": "Trimis cu succes!",
+      "message": "Veți primi un răspuns în curând : )"
+    },
+    "error": {
+      "title": "Eroare la trimitere!",
+      "message": "Vă rugăm să încercați din nou mai târziu.",
+      "networkTitle": "Trimitere eșuată!",
+      "networkMessage": "Verificați conexiunea la internet și încercați din nou."
+    },
+    "validation": {
+      "agreementRequired": "Acord necesar",
+      "agreementMessage": "Vă rugăm să acceptați politica de confidențialitate înainte de a trimite formularul."
+    }
+  }
+},
+"prices": {
+  "title": "Prețuri vignete electronice - Alegeți cea mai potrivită",
+  "description": "Descoperă cele mai bune prețuri pentru toate tipurile de vignete electronice din Bulgaria! Prețuri competitive pentru vigneta de weekend, săptămânală, lunară, trimestrială și anuală. Fără taxe ascunse.",
+  "pageTitle": "Prețuri vignete",
+  "pageSubtitle": "Alegeți tipul de vignetă potrivit pentru nevoile dvs.",
+  "weekly": "Săptămânală",
+  "monthly": "Lunară",
+  "quarterly": "Trimestrială",
+  "annual": "Anuală",
+  "breadcrumb": {
+    "home": "Acasă",
+    "prices": "Prețuri"
+  },
+  "weekend": "Weekend",
+  "weekendTitle": "Preț vigneta de weekend",
+  "weeklyTitle": "Preț vigneta săptămânală",
+  "monthlyTitle": "Preț vigneta lunară",
+  "quarterlyTitle": "Preț vigneta trimestrială",
+  "annualTitle": "Preț vigneta anuală",
+  "features": {
+    "instantIssue": "Emitere instantanee",
+    "securePayment": "Plată sigură",
+    "customerSupport": "Suport clienți",
+    "mobileOptimized": "Optimizat pentru mobil",
+    "noHiddenFees": "Fără taxe ascunse",
+    "fastDelivery": "Livrare rapidă"
+  },
+  "buyNow": "Cumpără acum",
+  "validFor": "Valabilă pentru",
+  "days": "zile",
+  "hero": {
+    "title": "Prețuri vignete electronice",
+    "subtitle": "Alegeți cea mai potrivită opțiune pentru nevoile dvs.",
+    "viewPrices": "Vezi prețurile",
+    "benefits": "Avantaje"
+  },
+  "intro": {
+    "title": "Prețuri competitive pentru toate tipurile de vignete",
+    "description1": "Pe vinetka.bg oferim prețuri competitive pentru toate tipurile de vignete. Lista noastră de prețuri este mereu actualizată și sincronizată cu tarifele oficiale ale NC \"Avtomagistrali\" EAD.",
+    "description2": "Oferim diferite variante de vignete care acoperă toate nevoile dvs. - de la călătorii scurte la acoperire anuală completă. Fiecare vignetă este valabilă pentru toate autostrăzile și drumurile expres cu taxă din Bulgaria."
+  },
+  "benefits": {
+    "competitive": {
+      "title": "Prețuri competitive",
+      "description": "Cele mai bune prețuri de pe piață, sincronizate cu tarifele oficiale"
+    },
+    "noHiddenFees": {
+      "title": "Fără taxe ascunse",
+      "description": "Toate prețurile includ taxe și comisioane - fără costuri suplimentare"
+    },
+    "vatIncluded": {
+      "title": "TVA inclus",
+      "description": "Toate prețurile includ TVA și sunt valabile pentru autoturisme până la 3.5 tone"
+    },
+    "instantActivation": {
+      "title": "Activare instantanee",
+      "description": "Vigneta se activează imediat după plată, fără așteptare"
+    }
+  },
+  "weekend": {
+    "title": "Vigneta de weekend - 2 zile | Preț și informații | Vinetka.bg",
+    "description": "Vigneta de weekend pentru 2 zile - perfectă pentru excursii scurte și călătorii spontane. Valabilă 48 de ore de la activare. Ideală pentru călătorii de vineri până duminică.",
+    "mainTitle": "Vigneta de weekend",
+    "subtitle": "Perfectă pentru evadări scurte din cotidian!",
+    "duration": "2 zile",
+    "description1": "Vigneta de weekend este creată special pentru călătorii de două zile și acoperă nevoile pentru mini-vacanțe fără costuri suplimentare. Este valabilă pentru o perioadă de 48 de ore de la activare, ceea ce o face ideală pentru călătorii de vineri până duminică sau pentru orice alt interval de două zile.",
+    "description2": "Vigneta de weekend oferă cel mai bun raport calitate-preț pentru călătorii scurte. Ideală pentru decizii spontane și oferă libertate totală de mișcare pe toate autostrăzile cu taxă din Bulgaria.",
+    "feature1": "Valabilă 48 de ore",
+    "feature2": "Ideală pentru călătorii spontane",
+    "feature3": "Cel mai bun raport pentru călătorii scurte",
+    "feature4": "De vineri până duminică",
+    "highlight": "Evadări scurte",
+    "pageTitle": "Vigneta de weekend - 2 zile | Preț și informații",
+    "pageDescription": "Vigneta de weekend pentru 2 zile - perfectă pentru excursii scurte și călătorii spontane. Valabilă 48 de ore de la activare. Ideală pentru călătorii de vineri până duminică.",
+    "price": "10,00 лв.",
+    "priceEur": "5,11 €",
+    "perfectFor": "Perfectă pentru excursii scurte și călătorii spontane",
+    "validFrom": "Valabilă 48 de ore de la activare",
+    "valid48Hours": "Valabilă 2 zile (48 de ore)",
+    "features": {
+      "valid48": "Valabilă 48 de ore",
+      "valid48Desc": "Vigneta este activă exact 48 de ore de la achiziție",
+      "idealWeekends": "Ideală pentru weekenduri",
+      "idealWeekendsDesc": "Creată special pentru călătorii de două zile și mini-vacanțe",
+      "spontaneous": "Decizii spontane",
+      "spontaneousDesc": "Perfectă pentru decizii neașteptate de călătorie scurtă",
+      "allHighways": "Toate autostrăzile",
+      "allHighwaysDesc": "Valabilă pe toate autostrăzile cu taxă din Bulgaria",
+      "title": "De ce să alegi vigneta de weekend?",
+      "subtitle": "Avantaje și caracteristici ale vignetei de 2 zile"
+    },
+    "useCases": {
+      "title": "Când să folosești vigneta de weekend?",
+      "fridayToSunday": "Călătorie de vineri până duminică",
+      "shortHolidays": "Mini-vacanțe în afara orașului",
+      "twoDayTrips": "Excursii de două zile",
+      "visitFriends": "Vizite la prieteni și familie",
+      "businessTrips2Days": "Deplasări de afaceri de până la 2 zile",
+      "spontaneousTrips": "Excursii spontane la mare sau la munte"
+    },
+    "info": {
+      "title": "Informații importante",
+      "activationTitle": "Activare",
+      "activation": "Vigneta se activează instant după plată",
+      "validityTitle": "Valabilitate",
+      "validity": "Exact 48 de ore de la activare",
+      "coverageTitle": "Acoperire",
+      "coverage": "Toate autostrăzile cu taxă din Bulgaria",
+      "vehiclesTitle": "Vehicule",
+      "vehicles": "Autoturisme până la 3.5 tone"
+    },
+    "cta": {
+      "title": "Gata de o scurtă aventură?",
+      "subtitle": "Cumpără vigneta de weekend acum și pornește la drum în câteva secunde.",
+      "button": "Cumpără vigneta de weekend",
+      "allPrices": "Toate prețurile"
+    }
+  },
+  "weekly": {
+    "title": "Vigneta săptămânală",
+    "subtitle": "Soluția ideală pentru mini-vacanțe și deplasări de afaceri!",
+    "duration": "7 zile",
+    "description": "Ideală pentru călătorii scurte",
+    "description1": "Vigneta săptămânală este valabilă pentru o perioadă de 7 zile consecutive și acoperă toate nevoile dvs. pentru o călătorie scurtă prin Bulgaria. Se activează la achiziție și este valabilă exact 168 de ore (7 zile) de la activare.",
+    "description2": "Este perfectă pentru turiștii care vin pentru un weekend prelungit sau pentru călătorii de afaceri de până la o săptămână. Recomandăm vigneta săptămânală tuturor celor care plănuiesc o călătorie cu mașina la mare, la munte sau pentru a vizita diferite orașe din țară într-o săptămână.",
+    "feature1": "Valabilă exact 168 de ore",
+    "feature2": "Perfectă pentru turiști",
+    "feature3": "Potrivită pentru călătorii de afaceri",
+    "feature4": "Acoperă un weekend prelungit",
+    "highlight": "Alegere populară",
+    "pageTitle": "Vigneta săptămânală - 7 zile | Preț și informații",
+    "pageDescription": "Vigneta săptămânală pentru 7 zile - soluția ideală pentru mini-vacanțe și deplasări de afaceri. Valabilă 168 de ore (7 zile) de la activare. Perfectă pentru turiști și călătorii de afaceri.",
+    "mainTitle": "Vigneta săptămânală",
+    "price": "15,00 лв.",
+    "priceEur": "7,67 €",
+    "perfectFor": "Soluția ideală pentru mini-vacanțe și deplasări de afaceri",
+    "validFrom": "Valabilă 168 de ore (7 zile) de la activare",
+    "features": {
+      "valid168": "Valabilă 168 de ore",
+      "valid168Desc": "Exact 7 zile consecutive de la activare",
+      "perfectForTourists": "Perfectă pentru turiști",
+      "perfectForTouristsDesc": "Ideală pentru vizitatori care vin pentru un weekend prelungit",
+      "businessTravel": "Călătorii de afaceri",
+      "businessTravelDesc": "Potrivită pentru deplasări de până la o săptămână",
+      "allDestinations": "Toate destinațiile",
+      "allDestinationsDesc": "Acoperă călătorii la mare, la munte sau în diferite orașe",
+      "title": "De ce să alegi vigneta săptămânală?",
+      "subtitle": "Avantaje și caracteristici ale vignetei de 7 zile"
+    },
+    "useCases": {
+      "title": "Când să folosești vigneta săptămânală?",
+      "longWeekendTourists": "Turiști pentru un weekend prelungit",
+      "businessTrips7Days": "Deplasări de afaceri de până la 7 zile",
+      "seaTravelWeek": "Călătorie la mare pentru o săptămână",
+      "mountainVacations": "Vacanțe la munte",
+      "cityVisits": "Vizite în diferite orașe din țară",
+      "familyHolidays": "Vacanțe de familie de până la o săptămână",
+      "culturalTours": "Tururi culturale prin Bulgaria",
+      "festivalsEvents": "Festivaluri și evenimente"
+    },
+    "benefits": {
+      "title": "Avantaje principale",
+      "instantActivation": "Se activează la achiziție",
+      "coversAllNeeds": "Acoperă toate nevoile pentru o călătorie scurtă",
+      "popularChoice": "Cea mai populară alegere pentru turiști",
+      "excellentValue": "Raport calitate-preț excelent",
+      "noWorries7Days": "Fără griji pentru 7 zile întregi"
+    },
+    "info": {
+      "title": "Informații importante",
+      "activationTitle": "Activare",
+      "activation": "Vigneta se activează la achiziție",
+      "validityTitle": "Valabilitate",
+      "validity": "Exact 7 zile consecutive (168 de ore)",
+      "coverageTitle": "Acoperire",
+      "coverage": "Toate autostrăzile și drumurile expres cu taxă",
+      "vehiclesTitle": "Vehicule",
+      "vehicles": "Autoturisme până la 3.5 tone"
+    },
+    "cta": {
+      "title": "Plănuiești o călătorie de o săptămână?",
+      "subtitle": "Cumpără vigneta săptămânală acum și bucură-te de 7 zile de călătorie fără griji.",
+      "button": "Cumpără vigneta săptămânală",
+      "allPrices": "Toate prețurile"
+    }
+  },
+  "monthly": {
+    "title": "Vigneta lunară",
+    "subtitle": "Cea mai populară alegere pentru călătorii regulate!",
+    "duration": "30 de zile",
+    "description": "Potrivită pentru călătorii mai lungi",
+    "description1": "Cea mai populară alegere pentru călătorii regulate la serviciu, pentru cei cu deplasări de afaceri sau pentru cei care pur și simplu iubesc să călătorească prin țară. Oferă un echilibru excelent între preț și flexibilitate.",
+    "description2": "Vigneta lunară oferă libertate totală de mișcare pe toate drumurile cu taxă din Bulgaria pentru o perioadă de 30 de zile. Se activează imediat după plată și este valabilă exact 30 de zile de la activare.",
+    "feature1": "Valabilă exact 30 de zile",
+    "feature2": "Echilibru excelent preț-flexibilitate",
+    "feature3": "Pentru călătorii regulate",
+    "feature4": "Libertate totală de mișcare",
+    "highlight": "Cea mai populară",
+    "pageTitle": "Vigneta lunară - 30 de zile | Preț și informații",
+    "pageDescription": "Vigneta lunară pentru 30 de zile - cea mai populară alegere printre șoferi. Valoare excelentă pentru călătorii regulate. Valabilă 720 de ore (30 de zile) de la activare.",
+    "mainTitle": "Vigneta lunară",
+    "price": "30,00 лв.",
+    "priceEur": "15,34 €",
+    "perfectFor": "Cea mai populară alegere printre șoferi",
+    "validFrom": "Valabilă 720 de ore (30 de zile) de la activare",
+    "features": {
+      "valid30": "Valabilă 30 de zile",
+      "valid30Desc": "Exact 30 de zile de la activare",
+      "excellentBalance": "Echilibru excelent",
+      "excellentBalanceDesc": "Raport perfect între preț și flexibilitate",
+      "forWorking": "Pentru cei care lucrează",
+      "forWorkingDesc": "Ideală pentru cei cu deplasări regulate de afaceri",
+      "fullFreedom": "Libertate totală",
+      "fullFreedomDesc": "Libertate totală de mișcare pe toate drumurile cu taxă",
+      "mostPopular": "Cea mai populară",
+      "title": "De ce să alegi vigneta lunară?",
+      "subtitle": "Avantaje și caracteristici ale vignetei de 30 de zile"
+    },
+    "useCases": {
+      "title": "Când să folosești vigneta lunară?",
+      "regularWork": "Călătorii regulate la serviciu",
+      "businessTrips": "Persoane cu deplasări de afaceri",
+      "countryTravelers": "Călători prin țară",
+      "familyTrips": "Călătorii de familie pe parcursul lunii",
+      "students": "Studenți cu nevoie frecventă de călătorie",
+      "businessMeetings": "Întâlniri de afaceri și clienți",
+      "tourists": "Turiști pentru vacanțe de lungă durată",
+      "secondHome": "Persoane cu a doua locuință"
+    },
+    "benefits": {
+      "title": "Avantaje principale",
+      "mostPopularChoice": "Cea mai populară alegere printre clienți",
+      "excellentValue": "Raport calitate-preț excelent",
+      "idealForRegular": "Ideală pentru călătorii regulate",
+      "fullCoverage": "Acoperire completă pentru o lună întreagă",
+      "instantActivation": "Activare instantanee la plată",
+      "noAdditionalPurchases": "Fără achiziții suplimentare necesare"
+    },
+    "info": {
+      "title": "Informații importante",
+      "activationTitle": "Activare",
+      "activation": "Vigneta se activează imediat după plată",
+      "validityTitle": "Valabilitate",
+      "validity": "Exact 30 de zile de la activare",
+      "coverageTitle": "Acoperire",
+      "coverage": "Toate drumurile cu taxă din Bulgaria",
+      "vehiclesTitle": "Vehicule",
+      "vehicles": "Autoturisme până la 3.5 tone"
+    },
+    "cta": {
+      "title": "Ai nevoie de acoperire lunară?",
+      "subtitle": "Cumpără vigneta lunară acum și bucură-te de libertate totală timp de 30 de zile.",
+      "button": "Cumpără vigneta lunară",
+      "allPrices": "Toate prețurile"
+    }
+  },
+    "quarterly": {
+        "title": "Vignetă trimestrială",
+        "subtitle": "Asigură-ți liniștea pentru tot sezonul!",
+        "duration": "3 luni",
+        "description": "Alegere economică pentru călători sezonieri",
+        "description1": "Vigneta trimestrială este perfectă pentru cei care vor să uite de vignete pentru o perioadă de 90 de zile. Ideală pentru sezonul de vară, când călătoriile sunt cele mai intense, sau pentru lunile de iarnă pentru iubitorii de schi.",
+        "description2": "Vigneta trimestrială acoperă toate nevoile tale fără a fi nevoie de achiziții suplimentare. Economie semnificativă față de achiziția separată a vignetelor lunare – economisești până la 15% din valoarea totală pentru o perioadă de trei luni. Se activează instant la comandă online și este valabilă exact 90 de zile.",
+        "feature1": "Valabilă exact 90 de zile",
+        "feature2": "Economie de până la 15%",
+        "feature3": "Ideală pentru sezoane",
+        "feature4": "Fără achiziții suplimentare",
+        "highlight": "Economie 15%",
+        "pageTitle": "Vignetă trimestrială - 90 de zile | Preț și informații",
+        "pageDescription": "Vignetă trimestrială pentru 90 de zile - valoare excelentă pentru călătorii frecvenți. Ideală pentru muncitori sezonieri și deplasări regulate. Valabilă 2160 de ore (90 de zile).",
+        "mainTitle": "Vignetă trimestrială",
+        "duration90": "90 de zile",
+        "price": "60,00 лv.",
+        "priceEur": "30,68 €",
+        "perfectFor": "Valoare excelentă pentru călătorii frecvenți",
+        "validFrom": "Valabilă 2160 de ore (90 de zile) din momentul activării",
+        "features": {
+          "valid90": "Valabilă 90 de zile",
+          "valid90Desc": "Exact 3 luni din momentul activării",
+          "save15": "Economie 15%",
+          "save15Desc": "Economie semnificativă față de vignetele lunare separate",
+          "idealSeasons": "Ideală pentru sezoane",
+          "idealSeasonsDesc": "Perfectă pentru sezonul de vară sau lunile de iarnă",
+          "noPurchases": "Fără achiziții suplimentare",
+          "noPurchasesDesc": "Uită de vignete pentru o perioadă de 90 de zile",
+          "title": "De ce să alegi vignetă trimestrială?",
+          "subtitle": "Avantaje și caracteristici ale vignetei de 90 de zile"
+        },
+        "seasonInfo": {
+          "title": "Acoperire sezonieră",
+          "subtitle": "Ideală pentru diferite sezoane ale anului",
+          "summer": {
+            "title": "Sezonul de vară",
+            "description": "Perfectă pentru lunile de vară, când călătoriile sunt cele mai intense",
+            "months": "Iunie - August"
+          },
+          "winter": {
+            "title": "Sezonul de iarnă",
+            "description": "Ideală pentru lunile de iarnă pentru iubitorii de schi",
+            "months": "Decembrie - Februarie"
+          }
+        },
+        "useCases": {
+          "title": "Când să folosești vignetă trimestrială?",
+          "summerSeason": "Sezon turistic de vară",
+          "winterSki": "Luni de iarnă pentru schi",
+          "seasonalWork": "Muncă sezonieră în alt oraș",
+          "longProjects": "Proiecte și delegații de lungă durată",
+          "familyHolidays": "Vacanțe de familie pe sezon",
+          "regular3Months": "Călătorii regulate timp de 3 luni",
+          "studentsSemester": "Studenți pe durata semestrului",
+          "resortResidents": "Rezidenți sezonieri în stațiuni"
+        },
+        "benefits": {
+          "title": "Avantaje principale",
+          "seasonPeace": "Asigură-ți liniștea pentru tot sezonul",
+          "save15Percent": "Economie de până la 15% din valoarea totală",
+          "intensiveTravel": "Ideală pentru călătorii intense",
+          "coversAllNeeds": "Acoperă toate nevoile fără achiziții suplimentare",
+          "instantActivation": "Activare instantanee la comandă online",
+          "valid90Days": "Valabilă exact 90 de zile de la activare"
+        },
+        "info": {
+          "title": "Informații importante",
+          "activationTitle": "Activare",
+          "activation": "Activare instantanee la comandă online",
+          "validityTitle": "Valabilitate",
+          "validity": "Exact 90 de zile (3 luni) de la activare",
+          "savingsTitle": "Economie",
+          "savings": "Până la 15% economie față de vignetele lunare",
+          "vehiclesTitle": "Vehicule",
+          "vehicles": "Autoturisme până la 3,5 tone"
+        },
+        "cta": {
+          "title": "Plănuiești călătorii sezoniere?",
+          "subtitle": "Cumpără vignetă trimestrială acum și economisește până la 15% pentru 90 de zile de călătorii fără griji.",
+          "button": "Cumpără vignetă trimestrială",
+          "allPrices": "Toate prețurile"
+        }
+      },
+      "annual": {
+        "title": "Vignetă anuală",
+        "subtitle": "Cea mai avantajoasă soluție pentru cei care călătoresc regulat!",
+        "duration": "12 luni",
+        "description": "Cea mai avantajoasă pentru șoferii frecvenți",
+        "description1": "Vigneta anuală este obligatorie pentru toți deținătorii de autoturisme care folosesc regulat drumurile cu taxă din Bulgaria. Oferă cea mai bună valoare pentru preț și elimină necesitatea achizițiilor frecvente.",
+        "description2": "Cu vigneta anuală economisești până la 40% față de achiziția vignetelor lunare pe tot parcursul anului. Deosebit de avantajoasă pentru cei care nu vor să-și facă griji pentru statutul vignetei. Vigneta anuală se activează instant și este valabilă exact 365 de zile de la data activării.",
+        "feature1": "Valabilă exact 365 de zile",
+        "feature2": "Economie de până la 40%",
+        "feature3": "Confort maxim",
+        "feature4": "Fără griji pentru statut",
+        "highlight": "Economie 40%",
+        "pageTitle": "Vignetă anuală - 365 de zile | Preț și informații | Vinetka.bg",
+        "pageDescription": "Vignetă anuală pentru 365 de zile - cea mai avantajoasă soluție pentru cei care călătoresc regulat. Economie de până la 40% față de vignetele lunare. Confort maxim fără griji.",
+        "mainTitle": "Vignetă anuală",
+        "duration365": "365 de zile",
+        "price": "97,00 лv.",
+        "priceEur": "49,60 €",
+        "perfectFor": "Cea mai economică soluție pentru călătorii permanenți",
+        "validFrom": "Valabilă până la 31 ianuarie anul următor",
+        "features": {
+          "valid365": "Valabilă 365 de zile",
+          "valid365Desc": "Exact un an întreg din momentul activării",
+          "save40": "Economie 40%",
+          "bestValue": "Cea mai avantajoasă",
+          "save40Desc": "Economie maximă față de achiziția vignetelor lunare",
+          "maxConvenience": "Confort maxim",
+          "maxConvenienceDesc": "Cea mai comodă soluție pentru 365 de zile",
+          "noWorries": "Fără griji",
+          "noWorriesDesc": "Uită de statutul vignetei pentru un an întreg",
+          "title": "De ce să alegi vigneta anuală?",
+          "subtitle": "Avantaje și caracteristici ale vignetei de 365 de zile"
+        },
+        "useCases": {
+          "title": "Pentru cine este potrivită vigneta anuală?",
+          "regularUsers": "Deținători de autoturisme cu utilizare regulată",
+          "dailyCommuters": "Persoane care fac naveta zilnic la serviciu",
+          "businessOwners": "Antreprenori cu deplasări frecvente",
+          "activeFamilies": "Familii cu stil de viață activ",
+          "salesReps": "Reprezentanți de vânzări",
+          "multiCityResidents": "Persoane cu locuințe în orașe diferite",
+          "professionalDrivers": "Șoferi profesioniști",
+          "noWorryUsers": "Toți cei care nu vor griji"
+        },
+        "benefits": {
+          "title": "Avantaje principale",
+          "bestSolution": "Cea mai avantajoasă soluție pentru un an întreg",
+          "save40Percent": "Economie de până la 40% față de vignetele lunare",
+          "eliminateFrequentPurchases": "Elimină necesitatea achizițiilor frecvente",
+          "instantActivation": "Activare instantanee la comandă",
+          "valid365Days": "Valabilă exact 365 de zile de la activare",
+          "necessaryForRegular": "Obligatorie pentru utilizatorii frecvenți",
+          "bestValueForMoney": "Cea mai bună valoare pentru preț",
+          "fullPeaceOfMind": "Liniște deplină pentru un an întreg"
+        },
+        "comparison": {
+          "title": "Compararea costurilor",
+          "subtitle": "Vezi cât poți economisi cu vigneta anuală",
+          "recommended": "Recomandat",
+          "cost": "Cost",
+          "savings": "Economie",
+          "convenience": "Confort",
+          "monthly": "Vignete lunare",
+          "monthlyCost": "12x preț lunar",
+          "monthlyConvenience": "Schimbare frecventă",
+          "annual": "Vignetă anuală",
+          "annualCost": "Preț fix",
+          "annualSavings": "Până la 40%",
+          "annualConvenience": "O singură dată pe an"
+        },
+        "info": {
+          "title": "Informații importante",
+          "activationTitle": "Activare",
+          "activation": "Vigneta anuală se activează instant",
+          "validityTitle": "Valabilitate",
+          "validity": "Exact 365 de zile de la data activării",
+          "savingsTitle": "Economie",
+          "savings": "Până la 40% economie față de vignetele lunare",
+          "vehiclesTitle": "Vehicule",
+          "vehicles": "Autoturisme până la 3,5 tone"
+        },
+        "cta": {
+          "title": "Ești gata pentru un an întreg de călătorii fără griji?",
+          "subtitle": "Cumpără vigneta anuală acum și economisește până la 40% pentru 365 de zile de libertate totală.",
+          "button": "Cumpără vigneta anuală",
+          "allPrices": "Toate prețurile"
+        }
+      },
+      "backToPrices": "Înapoi la prețuri",
+      "chooseVignette": "Alege vigneta ta",
+      "orderNow": "Comandă acum",
+      "benefitsSection": {
+        "title": "De ce să ne alegi pe noi?",
+        "subtitle": "Avantajele politicii noastre de prețuri"
+      },
+      "pricingSection": {
+        "title": "Alege vigneta ta",
+        "subtitle": "Compară diferitele opțiuni și alege-o pe cea mai potrivită pentru nevoile tale",
+        "validFor": "Valabilă",
+        "learnMore": "Află mai mult"
+      },
+      "infoSection": {
+        "title": "Informații complete și actualizate",
+        "description1": "Pe vinetka.bg găsești informații complete și actualizate despre prețurile tuturor tipurilor de vignete electronice din Bulgaria. Prețurile noastre includ toate taxele și comisioanele – fără costuri ascunse sau taxe suplimentare la plată.",
+        "description2": "Compară diferitele opțiuni și alege-o pe cea mai potrivită pentru nevoile tale. Toate prețurile includ TVA și sunt valabile pentru autoturisme de până la 3,5 tone.",
+        "paymentText": "Plată cu cardul – rapid și sigur"
+      },
+      "ctaSection": {
+        "title": "Ești gata de drum?",
+        "subtitle": "Alege vigneta potrivită și plătește online în câteva secunde.",
+        "buyButton": "Cumpără vignetă",
+        "questionsText": "Ai întrebări?"
+      }
+    },
+    "tollTax": {
+      "title": "Taxă de drum online – Regim pentru vehicule grele",
+      "description": "Cumpără taxa de drum online pentru camioane și autobuze în Bulgaria. Acces rapid și ușor la autostrăzi. Plătește în avans și evită oprirea la punctele fizice.",
+      "pageTitle": "Taxă de drum pentru vehicule grele",
+      "pageSubtitle": "Modalitate rapidă și comodă de plată a taxelor de drum",
+      "heroTitle": "Taxă de drum online",
+      "heroSubtitle": "Regim pentru camioane și autobuze",
+      "learnMore": "Află mai mult",
+      "tollPointsNav": "Puncte de taxare",
+      "whatIsTollTax": {
+        "title": "Ce este taxa de drum?",
+        "subtitle": "Regim special de taxare pentru vehicule grele",
+        "description1": "Spre deosebire de vignetele electronice, destinate autoturismelor, taxele de drum din Bulgaria se aplică vehiculelor grele și autobuzelor.",
+        "description2": "Acest regim se bazează pe distanța parcursă și categoria vehiculului, asigurând o taxare corectă pentru încărcarea suplimentară a infrastructurii rutiere.",
+        "description3": "Află cum funcționează sistemul de taxare pentru a-ți planifica traseele și a gestiona eficient plățile. Taxele de drum se colectează pentru trecerea anumitor poduri, tuneluri și sectoare rutiere specifice, în afara sistemului principal de vignete."
+      },
+      "benefits": {
+        "title": "De ce să alegi plata online?",
+        "subtitle": "Avantajele plății anticipate a taxelor de drum",
+        "saveTime": "Economisește timp",
+        "saveTimeDesc": "Evită oprirea la punctele fizice de taxare",
+        "onlinePayment": "Plată online",
+        "onlinePaymentDesc": "Plătește în avans cu cardul, din confortul casei tale",
+        "avoidFines": "Evită amenzi",
+        "avoidFinesDesc": "Asigură-ți o taxă de drum valabilă și evită sancțiunile",
+        "planRoute": "Planifică traseul",
+        "planRouteDesc": "Primește informații detaliate despre toate punctele de taxare"
+      },
+      "tollPoints": {
+        "title": "Principalele puncte de taxare din Bulgaria",
+        "subtitle": "Locuri unde se colectează taxele de drum",
+        "vidinBridge": "Podul Vidin",
+        "ruseBridge": "Podul Ruse",
+        "topliDolTunnel": "Tunel Topli Dol",
+        "otherObjects": "Alte obiective",
+        "vidinBridgeDesc": "Podul Dunărea 1",
+        "ruseBridgeDesc": "Podul Dunărea 2",
+        "topliDolTunnelDesc": "Autostrada A1",
+        "otherObjectsDesc": "Sectoare rutiere specifice"
+      },
+      "targetAudience": {
+        "title": "Cui se adresează serviciul?",
+        "description1": "Indiferent dacă ești proprietar de firmă de transport sau șofer de camion, scopul nostru este să-ți ușurăm munca și să asigurăm trecerea fără probleme pe drumurile cu taxă.",
+        "description2": "Platforma noastră îți oferă posibilitatea să plătești taxele de drum online, în avans, evitând oprirea la punctele fizice de taxare. Este deosebit de util în trafic intens sau când călătorești în afara orelor de program."
+      },
+      "cta": {
+        "title": "Economisește timp – evită amenzile!",
+        "subtitle": "Oferim informații detaliate despre toate punctele de taxare și prețuri actualizate.",
+        "contactUs": "Contactează-ne",
+        "allServices": "Toate serviciile"
+      }
+    },
+    "blog": {
+      "title": "Blog",
+      "pageTitle": "Blog – Noutăți și sfaturi despre vignete",
+      "pageDescription": "Ultimele noutăți, sfaturi și informații despre vignete electronice și călătorii în Bulgaria.",
+      "readMore": "Citește mai mult",
+      "noArticles": "Nu există articole disponibile momentan.",
+      "loading": "Se încarcă articolele..."
+    },
+    "services": {
+      "title": "Servicii",
+      "pageTitle": "Servicii – Totul despre vignete și călătorii",
+      "pageDescription": "Descoperă serviciile noastre pentru vignete electronice, taxe de drum și alte servicii pentru călătorii.",
+      "loading": "Se încarcă serviciile...",
+      "noServices": "Nu există servicii disponibile momentan.",
+      "contactForPrice": "Contactează-ne pentru preț"
+    },
+    "legal": {
+      "privacyPolicy": {
+        "title": "Politica de confidențialitate",
+        "pageTitle": "Politica de confidențialitate – Vinetka.bg",
+        "pageDescription": "Află cum colectăm, folosim și protejăm datele tale personale."
+      },
+      "cookiePolicy": {
+        "title": "Politica de cookie-uri",
+        "pageTitle": "Politica de cookie-uri – Vinetka.bg", 
+        "pageDescription": "Informații despre utilizarea cookie-urilor pe site-ul nostru."
+      },
+      "termsOfService": {
+        "title": "Termeni și condiții",
+        "pageTitle": "Termeni și condiții – Vinetka.bg",
+        "pageDescription": "Condiții de utilizare a serviciilor și site-ului nostru."
+      }
+    },
+    "vignetteChecker": {
+      "title": "Verificare vignetă",
+      "pageTitle": "Verificare vignetă – Vinetka.bg",
+      "pageDescription": "Verifică rapid și ușor statutul vignetei tale electronice.",
+      "checkButton": "Verifică vignetă",
+      "enterPlateNumber": "Introdu numărul de înmatriculare",
+      "checkStatus": "Verifică statutul vignetei"
+    },
+    "common": {
+      "readMore": "Citește mai mult",
+      "contactUs": "Contactează-ne",
+      "learnMore": "Află mai mult",
+      "buyNow": "Cumpără acum",
+      "getStarted": "Începe acum",
+      "loading": "Se încarcă...",
+      "error": "A apărut o eroare",
+      "success": "Succes",
+      "close": "Închide",
+      "cancel": "Anulează",
+      "confirm": "Confirmă",
+      "save": "Salvează",
+      "edit": "Editează",
+      "delete": "Șterge",
+      "back": "Înapoi",
+      "next": "Următorul",
+      "previous": "Anterior",
+      "search": "Caută",
+      "filter": "Filtru",
+      "sort": "Sortează",
+      "selectLanguage": "Alege limba"
+    },
+    "components": {
+      "hero": {
+        "title": "Informații despre vigneta online",
+        "subtitle": "Află rapid și ușor mai multe despre vigneta online pe site-ul nostru.",
+        "ctaButton": "Începe acum",
+        "learnMore": "Află mai mult"
+      },
+      "cta": {
+        "title": "Ești gata să începi?",
+        "subtitle": "Începe să folosești serviciile noastre chiar azi",
+        "button": "Începe acum"
+      },
+      "vignetteChecker": {
+        "title": "Verificare vignetă",
+        "subtitle": "Verifică statutul vignetei tale electronice",
+        "inputPlaceholder": "Introdu numărul de înmatriculare",
+        "checkButton": "Verifică",
+        "validVignette": "Vignetă valabilă",
+        "invalidVignette": "Vignetă nevalidă",
+        "errorMessage": "A apărut o eroare la verificare"
+      },
+      "newsletter": {
+        "title": "Abonează-te la newsletter-ul nostru",
+        "subtitle": "Primește ultimele noutăți și actualizări",
+        "emailPlaceholder": "Introdu adresa ta de email",
+        "subscribeButton": "Abonează-te",
+        "successMessage": "Te-ai abonat cu succes!",
+        "errorMessage": "A apărut o eroare. Te rugăm să încerci din nou."
+      },
+      "latestPosts": {
+        "title": "Ultimele articole",
+        "viewAll": "Vezi toate",
+        "readMore": "Citește mai mult",
+        "noArticles": "Nu există articole disponibile"
+      },
+      "cardsRow": {
+        "title": "Acceptăm",
+        "altText": "Carduri acceptate – Visa, Mastercard"
+      },
+      "ctasRow": {
+        "cta1Title": "Locuință",
+        "cta1Description": "Asigurare locuință – complet online. Procedură simplă, evaluare a proprietății și acoperiri adecvate pentru incendiu, dezastre naturale, cutremur și furt. Clauze suplimentare. Potrivită pentru apartamente, case și proprietăți de vacanță.",
+        "cta1Button": "Vezi mai mult",
+        "cta2Title": "Călătorii în străinătate",
+        "cta2Description": "Asigurare pentru călătorii în străinătate cu asistență inclusă – online! Acoperiri pentru călătorii personale, de serviciu sau pentru competiții sportive. Clauze suplimentare, inclusiv cheltuieli de salvare, pierdere bagaj, răspundere, acoperire COVID-19.",
+        "cta2Button": "Asigură-te online",
+        "cta3Title": "Asigurare montană",
+        "cta3Description": "Asigurare cu acoperire pentru accidente în munte – pentru schi, snowboard, ciclism montan, alpinism, drumeții și alte sporturi extreme în Bulgaria. Încheiere rapidă și sigură online! Liniște la fiecare ieșire în natură.",
+        "cta3Button": "Asigură-te online",
+        "cta4Title": "Asigurare de sănătate",
+        "cta4Description": "Asigurare de sănătate cu pachete fixe de despăgubiri pentru anumite situații medicale: operație, spitalizare (inclusiv naștere), fracturi. Încheiere rapidă online, fără a completa o declarație medicală detaliată.",
+        "cta4Button": "Asigură-te online"
+      },
+      "vignetteCheckerCTA": {
+        "title": "Verifică vigneta ta",
+        "subtitle": "Verificare rapidă și gratuită a valabilității vignetei electronice",
+        "realTimeCheck": "Verificare în timp real",
+        "officialAPI": "API oficial BG TOLL",
+        "freeService": "Serviciu gratuit",
+        "noRegistration": "Fără înregistrare",
+        "checkVignette": "Verifică vigneta acum",
+        "enterRegistrationNumber": "Introdu numărul de înmatriculare",
+        "registrationNumber": "Număr de înmatriculare",
+        "vignetteValid": "Vigneta este valabilă",
+        "validityUntil": "Valabilă până la: 31.12.2024",
+        "quickCheck": "Verificare rapidă",
+        "resultShownInSeconds": "Rezultatul apare în câteva secunde",
+        "dataDirectlyFromBGToll": "Datele provin direct de la BG TOLL",
+        "noTaxesOrHiddenFees": "Fără taxe sau costuri ascunse"
+      },
+      "privacyPolicy": {
+        "pageTitle": "Politica de confidențialitate - Vinetka.bg",
+        "pageDescription": "Politica de confidențialitate a Vinetka.bg - aflați mai multe despre prelucrarea datelor cu caracter personal.",
+        "title": "POLITICA DE CONFIDENȚIALITATE",
+        "introduction": "Prezenta politică de confidențialitate este adoptată de „Digital Policy Hub” SA, CUI 207623030 (denumită în continuare „Societatea” sau „DPH” SA), cu sediul și adresa de conducere: Sofia, cod poștal 1113, raion Izgrev, str. „Maior Iuri Gagarin” nr. 30, clădirea B – operator independent și procesator de date cu caracter personal. Societatea este parteneră cu „DIGITAL SMART INFRASTRUCTURE” SA, CUI 205612035 (denumită în continuare „DSI” SA), cu sediul și adresa de conducere: Bulgaria, regiunea Sofia-capitală, municipiul Sofia, orașul Sofia, raion Sredets, str. „Georgi S. Rakovski” nr. 96, societate înregistrată ca Furnizor Național de Servicii la Agenția „Infrastructura Rutieră” și are dreptul de a desfășura activitatea de colectare a taxelor rutiere și altele. „DPH” SA desfășoară activități de asigurare a posibilității utilizatorilor de a plăti taxe de vinietă, taxe compensatorii și taxe „maxim toll pentru zi” în numele și pe seama „DSI” SA prin intermediul site-ului web.",
+        "contactInfo": "Utilizatorii site-ului www.vinetka.bg pot contacta „Digital Policy Hub” SA la adresa menționată mai sus, la telefon: +359 876 995 177 sau la următoarea adresă de e-mail: hello@insurance.bg",
+        "updatePolicy": "„Digital Policy Hub” SA își rezervă dreptul de a actualiza și modifica periodic prezenta Politică de confidențialitate, pentru a reflecta modificările apărute în modul de prelucrare a datelor dumneavoastră cu caracter personal sau în legătură cu modificări ale legislației aplicabile. În cazul unor astfel de modificări, „Digital Policy Hub” SA va publica o versiune actualizată a Politicii de confidențialitate pe site-ul www.vinetka.bg.",
+        "sections": {
+          "definitions": {
+            "title": "DEFINIȚII",
+            "personalData": "Date cu caracter personal înseamnă orice informație referitoare la o persoană fizică identificată sau identificabilă („persoană vizată”). O persoană fizică identificabilă este o persoană care poate fi identificată, direct sau indirect, în special prin referire la un identificator precum nume, număr de identificare, date de localizare, identificator online sau la unul sau mai multe elemente specifice identității sale fizice, fiziologice, genetice, psihice, economice, culturale sau sociale;",
+            "processing": "Prelucrare înseamnă orice operațiune sau set de operațiuni efectuate asupra datelor cu caracter personal sau asupra seturilor de date cu caracter personal, cu sau fără utilizarea de mijloace automate, cum ar fi colectarea, înregistrarea, organizarea, structurarea, stocarea, adaptarea sau modificarea, extragerea, consultarea, utilizarea, divulgarea prin transmitere, diseminare sau punere la dispoziție în orice alt mod, alinierea sau combinarea, restricționarea, ștergerea sau distrugerea;",
+            "personalDataFile": "Registru de date cu caracter personal înseamnă orice set structurat de date cu caracter personal accesibile conform unor criterii specifice, indiferent dacă este centralizat, descentralizat sau distribuit pe un principiu funcțional sau geografic;",
+            "controller": "Operator este orice persoană fizică sau juridică, autoritate publică, agenție sau alt organism care, singur sau împreună cu alții, stabilește scopurile și mijloacele de prelucrare a datelor cu caracter personal, atunci când scopurile și mijloacele prelucrării sunt stabilite de dreptul UE sau de dreptul Republicii Bulgaria. Operatorul sau criteriile speciale pentru desemnarea acestuia pot fi stabilite în dreptul Uniunii Europene sau în dreptul Republicii Bulgaria;",
+            "processor": "Persoană împuternicită de operator - persoană fizică sau juridică, autoritate publică, agenție sau alt organism care prelucrează date cu caracter personal în numele operatorului;",
+            "dataSubject": "Persoană vizată – este persoana fizică identificată sau identificabilă pe baza anumitor informații care constituie date cu caracter personal, direct sau indirect;",
+            "consent": "Consimțământul persoanei vizate - orice manifestare de voință liber exprimată, specifică, informată și lipsită de ambiguitate a persoanei vizate, printr-o declarație sau o acțiune clară de confirmare, prin care aceasta își exprimă acordul ca datele sale cu caracter personal să fie prelucrate;",
+            "dataBreach": "Încălcarea securității datelor cu caracter personal - o încălcare a securității care duce la distrugerea, pierderea, modificarea, divulgarea neautorizată sau accesul neautorizat, accidental sau ilegal, la date cu caracter personal transmise, stocate sau prelucrate în alt mod;",
+            "platform": "Platformă – site-ul web prin care „DPH” SA își desfășoară activitatea – www.vinetka.bg;",
+            "roadTaxes": "Taxe rutiere - este un termen colectiv care înseamnă taxe de vinietă, taxe compensatorii și taxe „maxim toll pentru zi”, precum și alte taxe stabilite prin lege, colectate pentru utilizarea rețelei rutiere cu plată;",
+            "electronicVignette": "Vinietă electronică – înseamnă document electronic în sensul art. 3, alin. 1 din Legea privind documentul electronic și serviciile de certificare electronică, care atestă plata taxei de vinietă. Vinieta electronică conține un număr unic de identificare, date despre numărul de înmatriculare al vehiculului, statul în care este înmatriculat, categoria acestuia, data plății taxei și perioada de valabilitate. Taxele de vinietă se colectează conform Tarifului pentru taxele colectate de Agenția „Infrastructura Rutieră”, în funcție de perioada de valabilitate;",
+            "compensatoryTax": "Taxă compensatorie – înseamnă taxa rutieră prevăzută la art. 10, alin. 2 din Legea drumurilor, care poate fi colectată în beneficiul Agenției „Infrastructura Rutieră” în cazul constatării circulației pe rețeaua rutieră cu plată, atunci când pentru vehiculul respectiv nu a fost plătită taxa de vinietă sau taxa de toll corespunzătoare. Valoarea taxei compensatorii este stabilită în Tariful pentru taxele colectate de Agenția „Infrastructura Rutieră”. Ca urmare a plății taxei compensatorii, conducătorul vehiculului, proprietarul sau utilizatorul acestuia este exonerat de răspundere contravențională. În acest caz, sunt exonerați de răspundere contravențională și toate celelalte persoane care pot purta o astfel de răspundere în legătură cu vehiculul respectiv."
+          },
+          "generalProvisions": {
+            "title": "DISPOZIȚII GENERALE",
+            "compliance": "La prelucrarea datelor cu caracter personal, Societatea respectă toate actele normative aplicabile activității sale privind protecția datelor cu caracter personal, inclusiv, dar fără a se limita la Regulamentul (UE) 2016/679 al Parlamentului European și al Consiliului din 27 aprilie 2016 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal și privind libera circulație a acestor date și de abrogare a Directivei 95/46/CE (Regulamentul general privind protecția datelor) („Regulamentul”) și Legea privind protecția datelor cu caracter personal.",
+            "internalProcedures": "În aplicarea prevederilor Regulamentului, societatea aplică proceduri interne pentru protecția datelor cu caracter personal și pentru controlul respectării acestora de către toți angajații.",
+            "legitimateInterest": "\"DPH\" SA are un interes legitim de a menține funcționarea site-ului său electronic, iar în acest sens prelucrează date despre toți vizitatorii și activitatea acestora."
+          },
+          "purposes": {
+            "title": "SCOPURI",
+            "principles": "În activitatea sa de prelucrare a datelor cu caracter personal, „DPH” SA urmează principiile legalității, corectitudinii și transparenței, minimizării datelor colectate, acurateței prin ștergerea sau corectarea la timp a datelor cu caracter personal inexacte, limitării stocării. Societatea colectează date cu caracter personal pentru scopuri specifice, explicit indicate și legitime și nu prelucrează ulterior datele colectate într-un mod incompatibil cu aceste scopuri. „DPH” SA stochează datele cu caracter personal într-o formă care să permită identificarea persoanei vizate pentru o perioadă care nu depășește perioada necesară pentru scopurile pentru care sunt prelucrate datele cu caracter personal.",
+            "dataSharing": "În desfășurarea activităților de distribuire a vinietelor electronice și de plată a altor taxe rutiere, datele dumneavoastră cu caracter personal sunt furnizate și prelucrate și de Agenția „Infrastructura Rutieră” și/sau „DSI” SA. Partajarea datelor cu caracter personal între „DPH” SA, „DSI” SA și Agenția „Infrastructura Rutieră” se realizează în următoarele scopuri, în conformitate cu cele indicate de Agenția „Infrastructura Rutieră” în calitate de operator de date cu caracter personal - pentru distribuirea vinietelor electronice și îndeplinirea tuturor acțiunilor necesare în acest sens; plata altor taxe rutiere; dovedirea îndeplinirii corecte a obligațiilor „DPH” SA în legătură cu cerințele legale privind colectarea taxelor rutiere și îndeplinirea tuturor obligațiilor legale, inclusiv trimiterea notificărilor prevăzute la art. 10, alin. 2a – 2d din Legea drumurilor. Pentru aceste scopuri se colectează următoarele date cu caracter personal - identificatori personali și date de contact. Între entitățile menționate mai sus se schimbă doar datele cu caracter personal necesare pentru îndeplinirea obligațiilor lor, iar acestea nu pot furniza date cu caracter personal în afara acestor limite. Pentru întocmirea de documente statistice, rapoarte etc. se utilizează date anonimizate.",
+            "dataCollection": "„DPH” SA colectează datele dumneavoastră cu caracter personal direct de la dumneavoastră, astfel încât dumneavoastră decideți ce tip de informații să ne furnizați. O parte din informațiile pe care le primim de la dumneavoastră sunt obligatorii pentru scopurile de înregistrare pe platforma noastră. Societatea colectează datele dumneavoastră cu caracter personal în următoarele cazuri:",
+            "userProfile": "- Când vă creați un profil de utilizator pe site-ul nostru, ne trimiteți adresa dumneavoastră de e-mail, prenumele și numele de familie. În aceste cazuri, datele dumneavoastră sunt prelucrate doar în scopul înregistrării și al serviciilor oferite de noi;",
+            "additionalInfo": "- Puteți adăuga și informații suplimentare la profilul dumneavoastră de utilizator, cum ar fi: număr de telefon mobil, număr de telefon fix și altele. Aceste informații nu sunt obligatorii pentru înregistrare, iar prin furnizarea lor vă exprimați consimțământul explicit ca acestea să fie prelucrate în legătură cu furnizarea unor servicii de calitate superioară din partea noastră sau pentru clarificarea solicitării dumneavoastră. Dacă ne-ați furnizat datele dumneavoastră de contact, le putem folosi și în scopuri de marketing direct. Refuzul de a vă da consimțământul nu va duce la refuzul serviciilor sau la alte consecințe nefavorabile pentru dumneavoastră, dar va împiedica trimiterea newsletterului nostru și informarea cu privire la cele mai noi oferte. În orice moment puteți retrage consimțământul acordat pentru utilizarea acestor date sau puteți obiecta la utilizarea lor în scopuri de marketing direct. Retragerea sau obiecția nu va afecta în niciun fel celelalte servicii oferite de „DPH” SA;",
+            "vignettePurchase": "- Când efectuați o achiziție de vinietă electronică prin intermediul site-ului, ne furnizați următoarele informații: categoria vehiculului; țara de înmatriculare a vehiculului; numărul de înmatriculare al vehiculului; perioada de valabilitate a vinietei electronice; data de început a valabilității vinietei electronice; adresa de e-mail pentru notificări privind expirarea vinietelor electronice și constatarea încălcărilor, prenume și nume de familie, date de facturare, modalitate de plată, număr de telefon, date despre cardurile bancare etc. Puteți efectua achiziția și fără a fi utilizator înregistrat pe site, fiind necesare cel puțin următoarele informații la achiziția unei viniete electronice: numărul de înmatriculare al autovehiculului, naționalitatea numărului de înmatriculare al vehiculului, perioada de valabilitate a vinietei electronice; data de început a valabilității vinietei electronice; adresa de e-mail.",
+            "contactForm": "- Când ați solicitat să primiți informații sau asistență prin completarea formularului nostru de contact, pentru a vă trimite un răspuns personalizat;",
+            "comments": "- Când faceți comentarii sau ne furnizați informații suplimentare într-o secțiune a site-ului care permite acest lucru;",
+            "socialMedia": "- În cazul în care platforma noastră permite, dacă utilizați profilul dumneavoastră din rețele sociale precum LinkedIn, Twitter, Facebook, Instagram și altele pentru a vă înregistra sau pentru a utiliza altfel platforma „DPH” SA, vom avea acces la datele dumneavoastră cu caracter personal pe care le-ați făcut disponibile pe profilul respectiv. Puteți gestiona accesul la aceste date prin setările profilului din rețelele sociale respective;",
+            "browsing": "- Pe lângă datele cu caracter personal menționate, „DPH” SA poate colecta și ulterior prelucra anumite informații despre comportamentul dumneavoastră la navigarea pe platformele noastre, pentru a vă personaliza interesele și a vă oferi oferte adaptate profilului dumneavoastră. „DPH” SA poate stoca și colecta informații prin intermediul cookie-urilor și tehnologiilor similare. Vă invităm să aflați mai multe în această privință citind secțiunea privind prelucrarea din Politica noastră de utilizare a cookie-urilor, disponibilă pe site-ul www.vinetka.bg. „DPH” SA are un interes legitim de a menține funcționarea site-ului său electronic, iar în acest sens prelucrează date despre toți vizitatorii și activitatea acestora;",
+            "sensitiveData": "- Nu colectăm și nu prelucrăm în alt mod date sensibile incluse în categoriile speciale de date cu caracter personal din Regulamentul general privind protecția datelor."
+          },
+          "dataTransfer": {
+            "title": "TRANSFERUL SAU ACORDAREA ACCESULUI LA DATE CU CARACTER PERSONAL",
+            "recipients": "În funcție de caz, putem transfera sau acorda acces la unele dintre datele dumneavoastră cu caracter personal următoarelor categorii de destinatari:",
+            "dsiAd": "- „DSI” SA – Datele de contact furnizate sunt prelucrate în temeiul art. 10, alin. 2a - 2d și art. 10a, art. 4a - 4v din Legea drumurilor în legătură cu trimiterea de notificări către dumneavoastră în cazurile prevăzute - în scopul îndeplinirii obligațiilor legale ale „DSI” SA. „DPH” SA furnizează „DSI” SA adresele electronice ale utilizatorilor – acestea sunt folosite doar pentru îndeplinirea obligației de notificare a utilizatorilor rețelei rutiere cu privire la expirarea vinietelor electronice achiziționate prin platformele societății; când „DPH” SA primește o reclamație de la un utilizator legată de plata unei taxe rutiere, inclusiv o încălcare prin platformele „DPH” SA, societatea furnizează „DSI” SA obiecția, împreună cu informațiile introduse de utilizator la solicitarea taxei rutiere;",
+            "api": "- Agenția „Infrastructura Rutieră”;",
+            "courier": "- furnizori de servicii de curierat;",
+            "payment": "- furnizori de servicii de plată/bancare;",
+            "legal": "- în cazul în care există o obligație legală sau dacă este necesar pentru protejarea intereselor legitime ale „DPH” SA, societatea poate divulga anumite date cu caracter personal și autorităților publice.",
+            "guarantee": "Garantăm că accesul la datele dumneavoastră de către entități private terțe se realizează în conformitate cu prevederile legale privind protecția datelor și confidențialitatea informațiilor, pe baza contractelor încheiate cu acestea. Aceste categorii de destinatari sunt obligați legal sau contractual să păstreze confidențialitatea și securitatea oricărei informații și date personale ale dumneavoastră. Nu au dreptul să utilizeze, să divulge sau să modifice aceste informații în niciun fel, cu excepția scopului de a executa serviciile contractate de noi sau dacă acest lucru este cerut de lege.",
+            "apiProcessing": "Indiferent de cele menționate, datele dumneavoastră colectate în legătură cu utilizarea rețelei rutiere cu plată din Bulgaria, inclusiv plata taxelor de vinietă, toll și compensatorii etc., sunt furnizate Agenției „Infrastructura Rutieră”, care acționează ca operator în ceea ce privește aceste date.",
+            "phoneRecording": "În limitele permise de lege, „DPH” SA poate înregistra convorbirile telefonice (intrare și ieșire) cu call center-uri și linii (numere de telefon) destinate serviciului clienți. Înregistrarea convorbirilor telefonice și stocarea și prelucrarea înregistrărilor audio (împreună cu datele cu caracter personal dezvăluite în timpul convorbirilor) se realizează în scopul protejării drepturilor și intereselor legitime ale „DPH” SA."
+          },
+          "security": {
+            "title": "MĂSURI TEHNICE ȘI ORGANIZATORICE DE SECURITATE A PRELUCRĂRII",
+            "intro": "Ținând cont de natura, domeniul de aplicare, contextul și scopurile prelucrării, precum și de riscurile pentru drepturile și libertățile utilizatorilor, „DPH” SA aplică măsurile tehnice și organizatorice necesare, enumerate fără a fi limitative, și anume:",
+            "measures": [
+              "Criptarea datelor cu caracter personal.",
+              "Utilizarea doar a software-ului licențiat, verificat și aprobat în prealabil.",
+              "Măsuri restrictive care împiedică instalarea și utilizarea de software, aplicații, rețele sociale, mesagerie și altele similare neautorizate pe computerele de lucru.",
+              "Utilizarea de software antivirus, firewall-uri și servere proxy.",
+              "Protecție prin parolă și drepturi de acces personalizate la computere, echipamente, baze de date și directoare cu informații despre clienți.",
+              "Blocarea automată a computerelor de lucru inactive din rețea.",
+              "Protecția dispozitivelor care părăsesc sediul societății, cum ar fi laptopuri sau altele.",
+              "Controlul accesului fizic la documentele electronice și pe suport de hârtie care conțin date cu caracter personal, spațiile fiind asigurate cu dispozitive de blocare.",
+              "Echipare cu sisteme de alarmă și securitate.",
+              "Aplicarea unor reguli interne adecvate și instruirea personalului cu privire la prelucrarea, stocarea și securitatea datelor cu caracter personal și a informațiilor confidențiale.",
+              "Arhivarea tuturor informațiilor cel puțin o dată pe zi, atât local, cât și pe un server la distanță cu conexiune criptată.",
+              "Verificarea și controlul regulat al eficacității măsurilor de protecție, a mecanismelor de control, a sistemelor și procedurilor, inclusiv efectuarea de scanări pentru vulnerabilități și corectarea vulnerabilităților identificate.",
+              "Protecția fizică a datelor cu caracter personal din registrele deținute de Societate este organizată astfel încât mijloacele tehnice pentru prelucrarea și stocarea acestora, precum și documentele pe suport de hârtie, să fie prelucrate și stocate în încăperi încuiate cu acces restricționat. Directorul executiv și angajații Societății au drept de acces.",
+              "Fiecare computer utilizat pentru prelucrarea datelor cu caracter personal are instalat un sistem de operare cu blocare prin parolă, program antivirus, restricții tehnice pentru copierea datelor, niveluri de acces stabilite, deblocate cu parole separate pentru fiecare nivel. Fiecărui angajat al Societății i se acordă parolele corespunzătoare pentru acces, în funcție de sarcinile atribuite și de domeniul de prelucrare a datelor cu caracter personal. Directorul executiv are acces la toate computerele și parolele pentru diferitele niveluri de acces.",
+              "Ținând cont de progresele tehnice, costurile de implementare și natura, domeniul de aplicare, contextul și scopurile prelucrării, precum și riscurile cu probabilitate și gravitate diferite pentru drepturile și libertățile persoanelor fizice, Societatea aplică măsuri tehnice și organizatorice adecvate pentru a asigura un nivel de securitate corespunzător riscului, inclusiv, atunci când este cazul – un proces de testare, evaluare și apreciere periodică a eficacității măsurilor tehnice și organizatorice pentru a garanta securitatea prelucrării."
+            ],
+            "disclaimer": "În ciuda măsurilor pe care le aplicăm pentru a vă proteja datele cu caracter personal, suntem conștienți că, în principiu, transmiterea informațiilor prin internet sau alte rețele publice nu este complet sigură, existând riscul ca datele să poată fi vizualizate și utilizate de terți neautorizați. Nu putem accepta responsabilitatea pentru aceste vulnerabilități ale sistemelor care nu sunt sub controlul nostru."
+          },
+          "retention": {
+            "title": "PERIOADA DE STOCARE",
+            "period": "„DPH” SA stochează toate datele cu caracter personal necesare pentru utilizarea serviciilor oferite pe platforma www.vinetka.bg pentru perioada necesară îndeplinirii scopului specific pentru care sunt prelucrate sau perioada prevăzută de lege."
+          },
+          "rights": {
+            "title": "DREPTURILE UTILIZATORILOR/CLIENȚILOR",
+            "informationRight": "- Dreptul la informare (cu privire la prelucrarea datelor cu caracter personal ale persoanei vizate de către „DPH” SA) – persoana fizică vizată are dreptul de a primi informații despre „DPH” SA ca operator de date cu caracter personal, precum și despre prelucrarea datelor sale cu caracter personal. Aceste informații includ: datele de identificare ale societății, precum și datele de contact, inclusiv datele de contact ale responsabilului cu protecția datelor; scopurile și temeiul juridic al prelucrării; destinatarii sau categoriile de destinatari ai datelor cu caracter personal, dacă există; intenția operatorului de a transfera datele cu caracter personal către o terță parte (dacă este cazul); perioada de stocare a datelor cu caracter personal; existența unui proces decizional automatizat, inclusiv profilarea (dacă există); informații despre toate drepturile pe care le are persoana vizată; dreptul de a depune o plângere la autoritatea de supraveghere. Societatea își rezervă dreptul de a refuza să acționeze asupra unei cereri primite. Societatea poartă sarcina de a dovedi caracterul vădit nefondat sau excesiv al cererii. „DPH” SA nu va percepe o taxă pentru exercitarea oricăror drepturi cu privire la datele dumneavoastră cu caracter personal, cu excepția cazului în care cererea dumneavoastră de acces la informații este nefondată, repetitivă sau inutil de repetată, caz în care vom percepe o sumă rezonabilă. Vă vom informa despre eventualele taxe aplicabile înainte de a vă procesa cererea.",
+            "accessRight": "- Dreptul de acces la propriile date cu caracter personal – persoana vizată are dreptul de a obține de la „DPH” SA confirmarea dacă se prelucrează date cu caracter personal care o privesc și, dacă da, să obțină acces la informații privind scopul prelucrării, categoriile de date cu caracter personal vizate, destinatarii sau categoriile de destinatari ai datelor cu caracter personal, dacă există, intenția operatorului de a transfera datele cu caracter personal către o terță parte (dacă este cazul), perioada de stocare a datelor cu caracter personal; existența dreptului de rectificare a datelor cu caracter personal, precum și dreptul de a se opune prelucrării datelor cu caracter personal, existența unui proces decizional automatizat, inclusiv profilarea (dacă există), informații despre toate drepturile pe care le are persoana vizată, dreptul de a depune o plângere la autoritatea de supraveghere.",
+            "rectificationRight": "- Dreptul la rectificarea datelor cu caracter personal (dacă datele sunt inexacte) – persoana vizată are dreptul de a solicita „DPH” SA să rectifice fără întârzieri nejustificate datele cu caracter personal inexacte care o privesc.",
+            "erasureRight": {
+              "title": "- Dreptul la ștergerea datelor cu caracter personal (dreptul „de a fi uitat”) – persoana vizată poate solicita „DPH” SA ștergerea datelor cu caracter personal care o privesc, dacă este îndeplinită una dintre următoarele condiții:",
+              "conditions": [
+                "datele cu caracter personal nu mai sunt necesare pentru scopurile pentru care au fost colectate sau prelucrate;",
+                "persoana vizată își retrage consimțământul pe baza căruia se bazează exclusiv prelucrarea și nu există un alt temei juridic pentru prelucrare /prelucrare în temeiul unei obligații legale sau al unui contract/;",
+                "persoana vizată se opune prelucrării și nu există motive legale care să prevaleze;",
+                "datele cu caracter personal au fost prelucrate ilegal;",
+                "datele cu caracter personal trebuie șterse pentru respectarea unei obligații legale prevăzute de dreptul Uniunii Europene sau de dreptul Republicii Bulgaria, care se aplică „DPH” SA în calitate de operator independent."
+              ],
+              "contact": "Ne puteți contacta la datele de contact menționate mai sus pentru a obține informații suplimentare privind ștergerea datelor dumneavoastră cu caracter personal."
+            },
+            "restrictionRight": {
+              "title": "- Dreptul la restricționarea prelucrării datelor cu caracter personal: persoana vizată are dreptul de a restricționa prelucrarea datelor cu caracter personal de către operator, dar este necesară îndeplinirea unor condiții specifice, printre care:",
+              "conditions": [
+                "- Exactitatea datelor cu caracter personal este contestată de persoana vizată. În acest caz, restricționarea prelucrării este pentru perioada care permite operatorului să verifice exactitatea datelor cu caracter personal;",
+                "- Prelucrarea este ilegală, dar persoana vizată nu dorește ștergerea datelor cu caracter personal, ci solicită în schimb restricționarea utilizării acestora;",
+                "- Operatorul nu mai are nevoie de datele cu caracter personal pentru scopurile prelucrării, dar persoana vizată le solicită pentru constatarea, exercitarea sau apărarea unor drepturi în instanță;",
+                "- Persoana vizată s-a opus prelucrării în așteptarea verificării dacă motivele legale ale operatorului prevalează asupra intereselor persoanei vizate."
+              ]
+            },
+            "portabilityRight": "- Dreptul la portabilitatea datelor cu caracter personal între operatori – persoana vizată are dreptul de a primi datele cu caracter personal care o privesc și pe care le-a furnizat „DPH” SA într-un format structurat, utilizat în mod curent și care poate fi citit automat și are dreptul de a transfera aceste date către un alt operator fără obstacole din partea „DPH” SA, căruia i-au fost furnizate datele cu caracter personal, atunci când prelucrarea se bazează pe consimțământ sau pe o obligație contractuală și prelucrarea se efectuează prin mijloace automate. Atunci când își exercită dreptul la portabilitatea datelor, persoana vizată are dreptul de a obține și transferul direct al datelor cu caracter personal de la „DPH” SA către un alt operator, atunci când acest lucru este fezabil din punct de vedere tehnic.",
+            "objectionRight": "- Dreptul de a se opune prelucrării datelor sale cu caracter personal - persoanele vizate au dreptul de a se opune la „DPH” SA împotriva prelucrării datelor lor cu caracter personal, iar societatea va înceta prelucrarea, cu excepția cazului în care dovedește că există motive legale convingătoare pentru prelucrare care prevalează asupra intereselor, drepturilor și libertăților persoanei vizate sau pentru constatarea, exercitarea sau apărarea unor drepturi în instanță. În cazul obiecției la prelucrarea datelor cu caracter personal în scopuri de marketing direct, „DPH” SA va înceta imediat prelucrarea. Dacă solicitarea dumneavoastră vizează date pe care „DPH” SA le prelucrează în calitate de partener al „DSI” SA, colectate la cererea Agenției „Infrastructura Rutieră”, vom transmite solicitarea dumneavoastră și vă vom informa în consecință. Ne angajăm ca transmiterea să fie efectuată în cel mai scurt timp posibil, iar prelucrarea ulterioară depinde de Agenția „Infrastructura Rutieră”, care acționează ca operator pentru aceste date și stabilește modul în care acestea trebuie prelucrate.",
+            "automatedDecisionRight": "- Persoana vizată are dreptul de a nu face obiectul unei decizii bazate exclusiv pe prelucrare automată, inclusiv profilare.",
+            "profilingDefinition": "Profilarea este definită la articolul 4, pct. 4 din Regulament ca orice formă de prelucrare automată a datelor cu caracter personal, prin care datele cu caracter personal sunt utilizate pentru a evalua anumite aspecte personale ale unei persoane fizice, în special pentru a analiza sau a prezice aspecte privind performanța profesională, situația economică, sănătatea, interesele, fiabilitatea, comportamentul, localizarea sau deplasările acesteia.",
+            "legalProtection": {
+              "title": "- Dreptul la protecție pe cale judiciară sau administrativă, în cazul în care drepturile persoanei vizate au fost încălcate – dacă persoana vizată consideră că dreptul său la protecția datelor cu caracter personal și la confidențialitate a fost încălcat, poate depune o plângere la:",
+              "supervisoryAuthority": "1) autoritatea de supraveghere competentă - Comisia pentru protecția datelor cu caracter personal: https://www.cpdp.bg/, adresa: Sofia 1592, bd. „Prof. Tsvetan Lazarov” nr. 2, Centru de informare și contact - tel. 02/91-53-518, Recepție - program de lucru 9:00 - 17:30 sau",
+              "court": "2) la instanța competentă. Puteți exercita drepturile dumneavoastră privind prelucrarea datelor cu caracter personal conform Regulamentului (UE) 2016/679 trimițând o cerere către responsabilul cu protecția datelor al „DPH” SA oricând, prin unul dintre următoarele moduri:",
+              "email": "-prin e-mail la adresa: hello@insurance.bg; Responsabil cu protecția datelor: Momchil Fotev",
+              "mail": "- sau prin poștă sau curier la adresa: Sofia, cod poștal 1113, raion Izgrev, str. „Maior Iuri Gagarin” nr. 30, clădirea B. Responsabil cu protecția datelor: Momchil Fotev",
+              "responseTime": "„DPH” SA va răspunde tuturor cererilor valide în termen de 14 (paisprezece) zile calendaristice, cu excepția cazului în care cererea este deosebit de complexă sau dacă au fost depuse mai multe cereri, caz în care Societatea se angajează să răspundă în termen de 1 (o) lună, iar dacă este necesar un termen mai lung, Societatea vă va contacta. Dacă solicitarea dumneavoastră afectează în mod negativ drepturile și libertățile altor persoane vizate, aceasta poate fi respinsă.",
+              "questions": "Dacă aveți întrebări sau reclamații cu privire la respectarea prezentei Politici de confidențialitate de către noi sau dacă doriți să faceți recomandări sau comentarii privind îmbunătățirea calității Politicii noastre de confidențialitate, vă rugăm să ne scrieți la datele de contact menționate mai sus.",
+              "effectiveDate": "Prezenta Politică de confidențialitate este aprobată de „DPH” SA și se aplică în activitatea Societății începând cu data de 01.08.2025."
+            }
+          }
+        }
+      },
+      "cookiePolicy": {
+        "pageTitle": "Politica de utilizare a cookie-urilor - Vinetka.bg",
+        "pageDescription": "Politica de utilizare a cookie-urilor pe Vinetka.bg - informații despre utilizarea cookie-urilor.",
+        "title": "POLITICA DE UTILIZARE A COOKIE-URILOR",
+        "introduction": "Prezenta politică de utilizare a cookie-urilor este adoptată de „Digital Policy Hub” SA, CUI 207623030 (denumită în continuare „Societatea” sau „DPH” SA), cu sediul și adresa de conducere: Sofia, cod poștal 1113, raion Izgrev, str. „Maior Iuri Gagarin” nr. 30, clădirea B – operator independent și procesator de date cu caracter personal. Societatea este partener al „DIGITAL SMART INFRASTRUCTURE” SA, CUI 205612035 (denumită în continuare „DSI” SA), cu sediul și adresa de conducere: Republica Bulgaria, regiunea Sofia-capitală, municipiul Sofia, orașul Sofia, raionul Sredets, str. „Georgi S. Rakovski” nr. 96, societate înregistrată ca Furnizor Național de Servicii la Agenția „Infrastructura Rutieră” și are dreptul de a desfășura activități de colectare a taxelor rutiere și altele. „DPH” SA desfășoară activități de asigurare a posibilității utilizatorilor de a plăti taxe de vignetă, taxe compensatorii și taxe „maxim toll pentru ziua respectivă” în numele și pe seama „DSI” SA prin intermediul site-ului web",
+        "contactInfo": "Utilizatorii site-ului www.vinetka.bg pot contacta „Digital Policy Hub” SA la adresa menționată mai sus, la telefon: +359876995177 sau la următoarea adresă de e-mail: hello@insurance.bg",
+        "updatePolicy": "„Digital Policy Hub” SA își rezervă dreptul de a actualiza și modifica periodic prezenta Politică de utilizare a cookie-urilor, pentru a reflecta modificările survenite în modul de utilizare a acestora sau în legătură cu modificări ale legislației aplicabile. În cazul unor astfel de modificări, „Digital Policy Hub” SA va publica o versiune actualizată a Politicii de utilizare a cookie-urilor pe site-ul www.vinetka.bg.",
+        "compliance": "La utilizarea cookie-urilor pe site-ul www.vinetka.bg sunt respectate toate cerințele legislației naționale, precum și ale legislației UE - Directiva 2002/58/CE a Parlamentului European și a Consiliului din 12 iulie 2002 privind prelucrarea datelor cu caracter personal și protecția vieții private în sectorul comunicațiilor electronice, împreună cu Regulamentul (UE) 2018/1725 al Parlamentului European și al Consiliului din 23 octombrie 2018 privind protecția persoanelor fizice în ceea ce privește prelucrarea datelor cu caracter personal de către instituțiile, organele, oficiile și agențiile Uniunii și privind libera circulație a acestor date și de abrogare a Regulamentului (CE) nr. 45/2001 și a Deciziei nr. 1247/2002/CE.",
+        "purpose": "Prezenta politică are ca scop informarea Utilizatorilor site-ului www.vinetka.bg cu privire la cookie-urile utilizate, scopul acestora și efectul asupra Utilizatorilor, în cazul în care aceștia permit utilizarea lor.",
+        "sections": {
+          "whatAreCookies": {
+            "title": "Ce sunt cookie-urile și la ce se folosesc:",
+            "definition": "Cookie-urile sunt fișiere text mici pe care site-urile web le salvează pe dispozitivul utilizatorului pentru a stoca informații despre vizitele acestuia. Ele ajută site-urile să rețină preferințele, să mențină sesiunile și să personalizeze conținutul. Cookie-urile permit furnizarea serviciilor într-un mod cât mai util și convenabil pentru Utilizatori.",
+            "invitation": "De fiecare dată când Utilizatorul vizitează site-ul www.vinetka.bg primește o invitație de a accepta sau refuza cookie-urile.",
+            "types": "„DPH” SA utilizează pe site-ul www.vinetka.bg două tipuri de cookie-uri: de sesiune și persistente. Cookie-urile de sesiune sunt fișiere temporare care rămân pe dispozitiv până la finalizarea sesiunii de utilizator sau la închiderea site-ului. Cookie-urile persistente rămân pe dispozitivul utilizatorului pentru perioada stabilită de parametrii cookie-ului sau până când sunt șterse manual de utilizator. Când Utilizatorul vizitează site-ul www.vinetka.bg, pot fi utilizate următoarele tipuri de cookie-uri: cookie-uri necesare pentru funcționarea site-ului, cookie-uri de analiză și cookie-uri de publicitate."
+          },
+          "browserManagement": {
+            "title": "Gestionarea cookie-urilor prin browser:",
+            "description": "Browserele permit Utilizatorului să gestioneze, să șteargă și/sau să blocheze utilizarea cookie-urilor pe site-urile pe care le vizitează. Utilizatorul poate verifica setările de confidențialitate și cookie-uri în browserul preferat pentru a controla cookie-urile utilizate de site-ul www.vinetka.bg.",
+            "deletion": "Utilizatorii au posibilitatea de a șterge toate cookie-urile salvate pe dispozitivul pe care îl folosesc pentru a accesa www.vinetka.bg. În funcție de browserul pe care îl utilizați, acest lucru se poate face conform instrucțiunilor de pe paginile de mai jos:",
+            "browsers": [
+              {
+                "name": "Mozilla Firefox:",
+                "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer"
+              },
+              {
+                "name": "Internet Explorer:",
+                "url": "https://support.microsoft.com/bg-bg/windows/изтриване-и-управление-на-бисквитки-168dab11-0753-043d-7c16-ede5947fc64d"
+              },
+              {
+                "name": "Google Chrome:",
+                "url": "https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=bg"
+              },
+              {
+                "name": "Safari:",
+                "url": "https://support.apple.com/bg-bg/HT201265"
+              },
+              {
+                "name": "Microsoft EDGE:",
+                "url": "https://support.microsoft.com/bg-bg/microsoft-edge/изтриване-на-бисквитките-в-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              }
+            ],
+            "moreInfo": "Mai multe informații despre gestionarea cookie-urilor pentru diferite tipuri de browsere pot fi găsite la: https://www.aboutcookies.org/how-to-control-cookies/."
+          },
+          "blocking": {
+            "title": "Blocarea cookie-urilor:",
+            "consequences": "Dacă Utilizatorul blochează utilizarea cookie-urilor, unele funcții ale site-ului www.vinetka.bg vor fi dezactivate, ceea ce poate cauza unele defecțiuni sau erori la utilizare.",
+            "settings": "Majoritatea browserelor sunt setate implicit să accepte cookie-uri, dar puteți modifica setările pentru a bloca unele sau toate cookie-urile.",
+            "details": "Informații detaliate despre opțiunile și modalitățile de gestionare a cookie-urilor pot fi găsite în zona de setări a aplicației (browserului web)."
+          },
+          "contact": "Pentru întrebări suplimentare privind prezenta Politică de utilizare a cookie-urilor, vă rugăm să ne contactați la telefon: +359 876 99 51 77 sau la adresa de e-mail hello@insurance.bg",
+          "effectiveDate": "Prezenta Politică de utilizare a cookie-urilor este aprobată de „DPH” SA și se aplică în activitatea Societății începând cu 01.08.2025."
+        }
+      },
+      "termsOfUse": {
+        "pageTitle": "Termeni și condiții de utilizare - Vinetka.bg",
+        "pageDescription": "Termeni și condiții de utilizare a site-ului www.vinetka.bg - reguli pentru achiziționarea vinietelor electronice.",
+        "title": "TERMENI ȘI CONDIȚII DE UTILIZARE A SITE-ULUI WWW.VINETKA.BG",
+        "introduction": "Prezenții Termeni și Condiții reglementează regulile de utilizare a site-ului www.vinetka.bg și furnizarea de servicii legate de achiziționarea și livrarea vinietelor electronice și plata taxei „maxim toll pentru ziua respectivă” și a taxelor compensatorii, precum și a altor bunuri și servicii oferite utilizatorilor site-ului www.vinetka.bg. Toți utilizatorii își exprimă acordul cu acești Termeni și Condiții și cu politicile și documentele aplicabile ale „Digital Policy Hub” SA (denumită pe scurt „DPH” SA sau Societatea) la utilizarea site-ului. Prezenții Termeni și Condiții sunt publicați pe site-ul www.vinetka.bg și se consideră acceptați de Utilizator la utilizarea site-ului.",
+        "companyInfo": "„Digital Policy Hub” SA („DPH” SA), denumită și „Societatea”, este o societate pe acțiuni cu sediul și adresa de conducere în Sofia, cod poștal 1113, raion Izgrev, str. „Maior Iuri Gagarin” nr. 30, clădirea B, înregistrată la Registrul Comerțului și Registrul persoanelor juridice fără scop lucrativ la Agenția de Înregistrare cu CUI 207623030 și cod de TVA: BG207623030. Societatea este proprietarul și administratorul site-ului www.vinetka.bg. Utilizatorii site-ului pot contacta „Digital Policy Hub” SA la adresa menționată mai sus, la telefon",
+        "phone": "+359 876 99 51 77 sau la următoarea adresă de e-mail: hello@insurance.bg",
+        "partnership": "„Digital Policy Hub” SA este partener al „Digital Smart Infrastructure” SA („DSI” SA) CUI 205612035, societate înregistrată ca Furnizor Național de Servicii la Agenția „Infrastructura Rutieră” (API) și are dreptul de a desfășura activități de colectare a taxelor rutiere și altele. „DPH” SA desfășoară activități de asigurare a posibilității utilizatorilor de a plăti taxe de vignetă, taxe compensatorii și taxe „maxim toll pentru ziua respectivă” în numele și pe seama „DSI” SA prin intermediul site-ului www.vinetka.bg.",
+        "sections": {
+          "generalProvisions": {
+            "title": "I. DISPOZIȚII GENERALE. DEFINIȚII.",
+            "description": "www.vinetka.bg este un site web (numit și pagină de internet), prin care „DPH” SA desfășoară activități de asigurare a posibilității utilizatorilor de a plăti taxe de vignetă, taxe compensatorii și taxe „maxim toll pentru ziua respectivă” în numele și pe seama „DSI” SA.",
+            "termsRegulation": "Prezenții Termeni și Condiții reglementează relațiile privind vânzarea, livrarea și plata produselor /bunuri și servicii/ între Societate ca vânzător și ca proprietar al site-ului www.vinetka.bg și orice persoană /denumită în continuare pe scurt „Utilizator”/, care utilizează site-ul și/sau produsele (bunurile și serviciile) furnizate prin intermediul acestuia.",
+            "updateRights": "„Digital Policy Hub” SA își rezervă dreptul de a actualiza și modifica periodic prezenții Termeni și Condiții, pentru a reflecta modificările survenite în modul de utilizare a site-ului sau în legătură cu modificări ale legislației aplicabile."
+          },
+          "usageRules": {
+            "title": "II. REGULI DE UTILIZARE A SITE-ULUI WWW.VINETKA.BG.",
+            "registration": "Înregistrarea pe site-ul www.vinetka.bg nu este o condiție pentru utilizarea site-ului. Fiecare Utilizator are posibilitatea de a se înregistra pe site-ul www.vinetka.bg completând formularul electronic de înregistrare și exprimându-și acordul cu prezenții Termeni și Condiții.",
+            "emailRequirement": "Fiecare Utilizator trebuie să furnizeze o adresă de e-mail validă pentru corespondență și își dă acordul ca orice corespondență viitoare între el și Societate să se desfășoare pe cale electronică la adresa de e-mail furnizată.",
+            "pricing": "Cu excepția taxelor de vignetă/vinietelor electronice, precum și la plata taxei „maxim toll pentru ziua respectivă” sau a taxelor compensatorii, care sunt taxe de stat pentru utilizarea rețelei rutiere naționale și pentru care nu se aplică TVA, toate celelalte prețuri ale bunurilor sau serviciilor de pe site-ul www.vinetka.bg sunt finale, exprimate în leva (BGN) cu TVA inclus și toate celelalte taxe sau impozite prevăzute de lege."
+          },
+          "intellectualProperty": {
+            "title": "III. DREPT DE PROPRIETATE INTELECTUALĂ",
+            "content": "Toate elementele conținutului site-ului, inclusiv designul, domeniul, denumirea, marca comercială, bazele de date, textele, desenele, grafica, schițele, designul industrial și alte informații sau elemente, reprezintă obiect de proprietate intelectuală în sensul Legii dreptului de autor și drepturilor conexe, Legii mărcilor și indicațiilor geografice și Legii designului industrial și sunt proprietatea intelectuală a „Digital Policy Hub” SA sau sunt puse la dispoziția „Digital Policy Hub” SA și nu pot fi utilizate de nicio altă persoană."
+          },
+          "purchases": {
+            "title": "IV. ACHIZIȚII DE BUNURI ȘI SERVICII",
+            "process": "Utilizatorul poate efectua achiziții folosind site-ul www.vinetka.bg prin adăugarea bunurilor și/sau serviciilor dorite în „Coșul meu” de cumpărături, urmând pașii indicați pe site pentru a finaliza și trimite comanda respectivă.",
+            "vignetteRequirements": "Datele minime necesare pentru achiziționarea unei viniete electronice sunt: categoria vehiculului; țara de înmatriculare a vehiculului; numărul de înmatriculare al vehiculului; perioada de valabilitate a vinietei electronice; data de început a valabilității vinietei electronice; adresa de e-mail pentru notificări privind expirarea vinietei electronice și constatarea încălcărilor.",
+            "vignetteCheck": "Datele minime necesare pentru verificarea valabilității unei viniete sunt: numărul de înmatriculare al vehiculului."
+          },
+          "withdrawalRights": {
+            "title": "V. BUNURI ȘI SERVICII FĂRĂ DREPT DE RETRAGERE. RECLAMAȚII.",
+            "timeLimit": "În cazul în care sunt furnizate servicii pentru care este aplicabil, Societatea oferă Utilizatorilor, din proprie inițiativă și pe cheltuiala sa, posibilitatea de a renunța la serviciul utilizat prin www.vinetka.bg și de a returna plata efectuată nu mai târziu de 14 (paisprezece) zile de la data utilizării serviciului.",
+            "noWithdrawal": "Dreptul de retragere din contract nu se aplică în următoarele cazuri: pentru vinietele electronice achiziționate și activate, pentru taxele „maxim toll pentru ziua respectivă” sau taxele compensatorii plătite, pentru furnizarea de servicii care au fost complet prestate și a căror executare a început cu acordul expres prealabil al utilizatorului."
+          },
+          "dataProtection": {
+            "title": "VI. PROTECȚIA DATELOR CU CARACTER PERSONAL",
+            "policy": "Utilizatorul este de acord ca, prin furnizarea datelor sale personale sau a altor date către „DPH” SA, datele sale personale să fie prelucrate de „DPH” SA conform Politicii de confidențialitate, care este disponibilă pe site-ul la următoarea adresă: www.vinetka.bg/privacy-policy, și cu care Utilizatorul declară că a luat cunoștință."
+          },
+          "payments": {
+            "title": "VIII. PLĂȚI",
+            "pricing": "Prețurile vinietelor electronice, taxelor „maxim toll pentru ziua respectivă” și taxelor compensatorii, care sunt anunțate în Tariful taxelor colectate de API, sunt finale. În conformitate cu legislația în vigoare, aceste taxe nu includ niciun fel de impozite, taxe vamale sau similare, deoarece reprezintă o taxă de stat pentru utilizarea rețelei rutiere cu plată."
+          },
+          "forcemajeure": {
+            "title": "IX. CIRCUMSTANȚE IMPREVIZIBILE ȘI DE FORȚĂ MAJORĂ",
+            "definition": "Niciuna dintre părți nu va fi răspunzătoare pentru neîndeplinirea obligațiilor contractuale dacă această neîndeplinire se datorează unor circumstanțe de forță majoră. O circumstanță de forță majoră este un eveniment imprevizibil, în afara controlului părților, care nu poate fi evitat."
+          },
+          "applicableLaw": {
+            "title": "X. LEGEA APLICABILĂ",
+            "content": "Prezenții Termeni și Condiții sunt în conformitate cu legislația bulgară în vigoare. Eventualele litigii apărute între „Digital Policy Hub” SA și Utilizatori vor fi soluționate pe cale amiabilă sau, dacă acest lucru nu este posibil, litigiile vor fi soluționate de instanțele bulgare competente, fără a aduce atingere drepturilor utilizatorilor.",
+            "effectiveDate": "Prezenții Termeni și Condiții sunt adoptați de „Digital Policy Hub” SA și intră în vigoare la data de 01.08.2025."
+          }
+        }
+      }
+    }
+  }
+  

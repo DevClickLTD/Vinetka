@@ -1,6 +1,6 @@
 import { getRequestConfig } from 'next-intl/server';
 
-export const locales = ['bg', 'en', 'de', 'ru', 'tr', 'gr', 'srb'];
+export const locales = ['bg', 'en', 'de', 'ru', 'tr', 'gr', 'srb', 'ro'];
 export const defaultLocale = 'bg';
 
 export default getRequestConfig(async ({ requestLocale }) => {
