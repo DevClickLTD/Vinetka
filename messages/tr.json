@@ -1,0 +1,916 @@
+{
+    "meta": {
+      "title": "Vinyet Online - Elektronik Vinyet Bilgisi",
+      "description": "Vinyet Online - Elektronik Vinyet Bilgisi",
+      "titleTemplate": "%s | Vinyet Online - Elektronik Vinyet Bilgisi"
+    },
+    "navigation": {
+      "home": "Ana Sayfa",
+      "services": "Hizmetler",
+      "prices": "Fiyatlar",
+      "blog": "Blog",
+      "contact": "İletişim",
+      "vignetteChecker": "Vinyet Sorgulama",
+      "tollTax": "Geçiş Ücreti"
+    },
+    "footer": {
+      "sections": {
+        "services": "Hizmetler",
+        "support": "Destek",
+        "company": "Şirket",
+        "legal": "Yasal"
+      },
+      "services": {
+        "vignetteCheck": "Vinyet Sorgulama",
+        "prices": "Fiyatlar",
+        "tollTax": "Geçiş Ücreti"
+      },
+      "support": {
+        "blog": "Blog",
+        "contact": "İletişim",
+        "faq": "Sıkça Sorulan Sorular"
+      },
+      "company": {
+        "aboutUs": "Hakkımızda"
+      },
+      "legal": {
+        "terms": "Kullanım Şartları",
+        "privacy": "Gizlilik Politikası",
+        "cookies": "Çerez Politikası"
+      },
+      "newsletter": {
+        "title": "Bültenimize abone olun",
+        "description": "Değerli ipuçları, analizler ve güncel haberleri doğrudan e-posta kutunuza alın.",
+        "emailLabel": "E-posta adresi",
+        "emailPlaceholder": "E-posta adresinizi girin",
+        "subscribe": "Abone Ol"
+      },
+      "copyright": "Vinetka.bg, Inc. Tüm hakları saklıdır."
+    },
+    "home": {
+      "hero": {
+        "title": "Vinyetler Online",
+        "subtitle": "3.5 tona kadar binek araçlar için elektronik vinyetler",
+        "heroTitle": "Online vinyet bilgisi",
+        "heroSubtitle": "Sitemizde online vinyet hakkında kolayca ve hızlıca bilgi edinin."
+      },
+      "loading": "Hizmetler yükleniyor...",
+      "vignetteSection": {
+        "title": "Vinyetler Online",
+        "subtitle": "3.5 tona kadar binek araçlar için elektronik vinyetler"
+      },
+      "expandableInfoRow": {
+        "title": "Bulgaristan için vinyet – bilmeniz gereken her şey",
+        "less": "Daha az",
+        "more": "Daha fazla göster",
+        "whatType": "Hangi vinyet türünü seçmelisiniz?",
+        "howToBuy": "Vinyet nasıl alınır?",
+        "check": "Vinyet Sorgulama",
+        "description": "Bulgaristan'da araçla seyahat etmeyi planlıyorsanız, Bulgaristan için vinyet almanız zorunludur. Bu, hem binek hem de ticari araçlar için geçerli olan, ulusal yol ağını kullanmak için elektronik bir ücrettir. Geçerli bir vinyet olmadan ceza riskiyle karşılaşırsınız, bu yüzden önceden bilgi sahibi olmanız önemlidir.",
+        "whatTypeDescription": "Birçok vinyet türü vardır – günlük, hafta sonu, haftalık, aylık, üç aylık ve yıllık. Turistler genellikle hafta sonu vinyetini, sık seyahat edenler ise yıllık vinyeti tercih eder. Elektronik sistem, satın alma ve kontrolü kolaylaştırır; online veya gişeden alınabilir.",
+        "howToBuyDescription": "Bulgaristan için elektronik vinyeti resmi web sitesi http://bgtoll.bg üzerinden veya mobil uygulamalar aracılığıyla kolayca satın alabilirsiniz. Sadece aracın plaka numarasını, kayıt ülkesini girip geçerlilik süresini seçmeniz yeterlidir.",
+        "checkDescription": "Geçerlilik kontrolü kameralar ve mobil ekipler tarafından yapılır. Vinyetinizin durumunu online olarak kontrol edebilirsiniz. Girilen bilgilerin doğru olduğundan emin olun, çünkü sistem etkinleştirmeden sonra düzeltmeye izin vermez."
+      }
+    },
+    "contact": {
+      "title": "İletişim",
+      "pageTitle": "İletişim - Vinetka.bg",
+      "pageDescription": "Bizimle iletişim formumuz aracılığıyla iletişime geçin veya iletişim bilgilerimizi bulun.",
+      "officeType": "Kurumsal Ofis",
+      "address": "Adres",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "form": {
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "company": "Şirket",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "subject": "Konu",
+        "message": "Mesaj",
+        "submit": "Talep Gönder",
+        "agree": "Şunu kabul ediyorum:",
+        "privacyPolicy": "gizlilik politikası",
+        "success": {
+          "title": "Başarıyla gönderildi!",
+          "message": "Yakında size geri dönüş yapacağız : )"
+        },
+        "error": {
+          "title": "Gönderme hatası!",
+          "message": "Lütfen daha sonra tekrar deneyin.",
+          "networkTitle": "Gönderilemedi!",
+          "networkMessage": "İnternet bağlantınızı kontrol edin ve tekrar deneyin."
+        },
+        "validation": {
+          "agreementRequired": "Onay zorunlu",
+          "agreementMessage": "Formu göndermeden önce lütfen gizlilik politikasını kabul edin."
+        }
+      }
+    },
+    "prices": {
+      "title": "Elektronik vinyet fiyatları - En uygununu seçin",
+      "description": "Bulgaristan'daki tüm elektronik vinyet türleri için en uygun fiyatları keşfedin! Hafta sonu, haftalık, aylık, üç aylık ve yıllık vinyet için rekabetçi fiyatlar. Gizli ücret yok.",
+      "pageTitle": "Vinyet Fiyatları",
+      "pageSubtitle": "İhtiyacınıza en uygun vinyet türünü seçin",
+      "weekly": "Haftalık",
+      "monthly": "Aylık",
+      "quarterly": "Üç Aylık", 
+      "annual": "Yıllık",
+      "breadcrumb": {
+        "home": "Ana Sayfa",
+        "prices": "Fiyatlar"
+      },
+      "weekend": "Hafta Sonu",
+      "weekendTitle": "Hafta Sonu Vinyet Fiyatı",
+      "weeklyTitle": "Haftalık Vinyet Fiyatı",
+      "monthlyTitle": "Aylık Vinyet Fiyatı",
+      "quarterlyTitle": "Üç Aylık Vinyet Fiyatı",
+      "annualTitle": "Yıllık Vinyet Fiyatı",
+      "features": {
+        "instantIssue": "Anında düzenleme",
+        "securePayment": "Güvenli ödeme",
+        "customerSupport": "Müşteri desteği",
+        "mobileOptimized": "Mobil uyumlu",
+        "noHiddenFees": "Gizli ücret yok",
+        "fastDelivery": "Hızlı teslimat"
+      },
+      "buyNow": "Şimdi Satın Al",
+      "validFor": "Geçerlilik süresi",
+      "days": "gün",
+      "hero": {
+        "title": "Elektronik vinyet fiyatları",
+        "subtitle": "İhtiyacınıza en uygun seçeneği seçin",
+        "viewPrices": "Fiyatları Görüntüle",
+        "benefits": "Avantajlar"
+      },
+      "intro": {
+        "title": "Tüm vinyet türlerinde rekabetçi fiyatlar",
+        "description1": "Vinetka.bg'de tüm vinyet türleri için rekabetçi fiyatlar sunuyoruz. Fiyat listemiz her zaman güncel ve NK \"Avtomagistrali\" EAD'nin resmi tarifeleriyle uyumludur.",
+        "description2": "Kısa yolculuklardan yıllık kapsama kadar tüm ihtiyaçlarınızı karşılayan çeşitli vinyet seçenekleri sunuyoruz. Her vinyet, Bulgaristan'daki tüm ücretli otoyollar ve hızlı yollar için geçerlidir."
+      },
+      "benefits": {
+        "competitive": {
+          "title": "Rekabetçi fiyatlar",
+          "description": "Resmi tarifelerle uyumlu, piyasadaki en iyi fiyatlar"
+        },
+        "noHiddenFees": {
+          "title": "Gizli ücret yok",
+          "description": "Tüm fiyatlara vergiler ve komisyonlar dahildir - ek masraf yok"
+        },
+        "vatIncluded": {
+          "title": "KDV Dahil",
+          "description": "Tüm fiyatlar KDV dahil ve 3.5 tona kadar binek araçlar için geçerlidir"
+        },
+        "instantActivation": {
+          "title": "Anında aktivasyon",
+          "description": "Vinyet, ödeme sonrası hemen aktif olur, bekleme yok"
+        }
+      },
+      "weekend": {
+        "title": "Hafta Sonu Vinyeti - 2 gün | Fiyat ve Bilgi | Vinetka.bg",
+        "description": "2 günlük hafta sonu vinyeti - kısa geziler ve ani yolculuklar için mükemmel. Aktivasyondan itibaren 48 saat geçerlidir. Cuma'dan Pazar'a yolculuklar için idealdir.",
+        "mainTitle": "Hafta Sonu Vinyeti",
+        "subtitle": "Günlük rutinden kaçışlar için mükemmel!",
+        "duration": "2 gün",
+        "description1": "Hafta sonu vinyeti, iki günlük yolculuklar için özel olarak tasarlanmıştır ve kısa tatiller için gereksiz masraflar olmadan ihtiyaçlarınızı karşılar. Aktivasyondan itibaren 48 saat geçerlidir, bu da onu Cuma'dan Pazar'a veya herhangi bir iki günlük dönem için ideal kılar.",
+        "description2": "Hafta sonu vinyeti, kısa yolculuklar için en iyi fiyat-performans oranını sunar. Ani kısa yolculuk kararları için idealdir ve Bulgaristan'daki tüm ücretli otoyollarda tam hareket özgürlüğü sağlar.",
+        "feature1": "48 saat geçerli",
+        "feature2": "Ani yolculuklar için ideal",
+        "feature3": "Kısa yolculuklar için en iyi değer",
+        "feature4": "Cuma'dan Pazar'a",
+        "highlight": "Kısa kaçamaklar",
+        "pageTitle": "Hafta Sonu Vinyeti - 2 gün | Fiyat ve Bilgi",
+        "pageDescription": "2 günlük hafta sonu vinyeti - kısa geziler ve ani yolculuklar için mükemmel. Aktivasyondan itibaren 48 saat geçerlidir. Cuma'dan Pazar'a yolculuklar için idealdir.",
+        "price": "10,00 лв.",
+        "priceEur": "5,11 €",
+        "perfectFor": "Kısa geziler ve ani yolculuklar için mükemmel",
+        "validFrom": "Aktivasyondan itibaren 48 saat geçerli",
+        "valid48Hours": "2 gün (48 saat) geçerli",
+        "features": {
+          "valid48": "48 saat geçerli",
+          "valid48Desc": "Vinyet, satın alma anından itibaren tam 48 saat aktiftir",
+          "idealWeekends": "Hafta sonları için ideal",
+          "idealWeekendsDesc": "İki günlük yolculuklar ve kısa tatiller için özel olarak tasarlanmıştır",
+          "spontaneous": "Ani kararlar",
+          "spontaneousDesc": "Kısa yolculuklar için beklenmedik kararlar için mükemmel",
+          "allHighways": "Tüm otoyollar",
+          "allHighwaysDesc": "Bulgaristan'daki tüm ücretli otoyollar için geçerli",
+          "title": "Neden hafta sonu vinyetini seçmelisiniz?",
+          "subtitle": "2 günlük vinyetin avantajları ve özellikleri"
+        },
+        "useCases": {
+          "title": "Hafta sonu vinyeti ne zaman kullanılır?",
+          "fridayToSunday": "Cuma'dan Pazar'a yolculuk",
+          "shortHolidays": "Şehir dışı kısa tatiller",
+          "twoDayTrips": "İki günlük geziler",
+          "visitFriends": "Aile ve arkadaş ziyareti",
+          "businessTrips2Days": "2 güne kadar iş seyahatleri",
+          "spontaneousTrips": "Deniz veya dağa ani geziler"
+        },
+        "info": {
+          "title": "Önemli Bilgi",
+          "activationTitle": "Aktivasyon",
+          "activation": "Vinyet, ödeme sonrası anında aktif olur",
+          "validityTitle": "Geçerlilik",
+          "validity": "Aktivasyondan itibaren tam 48 saat",
+          "coverageTitle": "Kapsam",
+          "coverage": "Bulgaristan'daki tüm ücretli otoyollar",
+          "vehiclesTitle": "Araçlar",
+          "vehicles": "3.5 tona kadar binek araçlar"
+        },
+        "cta": {
+          "title": "Kısa bir yolculuğa hazır mısınız?",
+          "subtitle": "Şimdi hafta sonu vinyeti alın ve birkaç saniyede yola çıkın.",
+          "button": "Hafta sonu vinyeti satın al",
+          "allPrices": "Tüm fiyatlar"
+        }
+      },
+      "weekly": {
+        "title": "Haftalık Vinyet",
+        "subtitle": "Kısa tatiller ve iş seyahatleri için ideal çözüm!",
+        "duration": "7 gün",
+        "description": "Kısa yolculuklar için ideal",
+        "description1": "Haftalık vinyet, 7 ardışık gün boyunca geçerlidir ve Bulgaristan'da kısa süreli yolculuklarınız için tüm ihtiyaçlarınızı karşılar. Satın alma anında aktif olur ve tam olarak 168 saat (7 gün) geçerlidir.",
+        "description2": "Uzun hafta sonu için gelen turistler veya bir haftaya kadar süren iş seyahatleri için mükemmeldir. Haftalık vinyeti, denize, dağa veya ülke içindeki farklı şehirlere bir haftalık araba yolculuğu planlayan herkese öneriyoruz.",
+        "feature1": "Tam 168 saat geçerli",
+        "feature2": "Turistler için mükemmel",
+        "feature3": "İş seyahatleri için uygun",
+        "feature4": "Uzun hafta sonunu kapsar",
+        "highlight": "Popüler seçim",
+        "pageTitle": "Haftalık Vinyet - 7 gün | Fiyat ve Bilgi",
+        "pageDescription": "7 günlük haftalık vinyet - kısa tatiller ve iş seyahatleri için ideal çözüm. Aktivasyondan itibaren 168 saat (7 gün) geçerli. Turistler ve iş seyahatleri için mükemmel.",
+        "mainTitle": "Haftalık Vinyet",
+        "price": "15,00 лв.",
+        "priceEur": "7,67 €",
+        "perfectFor": "Kısa tatiller ve iş seyahatleri için ideal çözüm",
+        "validFrom": "Aktivasyondan itibaren 168 saat (7 gün) geçerli",
+        "features": {
+          "valid168": "168 saat geçerli",
+          "valid168Desc": "Aktivasyondan itibaren tam 7 ardışık gün",
+          "perfectForTourists": "Turistler için mükemmel",
+          "perfectForTouristsDesc": "Uzun hafta sonu için gelen ziyaretçiler için ideal",
+          "businessTravel": "İş seyahatleri",
+          "businessTravelDesc": "Bir haftaya kadar süren iş gezileri için uygun",
+          "allDestinations": "Tüm destinasyonlar",
+          "allDestinationsDesc": "Denize, dağa veya farklı şehirlere yolculukları kapsar",
+          "title": "Neden haftalık vinyeti seçmelisiniz?",
+          "subtitle": "7 günlük vinyetin avantajları ve özellikleri"
+        },
+        "useCases": {
+          "title": "Haftalık vinyet ne zaman kullanılır?",
+          "longWeekendTourists": "Uzun hafta sonu turistleri",
+          "businessTrips7Days": "7 güne kadar iş seyahatleri",
+          "seaTravelWeek": "Bir haftalık deniz yolculuğu",
+          "mountainVacations": "Dağ tatilleri",
+          "cityVisits": "Ülke içinde farklı şehir ziyaretleri",
+          "familyHolidays": "Bir haftaya kadar aile tatilleri",
+          "culturalTours": "Bulgaristan'da kültürel turlar",
+          "festivalsEvents": "Festivaller ve etkinlikler"
+        },
+        "benefits": {
+          "title": "Temel avantajlar",
+          "instantActivation": "Satın alma anında aktif olur",
+          "coversAllNeeds": "Kısa süreli yolculuklar için tüm ihtiyaçları karşılar",
+          "popularChoice": "Turistler için en popüler seçim",
+          "excellentValue": "Mükemmel fiyat-performans oranı",
+          "noWorries7Days": "7 tam gün boyunca endişesiz"
+        },
+        "info": {
+          "title": "Önemli Bilgi",
+          "activationTitle": "Aktivasyon",
+          "activation": "Vinyet, satın alma anında aktif olur",
+          "validityTitle": "Geçerlilik",
+          "validity": "Tam 7 ardışık gün (168 saat)",
+          "coverageTitle": "Kapsam",
+          "coverage": "Tüm ücretli otoyollar ve hızlı yollar",
+          "vehiclesTitle": "Araçlar",
+          "vehicles": "3.5 tona kadar binek araçlar"
+        },
+        "cta": {
+          "title": "Haftalık bir yolculuk mu planlıyorsunuz?",
+          "subtitle": "Şimdi haftalık vinyet alın ve 7 gün boyunca endişesiz yolculuğun tadını çıkarın.",
+          "button": "Haftalık vinyet satın al",
+          "allPrices": "Tüm fiyatlar"
+        }
+      },
+      "monthly": {
+        "title": "Aylık vinyet",
+        "subtitle": "Düzenli yolculuklar için en popüler seçim!",
+        "duration": "30 gün",
+        "description": "Daha uzun yolculuklar için uygundur",
+        "description1": "İşe gidip gelenler, iş seyahatinde olanlar veya ülkeyi gezmeyi sevenler için en popüler seçimdir. Fiyat ve esneklik arasında mükemmel bir denge sunar.",
+        "description2": "Aylık vinyet, Bulgaristan'daki tüm ücretli yollarda 30 gün boyunca tam hareket özgürlüğü sağlar. Ödeme yapıldıktan hemen sonra aktif olur ve tam 30 gün geçerlidir.",
+        "feature1": "Tam 30 gün geçerli",
+        "feature2": "Fiyat-esneklik dengesi mükemmel",
+        "feature3": "Düzenli yolculuklar için",
+        "feature4": "Tam hareket özgürlüğü",
+        "highlight": "En popüler",
+        "pageTitle": "Aylık vinyet - 30 gün | Fiyat ve bilgi",
+        "pageDescription": "30 günlük aylık vinyet - sürücüler arasında en popüler seçim. Düzenli yolculuklar için mükemmel değer. Aktivasyondan itibaren 720 saat (30 gün) geçerli.",
+        "mainTitle": "Aylık vinyet",
+        "price": "30,00 лв.",
+        "priceEur": "15,34 €",
+        "perfectFor": "Sürücüler arasında en popüler seçim",
+        "validFrom": "Aktivasyondan itibaren 720 saat (30 gün) geçerli",
+        "features": {
+          "valid30": "30 gün geçerli",
+          "valid30Desc": "Aktivasyondan itibaren tam 30 gün",
+          "excellentBalance": "Mükemmel denge",
+          "excellentBalanceDesc": "Fiyat ve esneklik arasında mükemmel oran",
+          "forWorking": "Çalışanlar için",
+          "forWorkingDesc": "Düzenli iş seyahatleri olanlar için ideal",
+          "fullFreedom": "Tam özgürlük",
+          "fullFreedomDesc": "Tüm ücretli yollarda tam hareket özgürlüğü",
+          "mostPopular": "En popüler",
+          "title": "Neden aylık vinyeti seçmelisiniz?",
+          "subtitle": "30 günlük vinyetin avantajları ve özellikleri"
+        },
+        "useCases": {
+          "title": "Aylık vinyet ne zaman kullanılır?",
+          "regularWork": "Düzenli işe gidiş gelişler",
+          "businessTrips": "İş seyahatinde olanlar",
+          "countryTravelers": "Ülke içinde gezginler",
+          "familyTrips": "Ay boyunca aile yolculukları",
+          "students": "Sık seyahat eden öğrenciler",
+          "businessMeetings": "İş toplantıları ve müşteri ziyaretleri",
+          "tourists": "Uzun süreli tatil yapan turistler",
+          "secondHome": "İkinci evi olanlar"
+        },
+        "benefits": {
+          "title": "Temel avantajlar",
+          "mostPopularChoice": "Müşteriler arasında en popüler seçim",
+          "excellentValue": "Fiyat-kalite oranı mükemmel",
+          "idealForRegular": "Düzenli yolculuklar için ideal",
+          "fullCoverage": "Tüm ay boyunca tam kapsama",
+          "instantActivation": "Ödeme ile anında aktivasyon",
+          "noAdditionalPurchases": "Ek satın alma gerektirmez"
+        },
+        "info": {
+          "title": "Önemli Bilgi",
+          "activationTitle": "Aktivasyon",
+          "activation": "Vinyet, ödeme sonrası hemen aktif olur",
+          "validityTitle": "Geçerlilik",
+          "validity": "Aktivasyondan itibaren tam 30 gün",
+          "coverageTitle": "Kapsam",
+          "coverage": "Bulgaristan'daki tüm ücretli yollar",
+          "vehiclesTitle": "Araçlar",
+          "vehicles": "3.5 tona kadar binek araçlar"
+        },
+        "cta": {
+          "title": "Aylık kapsama mı ihtiyacınız var?",
+          "subtitle": "Şimdi aylık vinyet alın ve 30 gün boyunca tam özgürlüğün tadını çıkarın.",
+          "button": "Aylık vinyet satın al",
+          "allPrices": "Tüm fiyatlar"
+        }
+      },
+      "quarterly": {
+        "title": "Üç aylık vinyet",
+        "subtitle": "Tüm sezon boyunca huzur sağlayın!",
+        "duration": "3 ay",
+        "description": "Sezonluk yolcular için ekonomik seçim",
+        "description1": "Üç aylık vinyet, 90 gün boyunca vinyet düşünmek istemeyenler için mükemmeldir. Yolculukların en yoğun olduğu yaz sezonu veya kış aylarında kayak severler için idealdir.",
+        "description2": "Üç aylık vinyet, ek satın alma gerektirmeden tüm ihtiyaçlarınızı karşılar. Aylık vinyetleri ayrı ayrı almaya göre %15'e varan tasarruf sağlar. Online siparişle anında aktive edilir ve tam 90 gün geçerlidir.",
+        "feature1": "Tam 90 gün geçerli",
+        "feature2": "%15'e kadar tasarruf",
+        "feature3": "Sezonlar için ideal",
+        "feature4": "Ek satın alma gerektirmez",
+        "highlight": "%15 tasarruf",
+        "pageTitle": "Üç aylık vinyet - 90 gün | Fiyat ve bilgi",
+        "pageDescription": "90 günlük üç aylık vinyet - sık seyahat edenler için mükemmel değer. Sezonluk çalışanlar ve düzenli iş seyahatleri için ideal. 2160 saat (90 gün) geçerli.",
+        "mainTitle": "Üç aylık vinyet",
+        "duration90": "90 gün",
+        "price": "60,00 лв.",
+        "priceEur": "30,68 €",
+        "perfectFor": "Sık seyahat edenler için mükemmel değer",
+        "validFrom": "Aktivasyondan itibaren 2160 saat (90 gün) geçerli",
+        "features": {
+          "valid90": "90 gün geçerli",
+          "valid90Desc": "Aktivasyondan itibaren tam 3 ay",
+          "save15": "%15 tasarruf",
+          "save15Desc": "Aylık vinyetlere göre önemli tasarruf",
+          "idealSeasons": "Sezonlar için ideal",
+          "idealSeasonsDesc": "Yaz sezonu veya kış ayları için mükemmel",
+          "noPurchases": "Ek satın alma gerektirmez",
+          "noPurchasesDesc": "90 gün boyunca vinyet düşünmeyin",
+          "title": "Neden üç aylık vinyeti seçmelisiniz?",
+          "subtitle": "90 günlük vinyetin avantajları ve özellikleri"
+        },
+        "seasonInfo": {
+          "title": "Sezonluk kapsama",
+          "subtitle": "Yılın farklı sezonları için ideal",
+          "summer": {
+            "title": "Yaz sezonu",
+            "description": "Yolculukların en yoğun olduğu yaz ayları için mükemmel",
+            "months": "Haziran - Ağustos"
+          },
+          "winter": {
+            "title": "Kış sezonu",
+            "description": "Kayak severler için kış aylarında ideal",
+            "months": "Aralık - Şubat"
+          }
+        },
+        "useCases": {
+          "title": "Üç aylık vinyet ne zaman kullanılır?",
+          "summerSeason": "Yaz turizm sezonu",
+          "winterSki": "Kış aylarında kayak turizmi",
+          "seasonalWork": "Başka şehirde sezonluk çalışma",
+          "longProjects": "Uzun süreli projeler ve iş seyahatleri",
+          "familyHolidays": "Sezon boyunca aile tatilleri",
+          "regular3Months": "3 ay boyunca düzenli yolculuklar",
+          "studentsSemester": "Dönem boyunca öğrenciler",
+          "resortResidents": "Tatil köylerinde sezonluk yaşayanlar"
+        },
+        "benefits": {
+          "title": "Temel avantajlar",
+          "seasonPeace": "Tüm sezon boyunca huzur sağlayın",
+          "save15Percent": "Toplamda %15'e kadar tasarruf",
+          "intensiveTravel": "Yoğun yolculuklar için ideal",
+          "coversAllNeeds": "Ek satın alma gerektirmeden tüm ihtiyaçları karşılar",
+          "instantActivation": "Online siparişte anında aktivasyon",
+          "valid90Days": "Aktivasyondan itibaren tam 90 gün geçerli"
+        },
+        "info": {
+          "title": "Önemli Bilgi",
+          "activationTitle": "Aktivasyon",
+          "activation": "Online siparişte anında aktivasyon",
+          "validityTitle": "Geçerlilik",
+          "validity": "Aktivasyondan itibaren tam 90 gün (3 ay)",
+          "savingsTitle": "Tasarruf",
+          "savings": "Aylık vinyetlere göre %15'e kadar tasarruf",
+          "vehiclesTitle": "Araçlar",
+          "vehicles": "3.5 tona kadar binek araçlar"
+        },
+        "cta": {
+          "title": "Sezonluk yolculuklar mı planlıyorsunuz?",
+          "subtitle": "Şimdi üç aylık vinyet alın ve 90 gün boyunca %15'e varan tasarrufla endişesiz yolculuk yapın.",
+          "button": "Üç aylık vinyet satın al",
+          "allPrices": "Tüm fiyatlar"
+        }
+      },
+      "annual": {
+        "title": "Yıllık vinyet",
+        "subtitle": "Düzenli yolculuk yapanlar için en avantajlı çözüm!",
+        "duration": "12 ay",
+        "description": "Düzenli sürücüler için en avantajlı",
+        "description1": "Yıllık vinyet, Bulgaristan'daki ücretli yolları düzenli kullanan tüm araç sahipleri için zorunludur. Fiyatına göre en iyi değeri sunar ve sık satın alma ihtiyacını ortadan kaldırır.",
+        "description2": "Yıllık vinyet ile yıl boyunca aylık vinyet almaya göre %40'a varan tasarruf edersiniz. Vinyet durumunu düşünmek istemeyenler için özellikle avantajlıdır. Yıllık vinyet anında aktive edilir ve tam 365 gün geçerlidir.",
+        "feature1": "Tam 365 gün geçerli",
+        "feature2": "%40'a kadar tasarruf",
+        "feature3": "Maksimum konfor",
+        "feature4": "Vinyet durumu endişesi yok",
+        "highlight": "%40 tasarruf",
+        "pageTitle": "Yıllık vinyet - 365 gün | Fiyat ve bilgi | Vinetka.bg",
+        "pageDescription": "365 günlük yıllık vinyet - düzenli yolculuk yapanlar için en avantajlı çözüm. Aylık vinyetlere göre %40'a varan tasarruf. Maksimum konfor, endişesiz kullanım.",
+        "mainTitle": "Yıllık vinyet",
+        "duration365": "365 gün",
+        "price": "97,00 лв.",
+        "priceEur": "49,60 €",
+        "perfectFor": "Sürekli yolculuk yapanlar için en ekonomik çözüm",
+        "validFrom": "Ertesi yıl 31 Ocak'a kadar geçerli",
+        "features": {
+          "valid365": "365 gün geçerli",
+          "valid365Desc": "Aktivasyondan itibaren tam bir yıl",
+          "save40": "%40 tasarruf",
+          "bestValue": "En avantajlı",
+          "save40Desc": "Aylık vinyet almaya göre maksimum tasarruf",
+          "maxConvenience": "Maksimum konfor",
+          "maxConvenienceDesc": "365 gün boyunca en rahat çözüm",
+          "noWorries": "Endişesiz",
+          "noWorriesDesc": "Bir yıl boyunca vinyet durumu düşünmeyin",
+          "title": "Neden yıllık vinyeti seçmelisiniz?",
+          "subtitle": "365 günlük vinyetin avantajları ve özellikleri"
+        },
+        "useCases": {
+          "title": "Yıllık vinyet kimler için uygundur?",
+          "regularUsers": "Düzenli araç kullanan sahipler",
+          "dailyCommuters": "Her gün işe gidenler",
+          "businessOwners": "Sık iş seyahati yapan işletme sahipleri",
+          "activeFamilies": "Aktif yaşam tarzına sahip aileler",
+          "salesReps": "Satış temsilcileri",
+          "multiCityResidents": "Farklı şehirlerde evi olanlar",
+          "professionalDrivers": "Profesyonel sürücüler",
+          "noWorryUsers": "Endişe istemeyen herkes"
+        },
+        "benefits": {
+          "title": "Temel avantajlar",
+          "bestSolution": "Tüm yıl için en avantajlı çözüm",
+          "save40Percent": "Aylık vinyetlere göre %40'a varan tasarruf",
+          "eliminateFrequentPurchases": "Sık satın alma ihtiyacını ortadan kaldırır",
+          "instantActivation": "Siparişte anında aktivasyon",
+          "valid365Days": "Aktivasyondan itibaren tam 365 gün geçerli",
+          "necessaryForRegular": "Düzenli kullanıcılar için zorunlu",
+          "bestValueForMoney": "Fiyatına göre en iyi değer",
+          "fullPeaceOfMind": "Tüm yıl boyunca tam huzur"
+        },
+        "comparison": {
+          "title": "Maliyet karşılaştırması",
+          "subtitle": "Yıllık vinyet ile ne kadar tasarruf edebileceğinizi görün",
+          "recommended": "Önerilen",
+          "cost": "Maliyet",
+          "savings": "Tasarruf",
+          "convenience": "Konfor",
+          "monthly": "Aylık vinyetler",
+          "monthlyCost": "12x aylık fiyat",
+          "monthlyConvenience": "Sık yenileme",
+          "annual": "Yıllık vinyet",
+          "annualCost": "Sabit fiyat",
+          "annualSavings": "%40'a kadar",
+          "annualConvenience": "Yılda bir kez"
+        },
+        "info": {
+          "title": "Önemli Bilgi",
+          "activationTitle": "Aktivasyon",
+          "activation": "Yıllık vinyet anında aktive edilir",
+          "validityTitle": "Geçerlilik",
+          "validity": "Aktivasyon tarihinden itibaren tam 365 gün",
+          "savingsTitle": "Tasarruf",
+          "savings": "Aylık vinyetlere göre %40'a kadar tasarruf",
+          "vehiclesTitle": "Araçlar",
+          "vehicles": "3.5 tona kadar binek araçlar"
+        },
+        "cta": {
+          "title": "Tüm yıl boyunca endişesiz yolculuğa hazır mısınız?",
+          "subtitle": "Şimdi yıllık vinyet alın ve 365 gün boyunca %40'a varan tasarrufla tam özgürlüğün tadını çıkarın.",
+          "button": "Yıllık vinyet satın al",
+          "allPrices": "Tüm fiyatlar"
+        }
+      },
+      "backToPrices": "Fiyatlara geri dön",
+      "chooseVignette": "Vinyetinizi seçin",
+      "orderNow": "Şimdi sipariş ver",
+      "benefitsSection": {
+        "title": "Neden bizi seçmelisiniz?",
+        "subtitle": "Fiyat politikamızın avantajları"
+      },
+      "pricingSection": {
+        "title": "Vinyetinizi seçin",
+        "subtitle": "Farklı seçenekleri karşılaştırın ve ihtiyaçlarınıza en uygun olanı seçin",
+        "validFor": "Geçerlilik süresi",
+        "learnMore": "Daha fazla bilgi"
+      },
+      "infoSection": {
+        "title": "Tam ve güncel bilgi",
+        "description1": "Vinetka.bg'de Bulgaristan'daki tüm elektronik vinyet türlerinin fiyatları hakkında tam ve güncel bilgi bulacaksınız. Fiyatlarımız tüm ücret ve komisyonları içerir - ödeme sırasında gizli maliyet veya ek ücret yoktur.",
+        "description2": "Farklı seçenekleri karşılaştırın ve ihtiyaçlarınıza en uygun olanı seçin. Tüm fiyatlara KDV dahildir ve 3.5 tona kadar binek araçlar için geçerlidir.",
+        "paymentText": "Kart ile ödeme - hızlı ve güvenli"
+      },
+      "ctaSection": {
+        "title": "Yolculuğa hazır mısınız?",
+        "subtitle": "Uygun vinyeti seçin ve birkaç saniyede online ödeme yapın.",
+        "buyButton": "Vinyet satın al",
+        "questionsText": "Sorularınız mı var?"
+      }
+    },
+    "legal": {
+      "privacyPolicy": {
+        "title": "Gizlilik Politikası",
+        "pageTitle": "Gizlilik Politikası - Vinetka.bg",
+        "pageDescription": "Kişisel verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin."
+      },
+      "cookiePolicy": {
+        "title": "Çerez Politikası",
+        "pageTitle": "Çerez Politikası - Vinetka.bg",
+        "pageDescription": "Sitemizde çerezlerin kullanımı hakkında bilgi."
+      },
+      "termsOfService": {
+        "title": "Kullanım Şartları",
+        "pageTitle": "Kullanım Şartları - Vinetka.bg",
+        "pageDescription": "Hizmetlerimizin ve sitemizin kullanım koşulları."
+      }
+    },
+    "vignetteChecker": {
+      "title": "Vinyet Kontrolü",
+      "pageTitle": "Vinyet Kontrolü - Vinetka.bg",
+      "pageDescription": "Elektronik vinyetinizin durumunu hızlı ve kolayca kontrol edin.",
+      "checkButton": "Vinyeti Kontrol Et",
+      "enterPlateNumber": "Plaka numarasını girin",
+      "checkStatus": "Vinyet durumunu kontrol et"
+    },
+    "common": {
+      "readMore": "Daha fazla oku",
+      "contactUs": "Bize ulaşın",
+      "learnMore": "Daha fazla bilgi",
+      "buyNow": "Şimdi satın al",
+      "getStarted": "Hemen başla",
+      "loading": "Yükleniyor...",
+      "error": "Bir hata oluştu",
+      "success": "Başarılı",
+      "close": "Kapat",
+      "cancel": "İptal",
+      "confirm": "Onayla",
+      "save": "Kaydet",
+      "edit": "Düzenle",
+      "delete": "Sil",
+      "back": "Geri",
+      "next": "İleri",
+      "previous": "Önceki",
+      "search": "Ara",
+      "filter": "Filtre",
+      "sort": "Sırala",
+      "selectLanguage": "Dil seç"
+    },
+    "components": {
+      "hero": {
+        "title": "Online Vinyet Bilgisi",
+        "subtitle": "Sitemizde online vinyet hakkında kolay ve hızlı bilgi edinin.",
+        "ctaButton": "Hemen başla",
+        "learnMore": "Daha fazla bilgi"
+      },
+      "cta": {
+        "title": "Başlamaya hazır mısınız?",
+        "subtitle": "Hizmetlerimizi bugün kullanmaya başlayın",
+        "button": "Hemen başla"
+      },
+      "vignetteChecker": {
+        "title": "Vinyet Kontrolü",
+        "subtitle": "Elektronik vinyetinizin durumunu kontrol edin",
+        "inputPlaceholder": "Plaka numarasını girin",
+        "checkButton": "Kontrol et",
+        "validVignette": "Geçerli vinyet",
+        "invalidVignette": "Geçersiz vinyet",
+        "errorMessage": "Kontrol sırasında bir hata oluştu"
+      },
+      "newsletter": {
+        "title": "Bültenimize abone olun",
+        "subtitle": "En son haberleri ve güncellemeleri alın",
+        "emailPlaceholder": "E-posta adresinizi girin",
+        "subscribeButton": "Abone ol",
+        "successMessage": "Başarıyla abone oldunuz!",
+        "errorMessage": "Bir hata oluştu. Lütfen tekrar deneyin."
+      },
+      "latestPosts": {
+        "title": "Son Gönderiler",
+        "viewAll": "Tümünü gör",
+        "readMore": "Daha fazla oku",
+        "noArticles": "Mevcut makale yok"
+      },
+      "cardsRow": {
+        "title": "Kabul ettiğimiz kartlar",
+        "altText": "Kabul edilen kartlar - Visa, Mastercard"
+      },
+      "ctasRow": {
+        "cta1Title": "Konut Sigortası",
+        "cta1Description": "Konut sigortası - tamamen online. Kolay işlem, mülk değerlendirmesi ve yangın, doğal afetler, deprem ve hırsızlığa karşı uygun teminatlar. Ek maddeler. Daireler, evler ve tatil mülkleri için uygundur.",
+        "cta1Button": "Daha fazla gör",
+        "cta2Title": "Yurtdışı Seyahat",
+        "cta2Description": "Yurtdışı seyahat sigortası ve asistans - online! Yurt dışı seyahatler için teminatlar - kişisel, iş veya spor müsabakaları için. Ek maddeler, kurtarma masrafları, bagaj kaybı, sorumluluk, COVID-19 teminatı dahil.",
+        "cta2Button": "Online sigorta yap",
+        "cta3Title": "Dağ Sigortası",
+        "cta3Description": "Dağda kazalara karşı teminatlı sigorta - kayak, snowboard, dağ bisikleti, tırmanış, trekking ve Bulgaristan'daki diğer ekstrem sporlar için. Kolay ve güvenli online başvuru! Dağda her zaman huzur.",
+        "cta3Button": "Online sigorta yap",
+        "cta4Title": "Sağlık Sigortası",
+        "cta4Description": "Belirli tıbbi durumlarda sabit paketli sağlık sigortası: ameliyat, hastanede yatış (doğum dahil), kırıklar. Ayrıntılı sağlık beyanı doldurmadan kolay ve hızlı online başvuru.",
+        "cta4Button": "Online sigorta yap"
+      },
+      "vignetteCheckerCTA": {
+        "title": "Vinyetinizi kontrol edin",
+        "subtitle": "Elektronik vinyetin geçerliliğini hızlı ve ücretsiz kontrol edin",
+        "realTimeCheck": "Gerçek zamanlı kontrol",
+        "officialAPI": "Resmi BG TOLL API",
+        "freeService": "Ücretsiz hizmet",
+        "noRegistration": "Kayıt gerekmez",
+        "checkVignette": "Şimdi vinyeti kontrol et",
+        "enterRegistrationNumber": "Plaka numarasını girin",
+        "registrationNumber": "Plaka numarası",
+        "vignetteValid": "Vinyet geçerli",
+        "validityUntil": "Geçerlilik tarihi: 31.12.2024",
+        "quickCheck": "Hızlı kontrol",
+        "resultShownInSeconds": "Sonuç saniyeler içinde gösterilir",
+        "dataDirectlyFromBGToll": "Veriler doğrudan BG TOLL'dan gelir",
+        "noTaxesOrHiddenFees": "Ekstra ücret veya gizli masraf yok"
+      },
+      "privacyPolicy": {
+        "pageTitle": "Gizlilik Politikası - Vinetka.bg",
+        "pageDescription": "Vinetka.bg gizlilik politikası - kişisel verilerin işlenmesi hakkında daha fazla bilgi edinin.",
+        "title": "GİZLİLİK POLİTİKASI",
+        "introduction": "Bu gizlilik politikası, 'Dijital Policy Hub' AŞ, EIK 207623030 (bundan sonra 'Şirket' veya 'DPH' AŞ olarak anılacaktır), merkezi ve yönetim adresi: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası - bağımsız veri sorumlusu ve işleyici tarafından kabul edilmiştir. Şirket, 'DİJİTAL SMART İNFRASRUKTURA' AŞ, EIK 205612035 (bundan sonra 'DSİ' AŞ olarak anılacaktır) ile ortaktır, merkezi ve adresi: Bulgaristan, Sofya ili, Sofya Belediyesi, Sofya şehri, Sredets bölgesi, Georgi S. Rakovski Cad. No:96, Ulusal Hizmet Sağlayıcı olarak Yol Altyapı Ajansı'na kayıtlıdır ve yol ücretleri toplama hakkına sahiptir. DPH AŞ, kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretlerini ödemesini sağlamak için DSİ AŞ adına ve hesabına internet sitesi üzerinden faaliyet yürütmektedir.",
+        "contactInfo": "www.vinetka.bg internet sitesi kullanıcıları, yukarıda belirtilen adresten, +359 876 995 177 numaralı telefondan veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
+        "updatePolicy": "'Dijital Policy Hub' AŞ, bu Gizlilik Politikasını, kişisel verilerinizin işlenme şekli veya yürürlükteki mevzuattaki değişiklikleri yansıtmak amacıyla periyodik olarak güncelleme ve değiştirme hakkını saklı tutar. Böyle bir değişiklik durumunda, güncellenmiş Gizlilik Politikası www.vinetka.bg internet sitesinde yayınlanacaktır.",
+        "sections": {
+          "definitions": {
+            "title": "TANIMLAR",
+            "personalData": "Kişisel veri, tanımlanmış veya tanımlanabilir bir gerçek kişiyle ilgili her türlü bilgidir ('veri sahibi'). Tanımlanabilir gerçek kişi, doğrudan veya dolaylı olarak, özellikle bir tanımlayıcı, isim, kimlik numarası, konum verisi, çevrimiçi tanımlayıcı veya fiziksel, fizyolojik, genetik, zihinsel, ekonomik, kültürel veya sosyal kimliğe özgü bir veya daha fazla unsur aracılığıyla tanımlanabilen kişidir.",
+            "processing": "İşleme, kişisel veriler veya veri setleri üzerinde otomatik veya başka yollarla gerçekleştirilen her türlü işlem veya işlem setidir: toplama, kaydetme, düzenleme, yapılandırma, saklama, uyarlama veya değiştirme, alma, danışma, kullanma, iletim yoluyla açıklama, yayma veya başka bir şekilde erişilebilir kılma, sıralama veya birleştirme, kısıtlama, silme veya yok etme.",
+            "personalDataFile": "Kişisel veri kaydı, belirli kriterlere göre erişilebilen, merkezi, merkezi olmayan veya işlevsel ya da coğrafi olarak dağıtılmış olsun, yapılandırılmış her türlü kişisel veri setidir.",
+            "controller": "Veri sorumlusu, kişisel verilerin işlenme amaçlarını ve araçlarını tek başına veya başkalarıyla birlikte belirleyen gerçek veya tüzel kişi, kamu otoritesi, ajans veya başka bir yapıdır. Amaçlar ve araçlar AB veya Bulgaristan hukukunda belirlenmişse, veri sorumlusu veya belirlenme kriterleri bu hukukta tanımlanabilir.",
+            "processor": "Veri işleyen, veri sorumlusu adına kişisel verileri işleyen gerçek veya tüzel kişi, kamu otoritesi, ajans veya başka bir yapıdır.",
+            "dataSubject": "Veri sahibi, doğrudan veya dolaylı olarak belirli bilgiler temelinde tanımlanmış veya tanımlanabilir gerçek kişidir.",
+            "consent": "Veri sahibinin rızası, veri sahibinin kendisiyle ilgili kişisel verilerin işlenmesine ilişkin özgürce verilmiş, belirli, bilgilendirilmiş ve açık irade beyanıdır.",
+            "dataBreach": "Kişisel veri güvenliği ihlali, iletilen, saklanan veya başka şekilde işlenen kişisel verilerin kazara veya hukuka aykırı olarak yok edilmesi, kaybı, değiştirilmesi, yetkisiz ifşası veya erişimiyle sonuçlanan güvenlik ihlalidir.",
+            "platform": "Platform – DPH AŞ'nin faaliyetlerini yürüttüğü internet sitesi (www.vinetka.bg).",
+            "roadTaxes": "Yol ücretleri, vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretleri ile ücretli yol ağının kullanımı için toplanan diğer yasal ücretleri kapsayan genel bir terimdir.",
+            "electronicVignette": "Elektronik vinyet, Elektronik Belge ve Elektronik Kimlik Hizmetleri Kanunu'nun 3. maddesi, 1. fıkrası anlamında elektronik bir belgedir ve ödenmiş vinyet ücretini kanıtlar. Elektronik vinyet, benzersiz bir kimlik numarası, aracın plaka numarası, kayıtlı olduğu ülke, kategorisi, ücretin ödendiği tarih ve geçerlilik süresi içerir. Vinyet ücretleri, Yol Altyapı Ajansı tarafından toplanan ücret tarifesine göre geçerlilik süresine göre toplanır.",
+            "compensatoryTax": "Telafi edici ücret, Yol Kanunu'nun 10. maddesi, 2. fıkrasında öngörülen ve Yol Altyapı Ajansı lehine, ücretli yol ağında uygun vinyet veya tol ücreti ödenmemiş araçların tespit edilmesi halinde toplanabilen bir yol ücretidir. Telafi edici ücretin miktarı, Yol Altyapı Ajansı tarafından toplanan ücret tarifesinde belirlenmiştir. Telafi edici ücretin ödenmesiyle, araç sürücüsü, sahibi veya kullanıcısı idari yaptırımdan muaf tutulur. Bu durumda, ilgili araçla bağlantılı olarak idari sorumluluğu olabilecek diğer kişiler de muaf tutulur."
+          },
+          "generalProvisions": {
+            "title": "GENEL HÜKÜMLER",
+            "compliance": "Şirket, kişisel verilerin işlenmesinde, faaliyetiyle ilgili tüm geçerli veri koruma mevzuatına, özellikle de 27 Nisan 2016 tarihli Avrupa Parlamentosu ve Konseyi'nin (AB) 2016/679 sayılı Genel Veri Koruma Tüzüğü (GDPR) ve Kişisel Verilerin Korunması Kanunu'na (KVKK) uyar.",
+            "internalProcedures": "Tüzük hükümlerini uygulamak için şirket, tüm çalışanların uyması gereken iç veri koruma prosedürleri ve kontrol mekanizmaları uygular.",
+            "legitimateInterest": "DPH AŞ, elektronik sitesinin işleyişini sürdürmek için meşru bir menfaate sahiptir ve bu kapsamda tüm ziyaretçilerin ve aktivitelerinin verilerini işler."
+          },
+          "purposes": {
+            "title": "AMAÇLAR",
+            "principles": "DPH AŞ, kişisel verilerin işlenmesinde hukuka uygunluk, dürüstlük ve şeffaflık, veri minimizasyonu, doğruluk, yanlış verilerin zamanında silinmesi veya düzeltilmesi, saklama süresinin sınırlandırılması ilkelerine uyar. Şirket, kişisel verileri belirli, açık ve meşru amaçlar için toplar ve bu amaçlarla uyumsuz şekilde işlemez. DPH AŞ, kişisel verileri, işlenme amaçları için gerekli olandan daha uzun süre saklamaz.",
+            "dataSharing": "Elektronik vinyetlerin dağıtımı ve diğer yol ücretlerinin ödenmesi faaliyetlerinde, kişisel verileriniz Yol Altyapı Ajansı ve/veya DSİ AŞ ile paylaşılır ve işlenir. DPH AŞ, DSİ AŞ ve Yol Altyapı Ajansı arasında kişisel veri paylaşımı, elektronik vinyetlerin dağıtımı, diğer yol ücretlerinin ödenmesi, yasal yükümlülüklerin yerine getirilmesi ve bildirimlerin gönderilmesi gibi amaçlarla, yalnızca gerekli olan kişisel verilerle sınırlı olarak yapılır. İstatistiksel belgeler ve raporlar için anonimleştirilmiş veriler kullanılır.",
+            "dataCollection": "DPH AŞ, kişisel verilerinizi doğrudan sizden toplar; hangi bilgileri vereceğinize siz karar verirsiniz. Kayıt için bazı bilgiler zorunludur. Şirket, kişisel verilerinizi şu durumlarda toplar:",
+            "userProfile": "- Sitemizde kullanıcı profili oluşturduğunuzda, e-posta adresinizi, adınızı ve soyadınızı gönderirsiniz. Bu veriler yalnızca kayıt ve hizmetlerimiz için işlenir.",
+            "additionalInfo": "- Profilinize cep telefonu, sabit telefon gibi ek bilgiler ekleyebilirsiniz. Bu bilgiler zorunlu değildir ve verdiğinizde, daha iyi hizmet sunmak veya talebinizi netleştirmek için işlenmesine açıkça onay vermiş olursunuz. İletişim bilgileriniz, doğrudan pazarlama için de kullanılabilir. Onay vermemeniz hizmetlerden mahrum kalmanıza yol açmaz, ancak bülten ve yeni teklifler gönderemeyiz. Onayınızı istediğiniz zaman geri çekebilir veya doğrudan pazarlamaya itiraz edebilirsiniz. Bu, diğer hizmetlerimizi etkilemez.",
+            "vignettePurchase": "- Siteden elektronik vinyet satın aldığınızda, şu bilgileri verirsiniz: araç kategorisi, kayıtlı ülke, plaka numarası, vinyetin geçerlilik süresi, başlangıç tarihi, e-posta adresi, ad-soyad, fatura bilgileri, ödeme yöntemi, telefon numarası, banka kartı bilgileri vb. Kayıt olmadan da vinyet satın alabilirsiniz; bunun için en azından araç plaka numarası, ülke, vinyet geçerlilik süresi, başlangıç tarihi ve e-posta adresi gereklidir.",
+            "contactForm": "- İletişim formumuzu doldurarak bilgi veya destek talep ettiğinizde, size kişiselleştirilmiş yanıt gönderebilmemiz için.",
+            "comments": "- Sitemizde yorum yaptığınızda veya ek bilgi verdiğinizde.",
+            "socialMedia": "- Platformumuz izin veriyorsa, LinkedIn, Twitter, Facebook, Instagram gibi sosyal medya hesaplarınızla kayıt olur veya giriş yaparsanız, bu profillerde herkese açık olan kişisel verilerinize erişebiliriz. Bu erişimi sosyal medya ayarlarınızdan yönetebilirsiniz.",
+            "browsing": "- Yukarıda belirtilen kişisel verilere ek olarak, DPH AŞ, platformlarımızda gezinme davranışınız hakkında bilgi toplayabilir ve işleyebilir; böylece ilgi alanlarınıza uygun teklifler sunabiliriz. DPH AŞ, çerezler ve benzeri teknolojilerle bilgi toplayabilir ve saklayabilir. Detaylar için www.vinetka.bg adresindeki Çerez Politikamızı inceleyin. DPH AŞ, elektronik sitesinin işleyişini sürdürmek için tüm ziyaretçilerin ve aktivitelerinin verilerini işler.",
+            "sensitiveData": "- Özel nitelikli kişisel verileri (hassas veriler) toplamıyor veya işlemiyoruz."
+          },
+          "dataTransfer": {
+            "title": "KİŞİSEL VERİLERİN AKTARIMI VEYA ERİŞİMİ",
+            "recipients": "Duruma göre, kişisel verilerinizin bazılarını aşağıdaki alıcı kategorilerine aktarabilir veya erişim sağlayabiliriz:",
+            "dsiAd": "- DSİ AŞ – İletişim bilgileriniz, Yol Kanunu'nun ilgili maddeleri uyarınca, DSİ AŞ'nin yasal yükümlülüklerini yerine getirmesi ve size bildirim göndermesi için işlenir. DPH AŞ, kullanıcıların e-posta adreslerini DSİ AŞ'ye iletir; bunlar yalnızca vinyetlerin süresinin dolmak üzere olduğu durumlarda bildirim göndermek için kullanılır. DPH AŞ, kullanıcıdan yol ücretiyle ilgili bir şikayet aldığında, bu şikayet ve ilgili bilgiler DSİ AŞ'ye iletilir.",
+            "api": "- Yol Altyapı Ajansı;",
+            "courier": "- Kargo hizmeti sağlayıcıları;",
+            "payment": "- Ödeme/banka hizmeti sağlayıcıları;",
+            "legal": "- Yasal bir zorunluluk olduğunda veya DPH AŞ'nin meşru menfaatlerini korumak için, belirli kişisel veriler kamu kurumlarına açıklanabilir.",
+            "guarantee": "Verilerinize üçüncü taraf özel kuruluşlar tarafından erişim, veri koruma ve gizlilik mevzuatına uygun olarak, onlarla yapılan sözleşmeler temelinde sağlanır. Bu alıcılar, kişisel verilerinizin gizliliğini ve güvenliğini korumakla yasal veya sözleşmesel olarak yükümlüdür. Verilerinizi yalnızca bizim adımıza hizmet sunmak veya yasal zorunluluklar için kullanabilirler.",
+            "apiProcessing": "Bunun dışında, ücretli yol ağının kullanımıyla ilgili olarak toplanan verileriniz (vinyet, tol ve telafi edici ücretler dahil) Yol Altyapı Ajansı'na iletilir ve bu veriler için veri sorumlusu olarak hareket eder.",
+            "phoneRecording": "Yasal sınırlar dahilinde, DPH AŞ, müşteri hizmetleri için kullanılan çağrı merkezi ve hatlarla yapılan (gelen ve giden) telefon görüşmelerini kaydedebilir. Bu görüşmelerin kaydı ve işlenmesi (görüşmede paylaşılan kişisel veriler dahil), DPH AŞ'nin haklarını ve meşru menfaatlerini korumak amacıyla yapılır."
+          },
+          "security": {
+            "title": "İŞLEME GÜVENLİĞİ İÇİN TEKNİK VE ORGANİZASYONEL TEDBİRLER",
+            "intro": "İşlemenin niteliği, kapsamı, bağlamı ve amaçları ile kullanıcıların hak ve özgürlüklerine yönelik riskler dikkate alınarak, DPH AŞ aşağıdaki teknik ve organizasyonel önlemleri uygular:",
+            "measures": [
+              "Kişisel verilerin şifrelenmesi.",
+              "Yalnızca onaylı ve lisanslı yazılım kullanılması.",
+              "Çalışma bilgisayarlarında izinsiz yazılım, uygulama, sosyal ağ, mesajlaşma programı vb. yüklenmesini ve kullanılmasını engelleyici önlemler.",
+              "Antivirüs yazılımı, güvenlik duvarı ve proxy sunucu kullanımı.",
+              "Bilgisayarlar, ekipmanlar, müşteri bilgisi içeren veri tabanları ve dizinlere parola ve kişisel erişim hakları ile koruma.",
+              "Ağdaki pasif bilgisayarların otomatik olarak kilitlenmesi.",
+              "Şirketten çıkan cihazların (dizüstü bilgisayar vb.) korunması.",
+              "Kişisel veri içeren elektronik ve kağıt belgelerin bulunduğu alanlara fiziksel erişim kontrolü; bu alanlar kilitli cihazlarla korunur.",
+              "Alarm ve güvenlik ekipmanları ile donanım.",
+              "Kişisel veri işleme, saklama ve güvenliğiyle ilgili iç kurallar ve personel eğitimi.",
+              "Tüm bilgilerin günde en az bir kez, hem yerel hem de şifreli bağlantılı uzak sunucuya yedeklenmesi.",
+              "Koruyucu önlemlerin, kontrol mekanizmalarının, sistemlerin ve prosedürlerin etkinliğinin düzenli olarak kontrol edilmesi; güvenlik açıklarının taranması ve düzeltilmesi.",
+              "Şirketin tuttuğu kişisel veri kayıtlarının fiziksel korunması; teknik ekipmanlar ve kağıt belgeler, kilitli ve erişimi sınırlı alanlarda saklanır. Genel müdür ve çalışanlar erişim hakkına sahiptir.",
+              "Kişisel veri işlenen her bilgisayarda parola korumalı işletim sistemi, antivirüs programı, veri kopyalama kısıtlamaları ve her erişim seviyesi için ayrı parolalar bulunur. Her çalışana, görevine ve veri işleme kapsamına göre uygun parolalar verilir. Genel müdür tüm bilgisayar ve parolalara erişebilir.",
+              "Teknolojik gelişmeler, uygulama maliyetleri, işlemenin niteliği, kapsamı, bağlamı ve amaçları ile kişilerin hak ve özgürlüklerine yönelik riskler dikkate alınarak, şirket uygun teknik ve organizasyonel önlemler uygular; gerektiğinde düzenli test, değerlendirme ve gözden geçirme süreçleriyle güvenliği sağlar."
+            ],
+            "disclaimer": "Kişisel verilerinizi korumak için aldığımız önlemlere rağmen, internet veya diğer kamuya açık ağlar üzerinden bilgi iletiminin tamamen güvenli olmadığını ve verilerin yetkisiz üçüncü şahıslar tarafından görüntülenip kullanılabileceği riskinin bulunduğunu biliyoruz. Kontrolümüz dışındaki sistemlerin bu tür açıklarından sorumlu değiliz."
+          },
+          "retention": {
+            "title": "SAKLAMA SÜRESİ",
+            "period": "DPH AŞ, www.vinetka.bg platformunda sunulan hizmetlerin kullanımı için gerekli tüm kişisel verileri, işlenme amacı için gerekli olan veya yasal olarak öngörülen süre boyunca saklar."
+          },
+          "rights": {
+            "title": "KULLANICI/MÜŞTERİ HAKLARI",
+            "informationRight": "- Bilgilendirilme hakkı (DPH AŞ tarafından kişisel verilerin işlenmesiyle ilgili) – veri sahibi olan gerçek kişi, DPH AŞ'nin veri sorumlusu olarak kimliği ve iletişim bilgileri, veri koruma görevlisinin iletişim bilgileri, işleme amaçları ve yasal dayanağı, alıcılar veya alıcı kategorileri, varsa verilerin üçüncü ülkeye aktarılması niyeti, saklama süresi, otomatik karar verme/profil oluşturma olup olmadığı, sahip olduğu tüm haklar ve denetim otoritesine şikayet hakkı hakkında bilgi alma hakkına sahiptir. Şirket, alınan taleplere işlem yapmayı reddetme hakkını saklı tutar. Şirket, talebin açıkça temelsiz veya aşırı olduğunu ispat yükünü taşır. DPH AŞ, kişisel verilerinizle ilgili haklarınızı kullanmanız için ücret talep etmez; ancak bilgiye erişim talebiniz temelsiz, tekrarlı veya gereksizse makul bir ücret talep edebiliriz. Uygulanabilir ücretler hakkında sizi bilgilendireceğiz.",
+            "accessRight": "- Kendi kişisel verilerine erişim hakkı – veri sahibi, DPH AŞ'den kendisiyle ilgili kişisel verilerin işlenip işlenmediğine dair onay ve işleme amacı, veri kategorileri, alıcılar veya alıcı kategorileri, varsa üçüncü ülkeye aktarım niyeti, saklama süresi, verilerin düzeltilmesi ve işlenmesine itiraz hakkı, otomatik karar verme/profil oluşturma olup olmadığı, sahip olduğu tüm haklar ve denetim otoritesine şikayet hakkı hakkında bilgi alma hakkına sahiptir.",
+            "rectificationRight": "- Kişisel verilerin düzeltilmesi hakkı (veriler yanlışsa) – veri sahibi, DPH AŞ'den kendisiyle ilgili yanlış kişisel verilerin gecikmeksizin düzeltilmesini talep etme hakkına sahiptir.",
+            "erasureRight": {
+              "title": "- Kişisel verilerin silinmesi hakkı ('unutulma hakkı') – veri sahibi, aşağıdaki durumlardan biri varsa DPH AŞ'den kendisiyle ilgili kişisel verilerin silinmesini talep edebilir:",
+              "conditions": [
+                "kişisel veriler, toplandıkları veya başka bir şekilde işlendiği amaçlar için artık gerekli değildir;",
+                "veri sahibi, verilerin işlenmesinin tek dayanağı olan rızasını geri çeker ve başka bir yasal işleme dayanağı yoktur (yasal yükümlülük veya sözleşme gereği işleme hariç);",
+                "veri sahibi, işlenmeye itiraz eder ve işleme için üstün yasal gerekçeler yoktur;",
+                "kişisel veriler hukuka aykırı olarak işlenmiştir;",
+                "kişisel verilerin silinmesi, AB veya Bulgaristan hukukunda DPH AŞ'ye uygulanan bir yasal yükümlülüğe uymak için gereklidir."
+              ],
+              "contact": "Kişisel verilerinizin silinmesiyle ilgili daha fazla bilgi almak için yukarıda belirtilen iletişim bilgilerinden bize ulaşabilirsiniz."
+            },
+            "restrictionRight": {
+              "title": "- Kişisel verilerin işlenmesinin kısıtlanması hakkı: veri sahibi, aşağıdaki koşullardan birinin varlığı halinde veri sorumlusundan işleme kısıtlaması talep edebilir:",
+              "conditions": [
+                "- Kişisel verilerin doğruluğu veri sahibi tarafından itiraz edilmektedir. Bu durumda, işleme, veri sorumlusunun verilerin doğruluğunu kontrol etmesine olanak tanıyacak süreyle kısıtlanır;",
+                "- İşleme hukuka aykırıdır, ancak veri sahibi verilerin silinmesini istemez, bunun yerine kullanımının kısıtlanmasını talep eder;",
+                "- Veri sorumlusu, işleme amacı için artık kişisel verilere ihtiyaç duymaz, ancak veri sahibi bunları yasal taleplerin oluşturulması, kullanılması veya savunulması için ister;",
+                "- Veri sahibi, işlenmeye itiraz etmiştir ve veri sorumlusunun yasal gerekçelerinin veri sahibinin menfaatlerine üstün olup olmadığının kontrolü beklenmektedir."
+              ]
+            },
+            "portabilityRight": "- Kişisel verilerin farklı veri sorumluları arasında taşınabilirliği hakkı – veri sahibi, DPH AŞ'ye verdiği ve kendisiyle ilgili kişisel verileri, yapılandırılmış, yaygın olarak kullanılan ve makine tarafından okunabilir bir formatta alma ve bu verileri başka bir veri sorumlusuna engel olmaksızın aktarma hakkına sahiptir. İşleme rıza veya sözleşmeye dayalıysa ve otomatik olarak yapılıyorsa, veri sahibi verilerin doğrudan DPH AŞ'den başka bir veri sorumlusuna aktarılmasını da talep edebilir.",
+            "objectionRight": "- Kişisel verilerinin işlenmesine itiraz hakkı – veri sahipleri, DPH AŞ'ye kişisel verilerinin işlenmesine itiraz edebilir; şirket, üstün yasal gerekçeler olmadıkça veya yasal taleplerin oluşturulması, kullanılması veya savunulması için gerekmedikçe işlemi durdurur. Doğrudan pazarlama için işlenmeye itiraz edilirse, DPH AŞ işlemi derhal durdurur. Talebiniz, DPH AŞ'nin DSİ AŞ ile ortaklığı kapsamında, Yol Altyapı Ajansı tarafından toplanan verilerle ilgiliyse, talebinizi ileteceğiz ve sizi bilgilendireceğiz. Sonraki işlemler Yol Altyapı Ajansı'nın sorumluluğundadır.",
+            "automatedDecisionRight": "- Veri sahibi, otomatik karar verme ve profil oluşturma dahil olmak üzere, yalnızca otomatik işleme tabi tutulmama hakkına sahiptir.",
+            "profilingDefinition": "Profil oluşturma, GDPR Madde 4(4)'te tanımlandığı üzere, kişisel verilerin otomatik olarak işlenerek, kişinin mesleki performansı, ekonomik durumu, sağlığı, ilgi alanları, güvenilirliği, davranışı, hareketleri gibi kişisel yönlerinin analiz edilmesi veya tahmin edilmesidir.",
+            "legalProtection": {
+              "title": "- Veri sahibinin haklarının ihlal edilmesi halinde yargı veya idari yolla korunma hakkı – veri sahibi, kişisel verilerinin ve gizliliğinin ihlal edildiğini düşünüyorsa aşağıdaki yerlere şikayet edebilir:",
+              "supervisoryAuthority": "1) İlgili denetim otoritesi - Kişisel Verileri Koruma Komisyonu: https://www.cpdp.bg/, adres: Sofya 1592, Prof. Tsvetan Lazarov Bulvarı No:2, Bilgi ve İletişim Merkezi - tel. 02/91-53-518, Kabul - çalışma saatleri 9:00 - 17:30 veya",
+              "court": "2) İlgili yetkili mahkemeye. Kişisel verilerinizin işlenmesiyle ilgili haklarınızı, DPH AŞ'nin veri koruma görevlisine aşağıdaki yollardan biriyle başvurarak kullanabilirsiniz:",
+              "email": "- e-posta ile: hello@insurance.bg; Veri Koruma Görevlisi: Momchil Fotev",
+              "mail": "- veya posta/kargo ile: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası. Veri Koruma Görevlisi: Momchil Fotev",
+              "responseTime": "DPH AŞ, tüm geçerli taleplere 14 takvim günü içinde yanıt verecektir; talep özellikle karmaşıksa veya birden fazla talep varsa, şirket 1 ay içinde yanıt vermeyi taahhüt eder ve daha uzun süre gerekirse sizinle iletişime geçer. Talebiniz başkalarının hak ve özgürlüklerini olumsuz etkiliyorsa reddedilebilir.",
+              "questions": "Bu Gizlilik Politikası'nın uygulanmasıyla ilgili sorularınız veya şikayetleriniz varsa ya da politikamızı geliştirmek için öneri veya yorumlarınız varsa, yukarıda belirtilen iletişim bilgilerinden bize yazabilirsiniz.",
+              "effectiveDate": "Bu Gizlilik Politikası, DPH AŞ tarafından onaylanmış olup, 01.08.2025 tarihinden itibaren şirket faaliyetlerinde geçerlidir."
+            }
+          }
+        }
+      },
+      "cookiePolicy": {
+        "pageTitle": "Çerez Kullanım Politikası - Vinetka.bg",
+        "pageDescription": "Vinetka.bg çerez kullanım politikası - çerezlerin kullanımı hakkında bilgi.",
+        "title": "ÇEREZ KULLANIM POLİTİKASI",
+        "introduction": "Bu çerez kullanım politikası, 'Dijital Policy Hub' AŞ, EIK 207623030 (bundan sonra 'Şirket' veya 'DPH' AŞ olarak anılacaktır), merkezi ve yönetim adresi: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası - bağımsız veri sorumlusu ve işleyici tarafından kabul edilmiştir. Şirket, 'DİJİTAL SMART İNFRASRUKTURA' AŞ, EIK 205612035 (bundan sonra 'DSİ' AŞ olarak anılacaktır) ile ortaktır, merkezi ve adresi: Bulgaristan, Sofya ili, Sofya Belediyesi, Sofya şehri, Sredets bölgesi, Georgi S. Rakovski Cad. No:96, Ulusal Hizmet Sağlayıcı olarak Yol Altyapı Ajansı'na kayıtlıdır ve yol ücretleri toplama hakkına sahiptir. DPH AŞ, kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretlerini ödemesini sağlamak için DSİ AŞ adına ve hesabına internet sitesi üzerinden faaliyet yürütmektedir.",
+        "contactInfo": "www.vinetka.bg internet sitesi kullanıcıları, yukarıda belirtilen adresten, +359876995177 numaralı telefondan veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
+        "updatePolicy": "'Dijital Policy Hub' AŞ, çerez kullanımında veya yürürlükteki mevzuattaki değişiklikleri yansıtmak amacıyla bu Çerez Politikasını periyodik olarak güncelleme ve değiştirme hakkını saklı tutar. Böyle bir değişiklik durumunda, güncellenmiş Çerez Politikası www.vinetka.bg internet sitesinde yayınlanacaktır.",
+        "compliance": "www.vinetka.bg internet sitesinde çerez kullanımı, ulusal mevzuat ve AB mevzuatı - 12 Temmuz 2002 tarihli Avrupa Parlamentosu ve Konseyi'nin 2002/58/EC sayılı Direktifi ile 23 Ekim 2018 tarihli Avrupa Parlamentosu ve Konseyi'nin 2018/1725 sayılı Tüzüğü dahil olmak üzere tüm gerekliliklere uygundur.",
+        "purpose": "Bu politika, www.vinetka.bg web sitesi kullanıcılarını kullanılan çerezler, amaçları ve kullanıcılar üzerindeki etkileri hakkında bilgilendirmeyi amaçlar.",
+        "sections": {
+          "whatAreCookies": {
+            "title": "Çerezler nedir ve ne için kullanılır?",
+            "definition": "Çerezler, web sitelerinin kullanıcının cihazında sakladığı küçük metin dosyalarıdır ve ziyaretlerinizle ilgili bilgileri depolar. Sitelerin tercihleri hatırlamasına, oturumları sürdürmesine ve içeriği kişiselleştirmesine yardımcı olur. Çerezler, hizmetlerin kullanıcılar için en faydalı ve kullanışlı şekilde sunulmasını sağlar.",
+            "invitation": "Kullanıcı, www.vinetka.bg web sitesini her ziyaret ettiğinde çerezleri kabul etmesi veya reddetmesi için bir davet alır.",
+            "types": "DPH AŞ, www.vinetka.bg internet sitesinde iki tür çerez kullanır: oturum çerezleri ve kalıcı çerezler. Oturum çerezleri, kullanıcı oturumu sona erene veya site kapatılana kadar cihazda kalır. Kalıcı çerezler, çerezin parametrelerinde belirlenen süre boyunca veya kullanıcı tarafından manuel olarak silinene kadar cihazda kalır. www.vinetka.bg web sitesini ziyaret ettiğinizde, zorunlu çerezler, analiz çerezleri ve reklam çerezleri gibi aşağıdaki çerez türleri kullanılabilir."
+          },
+          "browserManagement": {
+            "title": "Tarayıcı üzerinden çerez yönetimi:",
+            "description": "Tarayıcılar, Kullanıcıların ziyaret ettikleri web sitelerinde çerezleri yönetmelerine, silmelerine ve/veya engellemelerine olanak tanır. Kullanıcı, www.vinetka.bg internet sitesinde kullanılan çerezleri kontrol etmek için tercih ettiği tarayıcının gizlilik ve çerez ayarlarını kontrol edebilir.",
+            "deletion": "Kullanıcılar, www.vinetka.bg'ye erişim sağladıkları cihazda kayıtlı tüm çerezleri silebilirler. Kullandığınız tarayıcıya bağlı olarak, bu işlem aşağıdaki sayfalarda açıklandığı şekilde yapılabilir:",
+            "browsers": [
+              {
+                "name": "Mozilla Firefox:",
+                "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer"
+              },
+              {
+                "name": "Internet Explorer:",
+                "url": "https://support.microsoft.com/bg-bg/windows/изтриване-и-управление-на-бисквитки-168dab11-0753-043d-7c16-ede5947fc64d"
+              },
+              {
+                "name": "Google Chrome:",
+                "url": "https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=bg"
+              },
+              {
+                "name": "Safari:",
+                "url": "https://support.apple.com/bg-bg/HT201265"
+              },
+              {
+                "name": "Microsoft EDGE:",
+                "url": "https://support.microsoft.com/bg-bg/microsoft-edge/изтриване-на-бисквитките-в-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+              }
+            ],
+            "moreInfo": "Farklı tarayıcı türlerinde çerez yönetimi hakkında daha fazla bilgiye şu adresten ulaşabilirsiniz: https://www.aboutcookies.org/how-to-control-cookies/."
+          },
+          "blocking": {
+            "title": "Çerezlerin engellenmesi:",
+            "consequences": "Kullanıcı çerez kullanımını engellerse, www.vinetka.bg internet sitesinin bazı işlevleri devre dışı kalabilir ve bu, kullanım sırasında bazı aksaklıklara veya hatalara yol açabilir.",
+            "settings": "Çoğu tarayıcı varsayılan olarak çerezleri kabul edecek şekilde ayarlanmıştır, ancak bazı veya tüm çerezleri engellemek için ayarlarınızı değiştirebilirsiniz.",
+            "details": "Çerezlerin yönetimiyle ilgili ayrıntılı bilgiye uygulamanın (web tarayıcısının) ayarlar bölümünden ulaşabilirsiniz."
+          },
+          "contact": "Çerez Kullanım Politikası ile ilgili ek sorularınız için lütfen +359 876 99 51 77 numaralı telefondan veya hello@insurance.bg e-posta adresinden bizimle iletişime geçin.",
+          "effectiveDate": "Bu Çerez Kullanım Politikası, 'DPH' AŞ tarafından onaylanmış olup, 01.08.2025 tarihinden itibaren Şirket faaliyetlerinde geçerlidir."
+        }
+      },
+      "termsOfUse": {
+        "pageTitle": "Kullanım Koşulları - Vinetka.bg",
+        "pageDescription": "www.vinetka.bg web sitesi kullanım koşulları - elektronik vinyet satın alma kuralları.",
+        "title": "WWW.VINETKA.BG WEB SİTESİ KULLANIM KOŞULLARI",
+        "introduction": "Bu Kullanım Koşulları, www.vinetka.bg internet sitesinin kullanım kurallarını ve elektronik vinyetlerin satın alınması ve teslimatı ile 'günlük maksimum geçiş ücreti' ve telafi edici ücretlerin ödenmesi ve www.vinetka.bg internet sitesinde kullanıcılara sunulan diğer ürün ve hizmetlerin sağlanmasını düzenler. Tüm kullanıcılar, www.vinetka.bg internet sitesini kullanırken bu Kullanım Koşulları ile 'Dijital Policy Hub' AŞ'nin (kısaca 'DPH' AŞ veya Şirket) geçerli politika ve belgelerine onay vermiş sayılır. Bu Kullanım Koşulları www.vinetka.bg internet sitesinde yayımlanmıştır ve Kullanıcı tarafından web sitesinin kullanılmasıyla kabul edilmiş sayılır.",
+        "companyInfo": "'Dijital Policy Hub' AŞ ('DPH' AŞ), ayrıca 'Şirket' olarak anılır, merkezi ve yönetim adresi Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası olan bir anonim şirkettir ve Bulgaristan Ticaret Sicili ve Kâr Amacı Gütmeyen Tüzel Kişiler Sicili'ne 207623030 EIK ile kayıtlıdır, KDV numarası: BG207623030. Şirket, www.vinetka.bg internet sitesinin sahibi ve yöneticisidir. İnternet sitesi kullanıcıları yukarıda belirtilen adresten, telefon",
+        "phone": "+359 876 99 51 77 veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
+        "partnership": "'Dijital Policy Hub' AŞ, 'Dijital Smart İnfrastruktura' AŞ ('DSİ' AŞ) EIK 205612035 ile ortaktır. Bu şirket, Yol Altyapı Ajansı'nda (API) Ulusal Hizmet Sağlayıcı olarak kayıtlıdır ve yol ücretlerinin toplanması dahil ilgili faaliyetleri yürütme hakkına sahiptir. 'DPH' AŞ, www.vinetka.bg internet sitesi üzerinden kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum geçiş ücreti' ödemelerini DSİ AŞ adına ve hesabına yapabilmelerini sağlar.",
+        "sections": {
+          "generalProvisions": {
+            "title": "I. GENEL HÜKÜMLER. TANIMLAR.",
+            "description": "www.vinetka.bg, 'DPH' AŞ'nin kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum geçiş ücreti' ödemelerini DSİ AŞ adına ve hesabına yapabilmelerini sağladığı bir web sitesidir.",
+            "termsRegulation": "Bu Kullanım Koşulları, Şirketin satıcı ve www.vinetka.bg internet sitesinin sahibi olarak ve www.vinetka.bg internet sitesini kullanan her kişi (bundan sonra kısaca 'Kullanıcı' olarak anılacaktır) arasında ürün/hizmet satışı, teslimatı ve ödemesi ilişkilerini düzenler.",
+            "updateRights": "'Dijital Policy Hub' AŞ, internet sitesinin kullanımında veya yürürlükteki mevzuatta meydana gelen değişiklikleri yansıtmak amacıyla bu Kullanım Koşullarını periyodik olarak güncelleme ve değiştirme hakkını saklı tutar."
+          },
+          "usageRules": {
+            "title": "II. WWW.VINETKA.BG WEB SİTESİ KULLANIM KURALLARI.",
+            "registration": "www.vinetka.bg internet sitesinde kayıt olmak, siteyi kullanmak için bir şart değildir. Her Kullanıcı, www.vinetka.bg web sitesinde ilgili elektronik kayıt formunu doldurarak ve bu Kullanım Koşullarını kabul ederek kayıt olma imkanına sahiptir.",
+            "emailRequirement": "Her Kullanıcı, iletişim için geçerli bir e-posta adresi belirtmek zorundadır ve kendisi ile Şirket arasındaki tüm gelecekteki yazışmaların, belirttiği e-posta adresi üzerinden elektronik ortamda yapılmasına onay verir.",
+            "pricing": "Vinyet ücretleri/elektronik vinyetler ile 'günlük maksimum geçiş ücreti' veya telafi edici ücretlerin ödenmesi hariç (bunlar devlet yol ağı kullanım ücreti olup KDV uygulanmaz), www.vinetka.bg web sitesindeki diğer tüm ürün ve hizmet fiyatları nihai fiyatlardır, Bulgar Levası (BGN) cinsinden ilan edilmiştir ve KDV ile yasal olarak gerekli tüm vergi ve harçları içerir."
+          },
+          "intellectualProperty": {
+            "title": "III. FİKRİ MÜLKİYET HAKKI",
+            "content": "Sitenin tüm içerik unsurları, tasarım, alan adı, isim, ticari marka, veri tabanları, metin, çizim, grafik, taslak, endüstriyel tasarım ve diğer bilgiler veya unsurlar dahil olmak üzere, Telif Hakkı ve Bağlantılı Haklar Kanunu, Ticari Markalar ve Coğrafi İşaretler Kanunu ve Endüstriyel Tasarım Kanunu anlamında fikri mülkiyet hakkı kapsamındadır ve 'Dijital Policy Hub' AŞ'ye aittir veya kullanım hakkı verilmiştir ve başka hiçbir kişi tarafından kullanılamaz."
+          },
+          "purchases": {
+            "title": "IV. ÜRÜN VE HİZMET SATIN ALIMLARI",
+            "process": "Kullanıcı, www.vinetka.bg internet sitesini kullanarak istediği ürün ve/veya hizmetleri 'Sepetim'e ekleyip, sitede belirtilen adımları takip ederek siparişini tamamlayabilir ve gönderebilir.",
+            "vignetteRequirements": "Elektronik vinyet satın alımı için gerekli asgari bilgiler: araç kategorisi; aracın kayıtlı olduğu ülke; aracın plaka numarası; elektronik vinyetin geçerlilik süresi; elektronik vinyetin başlangıç tarihi; elektronik vinyetlerin süresinin dolması ve tespit edilen ihlaller hakkında bilgilendirme için e-posta adresi.",
+            "vignetteCheck": "Vinyet geçerliliğini kontrol etmek için gerekli asgari bilgi: aracın plaka numarası."
+          },
+          "withdrawalRights": {
+            "title": "V. İPTAL HAKKI OLMAYAN ÜRÜN VE HİZMETLER. ŞİKAYETLER.",
+            "timeLimit": "Uygulanabilir olduğu durumlarda, Şirket, Kullanıcılara www.vinetka.bg üzerinden kullanılan hizmetten vazgeçme ve yapılan ödemenin iadesi imkanını, hizmetin kullanılmasından itibaren en geç 14 (ondört) gün içinde kendi adına ve hesabına sunar.",
+            "noWithdrawal": "Aşağıdaki durumlarda sözleşmeden cayma hakkı geçerli değildir: satın alınan ve etkinleştirilen elektronik vinyetler, ödenen 'günlük maksimum geçiş ücreti' veya telafi edici ücretler, hizmetin tamamen sunulduğu ve kullanıcının açık ön onayı ile başlatıldığı hizmetler."
+          },
+          "dataProtection": {
+            "title": "VI. KİŞİSEL VERİLERİN KORUNMASI",
+            "policy": "Kullanıcı, 'DPH' AŞ'ye kişisel veya diğer verilerini sağlayarak, kişisel verilerinin www.vinetka.bg/privacy-policy adresinde yer alan ve Kullanıcı tarafından okunduğu beyan edilen Gizlilik Politikası'na uygun olarak 'DPH' AŞ tarafından işlenmesini kabul eder."
+          },
+          "payments": {
+            "title": "VIII. ÖDEMELER",
+            "pricing": "Elektronik vinyetlerin, 'günlük maksimum geçiş ücreti'nin ve telafi edici ücretlerin fiyatları, API tarafından tahsil edilen ücret tarifesinde ilan edilen nihai fiyatlardır. Yürürlükteki mevzuata göre bu ücretler herhangi bir vergi, gümrük veya benzeri ek ücret içermez, çünkü bunlar ücretli yol ağının kullanımı için devlet ücreti niteliğindedir."
+          },
+          "forcemajeure": {
+            "title": "IX. ÖNGÖRÜLEMEYEN VE MÜCBİR SEBEPLER",
+            "definition": "Taraflardan hiçbiri, sözleşmeden doğan yükümlülüklerini yerine getirememesinden, bu durum mücbir sebep nedeniyle oluşmuşsa, sorumlu tutulamaz. Mücbir sebep, tarafların kontrolü dışında, öngörülemeyen ve önlenemeyen bir olaydır."
+          },
+          "applicableLaw": {
+            "title": "X. UYGULANACAK HUKUK",
+            "content": "Bu Kullanım Koşulları, yürürlükteki Bulgaristan mevzuatına uygundur. 'Dijital Policy Hub' AŞ ile Kullanıcılar arasında doğabilecek ihtilaflar karşılıklı uzlaşma ile çözülecek, bu mümkün olmazsa, ihtilaflar yetkili Bulgaristan mahkemelerinde çözülecektir; bu durum kullanıcıların haklarını ihlal etmez.",
+            "effectiveDate": "Bu Kullanım Koşulları, 'Dijital Policy Hub' AŞ tarafından kabul edilmiş olup, 01.08.2025 tarihinden itibaren geçerlidir."
+          }
+        }
+      }
+    }
+  }
+  

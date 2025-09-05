@@ -23,7 +23,7 @@ export default function LanguageSwitcher() {
       >
         {locales.map((loc) => (
           <option key={loc} value={loc} className="bg-white text-gray-800">
-            {loc === 'bg' ? '🇧🇬 BG' : loc === 'en' ? '🇬🇧 EN' : loc === 'de' ? '🇩🇪 DE' : '🇷🇺 RU'}
+            {loc === 'bg' ? '🇧🇬 BG' : loc === 'en' ? '🇬🇧 EN' : loc === 'de' ? '🇩🇪 DE' : loc === 'ru' ? '🇷🇺 RU' : '🇹🇷 TR'}
           </option>
         ))}
       </select>
