@@ -1,11 +1,17 @@
 import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
+import { notFound } from 'next/navigation';
 
 // Добавяне на ISR ревалидиране на всеки час
 export const revalidate = 3600;
 
 export async function generateMetadata({ params }) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
+  
+  // Hide blog posts for all locales except 'bg'
+  if (locale !== 'bg') {
+    return {};
+  }
   const post = await getPostBySlug(slug);
 
   if (!post || post.length === 0) {
@@ -35,7 +41,12 @@ export async function generateMetadata({ params }) {
 
 export default async function PostPage({ params }) {
   try {
-    const { slug } = await params;
+    const { slug, locale } = await params;
+    
+    // Hide blog posts for all locales except 'bg'
+    if (locale !== 'bg') {
+      notFound();
+    }
     const post = await getPostBySlug(slug);
 
     if (!post || post.length === 0) {

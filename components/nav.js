@@ -21,20 +21,26 @@ import { Link } from "../lib/navigation";
 import Image from "next/image";
 import { getServicesNav } from "../services/services";
 import LanguageSwitcher from "./LanguageSwitcher";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 
 export default function Navigation() {
   const t = useTranslations('navigation');
+  const locale = useLocale();
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   
-  const pages = [
+  const allPages = [
     { name: t('home'), href: "/" },
     { name: t('prices'), href: "/tseni" },
     { name: t('tollTax'), href: "/toll-taksi" },
     { name: t('blog'), href: "/blog" },
     { name: t('contact'), href: "/contact" },
   ];
+  
+  // Filter out blog for non-bg locales
+  const pages = allPages.filter(page => 
+    page.href !== "/blog" || locale === 'bg'
+  );
 
   // useEffect(() => {
   //   const fetchData = async () => {

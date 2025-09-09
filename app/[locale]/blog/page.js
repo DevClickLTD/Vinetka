@@ -1,8 +1,16 @@
 import Image from "next/image";
 import { Link } from "../../../lib/navigation";
 import { getTranslations } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  
+  // Hide blog for all locales except 'bg'
+  if (locale !== 'bg') {
+    return {};
+  }
+  
   const t = await getTranslations('blog');
   
   return {
@@ -11,7 +19,13 @@ export async function generateMetadata() {
   };
 }
 
-export default async function Blog({ searchParams }) {
+export default async function Blog({ searchParams, params }) {
+  const { locale } = await params;
+  
+  // Hide blog for all locales except 'bg'
+  if (locale !== 'bg') {
+    notFound();
+  }
   const t = await getTranslations('blog');
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;

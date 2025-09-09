@@ -4,10 +4,17 @@ import { useEffect, useState } from "react";
 import { getLatestPosts } from "../services/posts";
 import { Link } from "../lib/navigation";
 import Image from "next/image";
+import { useLocale } from 'next-intl';
 
 export default function LatestPosts() {
+  const locale = useLocale();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
+  
+  // Hide component for non-bg locales
+  if (locale !== 'bg') {
+    return null;
+  }
 
   // Fetch latests posts from WordPress API on component mount
   useEffect(() => {

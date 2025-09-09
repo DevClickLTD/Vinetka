@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Pacifico } from "next/font/google";
 import useSubscribe from "../hooks/useSubscribe";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '../lib/navigation';
 
 const pacifico = Pacifico({
@@ -18,9 +18,21 @@ const pacifico = Pacifico({
 
 export default function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
   const [year, setYear] = useState(new Date().getFullYear());
   const [email, setEmail] = useState("");
   const { subscribe, loading } = useSubscribe();
+
+  const allSupportItems = [
+    { name: t('support.blog'), href: "/blog" },
+    { name: t('support.contact'), href: "/contact" },
+    { name: t('support.faq'), href: "#" },
+  ];
+
+  // Filter out blog for non-bg locales
+  const supportItems = allSupportItems.filter(item => 
+    item.href !== "/blog" || locale === 'bg'
+  );
 
   const navigation = {
     services: [
@@ -28,11 +40,7 @@ export default function Footer() {
       { name: t('services.prices'), href: "/tseni" },
       { name: t('services.tollTax'), href: "/toll-taksa" },
     ],
-    support: [
-      { name: t('support.blog'), href: "/blog" },
-      { name: t('support.contact'), href: "/contact" },
-      { name: t('support.faq'), href: "#" },
-    ],
+    support: supportItems,
     company: [
       { name: t('company.aboutUs'), href: "#" },
     ],
