@@ -672,6 +672,86 @@
     "sort": "Sortieren",
     "selectLanguage": "Sprache wählen"
   },
+  "vignetteCheckPage": {
+    "title": "Vignetten-Prüfung – Schnell, einfach und sicher | Vinetka.bg",
+    "description": "Prüfen Sie Ihre Vignette in Sekunden! Schnelle Überprüfung der Gültigkeit der elektronischen Vignette mit 100% Genauigkeit. In Echtzeit synchronisiert mit NA Avtomagistrali. Vermeiden Sie Bußgelder!",
+    "heroTitle": "Vignetten-Prüfung",
+    "heroSubtitle": "Schnell, einfach und sicher!",
+    "heroCallout": "Sparen Sie Zeit – vermeiden Sie Bußgelder!",
+    "introTitle": "Prüfen Sie Ihre Vignette in Sekunden",
+    "introDescription1": "Mit unserer schnellen Vignetten-Prüfung können Sie die Gültigkeit Ihrer Vignette in Sekunden überprüfen! Geben Sie das Kennzeichen Ihres Fahrzeugs ein und das System zeigt an, ob Sie eine gültige Vignette haben und bis wann sie aktiv ist.",
+    "introDescription2": "Vermeiden Sie Bußgelder und unnötigen Stress – prüfen Sie jetzt Ihre Vignette!",
+    "featuresTitle": "Warum unsere Prüfung nutzen?",
+    "featuresSubtitle": "Zuverlässige und genaue Informationen zu Ihrer Vignette",
+    "features": {
+      "instantCheck": {
+        "title": "Prüfung in Sekunden",
+        "description": "Sofortige Überprüfung der Vignetten-Gültigkeit"
+      },
+      "realTime": {
+        "title": "Echtzeit",
+        "description": "Synchronisiert mit der Datenbank von NA 'Avtomagistrali' EAD"
+      },
+      "accuracy": {
+        "title": "100% Genauigkeit",
+        "description": "Garantierte Genauigkeit der Informationen"
+      },
+      "avoidFines": {
+        "title": "Bußgelder vermeiden",
+        "description": "Verhindern Sie unnötige Strafen und Stress"
+      }
+    },
+    "accuracyTitle": "Garantierte Genauigkeit",
+    "accuracyDescription1": "Unser System ist in Echtzeit mit der Datenbank von NA \"Avtomagistrali\" EAD synchronisiert, was eine 100%ige Genauigkeit der Informationen garantiert.",
+    "accuracyDescription2": "Sie erhalten sofort Informationen über den Status Ihrer Vignette – ob sie aktiv ist, wann ihre Gültigkeit abläuft und welchen Vignetten-Typ Sie besitzen.",
+    "benefitsTitle": "Was erhalten Sie?",
+    "benefits": {
+      "instant": "Sofortige Information über den Vignetten-Status",
+      "validity": "Daten zur Gültigkeit und zum Vignetten-Typ",
+      "prevention": "Vermeidung von Bußgeldern und Strafen",
+      "carChange": "Besonders nützlich beim Fahrzeugwechsel",
+      "tracking": "Überwachung ablaufender Vignetten",
+      "fleets": "Geeignet für Unternehmen mit Fuhrparks"
+    },
+    "businessTitle": "Für Geschäftskunden",
+    "businessDescription1": "Der Service ist besonders nützlich für Unternehmen mit Fuhrparks, die den Status der Vignetten mehrerer Fahrzeuge gleichzeitig überwachen möchten.",
+    "businessDescription2": "Wir empfehlen regelmäßige Prüfungen, insbesondere beim Fahrzeugwechsel oder kurz vor Ablauf der Vignette.",
+    "ctaTitle": "Benötigen Sie eine neue Vignette?",
+    "ctaDescription": "Wenn die Prüfung zeigt, dass Ihre Vignette abgelaufen ist, kaufen Sie einfach und schnell online eine neue.",
+    "ctaBuyButton": "Vignette kaufen",
+    "ctaPricesButton": "Preise anzeigen"
+  },
+  "vignetteCheckerComponent": {
+    "title": "Vignetten-Prüfung",
+    "subtitle": "Geben Sie das Kennzeichen Ihres Fahrzeugs ein, um die Gültigkeit der Vignette zu prüfen",
+    "inputLabel": "Kennzeichen*",
+    "inputPlaceholder": "Beispiel: CA1234AB",
+    "checkButton": "Vignette prüfen",
+    "checkingButton": "Wird geprüft...",
+    "errorRequired": "Bitte geben Sie ein Kennzeichen ein",
+    "errorServer": "Fehler bei der Serveranfrage",
+    "errorGeneral": "Fehler bei der Prüfung. Bitte versuchen Sie es erneut.",
+    "resultsTitle": "Prüfergebnisse",
+    "resultTitle": "Prüfergebnis",
+    "noValidVignette": "Das Fahrzeug hat zum heutigen Datum keine gültige Vignette.",
+    "fields": {
+      "status": "Status",
+      "validFrom": "Gültig ab",
+      "validTo": "Gültig bis",
+      "plateNumber": "Kennzeichen",
+      "country": "Land",
+      "vehicleClass": "Fahrzeugklasse",
+      "emissionsClass": "Emissionsklasse",
+      "price": "Preis"
+    },
+    "infoTitle": "Wichtige Informationen",
+    "infoItems": {
+      "realtime": "Die Prüfung erfolgt in Echtzeit über die offizielle BG TOLL API",
+      "free": "Der Service ist kostenlos und erfordert keine Registrierung",
+      "format": "Geben Sie nur das Kennzeichen ohne Leerzeichen oder Sonderzeichen ein",
+      "bulgarian": "Die Prüfung gilt nur für Fahrzeuge mit bulgarischer Zulassung"
+    }
+  },
   "components": {
     "hero": {
       "title": "Informationen zur Online-Vignette",

@@ -654,6 +654,86 @@
     "enterPlateNumber": "Enter license plate number",
     "checkStatus": "Check vignette status"
   },
+  "vignetteCheckPage": {
+    "title": "Vignette Check - Fast, Easy and Secure | Vinetka.bg",
+    "description": "Check your vignette in seconds! Fast verification of electronic vignette validity with 100% accuracy. Real-time synchronized with NA Avtomaginstrali. Avoid fines!",
+    "heroTitle": "Vignette Check",
+    "heroSubtitle": "Fast, easy and secure!",
+    "heroCallout": "Save time – avoid fines!",
+    "introTitle": "Check Your Vignette in Seconds",
+    "introDescription1": "With our fast vignette check you can verify its validity in seconds! Enter the vehicle's license plate number and the system will show whether you have a valid vignette and until when it's active.",
+    "introDescription2": "Avoid fines and unnecessary stress – check your vignette now!",
+    "featuresTitle": "Why use our vignette check?",
+    "featuresSubtitle": "Reliable and accurate information about your vignette",
+    "features": {
+      "instantCheck": {
+        "title": "Check in seconds",
+        "description": "Instant verification of vignette validity"
+      },
+      "realTime": {
+        "title": "Real time",
+        "description": "Synchronized with NA 'Avtomaginstrali' EAD database"
+      },
+      "accuracy": {
+        "title": "100% accuracy",
+        "description": "Guaranteed accuracy of information"
+      },
+      "avoidFines": {
+        "title": "Avoid fines",
+        "description": "Prevent unnecessary penalties and stress"
+      }
+    },
+    "accuracyTitle": "Guaranteed Accuracy",
+    "accuracyDescription1": "Our system is synchronized in real time with the NA \"Avtomaginstrali\" EAD database, which guarantees 100% accuracy of information.",
+    "accuracyDescription2": "You will instantly receive information about the vignette status - whether it's active, when its validity expires and what type of vignette you have.",
+    "benefitsTitle": "What will you get?",
+    "benefits": {
+      "instant": "Instant information about vignette status",
+      "validity": "Data on validity and vignette type",
+      "prevention": "Prevention of fines and penalties",
+      "carChange": "Especially useful when changing vehicles",
+      "tracking": "Tracking expiring vignettes",
+      "fleets": "Suitable for companies with vehicle fleets"
+    },
+    "businessTitle": "For Business Clients",
+    "businessDescription1": "The service is especially useful for companies with vehicle fleets that want to track the status of vignettes for multiple vehicles simultaneously.",
+    "businessDescription2": "We recommend regular checks, especially when changing vehicles or when the vignette is about to expire.",
+    "ctaTitle": "Need a new vignette?",
+    "ctaDescription": "If the check shows that your vignette has expired, buy a new one easily and quickly online.",
+    "ctaBuyButton": "Buy Vignette",
+    "ctaPricesButton": "View Prices"
+  },
+  "vignetteCheckerComponent": {
+    "title": "Vignette Check",
+    "subtitle": "Enter the vehicle's license plate number to check the validity of the vignette",
+    "inputLabel": "License plate number*",
+    "inputPlaceholder": "Example: CA1234AB",
+    "checkButton": "Check Vignette",
+    "checkingButton": "Checking...",
+    "errorRequired": "Please enter a license plate number",
+    "errorServer": "Error with server request",
+    "errorGeneral": "Error during check. Please try again.",
+    "resultsTitle": "Check Results",
+    "resultTitle": "Check Result",
+    "noValidVignette": "As of today, the vehicle does not have a valid vignette.",
+    "fields": {
+      "status": "Status",
+      "validFrom": "Valid from",
+      "validTo": "Valid to",
+      "plateNumber": "License plate number",
+      "country": "Country",
+      "vehicleClass": "Vehicle class",
+      "emissionsClass": "Emissions class",
+      "price": "Price"
+    },
+    "infoTitle": "Important Information",
+    "infoItems": {
+      "realtime": "The check is performed in real time through the official BG TOLL API",
+      "free": "The service is free and does not require registration",
+      "format": "Enter only the license plate number without spaces or special characters",
+      "bulgarian": "The check is valid only for vehicles with Bulgarian registration"
+    }
+  },
   "common": {
     "readMore": "Read more",
     "contactUs": "Contact us",

@@ -609,6 +609,86 @@
       "sort": "Sırala",
       "selectLanguage": "Dil seç"
     },
+    "vignetteCheckPage": {
+      "title": "Vinyet Kontrolü - Hızlı, kolay ve güvenli | Vinetka.bg",
+      "description": "Vinyetinizi saniyeler içinde kontrol edin! Elektronik vinyetin geçerliliğini %100 doğrulukla hızlıca kontrol edin. Gerçek zamanlı olarak NK Otoyolları ile senkronize. Cezalardan kaçının!",
+      "heroTitle": "Vinyet Kontrolü",
+      "heroSubtitle": "Hızlı, kolay ve güvenli!",
+      "heroCallout": "Zamandan tasarruf et – cezalardan kaçın!",
+      "introTitle": "Vinyetinizi saniyeler içinde kontrol edin",
+      "introDescription1": "Hızlı vinyet kontrolü ile vinyetinizin geçerliliğini saniyeler içinde öğrenebilirsiniz! Araç plaka numarasını girin ve sistem, geçerli bir vinyetiniz olup olmadığını ve ne zamana kadar aktif olduğunu gösterecek.",
+      "introDescription2": "Cezalardan ve gereksiz stresten kaçının – vinyetinizi şimdi kontrol edin!",
+      "featuresTitle": "Neden bizim kontrolümüzü kullanmalısınız?",
+      "featuresSubtitle": "Vinyetiniz hakkında güvenilir ve doğru bilgi",
+      "features": {
+        "instantCheck": {
+          "title": "Saniyeler içinde kontrol",
+          "description": "Vinyetin geçerliliğinin anında kontrolü"
+        },
+        "realTime": {
+          "title": "Gerçek zamanlı",
+          "description": "NK 'Otoyolları' EAD veritabanı ile senkronize"
+        },
+        "accuracy": {
+          "title": "%100 doğruluk",
+          "description": "Bilgilerin garantili doğruluğu"
+        },
+        "avoidFines": {
+          "title": "Cezalardan kaçınma",
+          "description": "Gereksiz yaptırımları ve stresi önleyin"
+        }
+      },
+      "accuracyTitle": "Garantili doğruluk",
+      "accuracyDescription1": "Sistemimiz, NK \"Otoyolları\" EAD veritabanı ile gerçek zamanlı olarak senkronize edilmiştir ve bu da bilgilerin %100 doğruluğunu garanti eder.",
+      "accuracyDescription2": "Vinyetinizin durumu hakkında anında bilgi alacaksınız – aktif mi, geçerliliği ne zaman bitiyor ve hangi tip vinyete sahipsiniz.",
+      "benefitsTitle": "Ne elde edersiniz?",
+      "benefits": {
+        "instant": "Vinyet durumu hakkında anında bilgi",
+        "validity": "Vinyetin geçerliliği ve türü hakkında veri",
+        "prevention": "Cezaların ve yaptırımların önlenmesi",
+        "carChange": "Araç değişiminde özellikle faydalı",
+        "tracking": "Süresi dolmak üzere olan vinyetlerin takibi",
+        "fleets": "Filo sahibi şirketler için uygun"
+      },
+      "businessTitle": "İşletme müşterileri için",
+      "businessDescription1": "Hizmet, birden fazla aracın vinyet durumunu aynı anda takip etmek isteyen filo sahibi şirketler için özellikle faydalıdır.",
+      "businessDescription2": "Düzenli kontrolü öneriyoruz, özellikle araç değişiminde veya vinyetin süresi dolarken.",
+      "ctaTitle": "Yeni bir vinyete mi ihtiyacınız var?",
+      "ctaDescription": "Eğer kontrol sonucunda vinyetinizin süresi dolmuşsa, yeni bir vinyeti kolayca ve hızlıca online satın alın.",
+      "ctaBuyButton": "Vinyet Satın Al",
+      "ctaPricesButton": "Fiyatları Görüntüle"
+    },
+    "vignetteCheckerComponent": {
+      "title": "Vinyet Kontrolü",
+      "subtitle": "Vinyetin geçerliliğini kontrol etmek için araç plaka numarasını girin",
+      "inputLabel": "Plaka numarası*",
+      "inputPlaceholder": "Örneğin: CA1234AB",
+      "checkButton": "Vinyeti Kontrol Et",
+      "checkingButton": "Kontrol ediliyor...",
+      "errorRequired": "Lütfen plaka numarası girin",
+      "errorServer": "Sunucuya istek gönderilirken hata oluştu",
+      "errorGeneral": "Kontrol sırasında hata oluştu. Lütfen tekrar deneyin.",
+      "resultsTitle": "Kontrol Sonuçları",
+      "resultTitle": "Kontrol Sonucu",
+      "noValidVignette": "Bugün itibariyle araç için geçerli bir vinyet bulunmamaktadır.",
+      "fields": {
+        "status": "Durum",
+        "validFrom": "Geçerlilik başlangıcı",
+        "validTo": "Geçerlilik bitişi",
+        "plateNumber": "Plaka numarası",
+        "country": "Ülke",
+        "vehicleClass": "Araç sınıfı",
+        "emissionsClass": "Emisyon sınıfı",
+        "price": "Fiyat"
+      },
+      "infoTitle": "Önemli Bilgi",
+      "infoItems": {
+        "realtime": "Kontrol, BG TOLL'un resmi API'si üzerinden gerçek zamanlı olarak yapılır",
+        "free": "Hizmet ücretsizdir ve kayıt gerektirmez",
+        "format": "Sadece plaka numarasını, boşluk veya özel karakter olmadan girin",
+        "bulgarian": "Kontrol sadece Bulgaristan plakalı araçlar için geçerlidir"
+      }
+    },
     "components": {
       "hero": {
         "title": "Online Vinyet Bilgisi",

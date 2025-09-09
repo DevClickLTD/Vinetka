@@ -677,6 +677,86 @@
       "sort": "Sortează",
       "selectLanguage": "Alege limba"
     },
+    "vignetteCheckPage": {
+      "title": "Verificare vignetă - Rapid, ușor și sigur | Vinetka.bg",
+      "description": "Verifică-ți vigneta în câteva secunde! Verificare rapidă a valabilității vignetei electronice cu acuratețe 100%. Sincronizat în timp real cu Compania Națională de Autostrăzi. Evită amenzile!",
+      "heroTitle": "Verificare vignetă",
+      "heroSubtitle": "Rapid, ușor și sigur!",
+      "heroCallout": "Economisește timp – evită amenzile!",
+      "introTitle": "Verifică-ți vigneta în câteva secunde",
+      "introDescription1": "Cu verificarea rapidă a vignetei poți afla valabilitatea acesteia în câteva secunde! Introdu numărul de înmatriculare al mașinii și sistemul va afișa dacă ai o vignetă valabilă și până când este activă.",
+      "introDescription2": "Evită amenzile și stresul inutil – verifică-ți vigneta acum!",
+      "featuresTitle": "De ce să folosești verificarea noastră?",
+      "featuresSubtitle": "Informații de încredere și precise despre vignetă",
+      "features": {
+        "instantCheck": {
+          "title": "Verificare în câteva secunde",
+          "description": "Verificare instantanee a valabilității vignetei"
+        },
+        "realTime": {
+          "title": "Timp real",
+          "description": "Sincronizat cu baza de date a Companiei Naționale de Autostrăzi"
+        },
+        "accuracy": {
+          "title": "Acuratețe 100%",
+          "description": "Acuratețe garantată a informațiilor"
+        },
+        "avoidFines": {
+          "title": "Evită amenzile",
+          "description": "Previne sancțiunile și stresul inutil"
+        }
+      },
+      "accuracyTitle": "Acuratețe garantată",
+      "accuracyDescription1": "Sistemul nostru este sincronizat în timp real cu baza de date a Companiei Naționale de Autostrăzi, asigurând acuratețe 100% a informațiilor.",
+      "accuracyDescription2": "Vei primi instant informații despre statutul vignetei – dacă este activă, când expiră valabilitatea și ce tip de vignetă deții.",
+      "benefitsTitle": "Ce vei obține?",
+      "benefits": {
+        "instant": "Informații instantanee despre statutul vignetei",
+        "validity": "Date despre valabilitatea și tipul vignetei",
+        "prevention": "Prevenirea amenzilor și sancțiunilor",
+        "carChange": "Deosebit de util la schimbarea mașinii",
+        "tracking": "Monitorizarea vignetelor care expiră",
+        "fleets": "Potrivit pentru companii cu flote auto"
+      },
+      "businessTitle": "Pentru clienți business",
+      "businessDescription1": "Serviciul este deosebit de util pentru companiile cu flote auto care doresc să monitorizeze statutul vignetelor pentru mai multe vehicule simultan.",
+      "businessDescription2": "Recomandăm verificări regulate, mai ales la schimbarea mașinii sau înainte de expirarea vignetei.",
+      "ctaTitle": "Ai nevoie de o vignetă nouă?",
+      "ctaDescription": "Dacă verificarea arată că vignetă a expirat, cumpără una nouă rapid și ușor online.",
+      "ctaBuyButton": "Cumpără vignetă",
+      "ctaPricesButton": "Vezi prețurile"
+    },
+    "vignetteCheckerComponent": {
+      "title": "Verificare vignetă",
+      "subtitle": "Introdu numărul de înmatriculare al vehiculului pentru a verifica valabilitatea vignetei",
+      "inputLabel": "Număr de înmatriculare*",
+      "inputPlaceholder": "Exemplu: CA1234AB",
+      "checkButton": "Verifică vignetă",
+      "checkingButton": "Se verifică...",
+      "errorRequired": "Te rugăm să introduci numărul de înmatriculare",
+      "errorServer": "Eroare la comunicarea cu serverul",
+      "errorGeneral": "Eroare la verificare. Te rugăm să încerci din nou.",
+      "resultsTitle": "Rezultatele verificării",
+      "resultTitle": "Rezultatul verificării",
+      "noValidVignette": "La această dată, vehiculul nu are o vignetă valabilă.",
+      "fields": {
+        "status": "Statut",
+        "validFrom": "Valabilă de la",
+        "validTo": "Valabilă până la",
+        "plateNumber": "Număr de înmatriculare",
+        "country": "Țară",
+        "vehicleClass": "Clasa vehiculului",
+        "emissionsClass": "Clasa de emisii",
+        "price": "Preț"
+      },
+      "infoTitle": "Informații importante",
+      "infoItems": {
+        "realtime": "Verificarea se face în timp real prin API-ul oficial BG Toll",
+        "free": "Serviciul este gratuit și nu necesită înregistrare",
+        "format": "Introdu doar numărul de înmatriculare fără spații sau caractere speciale",
+        "bulgarian": "Verificarea este valabilă doar pentru vehicule cu numere de Bulgaria"
+      }
+    },
     "components": {
       "hero": {
         "title": "Informații despre vigneta online",

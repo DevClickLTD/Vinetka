@@ -11,84 +11,80 @@ import {
   FaExclamationTriangle,
   FaMoneyBillWave
 } from "react-icons/fa";
+import { getTranslations } from 'next-intl/server';
 
-export const metadata = {
-  title: "Проверка на винетка - Бързо, лесно и сигурно | Vinetka.bg",
-  description:
-    "Проверете Вашата винетка за секунди! Бърза проверка на валидността на електронната винетка с 100% точност. Синхронизирано в реално време с НК Автомагистрали. Избягвайте глоби!",
-  keywords: [
-    "проверка винетка",
-    "валидност винетка",
-    "електронна винетка проверка",
-    "БГ ТОЛ проверка",
-    "статус винетка",
-    "винетка България проверка",
-    "избягване глоби винетка",
-    "НК Автомагистрали винетка"
-  ],
-  openGraph: {
-    title: "Проверка на винетка - Бързо, лесно и сигурно | Vinetka.bg",
-    description: "Проверете Вашата винетка за секунди! Избягвайте глоби с бърза проверка на валидността.",
-    images: [
-      {
-        url: "/default.webp",
-        width: 1200,
-        height: 630,
-        alt: "Проверка на винетка",
-      },
-    ],
-    type: "website",
-    locale: "bg_BG",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Проверка на винетка - Бързо, лесно и сигурно | Vinetka.bg",
-    description: "Проверете Вашата винетка за секунди! Избягвайте глоби с бърза проверка.",
-    images: ["/default.webp"],
-  },
-  alternates: {
-    canonical: "/proverka-na-vinetka",
-  },
-};
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
+  const t = await getTranslations('vignetteCheckPage');
+  
+  return {
+    title: t('title'),
+    description: t('description'),
+    openGraph: {
+      title: t('title'),
+      description: t('description'),
+      images: [
+        {
+          url: "/default.webp",
+          width: 1200,
+          height: 630,
+          alt: t('heroTitle'),
+        },
+      ],
+      type: "website",
+      locale: locale === 'bg' ? 'bg_BG' : 'en_US',
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t('title'),
+      description: t('description'),
+      images: ["/default.webp"],
+    },
+    alternates: {
+      canonical: "/proverka-na-vinetka",
+    },
+  };
+}
 
-export default function VignetteCheckPage() {
+export default async function VignetteCheckPage() {
+  const t = await getTranslations('vignetteCheckPage');
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
-      title: "Проверка за секунди",
-      description: "Моментална проверка на валидността на винетката"
+      title: t('features.instantCheck.title'),
+      description: t('features.instantCheck.description')
     },
     {
       icon: <FaDatabase className="w-6 h-6 text-purple-600" />,
-      title: "Реално време",
-      description: "Синхронизирано с базата на НК 'Автомагистрали' ЕАД"
+      title: t('features.realTime.title'),
+      description: t('features.realTime.description')
     },
     {
       icon: <FaShieldAlt className="w-6 h-6 text-purple-600" />,
-      title: "100% точност",
-      description: "Гарантирана точност на информацията"
+      title: t('features.accuracy.title'),
+      description: t('features.accuracy.description')
     },
     {
       icon: <FaExclamationTriangle className="w-6 h-6 text-purple-600" />,
-      title: "Избягване на глоби",
-      description: "Предотвратете ненужни санкции и стрес"
+      title: t('features.avoidFines.title'),
+      description: t('features.avoidFines.description')
     }
   ];
 
   const benefits = [
-    "Моментална информация за статуса на винетката",
-    "Данни за валидността и типа на винетката",
-    "Предотвратяване на глоби и санкции",
-    "Особено полезно при смяна на автомобил",
-    "Проследяване на изтичащи винетки",
-    "Подходящо за компании с автопаркове"
+    t('benefits.instant'),
+    t('benefits.validity'),
+    t('benefits.prevention'),
+    t('benefits.carChange'),
+    t('benefits.tracking'),
+    t('benefits.fleets')
   ];
 
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Проверка на винетка",
-    "description": "Онлайн система за проверка на валидността на електронни винетки за България",
+    "name": t('heroTitle'),
+    "description": t('description'),
     "url": "https://vinetka.bg/proverka-na-vinetka",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
@@ -125,14 +121,14 @@ export default function VignetteCheckPage() {
                 </div>
               </div>
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                Проверка на винетка
+                {t('heroTitle')}
               </h1>
               <p className="mt-6 text-lg leading-8 text-purple-100">
-                Бързо, лесно и сигурно!
+                {t('heroSubtitle')}
               </p>
               <div className="mt-8 inline-flex items-center rounded-lg bg-green-100 px-4 py-2">
                 <FaMoneyBillWave className="h-5 w-5 text-green-600 mr-2" />
-                <span className="text-lg font-semibold text-green-900">Спести време – избегни глоби!</span>
+                <span className="text-lg font-semibold text-green-900">{t('heroCallout')}</span>
               </div>
             </div>
           </div>
@@ -150,15 +146,13 @@ export default function VignetteCheckPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Проверете Вашата винетка за секунди
+                {t('introTitle')}
               </h2>
               <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-                С бърза проверка на винетка можете да проверите валидността ѝ за секунди! Въведете 
-                регистрационния номер на автомобила и системата ще покаже дали имате валидна винетка 
-                и до кога е активна.
+                {t('introDescription1')}
               </p>
               <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                Избягвайте глоби и ненужен стрес – проверете винетката си сега!
+                {t('introDescription2')}
               </p>
             </div>
           </div>
@@ -169,10 +163,10 @@ export default function VignetteCheckPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Защо да използвате нашата проверка?
+                {t('featuresTitle')}
               </h2>
               <p className="mt-4 text-lg text-gray-600">
-                Надеждна и точна информация за вашата винетка
+                {t('featuresSubtitle')}
               </p>
             </div>
             
@@ -207,15 +201,13 @@ export default function VignetteCheckPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Гарантирана точност
+                {t('accuracyTitle')}
               </h2>
               <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-                Нашата система е синхронизирана в реално време с базата данни на НК "Автомагистрали" ЕАД, 
-                което гарантира 100% точност на информацията.
+                {t('accuracyDescription1')}
               </p>
               <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                Моментално ще получите информация за статуса на винетката - дали е активна, кога изтича 
-                валидността й и какъв тип винетка притежавате.
+                {t('accuracyDescription2')}
               </p>
             </div>
           </div>
@@ -226,7 +218,7 @@ export default function VignetteCheckPage() {
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-3xl">
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-12">
-                Какво ще получите?
+                {t('benefitsTitle')}
               </h2>
               
               <div className="space-y-4">
@@ -251,15 +243,13 @@ export default function VignetteCheckPage() {
                 </div>
               </div>
               <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                За бизнес клиенти
+                {t('businessTitle')}
               </h2>
               <p className="mt-6 text-lg text-gray-700 leading-relaxed">
-                Услугата е особено полезна за компании с автопаркове, които искат да проследяват 
-                статуса на винетките на множество превозни средства едновременно.
+                {t('businessDescription1')}
               </p>
               <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-                Препоръчваме редовна проверка, особено при смяна на автомобил или при изтичане на 
-                срока на винетката.
+                {t('businessDescription2')}
               </p>
             </div>
           </div>
@@ -270,23 +260,23 @@ export default function VignetteCheckPage() {
           <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
             <div className="mx-auto max-w-2xl text-center">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                Нужна ви е нова винетка?
+                {t('ctaTitle')}
               </h2>
               <p className="mt-6 text-lg leading-8 text-purple-100">
-                Ако проверката покаже, че винетката ви е изтекла, купете нова лесно и бързо онлайн.
+                {t('ctaDescription')}
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <Link
                   href="/services"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
                 >
-                  Купете винетка
+                  {t('ctaBuyButton')}
                 </Link>
                 <Link
                   href="/tseni"
                   className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
                 >
-                  Вижте цените <span aria-hidden="true">→</span>
+                  {t('ctaPricesButton')} <span aria-hidden="true">→</span>
                 </Link>
               </div>
             </div>
