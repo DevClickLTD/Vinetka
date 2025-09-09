@@ -38,7 +38,7 @@ export default function Footer() {
     services: [
       { name: t('services.vignetteCheck'), href: "/proverka-na-vinetka" },
       { name: t('services.prices'), href: "/tseni" },
-      { name: t('services.tollTax'), href: "/toll-taksa" },
+      { name: t('services.tollTax'), href: "/toll-taksi" },
     ],
     support: supportItems,
     company: [
