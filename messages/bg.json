@@ -114,7 +114,7 @@
     "pageSubtitle": "Изберете най-подходящия тип винетка за вашите нужди",
     "weekly": "Седмична",
     "monthly": "Месечна",
-    "quarterly": "Тримесечна", 
+    "quarterly": "Тримесечна",
     "annual": "Годишна",
     "breadcrumb": {
       "home": "Начало",
@@ -637,7 +637,7 @@
     },
     "cookiePolicy": {
       "title": "Политика за бисквитки",
-      "pageTitle": "Политика за бисквитки - Vinetka.bg", 
+      "pageTitle": "Политика за бисквитки - Vinetka.bg",
       "pageDescription": "Информация за използването на бисквитки на нашия сайт."
     },
     "termsOfService": {
@@ -826,6 +826,25 @@
       "resultShownInSeconds": "Резултатът се показва за секунди",
       "dataDirectlyFromBGToll": "Данните идват директно от БГ ТОЛ",
       "noTaxesOrHiddenFees": "Няма такси или скрити разходи"
+    },
+    "vignetteCheckerSidebar": {
+      "title": "Проверка на винетка",
+      "subtitle": "Проверете валидността за секунди",
+      "inputPlaceholder": "CA1234AB",
+      "checkButton": "Провери",
+      "checkingButton": "Проверява се...",
+      "errorRequired": "Въведете рег. номер",
+      "errorServer": "Грешка при заявката",
+      "errorGeneral": "Грешка. Опитайте отново.",
+      "validVignette": "Валидна винетка",
+      "noValidVignette": "Няма валидна винетка",
+      "validTo": "Валидност до",
+      "vehicleClass": "Клас",
+      "viewFullPage": "Към пълна проверка"
+    },
+    "sidebarLatestPosts": {
+      "title": "Последни публикации",
+      "viewAll": "Виж всички статии"
     },
     "privacyPolicy": {
       "pageTitle": "Политика за поверителност - Vinetka.bg",
