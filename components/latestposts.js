@@ -10,14 +10,14 @@ export default function LatestPosts() {
   const locale = useLocale();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
-  
-  // Hide component for non-bg locales
-  if (locale !== 'bg') {
-    return null;
-  }
 
   // Fetch latests posts from WordPress API on component mount
   useEffect(() => {
+    // Only fetch for bg locale
+    if (locale !== 'bg') {
+      return;
+    }
+    
     setLoading(true);
     const fetchLatestPosts = async () => {
       const postsData = await getLatestPosts();
@@ -26,7 +26,12 @@ export default function LatestPosts() {
     };
 
     fetchLatestPosts();
-  }, []);
+  }, [locale]);
+  
+  // Hide component for non-bg locales
+  if (locale !== 'bg') {
+    return null;
+  }
 
   return (
     <div className="bg-white">

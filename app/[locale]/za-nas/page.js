@@ -1,4 +1,5 @@
 import { getTranslations } from 'next-intl/server';
+import { Link } from '../../../lib/navigation';
 import { 
   CheckCircleIcon, 
   ShieldCheckIcon, 
@@ -205,18 +206,18 @@ export default async function AboutPage() {
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
+              <Link
                 href="/contact"
                 className="rounded-md bg-white px-6 py-3 text-base font-semibold text-[#803487] shadow-sm hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
               >
                 Свържи се с нас
-              </a>
-              <a
+              </Link>
+              <Link
                 href="/proverka-na-vinetka"
                 className="text-base font-semibold leading-6 text-white hover:text-gray-100 transition-colors"
               >
                 Провери винетка <span aria-hidden="true">→</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
