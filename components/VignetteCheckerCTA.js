@@ -1,15 +1,60 @@
 "use client";
 
-import { Link } from "../lib/navigation";
+import { useState } from "react";
 import {
   CheckCircleIcon,
   MagnifyingGlassIcon,
   ShieldCheckIcon,
+  XCircleIcon,
+  ExclamationTriangleIcon,
 } from "@heroicons/react/24/outline";
 import { useTranslations } from 'next-intl';
 
 export default function VignetteCheckerCTA() {
   const t = useTranslations('components.vignetteCheckerCTA');
+  const tChecker = useTranslations('vignetteCheckerComponent');
+  
+  const [plateNumber, setPlateNumber] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState(null);
+  const [error, setError] = useState("");
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (!plateNumber.trim()) {
+      setError(tChecker('errorRequired'));
+      return;
+    }
+
+    setLoading(true);
+    setError("");
+    setResult(null);
+
+    try {
+      const apiUrl = `https://check.bgtoll.bg/check/vignette/plate/BG/${plateNumber.trim()}`;
+      
+      const response = await fetch(apiUrl, {
+        method: 'GET',
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (!response.ok) {
+        throw new Error(tChecker('errorServer'));
+      }
+
+      const data = await response.json();
+      setResult(data);
+    } catch (err) {
+      console.error('Error occurred:', err);
+      setError(tChecker('errorGeneral'));
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="py-16 sm:py-20 bg-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -23,7 +68,7 @@ export default function VignetteCheckerCTA() {
         </div>
 
         <div className="mx-auto mt-12 max-w-4xl">
-          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#803487] to-[#037672] px-4 py-4 shadow-2xl sm:px-12 lg:px-16">
+          <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#803487] to-[#037672] px-4 py-8 shadow-2xl sm:px-12 lg:px-16 lg:py-12">
             {/* Background Pattern */}
             <div
               className="absolute inset-0 bg-white/5"
@@ -33,7 +78,7 @@ export default function VignetteCheckerCTA() {
             ></div>
 
             <div className="relative">
-              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12 items-start">
                 {/* Left Content */}
                 <div>
                   <div className="flex items-center mb-4">
@@ -48,7 +93,7 @@ export default function VignetteCheckerCTA() {
                   </p>
 
                   {/* Features */}
-                  <div className="space-y-3 mb-8">
+                  <div className="space-y-3">
                     <div className="flex items-center text-white/90">
                       <CheckCircleIcon className="h-5 w-5 text-green-300 mr-3 flex-shrink-0" />
                       <span>{t('realTimeCheck')}</span>
@@ -66,20 +111,12 @@ export default function VignetteCheckerCTA() {
                       <span>{t('noRegistration')}</span>
                     </div>
                   </div>
-
-                  <Link
-                    href="/proverka-na-vinetka"
-                    className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-base font-semibold text-[#803487] shadow-lg hover:bg-gray-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-200 hover:scale-105"
-                  >
-                    <MagnifyingGlassIcon className="h-5 w-5 mr-2" />
-                    {t('checkVignette')}
-                  </Link>
                 </div>
 
-                {/* Right Content - Visual Element */}
+                {/* Right Content - Working Form */}
                 <div className="relative">
                   <div className="relative mx-auto w-full max-w-sm">
-                    {/* Mock Phone/Device */}
+                    {/* Form Container */}
                     <div className="relative overflow-hidden rounded-2xl bg-white shadow-2xl">
                       <div className="px-6 py-8">
                         <div className="text-center mb-6">
@@ -91,18 +128,23 @@ export default function VignetteCheckerCTA() {
                           </p>
                         </div>
 
-                        {/* Mock Form */}
-                        <div className="space-y-4">
+                        {/* Working Form */}
+                        <form onSubmit={handleSubmit} className="space-y-4">
                           <div>
-                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                            <label htmlFor="plate-cta" className="block text-sm font-medium text-gray-700 mb-1">
                               {t('registrationNumber')}
                             </label>
                             <div className="relative">
                               <input
+                                id="plate-cta"
+                                name="plate"
                                 type="text"
+                                value={plateNumber}
+                                onChange={(e) => setPlateNumber(e.target.value.toUpperCase())}
                                 placeholder="CA1234AB"
-                                className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm bg-gray-50"
-                                disabled
+                                className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-[#803487] focus:ring-[#803487] uppercase"
+                                disabled={loading}
+                                maxLength={10}
                               />
                               <div className="absolute inset-y-0 right-0 flex items-center pr-3">
                                 <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">
@@ -110,28 +152,59 @@ export default function VignetteCheckerCTA() {
                                 </span>
                               </div>
                             </div>
+                            {error && (
+                              <p className="text-red-600 text-xs mt-1 flex items-center">
+                                <ExclamationTriangleIcon className="h-3 w-3 mr-1" />
+                                {error}
+                              </p>
+                            )}
                           </div>
 
                           <button
-                            disabled
-                            className="w-full rounded-md bg-[#803487] px-3 py-2 text-sm font-semibold text-white"
+                            type="submit"
+                            disabled={loading || !plateNumber.trim()}
+                            className="w-full rounded-md bg-[#803487] px-3 py-2.5 text-sm font-semibold text-white hover:bg-[#037672] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                           >
-                            {t('checkVignette')}
+                            {loading ? (
+                              <div className="flex items-center justify-center">
+                                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin mr-2"></div>
+                                {tChecker('checkingButton')}
+                              </div>
+                            ) : (
+                              t('checkVignette')
+                            )}
                           </button>
-                        </div>
+                        </form>
 
-                        {/* Mock Result */}
-                        <div className="mt-6 p-4 bg-green-50 rounded-lg border border-green-200">
-                          <div className="flex items-center">
-                            <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
-                            <span className="text-sm font-medium text-green-800">
-                              {t('vignetteValid')}
-                            </span>
+                        {/* Result Display */}
+                        {result && (
+                          <div className="mt-6">
+                            {result.ok && result.vignette ? (
+                              <div className="p-4 bg-green-50 rounded-lg border border-green-200">
+                                <div className="flex items-center mb-2">
+                                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                                  <span className="text-sm font-medium text-green-800">
+                                    {t('vignetteValid')}
+                                  </span>
+                                </div>
+                                {result.vignette.validityDateToFormated && (
+                                  <div className="mt-2 text-xs text-green-700">
+                                    {tChecker('fields.validTo')}: {result.vignette.validityDateToFormated}
+                                  </div>
+                                )}
+                              </div>
+                            ) : (
+                              <div className="p-4 bg-red-50 rounded-lg border border-red-200">
+                                <div className="flex items-center">
+                                  <XCircleIcon className="h-5 w-5 text-red-500 mr-2" />
+                                  <span className="text-sm font-medium text-red-800">
+                                    {tChecker('noValidVignette')}
+                                  </span>
+                                </div>
+                              </div>
+                            )}
                           </div>
-                          <div className="mt-2 text-xs text-green-700">
-                            {t('validityUntil')}
-                          </div>
-                        </div>
+                        )}
                       </div>
                     </div>
 

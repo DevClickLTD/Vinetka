@@ -5,7 +5,6 @@ import ServicesLoop from "../../components/servicesLoop";
 import { getServices } from "../../services/services";
 import { Suspense } from "react";
 import CardsRow from "@/components/CardsRow";
-import CtasRow from "@/components/CtasRow";
 import VignetteCheckerCTA from "@/components/VignetteCheckerCTA";
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -90,7 +89,6 @@ export default async function Home() {
       </section>
       <CTA />
       <VignetteCheckerCTA />
-      <CtasRow />
       <CardsRow />
       <Lastestposts />
     </>

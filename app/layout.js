@@ -28,6 +28,11 @@ export async function generateMetadata() {
     },
     description:
       "Винетка онлайн - Информация за електронна винетка",
+    icons: {
+      icon: [
+        { url: '/favicon.svg', type: 'image/svg+xml' },
+      ],
+    },
     openGraph: {
       title: "Винетка онлайн - Информация за електронна винетка",
       description:
