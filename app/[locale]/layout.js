@@ -39,6 +39,13 @@ export async function generateMetadata({ params }) {
       languages: {
         bg: '/bg',
         en: '/en',
+        de: '/de',
+        ru: '/ru',
+        tr: '/tr',
+        gr: '/gr',
+        srb: '/srb',
+        ro: '/ro',
+        mk: '/mk',
       },
     },
   };

@@ -4,37 +4,37 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-import { getTranslations } from 'next-intl/server';
-import ContactForm from '@/components/contactForm';
+import { getTranslations } from "next-intl/server";
+import ContactForm from "@/components/contactForm";
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 export async function generateMetadata() {
-  const t = await getTranslations('contact');
-  
+  const t = await getTranslations("contact");
+
   return {
-    title: t('pageTitle'),
-    description: t('pageDescription'),
+    title: t("pageTitle"),
+    description: t("pageDescription"),
   };
 }
 
 export default async function ContactPage() {
-  const t = await getTranslations('contact');
-  
+  const t = await getTranslations("contact");
+
   const officeContacts = [
     {
-      type: t('officeType'),
+      type: t("officeType"),
       contacts: [
         {
           icon: BuildingOffice2Icon,
-          label: t('address'),
-          value: "гр. София, ул. \"Майор Юрий Гагарин\" 30Б",
+          label: t("address"),
+          value: 'гр. София, ул. "Майор Юрий Гагарин" 30Б',
           href: null,
         },
         {
           icon: EnvelopeIcon,
-          label: t('email'),
-          value: "hq@insurance.bg",
-          href: "mailto:hq@insurance.bg",
+          label: t("email"),
+          value: "hello@vinetka.bg",
+          href: "mailto:hello@vinetka.bg",
         },
       ],
     },
@@ -46,7 +46,7 @@ export default async function ContactPage() {
       <div className="isolate bg-white px-6 py-4 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            {t('title')}
+            {t("title")}
           </h2>
           {/* <p className="mt-2 text-lg leading-8 text-gray-600">
             Aute magna irure deserunt veniam aliqua magna enim voluptate.

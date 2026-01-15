@@ -65,6 +65,13 @@ export async function generateMetadata() {
       languages: {
         bg: "/bg",
         en: "/en",
+        de: "/de",
+        ru: "/ru",
+        tr: "/tr",
+        gr: "/gr",
+        srb: "/srb",
+        ro: "/ro",
+        mk: "/mk",
       },
     },
   };
@@ -94,22 +101,72 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LegalService",
-              name: "Lorem ipsum dolor sit amet",
+              "@type": "Organization",
+              name: "Vinetka.bg",
               description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-              url: "https://example.bg",
+                "Информация за електронни винетки в България. Проверка на винетка, цени и пълна информация за всички видове електронни винетки - уикенд, седмична, месечна, тримесечна и годишна.",
+              url: "https://vinetka.bg",
+              logo: "https://vinetka.bg/vinetka.bg-logo.png",
+              image: "https://vinetka.bg/default.webp",
+              email: "hello@vinetka.bg",
+              telephone: "+359876995177",
+              sameAs: [
+                "https://vinetka.bg",
+              ],
               contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+359XXXXXXXXX",
+                telephone: "+359876995177",
+                email: "hello@vinetka.bg",
                 contactType: "customer service",
+                areaServed: "BG",
+                availableLanguage: ["Bulgarian", "English", "German", "Russian", "Turkish", "Greek", "Serbian", "Romanian", "Macedonian"],
               },
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Example Street 123",
+                streetAddress: "ул. Майор Юрий Гагарин 30Б",
                 addressLocality: "София",
-                postalCode: "1000",
+                postalCode: "1113",
                 addressCountry: "BG",
+              },
+              areaServed: {
+                "@type": "Country",
+                name: "Bulgaria",
+              },
+              offers: {
+                "@type": "AggregateOffer",
+                priceCurrency: "BGN",
+                priceSpecification: [
+                  {
+                    "@type": "UnitPriceSpecification",
+                    name: "Уикенд винетка",
+                    price: "10.00",
+                    priceCurrency: "BGN",
+                  },
+                  {
+                    "@type": "UnitPriceSpecification",
+                    name: "Седмична винетка",
+                    price: "15.00",
+                    priceCurrency: "BGN",
+                  },
+                  {
+                    "@type": "UnitPriceSpecification",
+                    name: "Месечна винетка",
+                    price: "30.00",
+                    priceCurrency: "BGN",
+                  },
+                  {
+                    "@type": "UnitPriceSpecification",
+                    name: "Тримесечна винетка",
+                    price: "60.00",
+                    priceCurrency: "BGN",
+                  },
+                  {
+                    "@type": "UnitPriceSpecification",
+                    name: "Годишна винетка",
+                    price: "97.00",
+                    priceCurrency: "BGN",
+                  },
+                ],
               },
             }),
           }}
