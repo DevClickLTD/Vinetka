@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contactForm";
+import Script from "next/script";
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 export async function generateMetadata() {
@@ -14,11 +15,47 @@ export async function generateMetadata() {
   return {
     title: t("pageTitle"),
     description: t("pageDescription"),
+    alternates: {
+      canonical: "/contact",
+    },
   };
 }
 
 export default async function ContactPage() {
   const t = await getTranslations("contact");
+
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "@id": "https://vinetka.bg/bg/contact#contactpage",
+    "name": "Контакти - Vinetka.bg",
+    "description": "Свържете се с нас за въпроси относно електронни винетки, проверка на винетки и информация за пътни такси в България.",
+    "url": "https://vinetka.bg/bg/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Vinetka.bg",
+      "@id": "https://vinetka.bg/#organization"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Контакти",
+        "item": "https://vinetka.bg/bg/contact"
+      }
+    ]
+  };
 
   const officeContacts = [
     {
@@ -42,6 +79,22 @@ export default async function ContactPage() {
 
   return (
     <>
+      <Script
+        id="contact-page-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(contactPageSchema),
+        }}
+      />
+      
+      <Script
+        id="contact-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+      
       {/* <HeaderBreadcrumb title="Контакти" /> */}
       <div className="isolate bg-white px-6 py-4 sm:py-12 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">

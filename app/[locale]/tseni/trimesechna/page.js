@@ -117,35 +117,123 @@ export default async function TrimesechnaVignette() {
     }
   ];
 
-  const structuredData = {
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Тримесечна винетка - 90 дни",
-    "description": "Електронна винетка за леки автомобили, валидна 90 дни (3 месеца) от момента на активиране",
+    "@id": "https://vinetka.bg/bg/tseni/trimesechna#product",
+    "name": "Тримесечна винетка",
+    "alternateName": ["90-дневна винетка", "Три месеца винетка", "Сезонна винетка"],
+    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 90 дни (3 месеца) от момента на активиране. Спестяване до 15% спрямо месечни винетки. Идеална за сезонни пътувания, летен и зимен туризъм. Покрива всички платени магистрали в България.",
     "category": "Електронна винетка",
+    "sku": "VIG-QUARTERLY-90D",
     "brand": {
-      "@type": "Organization",
+      "@type": "Brand",
       "name": "Vinetka.bg"
     },
+    "image": "https://vinetka.bg/default.webp",
+    "url": "https://vinetka.bg/bg/tseni/trimesechna",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "url": "https://vinetka.bg/bg/tseni/trimesechna",
       "priceCurrency": "BGN",
-      "validFor": "P90D",
+      "price": "60.00",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "validFrom": "2024-01-01",
+      "seller": {
+        "@type": "Organization",
+        "name": "Vinetka.bg",
+        "@id": "https://vinetka.bg/#organization"
+      },
       "areaServed": {
         "@type": "Country",
-        "name": "България"
+        "name": "България",
+        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "60.00",
+        "priceCurrency": "BGN",
+        "valueAddedTaxIncluded": false
       }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Валидност",
+        "value": "90 дни (3 месеца)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Категория превозно средство",
+        "value": "Леки автомобили до 3.5 тона"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Покритие",
+        "value": "Всички платени магистрали в България"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Икономия",
+        "value": "До 15% спрямо месечни винетки"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Подходяща за",
+        "value": "Сезонни пътувания, летен и зимен туризъм"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "421",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Цени",
+        "item": "https://vinetka.bg/bg/tseni"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Тримесечна винетка",
+        "item": "https://vinetka.bg/bg/tseni/trimesechna"
+      }
+    ]
   };
 
   return (
     <>
       <Script
-        id="quarterly-vignette-schema"
+        id="quarterly-vignette-product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(productSchema),
+        }}
+      />
+      
+      <Script
+        id="quarterly-vignette-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       

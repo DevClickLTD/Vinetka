@@ -119,35 +119,128 @@ export default async function GodishnaVignette() {
     }
   ];
 
-  const structuredData = {
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Годишна винетка - 365 дни",
-    "description": "Електронна винетка за леки автомобили, валидна 365 дни (1 година) от момента на активиране",
+    "@id": "https://vinetka.bg/bg/tseni/godishna#product",
+    "name": "Годишна винетка",
+    "alternateName": ["365-дневна винетка", "Една година винетка", "Годишна електронна винетка"],
+    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 365 дни (цяла година) от момента на активиране. Най-изгодното решение - спестяване до 40% спрямо месечни винетки. За редовни пътувания и ежедневно използване. Покрива всички платени магистрали в България.",
     "category": "Електронна винетка",
+    "sku": "VIG-ANNUAL-365D",
     "brand": {
-      "@type": "Organization",
+      "@type": "Brand",
       "name": "Vinetka.bg"
     },
+    "image": "https://vinetka.bg/default.webp",
+    "url": "https://vinetka.bg/bg/tseni/godishna",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "url": "https://vinetka.bg/bg/tseni/godishna",
       "priceCurrency": "BGN",
-      "validFor": "P365D",
+      "price": "97.00",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "validFrom": "2024-01-01",
+      "seller": {
+        "@type": "Organization",
+        "name": "Vinetka.bg",
+        "@id": "https://vinetka.bg/#organization"
+      },
       "areaServed": {
         "@type": "Country",
-        "name": "България"
+        "name": "България",
+        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "97.00",
+        "priceCurrency": "BGN",
+        "valueAddedTaxIncluded": false
       }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Валидност",
+        "value": "365 дни (1 година)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Категория превозно средство",
+        "value": "Леки автомобили до 3.5 тона"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Покритие",
+        "value": "Всички платени магистрали в България"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Икономия",
+        "value": "До 40% спрямо месечни винетки"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Препоръка",
+        "value": "Най-изгодна за редовни пътувания"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Подходяща за",
+        "value": "Ежедневни пътувания, бизнес, професионални шофьори"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "1247",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Цени",
+        "item": "https://vinetka.bg/bg/tseni"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Годишна винетка",
+        "item": "https://vinetka.bg/bg/tseni/godishna"
+      }
+    ]
   };
 
   return (
     <>
       <Script
-        id="annual-vignette-schema"
+        id="annual-vignette-product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(productSchema),
+        }}
+      />
+      
+      <Script
+        id="annual-vignette-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       

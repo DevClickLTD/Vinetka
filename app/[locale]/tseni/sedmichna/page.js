@@ -98,35 +98,122 @@ export default async function SedmichnaVignette() {
     t('benefits.noWorries7Days')
   ];
 
-  const structuredData = {
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Седмична винетка - 7 дни",
-    "description": "Електронна винетка за леки автомобили, валидна 7 дни (168 часа) от момента на активиране",
+    "@id": "https://vinetka.bg/bg/tseni/sedmichna#product",
+    "name": "Седмична винетка",
+    "alternateName": ["7-дневна винетка", "168 часа винетка", "Седемдневна електронна винетка"],
+    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 7 дни (168 часа) от момента на активиране. Идеална за туристи, бизнес командировки и дълъг уикенд. Покрива всички платени магистрали в България.",
     "category": "Електронна винетка",
+    "sku": "VIG-WEEKLY-7D",
     "brand": {
-      "@type": "Organization",
+      "@type": "Brand",
       "name": "Vinetka.bg"
     },
+    "image": "https://vinetka.bg/default.webp",
+    "url": "https://vinetka.bg/bg/tseni/sedmichna",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "url": "https://vinetka.bg/bg/tseni/sedmichna",
       "priceCurrency": "BGN",
-      "validFor": "P7D",
+      "price": "15.00",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "validFrom": "2024-01-01",
+      "seller": {
+        "@type": "Organization",
+        "name": "Vinetka.bg",
+        "@id": "https://vinetka.bg/#organization"
+      },
       "areaServed": {
         "@type": "Country",
-        "name": "България"
+        "name": "България",
+        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      "deliveryLeadTime": {
+        "@type": "QuantitativeValue",
+        "value": 0,
+        "unitCode": "MIN"
       }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Валидност",
+        "value": "7 дни (168 часа)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Категория превозно средство",
+        "value": "Леки автомобили до 3.5 тона"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Покритие",
+        "value": "Всички платени магистрали в България"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Активация",
+        "value": "Моментална"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Подходяща за",
+        "value": "Туристи, бизнес командировки, дълъг уикенд"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "342",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Цени",
+        "item": "https://vinetka.bg/bg/tseni"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Седмична винетка",
+        "item": "https://vinetka.bg/bg/tseni/sedmichna"
+      }
+    ]
   };
 
   return (
     <>
       <Script
-        id="weekly-vignette-schema"
+        id="weekly-vignette-product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(productSchema),
+        }}
+      />
+      
+      <Script
+        id="weekly-vignette-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       

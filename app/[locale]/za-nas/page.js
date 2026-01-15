@@ -1,69 +1,73 @@
-import { getTranslations } from 'next-intl/server';
-import { Link } from '../../../lib/navigation';
-import { 
-  CheckCircleIcon, 
-  ShieldCheckIcon, 
+import { getTranslations } from "next-intl/server";
+import { Link } from "../../../lib/navigation";
+import {
+  CheckCircleIcon,
+  ShieldCheckIcon,
   UsersIcon,
   HeartIcon,
   LightBulbIcon,
-  TrophyIcon
+  TrophyIcon,
 } from "@heroicons/react/24/outline";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
-  const t = await getTranslations('aboutPage');
-  
+  const t = await getTranslations("aboutPage");
+
   return {
-    title: t('title'),
-    description: t('description'),
+    title: t("title"),
+    description: t("description"),
     openGraph: {
-      title: t('title'),
-      description: t('description'),
+      title: t("title"),
+      description: t("description"),
       images: [
         {
           url: "/default.webp",
           width: 1200,
           height: 630,
-          alt: t('title'),
+          alt: t("title"),
         },
       ],
       type: "website",
-      locale: locale === 'bg' ? 'bg_BG' : 'en_US',
+      locale: locale === "bg" ? "bg_BG" : "en_US",
     },
   };
 }
 
 export default async function AboutPage() {
-  const t = await getTranslations('aboutPage');
+  const t = await getTranslations("aboutPage");
 
   const values = [
     {
       icon: <ShieldCheckIcon className="w-8 h-8 text-[#803487]" />,
       title: "Lorem Ipsum",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     },
     {
       icon: <HeartIcon className="w-8 h-8 text-[#037672]" />,
       title: "Dolor Sit Amet",
-      description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      description:
+        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     },
     {
       icon: <LightBulbIcon className="w-8 h-8 text-[#803487]" />,
       title: "Consectetur",
-      description: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      description:
+        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     },
     {
       icon: <TrophyIcon className="w-8 h-8 text-[#037672]" />,
       title: "Adipiscing Elit",
-      description: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    }
+      description:
+        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    },
   ];
 
   const stats = [
     { value: "10,000+", label: "Lorem Ipsum" },
     { value: "99.9%", label: "Dolor Sit" },
     { value: "24/7", label: "Consectetur" },
-    { value: "5+", label: "Adipiscing" }
+    { value: "5+", label: "Adipiscing" },
   ];
 
   return (
@@ -76,11 +80,12 @@ export default async function AboutPage() {
               За нас
             </h1>
             <p className="mt-6 text-lg leading-8 text-white/90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
         </div>
-        
+
         {/* Background decoration */}
         <div
           className="absolute inset-0 -z-10 opacity-20"
@@ -99,9 +104,7 @@ export default async function AboutPage() {
                 <div className="text-4xl font-bold text-[#803487] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-600">
-                  {stat.label}
-                </div>
+                <div className="text-sm text-gray-600">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -114,18 +117,27 @@ export default async function AboutPage() {
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
             Lorem Ipsum Dolor Sit Amet
           </h2>
-          
+
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
             </p>
-            
+
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
             </p>
-            
+
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
             </p>
           </div>
         </div>
@@ -145,8 +157,8 @@ export default async function AboutPage() {
 
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="bg-white rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-300"
               >
                 <div className="flex items-center justify-center w-16 h-16 bg-gray-50 rounded-lg mb-4">
@@ -155,43 +167,10 @@ export default async function AboutPage() {
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">
                   {value.title}
                 </h3>
-                <p className="text-gray-600">
-                  {value.description}
-                </p>
+                <p className="text-gray-600">{value.description}</p>
               </div>
             ))}
           </div>
-        </div>
-      </div>
-
-      {/* Team Section */}
-      <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center mb-16">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Нашият екип
-          </h2>
-          <p className="mt-4 text-lg text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {[1, 2, 3].map((member) => (
-            <div key={member} className="text-center">
-              <div className="mx-auto w-48 h-48 bg-gradient-to-br from-[#803487] to-[#037672] rounded-full mb-6 flex items-center justify-center">
-                <UsersIcon className="w-24 h-24 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Lorem Ipsum
-              </h3>
-              <p className="text-[#803487] font-medium mb-3">
-                Dolor Sit Amet
-              </p>
-              <p className="text-gray-600 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          ))}
         </div>
       </div>
 
@@ -203,7 +182,8 @@ export default async function AboutPage() {
               Lorem ipsum dolor sit amet?
             </h2>
             <p className="mt-6 text-lg leading-8 text-white/90">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link

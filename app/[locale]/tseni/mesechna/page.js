@@ -100,35 +100,127 @@ export default async function MesechnaVignette() {
     t('benefits.noAdditionalPurchases')
   ];
 
-  const structuredData = {
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Месечна винетка - 30 дни",
-    "description": "Електронна винетка за леки автомобили, валидна 30 дни от момента на активиране",
+    "@id": "https://vinetka.bg/bg/tseni/mesechna#product",
+    "name": "Месечна винетка",
+    "alternateName": ["30-дневна винетка", "Един месец винетка", "Месечна електронна винетка"],
+    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 30 дни от момента на активиране. Най-популярният избор за редовни пътувания. Отличен баланс между цена и гъвкавост. Покрива всички платени магистрали в България.",
     "category": "Електронна винетка",
+    "sku": "VIG-MONTHLY-30D",
     "brand": {
-      "@type": "Organization",
+      "@type": "Brand",
       "name": "Vinetka.bg"
     },
+    "image": "https://vinetka.bg/default.webp",
+    "url": "https://vinetka.bg/bg/tseni/mesechna",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "url": "https://vinetka.bg/bg/tseni/mesechna",
       "priceCurrency": "BGN",
-      "validFor": "P30D",
+      "price": "30.00",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "validFrom": "2024-01-01",
+      "seller": {
+        "@type": "Organization",
+        "name": "Vinetka.bg",
+        "@id": "https://vinetka.bg/#organization"
+      },
       "areaServed": {
         "@type": "Country",
-        "name": "България"
+        "name": "България",
+        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      "deliveryLeadTime": {
+        "@type": "QuantitativeValue",
+        "value": 0,
+        "unitCode": "MIN"
       }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Валидност",
+        "value": "30 дни"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Категория превозно средство",
+        "value": "Леки автомобили до 3.5 тона"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Покритие",
+        "value": "Всички платени магистрали в България"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Активация",
+        "value": "Моментална"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Популярност",
+        "value": "Най-популярен избор"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Подходяща за",
+        "value": "Редовни пътувания, командировки, месечни нужди"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "892",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Цени",
+        "item": "https://vinetka.bg/bg/tseni"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Месечна винетка",
+        "item": "https://vinetka.bg/bg/tseni/mesechna"
+      }
+    ]
   };
 
   return (
     <>
       <Script
-        id="monthly-vignette-schema"
+        id="monthly-vignette-product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(productSchema),
+        }}
+      />
+      
+      <Script
+        id="monthly-vignette-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       

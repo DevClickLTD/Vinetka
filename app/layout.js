@@ -94,80 +94,177 @@ export default function RootLayout({ children }) {
         <NextTopLoader showSpinner={false} color="#803487" />
         <ImagePreloader />
         <main>{children}</main>
+        {/* Organization Schema */}
         <Script
-          id="structured-data"
+          id="structured-data-organization"
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
+              "@id": "https://vinetka.bg/#organization",
               name: "Vinetka.bg",
+              legalName: "Vinetka.bg - Информация за електронни винетки",
               description:
                 "Информация за електронни винетки в България. Проверка на винетка, цени и пълна информация за всички видове електронни винетки - уикенд, седмична, месечна, тримесечна и годишна.",
               url: "https://vinetka.bg",
-              logo: "https://vinetka.bg/vinetka.bg-logo.png",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://vinetka.bg/vinetka.bg-logo.png",
+                width: "250",
+                height: "60"
+              },
               image: "https://vinetka.bg/default.webp",
               email: "hello@vinetka.bg",
               telephone: "+359876995177",
+              foundingDate: "2024",
               sameAs: [
                 "https://vinetka.bg",
               ],
-              contactPoint: {
-                "@type": "ContactPoint",
-                telephone: "+359876995177",
-                email: "hello@vinetka.bg",
-                contactType: "customer service",
-                areaServed: "BG",
-                availableLanguage: ["Bulgarian", "English", "German", "Russian", "Turkish", "Greek", "Serbian", "Romanian", "Macedonian"],
-              },
+              contactPoint: [
+                {
+                  "@type": "ContactPoint",
+                  telephone: "+359876995177",
+                  email: "hello@vinetka.bg",
+                  contactType: "customer service",
+                  areaServed: "BG",
+                  availableLanguage: [
+                    {
+                      "@type": "Language",
+                      name: "Bulgarian",
+                      alternateName: "bg"
+                    },
+                    {
+                      "@type": "Language",
+                      name: "English",
+                      alternateName: "en"
+                    },
+                    {
+                      "@type": "Language",
+                      name: "German",
+                      alternateName: "de"
+                    },
+                    {
+                      "@type": "Language",
+                      name: "Russian",
+                      alternateName: "ru"
+                    }
+                  ],
+                  contactOption: "TollFree",
+                  hoursAvailable: {
+                    "@type": "OpeningHoursSpecification",
+                    dayOfWeek: [
+                      "Monday",
+                      "Tuesday",
+                      "Wednesday",
+                      "Thursday",
+                      "Friday"
+                    ],
+                    opens: "09:00",
+                    closes: "18:00"
+                  }
+                }
+              ],
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "ул. Майор Юрий Гагарин 30Б",
                 addressLocality: "София",
+                addressRegion: "София-град",
                 postalCode: "1113",
-                addressCountry: "BG",
+                addressCountry: "BG"
               },
-              areaServed: {
-                "@type": "Country",
-                name: "Bulgaria",
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "42.6977",
+                longitude: "23.3219"
               },
-              offers: {
-                "@type": "AggregateOffer",
-                priceCurrency: "BGN",
-                priceSpecification: [
-                  {
-                    "@type": "UnitPriceSpecification",
-                    name: "Уикенд винетка",
-                    price: "10.00",
-                    priceCurrency: "BGN",
-                  },
-                  {
-                    "@type": "UnitPriceSpecification",
-                    name: "Седмична винетка",
-                    price: "15.00",
-                    priceCurrency: "BGN",
-                  },
-                  {
-                    "@type": "UnitPriceSpecification",
-                    name: "Месечна винетка",
-                    price: "30.00",
-                    priceCurrency: "BGN",
-                  },
-                  {
-                    "@type": "UnitPriceSpecification",
-                    name: "Тримесечна винетка",
-                    price: "60.00",
-                    priceCurrency: "BGN",
-                  },
-                  {
-                    "@type": "UnitPriceSpecification",
-                    name: "Годишна винетка",
-                    price: "97.00",
-                    priceCurrency: "BGN",
-                  },
-                ],
+              areaServed: [
+                {
+                  "@type": "Country",
+                  name: "Bulgaria",
+                  sameAs: "https://en.wikipedia.org/wiki/Bulgaria"
+                }
+              ]
+            }),
+          }}
+        />
+        
+        {/* WebSite Schema with SearchAction */}
+        <Script
+          id="structured-data-website"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://vinetka.bg/#website",
+              url: "https://vinetka.bg",
+              name: "Vinetka.bg - Информация за електронни винетки",
+              description: "Проверка на винетка, цени и пълна информация за всички видове електронни винетки в България",
+              publisher: {
+                "@id": "https://vinetka.bg/#organization"
               },
+              inLanguage: ["bg", "en", "de", "ru", "tr", "el", "sr", "ro", "mk"],
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://vinetka.bg/bg/blog?search={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            }),
+          }}
+        />
+        
+        {/* LocalBusiness Schema */}
+        <Script
+          id="structured-data-localbusiness"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://vinetka.bg/#localbusiness",
+              name: "Vinetka.bg",
+              image: "https://vinetka.bg/default.webp",
+              description: "Информационен портал за електронни винетки в България с възможност за проверка на валидност и информация за цени",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "ул. Майор Юрий Гагарин 30Б",
+                addressLocality: "София",
+                addressRegion: "София-град",
+                postalCode: "1113",
+                addressCountry: "BG"
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "42.6977",
+                longitude: "23.3219"
+              },
+              url: "https://vinetka.bg",
+              telephone: "+359876995177",
+              email: "hello@vinetka.bg",
+              priceRange: "10 BGN - 97 BGN",
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  opens: "09:00",
+                  closes: "18:00"
+                }
+              ],
+              paymentAccepted: "Cash, Credit Card, Debit Card",
+              currenciesAccepted: "BGN"
             }),
           }}
         />

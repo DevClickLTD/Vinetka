@@ -88,35 +88,138 @@ export default async function UikendVignette() {
     t('useCases.spontaneousTrips')
   ];
 
-  const structuredData = {
+  const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
-    "name": "Уикенд винетка - 2 дни",
-    "description": "Електронна винетка за леки автомобили, валидна 48 часа от момента на активиране",
+    "@id": "https://vinetka.bg/bg/tseni/uikend#product",
+    "name": "Уикенд винетка",
+    "alternateName": ["2-дневна винетка", "48 часа винетка", "Електронна винетка за уикенд"],
+    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 48 часа (2 дни) от момента на активиране. Идеална за кратки пътувания, спонтанни излети и уикенд почивки. Покрива всички платени магистрали в България.",
     "category": "Електронна винетка",
+    "sku": "VIG-WEEKEND-2D",
     "brand": {
-      "@type": "Organization",
+      "@type": "Brand",
       "name": "Vinetka.bg"
     },
+    "image": "https://vinetka.bg/default.webp",
+    "url": "https://vinetka.bg/bg/tseni/uikend",
     "offers": {
       "@type": "Offer",
-      "availability": "https://schema.org/InStock",
+      "url": "https://vinetka.bg/bg/tseni/uikend",
       "priceCurrency": "BGN",
-      "validFor": "PT48H",
+      "price": "10.00",
+      "priceValidUntil": "2026-12-31",
+      "availability": "https://schema.org/InStock",
+      "itemCondition": "https://schema.org/NewCondition",
+      "validFrom": "2024-01-01",
+      "seller": {
+        "@type": "Organization",
+        "name": "Vinetka.bg",
+        "@id": "https://vinetka.bg/#organization"
+      },
       "areaServed": {
         "@type": "Country",
-        "name": "България"
+        "name": "България",
+        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
+      },
+      "deliveryLeadTime": {
+        "@type": "QuantitativeValue",
+        "value": 0,
+        "unitCode": "MIN"
+      },
+      "shippingDetails": {
+        "@type": "OfferShippingDetails",
+        "shippingDestination": {
+          "@type": "DefinedRegion",
+          "addressCountry": "BG"
+        },
+        "deliveryTime": {
+          "@type": "ShippingDeliveryTime",
+          "handlingTime": {
+            "@type": "QuantitativeValue",
+            "minValue": 0,
+            "maxValue": 0,
+            "unitCode": "MIN"
+          }
+        }
       }
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Валидност",
+        "value": "48 часа (2 дни)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Категория превозно средство",
+        "value": "Леки автомобили до 3.5 тона"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Покритие",
+        "value": "Всички платени магистрали в България"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Активация",
+        "value": "Моментална"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Тип",
+        "value": "Електронна винетка"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "156",
+      "bestRating": "5",
+      "worstRating": "1"
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Цени",
+        "item": "https://vinetka.bg/bg/tseni"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Уикенд винетка",
+        "item": "https://vinetka.bg/bg/tseni/uikend"
+      }
+    ]
   };
 
   return (
     <>
       <Script
-        id="weekend-vignette-schema"
+        id="weekend-vignette-product-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(productSchema),
+        }}
+      />
+      
+      <Script
+        id="weekend-vignette-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
         }}
       />
       

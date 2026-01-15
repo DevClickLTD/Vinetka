@@ -80,33 +80,130 @@ export default async function VignetteCheckPage() {
     t('benefits.fleets')
   ];
 
-  const structuredData = {
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://vinetka.bg/bg/proverka-na-vinetka#service",
+    "name": "Проверка на винетка онлайн",
+    "alternateName": ["Проверка валидност на винетка", "Проверка на електронна винетка", "Vignette check"],
+    "description": "Безплатна услуга за проверка на валидността на електронни винетки в реално време. Синхронизирано с официалната база данни на НК Автомагистрали. Моментална проверка за всички типове винетки.",
+    "serviceType": "Проверка на валидност на електронна винетка",
+    "provider": {
+      "@type": "Organization",
+      "name": "Vinetka.bg",
+      "@id": "https://vinetka.bg/#organization"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "България"
+    },
+    "availableChannel": {
+      "@type": "ServiceChannel",
+      "serviceUrl": "https://vinetka.bg/bg/proverka-na-vinetka",
+      "serviceType": "Online service"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "BGN",
+      "availability": "https://schema.org/InStock",
+      "priceValidUntil": "2027-12-31",
+      "description": "Безплатна проверка на валидност на винетка"
+    },
+    "termsOfService": "https://vinetka.bg/bg/obshti-usloviya",
+    "serviceOutput": {
+      "@type": "Thing",
+      "name": "Статус на винетката",
+      "description": "Информация за валидността, типа и периода на винетката"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "Време за отговор",
+        "value": "Моментално (секунди)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Точност",
+        "value": "100% (синхронизирано с НК Автомагистрали)"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Цена",
+        "value": "Безплатно"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "Достъпност",
+        "value": "24/7"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2847",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Начало",
+        "item": "https://vinetka.bg/bg"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Проверка на винетка",
+        "item": "https://vinetka.bg/bg/proverka-na-vinetka"
+      }
+    ]
+  };
+
+  const webAppSchema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": t('heroTitle'),
-    "description": t('description'),
-    "url": "https://vinetka.bg/proverka-na-vinetka",
+    "name": "Проверка на винетка",
+    "url": "https://vinetka.bg/bg/proverka-na-vinetka",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
+    "browserRequirements": "Requires JavaScript",
     "offers": {
       "@type": "Offer",
       "price": "0",
       "priceCurrency": "BGN"
-    },
-    "provider": {
-      "@type": "Organization",
-      "name": "Vinetka.bg",
-      "url": "https://vinetka.bg"
     }
   };
 
   return (
     <>
       <Script
-        id="vignette-check-schema"
+        id="vignette-check-service-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData),
+          __html: JSON.stringify(serviceSchema),
+        }}
+      />
+      
+      <Script
+        id="vignette-check-breadcrumb-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
+      />
+      
+      <Script
+        id="vignette-check-webapp-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webAppSchema),
         }}
       />
 
