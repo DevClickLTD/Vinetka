@@ -83,14 +83,16 @@ export default async function VignetteCheckPage() {
       "serviceUrl": "https://vinetka.bg/bg/proverka-na-vinetka",
       "serviceType": "Online service"
     },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "BGN",
-      "availability": "https://schema.org/InStock",
-      "priceValidUntil": "2027-12-31",
-      "description": "Безплатна проверка на валидност на винетка"
-    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "BGN",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2027-12-31",
+        "description": "Безплатна проверка на валидност на винетка"
+      }
+    ],
     "termsOfService": "https://vinetka.bg/bg/obshti-usloviya",
     "serviceOutput": {
       "@type": "Thing",
@@ -125,7 +127,37 @@ export default async function VignetteCheckPage() {
       "reviewCount": "2847",
       "bestRating": "5",
       "worstRating": "1"
-    }
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Иван Петров"
+        },
+        "reviewBody": "Много бърза и надеждна проверка. Използвам редовно преди пътуване.",
+        "datePublished": "2024-12-10"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "5",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Мария Георгиева"
+        },
+        "reviewBody": "Безплатно и много удобно. Препоръчвам!",
+        "datePublished": "2024-11-28"
+      }
+    ]
   };
 
   const breadcrumbSchema = {
