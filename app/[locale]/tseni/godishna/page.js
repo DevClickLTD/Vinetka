@@ -17,11 +17,14 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../../lib/seo-utils';
 import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 
+// ISR: Revalidate every 24 hours (prices rarely change)
+export const revalidate = 86400;
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices.annual');
   
-  return generateSEOMetadata({
+  const metadata = generateSEOMetadata({
     locale,
     path: 'tseni/godishna',
     title: t('pageTitle'),
@@ -37,6 +40,21 @@ export async function generateMetadata({ params }) {
       "годишно покритие винетка"
     ],
   });
+  
+  return {
+    ...metadata,
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+  };
 }
 
 export default async function GodishnaVignette({ params }) {

@@ -36,10 +36,10 @@ export default function HeroSection() {
             </div>
             <div className="mt-10 lg:mt-0 lg:w-1/2 lg:flex-shrink-0">
               <Image
-                src="/купи-винетка.jpg"
+                src="/купи-винетка.webp"
                 alt={t('title')}
                 width={608}
-                height={506}
+                height={507}
                 className="aspect-[6/5] w-full rounded-2xl object-cover"
                 priority
               />

@@ -4,6 +4,9 @@ import Script from "next/script";
 import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export async function generateMetadata() {
   const t = await getTranslations('tollTax');
   

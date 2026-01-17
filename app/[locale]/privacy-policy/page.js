@@ -1,6 +1,9 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from "../../../lib/navigation";
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export async function generateMetadata() {
   const t = await getTranslations('components.privacyPolicy');
   

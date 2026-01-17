@@ -18,6 +18,9 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getVignettePriceListSchema } from '../../../lib/schemas/productSchemas';
 
+// ISR: Revalidate every 24 hours (prices rarely change)
+export const revalidate = 86400;
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices');

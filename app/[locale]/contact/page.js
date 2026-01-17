@@ -9,6 +9,9 @@ import ContactForm from "@/components/contactForm";
 import Script from "next/script";
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export async function generateMetadata() {
   const t = await getTranslations("contact");
 

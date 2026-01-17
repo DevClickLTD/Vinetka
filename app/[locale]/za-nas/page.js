@@ -9,6 +9,9 @@ import {
   TrophyIcon,
 } from "@heroicons/react/24/outline";
 
+// Force static generation
+export const dynamic = 'force-static';
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations("aboutPage");

@@ -132,7 +132,9 @@ export default async function Blog({ searchParams, params }) {
                         width={380}
                         height={250}
                         alt={
-                          post.title.rendered || "Изображение към публикация"
+                          post.yoast_head_json?.og_image?.[0]?.alt || 
+                          `Изображение на статия: ${post.title.rendered}` ||
+                          "Изображение към публикация за винетки"
                         }
                         src={
                           post.yoast_head_json?.og_image?.[0]?.url ||

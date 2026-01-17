@@ -50,6 +50,7 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
+        'x-default': getCanonicalUrl('bg', ''),
         bg: getCanonicalUrl('bg', ''),
         en: getCanonicalUrl('en', ''),
         de: getCanonicalUrl('de', ''),

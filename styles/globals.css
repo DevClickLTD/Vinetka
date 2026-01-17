@@ -1,5 +1,5 @@
-/* Ensure Gutenberg styles are applied */
-@import url("https://vinetka.admin-panels.com/wp-includes/css/dist/block-library/style.min.css");
+/* Ensure Gutenberg styles are applied - LOCAL VERSION for better performance */
+@import "./wordpress-blocks.css";
 
 @import "./wordpress-generated.css";
 
