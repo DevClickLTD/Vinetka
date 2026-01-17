@@ -11,13 +11,19 @@ import {
   FaMapMarkedAlt
 } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
+import { generateSEOMetadata } from '../../../../lib/seo-utils';
+import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.weekend');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'tseni/uikend',
     title: t('title'),
     description: t('description'),
+    image: '/default.webp',
     keywords: [
       "уикенд винетка",
       "2 дни винетка",
@@ -27,35 +33,16 @@ export async function generateMetadata() {
       "спонтанни пътувания",
       "петък неделя винетка"
     ],
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('mainTitle'),
-        },
-      ],
-      locale: "bg_BG",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('title'),
-      description: t('description'),
-      images: ["/default.webp"],
-    },
-    alternates: {
-      canonical: "/tseni/uikend",
-    },
-  };
+  });
 }
 
-export default async function UikendVignette() {
+export default async function UikendVignette({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.weekend');
   const tCommon = await getTranslations('prices');
+  
+  // ✅ Product Schema
+  const productSchema = getVignetteProductSchema('weekend', locale);
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
@@ -87,98 +74,6 @@ export default async function UikendVignette() {
     t('useCases.businessTrips2Days'),
     t('useCases.spontaneousTrips')
   ];
-
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": "https://vinetka.bg/bg/tseni/uikend#product",
-    "name": "Уикенд винетка",
-    "alternateName": ["2-дневна винетка", "48 часа винетка", "Електронна винетка за уикенд"],
-    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 48 часа (2 дни) от момента на активиране. Идеална за кратки пътувания, спонтанни излети и уикенд почивки. Покрива всички платени магистрали в България.",
-    "category": "Електронна винетка",
-    "sku": "VIG-WEEKEND-2D",
-    "brand": {
-      "@type": "Brand",
-      "name": "Vinetka.bg"
-    },
-    "image": "https://vinetka.bg/default.webp",
-    "url": "https://vinetka.bg/bg/tseni/uikend",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://vinetka.bg/bg/tseni/uikend",
-      "priceCurrency": "BGN",
-      "price": "10.00",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "validFrom": "2024-01-01",
-      "seller": {
-        "@type": "Organization",
-        "name": "Vinetka.bg",
-        "@id": "https://vinetka.bg/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "България",
-        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
-      },
-      "deliveryLeadTime": {
-        "@type": "QuantitativeValue",
-        "value": 0,
-        "unitCode": "MIN"
-      },
-      "shippingDetails": {
-        "@type": "OfferShippingDetails",
-        "shippingDestination": {
-          "@type": "DefinedRegion",
-          "addressCountry": "BG"
-        },
-        "deliveryTime": {
-          "@type": "ShippingDeliveryTime",
-          "handlingTime": {
-            "@type": "QuantitativeValue",
-            "minValue": 0,
-            "maxValue": 0,
-            "unitCode": "MIN"
-          }
-        }
-      }
-    },
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "Валидност",
-        "value": "48 часа (2 дни)"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Категория превозно средство",
-        "value": "Леки автомобили до 3.5 тона"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Покритие",
-        "value": "Всички платени магистрали в България"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Активация",
-        "value": "Моментална"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Тип",
-        "value": "Електронна винетка"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "reviewCount": "156",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
-  };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

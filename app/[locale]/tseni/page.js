@@ -15,13 +15,19 @@ import {
 } from "react-icons/fa";
 
 import { getTranslations } from 'next-intl/server';
+import { generateSEOMetadata } from '../../../lib/seo-utils';
+import { getVignettePriceListSchema } from '../../../lib/schemas/productSchemas';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'tseni',
     title: t('title'),
     description: t('description'),
+    image: '/default.webp',
     keywords: [
       "цени винетки",
       "електронна винетка цена",
@@ -31,37 +37,18 @@ export async function generateMetadata() {
       "месечна винетка цена",
       "тримесечна винетка цена",
       "годишна винетка цена",
-      "виnetka.bg цени",
+      "vinetka.bg цени",
       "Bulgaria vignette prices"
     ],
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('title'),
-        },
-      ],
-      locale: "bg_BG",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('title'),
-      description: t('description'),
-      images: ["/default.webp"],
-    },
-    alternates: {
-      canonical: "/tseni",
-    },
-  };
+  });
 }
 
-export default async function tseni() {
+export default async function tseni({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices');
+  
+  // ✅ ItemList Schema за pricing page
+  const priceListSchema = getVignettePriceListSchema(locale);
   
   const vignetteTypes = [
     {
@@ -203,6 +190,14 @@ export default async function tseni() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(structuredData),
+        }}
+      />
+      
+      <Script
+        id="pricing-itemlist-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(priceListSchema),
         }}
       />
       

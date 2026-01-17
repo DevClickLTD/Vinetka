@@ -2,8 +2,10 @@ import Image from "next/image";
 import { Link } from "../../../lib/navigation";
 import { getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { getBlogListingSchema } from '../../../lib/schemas/blogSchemas';
+import Script from "next/script";
 
-export async function generateMetadata({ params }) {
+export async function generateMetadata({ params, searchParams }) {
   const { locale } = await params;
   
   // Hide blog for all locales except 'bg'
@@ -12,11 +14,36 @@ export async function generateMetadata({ params }) {
   }
   
   const t = await getTranslations('blog');
+  const page = (await searchParams).page;
+  const currentPage = parseInt(page) || 1;
   
-  return {
-    title: t('pageTitle'),
+  const baseUrl = 'https://vinetka.bg';
+  const blogUrl = `${baseUrl}/${locale}/blog`;
+  
+  // Get total pages for prev/next links
+  const response = await fetch(
+    `https://vinetka.admin-panels.com/wp-json/wp/v2/posts?page=${currentPage}&per_page=9&_fields=id`,
+    { next: { revalidate: 120 } }
+  );
+  const totalPages = response.ok ? Number(response.headers.get("x-wp-totalpages")) || 1 : 1;
+  
+  const metadata = {
+    title: currentPage > 1 ? `${t('pageTitle')} - Страница ${currentPage}` : t('pageTitle'),
     description: t('pageDescription'),
+    alternates: {
+      canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,
+    },
   };
+  
+  // Add prev/next links for pagination
+  if (currentPage > 1) {
+    metadata.alternates.prev = currentPage === 2 ? blogUrl : `${blogUrl}?page=${currentPage - 1}`;
+  }
+  if (currentPage < totalPages) {
+    metadata.alternates.next = `${blogUrl}?page=${currentPage + 1}`;
+  }
+  
+  return metadata;
 }
 
 export default async function Blog({ searchParams, params }) {
@@ -51,8 +78,18 @@ export default async function Blog({ searchParams, params }) {
   const totalPagesHeader = response.headers.get("x-wp-totalpages");
   const totalPages = Number(totalPagesHeader) || 1;
 
+  // ✅ Blog Listing Schema with Pagination
+  const blogListingSchema = getBlogListingSchema(posts, currentPage, totalPages, locale);
+
   return (
     <>
+      <Script
+        id="blog-listing-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(blogListingSchema),
+        }}
+      />
       <div className="bg-white">
         <div className="mx-auto max-w-10/10 py-0 sm:px-6 sm:py-0 lg:px-0">
           <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-12 text-center shadow-2xl sm:px-12">

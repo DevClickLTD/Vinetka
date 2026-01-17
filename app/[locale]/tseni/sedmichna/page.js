@@ -12,13 +12,19 @@ import {
   FaPlane
 } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
+import { generateSEOMetadata } from '../../../../lib/seo-utils';
+import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.weekly');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'tseni/sedmichna',
     title: t('pageTitle'),
     description: t('pageDescription'),
+    image: '/default.webp',
     keywords: [
       "седмична винетка",
       "7 дни винетка",
@@ -28,34 +34,15 @@ export async function generateMetadata() {
       "бизнес винетка",
       "командировка винетка"
     ],
-    openGraph: {
-      title: t('pageTitle'),
-      description: t('pageDescription'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('title'),
-        },
-      ],
-      locale: "bg_BG",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('pageTitle'),
-      description: t('pageDescription'),
-      images: ["/default.webp"],
-    },
-    alternates: {
-      canonical: "/tseni/sedmichna",
-    },
-  };
+  });
 }
 
-export default async function SedmichnaVignette() {
+export default async function SedmichnaVignette({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.weekly');
+  
+  // ✅ Product Schema
+  const productSchema = getVignetteProductSchema('weekly', locale);
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
@@ -97,82 +84,6 @@ export default async function SedmichnaVignette() {
     t('benefits.excellentValue'),
     t('benefits.noWorries7Days')
   ];
-
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": "https://vinetka.bg/bg/tseni/sedmichna#product",
-    "name": "Седмична винетка",
-    "alternateName": ["7-дневна винетка", "168 часа винетка", "Седемдневна електронна винетка"],
-    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 7 дни (168 часа) от момента на активиране. Идеална за туристи, бизнес командировки и дълъг уикенд. Покрива всички платени магистрали в България.",
-    "category": "Електронна винетка",
-    "sku": "VIG-WEEKLY-7D",
-    "brand": {
-      "@type": "Brand",
-      "name": "Vinetka.bg"
-    },
-    "image": "https://vinetka.bg/default.webp",
-    "url": "https://vinetka.bg/bg/tseni/sedmichna",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://vinetka.bg/bg/tseni/sedmichna",
-      "priceCurrency": "BGN",
-      "price": "15.00",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "validFrom": "2024-01-01",
-      "seller": {
-        "@type": "Organization",
-        "name": "Vinetka.bg",
-        "@id": "https://vinetka.bg/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "България",
-        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
-      },
-      "deliveryLeadTime": {
-        "@type": "QuantitativeValue",
-        "value": 0,
-        "unitCode": "MIN"
-      }
-    },
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "Валидност",
-        "value": "7 дни (168 часа)"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Категория превозно средство",
-        "value": "Леки автомобили до 3.5 тона"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Покритие",
-        "value": "Всички платени магистрали в България"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Активация",
-        "value": "Моментална"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Подходяща за",
-        "value": "Туристи, бизнес командировки, дълъг уикенд"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "342",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
-  };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

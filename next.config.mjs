@@ -26,6 +26,7 @@ const nextConfig = {
     minimumCacheTTL: 60 * 60 * 24, // 24 часа кеширане
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
+    qualities: [50, 75, 85, 90, 100], // Конфигурация за качество на изображенията
   },
   poweredByHeader: false, // Премахваме X-Powered-By хедъра
   reactStrictMode: true,

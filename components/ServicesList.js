@@ -15,14 +15,22 @@ export default function ServicesList({ services }) {
   useEffect(() => {
     if (!services || services.length === 0) return;
 
+    // Копираме текущата референция за cleanup
+    const currentRefs = serviceRefs.current;
+
     // Настройваме IntersectionObserver за lazy loading
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           const index = parseInt(entry.target.dataset.index, 10);
 
-          if (entry.isIntersecting && !visibleServices.includes(index)) {
-            setVisibleServices((prev) => [...prev, index]);
+          if (entry.isIntersecting) {
+            setVisibleServices((prev) => {
+              if (!prev.includes(index)) {
+                return [...prev, index];
+              }
+              return prev;
+            });
           }
         });
       },
@@ -30,7 +38,7 @@ export default function ServicesList({ services }) {
     );
 
     // Наблюдаваме всички елементи на услугите, които са добавени в serviceRefs
-    Object.entries(serviceRefs.current).forEach(([index, ref]) => {
+    Object.entries(currentRefs).forEach(([index, ref]) => {
       if (ref) {
         observer.observe(ref);
       }
@@ -40,7 +48,7 @@ export default function ServicesList({ services }) {
     setVisibleServices([0, 1]);
 
     return () => {
-      Object.values(serviceRefs.current).forEach((ref) => {
+      Object.values(currentRefs).forEach((ref) => {
         if (ref) {
           observer.unobserve(ref);
         }

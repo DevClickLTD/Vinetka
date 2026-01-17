@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '../lib/navigation';
+import Image from 'next/image';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -101,11 +102,12 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-6 pt-16 pb-8 sm:pt-24 lg:px-8 lg:pt-32">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div>
-            <img
+            <Image
               alt="Vinetka.bg лого"
               src="/vinetka.bg-logo.png"
               width={180}
               height={40}
+              priority
             />
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">

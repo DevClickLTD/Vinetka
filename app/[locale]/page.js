@@ -9,6 +9,7 @@ import VignetteCheckerCTA from "@/components/VignetteCheckerCTA";
 import FAQ from "@/components/FAQ";
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
+import Script from "next/script";
 
 const CTA = dynamic(() => import("../../components/cta"), { ssr: true });
 const Clients = dynamic(() => import("../../components/clients"), { ssr: true });
@@ -19,14 +20,19 @@ const Lastestposts = dynamic(() => import("../../components/latestposts"), {
 // Добавяне на ISR ревалидиране на всеки час
 export const revalidate = 3600;
 
+import { generateSEOMetadata } from '../../lib/seo-utils';
+
 // Generate metadata using translations
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('meta');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: '',
     title: t('title'),
     description: t('description'),
+    image: '/default.webp',
     keywords: [
       "винетка онлайн",
       "електронна винетка", 
@@ -37,32 +43,58 @@ export async function generateMetadata({ params }) {
       "buy vignette",
       "vignette"
     ],
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('title'),
-        },
-      ],
-      locale: locale === 'bg' ? 'bg_BG' : 'en_US',
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('title'),
-      description: t('description'),
-      images: ["/default.webp"],
-    },
-  };
+  });
 }
 
-export default async function Home() {
+export default async function Home({ params }) {
+  const { locale } = await params;
   const allServices = await getServices();
   const t = await getTranslations('home');
+  const metaT = await getTranslations('meta');
+
+  // ✅ WebPage Schema за homepage
+  const webPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `https://vinetka.bg/${locale}#webpage`,
+    "url": `https://vinetka.bg/${locale}`,
+    "name": metaT('title'),
+    "description": metaT('description'),
+    "inLanguage": locale === 'bg' ? 'bg-BG' : `${locale}-${locale.toUpperCase()}`,
+    "isPartOf": {
+      "@type": "WebSite",
+      "@id": "https://vinetka.bg/#website"
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://vinetka.bg/default.webp"
+    },
+    "datePublished": "2024-01-01T00:00:00+00:00",
+    "dateModified": new Date().toISOString(),
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": metaT('title'),
+        "item": `https://vinetka.bg/${locale}`
+      }]
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": locale === 'bg' ? "Електронни винетки" : "Electronic Vignettes"
+      },
+      {
+        "@type": "Service",
+        "name": locale === 'bg' ? "Продажба на винетки" : "Vignette Sales"
+      }
+    ],
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": ["h1", "h2", ".hero-description"]
+    }
+  };
 
   // FAQ данни за винетки
   const faqs = [
@@ -102,6 +134,13 @@ export default async function Home() {
 
   return (
     <>
+      <Script
+        id="webpage-schema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webPageSchema),
+        }}
+      />
       <WebVitals />
       <HeroSection />
       {/* <Incentives /> */}

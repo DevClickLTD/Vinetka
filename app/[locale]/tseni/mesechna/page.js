@@ -13,13 +13,19 @@ import {
   FaStar
 } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
+import { generateSEOMetadata } from '../../../../lib/seo-utils';
+import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.monthly');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'tseni/mesechna',
     title: t('pageTitle'),
     description: t('pageDescription'),
+    image: '/default.webp',
     keywords: [
       "месечна винетка",
       "30 дни винетка",
@@ -29,34 +35,15 @@ export async function generateMetadata() {
       "популярна винетка",
       "командировки винетка"
     ],
-    openGraph: {
-      title: t('pageTitle'),
-      description: t('pageDescription'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('title'),
-        },
-      ],
-      locale: "bg_BG",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('pageTitle'),
-      description: t('pageDescription'),
-      images: ["/default.webp"],
-    },
-    alternates: {
-      canonical: "/tseni/mesechna",
-    },
-  };
+  });
 }
 
-export default async function MesechnaVignette() {
+export default async function MesechnaVignette({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.monthly');
+  
+  // ✅ Product Schema
+  const productSchema = getVignetteProductSchema('monthly', locale);
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
@@ -99,87 +86,6 @@ export default async function MesechnaVignette() {
     t('benefits.instantActivation'),
     t('benefits.noAdditionalPurchases')
   ];
-
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": "https://vinetka.bg/bg/tseni/mesechna#product",
-    "name": "Месечна винетка",
-    "alternateName": ["30-дневна винетка", "Един месец винетка", "Месечна електронна винетка"],
-    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 30 дни от момента на активиране. Най-популярният избор за редовни пътувания. Отличен баланс между цена и гъвкавост. Покрива всички платени магистрали в България.",
-    "category": "Електронна винетка",
-    "sku": "VIG-MONTHLY-30D",
-    "brand": {
-      "@type": "Brand",
-      "name": "Vinetka.bg"
-    },
-    "image": "https://vinetka.bg/default.webp",
-    "url": "https://vinetka.bg/bg/tseni/mesechna",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://vinetka.bg/bg/tseni/mesechna",
-      "priceCurrency": "BGN",
-      "price": "30.00",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "validFrom": "2024-01-01",
-      "seller": {
-        "@type": "Organization",
-        "name": "Vinetka.bg",
-        "@id": "https://vinetka.bg/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "България",
-        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
-      },
-      "deliveryLeadTime": {
-        "@type": "QuantitativeValue",
-        "value": 0,
-        "unitCode": "MIN"
-      }
-    },
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "Валидност",
-        "value": "30 дни"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Категория превозно средство",
-        "value": "Леки автомобили до 3.5 тона"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Покритие",
-        "value": "Всички платени магистрали в България"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Активация",
-        "value": "Моментална"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Популярност",
-        "value": "Най-популярен избор"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Подходяща за",
-        "value": "Редовни пътувания, командировки, месечни нужди"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "892",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
-  };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

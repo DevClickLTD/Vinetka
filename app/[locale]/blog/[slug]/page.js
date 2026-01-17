@@ -2,6 +2,9 @@ import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
+import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils';
+import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
+import Script from "next/script";
 
 // Добавяне на ISR ревалидиране на всеки час
 export const revalidate = 3600;
@@ -26,16 +29,21 @@ export async function generateMetadata({ params }) {
   const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
   const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
+  // ✅ ПОПРАВКА: Използвай абсолютен canonical и OG image
+  const canonicalUrl = meta.canonical || getCanonicalUrl(locale, `blog/${slug}`);
+  const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
+
   return {
     title: meta.title,
     description: meta.description,
     openGraph: {
       title: meta.og_title,
       description: meta.og_description,
-      images: ogImage ? [{ url: ogImage }] : [],
+      url: canonicalUrl,
+      images: [{ url: absoluteOgImage, width: ogImageWidth, height: ogImageHeight }],
     },
     alternates: {
-      canonical: meta.canonical,
+      canonical: canonicalUrl,
     },
   };
 }
@@ -61,8 +69,18 @@ export default async function PostPage({ params }) {
     const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
     const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
+    // ✅ BlogPosting Schema
+    const blogPostingSchema = getBlogPostingSchema(post[0], locale);
+
     return (
       <>
+        <Script
+          id="blog-posting-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(blogPostingSchema),
+          }}
+        />
         {/* Hero Section */}
         <div className="bg-white">
           <div className="mx-auto max-w-10/10 py-0 sm:px-6 sm:py-0 lg:px-0">

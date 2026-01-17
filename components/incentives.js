@@ -57,12 +57,13 @@ export default function Incentives() {
               <div key={incentive.name} className="sm:flex lg:block">
                 <div className="sm:shrink-0">
                   <div className="h-14 w-14 flex items-center justify-center rounded-full bg-[#803487]">
-                    <img
+                    <Image
                       alt={incentive.name}
                       src={incentive.imageSrc}
+                      width={40}
+                      height={40}
                       className="h-10 w-10"
                       style={{ filter: "brightness(0) invert(1)" }}
-                      loading="lazy"
                     />
                   </div>
                 </div>

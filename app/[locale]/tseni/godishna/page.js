@@ -14,13 +14,19 @@ import {
   FaShieldAlt
 } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
+import { generateSEOMetadata } from '../../../../lib/seo-utils';
+import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.annual');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'tseni/godishna',
     title: t('pageTitle'),
     description: t('pageDescription'),
+    image: '/default.webp',
     keywords: [
       "годишна винетка",
       "365 дни винетка",
@@ -30,34 +36,15 @@ export async function generateMetadata() {
       "спестяване 40%",
       "годишно покритие винетка"
     ],
-    openGraph: {
-      title: t('pageTitle'),
-      description: t('pageDescription'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('title'),
-        },
-      ],
-      locale: "bg_BG",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('pageTitle'),
-      description: t('pageDescription'),
-      images: ["/default.webp"],
-    },
-    alternates: {
-      canonical: "/tseni/godishna",
-    },
-  };
+  });
 }
 
-export default async function GodishnaVignette() {
+export default async function GodishnaVignette({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('prices.annual');
+  
+  // ✅ Product Schema
+  const productSchema = getVignetteProductSchema('annual', locale);
   
   const features = [
     {
@@ -118,88 +105,6 @@ export default async function GodishnaVignette() {
       convenience: t('comparison.annualConvenience')
     }
   ];
-
-  const productSchema = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": "https://vinetka.bg/bg/tseni/godishna#product",
-    "name": "Годишна винетка",
-    "alternateName": ["365-дневна винетка", "Една година винетка", "Годишна електронна винетка"],
-    "description": "Електронна винетка за леки автомобили до 3.5 тона, валидна 365 дни (цяла година) от момента на активиране. Най-изгодното решение - спестяване до 40% спрямо месечни винетки. За редовни пътувания и ежедневно използване. Покрива всички платени магистрали в България.",
-    "category": "Електронна винетка",
-    "sku": "VIG-ANNUAL-365D",
-    "brand": {
-      "@type": "Brand",
-      "name": "Vinetka.bg"
-    },
-    "image": "https://vinetka.bg/default.webp",
-    "url": "https://vinetka.bg/bg/tseni/godishna",
-    "offers": {
-      "@type": "Offer",
-      "url": "https://vinetka.bg/bg/tseni/godishna",
-      "priceCurrency": "BGN",
-      "price": "97.00",
-      "priceValidUntil": "2026-12-31",
-      "availability": "https://schema.org/InStock",
-      "itemCondition": "https://schema.org/NewCondition",
-      "validFrom": "2024-01-01",
-      "seller": {
-        "@type": "Organization",
-        "name": "Vinetka.bg",
-        "@id": "https://vinetka.bg/#organization"
-      },
-      "areaServed": {
-        "@type": "Country",
-        "name": "България",
-        "sameAs": "https://en.wikipedia.org/wiki/Bulgaria"
-      },
-      "priceSpecification": {
-        "@type": "PriceSpecification",
-        "price": "97.00",
-        "priceCurrency": "BGN",
-        "valueAddedTaxIncluded": false
-      }
-    },
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "Валидност",
-        "value": "365 дни (1 година)"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Категория превозно средство",
-        "value": "Леки автомобили до 3.5 тона"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Покритие",
-        "value": "Всички платени магистрали в България"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Икономия",
-        "value": "До 40% спрямо месечни винетки"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Препоръка",
-        "value": "Най-изгодна за редовни пътувания"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Подходяща за",
-        "value": "Ежедневни пътувания, бизнес, професионални шофьори"
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1247",
-      "bestRating": "5",
-      "worstRating": "1"
-    }
-  };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",

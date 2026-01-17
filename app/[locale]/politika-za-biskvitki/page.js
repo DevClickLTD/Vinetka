@@ -22,7 +22,7 @@ export default async function CookiesPolicy() {
         
         <p className="mb-4" dangerouslySetInnerHTML={{ __html: t('introduction') }} />
         <p className="mb-4">
-          <a href="http://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a>.
+          <a href="https://www.vinetka.bg" className="text-purple-600 hover:text-purple-800">www.vinetka.bg</a>.
         </p>
 
         <p className="mb-4">
