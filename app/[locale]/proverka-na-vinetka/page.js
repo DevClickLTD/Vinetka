@@ -120,43 +120,6 @@ export default async function VignetteCheckPage() {
         "name": "Достъпност",
         "value": "24/7"
       }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "2847",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Иван Петров"
-        },
-        "reviewBody": "Много бърза и надеждна проверка. Използвам редовно преди пътуване.",
-        "datePublished": "2024-12-10"
-      },
-      {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Мария Георгиева"
-        },
-        "reviewBody": "Безплатно и много удобно. Препоръчвам!",
-        "datePublished": "2024-11-28"
-      }
     ]
   };
 
