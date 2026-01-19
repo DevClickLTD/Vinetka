@@ -42,35 +42,35 @@ export default async function AboutPage() {
   const values = [
     {
       icon: <ShieldCheckIcon className="w-8 h-8 text-[#803487]" />,
-      title: "Lorem Ipsum",
+      title: "Сигурност и надеждност",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Работим с лицензиран Национален доставчик на услуги, гарантирайки пълна сигурност и валидност на всяка електронна винетка.",
     },
     {
       icon: <HeartIcon className="w-8 h-8 text-[#037672]" />,
-      title: "Dolor Sit Amet",
+      title: "Грижа за клиента",
       description:
-        "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Предлагаме бърза и удобна поддръжка, за да направим покупката на винетка максимално лесна и безпроблемна.",
     },
     {
       icon: <LightBulbIcon className="w-8 h-8 text-[#803487]" />,
-      title: "Consectetur",
+      title: "Иновативни решения",
       description:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        "Използваме съвременни технологии и дигитални платформи, за да предоставим най-добрата услуга на пазара.",
     },
     {
       icon: <TrophyIcon className="w-8 h-8 text-[#037672]" />,
-      title: "Adipiscing Elit",
+      title: "Доказано качество",
       description:
-        "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "Част сме от международна група с дългогодишен опит в толинг индустрията и високотехнологични решения.",
     },
   ];
 
   const stats = [
-    { value: "10,000+", label: "Lorem Ipsum" },
-    { value: "99.9%", label: "Dolor Sit" },
-    { value: "24/7", label: "Consectetur" },
-    { value: "5+", label: "Adipiscing" },
+    { value: "10,000+", label: "Доволни клиенти" },
+    { value: "99.9%", label: "Надеждност" },
+    { value: "24/7", label: "Онлайн достъп" },
+    { value: "5+", label: "Години опит" },
   ];
 
   return (
@@ -83,8 +83,7 @@ export default async function AboutPage() {
               За нас
             </h1>
             <p className="mt-6 text-lg leading-8 text-white/90">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Предоставяме надеждна платформа за покупка на електронни винетки и пътни такси, подкрепена от лицензиран национален доставчик.
             </p>
           </div>
         </div>
@@ -118,29 +117,16 @@ export default async function AboutPage() {
       <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8">
-            Lorem Ipsum Dolor Sit Amet
+            За платформата
           </h2>
 
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              vinetka.bg е платформа за бърза и сигурна покупка на електронни винетки и пътни такси, зад която стои Digital Policy Hub. Продажбата на винетки се осъществява от името на „Диджитол Смарт Инфраструктура" АД, опериращо под търговската марка Digitoll – Национален доставчик на услуги, лицензиран от Агенция „Пътна инфраструктура" (АПИ). Digitoll стъпва на българския пазар през 2019 г. и е част от международна група с мажоритарен собственик американската Concord, Inc. Дейността на Digitoll обхваща както продажбата на електронни винетки и маршрутни карти, така и високотехнологични толинг решения за тежкотоварни превозни средства над 3,5 т, базирани на съвременни сателитни технологии.
             </p>
 
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident, sunt in culpa qui officia deserunt mollit
-              anim id est laborum.
-            </p>
-
-            <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo.
+              Digital Policy Hub е компания с фокус върху развитието и управлението на дигитални платформи в силно регулирани сектори. Компанията съчетава експертиза в публичните политики, технологиите и потребителските услуги, като работи за прозрачни, ефективни и устойчиви дигитални решения в обществен интерес.
             </p>
           </div>
         </div>
@@ -154,7 +140,7 @@ export default async function AboutPage() {
               Нашите ценности
             </h2>
             <p className="mt-4 text-lg text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              Принципите, които ръководят работата ни всеки ден
             </p>
           </div>
 
@@ -182,11 +168,10 @@ export default async function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Lorem ipsum dolor sit amet?
+              Имате въпроси?
             </h2>
             <p className="mt-6 text-lg leading-8 text-white/90">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
+              Свържете се с нас или проверете валидността на вашата винетка онлайн.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
