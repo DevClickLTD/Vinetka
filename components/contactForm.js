@@ -4,6 +4,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import { useTranslations } from 'next-intl';
 import { Link } from "../lib/navigation";
+import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 
 const URL_FORM =
   "https://vinetka.admin-panels.com/wp-json/contact-form-7/v1/contact-forms/6/feedback";
@@ -13,6 +14,7 @@ export default function ContactForm() {
   const tCommon = useTranslations('common');
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
+  const { executeRecaptcha } = useGoogleReCaptcha();
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -28,29 +30,53 @@ export default function ContactForm() {
       return;
     }
 
+    // Verify reCAPTCHA
+    if (!executeRecaptcha) {
+      Swal.fire({
+        icon: "error",
+        title: "reCAPTCHA грешка",
+        text: "reCAPTCHA все още се зарежда. Моля, опитайте отново.",
+      });
+      return;
+    }
+
     setLoading(true);
 
-    const formData = new FormData();
-
-    const name = e.target.name.value;
-    const email = e.target.email.value;
-    const subject = e.target.subject.value;
-    const phoneNumber = e.target["phone-number"].value;
-    const message = e.target.message.value;
-
-    formData.append("_wpcf7_unit_tag", "43");
-    formData.append("your-name", name);
-    formData.append("your-email", email);
-    formData.append("your-subject", subject);
-    formData.append("your-tel", phoneNumber);
-    formData.append("your-message", message);
-
-    const reqOptions = {
-      method: "POST",
-      body: formData,
-    };
-
     try {
+      // Get reCAPTCHA token
+      const recaptchaToken = await executeRecaptcha("contact_form");
+
+      if (!recaptchaToken) {
+        Swal.fire({
+          icon: "error",
+          title: "reCAPTCHA грешка",
+          text: "Не можахме да потвърдим че не сте робот. Моля, опитайте отново.",
+        });
+        setLoading(false);
+        return;
+      }
+
+      const formData = new FormData();
+
+      const name = e.target.name.value;
+      const email = e.target.email.value;
+      const subject = e.target.subject.value;
+      const phoneNumber = e.target["phone-number"].value;
+      const message = e.target.message.value;
+
+      formData.append("_wpcf7_unit_tag", "43");
+      formData.append("your-name", name);
+      formData.append("your-email", email);
+      formData.append("your-subject", subject);
+      formData.append("your-tel", phoneNumber);
+      formData.append("your-message", message);
+      formData.append("g-recaptcha-response", recaptchaToken);
+
+      const reqOptions = {
+        method: "POST",
+        body: formData,
+      };
+
       const req = await fetch(URL_FORM, reqOptions);
       const response = await req.json();
 
