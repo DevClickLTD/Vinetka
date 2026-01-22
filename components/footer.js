@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '../lib/navigation';
 import Image from 'next/image';
@@ -39,15 +39,8 @@ export default function Footer() {
     social: [
       {
         name: "Facebook",
-        href: "https://www.facebook.com/vinetka.bg",
+        href: "https://www.facebook.com/people/Vinetkabg/61576137167980/",
         icon: FaFacebook,
-        target: "_blank",
-        rel: "noopener noreferrer",
-      },
-      {
-        name: "LinkedIn",
-        href: "https://www.linkedin.com/company/vinetka.bg",
-        icon: FaLinkedin,
         target: "_blank",
         rel: "noopener noreferrer",
       },
