@@ -11,7 +11,8 @@
     "blog": "Blog",
     "contact": "Contact",
     "vignetteChecker": "Vignette Check",
-    "tollTax": "Toll Tax"
+    "tollTax": "Toll Tax",
+    "buyVignette": "Buy Vignette"
   },
   "footer": {
     "sections": {
@@ -759,10 +760,11 @@
   },
   "components": {
     "hero": {
-      "title": "Online Vignette Information",
-      "subtitle": "Learn more about online vignettes easily and quickly on our website.",
+      "title": "Get your vignette online",
+      "subtitle": "Easy, fast and with secure payment",
       "ctaButton": "Get Started",
-      "learnMore": "Learn More"
+      "learnMore": "Learn More",
+      "buyButton": "Buy Vignette"
     },
     "cta": {
       "title": "Ready to get started?",

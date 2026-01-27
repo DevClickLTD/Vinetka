@@ -33,6 +33,19 @@ export default function HeroSection() {
                   {t('subtitle')}
                 </p>
               </div>
+              <div className="mt-10">
+                <a
+                  href="https://web.vinetka.bg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
+                >
+                  {t('buyButton')}
+                  <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                  </svg>
+                </a>
+              </div>
             </div>
             <div className="mt-10 lg:mt-0 lg:w-1/2 lg:flex-shrink-0">
               <Image

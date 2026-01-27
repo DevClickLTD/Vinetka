@@ -215,18 +215,14 @@ export default async function tseni({ params }) {
               {t('hero.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link
-                href="#pricing"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+              <a
+                href="https://web.vinetka.bg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
               >
-                {t('hero.viewPrices')}
-              </Link>
-              <Link
-                href="#benefits"
-                className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
-              >
-                {t('hero.benefits')} <span aria-hidden="true">→</span>
-              </Link>
+                Купи винетка
+              </a>
             </div>
           </div>
         </div>
@@ -389,12 +385,14 @@ export default async function tseni({ params }) {
               {t('ctaSection.subtitle')}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link
-                href="/services"
-                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+              <a
+                href="https://web.vinetka.bg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
               >
-                {t('ctaSection.buyButton')}
-              </Link>
+                Купи винетка
+              </a>
               <Link
                 href="/contact"
                 className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"

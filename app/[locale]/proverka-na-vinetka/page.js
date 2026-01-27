@@ -1,5 +1,6 @@
 import { Link } from "../../../lib/navigation";
 import VignetteChecker from "@/components/VignetteChecker";
+import ExpandableTextSection from "@/components/ExpandableTextSection";
 import Script from "next/script";
 import { 
   FaSearch, 
@@ -214,6 +215,23 @@ export default async function VignetteCheckPage() {
           </div>
         </div>
 
+        {/* Buy Vignette CTA */}
+        <div className="bg-white py-8">
+          <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
+            <a
+              href="https://web.vinetka.bg/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
+            >
+              Купи винетка
+              <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
         {/* Introduction Section */}
         <div className="bg-white py-16 sm:py-24">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -328,6 +346,9 @@ export default async function VignetteCheckPage() {
           </div>
         </div>
 
+        {/* Expandable Text Section */}
+        <ExpandableTextSection />
+
         {/* CTA Section */}
         <div className="bg-purple-900">
           <div className="mx-auto max-w-7xl px-6 py-16 sm:py-24 lg:px-8">
@@ -339,12 +360,14 @@ export default async function VignetteCheckPage() {
                 {t('ctaDescription')}
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <Link
-                  href="/services"
-                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"
+                <a
+                  href="https://web.vinetka.bg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
                 >
-                  {t('ctaBuyButton')}
-                </Link>
+                  Купи винетка
+                </a>
                 <Link
                   href="/tseni"
                   className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"

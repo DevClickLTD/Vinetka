@@ -11,7 +11,8 @@
     "blog": "Blog",
     "contact": "Kontakt",
     "vignetteChecker": "Vignetten-Prüfung",
-    "tollTax": "Mautgebühr"
+    "tollTax": "Mautgebühr",
+    "buyVignette": "Vignette kaufen"
   },
   "footer": {
     "sections": {

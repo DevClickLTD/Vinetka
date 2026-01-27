@@ -137,6 +137,19 @@ export default function Navigation() {
                     </Link>
                   </div>
                 ))}
+                <div className="flow-root pt-4 border-t border-gray-200">
+                  <a
+                    href="https://web.vinetka.bg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-x-2 rounded-md bg-[#803487] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#037672] transition-all duration-300"
+                  >
+                    {t('buyVignette')}
+                    <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                      <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                    </svg>
+                  </a>
+                </div>
               </div>
               {/* <div className="border-b border-gray-200">
                 <TabList className="-mb-px flex space-x-8 px-4">
@@ -313,8 +326,19 @@ export default function Navigation() {
                 </PopoverGroup>
               </div>
 
-              {/* Секция 3: Language Switcher */}
-              <div className="flex justify-end items-center">
+              {/* Секция 3: Buy Button + Language Switcher */}
+              <div className="flex justify-end items-center gap-x-4">
+                <a
+                  href="https://web.vinetka.bg/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden lg:inline-flex items-center gap-x-1.5 rounded-md bg-[#803487] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
+                >
+                  {t('buyVignette')}
+                  <svg className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                  </svg>
+                </a>
                 <LanguageSwitcher />
               </div>
             </div>
