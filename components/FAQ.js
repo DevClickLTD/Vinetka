@@ -27,7 +27,7 @@ export default function FAQ({
   faqs = [], 
   title = "Често задавани въпроси", 
   subtitle = "",
-  pageUrl = "https://vinetka.bg"
+  pageUrl = "https://www.vinetka.bg"
 }) {
   const [openIndex, setOpenIndex] = useState(null);
 

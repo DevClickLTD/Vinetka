@@ -167,7 +167,7 @@ export default async function tseni({ params }) {
     "provider": {
       "@type": "Organization",
       "name": "Vinetka.bg",
-      "url": "https://vinetka.bg"
+      "url": "https://www.vinetka.bg"
     },
     "areaServed": {
       "@type": "Country",

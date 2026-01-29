@@ -33,7 +33,7 @@ export async function generateMetadata({ params }) {
   const canonicalUrl = meta.canonical || getCanonicalUrl(locale, `blog/${slug}`);
   const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
 
-  const baseUrl = 'https://vinetka.bg';
+  const baseUrl = 'https://www.vinetka.bg';
   
   return {
     title: meta.title,

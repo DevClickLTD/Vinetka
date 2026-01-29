@@ -104,24 +104,24 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://vinetka.bg/#organization",
+              "@id": "https://www.vinetka.bg/#organization",
               name: "Vinetka.bg",
               legalName: "Vinetka.bg - Информация за електронни винетки",
               description:
                 "Информация за електронни винетки в България. Проверка на винетка, цени и пълна информация за всички видове електронни винетки - уикенд, седмична, месечна, тримесечна и годишна.",
-              url: "https://vinetka.bg",
+              url: "https://www.vinetka.bg",
               logo: {
                 "@type": "ImageObject",
-                url: "https://vinetka.bg/vinetka.bg-logo.png",
+                url: "https://www.vinetka.bg/vinetka.bg-logo.png",
                 width: "250",
                 height: "60"
               },
-              image: "https://vinetka.bg/default.webp",
+              image: "https://www.vinetka.bg/default.webp",
               email: "hello@vinetka.bg",
               telephone: "+359876995177",
               foundingDate: "2024",
               sameAs: [
-                "https://vinetka.bg",
+                "https://www.vinetka.bg",
               ],
               contactPoint: [
                 {
@@ -200,19 +200,19 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://vinetka.bg/#website",
-              url: "https://vinetka.bg",
+              "@id": "https://www.vinetka.bg/#website",
+              url: "https://www.vinetka.bg",
               name: "Vinetka.bg - Информация за електронни винетки",
               description: "Проверка на винетка, цени и пълна информация за всички видове електронни винетки в България",
               publisher: {
-                "@id": "https://vinetka.bg/#organization"
+                "@id": "https://www.vinetka.bg/#organization"
               },
               inLanguage: ["bg", "en", "de", "ru", "tr", "el", "sr", "ro", "mk"],
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://vinetka.bg/bg/blog?search={search_term_string}"
+                  urlTemplate: "https://www.vinetka.bg/bg/blog?search={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }
@@ -229,9 +229,9 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://vinetka.bg/#localbusiness",
+              "@id": "https://www.vinetka.bg/#localbusiness",
               name: "Vinetka.bg",
-              image: "https://vinetka.bg/default.webp",
+              image: "https://www.vinetka.bg/default.webp",
               description: "Информационен портал за електронни винетки в България с възможност за проверка на валидност и информация за цени",
               address: {
                 "@type": "PostalAddress",
@@ -246,7 +246,7 @@ export default function RootLayout({ children }) {
                 latitude: "42.6977",
                 longitude: "23.3219"
               },
-              url: "https://vinetka.bg",
+              url: "https://www.vinetka.bg",
               telephone: "+359876995177",
               email: "hello@vinetka.bg",
               priceRange: "10 BGN - 97 BGN",

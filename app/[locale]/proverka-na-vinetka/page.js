@@ -65,7 +65,7 @@ export default async function VignetteCheckPage() {
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "@id": "https://vinetka.bg/bg/proverka-na-vinetka#service",
+    "@id": "https://www.vinetka.bg/bg/proverka-na-vinetka#service",
     "name": "Проверка на винетка онлайн",
     "alternateName": ["Проверка валидност на винетка", "Проверка на електронна винетка", "Vignette check"],
     "description": "Безплатна услуга за проверка на валидността на електронни винетки в реално време. Синхронизирано с официалната база данни на НК Автомагистрали. Моментална проверка за всички типове винетки.",
@@ -73,7 +73,7 @@ export default async function VignetteCheckPage() {
     "provider": {
       "@type": "Organization",
       "name": "Vinetka.bg",
-      "@id": "https://vinetka.bg/#organization"
+      "@id": "https://www.vinetka.bg/#organization"
     },
     "areaServed": {
       "@type": "Country",
@@ -81,7 +81,7 @@ export default async function VignetteCheckPage() {
     },
     "availableChannel": {
       "@type": "ServiceChannel",
-      "serviceUrl": "https://vinetka.bg/bg/proverka-na-vinetka",
+      "serviceUrl": "https://www.vinetka.bg/bg/proverka-na-vinetka",
       "serviceType": "Online service"
     },
     "offers": [
@@ -94,7 +94,7 @@ export default async function VignetteCheckPage() {
         "description": "Безплатна проверка на валидност на винетка"
       }
     ],
-    "termsOfService": "https://vinetka.bg/bg/obshti-usloviya",
+    "termsOfService": "https://www.vinetka.bg/bg/obshti-usloviya",
     "serviceOutput": {
       "@type": "Thing",
       "name": "Статус на винетката",
@@ -132,13 +132,13 @@ export default async function VignetteCheckPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://vinetka.bg/bg"
+        "item": "https://www.vinetka.bg/bg"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Проверка на винетка",
-        "item": "https://vinetka.bg/bg/proverka-na-vinetka"
+        "item": "https://www.vinetka.bg/bg/proverka-na-vinetka"
       }
     ]
   };
@@ -147,7 +147,7 @@ export default async function VignetteCheckPage() {
     "@context": "https://schema.org",
     "@type": "WebApplication",
     "name": "Проверка на винетка",
-    "url": "https://vinetka.bg/bg/proverka-na-vinetka",
+    "url": "https://www.vinetka.bg/bg/proverka-na-vinetka",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
     "browserRequirements": "Requires JavaScript",

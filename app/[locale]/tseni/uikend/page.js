@@ -101,19 +101,19 @@ export default async function UikendVignette({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://vinetka.bg/bg"
+        "item": "https://www.vinetka.bg/bg"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Цени",
-        "item": "https://vinetka.bg/bg/tseni"
+        "item": "https://www.vinetka.bg/bg/tseni"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Уикенд винетка",
-        "item": "https://vinetka.bg/bg/tseni/uikend"
+        "item": "https://www.vinetka.bg/bg/tseni/uikend"
       }
     ]
   };

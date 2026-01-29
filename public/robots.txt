@@ -3,4 +3,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemaps
-Sitemap: https://vinetka.bg/sitemap.xml 
+Sitemap: https://www.vinetka.bg/sitemap.xml

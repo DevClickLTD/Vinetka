@@ -32,14 +32,14 @@ export default async function ContactPage() {
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://vinetka.bg/bg/contact#contactpage",
+    "@id": "https://www.vinetka.bg/bg/contact#contactpage",
     "name": "Контакти - Vinetka.bg",
     "description": "Свържете се с нас за въпроси относно електронни винетки, проверка на винетки и информация за пътни такси в България.",
-    "url": "https://vinetka.bg/bg/contact",
+    "url": "https://www.vinetka.bg/bg/contact",
     "mainEntity": {
       "@type": "Organization",
       "name": "Vinetka.bg",
-      "@id": "https://vinetka.bg/#organization"
+      "@id": "https://www.vinetka.bg/#organization"
     }
   };
 
@@ -51,13 +51,13 @@ export default async function ContactPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://vinetka.bg/bg"
+        "item": "https://www.vinetka.bg/bg"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Контакти",
-        "item": "https://vinetka.bg/bg/contact"
+        "item": "https://www.vinetka.bg/bg/contact"
       }
     ]
   };

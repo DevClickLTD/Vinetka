@@ -3,7 +3,7 @@ import { fetchAPI } from "../services/api";
 // Всички локали от приложението
 const locales = ['bg', 'en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
 const defaultLocale = 'bg';
-const baseUrl = 'https://vinetka.bg';
+const baseUrl = 'https://www.vinetka.bg';
 
 // Статични страници (без blog, той е динамичен)
 const staticPages = [

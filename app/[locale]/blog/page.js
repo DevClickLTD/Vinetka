@@ -17,7 +17,7 @@ export async function generateMetadata({ params, searchParams }) {
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;
   
-  const baseUrl = 'https://vinetka.bg';
+  const baseUrl = 'https://www.vinetka.bg';
   const blogUrl = `${baseUrl}/${locale}/blog`;
   
   // Get total pages for prev/next links
