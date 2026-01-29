@@ -8,6 +8,7 @@ import {
   LightBulbIcon,
   TrophyIcon,
 } from "@heroicons/react/24/outline";
+import { generateSEOMetadata } from '../../../lib/seo-utils';
 
 // Force static generation
 export const dynamic = 'force-static';
@@ -16,24 +17,13 @@ export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations("aboutPage");
 
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'za-nas',
     title: t("title"),
     description: t("description"),
-    openGraph: {
-      title: t("title"),
-      description: t("description"),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t("title"),
-        },
-      ],
-      type: "website",
-      locale: locale === "bg" ? "bg_BG" : "en_US",
-    },
-  };
+    image: '/default.webp',
+  });
 }
 
 export default async function AboutPage() {

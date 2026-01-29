@@ -39,7 +39,7 @@ export default function Footer() {
     social: [
       {
         name: "Facebook",
-        href: "https://www.facebook.com/people/Vinetkabg/61576137167980/",
+        href: "https://www.facebook.com/people/Vinetka-BG/61587222121605/",
         icon: FaFacebook,
         target: "_blank",
         rel: "noopener noreferrer",

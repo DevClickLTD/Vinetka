@@ -63,13 +63,14 @@ export async function generateMetadata() {
     alternates: {
       canonical: "/",
       languages: {
+        'x-default': "/bg",
         bg: "/bg",
         en: "/en",
         de: "/de",
         ru: "/ru",
         tr: "/tr",
-        gr: "/gr",
-        srb: "/srb",
+        el: "/el",
+        sr: "/sr",
         ro: "/ro",
         mk: "/mk",
       },

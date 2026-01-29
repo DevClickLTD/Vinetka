@@ -3,16 +3,21 @@ import { Link } from "../../../lib/navigation";
 import Script from "next/script";
 import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
+import { generateSEOMetadata } from '../../../lib/seo-utils';
 
 // Force static generation
 export const dynamic = 'force-static';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('tollTax');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'toll-taksi',
     title: t('title'),
     description: t('description'),
+    image: '/default.webp',
     keywords: [
       "тол такса",
       "тол такса онлайн",
@@ -24,30 +29,7 @@ export async function generateMetadata() {
       "тунел Топли дол",
       "платени пътища България"
     ],
-    openGraph: {
-      title: t('title'),
-      description: t('description'),
-      images: [
-        {
-          url: "/default.webp",
-          width: 1200,
-          height: 630,
-          alt: t('pageTitle'),
-        },
-      ],
-      locale: "bg_BG",
-      type: "website",
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: t('title'),
-      description: t('description'),
-      images: ["/default.webp"],
-    },
-    alternates: {
-      canonical: "/toll-taksa",
-    },
-  };
+  });
 }
 
 export default async function TolTaksa() {

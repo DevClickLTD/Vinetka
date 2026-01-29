@@ -1,16 +1,21 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from "../../../lib/navigation";
+import { generateSEOMetadata } from '../../../lib/seo-utils';
 
 // Force static generation
 export const dynamic = 'force-static';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('components.cookiePolicy');
   
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'politika-za-biskvitki',
     title: t('pageTitle'),
     description: t('pageDescription'),
-  };
+    image: '/default.webp',
+  });
 }
 
 export default async function CookiesPolicy() {

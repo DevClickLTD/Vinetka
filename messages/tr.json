@@ -695,7 +695,8 @@
         "title": "Online Vinyet Bilgisi",
         "subtitle": "Sitemizde online vinyet hakkında kolay ve hızlı bilgi edinin.",
         "ctaButton": "Hemen başla",
-        "learnMore": "Daha fazla bilgi"
+        "learnMore": "Daha fazla bilgi",
+        "buyButton": "Vinyet Satın Al"
       },
       "cta": {
         "title": "Başlamaya hazır mısınız?",

@@ -33,6 +33,8 @@ export async function generateMetadata({ params }) {
   const canonicalUrl = meta.canonical || getCanonicalUrl(locale, `blog/${slug}`);
   const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
 
+  const baseUrl = 'https://vinetka.bg';
+  
   return {
     title: meta.title,
     description: meta.description,
@@ -44,6 +46,18 @@ export async function generateMetadata({ params }) {
     },
     alternates: {
       canonical: canonicalUrl,
+      languages: {
+        'x-default': `${baseUrl}/bg/blog/${slug}`,
+        bg: `${baseUrl}/bg/blog/${slug}`,
+        en: `${baseUrl}/en/blog/${slug}`,
+        de: `${baseUrl}/de/blog/${slug}`,
+        ru: `${baseUrl}/ru/blog/${slug}`,
+        tr: `${baseUrl}/tr/blog/${slug}`,
+        el: `${baseUrl}/el/blog/${slug}`,
+        sr: `${baseUrl}/sr/blog/${slug}`,
+        ro: `${baseUrl}/ro/blog/${slug}`,
+        mk: `${baseUrl}/mk/blog/${slug}`,
+      },
     },
   };
 }

@@ -1,7 +1,7 @@
 import { fetchAPI } from "../services/api";
 
 // Всички локали от приложението
-const locales = ['bg', 'en', 'de', 'ru', 'tr', 'gr', 'srb', 'ro', 'mk'];
+const locales = ['bg', 'en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
 const defaultLocale = 'bg';
 const baseUrl = 'https://vinetka.bg';
 

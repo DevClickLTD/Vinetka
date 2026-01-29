@@ -7,21 +7,23 @@ import {
 import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contactForm";
 import Script from "next/script";
+import { generateSEOMetadata } from '../../../lib/seo-utils';
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 // Force static generation
 export const dynamic = 'force-static';
 
-export async function generateMetadata() {
+export async function generateMetadata({ params }) {
+  const { locale } = await params;
   const t = await getTranslations("contact");
 
-  return {
+  return generateSEOMetadata({
+    locale,
+    path: 'contact',
     title: t("pageTitle"),
     description: t("pageDescription"),
-    alternates: {
-      canonical: "/contact",
-    },
-  };
+    image: '/default.webp',
+  });
 }
 
 export default async function ContactPage() {
