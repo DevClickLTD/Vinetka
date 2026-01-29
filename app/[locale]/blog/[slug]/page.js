@@ -49,14 +49,7 @@ export async function generateMetadata({ params }) {
       languages: {
         'x-default': `${baseUrl}/bg/blog/${slug}`,
         bg: `${baseUrl}/bg/blog/${slug}`,
-        en: `${baseUrl}/en/blog/${slug}`,
-        de: `${baseUrl}/de/blog/${slug}`,
-        ru: `${baseUrl}/ru/blog/${slug}`,
-        tr: `${baseUrl}/tr/blog/${slug}`,
-        el: `${baseUrl}/el/blog/${slug}`,
-        sr: `${baseUrl}/sr/blog/${slug}`,
-        ro: `${baseUrl}/ro/blog/${slug}`,
-        mk: `${baseUrl}/mk/blog/${slug}`,
+        // Блогът е достъпен само на български - премахнати са hreflang линковете към несъществуващи езикови версии
       },
     },
   };

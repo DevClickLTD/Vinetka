@@ -35,14 +35,7 @@ export async function generateMetadata({ params, searchParams }) {
       languages: {
         'x-default': `${baseUrl}/bg/blog`,
         bg: `${baseUrl}/bg/blog`,
-        en: `${baseUrl}/en/blog`,
-        de: `${baseUrl}/de/blog`,
-        ru: `${baseUrl}/ru/blog`,
-        tr: `${baseUrl}/tr/blog`,
-        el: `${baseUrl}/el/blog`,
-        sr: `${baseUrl}/sr/blog`,
-        ro: `${baseUrl}/ro/blog`,
-        mk: `${baseUrl}/mk/blog`,
+        // Блогът е достъпен само на български - премахнати са hreflang линковете към несъществуващи езикови версии
       },
     },
   };
