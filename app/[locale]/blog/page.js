@@ -24,14 +24,17 @@ export async function generateMetadata({ params, searchParams }) {
   // Check if we have translated posts for this locale
   const hasTranslations = hasTranslatedPosts(locale);
   
+  // Build pagination suffix for URLs
+  const pageSuffix = currentPage > 1 ? `?page=${currentPage}` : '';
+  
   const metadata = {
     title: currentPage > 1 ? `${t('pageTitle')} - ${locale === 'en' ? 'Page' : 'Страница'} ${currentPage}` : t('pageTitle'),
     description: t('pageDescription'),
     alternates: {
       canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,
       languages: {
-        'x-default': `${baseUrl}/bg/blog`,
-        bg: `${baseUrl}/bg/blog`,
+        'x-default': `${baseUrl}/bg/blog${pageSuffix}`,
+        bg: `${baseUrl}/bg/blog${pageSuffix}`,
       },
     },
   };
@@ -41,7 +44,7 @@ export async function generateMetadata({ params, searchParams }) {
     const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
     supportedLocales.forEach(lang => {
       if (hasTranslatedPosts(lang)) {
-        metadata.alternates.languages[lang] = `${baseUrl}/${lang}/blog`;
+        metadata.alternates.languages[lang] = `${baseUrl}/${lang}/blog${pageSuffix}`;
       }
     });
   }
