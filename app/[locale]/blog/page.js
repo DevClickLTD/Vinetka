@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { getBlogListingSchema } from '../../../lib/schemas/blogSchemas';
 import { formatBlogPost, hasTranslatedPosts } from '../../../lib/wordpress-helpers';
 import Script from "next/script";
+import { redirect } from 'next/navigation';
 
 export async function generateMetadata({ params, searchParams }) {
   const { locale } = await params;
@@ -66,6 +67,11 @@ export default async function Blog({ searchParams, params }) {
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;
   const perPage = 9;
+  
+  // Redirect ?page=1 to base URL (SEO best practice - avoid duplicate content)
+  if (page === '1' || (currentPage === 1 && page !== undefined)) {
+    redirect(`/${locale}/blog`);
+  }
 
   // Fetch posts from WordPress API with caching enabled
   const response = await fetch(
