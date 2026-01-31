@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "translate": "node scripts/translate-new-content.js"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
@@ -31,6 +32,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "^15.1.10"
+    "eslint-config-next": "^15.1.10",
+    "translate-google": "^1.5.0"
   }
 }

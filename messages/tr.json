@@ -169,7 +169,8 @@
       },
       "weekend": {
         "title": "Hafta Sonu Vinyeti - 2 gün | Fiyat ve Bilgi | Vinetka.bg",
-        "description": "2 günlük hafta sonu vinyeti - kısa geziler ve ani yolculuklar için mükemmel. Aktivasyondan itibaren 48 saat geçerlidir. Cuma'dan Pazar'a yolculuklar için idealdir.",
+        "description": "Ani yolculuklar için ideal",
+        "pageDescription": "2 günlük hafta sonu vinyeti - kısa geziler ve ani yolculuklar için mükemmel. Aktivasyondan itibaren 48 saat geçerlidir. Cuma'dan Pazar'a yolculuklar için idealdir.",
         "mainTitle": "Hafta Sonu Vinyeti",
         "subtitle": "Günlük rutinden kaçışlar için mükemmel!",
         "duration": "2 gün",
@@ -760,6 +761,25 @@
         "resultShownInSeconds": "Sonuç saniyeler içinde gösterilir",
         "dataDirectlyFromBGToll": "Veriler doğrudan BG TOLL'dan gelir",
         "noTaxesOrHiddenFees": "Ekstra ücret veya gizli masraf yok"
+      },
+      "vignetteCheckerSidebar": {
+        "title": "Vinyet Kontrolü",
+        "subtitle": "Geçerliliği saniyeler içinde kontrol edin",
+        "inputPlaceholder": "CA1234AB",
+        "checkButton": "Kontrol Et",
+        "checkingButton": "Kontrol ediliyor...",
+        "errorRequired": "Plaka numarasını girin",
+        "errorServer": "İstek hatası",
+        "errorGeneral": "Hata. Lütfen tekrar deneyin.",
+        "validVignette": "Geçerli vinyet",
+        "noValidVignette": "Geçerli vinyet yok",
+        "validTo": "Geçerlilik",
+        "vehicleClass": "Sınıf",
+        "viewFullPage": "Tam kontrole git"
+      },
+      "sidebarLatestPosts": {
+        "title": "Son Makaleler",
+        "viewAll": "Tüm makaleleri görüntüle"
       },
       "privacyPolicy": {
         "pageTitle": "Gizlilik Politikası - Vinetka.bg",

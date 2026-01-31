@@ -1,0 +1,84 @@
+name: Auto-translate Blog Content
+
+# Стартира всяка неделя в 22:00 Bulgarian time (20:00 UTC)
+on:
+  schedule:
+    - cron: '0 20 * * 0'  # Every Sunday at 20:00 UTC (22:00 Bulgarian time)
+  
+  # Позволява ръчно стартиране от GitHub Actions UI
+  workflow_dispatch:
+
+jobs:
+  translate-and-deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # 1. Checkout кода
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      # 2. Setup Node.js
+      - name: ⚙️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      # 3. Инсталирай dependencies
+      - name: 📦 Install dependencies
+        run: npm ci
+      
+      # 4. Стартирай превод скрипта
+      - name: 🌐 Run translation script
+        run: npm run translate
+        env:
+          NODE_ENV: production
+      
+      # 5. Провери дали има промени
+      - name: 🔍 Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet messages/wordpress-content.json; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "ℹ️ No new translations"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "✅ New translations detected"
+          fi
+      
+      # 6. Commit и push промените (само ако има промени)
+      - name: 💾 Commit and push translations
+        if: steps.check_changes.outputs.has_changes == 'true'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: '🌐 Auto-translation: Weekly blog update'
+          file_pattern: 'messages/wordpress-content.json'
+          commit_user_name: 'Vinetka Bot'
+          commit_user_email: 'bot@vinetka.bg'
+          commit_author: 'Vinetka Bot <bot@vinetka.bg>'
+      
+      # 7. Success notification
+      - name: ✅ Translation completed
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          echo "════════════════════════════════════════"
+          echo "✅ AUTO-TRANSLATION SUCCESSFUL"
+          echo "════════════════════════════════════════"
+          echo ""
+          echo "New translations have been committed."
+          echo "Vercel will auto-deploy the changes."
+          echo ""
+      
+      # 8. No changes notification
+      - name: ℹ️ No new content
+        if: steps.check_changes.outputs.has_changes == 'false'
+        run: |
+          echo "════════════════════════════════════════"
+          echo "ℹ️ NO NEW CONTENT TO TRANSLATE"
+          echo "════════════════════════════════════════"
+          echo ""
+          echo "All blog content is already translated."
+          echo "No deployment needed."
+          echo ""

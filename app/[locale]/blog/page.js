@@ -1,18 +1,12 @@
 import Image from "next/image";
 import { Link } from "../../../lib/navigation";
 import { getTranslations } from 'next-intl/server';
-import { notFound } from 'next/navigation';
 import { getBlogListingSchema } from '../../../lib/schemas/blogSchemas';
+import { formatBlogPost, hasTranslatedPosts } from '../../../lib/wordpress-helpers';
 import Script from "next/script";
 
 export async function generateMetadata({ params, searchParams }) {
   const { locale } = await params;
-  
-  // Hide blog for all locales except 'bg'
-  if (locale !== 'bg') {
-    return {};
-  }
-  
   const t = await getTranslations('blog');
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;
@@ -27,18 +21,30 @@ export async function generateMetadata({ params, searchParams }) {
   );
   const totalPages = response.ok ? Number(response.headers.get("x-wp-totalpages")) || 1 : 1;
   
+  // Check if we have translated posts for this locale
+  const hasTranslations = hasTranslatedPosts(locale);
+  
   const metadata = {
-    title: currentPage > 1 ? `${t('pageTitle')} - Страница ${currentPage}` : t('pageTitle'),
+    title: currentPage > 1 ? `${t('pageTitle')} - ${locale === 'en' ? 'Page' : 'Страница'} ${currentPage}` : t('pageTitle'),
     description: t('pageDescription'),
     alternates: {
       canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,
       languages: {
         'x-default': `${baseUrl}/bg/blog`,
         bg: `${baseUrl}/bg/blog`,
-        // Блогът е достъпен само на български - премахнати са hreflang линковете към несъществуващи езикови версии
       },
     },
   };
+  
+  // Add hreflang only for locales that have translations
+  if (hasTranslations && locale !== 'bg') {
+    const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
+    supportedLocales.forEach(lang => {
+      if (hasTranslatedPosts(lang)) {
+        metadata.alternates.languages[lang] = `${baseUrl}/${lang}/blog`;
+      }
+    });
+  }
   
   // Add prev/next links for pagination
   if (currentPage > 1) {
@@ -53,11 +59,6 @@ export async function generateMetadata({ params, searchParams }) {
 
 export default async function Blog({ searchParams, params }) {
   const { locale } = await params;
-  
-  // Hide blog for all locales except 'bg'
-  if (locale !== 'bg') {
-    notFound();
-  }
   const t = await getTranslations('blog');
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;
@@ -82,6 +83,9 @@ export default async function Blog({ searchParams, params }) {
   const posts = await response.json();
   const totalPagesHeader = response.headers.get("x-wp-totalpages");
   const totalPages = Number(totalPagesHeader) || 1;
+  
+  // Format posts with translations
+  const formattedPosts = posts.map(post => formatBlogPost(post, locale));
 
   // ✅ Blog Listing Schema with Pagination
   const blogListingSchema = getBlogListingSchema(posts, currentPage, totalPages, locale);
@@ -127,24 +131,17 @@ export default async function Blog({ searchParams, params }) {
       </div>
       <div className="bg-white py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          {posts.length > 0 ? (
+          {formattedPosts.length > 0 ? (
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-              {posts.map((post) => (
+              {formattedPosts.map((post) => (
                 <Link href={`/blog/${post.slug}`} key={post.id} prefetch={true}>
                   <article className="flex flex-col items-start justify-between">
                     <div className="relative w-full">
                       <Image
                         width={380}
                         height={250}
-                        alt={
-                          post.yoast_head_json?.og_image?.[0]?.alt || 
-                          `Изображение на статия: ${post.title.rendered}` ||
-                          "Изображение към публикация за винетки"
-                        }
-                        src={
-                          post.yoast_head_json?.og_image?.[0]?.url ||
-                          "/placeholder.webp"
-                        }
+                        alt={post.imageAlt}
+                        src={post.image}
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         quality={75}
                         className="w-full h-auto rounded-2xl bg-gray-100 object-cover"
@@ -154,19 +151,15 @@ export default async function Blog({ searchParams, params }) {
                     <div className="max-w-xl">
                       <div className="mt-8 flex items-center gap-x-4 text-xs">
                         <time dateTime={post.date} className="text-gray-500">
-                          {new Date(post.date).toLocaleDateString()}
+                          {new Date(post.date).toLocaleDateString(locale === 'bg' ? 'bg-BG' : locale === 'en' ? 'en-US' : locale)}
                         </time>
                       </div>
                       <div className="group relative">
                         <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                          {post.title.rendered}
+                          {post.title}
                         </h3>
                         <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">
-                          {post.content.rendered
-                            ? post.content.rendered
-                                .replace(/<[^>]+>/g, "")
-                                .substring(0, 150) + "..."
-                            : "No description available"}
+                          {post.excerpt}
                         </p>
                       </div>
                     </div>
@@ -176,7 +169,7 @@ export default async function Blog({ searchParams, params }) {
             </div>
           ) : (
             <p className="text-gray-600 text-center mt-10">
-              Няма намерени публикации.
+              {locale === 'bg' ? 'Няма намерени публикации.' : 'No posts found.'}
             </p>
           )}
           {/* Pagination Controls */}
@@ -187,11 +180,11 @@ export default async function Blog({ searchParams, params }) {
                 className="px-4 py-2 mx-2 bg-gray-200 rounded-md"
                 prefetch={true}
               >
-                Предишна
+{locale === 'bg' ? 'Предишна' : 'Previous'}
               </Link>
             )}
             <span className="px-4 py-2 mx-2">
-              Страница {currentPage} от {totalPages}
+{locale === 'bg' ? 'Страница' : 'Page'} {currentPage} {locale === 'bg' ? 'от' : 'of'} {totalPages}
             </span>
             {currentPage < totalPages && (
               <Link
@@ -199,7 +192,7 @@ export default async function Blog({ searchParams, params }) {
                 className="px-4 py-2 mx-2 bg-gray-200 rounded-md"
                 prefetch={true}
               >
-                Следваща
+{locale === 'bg' ? 'Следваща' : 'Next'}
               </Link>
             )}
           </div>

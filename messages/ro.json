@@ -169,7 +169,8 @@
   },
   "weekend": {
     "title": "Vigneta de weekend - 2 zile | Preț și informații | Vinetka.bg",
-    "description": "Vigneta de weekend pentru 2 zile - perfectă pentru excursii scurte și călătorii spontane. Valabilă 48 de ore de la activare. Ideală pentru călătorii de vineri până duminică.",
+    "description": "Ideală pentru călătorii spontane",
+    "pageDescription": "Vigneta de weekend pentru 2 zile - perfectă pentru excursii scurte și călătorii spontane. Valabilă 48 de ore de la activare. Ideală pentru călătorii de vineri până duminică.",
     "mainTitle": "Vigneta de weekend",
     "subtitle": "Perfectă pentru evadări scurte din cotidian!",
     "duration": "2 zile",
@@ -828,6 +829,25 @@
         "resultShownInSeconds": "Rezultatul apare în câteva secunde",
         "dataDirectlyFromBGToll": "Datele provin direct de la BG TOLL",
         "noTaxesOrHiddenFees": "Fără taxe sau costuri ascunse"
+      },
+      "vignetteCheckerSidebar": {
+        "title": "Verificare vignetă",
+        "subtitle": "Verifică valabilitatea în secunde",
+        "inputPlaceholder": "CA1234AB",
+        "checkButton": "Verifică",
+        "checkingButton": "Se verifică...",
+        "errorRequired": "Introdu număr de înmatriculare",
+        "errorServer": "Eroare de solicitare",
+        "errorGeneral": "Eroare. Vă rugăm să încercați din nou.",
+        "validVignette": "Vignetă valabilă",
+        "noValidVignette": "Nicio vignetă valabilă",
+        "validTo": "Valabilă până la",
+        "vehicleClass": "Clasă",
+        "viewFullPage": "Mergi la verificare completă"
+      },
+      "sidebarLatestPosts": {
+        "title": "Ultimele articole",
+        "viewAll": "Vezi toate articolele"
       },
       "privacyPolicy": {
         "pageTitle": "Politica de confidențialitate - Vinetka.bg",

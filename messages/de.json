@@ -164,7 +164,8 @@
     },
     "weekend": {
       "title": "Wochenend-Vignette - 2 Tage | Preis und Informationen | Vinetka.bg",
-      "description": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
+      "description": "Ideal für spontane Reisen",
+      "pageDescription": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
       "mainTitle": "Wochenend-Vignette",
       "subtitle": "Perfekt für kurze Ausflüge aus dem Alltag!",
       "duration": "2 Tage",
@@ -823,6 +824,25 @@
       "resultShownInSeconds": "Das Ergebnis wird in Sekunden angezeigt",
       "dataDirectlyFromBGToll": "Die Daten kommen direkt von BG TOLL",
       "noTaxesOrHiddenFees": "Keine Gebühren oder versteckten Kosten"
+    },
+    "vignetteCheckerSidebar": {
+      "title": "Vignetten-Check",
+      "subtitle": "Gültigkeit in Sekunden prüfen",
+      "inputPlaceholder": "CA1234AB",
+      "checkButton": "Prüfen",
+      "checkingButton": "Prüfung läuft...",
+      "errorRequired": "Kennzeichen eingeben",
+      "errorServer": "Anfragefehler",
+      "errorGeneral": "Fehler. Bitte versuchen Sie es erneut.",
+      "validVignette": "Gültige Vignette",
+      "noValidVignette": "Keine gültige Vignette",
+      "validTo": "Gültig bis",
+      "vehicleClass": "Klasse",
+      "viewFullPage": "Zur vollständigen Prüfung"
+    },
+    "sidebarLatestPosts": {
+      "title": "Neueste Artikel",
+      "viewAll": "Alle Artikel anzeigen"
     },
     "privacyPolicy": {
       "pageTitle": "Datenschutzerklärung - Vinetka.bg",

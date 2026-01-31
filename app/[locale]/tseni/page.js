@@ -57,7 +57,7 @@ export default async function tseni({ params }) {
     {
       id: "uikend",
       icon: <FaCalendarDay className="w-8 h-8 text-purple-600" />,
-      title: t('weekend.title'),
+      title: t('weekend.mainTitle'),
       duration: t('weekend.duration'),
       price: "10,00 лв.",
       priceEur: "5,11 €",

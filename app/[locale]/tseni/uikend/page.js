@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
     locale,
     path: 'tseni/uikend',
     title: t('title'),
-    description: t('description'),
+    description: t('pageDescription'),
     image: '/default.webp',
     keywords: [
       "уикенд винетка",

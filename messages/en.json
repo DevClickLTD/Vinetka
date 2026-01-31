@@ -169,7 +169,8 @@
     },
     "weekend": {
       "title": "Weekend Vignette - 2 days | Price and Information | Vinetka.bg",
-      "description": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
+      "description": "Ideal for spontaneous travels",
+      "pageDescription": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
       "mainTitle": "Weekend Vignette",
       "subtitle": "Perfect for short escapes from everyday life!",
       "duration": "2 days",
@@ -828,6 +829,25 @@
       "resultShownInSeconds": "Result shown in seconds",
       "dataDirectlyFromBGToll": "Data directly from BG Toll",
       "noTaxesOrHiddenFees": "No taxes or hidden fees"
+    },
+    "vignetteCheckerSidebar": {
+      "title": "Vignette Check",
+      "subtitle": "Check validity in seconds",
+      "inputPlaceholder": "CA1234AB",
+      "checkButton": "Check",
+      "checkingButton": "Checking...",
+      "errorRequired": "Enter registration number",
+      "errorServer": "Request error",
+      "errorGeneral": "Error. Please try again.",
+      "validVignette": "Valid vignette",
+      "noValidVignette": "No valid vignette",
+      "validTo": "Valid until",
+      "vehicleClass": "Class",
+      "viewFullPage": "Go to full check"
+    },
+    "sidebarLatestPosts": {
+      "title": "Latest Articles",
+      "viewAll": "View all articles"
     },
     "privacyPolicy": {
       "pageTitle": "Privacy Policy - Vinetka.bg",

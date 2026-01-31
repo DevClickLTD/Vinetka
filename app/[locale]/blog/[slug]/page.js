@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
 import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
+import { getTranslatedContent, hasTranslation } from '../../../../lib/wordpress-helpers';
 import Script from "next/script";
 
 // Добавяне на ISR ревалидиране на всеки час
@@ -11,15 +12,10 @@ export const revalidate = 3600;
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
-
-  // Hide blog posts for all locales except 'bg'
-  if (locale !== "bg") {
-    return {};
-  }
   const post = await getPostBySlug(slug);
 
   if (!post || post.length === 0) {
-    throw new Error("Post not found");
+    return {};
   }
 
   const meta = post[0].yoast_head_json;
@@ -29,28 +25,41 @@ export async function generateMetadata({ params }) {
   const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
   const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
-  // ✅ ПОПРАВКА: Използвай абсолютен canonical и OG image
-  const canonicalUrl = meta.canonical || getCanonicalUrl(locale, `blog/${slug}`);
-  const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
+  // Get translated content
+  const translatedContent = getTranslatedContent(slug, locale, 'post');
+  const title = translatedContent?.title || meta.title;
+  const description = translatedContent?.metaDescription || meta.description;
 
+  const canonicalUrl = getCanonicalUrl(locale, `blog/${slug}`);
+  const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
   const baseUrl = 'https://www.vinetka.bg';
   
+  // Build hreflang links only for translated versions
+  const languages = {
+    'x-default': `${baseUrl}/bg/blog/${slug}`,
+    bg: `${baseUrl}/bg/blog/${slug}`,
+  };
+  
+  // Add other languages if they have translations
+  const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
+  supportedLocales.forEach(lang => {
+    if (hasTranslation(slug, lang, 'post')) {
+      languages[lang] = `${baseUrl}/${lang}/blog/${slug}`;
+    }
+  });
+  
   return {
-    title: meta.title,
-    description: meta.description,
+    title,
+    description,
     openGraph: {
-      title: meta.og_title,
-      description: meta.og_description,
+      title,
+      description,
       url: canonicalUrl,
       images: [{ url: absoluteOgImage, width: ogImageWidth, height: ogImageHeight }],
     },
     alternates: {
       canonical: canonicalUrl,
-      languages: {
-        'x-default': `${baseUrl}/bg/blog/${slug}`,
-        bg: `${baseUrl}/bg/blog/${slug}`,
-        // Блогът е достъпен само на български - премахнати са hreflang линковете към несъществуващи езикови версии
-      },
+      languages,
     },
   };
 }
@@ -59,15 +68,16 @@ export default async function PostPage({ params }) {
   try {
     const { slug, locale } = await params;
 
-    // Hide blog posts for all locales except 'bg'
-    if (locale !== "bg") {
-      notFound();
-    }
     const post = await getPostBySlug(slug);
 
     if (!post || post.length === 0) {
-      throw new Error("Post not found");
+      notFound();
     }
+
+    // Get translated content
+    const translatedContent = getTranslatedContent(slug, locale, 'post');
+    const title = translatedContent?.title || post[0].title.rendered;
+    const content = translatedContent?.content || post[0].content.rendered;
 
     const meta = post[0].yoast_head_json;
     const ogImageObject =
@@ -94,7 +104,7 @@ export default async function PostPage({ params }) {
             <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-23 text-center shadow-2xl sm:px-23">
               <div className="mx-auto max-w-2xl text-center">
                 <h1 className="text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-                  {post[0].title.rendered}
+                  {title}
                 </h1>
               </div>
               <svg
@@ -130,7 +140,7 @@ export default async function PostPage({ params }) {
                   {ogImage && (
                     <Image
                       src={ogImage}
-                      alt={meta.og_title || post[0].title.rendered}
+                      alt={meta.og_title || title}
                       width={ogImageWidth}
                       height={ogImageHeight}
                       sizes="(max-width: 768px) 100vw, 66vw"
@@ -143,7 +153,7 @@ export default async function PostPage({ params }) {
                     dateTime={new Date(post[0].date).toISOString()}
                     className="block mt-2 text-sm text-gray-500 mb-6"
                   >
-                    {new Date(post[0].date).toLocaleDateString("bg-BG", {
+                    {new Date(post[0].date).toLocaleDateString(locale === 'bg' ? 'bg-BG' : locale === 'en' ? 'en-US' : locale, {
                       day: "numeric",
                       month: "long",
                       year: "numeric",
@@ -152,7 +162,7 @@ export default async function PostPage({ params }) {
                   <div
                     className="wordpress-content prose max-w-none leading-relaxed"
                     dangerouslySetInnerHTML={{
-                      __html: post[0].content.rendered,
+                      __html: content,
                     }}
                   />
                 </article>
