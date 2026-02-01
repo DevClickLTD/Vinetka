@@ -151,11 +151,7 @@ export default async function VignetteCheckPage() {
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web browser",
     "browserRequirements": "Requires JavaScript",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "BGN"
-    }
+    "isAccessibleForFree": true
   };
 
   return (

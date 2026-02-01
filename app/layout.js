@@ -175,11 +175,6 @@ export default function RootLayout({ children }) {
                 postalCode: "1113",
                 addressCountry: "BG"
               },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "42.6977",
-                longitude: "23.3219"
-              },
               areaServed: [
                 {
                   "@type": "Country",
