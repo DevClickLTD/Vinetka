@@ -257,12 +257,6 @@ export default async function TolTaksa() {
               >
                 {t('cta.contactUs')}
               </Link>
-              <Link
-                href="/services"
-                className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
-              >
-                {t('cta.allServices')} <span aria-hidden="true">→</span>
-              </Link>
             </div>
           </div>
         </div>
