@@ -1,7 +1,7 @@
 /**
  * SMART TRANSLATION SCRIPT FOR VINETKA.BG
- * Превежда САМО новите страници и постове от WordPress
- * НЕ пипа вече преведените
+ * Превежда САМО новите и променените страници/постове от WordPress
+ * ✅ UPDATE DETECTION: Автоматично засича промени в съдържанието
  * 
  * Използва: translate-google за безплатни преводи
  * Превежда на: EN, DE, RU, TR, EL, SR, RO, MK (всички поддържани езици)
@@ -99,6 +99,7 @@ function prepareForTranslation(item) {
     title_bg: item.title.rendered,
     content_bg: item.content.rendered,
     meta_description_bg: item.yoast_head_json?.og_description || item.yoast_head_json?.description || '',
+    modified: item.modified, // ✅ За Update Detection
     // Празни полета за преводи - ще се запълнят
   };
 }
@@ -200,28 +201,59 @@ async function main() {
     
     // Fetch current content from WordPress
     console.log('🔍 Fetching content from WordPress...\n');
-    const wpPages = await fetchFromWordPress('/pages?per_page=100&_fields=id,slug,title,content,yoast_head_json');
+    const wpPages = await fetchFromWordPress('/pages?per_page=100&_fields=id,slug,title,content,yoast_head_json,modified');
     await delay(500);
-    const wpPosts = await fetchFromWordPress('/posts?per_page=100&_fields=id,slug,title,content,yoast_head_json');
+    const wpPosts = await fetchFromWordPress('/posts?per_page=100&_fields=id,slug,title,content,yoast_head_json,modified');
     
-    // Find NEW pages (not in translations)
+    // Find NEW and UPDATED pages
     const existingPageSlugs = Object.keys(existingData.pages);
-    const newPages = wpPages.filter(page => !existingPageSlugs.includes(page.slug));
+    const newPages = [];
+    const updatedPages = [];
     
-    // Find NEW posts (not in translations)
+    wpPages.forEach(page => {
+      if (!existingPageSlugs.includes(page.slug)) {
+        // Нова страница
+        newPages.push(page);
+      } else {
+        // Съществуваща страница - проверка за промени
+        const existingModified = existingData.pages[page.slug]?.modified;
+        if (existingModified && page.modified !== existingModified) {
+          // Променена страница
+          updatedPages.push(page);
+        }
+      }
+    });
+    
+    // Find NEW and UPDATED posts
     const existingPostSlugs = Object.keys(existingData.posts);
-    const newPosts = wpPosts.filter(post => !existingPostSlugs.includes(post.slug));
+    const newPosts = [];
+    const updatedPosts = [];
     
-    console.log('\n🎯 NEW CONTENT TO TRANSLATE:');
-    console.log(`   New pages: ${newPages.length}`);
-    console.log(`   New posts: ${newPosts.length}`);
-    console.log(`   Total: ${newPages.length + newPosts.length}`);
-    console.log(`   Languages: ${TARGET_LANGUAGES.join(', ').toUpperCase()}\n`);
+    wpPosts.forEach(post => {
+      if (!existingPostSlugs.includes(post.slug)) {
+        // Нов пост
+        newPosts.push(post);
+      } else {
+        // Съществуващ пост - проверка за промени
+        const existingModified = existingData.posts[post.slug]?.modified;
+        if (existingModified && post.modified !== existingModified) {
+          // Променен пост
+          updatedPosts.push(post);
+        }
+      }
+    });
     
-    if (newPages.length === 0 && newPosts.length === 0) {
-      console.log('✅ Everything is already translated! Nothing to do.');
-      console.log('\n💡 TIP: If you updated existing content, delete that item from');
-      console.log('   wordpress-content.json and run this script again.\n');
+    console.log('\n🎯 CONTENT TO TRANSLATE:');
+    console.log(`   ✨ New pages: ${newPages.length}`);
+    console.log(`   🔄 Updated pages: ${updatedPages.length}`);
+    console.log(`   ✨ New posts: ${newPosts.length}`);
+    console.log(`   🔄 Updated posts: ${updatedPosts.length}`);
+    console.log(`   📊 Total: ${newPages.length + updatedPages.length + newPosts.length + updatedPosts.length}`);
+    console.log(`   🌐 Languages: ${TARGET_LANGUAGES.join(', ').toUpperCase()}\n`);
+    
+    if (newPages.length === 0 && updatedPages.length === 0 && newPosts.length === 0 && updatedPosts.length === 0) {
+      console.log('✅ Everything is up to date! No new or updated content.');
+      console.log('\n💡 All WordPress content is synced with translations.\n');
       return;
     }
     
@@ -234,6 +266,28 @@ async function main() {
       for (let i = 0; i < newPages.length; i++) {
         console.log(`\n[${i + 1}/${newPages.length}] ═════════════════════════════════════`);
         const pageData = prepareForTranslation(newPages[i]);
+        const translated = await translateItem(pageData, pageData.slug_bg, 'page');
+        
+        existingData.pages[pageData.slug_bg] = translated;
+        
+        // Save after each page
+        fs.writeFileSync(translationsPath, JSON.stringify(existingData, null, 2), 'utf-8');
+        console.log(`   💾 Saved to disk`);
+        
+        await delay(1500);
+      }
+    }
+    
+    // Translate UPDATED pages
+    if (updatedPages.length > 0) {
+      console.log('\n═══════════════════════════════════════════════════');
+      console.log('🔄 RE-TRANSLATING UPDATED PAGES');
+      console.log('═══════════════════════════════════════════════════\n');
+      
+      for (let i = 0; i < updatedPages.length; i++) {
+        console.log(`\n[${i + 1}/${updatedPages.length}] ═════════════════════════════════════`);
+        console.log(`   ⚡ DETECTED CHANGES in WordPress`);
+        const pageData = prepareForTranslation(updatedPages[i]);
         const translated = await translateItem(pageData, pageData.slug_bg, 'page');
         
         existingData.pages[pageData.slug_bg] = translated;
@@ -267,6 +321,28 @@ async function main() {
       }
     }
     
+    // Translate UPDATED posts
+    if (updatedPosts.length > 0) {
+      console.log('\n\n═══════════════════════════════════════════════════');
+      console.log('🔄 RE-TRANSLATING UPDATED POSTS');
+      console.log('═══════════════════════════════════════════════════\n');
+      
+      for (let i = 0; i < updatedPosts.length; i++) {
+        console.log(`\n[${i + 1}/${updatedPosts.length}] ═════════════════════════════════════`);
+        console.log(`   ⚡ DETECTED CHANGES in WordPress`);
+        const postData = prepareForTranslation(updatedPosts[i]);
+        const translated = await translateItem(postData, postData.slug_bg, 'post');
+        
+        existingData.posts[postData.slug_bg] = translated;
+        
+        // Save after each post
+        fs.writeFileSync(translationsPath, JSON.stringify(existingData, null, 2), 'utf-8');
+        console.log(`   💾 Saved to disk`);
+        
+        await delay(1500);
+      }
+    }
+    
     console.log('\n\n═══════════════════════════════════════════════════');
     console.log('✅ TRANSLATION COMPLETE!');
     console.log('═══════════════════════════════════════════════════\n');
@@ -274,6 +350,14 @@ async function main() {
     console.log(`📊 Total pages: ${Object.keys(existingData.pages).length}`);
     console.log(`📊 Total posts: ${Object.keys(existingData.posts).length}`);
     console.log(`🌐 Languages: BG (source) + ${TARGET_LANGUAGES.join(', ').toUpperCase()}`);
+    
+    if (updatedPages.length > 0 || updatedPosts.length > 0) {
+      console.log('\n🔄 UPDATE DETECTION SUMMARY:');
+      console.log(`   Pages updated: ${updatedPages.length}`);
+      console.log(`   Posts updated: ${updatedPosts.length}`);
+      console.log(`   ✅ Changes from WordPress automatically synced!`);
+    }
+    
     console.log('\n💡 Next steps:');
     console.log('   1. Test locally: npm run dev');
     console.log('   2. Build: npm run build');
