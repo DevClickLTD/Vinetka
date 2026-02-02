@@ -23,8 +23,8 @@ export async function generateMetadata() {
   return {
     metadataBase: new URL(`${protocol}://${host}`),
     title: {
-      template: "%s | Винетка онлайн - Информация за електронна винетка",
-      default: "Винетка онлайн - Информация за електронна винетка",
+      template: "%s | vinetka bg",
+      default: "Винетка онлайн - Електронна винетка за България",
     },
     description:
       "Винетка онлайн - Информация за електронна винетка",
@@ -34,17 +34,17 @@ export async function generateMetadata() {
       ],
     },
     openGraph: {
-      title: "Винетка онлайн - Информация за електронна винетка",
+      title: "Винетка онлайн - Електронна винетка за България",
       description:
         "Винетка онлайн - Информация за електронна винетка",
       images: "/default.webp",
       type: "website",
       locale: "bg_BG",
-      siteName: "Винетка онлайн - Информация за електронна винетка",
+      siteName: "vinetka bg",
     },
     twitter: {
       card: "summary_large_image",
-      title: "Винетка онлайн - Информация за електронна винетка",
+      title: "Винетка онлайн - Електронна винетка за България",
       description:
         "Винетка онлайн - Информация за електронна винетка",
       images: ["/default.webp"],
