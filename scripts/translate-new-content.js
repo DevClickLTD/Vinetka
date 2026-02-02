@@ -93,10 +93,13 @@ async function fetchFromWordPress(endpoint) {
 function prepareForTranslation(item) {
   const bgSlug = item.slug;
   
+  // ✅ Взима Yoast SEO Title (ако има), иначе стандартния Title
+  const seoTitle = item.yoast_head_json?.og_title || item.title.rendered;
+  
   return {
     id: item.id,
     slug_bg: bgSlug,
-    title_bg: item.title.rendered,
+    title_bg: seoTitle,  // ✅ Yoast SEO Title приоритет
     content_bg: item.content.rendered,
     meta_description_bg: item.yoast_head_json?.og_description || item.yoast_head_json?.description || '',
     modified: item.modified, // ✅ За Update Detection
