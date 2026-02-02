@@ -621,7 +621,13 @@
       "pageDescription": "Ultimele noutăți, sfaturi și informații despre vignete electronice și călătorii în Bulgaria.",
       "readMore": "Citește mai mult",
       "noArticles": "Nu există articole disponibile momentan.",
-      "loading": "Se încarcă articolele..."
+      "loading": "Se încarcă articolele...",
+      "pagination": {
+        "page": "Pagina",
+        "of": "din",
+        "previous": "Precedent",
+        "next": "Următor"
+      }
     },
     "services": {
       "title": "Servicii",

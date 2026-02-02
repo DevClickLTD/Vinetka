@@ -616,7 +616,13 @@
     "pageDescription": "Neueste Nachrichten, Tipps und Informationen zu elektronischen Vignetten und Reisen in Bulgarien.",
     "readMore": "Weiterlesen",
     "noArticles": "Momentan sind keine Artikel verfügbar.",
-    "loading": "Artikel werden geladen..."
+    "loading": "Artikel werden geladen...",
+    "pagination": {
+      "page": "Seite",
+      "of": "von",
+      "previous": "Zurück",
+      "next": "Weiter"
+    }
   },
   "services": {
     "title": "Dienstleistungen",

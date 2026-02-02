@@ -28,9 +28,23 @@ export async function generateMetadata({ params, searchParams }) {
   // Build pagination suffix for URLs
   const pageSuffix = currentPage > 1 ? `?page=${currentPage}` : '';
   
+  // Build title and description with pagination using translations
+  const baseTitle = t('pageTitle');
+  const baseDescription = t('pageDescription');
+  const pageText = t('pagination.page');
+  const ofText = t('pagination.of');
+  
+  const title = currentPage > 1 
+    ? `${baseTitle} - ${pageText} ${currentPage}` 
+    : baseTitle;
+  
+  const description = currentPage > 1 
+    ? `${baseDescription} - ${pageText} ${currentPage} ${ofText} ${totalPages}.`
+    : baseDescription;
+  
   const metadata = {
-    title: currentPage > 1 ? `${t('pageTitle')} - ${locale === 'en' ? 'Page' : 'Страница'} ${currentPage}` : t('pageTitle'),
-    description: t('pageDescription'),
+    title,
+    description,
     alternates: {
       canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,
       languages: {
@@ -189,11 +203,11 @@ export default async function Blog({ searchParams, params }) {
                 className="px-4 py-2 mx-2 bg-gray-200 rounded-md"
                 prefetch={true}
               >
-{locale === 'bg' ? 'Предишна' : 'Previous'}
+                {t('pagination.previous')}
               </Link>
             )}
             <span className="px-4 py-2 mx-2">
-{locale === 'bg' ? 'Страница' : 'Page'} {currentPage} {locale === 'bg' ? 'от' : 'of'} {totalPages}
+              {t('pagination.page')} {currentPage} {t('pagination.of')} {totalPages}
             </span>
             {currentPage < totalPages && (
               <Link
@@ -201,7 +215,7 @@ export default async function Blog({ searchParams, params }) {
                 className="px-4 py-2 mx-2 bg-gray-200 rounded-md"
                 prefetch={true}
               >
-{locale === 'bg' ? 'Следваща' : 'Next'}
+                {t('pagination.next')}
               </Link>
             )}
           </div>

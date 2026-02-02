@@ -108,6 +108,20 @@
         }
       }
     },
+    "blog": {
+      "title": "Blog",
+      "pageTitle": "Blog - Vinyetler için haberler ve ipuçları",
+      "pageDescription": "Elektronik vinyetler ve Bulgaristan'da seyahat hakkında son haberler, ipuçları ve bilgiler.",
+      "readMore": "Devamını oku",
+      "noArticles": "Şu anda makale bulunamadı.",
+      "loading": "Makaleler yükleniyor...",
+      "pagination": {
+        "page": "Sayfa",
+        "of": "/",
+        "previous": "Önceki",
+        "next": "Sonraki"
+      }
+    },
     "prices": {
       "title": "Elektronik vinyet fiyatları - En uygununu seçin",
       "description": "Bulgaristan'daki tüm elektronik vinyet türleri için en uygun fiyatları keşfedin! Hafta sonu, haftalık, aylık, üç aylık ve yıllık vinyet için rekabetçi fiyatlar. Gizli ücret yok.",

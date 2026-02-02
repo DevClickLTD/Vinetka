@@ -621,7 +621,13 @@
     "pageDescription": "Latest news, tips and information about electronic vignettes and travel in Bulgaria.",
     "readMore": "Read more",
     "noArticles": "No articles available at the moment.",
-    "loading": "Loading articles..."
+    "loading": "Loading articles...",
+    "pagination": {
+      "page": "Page",
+      "of": "of",
+      "previous": "Previous",
+      "next": "Next"
+    }
   },
   "services": {
     "title": "Services",
