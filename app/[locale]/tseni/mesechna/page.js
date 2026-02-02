@@ -202,8 +202,8 @@ export default async function MesechnaVignette({ params }) {
                 <span className="text-lg font-semibold text-yellow-900">{t('features.mostPopular')}</span>
               </div>
               <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
-                <span className="text-2xl font-bold text-purple-900">30,00 лв.</span>
-                <span className="text-sm text-gray-600">15,34 €</span>
+                <span className="text-2xl font-bold text-purple-900">15,34 €</span>
+                <span className="text-sm text-gray-600">30,00 лв.</span>
               </div>
             </div>
           </div>

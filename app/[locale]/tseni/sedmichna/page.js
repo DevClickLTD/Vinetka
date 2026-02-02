@@ -196,8 +196,8 @@ export default async function SedmichnaVignette({ params }) {
                 <span className="text-lg font-semibold text-purple-900">{t('features.valid168')}</span>
               </div>
               <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
-                <span className="text-2xl font-bold text-purple-900">15,00 лв.</span>
-                <span className="text-sm text-gray-600">7,67 €</span>
+                <span className="text-2xl font-bold text-purple-900">7,67 €</span>
+                <span className="text-sm text-gray-600">15,00 лв.</span>
               </div>
             </div>
           </div>

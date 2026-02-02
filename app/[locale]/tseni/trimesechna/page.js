@@ -220,8 +220,8 @@ export default async function TrimesechnaVignette({ params }) {
                 <span className="text-lg font-semibold text-green-900">{t('features.save15')}</span>
               </div>
               <div className="inline-flex flex-col items-center rounded-lg bg-white px-6 py-3">
-                <span className="text-2xl font-bold text-purple-900">54,00 лв.</span>
-                <span className="text-sm text-gray-600">27,61 €</span>
+                <span className="text-2xl font-bold text-purple-900">27,61 €</span>
+                <span className="text-sm text-gray-600">54,00 лв.</span>
               </div>
             </div>
           </div>

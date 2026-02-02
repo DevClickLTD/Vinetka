@@ -315,8 +315,8 @@ export default async function tseni({ params }) {
                 </p>
                 
                 <div className="text-center mb-4">
-                  <div className="text-3xl font-bold text-purple-600">{vignette.price}</div>
-                  <div className="text-lg text-gray-500">{vignette.priceEur}</div>
+                  <div className="text-3xl font-bold text-purple-600">{vignette.priceEur}</div>
+                  <div className="text-lg text-gray-500">{vignette.price}</div>
                 </div>
                 
                 <p className="text-center text-gray-700 mb-6">
