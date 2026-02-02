@@ -186,8 +186,15 @@ async function translateItem(itemData, slug, type) {
  */
 async function main() {
   try {
+    // ✅ Check for --force flag
+    const forceMode = process.argv.includes('--force');
+    
     console.log('\n🤖 VINETKA.BG - SMART TRANSLATION');
     console.log('═══════════════════════════════════════════════════\n');
+    
+    if (forceMode) {
+      console.log('⚡ FORCE MODE ENABLED - Will re-translate ALL content!\n');
+    }
     
     const translationsPath = path.join(__dirname, '../messages/wordpress-content.json');
     
@@ -217,6 +224,9 @@ async function main() {
       if (!existingPageSlugs.includes(page.slug)) {
         // Нова страница
         newPages.push(page);
+      } else if (forceMode) {
+        // ✅ FORCE MODE - третира всички като променени
+        updatedPages.push(page);
       } else {
         // Съществуваща страница - проверка за промени
         const existingModified = existingData.pages[page.slug]?.modified;
@@ -236,6 +246,9 @@ async function main() {
       if (!existingPostSlugs.includes(post.slug)) {
         // Нов пост
         newPosts.push(post);
+      } else if (forceMode) {
+        // ✅ FORCE MODE - третира всички като променени
+        updatedPosts.push(post);
       } else {
         // Съществуващ пост - проверка за промени
         const existingModified = existingData.posts[post.slug]?.modified;
