@@ -14,6 +14,7 @@ import {
 } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
+import { getVignetteCheckSoftwareSchema } from '../../../lib/schemas/governmentServiceSchema';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -28,8 +29,11 @@ export async function generateMetadata({ params }) {
   });
 }
 
-export default async function VignetteCheckPage() {
+export default async function VignetteCheckPage({ params }) {
+  const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
+  const baseUrl = 'https://www.vinetka.bg';
+  
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,
@@ -62,67 +66,8 @@ export default async function VignetteCheckPage() {
     t('benefits.fleets')
   ];
 
-  const serviceSchema = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://www.vinetka.bg/bg/proverka-na-vinetka#service",
-    "name": "Проверка на винетка онлайн",
-    "alternateName": ["Проверка валидност на винетка", "Проверка на електронна винетка", "Vignette check"],
-    "description": "Безплатна услуга за проверка на валидността на електронни винетки в реално време. Синхронизирано с официалната база данни на НК Автомагистрали. Моментална проверка за всички типове винетки.",
-    "serviceType": "Проверка на валидност на електронна винетка",
-    "provider": {
-      "@type": "Organization",
-      "name": "Vinetka.bg",
-      "@id": "https://www.vinetka.bg/#organization"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "България"
-    },
-    "availableChannel": {
-      "@type": "ServiceChannel",
-      "serviceUrl": "https://www.vinetka.bg/bg/proverka-na-vinetka",
-      "serviceType": "Online service"
-    },
-    "offers": [
-      {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "BGN",
-        "availability": "https://schema.org/InStock",
-        "priceValidUntil": "2027-12-31",
-        "description": "Безплатна проверка на валидност на винетка"
-      }
-    ],
-    "termsOfService": "https://www.vinetka.bg/bg/obshti-usloviya",
-    "serviceOutput": {
-      "@type": "Thing",
-      "name": "Статус на винетката",
-      "description": "Информация за валидността, типа и периода на винетката"
-    },
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "Време за отговор",
-        "value": "Моментално (секунди)"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Точност",
-        "value": "100% (синхронизирано с НК Автомагистрали)"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Цена",
-        "value": "Безплатно"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Достъпност",
-        "value": "24/7"
-      }
-    ]
-  };
+  // Generate schemas with proper locale
+  const softwareAppSchema = getVignetteCheckSoftwareSchema(locale, baseUrl);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -131,36 +76,25 @@ export default async function VignetteCheckPage() {
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Начало",
-        "item": "https://www.vinetka.bg/bg"
+        "name": locale === 'bg' ? "Начало" : "Home",
+        "item": `${baseUrl}/${locale}`
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Проверка на винетка",
-        "item": "https://www.vinetka.bg/bg/proverka-na-vinetka"
+        "name": locale === 'bg' ? "Проверка на винетка" : "Vignette Check",
+        "item": `${baseUrl}/${locale}/proverka-na-vinetka`
       }
     ]
-  };
-
-  const webAppSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebApplication",
-    "name": "Проверка на винетка",
-    "url": "https://www.vinetka.bg/bg/proverka-na-vinetka",
-    "applicationCategory": "UtilityApplication",
-    "operatingSystem": "Web browser",
-    "browserRequirements": "Requires JavaScript",
-    "isAccessibleForFree": true
   };
 
   return (
     <>
       <Script
-        id="vignette-check-service-schema"
+        id="vignette-check-software-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(serviceSchema),
+          __html: JSON.stringify(softwareAppSchema),
         }}
       />
       
@@ -169,14 +103,6 @@ export default async function VignetteCheckPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(breadcrumbSchema),
-        }}
-      />
-      
-      <Script
-        id="vignette-check-webapp-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(webAppSchema),
         }}
       />
 
