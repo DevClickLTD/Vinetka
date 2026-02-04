@@ -67,10 +67,10 @@
       "whatType": "What type of vignette to choose?",
       "howToBuy": "How to buy a vignette?",
       "check": "Vignette Check",
-      "description": "If you are planning to travel with a car in Bulgaria, you must purchase a vignette for Bulgaria. This is an electronic toll for using the national road network, which is valid for light and heavy vehicles. Without a valid vignette, you risk a fine, so it is important to inform yourself in advance.",
-      "whatTypeDescription": "There are several types of vignettes – daily, weekend, weekly, monthly, quarterly and annual. The most common type for tourists is the weekend vignette, while for frequent travelers it is the annual vignette. The electronic system makes the purchase and check easier, as it can be purchased online or at a toll booth.",
-      "howToBuyDescription": "You can easily purchase an electronic vignette for Bulgaria through the official website http://bgtoll.bg or through mobile applications. You only need to enter the registration number of the vehicle, the country of registration and select the validity period.",
-      "checkDescription": "The validity check is done through cameras and mobile teams. You can check the status of your vignette online. Make sure the entered data is correct, as the system does not allow corrections after activation."
+      "description": "If you are planning to travel with a car in Bulgaria outside of cities and towns, you must purchase a vignette, which is a road tax for using the national public road network for light vehicles and trailers up to 3.5 tons in weight.\n\nMotorcycles, farm vehicles, and ATVs are exempt.\n\nVehicles over 3.5 tons do not need a vignette, but are required to pay a toll tax, the price of which is calculated based on the distance traveled.\n\nWithout a valid vignette, you risk a fine, so it is important to be informed in advance.",
+      "whatTypeDescription": "There are six types of vignettes: daily, weekend, weekly, monthly, quarterly, and annual. The electronic system makes the purchase easier, as vignettes can be bought in person and online.",
+      "howToBuyDescription": "You can purchase an electronic vignette here or through the National Toll Administraton's official website or via one of its official partners, including gas stations, bank branches, post offices, and mobile applications.\n\nAll you need is the registration number of the vehicle and the country of registration.\n\nMake sure the vehicle data you enter is correct before you purchase, as the system does not allow for corrections after activation.",
+      "checkDescription": "The vignette validity check is done automatically via road cameras and by BgToll mobile teams.\n\nSource: Road Infrastructure Agency at the Ministry of Transportation"
     }
   },
   "contact": {
@@ -115,7 +115,7 @@
     "pageSubtitle": "Choose the most suitable vignette type for your needs",
     "weekly": "Weekly",
     "monthly": "Monthly",
-    "quarterly": "Quarterly", 
+    "quarterly": "Quarterly",
     "annual": "Annual",
     "breadcrumb": {
       "home": "Home",
@@ -645,7 +645,7 @@
     },
     "cookiePolicy": {
       "title": "Cookie Policy",
-      "pageTitle": "Cookie Policy - Vinetka.bg", 
+      "pageTitle": "Cookie Policy - Vinetka.bg",
       "pageDescription": "Information about the use of cookies on our website."
     },
     "termsOfService": {
