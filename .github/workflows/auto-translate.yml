@@ -1,9 +1,9 @@
 name: Auto-translate Blog Content
 
-# Стартира всяка неделя в 22:00 Bulgarian time (20:00 UTC)
+# Стартира всеки ден в 18:00 Bulgarian time (16:00 UTC)
 on:
   schedule:
-    - cron: '0 20 * * 0'  # Every Sunday at 20:00 UTC (22:00 Bulgarian time)
+    - cron: '0 16 * * *'  # Every day at 16:00 UTC (18:00 Bulgarian time)
   
   # Позволява ръчно стартиране от GitHub Actions UI
   workflow_dispatch:
@@ -53,7 +53,7 @@ jobs:
         if: steps.check_changes.outputs.has_changes == 'true'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: '🌐 Auto-translation: Weekly blog update'
+          commit_message: '🌐 Auto-translation: Daily blog update'
           file_pattern: 'messages/wordpress-content.json'
           commit_user_name: 'Vinetka Bot'
           commit_user_email: 'bot@vinetka.bg'
