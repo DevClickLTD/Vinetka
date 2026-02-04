@@ -19,7 +19,7 @@ export const fetchAPI = cache(async (endpoint, options = {}) => {
           "Content-Type": "application/json",
         },
         next: {
-          revalidate: 300, // Cache for 5 minutes
+          revalidate: 60, // Cache for 1 minute (faster updates)
           tags: ['wordpress-api']
         },
         ...options,

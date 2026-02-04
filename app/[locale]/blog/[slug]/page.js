@@ -7,8 +7,8 @@ import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import { getTranslatedContent, hasTranslation } from '../../../../lib/wordpress-helpers';
 import Script from "next/script";
 
-// Добавяне на ISR ревалидиране на всеки час
-export const revalidate = 3600;
+// ISR revalidate на всеки 5 минути за по-бързи обновления
+export const revalidate = 300;
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
