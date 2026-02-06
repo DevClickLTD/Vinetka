@@ -33,6 +33,7 @@ export async function generateMetadata({ params }) {
 export default async function VignetteCheckPage({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
+  const tNav = await getTranslations('navigation');
   const baseUrl = 'https://www.vinetka.bg';
   const webAppUrl = getWebAppUrl(locale);
   
@@ -148,7 +149,7 @@ export default async function VignetteCheckPage({ params }) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
             >
-              Купи винетка
+              {tNav('buyVignette')}
               <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
               </svg>
@@ -290,7 +291,7 @@ export default async function VignetteCheckPage({ params }) {
                   rel="noopener noreferrer"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
                 >
-                  Купи винетка
+                  {tNav('buyVignette')}
                 </a>
                 <Link
                   href="/tseni"

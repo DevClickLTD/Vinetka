@@ -50,6 +50,8 @@ export async function generateMetadata({ params }) {
 export default async function tseni({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices');
+  const tCommon = await getTranslations('common');
+  const tNav = await getTranslations('navigation');
   const webAppUrl = getWebAppUrl(locale);
   
   // ✅ ItemList Schema за pricing page
@@ -223,7 +225,7 @@ export default async function tseni({ params }) {
                 rel="noopener noreferrer"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
               >
-                Купи винетка
+                {tNav('buyVignette')}
               </a>
             </div>
           </div>
@@ -347,7 +349,7 @@ export default async function tseni({ params }) {
                   rel="noopener noreferrer"
                   className="block w-full rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-md hover:shadow-lg hover:from-purple-700 hover:to-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-all duration-300 transform hover:scale-105 mt-3"
                 >
-                  Купи
+                  {tCommon('buy')}
                 </a>
               </div>
             ))}
@@ -402,7 +404,7 @@ export default async function tseni({ params }) {
                 rel="noopener noreferrer"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
               >
-                Купи винетка
+                {tNav('buyVignette')}
               </a>
               <Link
                 href="/contact"
