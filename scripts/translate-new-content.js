@@ -26,6 +26,39 @@ const slugMappings = {
   // Може да добавиш повече тук при нужда
 };
 
+// 🔗 Web App URL mapping по език
+const WEB_APP_URL_MAP = {
+  'bg': 'https://web.vinetka.bg/',
+  'en': 'https://web.vinetka.bg/?lang=en',
+  'de': 'https://web.vinetka.bg/?lang=de',
+  'ru': 'https://web.vinetka.bg/?lang=ru',
+  'tr': 'https://web.vinetka.bg/?lang=tr',
+  'el': 'https://web.vinetka.bg/?lang=gr', // Greek uses 'gr' in web app
+  'sr': 'https://web.vinetka.bg/?lang=sr',
+  'ro': 'https://web.vinetka.bg/?lang=ro',
+  'mk': 'https://web.vinetka.bg/?lang=mk'
+};
+
+/**
+ * 🔗 Заменя линковете към web app-а с правилния език
+ */
+function replaceWebAppLinks(content, targetLang) {
+  if (!content) return content;
+  
+  const targetUrl = WEB_APP_URL_MAP[targetLang] || 'https://web.vinetka.bg/';
+  
+  // Replace all variations of web.vinetka.bg links
+  let updatedContent = content;
+  
+  // Pattern 1: https://web.vinetka.bg/ (with or without trailing slash)
+  updatedContent = updatedContent.replace(/https:\/\/web\.vinetka\.bg\/?(?!\?)/g, targetUrl);
+  
+  // Pattern 2: Existing language parameters (replace them too)
+  updatedContent = updatedContent.replace(/https:\/\/web\.vinetka\.bg\/\?lang=[a-z]{2}/g, targetUrl);
+  
+  return updatedContent;
+}
+
 /**
  * Извлича чист текст от HTML
  */
@@ -148,6 +181,8 @@ async function translateItem(itemData, slug, type) {
     // Content превод
     console.log(`      → Content...`);
     if (itemData.content_bg && itemData.content_bg.length > 0) {
+      let translatedContent = '';
+      
       if (itemData.content_bg.length > 5000) {
         // Голямо съдържание - делим на части
         console.log(`      → Large content (${itemData.content_bg.length} chars), chunking...`);
@@ -165,11 +200,17 @@ async function translateItem(itemData, slug, type) {
           await delay(1000);
         }
         
-        translated[`content_${lang}`] = translatedChunks.join('');
+        translatedContent = translatedChunks.join('');
       } else {
-        translated[`content_${lang}`] = await translateHtmlContent(itemData.content_bg, lang);
+        translatedContent = await translateHtmlContent(itemData.content_bg, lang);
         await delay(1000);
       }
+      
+      // 🔗 ВАЖНО: Замяна на web app линковете с правилния език
+      translatedContent = replaceWebAppLinks(translatedContent, lang);
+      console.log(`      → 🔗 Web app links updated for ${lang}`);
+      
+      translated[`content_${lang}`] = translatedContent;
     } else {
       translated[`content_${lang}`] = '';
     }

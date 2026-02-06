@@ -15,6 +15,7 @@ import {
 import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getVignetteCheckSoftwareSchema } from '../../../lib/schemas/governmentServiceSchema';
+import { getWebAppUrl } from '../../../lib/web-app-url';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -33,6 +34,7 @@ export default async function VignetteCheckPage({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
   const baseUrl = 'https://www.vinetka.bg';
+  const webAppUrl = getWebAppUrl(locale);
   
   const features = [
     {
@@ -141,7 +143,7 @@ export default async function VignetteCheckPage({ params }) {
         <div className="bg-white py-8">
           <div className="mx-auto max-w-4xl px-6 lg:px-8 text-center">
             <a
-              href="https://web.vinetka.bg/"
+              href={webAppUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-8 py-4 text-lg font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
@@ -283,7 +285,7 @@ export default async function VignetteCheckPage({ params }) {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="https://web.vinetka.bg/"
+                  href={webAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"

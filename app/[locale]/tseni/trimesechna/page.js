@@ -16,6 +16,7 @@ import {
 import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../../lib/seo-utils';
 import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
+import { getWebAppUrl } from '../../../../lib/web-app-url';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 export const revalidate = 86400;
@@ -61,6 +62,7 @@ export async function generateMetadata({ params }) {
 export default async function TrimesechnaVignette({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices.quarterly');
+  const webAppUrl = getWebAppUrl(locale);
   
   // ✅ Product Schema
   const productSchema = getVignetteProductSchema('quarterly', locale);
@@ -398,7 +400,7 @@ export default async function TrimesechnaVignette({ params }) {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="https://web.vinetka.bg/"
+                href={webAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-purple-900 shadow-sm hover:bg-purple-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-colors"

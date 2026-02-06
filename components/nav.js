@@ -22,10 +22,12 @@ import Image from "next/image";
 import { getServicesNav } from "../services/services";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslations, useLocale } from 'next-intl';
+import { getWebAppUrl } from "../lib/web-app-url";
 
 export default function Navigation() {
   const t = useTranslations('navigation');
   const locale = useLocale();
+  const webAppUrl = getWebAppUrl(locale);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   
@@ -139,7 +141,7 @@ export default function Navigation() {
                 ))}
                 <div className="flow-root pt-4 border-t border-gray-200">
                   <a
-                    href="https://web.vinetka.bg/"
+                    href={webAppUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-x-2 rounded-md bg-[#803487] px-4 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#037672] transition-all duration-300"
@@ -329,7 +331,7 @@ export default function Navigation() {
               {/* Секция 3: Buy Button + Language Switcher */}
               <div className="flex justify-end items-center gap-x-4">
                 <a
-                  href="https://web.vinetka.bg/"
+                  href={webAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hidden lg:inline-flex items-center gap-x-1.5 rounded-md bg-[#803487] px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"

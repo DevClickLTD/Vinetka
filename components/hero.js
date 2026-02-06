@@ -3,7 +3,8 @@
 import { useState } from "react";
 import { Link } from "../lib/navigation";
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import { getWebAppUrl } from "../lib/web-app-url";
 
 // const navigation = [ // Не се използва
 //   { name: "Product", href: "#" },
@@ -14,6 +15,8 @@ import { useTranslations } from 'next-intl';
 
 export default function HeroSection() {
   const t = useTranslations('components.hero');
+  const locale = useLocale();
+  const webAppUrl = getWebAppUrl(locale);
 
   return (
     <div className="bg-gray-800">
@@ -35,7 +38,7 @@ export default function HeroSection() {
               </div>
               <div className="mt-10">
                 <a
-                  href="https://web.vinetka.bg/"
+                  href={webAppUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-6 py-3.5 text-base font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"

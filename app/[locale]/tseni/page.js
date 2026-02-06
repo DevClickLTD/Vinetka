@@ -17,6 +17,7 @@ import {
 import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getVignettePriceListSchema } from '../../../lib/schemas/productSchemas';
+import { getWebAppUrl } from '../../../lib/web-app-url';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 export const revalidate = 86400;
@@ -49,6 +50,7 @@ export async function generateMetadata({ params }) {
 export default async function tseni({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices');
+  const webAppUrl = getWebAppUrl(locale);
   
   // ✅ ItemList Schema за pricing page
   const priceListSchema = getVignettePriceListSchema(locale);
@@ -216,7 +218,7 @@ export default async function tseni({ params }) {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="https://web.vinetka.bg/"
+                href={webAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
@@ -338,6 +340,15 @@ export default async function tseni({ params }) {
                 >
                   {t('pricingSection.learnMore')}
                 </Link>
+                
+                <a
+                  href={webAppUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block w-full rounded-md bg-gradient-to-r from-purple-600 to-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-md hover:shadow-lg hover:from-purple-700 hover:to-indigo-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-600 transition-all duration-300 transform hover:scale-105 mt-3"
+                >
+                  Купи
+                </a>
               </div>
             ))}
           </div>
@@ -386,7 +397,7 @@ export default async function tseni({ params }) {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="https://web.vinetka.bg/"
+                href={webAppUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-[#803487] shadow-sm hover:bg-[#037672] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white transition-all duration-300"
