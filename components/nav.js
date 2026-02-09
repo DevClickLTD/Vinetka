@@ -279,22 +279,20 @@ export default function Navigation() {
                     ))}
                     
                     {/* Dropdown меню за Цени */}
-                    <Popover className="flex">
+                    <Popover className="relative flex">
                       {({ open, close }) => (
                         <>
-                          <div className="relative flex">
-                            <PopoverButton className="relative z-10 flex items-center font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800 data-open:text-[#803487] cursor-pointer focus-visible:outline-none text-base">
-                              {t('prices')}
-                              <ChevronDownIcon
-                                className={`ml-2 h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out ${
-                                  open ? "rotate-180" : "rotate-0"
-                                }`}
-                              />
-                            </PopoverButton>
-                          </div>
+                          <PopoverButton className="flex items-center font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800 data-open:text-[#803487] cursor-pointer focus-visible:outline-none text-base">
+                            {t('prices')}
+                            <ChevronDownIcon
+                              className={`ml-2 h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out ${
+                                open ? "rotate-180" : "rotate-0"
+                              }`}
+                            />
+                          </PopoverButton>
                           <PopoverPanel
                             transition
-                            className="absolute left-0 top-full mt-3 w-screen max-w-xs text-sm text-gray-500 transition data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                            className="absolute left-1/2 -translate-x-1/2 top-full mt-3 w-screen max-w-xs text-sm text-gray-500 transition data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in z-50"
                           >
                             <div className="relative bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg overflow-hidden">
                               <div className="p-4">
