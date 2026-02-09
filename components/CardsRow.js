@@ -13,15 +13,24 @@ export default function CardsRow() {
             {t('title')}
           </h2>
         </div>
-        <div className="flex justify-center items-center mb-8 sm:mb-12 px-4">
+        <div className="flex justify-center items-center gap-8 sm:gap-12 mb-8 sm:mb-12 px-4">
           <Image
-            src="/accepted-cards.jpg"
-            alt={t('altText')}
-            width={800}
-            height={100}
-            quality={85}
+            src="/visa-logo.png"
+            alt="Visa"
+            width={180}
+            height={60}
+            quality={90}
             loading="lazy"
-            className="object-contain max-w-full h-auto sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl"
+            className="object-contain h-12 sm:h-16 md:h-20 w-auto"
+          />
+          <Image
+            src="/mastercard-logo.png"
+            alt="Mastercard"
+            width={180}
+            height={60}
+            quality={90}
+            loading="lazy"
+            className="object-contain h-12 sm:h-16 md:h-20 w-auto"
           />
         </div>
         <svg

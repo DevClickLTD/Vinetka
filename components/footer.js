@@ -195,6 +195,19 @@ export default function Footer() {
             &copy; {year} {t('copyright')}
           </p>
         </div>
+        <div className="mt-4 border-t border-gray-900/10 pt-4 text-center">
+          <p className="text-xs text-gray-500">
+            Powered by{' '}
+            <a 
+              href="https://webstation.bg/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-gray-700 transition-colors"
+            >
+              WebStation™
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
