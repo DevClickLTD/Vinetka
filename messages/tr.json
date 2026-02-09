@@ -12,11 +12,19 @@
       "contact": "İletişim",
       "vignetteChecker": "Vinyet Sorgulama",
       "tollTax": "Geçiş Ücreti",
-      "buyVignette": "Vinyet Satın Al"
+      "buyVignette": "Vinyet Satın Al",
+      "dailyTitle": "Günlük Vinyet",
+      "weekendTitle": "Hafta Sonu Vinyeti",
+      "weeklyTitle": "Haftalık Vinyet",
+      "monthlyTitle": "Aylık Vinyet",
+      "quarterlyTitle": "Üç Aylık Vinyet",
+      "annualTitle": "Yıllık Vinyet",
+      "viewAllPrices": "Tüm Fiyatları Gör"
     },
     "footer": {
       "sections": {
         "services": "Hizmetler",
+        "vignettes": "Vinyetler",
         "support": "Destek",
         "company": "Şirket",
         "legal": "Yasal"
@@ -25,6 +33,14 @@
         "vignetteCheck": "Vinyet Sorgulama",
         "prices": "Fiyatlar",
         "tollTax": "Geçiş Ücreti"
+      },
+      "vignettes": {
+        "daily": "Günlük Vinyet",
+        "weekend": "Hafta Sonu Vinyeti",
+        "weekly": "Haftalık Vinyet",
+        "monthly": "Aylık Vinyet",
+        "quarterly": "Üç Aylık Vinyet",
+        "annual": "Yıllık Vinyet"
       },
       "support": {
         "blog": "Blog",
@@ -179,6 +195,65 @@
         "instantActivation": {
           "title": "Anında aktivasyon",
           "description": "Vinyet, ödeme sonrası hemen aktif olur, bekleme yok"
+        }
+      },
+      "daily": {
+        "title": "Günlük Vinyet - 1 gün | Fiyat ve Bilgi | Vinetka.bg",
+        "description": "Tek günlük yolculuklar için ideal",
+        "pageDescription": "1 günlük vinyet - kısa tek günlük geziler için mükemmel. Aktivasyondan itibaren 24 saat geçerlidir. En ekonomik seçim.",
+        "mainTitle": "Günlük Vinyet",
+        "subtitle": "Tek günlük yolculuklar için en ekonomik seçim!",
+        "duration": "1 gün",
+        "description1": "Günlük vinyet, tek günlük geziler için özel olarak tasarlanmıştır ve gereksiz masraflar olmadan kısa ziyaretler için ihtiyaçlarınızı karşılar. Aktivasyondan itibaren 24 saat geçerlidir, bu da onu hızlı iş seyahatleri veya ani tek günlük geziler için ideal kılar.",
+        "description2": "Günlük vinyet, kısa yolculuklar için en düşük fiyatı sunar. Ani tek günlük kararlar için idealdir ve Bulgaristan'daki tüm ücretli otoyollarda bir tam gün hareket özgürlüğü sağlar.",
+        "feature1": "24 saat geçerli",
+        "feature2": "En düşük fiyat",
+        "feature3": "Tek günlük yolculuklar için ideal",
+        "feature4": "Anında aktivasyon",
+        "highlight": "En ekonomik",
+        "pageTitle": "Günlük Vinyet - 1 gün | Fiyat ve Bilgi",
+        "price": "8,00 BGN",
+        "priceEur": "4,09 €",
+        "perfectFor": "Tek günlük yolculuklar ve ani kararlar için mükemmel",
+        "validFrom": "Aktivasyondan itibaren 24 saat geçerli",
+        "valid24Hours": "1 gün (24 saat) geçerli",
+        "features": {
+          "valid24": "24 saat geçerli",
+          "valid24Desc": "Vinyet, satın alma anından itibaren tam olarak 24 saat aktiftir",
+          "lowestPrice": "En düşük fiyat",
+          "lowestPriceDesc": "Tek günlük yolculuklar için en ekonomik seçenek",
+          "quickTrips": "Hızlı yolculuklar",
+          "quickTripsDesc": "İş seyahatleri veya kısa ziyaretler için mükemmel",
+          "allHighways": "Tüm otoyollar",
+          "allHighwaysDesc": "Bulgaristan'daki tüm ücretli otoyollarda geçerlidir",
+          "title": "Neden günlük vinyet seçmelisiniz?",
+          "subtitle": "Tek günlük vinyetin avantajları ve özellikleri"
+        },
+        "useCases": {
+          "title": "Günlük vinyet ne zaman kullanılır?",
+          "oneDayTrips": "Tek günlük geziler",
+          "businessVisits": "Kısa iş ziyaretleri",
+          "quickMeetings": "Hızlı iş toplantıları",
+          "dayTours": "Günübirlik turlar",
+          "familyVisits": "Bir günlüğüne yakınları ziyaret",
+          "shoppingTrips": "Yakın şehirde günübirlik alışveriş"
+        },
+        "info": {
+          "title": "Önemli Bilgiler",
+          "activationTitle": "Aktivasyon",
+          "activation": "Vinyet, ödeme sonrası hemen aktif olur",
+          "validityTitle": "Geçerlilik",
+          "validity": "Aktivasyondan itibaren tam olarak 24 saat",
+          "coverageTitle": "Kapsam",
+          "coverage": "Bulgaristan'daki tüm ücretli otoyollar",
+          "vehiclesTitle": "Araçlar",
+          "vehicles": "3,5 tona kadar hafif araçlar"
+        },
+        "cta": {
+          "title": "Tek günlük bir yolculuk mu planlıyorsunuz?",
+          "subtitle": "Şimdi günlük vinyet satın alın ve saniyeler içinde yola çıkın.",
+          "button": "Günlük Vinyet Satın Al",
+          "allPrices": "Tüm Fiyatlar"
         }
       },
       "weekend": {

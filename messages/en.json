@@ -12,11 +12,19 @@
     "contact": "Contact",
     "vignetteChecker": "Vignette Check",
     "tollTax": "Toll Tax",
-    "buyVignette": "Buy Vignette"
+    "buyVignette": "Buy Vignette",
+    "dailyTitle": "Daily Vignette",
+    "weekendTitle": "Weekend Vignette",
+    "weeklyTitle": "Weekly Vignette",
+    "monthlyTitle": "Monthly Vignette",
+    "quarterlyTitle": "Quarterly Vignette",
+    "annualTitle": "Annual Vignette",
+    "viewAllPrices": "View All Prices"
   },
   "footer": {
     "sections": {
       "services": "Services",
+      "vignettes": "Vignettes",
       "support": "Support",
       "company": "Company",
       "legal": "Legal"
@@ -25,6 +33,14 @@
       "vignetteCheck": "Vignette Check",
       "prices": "Prices",
       "tollTax": "Toll Tax"
+    },
+    "vignettes": {
+      "daily": "Daily Vignette",
+      "weekend": "Weekend Vignette",
+      "weekly": "Weekly Vignette",
+      "monthly": "Monthly Vignette",
+      "quarterly": "Quarterly Vignette",
+      "annual": "Annual Vignette"
     },
     "support": {
       "blog": "Blog",
@@ -165,6 +181,66 @@
       "instantActivation": {
         "title": "Instant Activation",
         "description": "Vignette is activated immediately after payment without waiting"
+      }
+    },
+    "daily": {
+      "title": "Daily Vignette - 1 day | Price and Information | Vinetka.bg",
+      "description": "Ideal for one-day trips",
+      "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",
+      "mainTitle": "Daily Vignette",
+      "subtitle": "Most economical choice for one-day trips!",
+      "duration": "1 day",
+      "description1": "The daily vignette is specially created for one-day trips and covers the needs for short visits without unnecessary expenses. Valid for a period of 24 hours from the moment of activation, which makes it ideal for quick business trips or spontaneous one-day excursions.",
+      "description2": "The daily vignette offers the lowest price for short trips. Ideal for spontaneous one-day decisions and provides freedom of movement on all toll highways in Bulgaria for one full day.",
+      "feature1": "Valid 24 hours",
+      "feature2": "Lowest price",
+      "feature3": "Ideal for one-day trips",
+      "feature4": "Instant activation",
+      "highlight": "Most Economical",
+      "pageTitle": "Daily Vignette - 1 day | Price and Information",
+      "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",
+      "price": "8.00 BGN",
+      "priceEur": "4.09 €",
+      "perfectFor": "Perfect for one-day trips and spontaneous decisions",
+      "validFrom": "Valid for 24 hours from activation",
+      "valid24Hours": "Valid 1 day (24 hours)",
+      "features": {
+        "valid24": "Valid 24 hours",
+        "valid24Desc": "The vignette is active for exactly 24 hours from the moment of purchase",
+        "lowestPrice": "Lowest price",
+        "lowestPriceDesc": "Most economical option for one-day trips",
+        "quickTrips": "Quick trips",
+        "quickTripsDesc": "Perfect for business trips or short visits",
+        "allHighways": "All highways",
+        "allHighwaysDesc": "Valid for all toll highways in Bulgaria",
+        "title": "Why choose the daily vignette?",
+        "subtitle": "Advantages and characteristics of the one-day vignette"
+      },
+      "useCases": {
+        "title": "When to use a daily vignette?",
+        "oneDayTrips": "One-day trips",
+        "businessVisits": "Short business visits",
+        "quickMeetings": "Quick business meetings",
+        "dayTours": "One-day tours",
+        "familyVisits": "Visiting relatives for one day",
+        "shoppingTrips": "One-day shopping in a nearby city"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The vignette is activated instantly after payment",
+        "validityTitle": "Validity",
+        "validity": "Exactly 24 hours from the moment of activation",
+        "coverageTitle": "Coverage",
+        "coverage": "All toll highways in Bulgaria",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Planning a one-day trip?",
+        "subtitle": "Buy a daily vignette now and hit the road in seconds.",
+        "button": "Buy Daily Vignette",
+        "allPrices": "All Prices"
       }
     },
     "weekend": {

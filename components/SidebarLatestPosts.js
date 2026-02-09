@@ -1,40 +1,52 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { fetchAPI } from "../services/api";
 import { Link } from "../lib/navigation";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { NewspaperIcon } from "@heroicons/react/24/outline";
+import wordpressContent from "../messages/wordpress-content.json";
 
 export default function SidebarLatestPosts({ currentPostSlug }) {
   const t = useTranslations("components.sidebarLatestPosts");
+  const locale = useLocale();
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const fetchLatestPosts = async () => {
+    const loadPosts = () => {
       try {
-        const postsData = await fetchAPI(
-          "posts?per_page=3&_fields=id,slug,title,date,yoast_head_json"
-        );
+        // Вземаме постовете от wordpress-content.json
+        const allPosts = Object.values(wordpressContent.posts || {});
+        
+        // Филтрираме и вземаме само първите 3 (или 4 ако текущият е в списъка)
+        let filteredPosts = currentPostSlug
+          ? allPosts.filter((post) => post.slug_bg !== currentPostSlug)
+          : allPosts;
+        
+        // Вземаме само първите 3
+        filteredPosts = filteredPosts.slice(0, 3);
+        
+        // Форматираме за показване
+        const formattedPosts = filteredPosts.map(post => ({
+          id: post.id,
+          slug: post.slug_bg,
+          title: post[`title_${locale}`] || post.title_bg,
+          date: post.modified,
+          featuredImage: null // Ще използваме placeholder
+        }));
 
-        // Филтрираме текущия пост, ако е зададен
-        const filteredPosts = currentPostSlug
-          ? postsData?.filter((post) => post.slug !== currentPostSlug)
-          : postsData;
-
-        setPosts(filteredPosts || []);
+        setPosts(formattedPosts);
       } catch (error) {
-        console.error("Error fetching posts:", error);
+        console.error("Error loading posts:", error);
         setPosts([]);
       } finally {
         setLoading(false);
       }
     };
 
-    fetchLatestPosts();
-  }, [currentPostSlug]);
+    loadPosts();
+  }, [currentPostSlug, locale]);
 
   if (loading) {
     return (
@@ -60,8 +72,21 @@ export default function SidebarLatestPosts({ currentPostSlug }) {
       </div>
 
       <div className="divide-y divide-gray-100">
-        {posts.slice(0, 3).map((post, index) => {
-          const featuredImage = post.yoast_head_json?.og_image?.[0]?.url;
+        {posts.map((post, index) => {
+          const featuredImage = post.featuredImage;
+          
+          // Форматираме датата според locale
+          const dateLocaleMap = {
+            'bg': 'bg-BG',
+            'en': 'en-US',
+            'de': 'de-DE',
+            'ru': 'ru-RU',
+            'tr': 'tr-TR',
+            'el': 'el-GR',
+            'sr': 'sr-RS',
+            'ro': 'ro-RO',
+            'mk': 'mk-MK'
+          };
 
           return (
             <Link
@@ -76,7 +101,7 @@ export default function SidebarLatestPosts({ currentPostSlug }) {
                     <div className="relative w-16 h-16 rounded-lg overflow-hidden bg-gray-100">
                       <Image
                         src={featuredImage}
-                        alt={post.title.rendered}
+                        alt={post.title}
                         fill
                         sizes="64px"
                         className="object-cover group-hover:scale-110 transition-transform duration-200"
@@ -90,10 +115,10 @@ export default function SidebarLatestPosts({ currentPostSlug }) {
                   className={`flex-1 min-w-0 ${!featuredImage ? "pl-0" : ""}`}
                 >
                   <h4 className="text-sm font-semibold text-gray-900 group-hover:text-[#803487] transition-colors line-clamp-2 mb-1">
-                    {post.title.rendered}
+                    {post.title}
                   </h4>
                   <time className="text-xs text-gray-500">
-                    {new Date(post.date).toLocaleDateString("bg-BG", {
+                    {new Date(post.date).toLocaleDateString(dateLocaleMap[locale] || locale, {
                       day: "numeric",
                       month: "long",
                       year: "numeric",

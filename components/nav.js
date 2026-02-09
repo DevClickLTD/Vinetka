@@ -33,10 +33,19 @@ export default function Navigation() {
   
   const allPages = [
     { name: t('home'), href: "/" },
-    { name: t('prices'), href: "/tseni" },
     { name: t('tollTax'), href: "/toll-taksi" },
     { name: t('blog'), href: "/blog" },
     { name: t('contact'), href: "/contact" },
+  ];
+  
+  // Dropdown меню за винетки
+  const vignettePages = [
+    { name: t('dailyTitle') || 'Дневна винетка', href: "/tseni/dnevna" },
+    { name: t('weekendTitle') || 'Уикенд винетка', href: "/tseni/uikend" },
+    { name: t('weeklyTitle') || 'Седмична винетка', href: "/tseni/sedmichna" },
+    { name: t('monthlyTitle') || 'Месечна винетка', href: "/tseni/mesechna" },
+    { name: t('quarterlyTitle') || 'Тримесечна винетка', href: "/tseni/trimesechna" },
+    { name: t('annualTitle') || 'Годишна винетка', href: "/tseni/godishna" },
   ];
   
   // Filter out blog for non-bg locales
@@ -139,6 +148,26 @@ export default function Navigation() {
                     </Link>
                   </div>
                 ))}
+                
+                {/* Мобилно меню за Цени */}
+                <div className="flow-root border-t border-gray-200 pt-6">
+                  <div className="-m-2 block p-2 font-bold text-gray-900 text-lg">
+                    {t('prices')}
+                  </div>
+                  <div className="ml-4 mt-2 space-y-2">
+                    {vignettePages.map((vignette) => (
+                      <Link
+                        key={vignette.href}
+                        href={vignette.href}
+                        className="-m-2 block p-2 text-sm text-gray-700 hover:text-[#803487]"
+                        onClick={() => setOpen(false)}
+                        prefetch={true}
+                      >
+                        {vignette.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
                 <div className="flow-root pt-4 border-t border-gray-200">
                   <a
                     href={webAppUrl}
@@ -248,6 +277,54 @@ export default function Navigation() {
                         {page.name}
                       </Link>
                     ))}
+                    
+                    {/* Dropdown меню за Цени */}
+                    <Popover className="flex">
+                      {({ open, close }) => (
+                        <>
+                          <div className="relative flex">
+                            <PopoverButton className="relative z-10 flex items-center font-medium text-gray-700 transition-colors duration-200 ease-out hover:text-gray-800 data-open:text-[#803487] cursor-pointer focus-visible:outline-none text-base">
+                              {t('prices')}
+                              <ChevronDownIcon
+                                className={`ml-2 h-5 w-5 text-gray-500 transition-transform duration-200 ease-in-out ${
+                                  open ? "rotate-180" : "rotate-0"
+                                }`}
+                              />
+                            </PopoverButton>
+                          </div>
+                          <PopoverPanel
+                            transition
+                            className="absolute left-0 top-full mt-3 w-screen max-w-xs text-sm text-gray-500 transition data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                          >
+                            <div className="relative bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg overflow-hidden">
+                              <div className="p-4">
+                                <div className="space-y-1">
+                                  {vignettePages.map((vignette) => (
+                                    <Link
+                                      key={vignette.href}
+                                      href={vignette.href}
+                                      onClick={close}
+                                      className="block px-4 py-3 rounded-md text-base font-medium text-gray-900 hover:bg-purple-50 hover:text-[#803487] transition-colors"
+                                    >
+                                      {vignette.name}
+                                    </Link>
+                                  ))}
+                                </div>
+                                <div className="mt-4 pt-4 border-t border-gray-100">
+                                  <Link
+                                    href="/tseni"
+                                    onClick={close}
+                                    className="block px-4 py-2 text-center rounded-md text-sm font-semibold text-white bg-[#803487] hover:bg-[#037672] transition-colors"
+                                  >
+                                    {t('viewAllPrices') || 'Виж всички цени'}
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
+                          </PopoverPanel>
+                        </>
+                      )}
+                    </Popover>
                     {/* {navigation.categories.map((category) => (
                       <Popover key={category.name} className="flex">
                         {({ open, close }) => (

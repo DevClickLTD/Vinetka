@@ -59,6 +59,22 @@ export default async function tseni({ params }) {
   
   const vignetteTypes = [
     {
+      id: "dnevna",
+      icon: <FaCalendarDay className="w-8 h-8 text-purple-600" />,
+      title: t('daily.mainTitle'),
+      duration: t('daily.duration'),
+      price: "8,00 лв.",
+      priceEur: "4,09 €",
+      description: t('daily.description'),
+      features: [
+        t('daily.feature1'),
+        t('daily.feature2'),
+        t('daily.feature3'),
+        t('daily.feature4')
+      ],
+      highlight: t('daily.highlight')
+    },
+    {
       id: "uikend",
       icon: <FaCalendarDay className="w-8 h-8 text-purple-600" />,
       title: t('weekend.mainTitle'),

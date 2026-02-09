@@ -12,11 +12,19 @@
     "contact": "Kontakt",
     "vignetteChecker": "Vignetten-Prüfung",
     "tollTax": "Mautgebühr",
-    "buyVignette": "Vignette kaufen"
+    "buyVignette": "Vignette kaufen",
+    "dailyTitle": "Tagesvignette",
+    "weekendTitle": "Wochenend-Vignette",
+    "weeklyTitle": "Wochenvignette",
+    "monthlyTitle": "Monatsvignette",
+    "quarterlyTitle": "Dreimonatsvignette",
+    "annualTitle": "Jahresvignette",
+    "viewAllPrices": "Alle Preise anzeigen"
   },
   "footer": {
     "sections": {
       "services": "Dienstleistungen",
+      "vignettes": "Vignetten",
       "support": "Support",
       "company": "Unternehmen",
       "legal": "Rechtliches"
@@ -25,6 +33,14 @@
       "vignetteCheck": "Vignetten-Prüfung",
       "prices": "Preise",
       "tollTax": "Mautgebühr"
+    },
+    "vignettes": {
+      "daily": "Tagesvignette",
+      "weekend": "Wochenend-Vignette",
+      "weekly": "Wochenvignette",
+      "monthly": "Monatsvignette",
+      "quarterly": "Dreimonatsvignette",
+      "annual": "Jahresvignette"
     },
     "support": {
       "blog": "Blog",
@@ -160,6 +176,65 @@
       "instantActivation": {
         "title": "Sofortige Aktivierung",
         "description": "Die Vignette wird sofort nach der Zahlung ohne Wartezeit aktiviert"
+      }
+    },
+    "daily": {
+      "title": "Tagesvignette - 1 Tag | Preis und Informationen | Vinetka.bg",
+      "description": "Ideal für Tagesausflüge",
+      "pageDescription": "Tagesvignette für 1 Tag - perfekt für kurze Tagesausflüge. Gültig 24 Stunden ab Aktivierung. Die wirtschaftlichste Wahl.",
+      "mainTitle": "Tagesvignette",
+      "subtitle": "Die wirtschaftlichste Wahl für Tagesausflüge!",
+      "duration": "1 Tag",
+      "description1": "Die Tagesvignette ist speziell für Tagesausflüge konzipiert und deckt die Bedürfnisse für kurze Besuche ohne unnötige Kosten ab. Gültig für einen Zeitraum von 24 Stunden ab Aktivierung, ideal für schnelle Geschäftsreisen oder spontane Tagesausflüge.",
+      "description2": "Die Tagesvignette bietet den niedrigsten Preis für kurze Reisen. Ideal für spontane Tagesentscheidungen und bietet Bewegungsfreiheit auf allen mautpflichtigen Autobahnen in Bulgarien für einen vollen Tag.",
+      "feature1": "Gültig 24 Stunden",
+      "feature2": "Niedrigster Preis",
+      "feature3": "Ideal für Tagesausflüge",
+      "feature4": "Sofortige Aktivierung",
+      "highlight": "Am wirtschaftlichsten",
+      "pageTitle": "Tagesvignette - 1 Tag | Preis und Informationen",
+      "price": "8,00 BGN",
+      "priceEur": "4,09 €",
+      "perfectFor": "Perfekt für Tagesausflüge und spontane Entscheidungen",
+      "validFrom": "Gültig 24 Stunden ab Aktivierung",
+      "valid24Hours": "Gültig 1 Tag (24 Stunden)",
+      "features": {
+        "valid24": "Gültig 24 Stunden",
+        "valid24Desc": "Die Vignette ist genau 24 Stunden ab Kauf aktiv",
+        "lowestPrice": "Niedrigster Preis",
+        "lowestPriceDesc": "Die wirtschaftlichste Option für Tagesausflüge",
+        "quickTrips": "Schnelle Reisen",
+        "quickTripsDesc": "Perfekt für Geschäftsreisen oder kurze Besuche",
+        "allHighways": "Alle Autobahnen",
+        "allHighwaysDesc": "Gültig für alle mautpflichtigen Autobahnen in Bulgarien",
+        "title": "Warum die Tagesvignette wählen?",
+        "subtitle": "Vorteile und Eigenschaften der Eintagesvignette"
+      },
+      "useCases": {
+        "title": "Wann eine Tagesvignette verwenden?",
+        "oneDayTrips": "Tagesausflüge",
+        "businessVisits": "Kurze Geschäftsbesuche",
+        "quickMeetings": "Schnelle Geschäftstreffen",
+        "dayTours": "Tagestouren",
+        "familyVisits": "Verwandtenbesuch für einen Tag",
+        "shoppingTrips": "Eintägiges Einkaufen in der Nachbarstadt"
+      },
+      "info": {
+        "title": "Wichtige Informationen",
+        "activationTitle": "Aktivierung",
+        "activation": "Die Vignette wird sofort nach Zahlung aktiviert",
+        "validityTitle": "Gültigkeit",
+        "validity": "Genau 24 Stunden ab Aktivierung",
+        "coverageTitle": "Abdeckung",
+        "coverage": "Alle mautpflichtigen Autobahnen in Bulgarien",
+        "vehiclesTitle": "Fahrzeuge",
+        "vehicles": "Leichte Fahrzeuge bis 3,5 Tonnen"
+      },
+      "cta": {
+        "title": "Planen Sie einen Tagesausflug?",
+        "subtitle": "Kaufen Sie jetzt eine Tagesvignette und starten Sie in Sekunden.",
+        "button": "Tagesvignette kaufen",
+        "allPrices": "Alle Preise"
       }
     },
     "weekend": {

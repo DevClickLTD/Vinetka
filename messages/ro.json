@@ -12,11 +12,19 @@
   "contact": "Contact",
   "vignetteChecker": "Verificare vignetă",
   "tollTax": "Taxă de drum",
-  "buyVignette": "Cumpără vignetă"
+  "buyVignette": "Cumpără vignetă",
+  "dailyTitle": "Vigneta Zilnică",
+  "weekendTitle": "Vigneta de Weekend",
+  "weeklyTitle": "Vigneta Săptămânală",
+  "monthlyTitle": "Vigneta Lunară",
+  "quarterlyTitle": "Vigneta Trimestrială",
+  "annualTitle": "Vigneta Anuală",
+  "viewAllPrices": "Toate Prețurile"
 },
 "footer": {
   "sections": {
     "services": "Servicii",
+    "vignettes": "Vignete",
     "support": "Suport",
     "company": "Companie",
     "legal": "Legal"
@@ -25,6 +33,14 @@
     "vignetteCheck": "Verificare vignetă",
     "prices": "Prețuri",
     "tollTax": "Taxă de drum"
+  },
+  "vignettes": {
+    "daily": "Vigneta Zilnică",
+    "weekend": "Vigneta de Weekend",
+    "weekly": "Vigneta Săptămânală",
+    "monthly": "Vigneta Lunară",
+    "quarterly": "Vigneta Trimestrială",
+    "annual": "Vigneta Anuală"
   },
   "support": {
     "blog": "Blog",
@@ -165,6 +181,65 @@
     "instantActivation": {
       "title": "Activare instantanee",
       "description": "Vigneta se activează imediat după plată, fără așteptare"
+    }
+  },
+  "daily": {
+    "title": "Vigneta zilnică - 1 zi | Preț și informații | Vinetka.bg",
+    "description": "Ideală pentru călătorii de o zi",
+    "pageDescription": "Vigneta zilnică pentru 1 zi - perfectă pentru călătorii scurte de o zi. Valabilă 24 de ore de la activare. Cea mai economică opțiune.",
+    "mainTitle": "Vigneta Zilnică",
+    "subtitle": "Cea mai economică opțiune pentru călătorii de o zi!",
+    "duration": "1 zi",
+    "description1": "Vigneta zilnică este creată special pentru călătorii de o zi și acoperă nevoile pentru vizite scurte fără costuri suplimentare. Este valabilă pentru o perioadă de 24 de ore de la activare, ceea ce o face ideală pentru călătorii de afaceri rapide sau excursii spontane de o zi.",
+    "description2": "Vigneta zilnică oferă cel mai mic preț pentru călătorii scurte. Ideală pentru decizii spontane de o zi și oferă libertate de mișcare pe toate autostrăzile cu taxă din Bulgaria pentru o zi întreagă.",
+    "feature1": "Valabilă 24 de ore",
+    "feature2": "Cel mai mic preț",
+    "feature3": "Ideală pentru călătorii de o zi",
+    "feature4": "Activare instantanee",
+    "highlight": "Cea mai economică",
+    "pageTitle": "Vigneta Zilnică - 1 zi | Preț și informații",
+    "price": "8,00 BGN",
+    "priceEur": "4,09 €",
+    "perfectFor": "Perfectă pentru călătorii de o zi și decizii spontane",
+    "validFrom": "Valabilă 24 de ore de la activare",
+    "valid24Hours": "Valabilă 1 zi (24 ore)",
+    "features": {
+      "valid24": "Valabilă 24 de ore",
+      "valid24Desc": "Vigneta este activă exact 24 de ore de la achiziție",
+      "lowestPrice": "Cel mai mic preț",
+      "lowestPriceDesc": "Opțiunea cea mai economică pentru călătorii de o zi",
+      "quickTrips": "Călătorii rapide",
+      "quickTripsDesc": "Perfectă pentru călătorii de afaceri sau vizite scurte",
+      "allHighways": "Toate autostrăzile",
+      "allHighwaysDesc": "Valabilă pe toate autostrăzile cu taxă din Bulgaria",
+      "title": "De ce să alegi vigneta zilnică?",
+      "subtitle": "Avantaje și caracteristici ale vignetei de o zi"
+    },
+    "useCases": {
+      "title": "Când să folosești vigneta zilnică?",
+      "oneDayTrips": "Călătorii de o zi",
+      "businessVisits": "Vizite de afaceri scurte",
+      "quickMeetings": "Întâlniri de afaceri rapide",
+      "dayTours": "Excursii de o zi",
+      "familyVisits": "Vizită la rude pentru o zi",
+      "shoppingTrips": "Cumpărături de o zi în oraș vecin"
+    },
+    "info": {
+      "title": "Informații importante",
+      "activationTitle": "Activare",
+      "activation": "Vigneta se activează instant după plată",
+      "validityTitle": "Valabilitate",
+      "validity": "Exact 24 de ore de la activare",
+      "coverageTitle": "Acoperire",
+      "coverage": "Toate autostrăzile cu taxă din Bulgaria",
+      "vehiclesTitle": "Vehicule",
+      "vehicles": "Vehicule ușoare până la 3,5 tone"
+    },
+    "cta": {
+      "title": "Planificați o călătorie de o zi?",
+      "subtitle": "Cumpărați vigneta zilnică acum și porniți la drum în câteva secunde.",
+      "button": "Cumpără Vigneta Zilnică",
+      "allPrices": "Toate Prețurile"
     }
   },
   "weekend": {

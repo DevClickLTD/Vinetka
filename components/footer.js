@@ -24,8 +24,15 @@ export default function Footer() {
   const navigation = {
     services: [
       { name: t('services.vignetteCheck'), href: "/proverka-na-vinetka" },
-      { name: t('services.prices'), href: "/tseni" },
       { name: t('services.tollTax'), href: "/toll-taksi" },
+    ],
+    vignettes: [
+      { name: t('vignettes.daily'), href: "/tseni/dnevna" },
+      { name: t('vignettes.weekend'), href: "/tseni/uikend" },
+      { name: t('vignettes.weekly'), href: "/tseni/sedmichna" },
+      { name: t('vignettes.monthly'), href: "/tseni/mesechna" },
+      { name: t('vignettes.quarterly'), href: "/tseni/trimesechna" },
+      { name: t('vignettes.annual'), href: "/tseni/godishna" },
     ],
     support: supportItems,
     company: [
@@ -103,76 +110,92 @@ export default function Footer() {
               priority
             />
           </div>
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm/6 font-semibold text-gray-900">
-                  {t('sections.services')}
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.services.map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">
-                  {t('sections.support')}
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.support.map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0 md:grid-cols-3">
+            {/* Services Column */}
+            <div>
+              <h3 className="text-sm/6 font-semibold text-gray-900">
+                {t('sections.services')}
+              </h3>
+              <ul role="list" className="mt-6 space-y-4">
+                {navigation.services.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm/6 text-gray-600 hover:text-gray-900"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-            <div className="md:grid md:grid-cols-2 md:gap-8">
-              <div>
-                <h3 className="text-sm/6 font-semibold text-gray-900">
-                  {t('sections.company')}
-                </h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="mt-10 md:mt-0">
-                <h3 className="text-sm/6 font-semibold text-gray-900">{t('sections.legal')}</h3>
-                <ul role="list" className="mt-6 space-y-4">
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="text-sm/6 text-gray-600 hover:text-gray-900"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+            
+            {/* Vignettes Column */}
+            <div>
+              <h3 className="text-sm/6 font-semibold text-gray-900">
+                {t('sections.vignettes')}
+              </h3>
+              <ul role="list" className="mt-6 space-y-4">
+                {navigation.vignettes.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm/6 text-gray-600 hover:text-gray-900"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            {/* Support + Company Column */}
+            <div>
+              <h3 className="text-sm/6 font-semibold text-gray-900">
+                {t('sections.support')}
+              </h3>
+              <ul role="list" className="mt-6 space-y-4">
+                {navigation.support.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm/6 text-gray-600 hover:text-gray-900"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              
+              <h3 className="text-sm/6 font-semibold text-gray-900 mt-8">
+                {t('sections.company')}
+              </h3>
+              <ul role="list" className="mt-6 space-y-4">
+                {navigation.company.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm/6 text-gray-600 hover:text-gray-900"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              
+              <h3 className="text-sm/6 font-semibold text-gray-900 mt-8">{t('sections.legal')}</h3>
+              <ul role="list" className="mt-6 space-y-4">
+                {navigation.legal.map((item) => (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="text-sm/6 text-gray-600 hover:text-gray-900"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
