@@ -5,6 +5,14 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,
+  skipTrailingSlashRedirect: true, // Избягваме допълнителни trailing slash редиректи
+  trailingSlash: false, // Без trailing slashes
+  async redirects() {
+    return [
+      // Пример редиректи - ако имате специфични URL-и, които трябва да редиректвате
+      // Middleware-ът вече се грижи за езиковите префикси
+    ];
+  },
   images: {
     remotePatterns: [
       {

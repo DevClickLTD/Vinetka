@@ -18,17 +18,29 @@ const intlMiddleware = createMiddleware({
 });
 
 export default function middleware(request) {
-  const { pathname } = request.nextUrl;
+  const { pathname, hostname } = request.nextUrl;
   
   // Проверяваме дали URL-ът вече има език префикс
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
   
-  // Ако няма език префикс, правим 301 редирект към /bg/
-  if (!pathnameHasLocale && !pathname.startsWith('/_next') && !pathname.startsWith('/_vercel') && !pathname.includes('.')) {
-    const newUrl = new URL(`/${defaultLocale}${pathname}`, request.url);
-    return NextResponse.redirect(newUrl, { status: 301 }); // 301 вместо 307!
+  // Пропускаме Next.js файлове и статични ресурси
+  if (pathname.startsWith('/_next') || pathname.startsWith('/_vercel') || pathname.includes('.')) {
+    return intlMiddleware(request);
+  }
+  
+  // Ако няма език префикс, правим 301 редирект
+  if (!pathnameHasLocale) {
+    // Премахваме trailing slash ако има
+    const cleanPath = pathname.endsWith('/') && pathname !== '/' 
+      ? pathname.slice(0, -1) 
+      : pathname;
+    
+    // Създаваме нов URL с език префикс
+    const newUrl = new URL(`/${defaultLocale}${cleanPath === '/' ? '' : cleanPath}`, request.url);
+    
+    return NextResponse.redirect(newUrl, { status: 301 }); // 301 permanent redirect
   }
   
   // За всички останали случаи използваме стандартния next-intl middleware
