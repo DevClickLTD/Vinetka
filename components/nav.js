@@ -31,7 +31,7 @@ export default function Navigation() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
   
-  const allPages = [
+  const pages = [
     { name: t('home'), href: "/" },
     { name: t('tollTax'), href: "/toll-taksi" },
     { name: t('blog'), href: "/blog" },
@@ -47,11 +47,6 @@ export default function Navigation() {
     { name: t('quarterlyTitle') || 'Тримесечна винетка', href: "/tseni/trimesechna" },
     { name: t('annualTitle') || 'Годишна винетка', href: "/tseni/godishna" },
   ];
-  
-  // Filter out blog for non-bg locales
-  const pages = allPages.filter(page => 
-    page.href !== "/blog" || locale === 'bg'
-  );
 
   // useEffect(() => {
   //   const fetchData = async () => {
