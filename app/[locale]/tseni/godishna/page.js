@@ -17,6 +17,7 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../../lib/seo-utils';
 import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 import { getWebAppUrl } from '../../../../lib/web-app-url';
+import AnnualVignetteExpandable from '../../../../components/AnnualVignetteExpandable';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 export const revalidate = 86400;
@@ -373,6 +374,9 @@ export default async function GodishnaVignette({ params }) {
           </div>
         </div>
       </div>
+
+      {/* Annual Vignette Expandable Section */}
+      <AnnualVignetteExpandable />
 
       {/* Important Info Section */}
       <div className="bg-purple-50 py-16 sm:py-24">
