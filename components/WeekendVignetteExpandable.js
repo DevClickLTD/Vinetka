@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 export default function WeekendVignetteExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -43,6 +44,18 @@ export default function WeekendVignetteExpandable() {
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Другото преимущество е лесното и бързо закупуване на уикенд винетка, което не изисква дълготрайни ангажименти. Шофьорите могат лесно да я закупят онлайн или на бензиностанции, като не се налага да плащат за целия годишен период. Нейната валидност е винаги от 12:00 ч в петък до 23:59 ч в неделя.
                 </p>
+
+                {/* Снимка между параграфите */}
+                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/предимства-на-уикенд-винетката.jpg"
+                    alt="Предимства на уикенд винетката за България"
+                    width={800}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    quality={90}
+                  />
+                </div>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
                   Гъвкавост и удобство
