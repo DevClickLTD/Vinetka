@@ -14,6 +14,7 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../../lib/seo-utils';
 import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 import { getWebAppUrl } from '../../../../lib/web-app-url';
+import WeekendVignetteExpandable from '../../../../components/WeekendVignetteExpandable';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 export const revalidate = 86400;
@@ -270,6 +271,9 @@ export default async function UikendVignette({ params }) {
           </div>
         </div>
       </div>
+
+      {/* Weekend Vignette Expandable Section */}
+      <WeekendVignetteExpandable />
 
       {/* Important Info Section */}
       <div className="bg-purple-50 py-16 sm:py-24">
