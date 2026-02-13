@@ -264,7 +264,7 @@
         "subtitle": "Günlük rutinden kaçışlar için mükemmel!",
         "duration": "2 gün",
         "description1": "Hafta sonu vinyeti, iki günlük yolculuklar için özel olarak tasarlanmıştır ve kısa tatiller için gereksiz masraflar olmadan ihtiyaçlarınızı karşılar. Aktivasyondan itibaren 48 saat geçerlidir, bu da onu Cuma'dan Pazar'a veya herhangi bir iki günlük dönem için ideal kılar.",
-        "description2": "Hafta sonu vinyeti, kısa yolculuklar için en iyi fiyat-performans oranını sunar. Ani kısa yolculuk kararları için idealdir ve Bulgaristan'daki tüm ücretli otoyollarda tam hareket özgürlüğü sağlar.",
+        "description2": "Hafta sonu vinyeti, kısa yolculuklar için en iyi fiyat-performans oranını sunar. Ani kısa yolculuk kararları için idealdir ve tüm otoyollar ve Cumhuriyet karayolu ağında tam hareket özgürlüğü sağlar.",
         "feature1": "48 saat geçerli",
         "feature2": "Ani yolculuklar için ideal",
         "feature3": "Kısa yolculuklar için en iyi değer",
@@ -285,7 +285,7 @@
           "spontaneous": "Ani kararlar",
           "spontaneousDesc": "Kısa yolculuklar için beklenmedik kararlar için mükemmel",
           "allHighways": "Tüm otoyollar",
-          "allHighwaysDesc": "Bulgaristan'daki tüm ücretli otoyollar için geçerli",
+          "allHighwaysDesc": "Tüm otoyollar ve Cumhuriyet karayolu ağı için geçerli",
           "title": "Neden hafta sonu vinyetini seçmelisiniz?",
           "subtitle": "2 günlük vinyetin avantajları ve özellikleri"
         },
@@ -305,7 +305,7 @@
           "validityTitle": "Geçerlilik",
           "validity": "Aktivasyondan itibaren tam 48 saat",
           "coverageTitle": "Kapsam",
-          "coverage": "Bulgaristan'daki tüm ücretli otoyollar",
+          "coverage": "Tüm otoyollar ve Cumhuriyet karayolu ağı",
           "vehiclesTitle": "Araçlar",
           "vehicles": "3.5 tona kadar binek araçlar"
         },

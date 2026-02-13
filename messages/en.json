@@ -251,7 +251,7 @@
       "subtitle": "Perfect for short escapes from everyday life!",
       "duration": "2 days",
       "description1": "The weekend vignette is specially created for two-day trips and covers the needs for short holidays without unnecessary expenses. Valid for a period of 48 hours from the moment of activation, which makes it ideal for Friday to Sunday trips or any other two-day period.",
-      "description2": "The weekend vignette offers the best value for money for short trips. Ideal for spontaneous decisions for short travel and provides complete freedom of movement on all toll highways in Bulgaria.",
+      "description2": "The weekend vignette offers the best value for money for short trips. Ideal for spontaneous decisions for short travel and provides complete freedom of movement on all highways and the Republican road network.",
       "feature1": "Valid for 48 hours",
       "feature2": "Ideal for spontaneous travels",
       "feature3": "Best value for short trips",
@@ -272,7 +272,7 @@
         "spontaneous": "Spontaneous decisions",
         "spontaneousDesc": "Perfect for unexpected decisions for short travel",
         "allHighways": "All highways",
-        "allHighwaysDesc": "Valid for all toll highways in Bulgaria",
+        "allHighwaysDesc": "Valid for all highways and the Republican road network",
         "title": "Why choose the weekend vignette?",
         "subtitle": "Advantages and characteristics of the 2-day vignette"
       },
@@ -292,7 +292,7 @@
         "validityTitle": "Validity",
         "validity": "Exactly 48 hours from the moment of activation",
         "coverageTitle": "Coverage",
-        "coverage": "All toll highways in Bulgaria",
+        "coverage": "All highways and the Republican road network",
         "vehiclesTitle": "Vehicles",
         "vehicles": "Light vehicles up to 3.5 tons"
       },

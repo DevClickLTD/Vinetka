@@ -245,7 +245,7 @@
       "subtitle": "Perfekt für kurze Ausflüge aus dem Alltag!",
       "duration": "2 Tage",
       "description1": "Die Wochenend-Vignette ist speziell für zweitägige Reisen konzipiert und deckt die Bedürfnisse für kurze Urlaubspausen ohne unnötige Kosten ab. Sie ist für einen Zeitraum von 48 Stunden ab dem Zeitpunkt der Aktivierung gültig, was sie ideal für Reisen von Freitag bis Sonntag oder für jeden anderen zweitägigen Zeitraum macht.",
-      "description2": "Die Wochenend-Vignette bietet das beste Preis-Leistungs-Verhältnis für kurze Reisen. Ideal für spontane Entscheidungen für eine kurze Reise und bietet vollständige Bewegungsfreiheit auf allen mautpflichtigen Autobahnen in Bulgarien.",
+      "description2": "Die Wochenend-Vignette bietet das beste Preis-Leistungs-Verhältnis für kurze Reisen. Ideal für spontane Entscheidungen für eine kurze Reise und bietet vollständige Bewegungsfreiheit auf allen Autobahnen und dem Republikanischen Straßennetz.",
       "feature1": "Gültig 48 Stunden",
       "feature2": "Ideal für spontane Reisen",
       "feature3": "Bester Wert für kurze Reisen",
@@ -266,7 +266,7 @@
         "spontaneous": "Spontane Entscheidungen",
         "spontaneousDesc": "Perfekt für unerwartete Entscheidungen für eine kurze Reise",
         "allHighways": "Alle Autobahnen",
-        "allHighwaysDesc": "Gültig für alle mautpflichtigen Autobahnen in Bulgarien",
+        "allHighwaysDesc": "Gültig für alle Autobahnen und das Republikanische Straßennetz",
         "title": "Warum die Wochenend-Vignette wählen?",
         "subtitle": "Vorteile und Eigenschaften der 2-Tage-Vignette"
       },
@@ -286,7 +286,7 @@
         "validityTitle": "Gültigkeit",
         "validity": "Genau 48 Stunden ab dem Zeitpunkt der Aktivierung",
         "coverageTitle": "Abdeckung",
-        "coverage": "Alle mautpflichtigen Autobahnen in Bulgarien",
+        "coverage": "Alle Autobahnen und das Republikanische Straßennetz",
         "vehiclesTitle": "Fahrzeuge",
         "vehicles": "Pkw bis 3,5 Tonnen"
       },
