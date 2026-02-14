@@ -16,6 +16,13 @@ const roboto = Roboto({
   adjustFontFallback: true,
 });
 
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+  };
+}
+
 export async function generateMetadata() {
   const host = (await headers()).get("host"); // Get the current domain
   const protocol = host?.includes("localhost") ? "http" : "https"; // Adjust for local dev
@@ -81,17 +88,31 @@ export async function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="bg">
-      <head>
-        <CriticalCSS />
-        <link
-          rel="preconnect"
-          href="https://vinetka.admin-panels.com"
-          crossOrigin="anonymous"
-        />
-        <link rel="dns-prefetch" href="https://vinetka.admin-panels.com" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </head>
       <body className={roboto.className}>
+        <CriticalCSS />
+        
+        {/* Preconnect and DNS-prefetch */}
+        <Script
+          id="resource-hints"
+          strategy="beforeInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                const preconnect = document.createElement('link');
+                preconnect.rel = 'preconnect';
+                preconnect.href = 'https://vinetka.admin-panels.com';
+                preconnect.crossOrigin = 'anonymous';
+                document.head.appendChild(preconnect);
+                
+                const dnsPrefetch = document.createElement('link');
+                dnsPrefetch.rel = 'dns-prefetch';
+                dnsPrefetch.href = 'https://vinetka.admin-panels.com';
+                document.head.appendChild(dnsPrefetch);
+              })();
+            `,
+          }}
+        />
+        
         <NextTopLoader showSpinner={false} color="#803487" />
         <ImagePreloader />
         <main>{children}</main>
