@@ -61,7 +61,9 @@ export default async function UikendVignette({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices.weekend');
   const tCommon = await getTranslations('prices');
+  const tNav = await getTranslations('navigation');
   const webAppUrl = getWebAppUrl(locale);
+  const currentYear = new Date().getFullYear();
   
   // ✅ Product Schema
   const productSchema = getVignetteProductSchema('weekend', locale);
@@ -179,7 +181,7 @@ export default async function UikendVignette({ params }) {
               </div>
             </div>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-              {t('mainTitle')}
+              {t('mainTitle')} {tNav('forYear')} {currentYear}
             </h1>
             <p className="mt-6 text-lg leading-8 text-purple-100">
               {t('subtitle')}
