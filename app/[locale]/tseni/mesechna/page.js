@@ -208,6 +208,21 @@ export default async function MesechnaVignette({ params }) {
                 <span className="text-sm text-gray-600">30,00 лв.</span>
               </div>
             </div>
+            
+            {/* Mobile Buy Button - Only visible on mobile */}
+            <div className="mt-8 lg:hidden">
+              <a
+                href={webAppUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-x-2 rounded-md bg-white px-6 py-3 text-base font-semibold text-purple-900 shadow-sm hover:bg-purple-50 transition-all duration-300 w-full max-w-xs"
+              >
+                {t('cta.button')}
+                <svg className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
