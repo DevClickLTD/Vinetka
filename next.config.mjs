@@ -9,8 +9,12 @@ const nextConfig = {
   trailingSlash: false, // Без trailing slashes
   async redirects() {
     return [
-      // Пример редиректи - ако имате специфични URL-и, които трябва да редиректвате
-      // Middleware-ът вече се грижи за езиковите префикси
+      // Blog redirect: proverka-na-vinetka -> validnost-na-vinetka
+      {
+        source: '/:locale/blog/proverka-na-vinetka',
+        destination: '/:locale/blog/validnost-na-vinetka',
+        permanent: true, // 301 redirect (SEO friendly)
+      },
     ];
   },
   images: {
