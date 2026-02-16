@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Link } from "../lib/navigation";
 
 export default function WeekendVignetteExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -24,12 +25,12 @@ export default function WeekendVignetteExpandable() {
               използват Републиканската пътна мрежа само през уикендите. Тя е
               изключително полезна за хора, които пътуват основно през почивните
               дни, като осигурява намаляване на разходите в сравнение с{" "}
-              <a
-                href="/bg/tseni/mesechna"
+              <Link
+                href="/tseni/mesechna"
                 className="text-[#803487] hover:underline"
               >
                 месечната винетка
-              </a>
+              </Link>
               .
             </p>
 

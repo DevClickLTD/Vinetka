@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import { Link } from "../lib/navigation";
 
 export default function AnnualVignetteExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -38,12 +39,12 @@ export default function AnnualVignetteExpandable() {
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   Годишната винетка е по-изгодна от{" "}
-                  <a
-                    href="/bg/tseni/mesechna"
+                  <Link
+                    href="/tseni/mesechna"
                     className="text-[#803487] hover:underline"
                   >
                     месечната
-                  </a>{" "}
+                  </Link>{" "}
                   в дългосрочен план. Купувайки винетка за цяла
                   година, получавате значителна икономия в сравнение с месечните
                   такси, особено ако планирате повече от едно пътуване през
