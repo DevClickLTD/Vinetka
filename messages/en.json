@@ -91,7 +91,7 @@
   },
   "contact": {
     "title": "Contact",
-    "pageTitle": "Contact - Vinetka.bg",
+    "pageTitle": "Contact",
     "pageDescription": "Contact us through our contact form or find our contact information.",
     "officeType": "Corporate Office",
     "address": "Address",
@@ -537,7 +537,7 @@
       "feature3": "Maximum convenience",
       "feature4": "No worries about status",
       "highlight": "Save 40%",
-      "pageTitle": "Annual Vignette - 365 days | Price and Information | Vinetka.bg",
+      "pageTitle": "Annual Vignette - 365 days | Price and Information",
       "pageDescription": "Annual vignette for 365 days - the most advantageous solution for everyone who travels regularly. Save up to 40% compared to monthly vignettes. Maximum convenience without worries.",
       "mainTitle": "Annual Vignette",
       "duration365": "365 days",
@@ -716,23 +716,23 @@
   "legal": {
     "privacyPolicy": {
       "title": "Privacy Policy",
-      "pageTitle": "Privacy Policy - Vinetka.bg",
+      "pageTitle": "Privacy Policy",
       "pageDescription": "Learn how we collect, use and protect your personal data."
     },
     "cookiePolicy": {
       "title": "Cookie Policy",
-      "pageTitle": "Cookie Policy - Vinetka.bg",
+      "pageTitle": "Cookie Policy",
       "pageDescription": "Information about the use of cookies on our website."
     },
     "termsOfService": {
       "title": "Terms of Service",
-      "pageTitle": "Terms of Service - Vinetka.bg",
+      "pageTitle": "Terms of Service",
       "pageDescription": "Terms and conditions for using our services and website."
     }
   },
   "vignetteChecker": {
     "title": "Vignette Check",
-    "pageTitle": "Vignette Check - Vinetka.bg",
+    "pageTitle": "Vignette Check",
     "pageDescription": "Check the status of your electronic vignette quickly and easily.",
     "checkButton": "Check Vignette",
     "enterPlateNumber": "Enter license plate number",
@@ -933,7 +933,7 @@
       "viewAll": "View all articles"
     },
     "privacyPolicy": {
-      "pageTitle": "Privacy Policy - Vinetka.bg",
+      "pageTitle": "Privacy Policy",
       "pageDescription": "Privacy Policy of Vinetka.bg - learn more about personal data processing.",
       "title": "PRIVACY POLICY",
       "introduction": "This privacy policy is adopted by \"Digital Policy Hub\" JSC, UIC 207623030 (hereinafter referred to as \"the Company\" or \"DPH\" JSC), with headquarters and management address: Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B - independent administrator and personal data processor. The Company is a partner of \"DIGITAL SMART INFRASTRUCTURE\" JSC, UIC 205612035 (hereinafter referred to as \"DSI\" JSC), with headquarters and management address: Republic of Bulgaria, Sofia-capital region, Capital municipality, Sofia city, Sredets district, \"Georgi S. Rakovski\" str. No. 96, which company is registered as a National service provider with the Road Infrastructure Agency and has the right to carry out activities for collecting road taxes and others. \"DPH\" JSC carries out activities to provide opportunities for users to pay vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes on behalf and for the account of \"DSI\" JSC through the website",
@@ -1056,7 +1056,7 @@
       }
     },
     "cookiePolicy": {
-      "pageTitle": "Cookie Usage Policy - Vinetka.bg",
+      "pageTitle": "Cookie Usage Policy",
       "pageDescription": "Cookie Usage Policy of Vinetka.bg - information about the use of cookies.",
       "title": "COOKIE USAGE POLICY",
       "introduction": "This cookie usage policy is adopted by \"Digital Policy Hub\" JSC, UIC 207623030 (hereinafter referred to as \"the Company\" or \"DPH\" JSC), with headquarters and management address: Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B - independent administrator and personal data processor. The Company is a partner of \"DIGITAL SMART INFRASTRUCTURE\" JSC, UIC 205612035 (hereinafter referred to as \"DSI\" JSC), with headquarters and management address: Republic of Bulgaria, Sofia-capital region, Capital municipality, Sofia city, Sredets district, \"Georgi S. Rakovski\" str. No. 96, which company is registered as a National service provider with the Road Infrastructure Agency and has the right to carry out activities for collecting road taxes and others. \"DPH\" JSC carries out activities to provide opportunities for users to pay vignette taxes, compensatory taxes and \"maximum toll for the day\" taxes on behalf and for the account of \"DSI\" JSC through the website",
@@ -1110,7 +1110,7 @@
       }
     },
     "termsOfUse": {
-      "pageTitle": "Terms of Use - Vinetka.bg",
+      "pageTitle": "Terms of Use",
       "pageDescription": "Terms of use for the website www.vinetka.bg - rules for purchasing electronic vignettes.",
       "title": "TERMS OF USE FOR THE WEBSITE WWW.VINETKA.BG",
       "introduction": "These Terms of Use regulate the rules for using the website www.vinetka.bg and the provision of services related to the purchase and delivery of electronic vignettes and payment of \"maximum toll for the day\" taxes and compensatory taxes and other goods and services offered to users of the website www.vinetka.bg. All users provide consent to these Terms of Use and the applicable policies and documents of \"Digital Policy Hub\" JSC (referred to briefly as \"DPH\" JSC or the Company) when using the website. These Terms of Use are published on the website www.vinetka.bg and are considered accepted by the User when using the website.",

@@ -20,7 +20,8 @@ import { getVignettePriceListSchema } from '../../../lib/schemas/productSchemas'
 import { getWebAppUrl } from '../../../lib/web-app-url';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
-export const revalidate = 86400;
+// Temporarily disabled for development - set to 86400 for production
+export const revalidate = 0;
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;

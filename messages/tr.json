@@ -91,7 +91,7 @@
     },
     "contact": {
       "title": "İletişim",
-      "pageTitle": "İletişim - Vinetka.bg",
+      "pageTitle": "İletişim ",
       "pageDescription": "Bizimle iletişim formumuz aracılığıyla iletişime geçin veya iletişim bilgilerimizi bulun.",
       "officeType": "Kurumsal Ofis",
       "address": "Adres",
@@ -550,7 +550,7 @@
         "feature3": "Maksimum konfor",
         "feature4": "Vinyet durumu endişesi yok",
         "highlight": "%40 tasarruf",
-        "pageTitle": "Yıllık vinyet - 365 gün | Fiyat ve bilgi | Vinetka.bg",
+        "pageTitle": "Yıllık vinyet - 365 gün | Fiyat ve bilgi",
         "pageDescription": "365 günlük yıllık vinyet - düzenli yolculuk yapanlar için en avantajlı çözüm. Aylık vinyetlere göre %40'a varan tasarruf. Maksimum konfor, endişesiz kullanım.",
         "mainTitle": "Yıllık vinyet",
         "duration365": "365 gün",
@@ -655,23 +655,23 @@
     "legal": {
       "privacyPolicy": {
         "title": "Gizlilik Politikası",
-        "pageTitle": "Gizlilik Politikası - Vinetka.bg",
+        "pageTitle": "Gizlilik Politikası ",
         "pageDescription": "Kişisel verilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu öğrenin."
       },
       "cookiePolicy": {
         "title": "Çerez Politikası",
-        "pageTitle": "Çerez Politikası - Vinetka.bg",
+        "pageTitle": "Çerez Politikası ",
         "pageDescription": "Sitemizde çerezlerin kullanımı hakkında bilgi."
       },
       "termsOfService": {
         "title": "Kullanım Şartları",
-        "pageTitle": "Kullanım Şartları - Vinetka.bg",
+        "pageTitle": "Kullanım Şartları ",
         "pageDescription": "Hizmetlerimizin ve sitemizin kullanım koşulları."
       }
     },
     "vignetteChecker": {
       "title": "Vinyet Kontrolü",
-      "pageTitle": "Vinyet Kontrolü - Vinetka.bg",
+      "pageTitle": "Vinyet Kontrolü ",
       "pageDescription": "Elektronik vinyetinizin durumunu hızlı ve kolayca kontrol edin.",
       "checkButton": "Vinyeti Kontrol Et",
       "enterPlateNumber": "Plaka numarasını girin",
@@ -872,7 +872,7 @@
         "viewAll": "Tüm makaleleri görüntüle"
       },
       "privacyPolicy": {
-        "pageTitle": "Gizlilik Politikası - Vinetka.bg",
+        "pageTitle": "Gizlilik Politikası ",
         "pageDescription": "Vinetka.bg gizlilik politikası - kişisel verilerin işlenmesi hakkında daha fazla bilgi edinin.",
         "title": "GİZLİLİK POLİTİKASI",
         "introduction": "Bu gizlilik politikası, 'Dijital Policy Hub' AŞ, EIK 207623030 (bundan sonra 'Şirket' veya 'DPH' AŞ olarak anılacaktır), merkezi ve yönetim adresi: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası - bağımsız veri sorumlusu ve işleyici tarafından kabul edilmiştir. Şirket, 'DİJİTAL SMART İNFRASRUKTURA' AŞ, EIK 205612035 (bundan sonra 'DSİ' AŞ olarak anılacaktır) ile ortaktır, merkezi ve adresi: Bulgaristan, Sofya ili, Sofya Belediyesi, Sofya şehri, Sredets bölgesi, Georgi S. Rakovski Cad. No:96, Ulusal Hizmet Sağlayıcı olarak Yol Altyapı Ajansı'na kayıtlıdır ve yol ücretleri toplama hakkına sahiptir. DPH AŞ, kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretlerini ödemesini sağlamak için DSİ AŞ adına ve hesabına internet sitesi üzerinden faaliyet yürütmektedir.",
@@ -995,7 +995,7 @@
         }
       },
       "cookiePolicy": {
-        "pageTitle": "Çerez Kullanım Politikası - Vinetka.bg",
+        "pageTitle": "Çerez Kullanım Politikası ",
         "pageDescription": "Vinetka.bg çerez kullanım politikası - çerezlerin kullanımı hakkında bilgi.",
         "title": "ÇEREZ KULLANIM POLİTİKASI",
         "introduction": "Bu çerez kullanım politikası, 'Dijital Policy Hub' AŞ, EIK 207623030 (bundan sonra 'Şirket' veya 'DPH' AŞ olarak anılacaktır), merkezi ve yönetim adresi: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası - bağımsız veri sorumlusu ve işleyici tarafından kabul edilmiştir. Şirket, 'DİJİTAL SMART İNFRASRUKTURA' AŞ, EIK 205612035 (bundan sonra 'DSİ' AŞ olarak anılacaktır) ile ortaktır, merkezi ve adresi: Bulgaristan, Sofya ili, Sofya Belediyesi, Sofya şehri, Sredets bölgesi, Georgi S. Rakovski Cad. No:96, Ulusal Hizmet Sağlayıcı olarak Yol Altyapı Ajansı'na kayıtlıdır ve yol ücretleri toplama hakkına sahiptir. DPH AŞ, kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretlerini ödemesini sağlamak için DSİ AŞ adına ve hesabına internet sitesi üzerinden faaliyet yürütmektedir.",
@@ -1049,7 +1049,7 @@
         }
       },
       "termsOfUse": {
-        "pageTitle": "Kullanım Koşulları - Vinetka.bg",
+        "pageTitle": "Kullanım Koşulları ",
         "pageDescription": "www.vinetka.bg web sitesi kullanım koşulları - elektronik vinyet satın alma kuralları.",
         "title": "WWW.VINETKA.BG WEB SİTESİ KULLANIM KOŞULLARI",
         "introduction": "Bu Kullanım Koşulları, www.vinetka.bg internet sitesinin kullanım kurallarını ve elektronik vinyetlerin satın alınması ve teslimatı ile 'günlük maksimum geçiş ücreti' ve telafi edici ücretlerin ödenmesi ve www.vinetka.bg internet sitesinde kullanıcılara sunulan diğer ürün ve hizmetlerin sağlanmasını düzenler. Tüm kullanıcılar, www.vinetka.bg internet sitesini kullanırken bu Kullanım Koşulları ile 'Dijital Policy Hub' AŞ'nin (kısaca 'DPH' AŞ veya Şirket) geçerli politika ve belgelerine onay vermiş sayılır. Bu Kullanım Koşulları www.vinetka.bg internet sitesinde yayımlanmıştır ve Kullanıcı tarafından web sitesinin kullanılmasıyla kabul edilmiş sayılır.",

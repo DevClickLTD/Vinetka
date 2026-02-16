@@ -91,7 +91,7 @@
   },
   "contact": {
     "title": "Kontakt",
-    "pageTitle": "Kontakt - Vinetka.bg",
+    "pageTitle": "Kontakt",
     "pageDescription": "Kontaktieren Sie uns über unser Kontaktformular oder finden Sie unsere Kontaktdaten.",
     "officeType": "Firmenbüro",
     "address": "Adresse",
@@ -531,7 +531,7 @@
       "feature3": "Maximaler Komfort",
       "feature4": "Keine Sorgen über den Status",
       "highlight": "Ersparnis 40%",
-      "pageTitle": "Jährliche Vignette - 365 Tage | Preis und Informationen | Vinetka.bg",
+      "pageTitle": "Jährliche Vignette - 365 Tage | Preis und Informationen",
       "pageDescription": "Jährliche Vignette für 365 Tage - die wirtschaftlichste Lösung für alle, die regelmäßig reisen. Ersparnis bis zu 40% gegenüber monatlichen Vignetten. Maximaler Komfort ohne Sorgen.",
       "mainTitle": "Jährliche Vignette",
       "duration365": "365 Tage",
@@ -710,23 +710,23 @@
   "legal": {
     "privacyPolicy": {
       "title": "Datenschutzerklärung",
-      "pageTitle": "Datenschutzerklärung - Vinetka.bg",
+      "pageTitle": "Datenschutzerklärung",
       "pageDescription": "Erfahren Sie, wie wir Ihre personenbezogenen Daten sammeln, verwenden und schützen."
     },
     "cookiePolicy": {
       "title": "Cookie-Richtlinie",
-      "pageTitle": "Cookie-Richtlinie - Vinetka.bg", 
+      "pageTitle": "Cookie-Richtlinie", 
       "pageDescription": "Informationen zur Verwendung von Cookies auf unserer Website."
     },
     "termsOfService": {
       "title": "Allgemeine Geschäftsbedingungen",
-      "pageTitle": "Allgemeine Geschäftsbedingungen - Vinetka.bg",
+      "pageTitle": "Allgemeine Geschäftsbedingungen",
       "pageDescription": "Nutzungsbedingungen für unsere Dienstleistungen und Website."
     }
   },
   "vignetteChecker": {
     "title": "Vignetten-Prüfung",
-    "pageTitle": "Vignetten-Prüfung - Vinetka.bg",
+    "pageTitle": "Vignetten-Prüfung",
     "pageDescription": "Überprüfen Sie den Status Ihrer elektronischen Vignette schnell und einfach.",
     "checkButton": "Vignette prüfen",
     "enterPlateNumber": "Kennzeichen eingeben",
@@ -927,7 +927,7 @@
       "viewAll": "Alle Artikel anzeigen"
     },
     "privacyPolicy": {
-      "pageTitle": "Datenschutzerklärung - Vinetka.bg",
+      "pageTitle": "Datenschutzerklärung",
       "pageDescription": "Datenschutzerklärung von Vinetka.bg - erfahren Sie mehr über die Verarbeitung personenbezogener Daten.",
       "title": "DATENSCHUTZERKLÄRUNG",
       "introduction": "Diese Datenschutzerklärung wird von \"Digital Policy Hub\" AG, UIN 207623030 (nachfolgend \"das Unternehmen\" oder \"DPH\" AG genannt) mit Sitz und Verwaltungsadresse: Sofia, PLZ 1113, Bezirk Isgrev, Str. \"Major Yuri Gagarin\" Nr. 30, Gebäude B – unabhängiger Administrator und Verarbeiter personenbezogener Daten angenommen. Das Unternehmen ist Partner der \"DIGITAL SMART INFRASTRUCTURE\" AG, UIN 205612035 (nachfolgend \"DSI\" AG genannt) mit Sitz und Verwaltungsadresse: Republik Bulgarien, Region Sofia-Stadt, Gemeinde Hauptstadt, Stadt Sofia, Bezirk Sredets, Str. \"Georgi S. Rakovski\" Nr. 96, welches Unternehmen als Nationaler Dienstleister bei der Agentur \"Straßeninfrastruktur\" registriert ist und das Recht hat, Straßenmauterhebung und andere Tätigkeiten auszuführen. \"DPH\" AG führt Tätigkeiten zur Bereitstellung der Möglichkeit für Nutzer aus, Vignettentaxen, Kompensationstaxen und \"Maximaler Tagesmaut\"-Gebühren im Namen und auf Rechnung der \"DSI\" AG über die Internetseite zu bezahlen.",
@@ -1050,7 +1050,7 @@
       }
     },
     "cookiePolicy": {
-      "pageTitle": "Cookie-Richtlinie - Vinetka.bg",
+      "pageTitle": "Cookie-Richtlinie",
       "pageDescription": "Cookie-Richtlinie von Vinetka.bg - Informationen über die Verwendung von Cookies.",
       "title": "COOKIE-RICHTLINIE",
       "introduction": "Diese Cookie-Richtlinie wurde von der Digital Policy Hub AG, USt-IdNr. 207623030 (im Folgenden „das Unternehmen“ oder „DPH“ AG genannt), mit Sitz und Geschäftsadresse: Sofia, PLZ 1113, Bezirk Izgrev, ul. „Major Yuri Gagarin“ Nr. 30, Gebäude B – unabhängiger Administrator und Verarbeiter personenbezogener Daten, angenommen. Das Unternehmen ist Partner der Digital Smart Infrastructure AG, USt-IdNr. 205612035 (im Folgenden „DSI“ AG genannt), mit Sitz und Geschäftsadresse: Republik Bulgarien, Region Sofia-Stadt, Gemeinde Sofia, Stadt Sofia, Bezirk Sredets, ul. „Georgi S. Rakovski“ Nr. 96, die als nationaler Dienstleister bei der Agentur für Straßeninfrastruktur registriert ist und berechtigt ist, Straßengebühren und andere zu erheben. Die DPH AG bietet den Nutzern die Möglichkeit, Vignettengebühren, Ausgleichsgebühren und „Maximal-Tagesmaut“-Gebühren im Namen und auf Rechnung der DSI AG über die Website zu bezahlen.",
@@ -1104,7 +1104,7 @@
       }
     },
     "termsOfUse": {
-      "pageTitle": "Allgemeine Nutzungsbedingungen - Vinetka.bg",
+      "pageTitle": "Allgemeine Nutzungsbedingungen",
       "pageDescription": "Allgemeine Nutzungsbedingungen der Website www.vinetka.bg – Regeln für den Kauf von elektronischen Vignetten.",
       "title": "ALLGEMEINE NUTZUNGSBEDINGUNGEN DER WEBSITE WWW.VINETKA.BG",
       "introduction": "Diese Allgemeinen Geschäftsbedingungen regeln die Nutzungsregeln der Website www.vinetka.bg und die Erbringung von Dienstleistungen im Zusammenhang mit dem Kauf und der Lieferung von elektronischen Vignetten sowie die Zahlung von „Maximal-Tagesmaut“- und Ausgleichsgebühren sowie anderer auf der Website www.vinetka.bg angebotener Waren und Dienstleistungen. Alle Nutzer erklären sich mit diesen Allgemeinen Geschäftsbedingungen sowie den geltenden Richtlinien und Dokumenten der Digital Policy Hub AG (im Folgenden „DPH“ AG oder das Unternehmen genannt) bei der Nutzung der Website einverstanden. Diese Allgemeinen Geschäftsbedingungen sind auf der Website www.vinetka.bg veröffentlicht und gelten als vom Nutzer mit der Nutzung der Website akzeptiert.",

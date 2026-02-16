@@ -20,7 +20,8 @@ import { getWebAppUrl } from '../../../../lib/web-app-url';
 import AnnualVignetteExpandable from '../../../../components/AnnualVignetteExpandable';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
-export const revalidate = 86400;
+// Temporarily disabled for development - set to 86400 for production
+export const revalidate = 0;
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -257,7 +258,7 @@ export default async function GodishnaVignette({ params }) {
           <div className="mx-auto max-w-3xl">
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed text-lg">
-                {t('description1')}
+                <strong>Годишната винетка</strong> е задължителна за всички притежатели на автомобили, които използват редовно платените пътища в България. Тя предлага най-добрата стойност спрямо цената и елиминира необходимостта от чести покупки.
               </p>
               
               <p className="text-gray-700 leading-relaxed">
