@@ -13,6 +13,19 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
+  const isComingSoon = process.env.NEXT_PUBLIC_COMING_SOON === 'true';
+  
+  if (isComingSoon) {
+    return {
+      title: "В процес на разработка | Vinetka.bg",
+      description: "Сайтът е в процес на разработка",
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
+
   const { locale } = await params;
   const messages = await getMessages();
   
@@ -66,6 +79,39 @@ export async function generateMetadata({ params }) {
   };
 }
 
+function ComingSoonPage() {
+  const crossPattern = {
+    backgroundImage: `
+      linear-gradient(0deg, transparent 24%, rgba(139, 92, 246, 0.1) 25%, rgba(139, 92, 246, 0.1) 26%, transparent 27%, transparent 74%, rgba(139, 92, 246, 0.1) 75%, rgba(139, 92, 246, 0.1) 76%, transparent 77%, transparent),
+      linear-gradient(90deg, transparent 24%, rgba(139, 92, 246, 0.1) 25%, rgba(139, 92, 246, 0.1) 26%, transparent 27%, transparent 74%, rgba(139, 92, 246, 0.1) 75%, rgba(139, 92, 246, 0.1) 76%, transparent 77%, transparent)
+    `,
+    backgroundSize: '80px 80px',
+    backgroundPosition: '0 0',
+  };
+
+  const radialOverlay = {
+    background: 'radial-gradient(circle at 50% 50%, transparent 30%, rgba(0, 0, 0, 0.8) 100%)',
+  };
+
+  return (
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-[#1a1a1a]">
+      <div 
+        className="absolute inset-0" 
+        style={crossPattern}
+      >
+        <div className="absolute inset-0" style={radialOverlay}></div>
+      </div>
+      
+      <div className="text-center px-4 z-10 relative">
+        <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-2xl">
+          В процес на разработка
+        </h1>
+        <div className="w-32 h-1 bg-purple-500 mx-auto opacity-50"></div>
+      </div>
+    </div>
+  );
+}
+
 export default async function LocaleLayout({ children, params }) {
   const { locale } = await params;
   
@@ -76,6 +122,19 @@ export default async function LocaleLayout({ children, params }) {
   
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
+
+  const isComingSoon = process.env.NEXT_PUBLIC_COMING_SOON === 'true';
+
+  // If Coming Soon mode is active, show only the Coming Soon page for ALL routes
+  if (isComingSoon) {
+    return (
+      <NextIntlClientProvider messages={messages}>
+        <ReCaptchaProvider>
+          <ComingSoonPage />
+        </ReCaptchaProvider>
+      </NextIntlClientProvider>
+    );
+  }
 
   return (
     <NextIntlClientProvider messages={messages}>
