@@ -13,7 +13,7 @@ export function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }) {
-  const isComingSoon = process.env.NEXT_PUBLIC_COMING_SOON === "false";
+  const isComingSoon = false; // process.env.NEXT_PUBLIC_COMING_SOON === 'true';
 
   if (isComingSoon) {
     return {
@@ -121,7 +121,7 @@ export default async function LocaleLayout({ children, params }) {
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
 
-  const isComingSoon = process.env.NEXT_PUBLIC_COMING_SOON === "true";
+  const isComingSoon = false; // process.env.NEXT_PUBLIC_COMING_SOON === 'true';
 
   // If Coming Soon mode is active, show only the Coming Soon page for ALL routes
   if (isComingSoon) {
