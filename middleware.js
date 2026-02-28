@@ -20,27 +20,28 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request) {
   const { pathname, hostname } = request.nextUrl;
   
-  // 🌍 ГЕОЛОКАЦИЯ: Блокираме vinetka.bg за България
+  // Пропускаме Next.js файлове и статични ресурси ПЪРВО
+  if (pathname.startsWith('/_next') || pathname.startsWith('/_vercel') || pathname.includes('.')) {
+    return intlMiddleware(request);
+  }
+  
+  // 🌍 SEO REDIRECT: vinetka.bg/bg/* от България → 301 към avtovia.bg/bg/*
   const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
   const isVinetkaDomain = hostname.includes('vinetka.bg');
   const isBulgaria = country === 'BG';
+  const isBulgarianLocale = pathname.startsWith('/bg/') || pathname === '/bg';
   
-  // Ако е vinetka.bg И потребителят е от България → Coming Soon страница
-  if (isVinetkaDomain && isBulgaria) {
-    // Пренасочваме към специална Coming Soon страница
-    const comingSoonUrl = new URL('/bg/geo-blocked', request.url);
-    return NextResponse.rewrite(comingSoonUrl);
+  // Ако е vinetka.bg ОТ България И е /bg/* URL → 301 redirect към avtovia.bg
+  if (isVinetkaDomain && isBulgaria && isBulgarianLocale) {
+    const newUrl = new URL(pathname, 'https://www.avtovia.bg');
+    newUrl.search = request.nextUrl.search; // Запазваме query параметри
+    return NextResponse.redirect(newUrl, { status: 301 });
   }
   
   // Проверяваме дали URL-ът вече има език префикс
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
   );
-  
-  // Пропускаме Next.js файлове и статични ресурси
-  if (pathname.startsWith('/_next') || pathname.startsWith('/_vercel') || pathname.includes('.')) {
-    return intlMiddleware(request);
-  }
   
   // Ако няма език префикс, правим 301 редирект
   if (!pathnameHasLocale) {
