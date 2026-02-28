@@ -25,14 +25,13 @@ export default function middleware(request) {
     return intlMiddleware(request);
   }
   
-  // 🌍 SEO REDIRECT: vinetka.bg/bg/* от България → 301 към avtovia.bg/bg/*
+  // 🌍 SEO REDIRECT: vinetka.bg/* от България → 301 към avtovia.bg/* (ВСИЧКИ ЕЗИЦИ)
   const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
   const isVinetkaDomain = hostname.includes('vinetka.bg');
   const isBulgaria = country === 'BG';
-  const isBulgarianLocale = pathname.startsWith('/bg/') || pathname === '/bg';
   
-  // Ако е vinetka.bg ОТ България И е /bg/* URL → 301 redirect към avtovia.bg
-  if (isVinetkaDomain && isBulgaria && isBulgarianLocale) {
+  // Ако е vinetka.bg ОТ България → 301 redirect към avtovia.bg (всички езици и URL-и)
+  if (isVinetkaDomain && isBulgaria) {
     const newUrl = new URL(pathname, 'https://www.avtovia.bg');
     newUrl.search = request.nextUrl.search; // Запазваме query параметри
     return NextResponse.redirect(newUrl, { status: 301 });
