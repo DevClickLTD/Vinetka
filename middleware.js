@@ -20,6 +20,18 @@ const intlMiddleware = createMiddleware({
 export default function middleware(request) {
   const { pathname, hostname } = request.nextUrl;
   
+  // 🌍 ГЕОЛОКАЦИЯ: Блокираме vinetka.bg за България
+  const country = request.geo?.country || request.headers.get('x-vercel-ip-country') || '';
+  const isVinetkaDomain = hostname.includes('vinetka.bg');
+  const isBulgaria = country === 'BG';
+  
+  // Ако е vinetka.bg И потребителят е от България → Coming Soon страница
+  if (isVinetkaDomain && isBulgaria) {
+    // Пренасочваме към специална Coming Soon страница
+    const comingSoonUrl = new URL('/bg/geo-blocked', request.url);
+    return NextResponse.rewrite(comingSoonUrl);
+  }
+  
   // Проверяваме дали URL-ът вече има език префикс
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
