@@ -120,8 +120,8 @@ export default function Navigation() {
               </button>
               <div className="ml-3 flex-1">
                 <Image
-                  src="/vinetka.bg-logo.png"
-                  alt="Vinetka.bg лого"
+                  src="/avtovia-logo.svg"
+                  alt="Avtovia.bg лого"
                   width={180}
                   height={40}
                   className="h-10 w-auto max-w-full object-contain"
@@ -247,12 +247,12 @@ export default function Navigation() {
               {/* Секция 1: Лого - намален padding и оптимизиран размер */}
               <div className="flex items-center justify-start lg:w-1/5 pl-1 pr-2 flex-1 lg:flex-initial">
                 <Link href="/" className="block w-full lg:w-auto">
-                  <span className="sr-only">Vinetka.bg</span>
+                  <span className="sr-only">Avtovia.bg</span>
                   <Image
                     width={180}
                     height={40}
-                    alt="Vinetka.bg лого"
-                    src="/vinetka.bg-logo.png"
+                    alt="Avtovia.bg лого"
+                    src="/avtovia-logo.svg"
                     className="h-9 lg:h-12 w-full lg:w-auto max-w-full object-contain transition-all duration-300 ease-in-out"
                   />
                 </Link>

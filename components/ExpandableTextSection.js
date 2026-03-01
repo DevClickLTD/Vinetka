@@ -54,7 +54,7 @@ export default function ExpandableTextSection() {
               </p>
               
               <p className="text-gray-700 leading-relaxed mb-4">
-                Същото действие може да се направи и в сайта на <a href="https://www.vinetka.bg" target="_blank" rel="noopener noreferrer">www.vinetka.bg</a>, както и в секцията за проверка на винетки на <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a>. При покупка на винетка през <a href={webAppUrl} target="_blank" rel="noopener noreferrer">{webAppUrl}</a> или <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a> се изпраща напомняне преди изтичането на срока на валидност.
+                Същото действие може да се направи и в сайта на <a href="https://www.avtovia.bg" target="_blank" rel="noopener noreferrer">www.avtovia.bg</a>, както и в секцията за проверка на винетки на <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a>. При покупка на винетка през <a href={webAppUrl} target="_blank" rel="noopener noreferrer">{webAppUrl}</a> или <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a> се изпраща напомняне преди изтичането на срока на валидност.
               </p>
               
               <p className="text-gray-700 leading-relaxed mb-4">

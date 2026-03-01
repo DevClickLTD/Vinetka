@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
       "месечна винетка цена",
       "тримесечна винетка цена",
       "годишна винетка цена",
-      "vinetka.bg цени",
+      "avtovia.bg цени",
       "Bulgaria vignette prices"
     ],
   });
@@ -187,8 +187,8 @@ export default async function tseni({ params }) {
     "description": "Онлайн продажба на електронни винетки за всички типове превозни средства в България",
     "provider": {
       "@type": "Organization",
-      "name": "Vinetka.bg",
-      "url": "https://www.vinetka.bg"
+      "name": "Avtovia.bg",
+      "url": "https://www.avtovia.bg"
     },
     "areaServed": {
       "@type": "Country",

@@ -118,19 +118,19 @@ export default async function MesechnaVignette({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://www.vinetka.bg/bg"
+        "item": "https://www.avtovia.bg/bg"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Цени",
-        "item": "https://www.vinetka.bg/bg/tseni"
+        "item": "https://www.avtovia.bg/bg/tseni"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Месечна винетка",
-        "item": "https://www.vinetka.bg/bg/tseni/mesechna"
+        "item": "https://www.avtovia.bg/bg/tseni/mesechna"
       }
     ]
   };

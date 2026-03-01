@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
 
   if (isComingSoon) {
     return {
-      title: "В процес на разработка | Vinetka.bg",
+      title: "В процес на разработка | Avtovia.bg",
       description: "Сайтът е в процес на разработка",
       robots: {
         index: false,

@@ -877,8 +877,8 @@
         "pageDescription": "Vinetka.bg gizlilik politikası - kişisel verilerin işlenmesi hakkında daha fazla bilgi edinin.",
         "title": "GİZLİLİK POLİTİKASI",
         "introduction": "Bu gizlilik politikası, 'Dijital Policy Hub' AŞ, EIK 207623030 (bundan sonra 'Şirket' veya 'DPH' AŞ olarak anılacaktır), merkezi ve yönetim adresi: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası - bağımsız veri sorumlusu ve işleyici tarafından kabul edilmiştir. Şirket, 'DİJİTAL SMART İNFRASRUKTURA' AŞ, EIK 205612035 (bundan sonra 'DSİ' AŞ olarak anılacaktır) ile ortaktır, merkezi ve adresi: Bulgaristan, Sofya ili, Sofya Belediyesi, Sofya şehri, Sredets bölgesi, Georgi S. Rakovski Cad. No:96, Ulusal Hizmet Sağlayıcı olarak Yol Altyapı Ajansı'na kayıtlıdır ve yol ücretleri toplama hakkına sahiptir. DPH AŞ, kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretlerini ödemesini sağlamak için DSİ AŞ adına ve hesabına internet sitesi üzerinden faaliyet yürütmektedir.",
-        "contactInfo": "www.vinetka.bg internet sitesi kullanıcıları, yukarıda belirtilen adresten, +359 876 995 177 numaralı telefondan veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
-        "updatePolicy": "'Dijital Policy Hub' AŞ, bu Gizlilik Politikasını, kişisel verilerinizin işlenme şekli veya yürürlükteki mevzuattaki değişiklikleri yansıtmak amacıyla periyodik olarak güncelleme ve değiştirme hakkını saklı tutar. Böyle bir değişiklik durumunda, güncellenmiş Gizlilik Politikası www.vinetka.bg internet sitesinde yayınlanacaktır.",
+        "contactInfo": "www.avtovia.bg internet sitesi kullanıcıları, yukarıda belirtilen adresten, +359 876 995 177 numaralı telefondan veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
+        "updatePolicy": "'Dijital Policy Hub' AŞ, bu Gizlilik Politikasını, kişisel verilerinizin işlenme şekli veya yürürlükteki mevzuattaki değişiklikleri yansıtmak amacıyla periyodik olarak güncelleme ve değiştirme hakkını saklı tutar. Böyle bir değişiklik durumunda, güncellenmiş Gizlilik Politikası www.avtovia.bg internet sitesinde yayınlanacaktır.",
         "sections": {
           "definitions": {
             "title": "TANIMLAR",
@@ -890,7 +890,7 @@
             "dataSubject": "Veri sahibi, doğrudan veya dolaylı olarak belirli bilgiler temelinde tanımlanmış veya tanımlanabilir gerçek kişidir.",
             "consent": "Veri sahibinin rızası, veri sahibinin kendisiyle ilgili kişisel verilerin işlenmesine ilişkin özgürce verilmiş, belirli, bilgilendirilmiş ve açık irade beyanıdır.",
             "dataBreach": "Kişisel veri güvenliği ihlali, iletilen, saklanan veya başka şekilde işlenen kişisel verilerin kazara veya hukuka aykırı olarak yok edilmesi, kaybı, değiştirilmesi, yetkisiz ifşası veya erişimiyle sonuçlanan güvenlik ihlalidir.",
-            "platform": "Platform – DPH AŞ'nin faaliyetlerini yürüttüğü internet sitesi (www.vinetka.bg).",
+            "platform": "Platform – DPH AŞ'nin faaliyetlerini yürüttüğü internet sitesi (www.avtovia.bg).",
             "roadTaxes": "Yol ücretleri, vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretleri ile ücretli yol ağının kullanımı için toplanan diğer yasal ücretleri kapsayan genel bir terimdir.",
             "electronicVignette": "Elektronik vinyet, Elektronik Belge ve Elektronik Kimlik Hizmetleri Kanunu'nun 3. maddesi, 1. fıkrası anlamında elektronik bir belgedir ve ödenmiş vinyet ücretini kanıtlar. Elektronik vinyet, benzersiz bir kimlik numarası, aracın plaka numarası, kayıtlı olduğu ülke, kategorisi, ücretin ödendiği tarih ve geçerlilik süresi içerir. Vinyet ücretleri, Yol Altyapı Ajansı tarafından toplanan ücret tarifesine göre geçerlilik süresine göre toplanır.",
             "compensatoryTax": "Telafi edici ücret, Yol Kanunu'nun 10. maddesi, 2. fıkrasında öngörülen ve Yol Altyapı Ajansı lehine, ücretli yol ağında uygun vinyet veya tol ücreti ödenmemiş araçların tespit edilmesi halinde toplanabilen bir yol ücretidir. Telafi edici ücretin miktarı, Yol Altyapı Ajansı tarafından toplanan ücret tarifesinde belirlenmiştir. Telafi edici ücretin ödenmesiyle, araç sürücüsü, sahibi veya kullanıcısı idari yaptırımdan muaf tutulur. Bu durumda, ilgili araçla bağlantılı olarak idari sorumluluğu olabilecek diğer kişiler de muaf tutulur."
@@ -912,7 +912,7 @@
             "contactForm": "- İletişim formumuzu doldurarak bilgi veya destek talep ettiğinizde, size kişiselleştirilmiş yanıt gönderebilmemiz için.",
             "comments": "- Sitemizde yorum yaptığınızda veya ek bilgi verdiğinizde.",
             "socialMedia": "- Platformumuz izin veriyorsa, LinkedIn, Twitter, Facebook, Instagram gibi sosyal medya hesaplarınızla kayıt olur veya giriş yaparsanız, bu profillerde herkese açık olan kişisel verilerinize erişebiliriz. Bu erişimi sosyal medya ayarlarınızdan yönetebilirsiniz.",
-            "browsing": "- Yukarıda belirtilen kişisel verilere ek olarak, DPH AŞ, platformlarımızda gezinme davranışınız hakkında bilgi toplayabilir ve işleyebilir; böylece ilgi alanlarınıza uygun teklifler sunabiliriz. DPH AŞ, çerezler ve benzeri teknolojilerle bilgi toplayabilir ve saklayabilir. Detaylar için www.vinetka.bg adresindeki Çerez Politikamızı inceleyin. DPH AŞ, elektronik sitesinin işleyişini sürdürmek için tüm ziyaretçilerin ve aktivitelerinin verilerini işler.",
+            "browsing": "- Yukarıda belirtilen kişisel verilere ek olarak, DPH AŞ, platformlarımızda gezinme davranışınız hakkında bilgi toplayabilir ve işleyebilir; böylece ilgi alanlarınıza uygun teklifler sunabiliriz. DPH AŞ, çerezler ve benzeri teknolojilerle bilgi toplayabilir ve saklayabilir. Detaylar için www.avtovia.bg adresindeki Çerez Politikamızı inceleyin. DPH AŞ, elektronik sitesinin işleyişini sürdürmek için tüm ziyaretçilerin ve aktivitelerinin verilerini işler.",
             "sensitiveData": "- Özel nitelikli kişisel verileri (hassas veriler) toplamıyor veya işlemiyoruz."
           },
           "dataTransfer": {
@@ -951,7 +951,7 @@
           },
           "retention": {
             "title": "SAKLAMA SÜRESİ",
-            "period": "DPH AŞ, www.vinetka.bg platformunda sunulan hizmetlerin kullanımı için gerekli tüm kişisel verileri, işlenme amacı için gerekli olan veya yasal olarak öngörülen süre boyunca saklar."
+            "period": "DPH AŞ, www.avtovia.bg platformunda sunulan hizmetlerin kullanımı için gerekli tüm kişisel verileri, işlenme amacı için gerekli olan veya yasal olarak öngörülen süre boyunca saklar."
           },
           "rights": {
             "title": "KULLANICI/MÜŞTERİ HAKLARI",
@@ -1000,21 +1000,21 @@
         "pageDescription": "Vinetka.bg çerez kullanım politikası - çerezlerin kullanımı hakkında bilgi.",
         "title": "ÇEREZ KULLANIM POLİTİKASI",
         "introduction": "Bu çerez kullanım politikası, 'Dijital Policy Hub' AŞ, EIK 207623030 (bundan sonra 'Şirket' veya 'DPH' AŞ olarak anılacaktır), merkezi ve yönetim adresi: Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası - bağımsız veri sorumlusu ve işleyici tarafından kabul edilmiştir. Şirket, 'DİJİTAL SMART İNFRASRUKTURA' AŞ, EIK 205612035 (bundan sonra 'DSİ' AŞ olarak anılacaktır) ile ortaktır, merkezi ve adresi: Bulgaristan, Sofya ili, Sofya Belediyesi, Sofya şehri, Sredets bölgesi, Georgi S. Rakovski Cad. No:96, Ulusal Hizmet Sağlayıcı olarak Yol Altyapı Ajansı'na kayıtlıdır ve yol ücretleri toplama hakkına sahiptir. DPH AŞ, kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum tol' ücretlerini ödemesini sağlamak için DSİ AŞ adına ve hesabına internet sitesi üzerinden faaliyet yürütmektedir.",
-        "contactInfo": "www.vinetka.bg internet sitesi kullanıcıları, yukarıda belirtilen adresten, +359876995177 numaralı telefondan veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
-        "updatePolicy": "'Dijital Policy Hub' AŞ, çerez kullanımında veya yürürlükteki mevzuattaki değişiklikleri yansıtmak amacıyla bu Çerez Politikasını periyodik olarak güncelleme ve değiştirme hakkını saklı tutar. Böyle bir değişiklik durumunda, güncellenmiş Çerez Politikası www.vinetka.bg internet sitesinde yayınlanacaktır.",
-        "compliance": "www.vinetka.bg internet sitesinde çerez kullanımı, ulusal mevzuat ve AB mevzuatı - 12 Temmuz 2002 tarihli Avrupa Parlamentosu ve Konseyi'nin 2002/58/EC sayılı Direktifi ile 23 Ekim 2018 tarihli Avrupa Parlamentosu ve Konseyi'nin 2018/1725 sayılı Tüzüğü dahil olmak üzere tüm gerekliliklere uygundur.",
-        "purpose": "Bu politika, www.vinetka.bg web sitesi kullanıcılarını kullanılan çerezler, amaçları ve kullanıcılar üzerindeki etkileri hakkında bilgilendirmeyi amaçlar.",
+        "contactInfo": "www.avtovia.bg internet sitesi kullanıcıları, yukarıda belirtilen adresten, +359876995177 numaralı telefondan veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
+        "updatePolicy": "'Dijital Policy Hub' AŞ, çerez kullanımında veya yürürlükteki mevzuattaki değişiklikleri yansıtmak amacıyla bu Çerez Politikasını periyodik olarak güncelleme ve değiştirme hakkını saklı tutar. Böyle bir değişiklik durumunda, güncellenmiş Çerez Politikası www.avtovia.bg internet sitesinde yayınlanacaktır.",
+        "compliance": "www.avtovia.bg internet sitesinde çerez kullanımı, ulusal mevzuat ve AB mevzuatı - 12 Temmuz 2002 tarihli Avrupa Parlamentosu ve Konseyi'nin 2002/58/EC sayılı Direktifi ile 23 Ekim 2018 tarihli Avrupa Parlamentosu ve Konseyi'nin 2018/1725 sayılı Tüzüğü dahil olmak üzere tüm gerekliliklere uygundur.",
+        "purpose": "Bu politika, www.avtovia.bg web sitesi kullanıcılarını kullanılan çerezler, amaçları ve kullanıcılar üzerindeki etkileri hakkında bilgilendirmeyi amaçlar.",
         "sections": {
           "whatAreCookies": {
             "title": "Çerezler nedir ve ne için kullanılır?",
             "definition": "Çerezler, web sitelerinin kullanıcının cihazında sakladığı küçük metin dosyalarıdır ve ziyaretlerinizle ilgili bilgileri depolar. Sitelerin tercihleri hatırlamasına, oturumları sürdürmesine ve içeriği kişiselleştirmesine yardımcı olur. Çerezler, hizmetlerin kullanıcılar için en faydalı ve kullanışlı şekilde sunulmasını sağlar.",
-            "invitation": "Kullanıcı, www.vinetka.bg web sitesini her ziyaret ettiğinde çerezleri kabul etmesi veya reddetmesi için bir davet alır.",
-            "types": "DPH AŞ, www.vinetka.bg internet sitesinde iki tür çerez kullanır: oturum çerezleri ve kalıcı çerezler. Oturum çerezleri, kullanıcı oturumu sona erene veya site kapatılana kadar cihazda kalır. Kalıcı çerezler, çerezin parametrelerinde belirlenen süre boyunca veya kullanıcı tarafından manuel olarak silinene kadar cihazda kalır. www.vinetka.bg web sitesini ziyaret ettiğinizde, zorunlu çerezler, analiz çerezleri ve reklam çerezleri gibi aşağıdaki çerez türleri kullanılabilir."
+            "invitation": "Kullanıcı, www.avtovia.bg web sitesini her ziyaret ettiğinde çerezleri kabul etmesi veya reddetmesi için bir davet alır.",
+            "types": "DPH AŞ, www.avtovia.bg internet sitesinde iki tür çerez kullanır: oturum çerezleri ve kalıcı çerezler. Oturum çerezleri, kullanıcı oturumu sona erene veya site kapatılana kadar cihazda kalır. Kalıcı çerezler, çerezin parametrelerinde belirlenen süre boyunca veya kullanıcı tarafından manuel olarak silinene kadar cihazda kalır. www.avtovia.bg web sitesini ziyaret ettiğinizde, zorunlu çerezler, analiz çerezleri ve reklam çerezleri gibi aşağıdaki çerez türleri kullanılabilir."
           },
           "browserManagement": {
             "title": "Tarayıcı üzerinden çerez yönetimi:",
-            "description": "Tarayıcılar, Kullanıcıların ziyaret ettikleri web sitelerinde çerezleri yönetmelerine, silmelerine ve/veya engellemelerine olanak tanır. Kullanıcı, www.vinetka.bg internet sitesinde kullanılan çerezleri kontrol etmek için tercih ettiği tarayıcının gizlilik ve çerez ayarlarını kontrol edebilir.",
-            "deletion": "Kullanıcılar, www.vinetka.bg'ye erişim sağladıkları cihazda kayıtlı tüm çerezleri silebilirler. Kullandığınız tarayıcıya bağlı olarak, bu işlem aşağıdaki sayfalarda açıklandığı şekilde yapılabilir:",
+            "description": "Tarayıcılar, Kullanıcıların ziyaret ettikleri web sitelerinde çerezleri yönetmelerine, silmelerine ve/veya engellemelerine olanak tanır. Kullanıcı, www.avtovia.bg internet sitesinde kullanılan çerezleri kontrol etmek için tercih ettiği tarayıcının gizlilik ve çerez ayarlarını kontrol edebilir.",
+            "deletion": "Kullanıcılar, www.avtovia.bg'ye erişim sağladıkları cihazda kayıtlı tüm çerezleri silebilirler. Kullandığınız tarayıcıya bağlı olarak, bu işlem aşağıdaki sayfalarda açıklandığı şekilde yapılabilir:",
             "browsers": [
               {
                 "name": "Mozilla Firefox:",
@@ -1041,7 +1041,7 @@
           },
           "blocking": {
             "title": "Çerezlerin engellenmesi:",
-            "consequences": "Kullanıcı çerez kullanımını engellerse, www.vinetka.bg internet sitesinin bazı işlevleri devre dışı kalabilir ve bu, kullanım sırasında bazı aksaklıklara veya hatalara yol açabilir.",
+            "consequences": "Kullanıcı çerez kullanımını engellerse, www.avtovia.bg internet sitesinin bazı işlevleri devre dışı kalabilir ve bu, kullanım sırasında bazı aksaklıklara veya hatalara yol açabilir.",
             "settings": "Çoğu tarayıcı varsayılan olarak çerezleri kabul edecek şekilde ayarlanmıştır, ancak bazı veya tüm çerezleri engellemek için ayarlarınızı değiştirebilirsiniz.",
             "details": "Çerezlerin yönetimiyle ilgili ayrıntılı bilgiye uygulamanın (web tarayıcısının) ayarlar bölümünden ulaşabilirsiniz."
           },
@@ -1051,24 +1051,24 @@
       },
       "termsOfUse": {
         "pageTitle": "Kullanım Koşulları ",
-        "pageDescription": "www.vinetka.bg web sitesi kullanım koşulları - elektronik vinyet satın alma kuralları.",
+        "pageDescription": "www.avtovia.bg web sitesi kullanım koşulları - elektronik vinyet satın alma kuralları.",
         "title": "WWW.VINETKA.BG WEB SİTESİ KULLANIM KOŞULLARI",
-        "introduction": "Bu Kullanım Koşulları, www.vinetka.bg internet sitesinin kullanım kurallarını ve elektronik vinyetlerin satın alınması ve teslimatı ile 'günlük maksimum geçiş ücreti' ve telafi edici ücretlerin ödenmesi ve www.vinetka.bg internet sitesinde kullanıcılara sunulan diğer ürün ve hizmetlerin sağlanmasını düzenler. Tüm kullanıcılar, www.vinetka.bg internet sitesini kullanırken bu Kullanım Koşulları ile 'Dijital Policy Hub' AŞ'nin (kısaca 'DPH' AŞ veya Şirket) geçerli politika ve belgelerine onay vermiş sayılır. Bu Kullanım Koşulları www.vinetka.bg internet sitesinde yayımlanmıştır ve Kullanıcı tarafından web sitesinin kullanılmasıyla kabul edilmiş sayılır.",
-        "companyInfo": "'Dijital Policy Hub' AŞ ('DPH' AŞ), ayrıca 'Şirket' olarak anılır, merkezi ve yönetim adresi Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası olan bir anonim şirkettir ve Bulgaristan Ticaret Sicili ve Kâr Amacı Gütmeyen Tüzel Kişiler Sicili'ne 207623030 EIK ile kayıtlıdır, KDV numarası: BG207623030. Şirket, www.vinetka.bg internet sitesinin sahibi ve yöneticisidir. İnternet sitesi kullanıcıları yukarıda belirtilen adresten, telefon",
+        "introduction": "Bu Kullanım Koşulları, www.avtovia.bg internet sitesinin kullanım kurallarını ve elektronik vinyetlerin satın alınması ve teslimatı ile 'günlük maksimum geçiş ücreti' ve telafi edici ücretlerin ödenmesi ve www.avtovia.bg internet sitesinde kullanıcılara sunulan diğer ürün ve hizmetlerin sağlanmasını düzenler. Tüm kullanıcılar, www.avtovia.bg internet sitesini kullanırken bu Kullanım Koşulları ile 'Dijital Policy Hub' AŞ'nin (kısaca 'DPH' AŞ veya Şirket) geçerli politika ve belgelerine onay vermiş sayılır. Bu Kullanım Koşulları www.avtovia.bg internet sitesinde yayımlanmıştır ve Kullanıcı tarafından web sitesinin kullanılmasıyla kabul edilmiş sayılır.",
+        "companyInfo": "'Dijital Policy Hub' AŞ ('DPH' AŞ), ayrıca 'Şirket' olarak anılır, merkezi ve yönetim adresi Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası olan bir anonim şirkettir ve Bulgaristan Ticaret Sicili ve Kâr Amacı Gütmeyen Tüzel Kişiler Sicili'ne 207623030 EIK ile kayıtlıdır, KDV numarası: BG207623030. Şirket, www.avtovia.bg internet sitesinin sahibi ve yöneticisidir. İnternet sitesi kullanıcıları yukarıda belirtilen adresten, telefon",
         "phone": "+359 876 99 51 77 veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
-        "partnership": "'Dijital Policy Hub' AŞ, 'Dijital Smart İnfrastruktura' AŞ ('DSİ' AŞ) EIK 205612035 ile ortaktır. Bu şirket, Yol Altyapı Ajansı'nda (API) Ulusal Hizmet Sağlayıcı olarak kayıtlıdır ve yol ücretlerinin toplanması dahil ilgili faaliyetleri yürütme hakkına sahiptir. 'DPH' AŞ, www.vinetka.bg internet sitesi üzerinden kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum geçiş ücreti' ödemelerini DSİ AŞ adına ve hesabına yapabilmelerini sağlar.",
+        "partnership": "'Dijital Policy Hub' AŞ, 'Dijital Smart İnfrastruktura' AŞ ('DSİ' AŞ) EIK 205612035 ile ortaktır. Bu şirket, Yol Altyapı Ajansı'nda (API) Ulusal Hizmet Sağlayıcı olarak kayıtlıdır ve yol ücretlerinin toplanması dahil ilgili faaliyetleri yürütme hakkına sahiptir. 'DPH' AŞ, www.avtovia.bg internet sitesi üzerinden kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum geçiş ücreti' ödemelerini DSİ AŞ adına ve hesabına yapabilmelerini sağlar.",
         "sections": {
           "generalProvisions": {
             "title": "I. GENEL HÜKÜMLER. TANIMLAR.",
-            "description": "www.vinetka.bg, 'DPH' AŞ'nin kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum geçiş ücreti' ödemelerini DSİ AŞ adına ve hesabına yapabilmelerini sağladığı bir web sitesidir.",
-            "termsRegulation": "Bu Kullanım Koşulları, Şirketin satıcı ve www.vinetka.bg internet sitesinin sahibi olarak ve www.vinetka.bg internet sitesini kullanan her kişi (bundan sonra kısaca 'Kullanıcı' olarak anılacaktır) arasında ürün/hizmet satışı, teslimatı ve ödemesi ilişkilerini düzenler.",
+            "description": "www.avtovia.bg, 'DPH' AŞ'nin kullanıcıların vinyet ücretleri, telafi edici ücretler ve 'günlük maksimum geçiş ücreti' ödemelerini DSİ AŞ adına ve hesabına yapabilmelerini sağladığı bir web sitesidir.",
+            "termsRegulation": "Bu Kullanım Koşulları, Şirketin satıcı ve www.avtovia.bg internet sitesinin sahibi olarak ve www.avtovia.bg internet sitesini kullanan her kişi (bundan sonra kısaca 'Kullanıcı' olarak anılacaktır) arasında ürün/hizmet satışı, teslimatı ve ödemesi ilişkilerini düzenler.",
             "updateRights": "'Dijital Policy Hub' AŞ, internet sitesinin kullanımında veya yürürlükteki mevzuatta meydana gelen değişiklikleri yansıtmak amacıyla bu Kullanım Koşullarını periyodik olarak güncelleme ve değiştirme hakkını saklı tutar."
           },
           "usageRules": {
             "title": "II. WWW.VINETKA.BG WEB SİTESİ KULLANIM KURALLARI.",
-            "registration": "www.vinetka.bg internet sitesinde kayıt olmak, siteyi kullanmak için bir şart değildir. Her Kullanıcı, www.vinetka.bg web sitesinde ilgili elektronik kayıt formunu doldurarak ve bu Kullanım Koşullarını kabul ederek kayıt olma imkanına sahiptir.",
+            "registration": "www.avtovia.bg internet sitesinde kayıt olmak, siteyi kullanmak için bir şart değildir. Her Kullanıcı, www.avtovia.bg web sitesinde ilgili elektronik kayıt formunu doldurarak ve bu Kullanım Koşullarını kabul ederek kayıt olma imkanına sahiptir.",
             "emailRequirement": "Her Kullanıcı, iletişim için geçerli bir e-posta adresi belirtmek zorundadır ve kendisi ile Şirket arasındaki tüm gelecekteki yazışmaların, belirttiği e-posta adresi üzerinden elektronik ortamda yapılmasına onay verir.",
-            "pricing": "Vinyet ücretleri/elektronik vinyetler ile 'günlük maksimum geçiş ücreti' veya telafi edici ücretlerin ödenmesi hariç (bunlar devlet yol ağı kullanım ücreti olup KDV uygulanmaz), www.vinetka.bg web sitesindeki diğer tüm ürün ve hizmet fiyatları nihai fiyatlardır, Bulgar Levası (BGN) cinsinden ilan edilmiştir ve KDV ile yasal olarak gerekli tüm vergi ve harçları içerir."
+            "pricing": "Vinyet ücretleri/elektronik vinyetler ile 'günlük maksimum geçiş ücreti' veya telafi edici ücretlerin ödenmesi hariç (bunlar devlet yol ağı kullanım ücreti olup KDV uygulanmaz), www.avtovia.bg web sitesindeki diğer tüm ürün ve hizmet fiyatları nihai fiyatlardır, Bulgar Levası (BGN) cinsinden ilan edilmiştir ve KDV ile yasal olarak gerekli tüm vergi ve harçları içerir."
           },
           "intellectualProperty": {
             "title": "III. FİKRİ MÜLKİYET HAKKI",
@@ -1076,18 +1076,18 @@
           },
           "purchases": {
             "title": "IV. ÜRÜN VE HİZMET SATIN ALIMLARI",
-            "process": "Kullanıcı, www.vinetka.bg internet sitesini kullanarak istediği ürün ve/veya hizmetleri 'Sepetim'e ekleyip, sitede belirtilen adımları takip ederek siparişini tamamlayabilir ve gönderebilir.",
+            "process": "Kullanıcı, www.avtovia.bg internet sitesini kullanarak istediği ürün ve/veya hizmetleri 'Sepetim'e ekleyip, sitede belirtilen adımları takip ederek siparişini tamamlayabilir ve gönderebilir.",
             "vignetteRequirements": "Elektronik vinyet satın alımı için gerekli asgari bilgiler: araç kategorisi; aracın kayıtlı olduğu ülke; aracın plaka numarası; elektronik vinyetin geçerlilik süresi; elektronik vinyetin başlangıç tarihi; elektronik vinyetlerin süresinin dolması ve tespit edilen ihlaller hakkında bilgilendirme için e-posta adresi.",
             "vignetteCheck": "Vinyet geçerliliğini kontrol etmek için gerekli asgari bilgi: aracın plaka numarası."
           },
           "withdrawalRights": {
             "title": "V. İPTAL HAKKI OLMAYAN ÜRÜN VE HİZMETLER. ŞİKAYETLER.",
-            "timeLimit": "Uygulanabilir olduğu durumlarda, Şirket, Kullanıcılara www.vinetka.bg üzerinden kullanılan hizmetten vazgeçme ve yapılan ödemenin iadesi imkanını, hizmetin kullanılmasından itibaren en geç 14 (ondört) gün içinde kendi adına ve hesabına sunar.",
+            "timeLimit": "Uygulanabilir olduğu durumlarda, Şirket, Kullanıcılara www.avtovia.bg üzerinden kullanılan hizmetten vazgeçme ve yapılan ödemenin iadesi imkanını, hizmetin kullanılmasından itibaren en geç 14 (ondört) gün içinde kendi adına ve hesabına sunar.",
             "noWithdrawal": "Aşağıdaki durumlarda sözleşmeden cayma hakkı geçerli değildir: satın alınan ve etkinleştirilen elektronik vinyetler, ödenen 'günlük maksimum geçiş ücreti' veya telafi edici ücretler, hizmetin tamamen sunulduğu ve kullanıcının açık ön onayı ile başlatıldığı hizmetler."
           },
           "dataProtection": {
             "title": "VI. KİŞİSEL VERİLERİN KORUNMASI",
-            "policy": "Kullanıcı, 'DPH' AŞ'ye kişisel veya diğer verilerini sağlayarak, kişisel verilerinin www.vinetka.bg/privacy-policy adresinde yer alan ve Kullanıcı tarafından okunduğu beyan edilen Gizlilik Politikası'na uygun olarak 'DPH' AŞ tarafından işlenmesini kabul eder."
+            "policy": "Kullanıcı, 'DPH' AŞ'ye kişisel veya diğer verilerini sağlayarak, kişisel verilerinin www.avtovia.bg/privacy-policy adresinde yer alan ve Kullanıcı tarafından okunduğu beyan edilen Gizlilik Politikası'na uygun olarak 'DPH' AŞ tarafından işlenmesini kabul eder."
           },
           "payments": {
             "title": "VIII. ÖDEMELER",

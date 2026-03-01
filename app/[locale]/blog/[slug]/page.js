@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
 
   const canonicalUrl = getCanonicalUrl(locale, `blog/${slug}`);
   const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
-  const baseUrl = 'https://www.vinetka.bg';
+  const baseUrl = 'https://www.avtovia.bg';
   
   // Build hreflang links only for translated versions
   const languages = {

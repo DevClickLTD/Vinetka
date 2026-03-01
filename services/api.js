@@ -8,22 +8,29 @@ import { cache } from "react";
  * @returns {Promise<any>} - JSON response
  */
 export const fetchAPI = cache(async (endpoint, options = {}) => {
-  const maxRetries = 3;
+  const maxRetries = 2; // Намалени опити за по-бърз build
   let lastError = null;
 
   for (let attempt = 1; attempt <= maxRetries; attempt++) {
     try {
+      // Създаваме AbortController за timeout контрол
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 15000); // 15 секунди timeout
+
       const res = await fetch(`${API_BASE_URL}/${endpoint}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
         },
+        signal: controller.signal,
         next: {
           revalidate: 60, // Cache for 1 minute (faster updates)
           tags: ['wordpress-api']
         },
         ...options,
       });
+
+      clearTimeout(timeoutId);
 
       if (!res.ok) {
         throw new Error(`API error: ${res.status} ${res.statusText}`);
@@ -47,17 +54,23 @@ export const fetchAPI = cache(async (endpoint, options = {}) => {
       }
     } catch (error) {
       lastError = error;
-      console.error(`Fetch API Error (attempt ${attempt}/${maxRetries}):`, error);
       
-      // Retry with exponential backoff
-      if (attempt < maxRetries) {
-        const delay = Math.min(1000 * Math.pow(2, attempt - 1), 5000);
+      // По-тих error logging за да не замърсява build output-а
+      if (attempt === maxRetries) {
+        console.warn(`WordPress API недостъпен (${endpoint}):`, error.message);
+      }
+      
+      // Retry само ако не е abort error (timeout)
+      if (attempt < maxRetries && error.name !== 'AbortError') {
+        const delay = Math.min(2000 * attempt, 5000);
         await new Promise(resolve => setTimeout(resolve, delay));
+      } else if (error.name === 'AbortError') {
+        // При timeout, не retry-ваме
+        break;
       }
     }
   }
 
-  // All retries failed
-  console.error("All fetch attempts failed:", lastError);
+  // All retries failed - връщаме null за graceful degradation
   return null;
 });

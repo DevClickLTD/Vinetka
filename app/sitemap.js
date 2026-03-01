@@ -3,7 +3,7 @@ import { fetchAPI } from "../services/api";
 // Всички локали от приложението
 const locales = ['bg', 'en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
 const defaultLocale = 'bg';
-const baseUrl = 'https://www.vinetka.bg';
+const baseUrl = 'https://www.avtovia.bg';
 
 // Статични страници (без blog, той е динамичен)
 const staticPages = [
@@ -32,9 +32,16 @@ const staticPages = [
 async function getBlogPosts() {
   try {
     const posts = await fetchAPI('posts?per_page=100&_fields=slug,modified');
-    return posts || [];
+    
+    // Ако WordPress API не е достъпен, връщаме празен масив
+    if (!posts || !Array.isArray(posts)) {
+      console.warn('WordPress API недостъпен - sitemap генериран без blog постове');
+      return [];
+    }
+    
+    return posts;
   } catch (error) {
-    console.error('Error fetching blog posts for sitemap:', error);
+    console.warn('WordPress API грешка при sitemap генериране:', error.message);
     return [];
   }
 }

@@ -72,8 +72,8 @@ export default async function TolTaksa() {
     "description": t('description'),
     "provider": {
       "@type": "Organization",
-      "name": "Vinetka.bg",
-      "url": "https://www.vinetka.bg"
+      "name": "Avtovia.bg",
+      "url": "https://www.avtovia.bg"
     },
     "areaServed": {
       "@type": "Country",

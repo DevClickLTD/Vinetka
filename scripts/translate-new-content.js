@@ -28,15 +28,15 @@ const slugMappings = {
 
 // 🔗 Web App URL mapping по език
 const WEB_APP_URL_MAP = {
-  'bg': 'https://web.vinetka.bg/',
-  'en': 'https://web.vinetka.bg/?lang=en',
-  'de': 'https://web.vinetka.bg/?lang=de',
-  'ru': 'https://web.vinetka.bg/?lang=ru',
-  'tr': 'https://web.vinetka.bg/?lang=tr',
-  'el': 'https://web.vinetka.bg/?lang=gr', // Greek uses 'gr' in web app
-  'sr': 'https://web.vinetka.bg/?lang=sr',
-  'ro': 'https://web.vinetka.bg/?lang=ro',
-  'mk': 'https://web.vinetka.bg/?lang=mk'
+  'bg': 'https://web.avtovia.bg/',
+  'en': 'https://web.avtovia.bg/?lang=en',
+  'de': 'https://web.avtovia.bg/?lang=de',
+  'ru': 'https://web.avtovia.bg/?lang=ru',
+  'tr': 'https://web.avtovia.bg/?lang=tr',
+  'el': 'https://web.avtovia.bg/?lang=gr', // Greek uses 'gr' in web app
+  'sr': 'https://web.avtovia.bg/?lang=sr',
+  'ro': 'https://web.avtovia.bg/?lang=ro',
+  'mk': 'https://web.avtovia.bg/?lang=mk'
 };
 
 /**
@@ -45,13 +45,13 @@ const WEB_APP_URL_MAP = {
 function replaceWebAppLinks(content, targetLang) {
   if (!content) return content;
   
-  const targetUrl = WEB_APP_URL_MAP[targetLang] || 'https://web.vinetka.bg/';
+  const targetUrl = WEB_APP_URL_MAP[targetLang] || 'https://web.avtovia.bg/';
   
-  // Replace all variations of web.vinetka.bg links
+  // Replace all variations of web.avtovia.bg links
   let updatedContent = content;
   
-  // Pattern 1: https://web.vinetka.bg/ (with or without trailing slash)
-  updatedContent = updatedContent.replace(/https:\/\/web\.vinetka\.bg\/?(?!\?)/g, targetUrl);
+  // Pattern 1: https://web.avtovia.bg/ (with or without trailing slash)
+  updatedContent = updatedContent.replace(/https:\/\/web\.avtovia\.bg\/?(?!\?)/g, targetUrl);
   
   // Pattern 2: Existing language parameters (replace them too)
   updatedContent = updatedContent.replace(/https:\/\/web\.vinetka\.bg\/\?lang=[a-z]{2}/g, targetUrl);

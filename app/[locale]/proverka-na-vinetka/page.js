@@ -34,7 +34,7 @@ export default async function VignetteCheckPage({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
   const tNav = await getTranslations('navigation');
-  const baseUrl = 'https://www.vinetka.bg';
+  const baseUrl = 'https://www.avtovia.bg';
   const webAppUrl = getWebAppUrl(locale);
   
   const features = [

@@ -32,14 +32,14 @@ export default async function ContactPage() {
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://www.vinetka.bg/bg/contact#contactpage",
-    "name": "Контакти - Vinetka.bg",
+    "@id": "https://www.avtovia.bg/bg/contact#contactpage",
+    "name": "Контакти - Avtovia.bg",
     "description": "Свържете се с нас за въпроси относно електронни винетки, проверка на винетки и информация за пътни такси в България.",
-    "url": "https://www.vinetka.bg/bg/contact",
+    "url": "https://www.avtovia.bg/bg/contact",
     "mainEntity": {
       "@type": "Organization",
-      "name": "Vinetka.bg",
-      "@id": "https://www.vinetka.bg/#organization"
+      "name": "Avtovia.bg",
+      "@id": "https://www.avtovia.bg/#organization"
     }
   };
 
@@ -51,13 +51,13 @@ export default async function ContactPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://www.vinetka.bg/bg"
+        "item": "https://www.avtovia.bg/bg"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Контакти",
-        "item": "https://www.vinetka.bg/bg/contact"
+        "item": "https://www.avtovia.bg/bg/contact"
       }
     ]
   };
@@ -75,8 +75,8 @@ export default async function ContactPage() {
         {
           icon: EnvelopeIcon,
           label: t("email"),
-          value: "hello@vinetka.bg",
-          href: "mailto:hello@vinetka.bg",
+          value: "hello@avtovia.bg",
+          href: "mailto:hello@avtovia.bg",
         },
       ],
     },

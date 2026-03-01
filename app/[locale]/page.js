@@ -56,18 +56,18 @@ export default async function Home({ params }) {
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `https://www.vinetka.bg/${locale}#webpage`,
-    "url": `https://www.vinetka.bg/${locale}`,
+    "@id": `https://www.avtovia.bg/${locale}#webpage`,
+    "url": `https://www.avtovia.bg/${locale}`,
     "name": metaT('title'),
     "description": metaT('description'),
     "inLanguage": locale === 'bg' ? 'bg-BG' : `${locale}-${locale.toUpperCase()}`,
     "isPartOf": {
       "@type": "WebSite",
-      "@id": "https://www.vinetka.bg/#website"
+      "@id": "https://www.avtovia.bg/#website"
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://www.vinetka.bg/default.webp"
+      "url": "https://www.avtovia.bg/default.webp"
     },
     "datePublished": "2024-01-01T00:00:00+00:00",
     "dateModified": new Date().toISOString(),
@@ -77,7 +77,7 @@ export default async function Home({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": metaT('title'),
-        "item": `https://www.vinetka.bg/${locale}`
+        "item": `https://www.avtovia.bg/${locale}`
       }]
     },
     "about": [
@@ -104,7 +104,7 @@ export default async function Home({ params }) {
     },
     {
       question: "Как да закупя електронна винетка?",
-      answer: "Електронната винетка може да се закупи онлайн чрез официалния сайт на Агенция пътна инфраструктура или чрез упълномощените партньори какъвто е Vinetka.bg. Необходими са само регистрационният номер на автомобила, държавата на регистрация и изборът на период на валидност. Плащането се извършва с банкова карта или други електронни методи."
+      answer: "Електронната винетка може да се закупи онлайн чрез официалния сайт на Агенция пътна инфраструктура или чрез упълномощените партньори какъвто е Avtovia.bg. Необходими са само регистрационният номер на автомобила, държавата на регистрация и изборът на период на валидност. Плащането се извършва с банкова карта или други електронни методи."
     },
     {
       question: "Кога се активира електронната винетка?",
@@ -170,7 +170,7 @@ export default async function Home({ params }) {
         faqs={faqs} 
         title="Често задавани въпроси за винетки"
         subtitle="Отговори на най-често срещаните въпроси относно електронните винетки в България"
-        pageUrl="https://www.vinetka.bg/bg"
+        pageUrl="https://www.avtovia.bg/bg"
       />
       <Lastestposts />
     </>

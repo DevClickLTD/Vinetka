@@ -103,8 +103,8 @@ export default function Footer() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div>
             <Image
-              alt="Vinetka.bg лого"
-              src="/vinetka.bg-logo.png"
+              alt="Avtovia.bg лого"
+              src="/avtovia-logo.svg"
               width={180}
               height={40}
               priority

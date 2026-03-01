@@ -30,7 +30,7 @@ export async function generateMetadata() {
   return {
     metadataBase: new URL(`${protocol}://${host}`),
     title: {
-      template: "%s | vinetka bg",
+      template: "%s | avtovia bg",
       default: "Винетка онлайн - Електронна винетка за България",
     },
     description:
@@ -47,7 +47,7 @@ export async function generateMetadata() {
       images: "/default.webp",
       type: "website",
       locale: "bg_BG",
-      siteName: "vinetka bg",
+      siteName: "avtovia bg",
     },
     twitter: {
       card: "summary_large_image",
@@ -125,30 +125,30 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "@id": "https://www.vinetka.bg/#organization",
-              name: "Vinetka.bg",
-              legalName: "Vinetka.bg - Информация за електронни винетки",
+              "@id": "https://www.avtovia.bg/#organization",
+              name: "Avtovia.bg",
+              legalName: "Avtovia.bg - Информация за електронни винетки",
               description:
                 "Информация за електронни винетки в България. Проверка на винетка, цени и пълна информация за всички видове електронни винетки - уикенд, седмична, месечна, тримесечна и годишна.",
-              url: "https://www.vinetka.bg",
+              url: "https://www.avtovia.bg",
               logo: {
                 "@type": "ImageObject",
-                url: "https://www.vinetka.bg/vinetka.bg-logo.png",
+                url: "https://www.avtovia.bg/avtovia-logo.svg",
                 width: "250",
                 height: "60"
               },
-              image: "https://www.vinetka.bg/default.webp",
-              email: "hello@vinetka.bg",
+              image: "https://www.avtovia.bg/default.webp",
+              email: "hello@avtovia.bg",
               telephone: "+359876995177",
               foundingDate: "2024",
               sameAs: [
-                "https://www.vinetka.bg",
+                "https://www.avtovia.bg",
               ],
               contactPoint: [
                 {
                   "@type": "ContactPoint",
                   telephone: "+359876995177",
-                  email: "hello@vinetka.bg",
+                  email: "hello@avtovia.bg",
                   contactType: "customer service",
                   areaServed: "BG",
                   availableLanguage: [
@@ -216,19 +216,19 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "@id": "https://www.vinetka.bg/#website",
-              url: "https://www.vinetka.bg",
-              name: "Vinetka.bg - Информация за електронни винетки",
+              "@id": "https://www.avtovia.bg/#website",
+              url: "https://www.avtovia.bg",
+              name: "Avtovia.bg - Информация за електронни винетки",
               description: "Проверка на винетка, цени и пълна информация за всички видове електронни винетки в България",
               publisher: {
-                "@id": "https://www.vinetka.bg/#organization"
+                "@id": "https://www.avtovia.bg/#organization"
               },
               inLanguage: ["bg", "en", "de", "ru", "tr", "el", "sr", "ro", "mk"],
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
-                  urlTemplate: "https://www.vinetka.bg/bg/blog?search={search_term_string}"
+                  urlTemplate: "https://www.avtovia.bg/bg/blog?search={search_term_string}"
                 },
                 "query-input": "required name=search_term_string"
               }
@@ -245,9 +245,9 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              "@id": "https://www.vinetka.bg/#localbusiness",
-              name: "Vinetka.bg",
-              image: "https://www.vinetka.bg/default.webp",
+              "@id": "https://www.avtovia.bg/#localbusiness",
+              name: "Avtovia.bg",
+              image: "https://www.avtovia.bg/default.webp",
               description: "Информационен портал за електронни винетки в България с възможност за проверка на валидност и информация за цени",
               address: {
                 "@type": "PostalAddress",
@@ -262,9 +262,9 @@ export default function RootLayout({ children }) {
                 latitude: "42.6977",
                 longitude: "23.3219"
               },
-              url: "https://www.vinetka.bg",
+              url: "https://www.avtovia.bg",
               telephone: "+359876995177",
-              email: "hello@vinetka.bg",
+              email: "hello@avtovia.bg",
               priceRange: "10 BGN - 97 BGN",
               openingHoursSpecification: [
                 {
