@@ -40,6 +40,31 @@ const WEB_APP_URL_MAP = {
 };
 
 /**
+ * 🔒 Защитава href атрибутите от превод
+ * Замества href стойностите с placeholders преди превода
+ * и ги възстановява след това.
+ */
+function protectLinks(content) {
+  const links = [];
+  const protectedContent = content.replace(/href="([^"]*)"/g, (match, url) => {
+    const idx = links.length;
+    links.push(url);
+    return `href="LINK_PLACEHOLDER_${idx}"`;
+  });
+  return { protectedContent, links };
+}
+
+/**
+ * 🔒 Възстановява href атрибутите след превод
+ */
+function restoreLinks(content, links) {
+  return content.replace(/href="LINK_PLACEHOLDER_(\d+)"/gi, (match, idx) => {
+    const originalUrl = links[parseInt(idx)];
+    return originalUrl !== undefined ? `href="${originalUrl}"` : match;
+  });
+}
+
+/**
  * 🔗 Заменя линковете към web app-а с правилния език
  */
 function replaceWebAppLinks(content, targetLang) {
@@ -88,14 +113,19 @@ async function translateText(text, targetLang, retries = 3) {
 
 /**
  * Превежда HTML съдържание
+ * ✅ Защитава href атрибутите от превод с placeholder система
  */
 async function translateHtmlContent(htmlContent, targetLang) {
   if (!htmlContent || htmlContent.trim() === '') return '';
   
+  // 🔒 Защити href атрибутите преди превода
+  const { protectedContent, links } = protectLinks(htmlContent);
+  
   try {
     // За големи HTML блокове, превеждаме директно
-    const result = await translate(htmlContent, { from: 'bg', to: targetLang });
-    return result;
+    const result = await translate(protectedContent, { from: 'bg', to: targetLang });
+    // 🔒 Възстанови оригиналните href стойности
+    return restoreLinks(result, links);
   } catch (error) {
     console.error(`   ❌ HTML translation to ${targetLang} failed, trying plain text`);
     // Ако HTML превода не работи, извличаме текст и го превеждаме
