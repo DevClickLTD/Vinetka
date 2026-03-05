@@ -15,8 +15,9 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('tollTax');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
-  return generateSEOMetadata({
+  const metadata = generateSEOMetadata({
     locale,
     path: 'toll-taksi',
     title: t('title'),
@@ -35,6 +36,13 @@ export async function generateMetadata({ params }) {
       "платени пътища България"
     ],
   });
+
+  return {
+    ...metadata,
+    title: {
+      absolute: `${t('title')} | ${brandName}`,
+    },
+  };
 }
 
 export default async function TolTaksa() {

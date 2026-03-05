@@ -30,8 +30,9 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('meta');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
-  return generateSEOMetadata({
+  const metadata = generateSEOMetadata({
     locale,
     path: '',
     title: t('title'),
@@ -49,6 +50,13 @@ export async function generateMetadata({ params }) {
     ],
     domain,
   });
+
+  return {
+    ...metadata,
+    title: {
+      absolute: `${t('title')} | ${brandName}`,
+    },
+  };
 }
 
 export default async function Home({ params }) {
@@ -59,6 +67,7 @@ export default async function Home({ params }) {
   const headersList = await headers();
   const domain = detectDomain(headersList);
   const siteUrl = getSiteUrl(domain);
+  const pageUrl = `${siteUrl}/${locale}`;
 
   // ✅ WebPage Schema за homepage
   const webPageSchema = {
@@ -178,7 +187,7 @@ export default async function Home({ params }) {
         faqs={faqs} 
         title="Често задавани въпроси за винетки"
         subtitle="Отговори на най-често срещаните въпроси относно електронните винетки в България"
-        pageUrl="https://www.avtovia.bg/bg"
+        pageUrl={pageUrl}
       />
       <Lastestposts />
     </>

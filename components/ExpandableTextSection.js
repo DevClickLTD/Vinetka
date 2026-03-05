@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useLocale } from 'next-intl';
 import { getWebAppUrl } from "../lib/web-app-url";
 
-export default function ExpandableTextSection() {
+export default function ExpandableTextSection({ siteUrl = "https://www.avtovia.bg" }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const locale = useLocale();
   const webAppUrl = getWebAppUrl(locale);
@@ -54,7 +54,7 @@ export default function ExpandableTextSection() {
               </p>
               
               <p className="text-gray-700 leading-relaxed mb-4">
-                Същото действие може да се направи и в сайта на <a href="https://www.avtovia.bg" target="_blank" rel="noopener noreferrer">www.avtovia.bg</a>, както и в секцията за проверка на винетки на <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a>. При покупка на винетка през <a href={webAppUrl} target="_blank" rel="noopener noreferrer">{webAppUrl}</a> или <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a> се изпраща напомняне преди изтичането на срока на валидност.
+                Същото действие може да се направи и в сайта на <a href={siteUrl} target="_blank" rel="noopener noreferrer">{siteUrl.replace('https://www.', 'www.')}</a>, както и в секцията за проверка на винетки на <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a>. При покупка на винетка през <a href={webAppUrl} target="_blank" rel="noopener noreferrer">{webAppUrl}</a> или <a href="https://insurance.bg" target="_blank" rel="noopener noreferrer">insurance.bg</a> се изпраща напомняне преди изтичането на срока на валидност.
               </p>
               
               <p className="text-gray-700 leading-relaxed mb-4">

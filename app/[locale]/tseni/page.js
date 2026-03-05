@@ -30,8 +30,9 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('prices');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
-  return generateSEOMetadata({
+  const metadata = generateSEOMetadata({
     locale,
     path: 'tseni',
     title: t('title'),
@@ -51,6 +52,13 @@ export async function generateMetadata({ params }) {
     ],
     domain,
   });
+  
+  return {
+    ...metadata,
+    title: {
+      absolute: `${t('title')} | ${brandName}`,
+    },
+  };
 }
 
 export default async function tseni({ params }) {
@@ -64,7 +72,7 @@ export default async function tseni({ params }) {
   const webAppUrl = getWebAppUrl(locale);
   
   // ✅ ItemList Schema за pricing page
-  const priceListSchema = getVignettePriceListSchema(locale);
+  const priceListSchema = getVignettePriceListSchema(locale, domain);
   
   const vignetteTypes = [
     {

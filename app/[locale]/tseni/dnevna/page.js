@@ -26,6 +26,7 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('prices.daily');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -47,6 +48,9 @@ export async function generateMetadata({ params }) {
   
   return {
     ...metadata,
+    title: {
+      absolute: `${t('title')} | ${brandName}`,
+    },
     robots: {
       index: true,
       follow: true,
@@ -73,7 +77,7 @@ export default async function DailyVignette({ params }) {
   const currentYear = new Date().getFullYear();
   
   // ✅ Product Schema
-  const productSchema = getVignetteProductSchema('daily', locale);
+  const productSchema = getVignetteProductSchema('daily', locale, domain);
   
   const features = [
     {

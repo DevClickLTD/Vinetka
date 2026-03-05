@@ -12,8 +12,9 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('components.cookiePolicy');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
-  return generateSEOMetadata({
+  const metadata = generateSEOMetadata({
     locale,
     path: 'politika-za-biskvitki',
     title: t('pageTitle'),
@@ -21,6 +22,13 @@ export async function generateMetadata({ params }) {
     image: '/default.webp',
     domain,
   });
+
+  return {
+    ...metadata,
+    title: {
+      absolute: `${t('pageTitle')} | ${brandName}`,
+    },
+  };
 }
 
 export default async function CookiesPolicy() {

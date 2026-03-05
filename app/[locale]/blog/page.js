@@ -16,6 +16,7 @@ export async function generateMetadata({ params, searchParams }) {
   
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   const baseUrl = getSiteUrl(domain);
   const blogUrl = `${baseUrl}/${locale}/blog`;
   
@@ -47,7 +48,7 @@ export async function generateMetadata({ params, searchParams }) {
     : baseDescription;
   
   const metadata = {
-    title,
+    title: { absolute: `Блог | ${brandName}` },
     description,
     alternates: {
       canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,

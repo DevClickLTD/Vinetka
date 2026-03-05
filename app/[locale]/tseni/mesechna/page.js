@@ -28,6 +28,7 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('prices.monthly');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -49,6 +50,9 @@ export async function generateMetadata({ params }) {
   
   return {
     ...metadata,
+    title: {
+      absolute: `${t('pageTitle')} | ${brandName}`,
+    },
     robots: {
       index: true,
       follow: true,
@@ -74,7 +78,7 @@ export default async function MesechnaVignette({ params }) {
   const currentYear = new Date().getFullYear();
   
   // ✅ Product Schema
-  const productSchema = getVignetteProductSchema('monthly', locale);
+  const productSchema = getVignetteProductSchema('monthly', locale, domain);
   const features = [
     {
       icon: <FaClock className="w-6 h-6 text-purple-600" />,

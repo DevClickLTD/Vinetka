@@ -22,6 +22,7 @@ export async function generateMetadata({ params }) {
 
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   const baseUrl = getSiteUrl(domain);
 
   const meta = post[0].yoast_head_json;
@@ -54,7 +55,7 @@ export async function generateMetadata({ params }) {
   });
   
   return {
-    title,
+    title: { absolute: `${post[0].title.rendered} | ${brandName}` },
     description,
     openGraph: {
       title,

@@ -24,8 +24,9 @@ export async function generateMetadata({ params }) {
   const t = await getTranslations('vignetteCheckPage');
   const headersList = await headers();
   const domain = detectDomain(headersList);
+  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
-  return generateSEOMetadata({
+  const metadata = generateSEOMetadata({
     locale,
     path: 'proverka-na-vinetka',
     title: t('title'),
@@ -33,6 +34,13 @@ export async function generateMetadata({ params }) {
     image: '/default.webp',
     domain,
   });
+
+  return {
+    ...metadata,
+    title: {
+      absolute: `${t('title')} | ${brandName}`,
+    },
+  };
 }
 
 export default async function VignetteCheckPage({ params }) {
@@ -279,7 +287,7 @@ export default async function VignetteCheckPage({ params }) {
         </div>
 
         {/* Expandable Text Section */}
-        <ExpandableTextSection />
+        <ExpandableTextSection siteUrl={siteUrl} />
 
         {/* CTA Section */}
         <div className="bg-purple-900">
