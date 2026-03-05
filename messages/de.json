@@ -180,7 +180,7 @@
       }
     },
     "daily": {
-      "title": "Tagesvignette - 1 Tag | Preis und Informationen | Vinetka.bg",
+      "title": "Tagesvignette - 1 Tag | Preis und Informationen",
       "description": "Ideal für Tagesausflüge",
       "pageDescription": "Tagesvignette für 1 Tag - perfekt für kurze Tagesausflüge. Gültig 24 Stunden ab Aktivierung. Die wirtschaftlichste Wahl.",
       "mainTitle": "Tagesvignette",
@@ -239,7 +239,7 @@
       }
     },
     "weekend": {
-      "title": "Wochenend-Vignette - 60 Stunden und 2.5 Tage | Preis und Informationen | Vinetka.bg",
+      "title": "Wochenend-Vignette - 60 Stunden und 2.5 Tage | Preis und Informationen",
       "description": "Ideal für spontane Reisen",
       "pageDescription": "Wochenend-Vignette für 60 Stunden und 2.5 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 60 Stunden von Freitag Mittag bis Sonntag Mitternacht. Ideal für Reisen von Freitag bis Sonntag.",
       "mainTitle": "Wochenend-Vignette",
@@ -758,7 +758,7 @@
     "selectLanguage": "Sprache wählen"
   },
   "vignetteCheckPage": {
-    "title": "Vignetten-Prüfung – Schnell, einfach und sicher | Vinetka.bg",
+    "title": "Vignetten-Prüfung – Schnell, einfach und sicher",
     "description": "Prüfen Sie Ihre Vignette in Sekunden! Schnelle Überprüfung der Gültigkeit der elektronischen Vignette mit 100% Genauigkeit. In Echtzeit synchronisiert mit NA Avtomagistrali. Vermeiden Sie Bußgelder!",
     "heroTitle": "Vignetten-Prüfung",
     "heroSubtitle": "Schnell, einfach und sicher!",

@@ -185,7 +185,7 @@
     }
   },
   "daily": {
-    "title": "Vigneta zilnică - 1 zi | Preț și informații | Vinetka.bg",
+    "title": "Vigneta zilnică - 1 zi | Preț și informații",
     "description": "Ideală pentru călătorii de o zi",
     "pageDescription": "Vigneta zilnică pentru 1 zi - perfectă pentru călătorii scurte de o zi. Valabilă 24 de ore de la activare. Cea mai economică opțiune.",
     "mainTitle": "Vigneta Zilnică",
@@ -244,7 +244,7 @@
     }
   },
   "weekend": {
-    "title": "Vigneta de weekend - 60 ore și 2.5 zile | Preț și informații | Vinetka.bg",
+    "title": "Vigneta de weekend - 60 ore și 2.5 zile | Preț și informații",
     "description": "Ideală pentru călătorii spontane",
     "pageDescription": "Vigneta de weekend pentru 60 ore și 2.5 zile - perfectă pentru excursii scurte și călătorii spontane. Valabilă 60 ore de la vineri la prânz până duminică la miezul nopții. Ideală pentru călătorii de vineri până duminică.",
     "mainTitle": "Vigneta de weekend",
@@ -763,7 +763,7 @@
       "selectLanguage": "Alege limba"
     },
     "vignetteCheckPage": {
-      "title": "Verificare vignetă - Rapid, ușor și sigur | Vinetka.bg",
+      "title": "Verificare vignetă - Rapid, ușor și sigur",
       "description": "Verifică-ți vigneta în câteva secunde! Verificare rapidă a valabilității vignetei electronice cu acuratețe 100%. Sincronizat în timp real cu Compania Națională de Autostrăzi. Evită amenzile!",
       "heroTitle": "Verificare vignetă",
       "heroSubtitle": "Rapid, ușor și sigur!",

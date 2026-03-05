@@ -199,7 +199,7 @@
         }
       },
       "daily": {
-        "title": "Günlük Vinyet - 1 gün | Fiyat ve Bilgi | Vinetka.bg",
+        "title": "Günlük Vinyet - 1 gün | Fiyat ve Bilgi",
         "description": "Tek günlük yolculuklar için ideal",
         "pageDescription": "1 günlük vinyet - kısa tek günlük geziler için mükemmel. Aktivasyondan itibaren 24 saat geçerlidir. En ekonomik seçim.",
         "mainTitle": "Günlük Vinyet",
@@ -258,7 +258,7 @@
         }
       },
       "weekend": {
-        "title": "Hafta Sonu Vinyeti - 60 saat ve 2.5 gün | Fiyat ve Bilgi | Vinetka.bg",
+        "title": "Hafta Sonu Vinyeti - 60 saat ve 2.5 gün | Fiyat ve Bilgi",
         "description": "Ani yolculuklar için ideal",
         "pageDescription": "60 saat ve 2.5 günlük hafta sonu vinyeti - kısa geziler ve ani yolculuklar için mükemmel. Cuma öğleden Pazar gece yarısına kadar 60 saat geçerlidir. Cuma'dan Pazar'a yolculuklar için idealdir.",
         "mainTitle": "Hafta Sonu Vinyeti",
@@ -703,7 +703,7 @@
       "selectLanguage": "Dil seç"
     },
     "vignetteCheckPage": {
-      "title": "Vinyet Kontrolü - Hızlı, kolay ve güvenli | Vinetka.bg",
+      "title": "Vinyet Kontrolü - Hızlı, kolay ve güvenli",
       "description": "Vinyetinizi saniyeler içinde kontrol edin! Elektronik vinyetin geçerliliğini %100 doğrulukla hızlıca kontrol edin. Gerçek zamanlı olarak NK Otoyolları ile senkronize. Cezalardan kaçının!",
       "heroTitle": "Vinyet Kontrolü",
       "heroSubtitle": "Hızlı, kolay ve güvenli!",

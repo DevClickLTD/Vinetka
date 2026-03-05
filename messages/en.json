@@ -185,7 +185,7 @@
       }
     },
     "daily": {
-      "title": "Daily Vignette - 1 day | Price and Information | Vinetka.bg",
+      "title": "Daily Vignette - 1 day | Price and Information",
       "description": "Ideal for one-day trips",
       "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",
       "mainTitle": "Daily Vignette",
@@ -245,7 +245,7 @@
       }
     },
     "weekend": {
-      "title": "Weekend Vignette - 60 hours and 2.5 days | Price and Information | Vinetka.bg",
+      "title": "Weekend Vignette - 60 hours and 2.5 days | Price and Information",
       "description": "Ideal for spontaneous travels",
       "pageDescription": "Weekend vignette for 60 hours and 2.5 days - perfect for short trips and spontaneous travels. Valid for 60 hours from Friday noon to Sunday midnight. Ideal for Friday to Sunday travels.",
       "mainTitle": "Weekend Vignette",
@@ -740,7 +740,7 @@
     "checkStatus": "Check vignette status"
   },
   "vignetteCheckPage": {
-    "title": "Vignette Check - Fast, Easy and Secure | Vinetka.bg",
+    "title": "Vignette Check - Fast, Easy and Secure",
     "description": "Check your vignette in seconds! Fast verification of electronic vignette validity with 100% accuracy. Real-time synchronized with NA Avtomaginstrali. Avoid fines!",
     "heroTitle": "Vignette Check",
     "heroSubtitle": "Fast, easy and secure!",

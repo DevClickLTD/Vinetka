@@ -54,7 +54,7 @@ export async function generateMetadata({ params }) {
   return {
     ...metadata,
     title: {
-      absolute: `${t('title')} | ${brandName}`,
+      absolute: `${t('pageTitle')} | ${brandName}`,
     },
   };
 }
