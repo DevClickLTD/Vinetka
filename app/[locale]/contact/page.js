@@ -8,6 +8,8 @@ import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contactForm";
 import Script from "next/script";
 import { generateSEOMetadata } from '../../../lib/seo-utils';
+import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
+import { headers } from 'next/headers';
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 // Force static generation
@@ -16,6 +18,8 @@ export const dynamic = 'force-static';
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations("contact");
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
 
   return generateSEOMetadata({
     locale,
@@ -23,23 +27,27 @@ export async function generateMetadata({ params }) {
     title: t("pageTitle"),
     description: t("pageDescription"),
     image: '/default.webp',
+    domain,
   });
 }
 
 export default async function ContactPage() {
   const t = await getTranslations("contact");
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const siteUrl = getSiteUrl(domain);
 
   const contactPageSchema = {
     "@context": "https://schema.org",
     "@type": "ContactPage",
-    "@id": "https://www.avtovia.bg/bg/contact#contactpage",
+    "@id": `${siteUrl}/bg/contact#contactpage`,
     "name": "Контакти - Avtovia.bg",
     "description": "Свържете се с нас за въпроси относно електронни винетки, проверка на винетки и информация за пътни такси в България.",
-    "url": "https://www.avtovia.bg/bg/contact",
+    "url": `${siteUrl}/bg/contact`,
     "mainEntity": {
       "@type": "Organization",
       "name": "Avtovia.bg",
-      "@id": "https://www.avtovia.bg/#organization"
+      "@id": `${siteUrl}/#organization`
     }
   };
 
@@ -51,13 +59,13 @@ export default async function ContactPage() {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://www.avtovia.bg/bg"
+        "item": `${siteUrl}/bg`
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Контакти",
-        "item": "https://www.avtovia.bg/bg/contact"
+        "item": `${siteUrl}/bg/contact`
       }
     ]
   };

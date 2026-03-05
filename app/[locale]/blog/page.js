@@ -5,6 +5,8 @@ import { getBlogListingSchema } from '../../../lib/schemas/blogSchemas';
 import { formatBlogPost, hasTranslatedPosts } from '../../../lib/wordpress-helpers';
 import Script from "next/script";
 import { redirect } from 'next/navigation';
+import { headers } from 'next/headers';
+import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
 
 export async function generateMetadata({ params, searchParams }) {
   const { locale } = await params;
@@ -12,7 +14,9 @@ export async function generateMetadata({ params, searchParams }) {
   const page = (await searchParams).page;
   const currentPage = parseInt(page) || 1;
   
-  const baseUrl = 'https://www.avtovia.bg';
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const baseUrl = getSiteUrl(domain);
   const blogUrl = `${baseUrl}/${locale}/blog`;
   
   // Get total pages for prev/next links
@@ -110,8 +114,11 @@ export default async function Blog({ searchParams, params }) {
   // Format posts with translations
   const formattedPosts = posts.map(post => formatBlogPost(post, locale));
 
-  // ✅ Blog Listing Schema with Pagination
-  const blogListingSchema = getBlogListingSchema(posts, currentPage, totalPages, locale);
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const siteUrl = getSiteUrl(domain);
+
+  const blogListingSchema = getBlogListingSchema(posts, currentPage, totalPages, locale, siteUrl);
 
   return (
     <>

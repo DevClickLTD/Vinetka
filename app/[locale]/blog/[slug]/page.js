@@ -6,6 +6,8 @@ import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils'
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import { getTranslatedContent, hasTranslation } from '../../../../lib/wordpress-helpers';
 import Script from "next/script";
+import { headers } from 'next/headers';
+import { detectDomain, getSiteUrl } from '../../../../lib/domain-utils';
 
 // ISR revalidate на всеки 5 минути за по-бързи обновления
 export const revalidate = 300;
@@ -17,6 +19,10 @@ export async function generateMetadata({ params }) {
   if (!post || post.length === 0) {
     return {};
   }
+
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const baseUrl = getSiteUrl(domain);
 
   const meta = post[0].yoast_head_json;
   const ogImageObject =
@@ -32,7 +38,6 @@ export async function generateMetadata({ params }) {
 
   const canonicalUrl = getCanonicalUrl(locale, `blog/${slug}`);
   const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
-  const baseUrl = 'https://www.avtovia.bg';
   
   // Build hreflang links only for translated versions
   const languages = {
@@ -86,8 +91,11 @@ export default async function PostPage({ params }) {
     const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
     const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
-    // ✅ BlogPosting Schema
-    const blogPostingSchema = getBlogPostingSchema(post[0], locale);
+    const headersList = await headers();
+    const domain = detectDomain(headersList);
+    const siteUrl = getSiteUrl(domain);
+
+    const blogPostingSchema = getBlogPostingSchema(post[0], locale, siteUrl);
 
     return (
       <>

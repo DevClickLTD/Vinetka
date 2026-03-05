@@ -15,6 +15,8 @@ import { generateSEOMetadata } from '../../../../lib/seo-utils';
 import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 import { getWebAppUrl } from '../../../../lib/web-app-url';
 import WeekendVignetteExpandable from '../../../../components/WeekendVignetteExpandable';
+import { detectDomain, getSiteUrl } from '../../../../lib/domain-utils';
+import { headers } from 'next/headers';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 // Temporarily disabled for development - set to 86400 for production
@@ -23,6 +25,8 @@ export const revalidate = 0;
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices.weekend');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
   
   const metadata = generateSEOMetadata({
     locale,
@@ -39,6 +43,7 @@ export async function generateMetadata({ params }) {
       "спонтанни пътувания",
       "петък неделя винетка"
     ],
+    domain,
   });
   
   return {
@@ -62,6 +67,9 @@ export default async function UikendVignette({ params }) {
   const t = await getTranslations('prices.weekend');
   const tCommon = await getTranslations('prices');
   const tNav = await getTranslations('navigation');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const siteUrl = getSiteUrl(domain);
   const webAppUrl = getWebAppUrl(locale);
   const currentYear = new Date().getFullYear();
   
@@ -107,19 +115,19 @@ export default async function UikendVignette({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": "Начало",
-        "item": "https://www.avtovia.bg/bg"
+        "item": `${siteUrl}/${locale}`
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Цени",
-        "item": "https://www.avtovia.bg/bg/tseni"
+        "item": `${siteUrl}/${locale}/tseni`
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Уикенд винетка",
-        "item": "https://www.avtovia.bg/bg/tseni/uikend"
+        "item": `${siteUrl}/${locale}/tseni/uikend`
       }
     ]
   };

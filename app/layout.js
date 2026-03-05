@@ -5,6 +5,8 @@ import { CriticalCSS } from "./critical-css";
 import NextTopLoader from "nextjs-toploader";
 import "../styles/globals.css";
 import { Roboto } from "next/font/google";
+import { detectDomain, getBrandName } from "../lib/domain-utils";
+import DynamicSchemas from "../components/DynamicSchemas";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
@@ -24,13 +26,17 @@ export function generateViewport() {
 }
 
 export async function generateMetadata() {
-  const host = (await headers()).get("host"); // Get the current domain
-  const protocol = host?.includes("localhost") ? "http" : "https"; // Adjust for local dev
+  const headersList = await headers();
+  const host = headersList.get("host");
+  const protocol = host?.includes("localhost") ? "http" : "https";
+  const domain = detectDomain(headersList);
+  const brandName = getBrandName(domain);
+  const siteName = domain === 'vinetka' ? 'Vinetka.bg' : 'Avtovia.bg';
 
   return {
     metadataBase: new URL(`${protocol}://${host}`),
     title: {
-      template: "%s | avtovia bg",
+      template: `%s | ${brandName}`,
       default: "Винетка онлайн - Електронна винетка за България",
     },
     description:
@@ -47,7 +53,7 @@ export async function generateMetadata() {
       images: "/default.webp",
       type: "website",
       locale: "bg_BG",
-      siteName: "avtovia bg",
+      siteName,
     },
     twitter: {
       card: "summary_large_image",
@@ -116,175 +122,7 @@ export default function RootLayout({ children }) {
         <NextTopLoader showSpinner={false} color="#803487" />
         <ImagePreloader />
         <main>{children}</main>
-        {/* Organization Schema */}
-        <Script
-          id="structured-data-organization"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "@id": "https://www.avtovia.bg/#organization",
-              name: "Avtovia.bg",
-              legalName: "Avtovia.bg - Информация за електронни винетки",
-              description:
-                "Информация за електронни винетки в България. Проверка на винетка, цени и пълна информация за всички видове електронни винетки - уикенд, седмична, месечна, тримесечна и годишна.",
-              url: "https://www.avtovia.bg",
-              logo: {
-                "@type": "ImageObject",
-                url: "https://www.avtovia.bg/avtovia-logo.svg",
-                width: "250",
-                height: "60"
-              },
-              image: "https://www.avtovia.bg/default.webp",
-              email: "hello@avtovia.bg",
-              telephone: "+359876995177",
-              foundingDate: "2024",
-              sameAs: [
-                "https://www.avtovia.bg",
-              ],
-              contactPoint: [
-                {
-                  "@type": "ContactPoint",
-                  telephone: "+359876995177",
-                  email: "hello@avtovia.bg",
-                  contactType: "customer service",
-                  areaServed: "BG",
-                  availableLanguage: [
-                    {
-                      "@type": "Language",
-                      name: "Bulgarian",
-                      alternateName: "bg"
-                    },
-                    {
-                      "@type": "Language",
-                      name: "English",
-                      alternateName: "en"
-                    },
-                    {
-                      "@type": "Language",
-                      name: "German",
-                      alternateName: "de"
-                    },
-                    {
-                      "@type": "Language",
-                      name: "Russian",
-                      alternateName: "ru"
-                    }
-                  ],
-                  contactOption: "TollFree",
-                  hoursAvailable: {
-                    "@type": "OpeningHoursSpecification",
-                    dayOfWeek: [
-                      "Monday",
-                      "Tuesday",
-                      "Wednesday",
-                      "Thursday",
-                      "Friday"
-                    ],
-                    opens: "09:00",
-                    closes: "18:00"
-                  }
-                }
-              ],
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "ул. Майор Юрий Гагарин 30Б",
-                addressLocality: "София",
-                addressRegion: "София-град",
-                postalCode: "1113",
-                addressCountry: "BG"
-              },
-              areaServed: [
-                {
-                  "@type": "Country",
-                  name: "Bulgaria",
-                  sameAs: "https://en.wikipedia.org/wiki/Bulgaria"
-                }
-              ]
-            }),
-          }}
-        />
-        
-        {/* WebSite Schema with SearchAction */}
-        <Script
-          id="structured-data-website"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "@id": "https://www.avtovia.bg/#website",
-              url: "https://www.avtovia.bg",
-              name: "Avtovia.bg - Информация за електронни винетки",
-              description: "Проверка на винетка, цени и пълна информация за всички видове електронни винетки в България",
-              publisher: {
-                "@id": "https://www.avtovia.bg/#organization"
-              },
-              inLanguage: ["bg", "en", "de", "ru", "tr", "el", "sr", "ro", "mk"],
-              potentialAction: {
-                "@type": "SearchAction",
-                target: {
-                  "@type": "EntryPoint",
-                  urlTemplate: "https://www.avtovia.bg/bg/blog?search={search_term_string}"
-                },
-                "query-input": "required name=search_term_string"
-              }
-            }),
-          }}
-        />
-        
-        {/* LocalBusiness Schema */}
-        <Script
-          id="structured-data-localbusiness"
-          type="application/ld+json"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "LocalBusiness",
-              "@id": "https://www.avtovia.bg/#localbusiness",
-              name: "Avtovia.bg",
-              image: "https://www.avtovia.bg/default.webp",
-              description: "Информационен портал за електронни винетки в България с възможност за проверка на валидност и информация за цени",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "ул. Майор Юрий Гагарин 30Б",
-                addressLocality: "София",
-                addressRegion: "София-град",
-                postalCode: "1113",
-                addressCountry: "BG"
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: "42.6977",
-                longitude: "23.3219"
-              },
-              url: "https://www.avtovia.bg",
-              telephone: "+359876995177",
-              email: "hello@avtovia.bg",
-              priceRange: "10 BGN - 97 BGN",
-              openingHoursSpecification: [
-                {
-                  "@type": "OpeningHoursSpecification",
-                  dayOfWeek: [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                  ],
-                  opens: "09:00",
-                  closes: "18:00"
-                }
-              ],
-              paymentAccepted: "Cash, Credit Card, Debit Card",
-              currenciesAccepted: "BGN"
-            }),
-          }}
-        />
+        <DynamicSchemas />
 
         {/* Google Analytics */}
         <Script

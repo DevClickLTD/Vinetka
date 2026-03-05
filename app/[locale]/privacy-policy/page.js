@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server';
 import { Link } from "../../../lib/navigation";
 import { generateSEOMetadata } from '../../../lib/seo-utils';
+import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
+import { headers } from 'next/headers';
 
 // Force static generation
 export const dynamic = 'force-static';
@@ -8,6 +10,8 @@ export const dynamic = 'force-static';
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('components.privacyPolicy');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
   
   return generateSEOMetadata({
     locale,
@@ -15,11 +19,15 @@ export async function generateMetadata({ params }) {
     title: t('pageTitle'),
     description: t('pageDescription'),
     image: '/default.webp',
+    domain,
   });
 }
 
 export default async function PrivacyPolicy() {
   const t = await getTranslations('components.privacyPolicy');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const siteUrl = getSiteUrl(domain);
 
   return (
     <div className="container mx-auto p-6 max-w-5xl bg-white py-12">
@@ -30,7 +38,7 @@ export default async function PrivacyPolicy() {
         
         <p className="mb-4" dangerouslySetInnerHTML={{ __html: t('introduction') }} />
         <p className="mb-4">
-          <a href="https://www.avtovia.bg" className="text-purple-600 hover:text-purple-800">www.avtovia.bg</a>.
+          <a href={siteUrl} className="text-purple-600 hover:text-purple-800">{new URL(siteUrl).hostname}</a>.
         </p>
 
         <p className="mb-4">

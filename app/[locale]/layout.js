@@ -7,6 +7,8 @@ import Footer from "../../components/footer";
 import DynamicCookieConsentBanner from "../../components/DynamicCookieConsentBanner";
 import ReCaptchaProvider from "../../components/ReCaptchaProvider";
 import { getCanonicalUrl, getAbsoluteImageUrl } from "../../lib/seo-utils";
+import { detectDomain, getBrandName } from "../../lib/domain-utils";
+import { headers } from "next/headers";
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -17,7 +19,7 @@ export async function generateMetadata({ params }) {
 
   if (isComingSoon) {
     return {
-      title: "В процес на разработка | Avtovia.bg",
+      title: "В процес на разработка",
       description: "Сайтът е в процес на разработка",
       robots: {
         index: false,
@@ -28,14 +30,18 @@ export async function generateMetadata({ params }) {
 
   const { locale } = await params;
   const messages = await getMessages();
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const brandName = getBrandName(domain);
+  const siteName = domain === 'vinetka' ? 'Vinetka.bg' : 'Avtovia.bg';
 
-  // ✅ ПОПРАВКА: Генерирай абсолютни URL-и
-  const canonicalUrl = getCanonicalUrl(locale, "");
-  const ogImage = getAbsoluteImageUrl("/default.webp");
+  // ✅ ПОПРАВКА: Генерирай абсолютни URL-и с правилния домейн
+  const canonicalUrl = getCanonicalUrl(locale, "", domain);
+  const ogImage = getAbsoluteImageUrl("/default.webp", domain);
 
   return {
     title: {
-      template: messages.meta.titleTemplate,
+      template: `%s | ${brandName}`,
       default: messages.meta.title,
     },
     description: messages.meta.description,
@@ -53,7 +59,7 @@ export async function generateMetadata({ params }) {
       ],
       type: "website",
       locale: locale === "bg" ? "bg_BG" : "en_US",
-      siteName: messages.meta.title,
+      siteName,
     },
     twitter: {
       card: "summary_large_image",
@@ -64,16 +70,16 @@ export async function generateMetadata({ params }) {
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        "x-default": getCanonicalUrl("bg", ""),
-        bg: getCanonicalUrl("bg", ""),
-        en: getCanonicalUrl("en", ""),
-        de: getCanonicalUrl("de", ""),
-        ru: getCanonicalUrl("ru", ""),
-        tr: getCanonicalUrl("tr", ""),
-        el: getCanonicalUrl("el", ""),
-        sr: getCanonicalUrl("sr", ""),
-        ro: getCanonicalUrl("ro", ""),
-        mk: getCanonicalUrl("mk", ""),
+        "x-default": getCanonicalUrl("bg", "", domain),
+        bg: getCanonicalUrl("bg", "", domain),
+        en: getCanonicalUrl("en", "", domain),
+        de: getCanonicalUrl("de", "", domain),
+        ru: getCanonicalUrl("ru", "", domain),
+        tr: getCanonicalUrl("tr", "", domain),
+        el: getCanonicalUrl("el", "", domain),
+        sr: getCanonicalUrl("sr", "", domain),
+        ro: getCanonicalUrl("ro", "", domain),
+        mk: getCanonicalUrl("mk", "", domain),
       },
     },
   };

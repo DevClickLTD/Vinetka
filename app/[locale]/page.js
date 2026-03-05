@@ -21,11 +21,15 @@ const Lastestposts = dynamic(() => import("../../components/latestposts"), {
 export const revalidate = 3600;
 
 import { generateSEOMetadata } from '../../lib/seo-utils';
+import { detectDomain, getSiteUrl } from '../../lib/domain-utils';
+import { headers } from 'next/headers';
 
 // Generate metadata using translations
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('meta');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
   
   return generateSEOMetadata({
     locale,
@@ -43,6 +47,7 @@ export async function generateMetadata({ params }) {
       "buy vignette",
       "vignette"
     ],
+    domain,
   });
 }
 
@@ -51,23 +56,26 @@ export default async function Home({ params }) {
   const allServices = await getServices();
   const t = await getTranslations('home');
   const metaT = await getTranslations('meta');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const siteUrl = getSiteUrl(domain);
 
   // ✅ WebPage Schema за homepage
   const webPageSchema = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": `https://www.avtovia.bg/${locale}#webpage`,
-    "url": `https://www.avtovia.bg/${locale}`,
+    "@id": `${siteUrl}/${locale}#webpage`,
+    "url": `${siteUrl}/${locale}`,
     "name": metaT('title'),
     "description": metaT('description'),
     "inLanguage": locale === 'bg' ? 'bg-BG' : `${locale}-${locale.toUpperCase()}`,
     "isPartOf": {
       "@type": "WebSite",
-      "@id": "https://www.avtovia.bg/#website"
+      "@id": `${siteUrl}/#website`
     },
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://www.avtovia.bg/default.webp"
+      "url": `${siteUrl}/default.webp`
     },
     "datePublished": "2024-01-01T00:00:00+00:00",
     "dateModified": new Date().toISOString(),
@@ -77,7 +85,7 @@ export default async function Home({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": metaT('title'),
-        "item": `https://www.avtovia.bg/${locale}`
+        "item": `${siteUrl}/${locale}`
       }]
     },
     "about": [

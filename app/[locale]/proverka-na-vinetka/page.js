@@ -16,10 +16,14 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getVignetteCheckSoftwareSchema } from '../../../lib/schemas/governmentServiceSchema';
 import { getWebAppUrl } from '../../../lib/web-app-url';
+import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
+import { headers } from 'next/headers';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
   
   return generateSEOMetadata({
     locale,
@@ -27,6 +31,7 @@ export async function generateMetadata({ params }) {
     title: t('title'),
     description: t('description'),
     image: '/default.webp',
+    domain,
   });
 }
 
@@ -34,7 +39,9 @@ export default async function VignetteCheckPage({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
   const tNav = await getTranslations('navigation');
-  const baseUrl = 'https://www.avtovia.bg';
+  const headersList = await headers();
+  const domain = detectDomain(headersList);
+  const siteUrl = getSiteUrl(domain);
   const webAppUrl = getWebAppUrl(locale);
   
   const features = [
@@ -70,7 +77,7 @@ export default async function VignetteCheckPage({ params }) {
   ];
 
   // Generate schemas with proper locale
-  const softwareAppSchema = getVignetteCheckSoftwareSchema(locale, baseUrl);
+  const softwareAppSchema = getVignetteCheckSoftwareSchema(locale, siteUrl);
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
@@ -80,13 +87,13 @@ export default async function VignetteCheckPage({ params }) {
         "@type": "ListItem",
         "position": 1,
         "name": locale === 'bg' ? "Начало" : "Home",
-        "item": `${baseUrl}/${locale}`
+        "item": `${siteUrl}/${locale}`
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": locale === 'bg' ? "Проверка на винетка" : "Vignette Check",
-        "item": `${baseUrl}/${locale}/proverka-na-vinetka`
+        "item": `${siteUrl}/${locale}/proverka-na-vinetka`
       }
     ]
   };
