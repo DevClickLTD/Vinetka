@@ -1,14 +1,11 @@
 import { fetchAPI } from "../services/api";
-import { getSiteUrl } from "../lib/domain-utils";
 
 // Всички локали от приложението
 const locales = ['bg', 'en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
 const defaultLocale = 'bg';
 
-// Генерираме sitemap за конкретния домейн базиран на environment variable
-// По подразбиране avtovia, но може да се override с NEXT_PUBLIC_SITEMAP_DOMAIN=vinetka
-const sitemapDomain = process.env.NEXT_PUBLIC_SITEMAP_DOMAIN || 'avtovia';
-const baseUrl = getSiteUrl(sitemapDomain);
+// Сайтът е само на avtovia.bg
+const baseUrl = 'https://www.avtovia.bg';
 
 // Статични страници (без blog, той е динамичен)
 const staticPages = [

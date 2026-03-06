@@ -4,10 +4,11 @@ import { useState } from "react";
 import { useLocale } from 'next-intl';
 import { getWebAppUrl } from "../lib/web-app-url";
 
-export default function ExpandableTextSection({ siteUrl = "https://www.avtovia.bg" }) {
+export default function ExpandableTextSection() {
   const [isExpanded, setIsExpanded] = useState(false);
   const locale = useLocale();
   const webAppUrl = getWebAppUrl(locale);
+  const siteUrl = "https://www.avtovia.bg";
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);

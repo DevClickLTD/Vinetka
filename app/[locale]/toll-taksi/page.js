@@ -4,8 +4,6 @@ import Script from "next/script";
 import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
-import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
-import { headers } from 'next/headers';
 
 // Force static generation
 export const dynamic = 'force-static';
@@ -13,9 +11,6 @@ export const dynamic = 'force-static';
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('tollTax');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -23,7 +18,6 @@ export async function generateMetadata({ params }) {
     title: t('title'),
     description: t('description'),
     image: '/default.webp',
-    domain,
     keywords: [
       "тол такса",
       "тол такса онлайн",
@@ -40,16 +34,14 @@ export async function generateMetadata({ params }) {
   return {
     ...metadata,
     title: {
-      absolute: `${t('pageTitle')} | ${brandName}`,
+      absolute: `${t('title')} | avtovia bg`,
     },
   };
 }
 
 export default async function TolTaksa() {
   const t = await getTranslations('tollTax');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const siteUrl = getSiteUrl(domain);
+  const siteUrl = 'https://www.avtovia.bg';
   
   const tollPoints = [
     { name: t('tollPoints.vidinBridge'), description: t('tollPoints.vidinBridgeDesc') },

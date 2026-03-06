@@ -21,16 +21,11 @@ const Lastestposts = dynamic(() => import("../../components/latestposts"), {
 export const revalidate = 3600;
 
 import { generateSEOMetadata } from '../../lib/seo-utils';
-import { detectDomain, getSiteUrl } from '../../lib/domain-utils';
-import { headers } from 'next/headers';
 
 // Generate metadata using translations
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('meta');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -48,13 +43,12 @@ export async function generateMetadata({ params }) {
       "buy vignette",
       "vignette"
     ],
-    domain,
   });
 
   return {
     ...metadata,
     title: {
-      absolute: `${t('pageTitle')} | ${brandName}`,
+      absolute: `${t('title')} | avtovia bg`,
     },
   };
 }
@@ -64,10 +58,7 @@ export default async function Home({ params }) {
   const allServices = await getServices();
   const t = await getTranslations('home');
   const metaT = await getTranslations('meta');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const siteUrl = getSiteUrl(domain);
-  const pageUrl = `${siteUrl}/${locale}`;
+  const siteUrl = 'https://www.avtovia.bg';
 
   // ✅ WebPage Schema за homepage
   const webPageSchema = {
@@ -187,7 +178,6 @@ export default async function Home({ params }) {
         faqs={faqs} 
         title="Често задавани въпроси за винетки"
         subtitle="Отговори на най-често срещаните въпроси относно електронните винетки в България"
-        pageUrl={pageUrl}
       />
       <Lastestposts />
     </>

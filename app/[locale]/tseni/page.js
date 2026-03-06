@@ -18,8 +18,6 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getVignettePriceListSchema } from '../../../lib/schemas/productSchemas';
 import { getWebAppUrl } from '../../../lib/web-app-url';
-import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
-import { headers } from 'next/headers';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 // Temporarily disabled for development - set to 86400 for production
@@ -28,9 +26,6 @@ export const revalidate = 0;
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -50,13 +45,12 @@ export async function generateMetadata({ params }) {
       "avtovia.bg цени",
       "Bulgaria vignette prices"
     ],
-    domain,
   });
   
   return {
     ...metadata,
     title: {
-      absolute: `${t('pageTitle')} | ${brandName}`,
+      absolute: `${t('title')} | avtovia bg`,
     },
   };
 }
@@ -66,13 +60,11 @@ export default async function tseni({ params }) {
   const t = await getTranslations('prices');
   const tCommon = await getTranslations('common');
   const tNav = await getTranslations('navigation');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const siteUrl = getSiteUrl(domain);
+  const siteUrl = 'https://www.avtovia.bg';
   const webAppUrl = getWebAppUrl(locale);
   
   // ✅ ItemList Schema за pricing page
-  const priceListSchema = getVignettePriceListSchema(locale, domain);
+  const priceListSchema = getVignettePriceListSchema(locale, 'avtovia');
   
   const vignetteTypes = [
     {
@@ -203,7 +195,7 @@ export default async function tseni({ params }) {
     "description": "Онлайн продажба на електронни винетки за всички типове превозни средства в България",
     "provider": {
       "@type": "Organization",
-      "name": domain === 'vinetka' ? "Vinetka.bg" : "Avtovia.bg",
+      "name": "Avtovia.bg",
       "url": siteUrl
     },
     "areaServed": {

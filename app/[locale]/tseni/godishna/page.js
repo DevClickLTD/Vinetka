@@ -18,8 +18,6 @@ import { generateSEOMetadata } from '../../../../lib/seo-utils';
 import { getVignetteProductSchema } from '../../../../lib/schemas/productSchemas';
 import { getWebAppUrl } from '../../../../lib/web-app-url';
 import AnnualVignetteExpandable from '../../../../components/AnnualVignetteExpandable';
-import { detectDomain, getSiteUrl } from '../../../../lib/domain-utils';
-import { headers } from 'next/headers';
 
 // ISR: Revalidate every 24 hours (prices rarely change)
 // Temporarily disabled for development - set to 86400 for production
@@ -28,9 +26,6 @@ export const revalidate = 0;
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices.annual');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -47,13 +42,12 @@ export async function generateMetadata({ params }) {
       "спестяване 40%",
       "годишно покритие винетка"
     ],
-    domain,
   });
   
   return {
     ...metadata,
     title: {
-      absolute: `${t('pageTitle')} | ${brandName}`,
+      absolute: `${t('title')} | avtovia bg`,
     },
     robots: {
       index: true,
@@ -73,14 +67,12 @@ export default async function GodishnaVignette({ params }) {
   const { locale } = await params;
   const t = await getTranslations('prices.annual');
   const tNav = await getTranslations('navigation');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const siteUrl = getSiteUrl(domain);
+  const siteUrl = 'https://www.avtovia.bg';
   const webAppUrl = getWebAppUrl(locale);
   const currentYear = new Date().getFullYear();
   
   // ✅ Product Schema
-  const productSchema = getVignetteProductSchema('annual', locale, domain);
+  const productSchema = getVignetteProductSchema('annual', locale, 'avtovia');
   
   const features = [
     {

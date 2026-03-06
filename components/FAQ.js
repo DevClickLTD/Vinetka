@@ -26,8 +26,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 export default function FAQ({ 
   faqs = [], 
   title = "Често задавани въпроси", 
-  subtitle = "",
-  pageUrl = "https://www.avtovia.bg"
+  subtitle = ""
 }) {
   const [openIndex, setOpenIndex] = useState(null);
 

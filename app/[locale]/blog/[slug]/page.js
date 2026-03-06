@@ -6,8 +6,6 @@ import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils'
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import { getTranslatedContent, hasTranslation } from '../../../../lib/wordpress-helpers';
 import Script from "next/script";
-import { headers } from 'next/headers';
-import { detectDomain, getSiteUrl } from '../../../../lib/domain-utils';
 
 // ISR revalidate на всеки 5 минути за по-бързи обновления
 export const revalidate = 300;
@@ -20,10 +18,7 @@ export async function generateMetadata({ params }) {
     return {};
   }
 
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
-  const baseUrl = getSiteUrl(domain);
+  const baseUrl = 'https://www.avtovia.bg';
 
   const meta = post[0].yoast_head_json;
   const ogImageObject =
@@ -55,7 +50,7 @@ export async function generateMetadata({ params }) {
   });
   
   return {
-    title: { absolute: `${post[0].title.rendered} | ${brandName}` },
+    title: { absolute: `${post[0].title.rendered} | avtovia bg` },
     description,
     openGraph: {
       title,
@@ -92,9 +87,7 @@ export default async function PostPage({ params }) {
     const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
     const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
 
-    const headersList = await headers();
-    const domain = detectDomain(headersList);
-    const siteUrl = getSiteUrl(domain);
+    const siteUrl = 'https://www.avtovia.bg';
 
     const blogPostingSchema = getBlogPostingSchema(post[0], locale, siteUrl);
 

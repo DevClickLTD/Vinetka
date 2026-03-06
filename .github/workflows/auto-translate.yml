@@ -55,9 +55,9 @@ jobs:
         with:
           commit_message: '🌐 Auto-translation: Daily blog update'
           file_pattern: 'messages/wordpress-content.json'
-          commit_user_name: 'Vinetka Bot'
-          commit_user_email: 'bot@vinetka.bg'
-          commit_author: 'Vinetka Bot <bot@vinetka.bg>'
+          commit_user_name: 'Avtovia Bot'
+          commit_user_email: 'bot@avtovia.bg'
+          commit_author: 'Avtovia Bot <bot@avtovia.bg>'
       
       # 7. Success notification
       - name: ✅ Translation completed

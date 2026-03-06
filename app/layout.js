@@ -1,12 +1,9 @@
-import { headers } from "next/headers";
 import Script from "next/script";
 import ImagePreloader from "../components/ImagePreloader";
 import { CriticalCSS } from "./critical-css";
 import NextTopLoader from "nextjs-toploader";
 import "../styles/globals.css";
 import { Roboto } from "next/font/google";
-import { detectDomain, getBrandName } from "../lib/domain-utils";
-import DynamicSchemas from "../components/DynamicSchemas";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
@@ -25,18 +22,11 @@ export function generateViewport() {
   };
 }
 
-export async function generateMetadata() {
-  const headersList = await headers();
-  const host = headersList.get("host");
-  const protocol = host?.includes("localhost") ? "http" : "https";
-  const domain = detectDomain(headersList);
-  const brandName = getBrandName(domain);
-  const siteName = domain === 'vinetka' ? 'Vinetka.bg' : 'Avtovia.bg';
-
+export function generateMetadata() {
   return {
-    metadataBase: new URL(`${protocol}://${host}`),
+    metadataBase: new URL('https://www.avtovia.bg'),
     title: {
-      template: `%s | ${brandName}`,
+      template: '%s | avtovia bg',
       default: "Винетка онлайн - Електронна винетка за България",
     },
     description:
@@ -53,7 +43,7 @@ export async function generateMetadata() {
       images: "/default.webp",
       type: "website",
       locale: "bg_BG",
-      siteName,
+      siteName: 'Avtovia.bg',
     },
     twitter: {
       card: "summary_large_image",
@@ -122,7 +112,77 @@ export default function RootLayout({ children }) {
         <NextTopLoader showSpinner={false} color="#803487" />
         <ImagePreloader />
         <main>{children}</main>
-        <DynamicSchemas />
+        
+        {/* Organization Schema */}
+        <Script
+          id="structured-data-organization"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Avtovia.bg",
+              url: "https://www.avtovia.bg",
+              logo: "https://www.avtovia.bg/images/logo.png",
+              description:
+                "Винетка онлайн - Купи си електронна винетка за България",
+              email: "hello@avtovia.bg",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "BG",
+              },
+            }),
+          }}
+        />
+
+        {/* WebSite Schema with SearchAction */}
+        <Script
+          id="structured-data-website"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Avtovia.bg",
+              url: "https://www.avtovia.bg",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.avtovia.bg/bg/proverka-na-vinetka?search={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+
+        {/* LocalBusiness Schema */}
+        <Script
+          id="structured-data-localbusiness"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              name: "Avtovia.bg",
+              url: "https://www.avtovia.bg",
+              logo: "https://www.avtovia.bg/images/logo.png",
+              image: "https://www.avtovia.bg/images/logo.png",
+              description:
+                "Винетка онлайн - Купи си електронна винетка за България",
+              email: "hello@avtovia.bg",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "BG",
+              },
+              priceRange: "$$",
+            }),
+          }}
+        />
 
         {/* Google Analytics */}
         <Script

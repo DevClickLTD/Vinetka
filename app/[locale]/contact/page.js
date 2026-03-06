@@ -8,8 +8,6 @@ import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contactForm";
 import Script from "next/script";
 import { generateSEOMetadata } from '../../../lib/seo-utils';
-import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
-import { headers } from 'next/headers';
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 // Force static generation
@@ -18,9 +16,6 @@ export const dynamic = 'force-static';
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations("contact");
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
 
   const metadata = generateSEOMetadata({
     locale,
@@ -28,22 +23,19 @@ export async function generateMetadata({ params }) {
     title: t("pageTitle"),
     description: t("pageDescription"),
     image: '/default.webp',
-    domain,
   });
 
   return {
     ...metadata,
     title: {
-      absolute: `${t("pageTitle")} | ${brandName}`,
+      absolute: `${t("pageTitle")} | avtovia bg`,
     },
   };
 }
 
 export default async function ContactPage() {
   const t = await getTranslations("contact");
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const siteUrl = getSiteUrl(domain);
+  const siteUrl = 'https://www.avtovia.bg';
 
   const contactPageSchema = {
     "@context": "https://schema.org",

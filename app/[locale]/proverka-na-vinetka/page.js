@@ -16,15 +16,10 @@ import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getVignetteCheckSoftwareSchema } from '../../../lib/schemas/governmentServiceSchema';
 import { getWebAppUrl } from '../../../lib/web-app-url';
-import { detectDomain, getSiteUrl } from '../../../lib/domain-utils';
-import { headers } from 'next/headers';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const brandName = domain === 'vinetka' ? 'vinetka bg' : 'avtovia bg';
   
   const metadata = generateSEOMetadata({
     locale,
@@ -32,13 +27,12 @@ export async function generateMetadata({ params }) {
     title: t('title'),
     description: t('description'),
     image: '/default.webp',
-    domain,
   });
 
   return {
     ...metadata,
     title: {
-      absolute: `${t('pageTitle')} | ${brandName}`,
+      absolute: `${t('title')} | avtovia bg`,
     },
   };
 }
@@ -47,9 +41,7 @@ export default async function VignetteCheckPage({ params }) {
   const { locale } = await params;
   const t = await getTranslations('vignetteCheckPage');
   const tNav = await getTranslations('navigation');
-  const headersList = await headers();
-  const domain = detectDomain(headersList);
-  const siteUrl = getSiteUrl(domain);
+  const siteUrl = 'https://www.avtovia.bg';
   const webAppUrl = getWebAppUrl(locale);
   
   const features = [
