@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import CardsRow from "@/components/CardsRow";
 import VignetteCheckerCTA from "@/components/VignetteCheckerCTA";
 import FAQ from "@/components/FAQ";
+import RegisterCTA from "@/components/RegisterCTA";
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Script from "next/script";
@@ -174,6 +175,7 @@ export default async function Home({ params }) {
       <CTA />
       <VignetteCheckerCTA />
       <CardsRow />
+      <RegisterCTA />
       <FAQ 
         faqs={faqs} 
         title="Често задавани въпроси за винетки"
