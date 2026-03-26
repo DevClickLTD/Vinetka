@@ -14,10 +14,11 @@
 👉 [https://www.google.com/recaptcha/admin/create](https://www.google.com/recaptcha/admin/create)
 
 ### Стъпка 2: Попълни формата
-- **Label:** `vinetka.bg Contact Form`
+- **Label:** `Avtovia`
 - **reCAPTCHA type:** Избери **reCAPTCHA v3**
 - **Domains:** Добави:
-  - `vinetka.bg`
+  - `avtovia.bg`
+  - `www.avtovia.bg`
   - `localhost` (за локално тестване)
 - **Accept the reCAPTCHA Terms of Service** ✓
 - Натисни **Submit**
@@ -141,7 +142,7 @@ function verify_recaptcha_v3($result, $tag) {
 
 ### Тест на контактната форма
 
-1. **Отвори сайта** `https://vinetka.bg/bg/contact`
+1. **Отвори сайта** `https://avtovia.bg/bg/contact`
 2. **Попълни формата** с тестови данни
 3. **Натисни Submit**
 
