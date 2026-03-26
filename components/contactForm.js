@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Swal from "sweetalert2";
 import { useTranslations } from 'next-intl';
 import { Link } from "../lib/navigation";
@@ -15,16 +15,6 @@ export default function ContactForm() {
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
   const { executeRecaptcha } = useGoogleReCaptcha();
-
-  // #region agent log
-  useEffect(() => {
-    console.log('[DEBUG e2f3ef] ContactForm executeRecaptcha state', {
-      executeRecaptchaAvailable: !!executeRecaptcha,
-      hostname: window.location.hostname,
-      hypothesisId: 'A-B',
-    });
-  }, [executeRecaptcha]);
-  // #endregion
 
   async function handleSubmit(e) {
     e.preventDefault();
