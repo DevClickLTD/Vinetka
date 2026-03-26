@@ -93,25 +93,22 @@ export default function LatestPosts() {
                             </p>
                           </div>
                           <div className="relative mt-8 flex items-center gap-x-4">
-                            <Image
-                              width={40}
-                              height={40}
-                              quality={80}
-                              loading="lazy"
-                              alt={post.yoast_head_json?.author || "Автор"}
-                              src={
-                                post.yoast_head_json?.schema?.["@graph"]?.find(
-                                  (person) => person["@type"] === "Person"
-                                )?.image?.url || "/placeholder.webp"
-                              }
-                              className="size-10 rounded-full bg-gray-100"
-                            />
+                            <div className="flex size-10 shrink-0 items-center justify-center rounded-full bg-white shadow-md ring-2 ring-white/20 overflow-hidden">
+                              <Image
+                                width={32}
+                                height={32}
+                                quality={90}
+                                loading="lazy"
+                                alt="Avtovia.bg във Facebook"
+                                src="/fb-logo.jpg"
+                                className="size-8 rounded-full object-cover"
+                              />
+                            </div>
                             <div className="text-sm/6 text-left">
                               <p className="font-semibold text-white">
-                                {post.yoast_head_json?.author ||
-                                  "Unknown Author"}
+                                {post.yoast_head_json?.author || "Avtovia.bg"}
                               </p>
-                              <p className="text-white">Author</p>
+                              <p className="text-white/60">Редактор</p>
                             </div>
                           </div>
                         </div>
