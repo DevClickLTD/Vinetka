@@ -1,0 +1,1211 @@
+{
+  "meta": {
+    "title": "Vignette en ligne - Informations sur la vignette électronique",
+    "description": "Vignette en ligne - Informations sur la vignette électronique",
+    "titleTemplate": "%s | vinetka bg"
+  },
+  "navigation": {
+    "home": "Accueil",
+    "services": "Services",
+    "prices": "Tarifs",
+    "blog": "Blog",
+    "contact": "Contact",
+    "vignetteChecker": "Vérification de vignette",
+    "tollTax": "Péage",
+    "buyVignette": "Acheter une vignette",
+    "dailyTitle": "Vignette journalière",
+    "weekendTitle": "Vignette week-end",
+    "weeklyTitle": "Vignette hebdomadaire",
+    "monthlyTitle": "Vignette mensuelle",
+    "quarterlyTitle": "Vignette trimestrielle",
+    "annualTitle": "Vignette annuelle",
+    "forYear": "pour",
+    "viewAllPrices": "Voir tous les tarifs"
+  },
+  "footer": {
+    "sections": {
+      "services": "Services",
+      "vignettes": "Vignettes",
+      "support": "Assistance",
+      "company": "Société",
+      "legal": "Légal"
+    },
+    "services": {
+      "vignetteCheck": "Vérification de vignette",
+      "prices": "Tarifs",
+      "tollTax": "Péage"
+    },
+    "vignettes": {
+      "daily": "Vignette journalière",
+      "weekend": "Vignette week-end",
+      "weekly": "Vignette hebdomadaire",
+      "monthly": "Vignette mensuelle",
+      "quarterly": "Vignette trimestrielle",
+      "annual": "Vignette annuelle"
+    },
+    "support": {
+      "blog": "Blog",
+      "contact": "Contact",
+      "faq": "Questions fréquentes"
+    },
+    "company": {
+      "aboutUs": "À propos de nous"
+    },
+    "legal": {
+      "terms": "Conditions d'utilisation",
+      "privacy": "Politique de confidentialité",
+      "cookies": "Politique de cookies"
+    },
+    "newsletter": {
+      "title": "Abonnez-vous à notre newsletter",
+      "description": "Recevez des conseils utiles, des analyses et des actualités directement dans votre boîte mail.",
+      "emailLabel": "Adresse e-mail",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "subscribe": "S'abonner"
+    },
+    "copyright": "Avtovia.bg, Inc. Tous droits réservés."
+  },
+  "home": {
+    "hero": {
+      "title": "Vignettes en ligne",
+      "subtitle": "Vignettes électroniques pour véhicules légers jusqu'à 3,5 t",
+      "heroTitle": "Informations sur la vignette en ligne",
+      "heroSubtitle": "Découvrez facilement et rapidement tout sur les vignettes en ligne sur notre site."
+    },
+    "loading": "Chargement des services...",
+    "vignetteSection": {
+      "title": "Vignettes en ligne",
+      "subtitle": "Vignettes électroniques pour véhicules légers jusqu'à 3,5 t"
+    },
+    "expandableInfoRow": {
+      "title": "Vignette pour la Bulgarie - Tout ce que vous devez savoir",
+      "less": "Moins",
+      "more": "Voir plus",
+      "whatType": "Quel type de vignette choisir ?",
+      "howToBuy": "Comment acheter une vignette ?",
+      "check": "Vérification de vignette",
+      "description": "Si vous prévoyez de voyager en voiture en Bulgarie en dehors des villes, vous devez acheter une vignette, qui est une taxe routière pour l'utilisation du réseau routier national pour les véhicules légers et les remorques jusqu'à 3,5 tonnes.\n\nLes motocyclettes, les engins agricoles et les quad sont exemptés.\n\nLes véhicules de plus de 3,5 tonnes n'ont pas besoin de vignette, mais doivent payer un péage dont le prix est calculé en fonction de la distance parcourue.\n\nSans vignette valide, vous risquez une amende, il est donc important d'être informé à l'avance.",
+      "whatTypeDescription": "Il existe six types de vignettes : journalière, week-end, hebdomadaire, mensuelle, trimestrielle et annuelle. Le système électronique facilite l'achat, car les vignettes peuvent être achetées en personne et en ligne.",
+      "howToBuyDescription": "Vous pouvez acheter une vignette électronique ici ou via le site officiel de l'Administration nationale des péages, ou auprès de l'un de ses partenaires officiels, notamment les stations-service, les agences bancaires, les bureaux de poste et les applications mobiles.\n\nTout ce dont vous avez besoin est le numéro d'immatriculation du véhicule et le pays d'immatriculation.\n\nAssurez-vous que les données du véhicule que vous saisissez sont correctes avant l'achat, car le système ne permet pas de corrections après l'activation.",
+      "checkDescription": "La vérification de la validité de la vignette se fait automatiquement via les caméras routières et par les équipes mobiles de BgToll.\n\nSource : Agence d'infrastructure routière du Ministère des Transports"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "pageTitle": "Contact",
+    "pageDescription": "Contactez-nous via notre formulaire de contact ou trouvez nos coordonnées.",
+    "officeType": "Bureau d'entreprise",
+    "address": "Adresse",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "company": "Société",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer la demande",
+      "agree": "J'accepte la",
+      "privacyPolicy": "politique de confidentialité",
+      "success": {
+        "title": "Envoyé avec succès !",
+        "message": "Attendez une réponse bientôt : )"
+      },
+      "error": {
+        "title": "Erreur d'envoi !",
+        "message": "Veuillez réessayer plus tard.",
+        "networkTitle": "Échec de l'envoi !",
+        "networkMessage": "Vérifiez votre connexion Internet et réessayez."
+      },
+      "validation": {
+        "agreementRequired": "Accord requis",
+        "agreementMessage": "Veuillez accepter la politique de confidentialité avant de soumettre le formulaire."
+      }
+    }
+  },
+  "prices": {
+    "title": "Tarifs des vignettes électroniques - Choisissez la plus adaptée",
+    "description": "Découvrez les meilleurs tarifs pour tous les types de vignettes électroniques en Bulgarie ! Tarifs compétitifs pour les vignettes week-end, hebdomadaire, mensuelle, trimestrielle et annuelle. Sans frais cachés.",
+    "pageTitle": "Tarifs des vignettes",
+    "pageSubtitle": "Choisissez le type de vignette le plus adapté à vos besoins",
+    "weekly": {
+      "title": "Vignette hebdomadaire",
+      "subtitle": "La solution idéale pour les courtes vacances et les voyages d'affaires !",
+      "duration": "7 jours",
+      "description": "Idéale pour les courts séjours",
+      "description1": "La vignette hebdomadaire est valable pendant 7 jours consécutifs et couvre tous vos besoins pour les voyages de courte durée en Bulgarie. La vignette hebdomadaire est activée au moment de l'achat et est valable exactement 168 heures (7 jours) à partir du moment de l'activation.",
+      "description2": "Elle est parfaite pour les touristes qui viennent pour un long week-end, ou pour les voyages d'affaires d'une durée maximale d'une semaine. Nous recommandons la vignette hebdomadaire à tous ceux qui prévoient de voyager en voiture à la mer, à la montagne ou pour visiter différentes villes du pays dans la semaine.",
+      "feature1": "Valable exactement 168 heures",
+      "feature2": "Parfaite pour les touristes",
+      "feature3": "Adaptée aux voyages d'affaires",
+      "feature4": "Couvre les longs week-ends",
+      "highlight": "Choix populaire",
+      "pageTitle": "Vignette hebdomadaire - 7 jours | Tarif et informations",
+      "pageDescription": "Vignette hebdomadaire pour 7 jours - la solution idéale pour les courtes vacances et les voyages d'affaires. Valable 168 heures (7 jours) à partir de l'activation. Parfaite pour les touristes et les voyages d'affaires.",
+      "mainTitle": "Vignette hebdomadaire",
+      "price": "15,00 BGN",
+      "priceEur": "7,67 €",
+      "perfectFor": "La solution idéale pour les courtes vacances et les voyages d'affaires",
+      "validFrom": "Valable 168 heures (7 jours) à partir de l'activation",
+      "features": {
+        "valid168": "Valable 168 heures",
+        "valid168Desc": "Exactement 7 jours consécutifs à partir du moment de l'activation",
+        "perfectForTourists": "Parfaite pour les touristes",
+        "perfectForTouristsDesc": "Idéale pour les visiteurs qui viennent pour un long week-end",
+        "businessTravel": "Voyages d'affaires",
+        "businessTravelDesc": "Adaptée aux voyages d'affaires d'une durée maximale d'une semaine",
+        "allDestinations": "Toutes les destinations",
+        "allDestinationsDesc": "Couvre les voyages à la mer, à la montagne ou dans différentes villes",
+        "title": "Pourquoi choisir la vignette hebdomadaire ?",
+        "subtitle": "Avantages et caractéristiques de la vignette 7 jours"
+      },
+      "useCases": {
+        "title": "Quand utiliser une vignette hebdomadaire ?",
+        "longWeekendTourists": "Touristes pour un long week-end",
+        "businessTrips7Days": "Voyages d'affaires jusqu'à 7 jours",
+        "seaTravelWeek": "Voyage à la mer pour une semaine",
+        "mountainVacations": "Vacances à la montagne",
+        "cityVisits": "Visite de différentes villes du pays",
+        "familyHolidays": "Vacances en famille jusqu'à une semaine",
+        "culturalTours": "Circuits culturels en Bulgarie",
+        "festivalsEvents": "Festivals et événements"
+      },
+      "benefits": {
+        "title": "Principaux avantages",
+        "instantActivation": "Activée au moment de l'achat",
+        "coversAllNeeds": "Couvre tous les besoins de voyage de courte durée",
+        "popularChoice": "Choix le plus populaire pour les touristes",
+        "excellentValue": "Excellent rapport qualité-prix",
+        "noWorries7Days": "Sans soucis pendant 7 jours complets"
+      },
+      "info": {
+        "title": "Informations importantes",
+        "activationTitle": "Activation",
+        "activation": "La vignette est activée au moment de l'achat",
+        "validityTitle": "Validité",
+        "validity": "Exactement 7 jours consécutifs (168 heures)",
+        "coverageTitle": "Couverture",
+        "coverage": "Toutes les autoroutes et voies rapides à péage",
+        "vehiclesTitle": "Véhicules",
+        "vehicles": "Véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "cta": {
+        "title": "Vous planifiez un voyage d'une semaine ?",
+        "subtitle": "Achetez une vignette hebdomadaire maintenant et profitez de 7 jours de voyage sans soucis.",
+        "button": "Acheter la vignette hebdomadaire",
+        "allPrices": "Tous les tarifs"
+      }
+    },
+    "monthly": {
+      "title": "Vignette mensuelle",
+      "subtitle": "Le choix le plus populaire pour les voyageurs réguliers !",
+      "duration": "30 jours",
+      "description": "Adaptée aux longs séjours",
+      "description1": "Le choix le plus populaire pour les voyages réguliers au travail, pour les personnes avec des voyages d'affaires ou celles qui aiment simplement voyager à travers le pays. Il offre un excellent équilibre entre prix et flexibilité.",
+      "description2": "La vignette mensuelle offre une liberté complète de circulation sur toutes les routes à péage en Bulgarie pendant 30 jours. Elle s'active immédiatement après le paiement et est valable exactement 30 jours à partir du moment de l'activation.",
+      "feature1": "Valable exactement 30 jours",
+      "feature2": "Excellent équilibre prix-flexibilité",
+      "feature3": "Pour les voyages réguliers",
+      "feature4": "Liberté complète de circulation",
+      "highlight": "Le plus populaire",
+      "pageTitle": "Vignette mensuelle - 30 jours | Tarif et informations",
+      "pageDescription": "Vignette mensuelle pour 30 jours - le choix le plus populaire parmi les conducteurs. Excellent rapport qualité-prix pour les voyages réguliers. Valable 720 heures (30 jours) à partir de l'activation.",
+      "mainTitle": "Vignette mensuelle",
+      "price": "30,00 BGN",
+      "priceEur": "15,34 €",
+      "perfectFor": "Le choix le plus populaire parmi les conducteurs",
+      "validFrom": "Valable 720 heures (30 jours) à partir de l'activation",
+      "features": {
+        "valid30": "Valable 30 jours",
+        "valid30Desc": "Exactement 30 jours à partir du moment de l'activation",
+        "excellentBalance": "Excellent équilibre",
+        "excellentBalanceDesc": "Rapport parfait entre prix et flexibilité",
+        "forWorking": "Pour les actifs",
+        "forWorkingDesc": "Idéale pour les personnes avec des voyages d'affaires réguliers",
+        "fullFreedom": "Liberté totale",
+        "fullFreedomDesc": "Liberté complète de circulation sur toutes les routes à péage",
+        "mostPopular": "Le plus populaire",
+        "title": "Pourquoi choisir la vignette mensuelle ?",
+        "subtitle": "Avantages et caractéristiques de la vignette 30 jours"
+      },
+      "useCases": {
+        "title": "Quand utiliser une vignette mensuelle ?",
+        "regularWork": "Voyages réguliers au travail",
+        "businessTrips": "Personnes avec des voyages d'affaires",
+        "countryTravelers": "Voyageurs à travers le pays",
+        "familyTrips": "Voyages en famille durant le mois",
+        "students": "Étudiants avec des besoins fréquents de déplacement",
+        "businessMeetings": "Réunions d'affaires et clients",
+        "tourists": "Touristes pour de longues vacances",
+        "secondHome": "Personnes avec une résidence secondaire"
+      },
+      "benefits": {
+        "title": "Principaux avantages",
+        "mostPopularChoice": "Choix le plus populaire parmi les clients",
+        "excellentValue": "Excellent rapport qualité-prix",
+        "idealForRegular": "Idéale pour les voyages réguliers",
+        "fullCoverage": "Couverture complète pour tout un mois",
+        "instantActivation": "Activation instantanée lors du paiement",
+        "noAdditionalPurchases": "Pas besoin d'achats supplémentaires"
+      },
+      "info": {
+        "title": "Informations importantes",
+        "activationTitle": "Activation",
+        "activation": "La vignette est activée immédiatement après le paiement",
+        "validityTitle": "Validité",
+        "validity": "Exactement 30 jours à partir du moment de l'activation",
+        "coverageTitle": "Couverture",
+        "coverage": "Toutes les routes à péage en Bulgarie",
+        "vehiclesTitle": "Véhicules",
+        "vehicles": "Véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "cta": {
+        "title": "Besoin d'une couverture mensuelle ?",
+        "subtitle": "Achetez une vignette mensuelle maintenant et profitez d'une liberté totale pendant 30 jours.",
+        "button": "Acheter la vignette mensuelle",
+        "allPrices": "Tous les tarifs"
+      }
+    },
+    "quarterly": {
+      "title": "Vignette trimestrielle",
+      "subtitle": "Assurez-vous la tranquillité d'esprit pour toute une saison !",
+      "duration": "3 mois",
+      "description": "Choix économique pour les voyageurs saisonniers",
+      "description1": "La vignette trimestrielle est parfaite pour ceux qui veulent oublier les vignettes pendant une période de 90 jours. Idéale pour la saison estivale où les voyages sont les plus intenses, ou pour les mois d'hiver pour les amateurs de tourisme de ski.",
+      "description2": "La vignette trimestrielle couvre tous vos besoins sans nécessité d'achats supplémentaires. Des économies significatives par rapport à l'achat de vignettes mensuelles séparément - vous économisez jusqu'à 15 % du coût total en choisissant une période trimestrielle. Elle s'active instantanément avec la commande en ligne et est valable exactement 90 jours.",
+      "feature1": "Valable exactement 90 jours",
+      "feature2": "Économisez jusqu'à 15 %",
+      "feature3": "Idéale pour les saisons",
+      "feature4": "Pas d'achats supplémentaires",
+      "highlight": "Économisez 15 %",
+      "pageTitle": "Vignette trimestrielle - 90 jours | Tarif et informations",
+      "pageDescription": "Vignette trimestrielle pour 90 jours - excellent rapport qualité-prix pour les voyageurs fréquents. Idéale pour les travailleurs saisonniers et les voyages d'affaires réguliers. Valable 2160 heures (90 jours).",
+      "mainTitle": "Vignette trimestrielle",
+      "duration90": "90 jours",
+      "price": "60,00 BGN",
+      "priceEur": "30,68 €",
+      "perfectFor": "Excellent rapport qualité-prix pour les voyageurs fréquents",
+      "validFrom": "Valable 2160 heures (90 jours) à partir de l'activation",
+      "features": {
+        "valid90": "Valable 90 jours",
+        "valid90Desc": "Exactement 3 mois à partir du moment de l'activation",
+        "save15": "Économisez 15 %",
+        "save15Desc": "Économies significatives par rapport aux vignettes mensuelles séparées",
+        "idealSeasons": "Idéale pour les saisons",
+        "idealSeasonsDesc": "Parfaite pour la saison estivale ou les mois d'hiver",
+        "noPurchases": "Pas d'achats supplémentaires",
+        "noPurchasesDesc": "Oubliez les vignettes pendant une période de 90 jours",
+        "title": "Pourquoi choisir la vignette trimestrielle ?",
+        "subtitle": "Avantages et caractéristiques de la vignette 90 jours"
+      },
+      "seasonInfo": {
+        "title": "Couverture saisonnière",
+        "subtitle": "Idéale pour différentes saisons de l'année",
+        "summer": {
+          "title": "Saison estivale",
+          "description": "Parfaite pour les mois d'été lorsque les voyages sont les plus intenses",
+          "months": "Juin - Août"
+        },
+        "winter": {
+          "title": "Saison hivernale",
+          "description": "Idéale pour les mois d'hiver pour les amateurs de tourisme de ski",
+          "months": "Décembre - Février"
+        }
+      },
+      "useCases": {
+        "title": "Quand utiliser une vignette trimestrielle ?",
+        "summerSeason": "Saison touristique estivale",
+        "winterSki": "Mois d'hiver pour le tourisme de ski",
+        "seasonalWork": "Travail saisonnier dans une autre ville",
+        "longProjects": "Projets à long terme et voyages d'affaires",
+        "familyHolidays": "Vacances en famille pendant la saison",
+        "regular3Months": "Voyages réguliers pendant 3 mois",
+        "studentsSemester": "Étudiants pendant le semestre",
+        "resortResidents": "Résidents saisonniers de stations balnéaires"
+      },
+      "benefits": {
+        "title": "Principaux avantages",
+        "seasonPeace": "Assurez-vous la tranquillité d'esprit pour toute une saison",
+        "save15Percent": "Économisez jusqu'à 15 % du coût total",
+        "intensiveTravel": "Idéale pour les voyages intensifs",
+        "coversAllNeeds": "Couvre tous les besoins sans achats supplémentaires",
+        "instantActivation": "Activation instantanée avec la commande en ligne",
+        "valid90Days": "Valable exactement 90 jours à partir de l'activation"
+      },
+      "info": {
+        "title": "Informations importantes",
+        "activationTitle": "Activation",
+        "activation": "Activation instantanée avec la commande en ligne",
+        "validityTitle": "Validité",
+        "validity": "Exactement 90 jours (3 mois) à partir de l'activation",
+        "savingsTitle": "Économies",
+        "savings": "Jusqu'à 15 % d'économies par rapport aux vignettes mensuelles",
+        "vehiclesTitle": "Véhicules",
+        "vehicles": "Véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "cta": {
+        "title": "Vous planifiez un voyage saisonnier ?",
+        "subtitle": "Achetez une vignette trimestrielle maintenant et économisez jusqu'à 15 % pour 90 jours de voyage sans soucis.",
+        "button": "Acheter la vignette trimestrielle",
+        "allPrices": "Tous les tarifs"
+      }
+    },
+    "annual": {
+      "title": "Vignette annuelle",
+      "subtitle": "La solution la plus avantageuse pour tous ceux qui voyagent régulièrement !",
+      "duration": "12 mois",
+      "description": "La plus avantageuse pour les conducteurs réguliers",
+      "description1": "La vignette annuelle est indispensable pour tous les propriétaires de véhicules qui utilisent régulièrement les routes à péage en Bulgarie. Elle offre le meilleur rapport qualité-prix et élimine le besoin d'achats fréquents.",
+      "description2": "Avec une vignette annuelle, vous économisez jusqu'à 40 % par rapport à l'achat de vignettes mensuelles tout au long de l'année. Particulièrement avantageuse pour tous ceux qui ne veulent pas se soucier de l'état de leur vignette. La vignette annuelle est activée instantanément et est valable exactement 365 jours à partir de la date d'activation.",
+      "feature1": "Valable exactement 365 jours",
+      "feature2": "Économisez jusqu'à 40 %",
+      "feature3": "Confort maximum",
+      "feature4": "Pas de soucis de statut",
+      "highlight": "Économisez 40 %",
+      "pageTitle": "Vignette annuelle - 365 jours | Tarif et informations",
+      "pageDescription": "Vignette annuelle pour 365 jours - la solution la plus avantageuse pour tous ceux qui voyagent régulièrement. Économisez jusqu'à 40 % par rapport aux vignettes mensuelles. Confort maximum sans soucis.",
+      "mainTitle": "Vignette annuelle",
+      "duration365": "365 jours",
+      "price": "97,00 BGN",
+      "priceEur": "49,60 €",
+      "perfectFor": "La solution la plus économique pour les voyageurs réguliers",
+      "validFrom": "Valable jusqu'au 31 janvier de l'année suivante",
+      "features": {
+        "valid365": "Valable 365 jours",
+        "valid365Desc": "Exactement une année complète à partir du moment de l'activation",
+        "save40": "Économisez 40 %",
+        "bestValue": "Meilleur rapport qualité-prix",
+        "save40Desc": "Économies maximales par rapport à l'achat de vignettes mensuelles",
+        "maxConvenience": "Confort maximum",
+        "maxConvenienceDesc": "La solution la plus pratique pour 365 jours complets",
+        "noWorries": "Sans soucis",
+        "noWorriesDesc": "Oubliez le statut de la vignette pendant toute une année",
+        "title": "Pourquoi choisir la vignette annuelle ?",
+        "subtitle": "Avantages et caractéristiques de la vignette 365 jours"
+      },
+      "useCases": {
+        "title": "Pour qui la vignette annuelle est-elle adaptée ?",
+        "regularUsers": "Propriétaires de véhicules à utilisation régulière",
+        "dailyCommuters": "Personnes qui voyagent quotidiennement pour le travail",
+        "businessOwners": "Chefs d'entreprise avec des déplacements fréquents",
+        "activeFamilies": "Familles avec un mode de vie actif",
+        "salesReps": "Représentants commerciaux",
+        "multiCityResidents": "Personnes avec des domiciles dans différentes villes",
+        "professionalDrivers": "Chauffeurs professionnels",
+        "noWorryUsers": "Quiconque ne veut pas de soucis"
+      },
+      "benefits": {
+        "title": "Principaux avantages",
+        "bestSolution": "La solution la plus avantageuse pour toute l'année",
+        "save40Percent": "Économisez jusqu'à 40 % par rapport aux vignettes mensuelles",
+        "eliminateFrequentPurchases": "Élimine le besoin d'achats fréquents",
+        "instantActivation": "Activation instantanée lors de la commande",
+        "valid365Days": "Valable exactement 365 jours à partir de l'activation",
+        "necessaryForRegular": "Essentielle pour les utilisateurs réguliers",
+        "bestValueForMoney": "Meilleur rapport qualité-prix",
+        "fullPeaceOfMind": "Tranquillité d'esprit totale pour toute l'année"
+      },
+      "comparison": {
+        "title": "Comparaison des coûts",
+        "subtitle": "Voyez combien vous pouvez économiser avec une vignette annuelle",
+        "recommended": "Recommandé",
+        "cost": "Coût",
+        "savings": "Économies",
+        "convenience": "Commodité",
+        "monthly": "Vignettes mensuelles",
+        "monthlyCost": "12x le tarif mensuel",
+        "monthlyConvenience": "Remplacement fréquent",
+        "annual": "Vignette annuelle",
+        "annualCost": "Prix fixe",
+        "annualSavings": "Jusqu'à 40 %",
+        "annualConvenience": "Une fois par an"
+      },
+      "info": {
+        "title": "Informations importantes",
+        "activationTitle": "Activation",
+        "activation": "La vignette annuelle est activée instantanément",
+        "validityTitle": "Validité",
+        "validity": "Exactement 365 jours à partir de la date d'activation",
+        "savingsTitle": "Économies",
+        "savings": "Jusqu'à 40 % d'économies par rapport aux vignettes mensuelles",
+        "vehiclesTitle": "Véhicules",
+        "vehicles": "Véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "cta": {
+        "title": "Prêt pour une année entière de voyage sans soucis ?",
+        "subtitle": "Achetez une vignette annuelle maintenant et économisez jusqu'à 40 % pour 365 jours de liberté totale.",
+        "button": "Acheter la vignette annuelle",
+        "allPrices": "Tous les tarifs"
+      }
+    },
+    "breadcrumb": {
+      "home": "Accueil",
+      "prices": "Tarifs"
+    },
+    "weekend": {
+      "title": "Vignette week-end - 60 heures et 2,5 jours | Tarif et informations",
+      "description": "Idéale pour les voyages spontanés",
+      "pageDescription": "Vignette week-end pour 2 jours - parfaite pour les courts voyages et les déplacements spontanés. Valable 48 heures à partir de l'activation. Idéale pour les voyages du vendredi au dimanche.",
+      "mainTitle": "Vignette week-end",
+      "subtitle": "Parfaite pour les courtes escapades du quotidien !",
+      "duration": "2 jours",
+      "description1": "La vignette week-end est spécialement conçue pour les trajets de deux jours et couvre les besoins pour de courtes vacances sans dépenses inutiles. Valable 48 heures à partir du moment de l'activation, elle est idéale pour les trajets du vendredi au dimanche ou toute autre période de deux jours.",
+      "description2": "La vignette week-end offre le meilleur rapport qualité-prix pour les courts voyages. Idéale pour les décisions spontanées de courtes escapades et offre une liberté complète de circulation sur toutes les autoroutes et le réseau routier républicain.",
+      "feature1": "Valable 48 heures",
+      "feature2": "Idéale pour les voyages spontanés",
+      "feature3": "Meilleur rapport qualité-prix pour les courts séjours",
+      "feature4": "Du vendredi au dimanche",
+      "highlight": "Courtes escapades",
+      "pageTitle": "Vignette week-end - 2 jours | Tarif et informations",
+      "price": "10,00 BGN",
+      "priceEur": "5,11 €",
+      "perfectFor": "Parfaite pour les courts voyages et les déplacements spontanés",
+      "validFrom": "Valable 48 heures à partir de l'activation",
+      "valid48Hours": "Valable 2 jours (48 heures)",
+      "features": {
+        "valid48": "Valable 48 heures",
+        "valid48Desc": "La vignette est active pendant exactement 48 heures à partir du moment de l'achat",
+        "idealWeekends": "Idéale pour les week-ends",
+        "idealWeekendsDesc": "Spécialement conçue pour les trajets de deux jours et les courtes vacances",
+        "spontaneous": "Décisions spontanées",
+        "spontaneousDesc": "Parfaite pour des décisions inattendues de courts voyages",
+        "allHighways": "Toutes les autoroutes",
+        "allHighwaysDesc": "Valable sur toutes les autoroutes et le réseau routier républicain",
+        "title": "Pourquoi choisir la vignette week-end ?",
+        "subtitle": "Avantages et caractéristiques de la vignette 2 jours"
+      },
+      "useCases": {
+        "title": "Quand utiliser une vignette week-end ?",
+        "fridayToSunday": "Voyage du vendredi au dimanche",
+        "shortHolidays": "Courtes vacances hors de la ville",
+        "twoDayTrips": "Excursions de deux jours",
+        "visitFriends": "Visite d'amis et de famille",
+        "businessTrips2Days": "Voyages d'affaires jusqu'à 2 jours",
+        "spontaneousTrips": "Voyages spontanés à la mer ou à la montagne"
+      },
+      "info": {
+        "title": "Informations importantes",
+        "activationTitle": "Activation",
+        "activation": "La vignette est activée instantanément après le paiement",
+        "validityTitle": "Validité",
+        "validity": "Exactement 48 heures à partir du moment de l'activation",
+        "coverageTitle": "Couverture",
+        "coverage": "Toutes les autoroutes et le réseau routier républicain",
+        "vehiclesTitle": "Véhicules",
+        "vehicles": "Véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "cta": {
+        "title": "Prêt pour un court voyage ?",
+        "subtitle": "Achetez une vignette week-end maintenant et prenez la route en quelques secondes.",
+        "button": "Acheter la vignette week-end",
+        "allPrices": "Tous les tarifs"
+      }
+    },
+    "weekendTitle": "Tarif vignette week-end",
+    "weeklyTitle": "Tarif vignette hebdomadaire",
+    "monthlyTitle": "Tarif vignette mensuelle",
+    "quarterlyTitle": "Tarif vignette trimestrielle",
+    "annualTitle": "Tarif vignette annuelle",
+    "features": {
+      "instantIssue": "Émission instantanée",
+      "securePayment": "Paiement sécurisé",
+      "customerSupport": "Assistance client",
+      "mobileOptimized": "Optimisé mobile",
+      "noHiddenFees": "Sans frais cachés",
+      "fastDelivery": "Livraison rapide"
+    },
+    "buyNow": "Acheter maintenant",
+    "validFor": "Valable",
+    "days": "jours",
+    "hero": {
+      "title": "Tarifs des vignettes électroniques",
+      "subtitle": "Choisissez l'option la plus adaptée à vos besoins",
+      "viewPrices": "Voir les tarifs",
+      "benefits": "Avantages"
+    },
+    "intro": {
+      "title": "Tarifs compétitifs pour tous les types de vignettes",
+      "description1": "Sur avtovia.bg, nous proposons des tarifs compétitifs pour tous les types de vignettes. Notre liste de prix est toujours à jour et synchronisée avec les tarifs officiels de NA \"Avtomaginstrali\" EAD.",
+      "description2": "Nous proposons diverses options de vignettes couvrant tous vos besoins - des courts trajets à la couverture annuelle complète. Chaque vignette est valable sur toutes les autoroutes et voies rapides à péage en Bulgarie."
+    },
+    "benefits": {
+      "competitive": {
+        "title": "Tarifs compétitifs",
+        "description": "Meilleurs tarifs du marché synchronisés avec les tarifs officiels"
+      },
+      "noHiddenFees": {
+        "title": "Sans frais cachés",
+        "description": "Tous les prix incluent taxes et commissions - aucun coût supplémentaire"
+      },
+      "vatIncluded": {
+        "title": "TVA incluse",
+        "description": "Tous les prix incluent la TVA et sont valables pour les véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "instantActivation": {
+        "title": "Activation instantanée",
+        "description": "La vignette est activée immédiatement après le paiement, sans attente"
+      }
+    },
+    "daily": {
+      "title": "Vignette journalière - 1 jour | Tarif et informations",
+      "description": "Idéale pour les trajets d'une journée",
+      "pageDescription": "Vignette journalière pour 1 jour - parfaite pour les courts trajets d'une journée. Valable 24 heures à partir de l'activation. Choix le plus économique.",
+      "mainTitle": "Vignette journalière",
+      "subtitle": "Le choix le plus économique pour les trajets d'une journée !",
+      "duration": "1 jour",
+      "description1": "La vignette journalière est spécialement conçue pour les trajets d'une journée et couvre les besoins pour de courtes visites sans dépenses inutiles. Valable 24 heures à partir du moment de l'activation, elle est idéale pour les déplacements professionnels rapides ou les excursions spontanées d'une journée.",
+      "description2": "La vignette journalière offre le prix le plus bas pour les courts trajets. Idéale pour les décisions spontanées d'une journée et offre la liberté de circuler sur toutes les autoroutes à péage en Bulgarie pendant une journée entière.",
+      "feature1": "Valable 24 heures",
+      "feature2": "Prix le plus bas",
+      "feature3": "Idéale pour les trajets d'une journée",
+      "feature4": "Activation instantanée",
+      "highlight": "Le plus économique",
+      "pageTitle": "Vignette journalière - 1 jour | Tarif et informations",
+      "price": "8,00 BGN",
+      "priceEur": "4,09 €",
+      "perfectFor": "Parfaite pour les trajets d'une journée et les décisions spontanées",
+      "validFrom": "Valable 24 heures à partir de l'activation",
+      "valid24Hours": "Valable 1 jour (24 heures)",
+      "features": {
+        "valid24": "Valable 24 heures",
+        "valid24Desc": "La vignette est active pendant exactement 24 heures à partir du moment de l'achat",
+        "lowestPrice": "Prix le plus bas",
+        "lowestPriceDesc": "Option la plus économique pour les trajets d'une journée",
+        "quickTrips": "Trajets rapides",
+        "quickTripsDesc": "Parfaite pour les voyages d'affaires ou les courtes visites",
+        "allHighways": "Toutes les autoroutes",
+        "allHighwaysDesc": "Valable sur toutes les autoroutes à péage en Bulgarie",
+        "title": "Pourquoi choisir la vignette journalière ?",
+        "subtitle": "Avantages et caractéristiques de la vignette d'une journée"
+      },
+      "useCases": {
+        "title": "Quand utiliser une vignette journalière ?",
+        "oneDayTrips": "Trajets d'une journée",
+        "businessVisits": "Courtes visites professionnelles",
+        "quickMeetings": "Réunions d'affaires rapides",
+        "dayTours": "Excursions d'une journée",
+        "familyVisits": "Visite de proches pour une journée",
+        "shoppingTrips": "Shopping d'une journée dans une ville voisine"
+      },
+      "info": {
+        "title": "Informations importantes",
+        "activationTitle": "Activation",
+        "activation": "La vignette est activée instantanément après le paiement",
+        "validityTitle": "Validité",
+        "validity": "Exactement 24 heures à partir du moment de l'activation",
+        "coverageTitle": "Couverture",
+        "coverage": "Toutes les autoroutes à péage en Bulgarie",
+        "vehiclesTitle": "Véhicules",
+        "vehicles": "Véhicules légers jusqu'à 3,5 tonnes"
+      },
+      "cta": {
+        "title": "Vous planifiez un trajet d'une journée ?",
+        "subtitle": "Achetez une vignette journalière maintenant et prenez la route en quelques secondes.",
+        "button": "Acheter la vignette journalière",
+        "allPrices": "Tous les tarifs"
+      }
+    },
+    "backToPrices": "Retour aux tarifs",
+    "chooseVignette": "Choisissez votre vignette",
+    "orderNow": "Commander maintenant",
+    "benefitsSection": {
+      "title": "Pourquoi nous choisir ?",
+      "subtitle": "Avantages de notre politique tarifaire"
+    },
+    "pricingSection": {
+      "title": "Choisissez votre vignette",
+      "subtitle": "Comparez les différentes options et choisissez la plus adaptée à vos besoins",
+      "validFor": "Valable",
+      "learnMore": "En savoir plus"
+    },
+    "infoSection": {
+      "title": "Informations complètes et à jour",
+      "description1": "Sur avtovia.bg, vous trouverez des informations complètes et à jour sur les tarifs de tous les types de vignettes électroniques en Bulgarie. Nos prix incluent toutes les taxes et commissions - pas de coûts cachés ni de frais supplémentaires lors du paiement.",
+      "description2": "Comparez les différentes options et choisissez la plus adaptée à vos besoins. Tous les prix incluent la TVA et sont valables pour les véhicules légers jusqu'à 3,5 tonnes.",
+      "paymentText": "Paiement par carte - rapide et sécurisé"
+    },
+    "ctaSection": {
+      "title": "Prêt à voyager ?",
+      "subtitle": "Choisissez la bonne vignette et payez en ligne en quelques secondes.",
+      "buyButton": "Acheter une vignette",
+      "questionsText": "Des questions ?"
+    }
+  },
+  "tollTax": {
+    "title": "Péage en ligne - Système pour les poids lourds",
+    "description": "Achetez le péage en ligne pour les poids lourds et les bus en Bulgarie. Accès rapide et facile aux autoroutes. Payez à l'avance et évitez les arrêts aux postes de péage physiques.",
+    "pageTitle": "Péage pour les poids lourds",
+    "pageSubtitle": "Moyen rapide et pratique de payer les péages routiers",
+    "heroTitle": "Péage en ligne",
+    "heroSubtitle": "Mode pour les poids lourds et les bus",
+    "learnMore": "En savoir plus",
+    "tollPointsNav": "Points de péage",
+    "whatIsTollTax": {
+      "title": "Qu'est-ce que le péage ?",
+      "subtitle": "Régime de tarification spécial pour les poids lourds",
+      "description1": "Contrairement aux vignettes électroniques destinées aux véhicules légers, les péages en Bulgarie s'appliquent aux poids lourds et aux bus.",
+      "description2": "Ce régime est basé sur la distance parcourue et la catégorie du véhicule, garantissant une tarification équitable pour la charge plus importante sur l'infrastructure routière.",
+      "description3": "Comprenez le système de tarification des péages pour planifier vos itinéraires et gérer les paiements efficacement. Les péages sont collectés pour le passage par certains ponts, tunnels et sections routières spécifiques en dehors du système principal de vignettes."
+    },
+    "benefits": {
+      "title": "Pourquoi choisir le paiement en ligne ?",
+      "subtitle": "Avantages du prépaiement des péages",
+      "saveTime": "Gagner du temps",
+      "saveTimeDesc": "Évitez les arrêts aux postes de collecte physiques",
+      "onlinePayment": "Paiement en ligne",
+      "onlinePaymentDesc": "Payez à l'avance par carte depuis le confort de votre domicile",
+      "avoidFines": "Éviter les amendes",
+      "avoidFinesDesc": "Assurez-vous d'avoir un péage valide et évitez les pénalités",
+      "planRoute": "Planifier votre itinéraire",
+      "planRouteDesc": "Obtenez des informations détaillées sur tous les points de péage"
+    },
+    "tollPoints": {
+      "title": "Principaux points de péage en Bulgarie",
+      "subtitle": "Endroits où les péages sont collectés",
+      "vidinBridge": "Pont de Vidin",
+      "ruseBridge": "Pont de Ruse",
+      "topliDolTunnel": "Tunnel Topli Dol",
+      "otherObjects": "Autres ouvrages",
+      "vidinBridgeDesc": "Pont du Danube 1",
+      "ruseBridgeDesc": "Pont du Danube 2",
+      "topliDolTunnelDesc": "Autoroute A1",
+      "otherObjectsDesc": "Sections routières spécifiques"
+    },
+    "targetAudience": {
+      "title": "À qui s'adresse ce service ?",
+      "description1": "Que vous soyez propriétaire d'une société de transport ou conducteur de poids lourd, notre objectif est de faciliter votre travail et d'assurer un passage sans problème sur les sections routières à péage.",
+      "description2": "Notre plateforme vous offre la possibilité de payer les péages à l'avance en ligne, en évitant les arrêts aux postes de collecte physiques. C'est particulièrement pratique lors de trafic dense ou lors de voyages en dehors des heures de travail."
+    },
+    "cta": {
+      "title": "Gagnez du temps - évitez les amendes !",
+      "subtitle": "Nous fournissons des informations détaillées sur tous les points de péage et les tarifs actuels.",
+      "contactUs": "Nous contacter",
+      "allServices": "Tous les services"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "pageTitle": "Blog - Actualités et conseils sur les vignettes",
+    "pageDescription": "Dernières actualités, conseils et informations sur les vignettes électroniques et les voyages en Bulgarie.",
+    "readMore": "Lire la suite",
+    "noArticles": "Aucun article disponible pour le moment.",
+    "loading": "Chargement des articles...",
+    "pagination": {
+      "page": "Page",
+      "of": "sur",
+      "previous": "Précédent",
+      "next": "Suivant"
+    }
+  },
+  "services": {
+    "title": "Services",
+    "pageTitle": "Services - Tout pour les vignettes et les voyages",
+    "pageDescription": "Parcourez nos services pour les vignettes électroniques, les péages et autres services de voyage.",
+    "loading": "Chargement des services...",
+    "noServices": "Aucun service disponible pour le moment.",
+    "contactForPrice": "Contactez-nous pour le tarif"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Politique de confidentialité",
+      "pageTitle": "Politique de confidentialité",
+      "pageDescription": "Découvrez comment nous collectons, utilisons et protégeons vos données personnelles."
+    },
+    "cookiePolicy": {
+      "title": "Politique de cookies",
+      "pageTitle": "Politique de cookies",
+      "pageDescription": "Informations sur l'utilisation des cookies sur notre site web."
+    },
+    "termsOfService": {
+      "title": "Conditions d'utilisation",
+      "pageTitle": "Conditions d'utilisation",
+      "pageDescription": "Conditions générales d'utilisation de nos services et de notre site web."
+    }
+  },
+  "vignetteChecker": {
+    "title": "Vérification de vignette",
+    "pageTitle": "Vérification de vignette",
+    "pageDescription": "Vérifiez rapidement et facilement l'état de votre vignette électronique.",
+    "checkButton": "Vérifier la vignette",
+    "enterPlateNumber": "Entrez le numéro d'immatriculation",
+    "checkStatus": "Vérifier le statut de la vignette"
+  },
+  "vignetteCheckPage": {
+    "title": "Vérification de vignette - Rapide, facile et sécurisée",
+    "description": "Vérifiez votre vignette en quelques secondes ! Vérification rapide de la validité de la vignette électronique avec 100 % de précision. Synchronisé en temps réel avec NA Avtomaginstrali. Évitez les amendes !",
+    "heroTitle": "Vérification de vignette",
+    "heroSubtitle": "Rapide, facile et sécurisée !",
+    "heroCallout": "Gagnez du temps - évitez les amendes !",
+    "introTitle": "Vérifiez votre vignette en quelques secondes",
+    "introDescription1": "Avec notre vérification rapide de vignette, vous pouvez vérifier sa validité en quelques secondes ! Entrez le numéro d'immatriculation du véhicule et le système indiquera si vous avez une vignette valide et jusqu'à quand elle est active.",
+    "introDescription2": "Évitez les amendes et le stress inutile - vérifiez votre vignette maintenant !",
+    "featuresTitle": "Pourquoi utiliser notre vérification de vignette ?",
+    "featuresSubtitle": "Informations fiables et précises sur votre vignette",
+    "features": {
+      "instantCheck": {
+        "title": "Vérification en quelques secondes",
+        "description": "Vérification instantanée de la validité de la vignette"
+      },
+      "realTime": {
+        "title": "Temps réel",
+        "description": "Synchronisé avec la base de données de NA 'Avtomaginstrali' EAD"
+      },
+      "accuracy": {
+        "title": "100 % de précision",
+        "description": "Précision garantie des informations"
+      },
+      "avoidFines": {
+        "title": "Éviter les amendes",
+        "description": "Prévenir les pénalités et le stress inutiles"
+      }
+    },
+    "accuracyTitle": "Précision garantie",
+    "accuracyDescription1": "Notre système est synchronisé en temps réel avec la base de données de NA \"Avtomaginstrali\" EAD, ce qui garantit une précision à 100 % des informations.",
+    "accuracyDescription2": "Vous recevrez instantanément des informations sur le statut de la vignette - si elle est active, quand expire sa validité et quel type de vignette vous avez.",
+    "benefitsTitle": "Que vous obtiendrez ?",
+    "benefits": {
+      "instant": "Informations instantanées sur le statut de la vignette",
+      "validity": "Données sur la validité et le type de vignette",
+      "prevention": "Prévention des amendes et pénalités",
+      "carChange": "Particulièrement utile lors du changement de véhicule",
+      "tracking": "Suivi des vignettes expirant bientôt",
+      "fleets": "Adapté aux entreprises avec des flottes de véhicules"
+    },
+    "businessTitle": "Pour les clients professionnels",
+    "businessDescription1": "Le service est particulièrement utile pour les entreprises avec des flottes de véhicules qui souhaitent suivre le statut des vignettes pour plusieurs véhicules simultanément.",
+    "businessDescription2": "Nous recommandons des vérifications régulières, en particulier lors du changement de véhicule ou lorsque la vignette est sur le point d'expirer.",
+    "ctaTitle": "Besoin d'une nouvelle vignette ?",
+    "ctaDescription": "Si la vérification indique que votre vignette a expiré, achetez-en une nouvelle facilement et rapidement en ligne.",
+    "ctaBuyButton": "Acheter une vignette",
+    "ctaPricesButton": "Voir les tarifs"
+  },
+  "vignetteCheckerComponent": {
+    "title": "Vérification de vignette",
+    "subtitle": "Entrez le numéro d'immatriculation du véhicule pour vérifier la validité de la vignette",
+    "inputLabel": "Numéro d'immatriculation*",
+    "inputPlaceholder": "Exemple : CA1234AB",
+    "checkButton": "Vérifier la vignette",
+    "checkingButton": "Vérification...",
+    "errorRequired": "Veuillez entrer un numéro d'immatriculation",
+    "errorServer": "Erreur lors de la requête serveur",
+    "errorGeneral": "Erreur lors de la vérification. Veuillez réessayer.",
+    "resultsTitle": "Résultats de la vérification",
+    "resultTitle": "Résultat de la vérification",
+    "noValidVignette": "À ce jour, le véhicule n'a pas de vignette valide.",
+    "fields": {
+      "status": "Statut",
+      "validFrom": "Valable à partir du",
+      "validTo": "Valable jusqu'au",
+      "plateNumber": "Numéro d'immatriculation",
+      "country": "Pays",
+      "vehicleClass": "Classe du véhicule",
+      "emissionsClass": "Classe d'émissions",
+      "price": "Prix"
+    },
+    "infoTitle": "Informations importantes",
+    "infoItems": {
+      "realtime": "La vérification est effectuée en temps réel via l'API officielle BG TOLL",
+      "free": "Le service est gratuit et ne nécessite pas d'inscription",
+      "format": "Entrez uniquement le numéro d'immatriculation sans espaces ni caractères spéciaux",
+      "bulgarian": "La vérification est valable uniquement pour les véhicules immatriculés en Bulgarie"
+    }
+  },
+  "common": {
+    "readMore": "Lire la suite",
+    "contactUs": "Nous contacter",
+    "learnMore": "En savoir plus",
+    "buy": "Acheter",
+    "buyNow": "Acheter maintenant",
+    "getStarted": "Commencer",
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "success": "Succès",
+    "close": "Fermer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "save": "Enregistrer",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "back": "Retour",
+    "next": "Suivant",
+    "previous": "Précédent",
+    "search": "Rechercher",
+    "filter": "Filtrer",
+    "sort": "Trier",
+    "selectLanguage": "Sélectionner la langue"
+  },
+  "components": {
+    "hero": {
+      "title": "Obtenez votre vignette en ligne",
+      "subtitle": "Facile, rapide et avec paiement sécurisé",
+      "ctaButton": "Commencer",
+      "learnMore": "En savoir plus",
+      "buyButton": "Acheter une vignette"
+    },
+    "cta": {
+      "title": "Prêt à commencer ?",
+      "subtitle": "Commencez à utiliser nos services aujourd'hui",
+      "button": "Commencer"
+    },
+    "vignetteChecker": {
+      "title": "Vérification de vignette",
+      "subtitle": "Vérifiez le statut de votre vignette électronique",
+      "inputPlaceholder": "Entrez le numéro d'immatriculation",
+      "checkButton": "Vérifier",
+      "validVignette": "Vignette valide",
+      "invalidVignette": "Vignette invalide",
+      "errorMessage": "Une erreur s'est produite lors de la vérification"
+    },
+    "newsletter": {
+      "title": "Abonnez-vous à notre newsletter",
+      "subtitle": "Recevez les dernières actualités et mises à jour",
+      "emailPlaceholder": "Entrez votre e-mail",
+      "subscribeButton": "S'abonner",
+      "successMessage": "Abonné avec succès !",
+      "errorMessage": "Une erreur s'est produite. Veuillez réessayer."
+    },
+    "latestPosts": {
+      "title": "Derniers articles",
+      "viewAll": "Voir tout",
+      "readMore": "Lire la suite",
+      "noArticles": "Aucun article disponible"
+    },
+    "cardsRow": {
+      "title": "Nous acceptons toutes les cartes Mastercard et VISA nationales et internationales",
+      "altText": "Cartes acceptées - Visa, Mastercard"
+    },
+    "ctasRow": {
+      "cta1Title": "Assurance habitation",
+      "cta1Description": "Assurance habitation - entièrement en ligne. Procédure simple, évaluation du bien et couverture adéquate contre l'incendie, les catastrophes naturelles, les tremblements de terre et le vol. Clauses additionnelles. Adaptée aux appartements, maisons et résidences secondaires.",
+      "cta1Button": "En savoir plus",
+      "cta2Title": "Assurance voyage à l'étranger",
+      "cta2Description": "Assurance voyage à l'étranger avec assistance garantie - en ligne ! Couverture pour les voyages à l'étranger - personnels, professionnels ou compétitions sportives. Clauses additionnelles, incl. frais de sauvetage, perte de bagages, responsabilité civile, couverture COVID-19.",
+      "cta2Button": "Assurer en ligne",
+      "cta3Title": "Assurance montagne",
+      "cta3Description": "Assurance avec couverture contre les accidents en montagne - pour le ski, le snowboard, le vélo de montagne, l'escalade, le trekking et d'autres sports extrêmes en Bulgarie. Inscription facile et sécurisée en ligne ! Tranquillité d'esprit pour chaque sortie en montagne.",
+      "cta3Button": "Assurer en ligne",
+      "cta4Title": "Assurance santé",
+      "cta4Description": "Assurance santé avec forfaits fixes avec indemnisation pour des cas médicaux spécifiques : chirurgie, hospitalisation (incl. accouchement), fractures. Inscription facile et rapide en ligne sans avoir à remplir une déclaration de santé détaillée.",
+      "cta4Button": "Assurer en ligne"
+    },
+    "vignetteCheckerCTA": {
+      "title": "Vérifiez votre vignette",
+      "subtitle": "Vérification rapide et gratuite de la validité de la vignette électronique",
+      "realTimeCheck": "Vérification en temps réel",
+      "officialAPI": "API officielle BG Toll",
+      "freeService": "Service gratuit",
+      "noRegistration": "Sans inscription",
+      "checkVignette": "Vérifier la vignette maintenant",
+      "enterRegistrationNumber": "Entrez le numéro d'immatriculation",
+      "registrationNumber": "Numéro d'immatriculation",
+      "vignetteValid": "Vignette valide",
+      "validityUntil": "Valable jusqu'au : 31.12.2024",
+      "quickCheck": "Vérification rapide",
+      "resultShownInSeconds": "Résultat affiché en quelques secondes",
+      "dataDirectlyFromBGToll": "Données directement de BG Toll",
+      "noTaxesOrHiddenFees": "Pas de taxes ni de frais cachés"
+    },
+    "vignetteCheckerSidebar": {
+      "title": "Vérification de vignette",
+      "subtitle": "Vérifiez la validité en quelques secondes",
+      "inputPlaceholder": "CA1234AB",
+      "checkButton": "Vérifier",
+      "checkingButton": "Vérification...",
+      "errorRequired": "Entrez le numéro d'immatriculation",
+      "errorServer": "Erreur de requête",
+      "errorGeneral": "Erreur. Veuillez réessayer.",
+      "validVignette": "Vignette valide",
+      "noValidVignette": "Pas de vignette valide",
+      "validTo": "Valable jusqu'au",
+      "vehicleClass": "Classe",
+      "viewFullPage": "Aller à la vérification complète"
+    },
+    "sidebarLatestPosts": {
+      "title": "Derniers articles",
+      "viewAll": "Voir tous les articles"
+    },
+    "privacyPolicy": {
+      "pageTitle": "Politique de confidentialité",
+      "pageDescription": "Politique de confidentialité de Vinetka.bg - en savoir plus sur le traitement des données personnelles.",
+      "title": "POLITIQUE DE CONFIDENTIALITÉ",
+      "introduction": "Cette politique de confidentialité est adoptée par « Digital Policy Hub » JSC, NIF 207623030 (ci-après dénommée « la Société » ou « DPH » JSC), dont le siège social et l'adresse de gestion sont : Sofia, code postal 1113, quartier Izgrev, rue « Major Yuri Gagarin » n° 30, bâtiment B - administrateur indépendant et responsable du traitement des données personnelles. La Société est partenaire de « DIGITAL SMART INFRASTRUCTURE » JSC, NIF 205612035 (ci-après dénommée « DSI » JSC), dont le siège social et l'adresse de gestion sont : République de Bulgarie, région Sofia-capitale, municipalité de la capitale, ville de Sofia, quartier Sredets, rue « Georgi S. Rakovski » n° 96, société enregistrée comme prestataire de service national auprès de l'Agence d'infrastructure routière et ayant le droit d'exercer des activités de collecte de taxes routières et autres. « DPH » JSC exerce des activités visant à offrir aux utilisateurs la possibilité de payer les taxes de vignette, les taxes compensatoires et les taxes de « péage maximum journalier » au nom et pour le compte de « DSI » JSC via le site web",
+      "contactInfo": "Les utilisateurs du site web www.avtovia.bg peuvent contacter « Digital Policy Hub » JSC à l'adresse mentionnée ci-dessus, par téléphone : +359876995177 ou à l'adresse e-mail suivante : hello@insurance.bg",
+      "updatePolicy": "« Digital Policy Hub » JSC se réserve le droit de mettre à jour et de modifier périodiquement cette politique de confidentialité afin de refléter les changements dans la façon dont vos données personnelles sont traitées ou en lien avec les changements de la législation applicable. En cas de tels changements, « Digital Policy Hub » JSC publiera une version mise à jour de la politique de confidentialité sur le site web www.avtovia.bg.",
+      "sections": {
+        "definitions": {
+          "title": "DÉFINITIONS",
+          "personalData": "Les données personnelles désignent toute information relative à une personne physique identifiée ou identifiable (« personne concernée »). Est réputée identifiable une personne physique qui peut être identifiée, directement ou indirectement, notamment par référence à un identifiant, tel qu'un nom, un numéro d'identification, des données de localisation, un identifiant en ligne, ou à un ou plusieurs éléments spécifiques propres à son identité physique, physiologique, génétique, psychique, économique, culturelle ou sociale ;",
+          "processing": "Le traitement désigne toute opération ou tout ensemble d'opérations effectuées ou non à l'aide de procédés automatisés et appliquées à des données ou des ensembles de données à caractère personnel, telles que la collecte, l'enregistrement, l'organisation, la structuration, la conservation, l'adaptation ou la modification, l'extraction, la consultation, l'utilisation, la communication par transmission, la diffusion ou toute autre forme de mise à disposition, le rapprochement ou l'interconnexion, la limitation, l'effacement ou la destruction ;",
+          "personalDataFile": "Un fichier de données personnelles désigne tout ensemble structuré de données à caractère personnel accessibles selon des critères déterminés, que cet ensemble soit centralisé, décentralisé ou réparti de manière fonctionnelle ou géographique ;",
+          "controller": "Le responsable du traitement désigne la personne physique ou morale, l'autorité publique, le service ou tout autre organisme qui, seul ou conjointement avec d'autres, détermine les finalités et les moyens du traitement ; lorsque les finalités et les moyens de ce traitement sont déterminés par le droit de l'UE ou le droit de la République de Bulgarie. Le responsable du traitement ou les critères spécifiques applicables à sa désignation peuvent être fixés par le droit de l'UE ou par le droit de la République de Bulgarie ;",
+          "processor": "Le sous-traitant - toute personne physique ou morale, autorité publique, service ou autre organisme qui traite des données à caractère personnel pour le compte du responsable du traitement ;",
+          "dataSubject": "La personne concernée – est une personne physique qui est identifiée ou qui peut être identifiée sur la base de certaines informations constituant des données personnelles directement ou indirectement ;",
+          "consent": "Le consentement de la personne concernée - toute manifestation de volonté, libre, spécifique, éclairée et univoque par laquelle la personne concernée accepte, par une déclaration ou par un acte positif clair, que des données à caractère personnel la concernant fassent l'objet d'un traitement ;",
+          "dataBreach": "La violation de données personnelles - une violation de la sécurité entraînant, de manière accidentelle ou illicite, la destruction, la perte, l'altération, la divulgation non autorisée de données à caractère personnel transmises, conservées ou traitées d'une autre manière, ou l'accès non autorisé à de telles données ;",
+          "platform": "La plateforme – le site web par lequel « DPH » JSC exerce son activité – www.avtovia.bg ;",
+          "roadTaxes": "Les taxes routières - est un concept collectif désignant les taxes de vignette, les taxes compensatoires et les taxes de « péage maximum journalier », ainsi que d'autres taxes établies normativement pour l'utilisation du réseau routier payant ;",
+          "electronicVignette": "La vignette électronique – désigne un document électronique au sens de l'art. 3, al. 1 de la loi sur le document électronique et les services de certification électronique, attestant la taxe de vignette payée. La vignette électronique contient un numéro d'identification unique, des données sur le numéro d'immatriculation du véhicule routier, le pays dans lequel il est immatriculé, sa catégorie, la date de paiement de la taxe et la période de validité. Les taxes de vignette sont collectées conformément au Tarif des taxes perçues par l'Agence d'infrastructure routière, selon leur période de validité ;",
+          "compensatoryTax": "La taxe compensatoire – désigne la taxe routière prévue à l'art. 10, al. 2 de la loi sur les routes, qui peut être perçue au profit de l'Agence d'infrastructure routière lorsqu'une circulation sur le réseau routier payant est constatée, sans que la taxe de vignette ou la taxe de péage correspondante ait été payée pour le véhicule routier concerné."
+        },
+        "generalProvisions": {
+          "title": "DISPOSITIONS GÉNÉRALES",
+          "compliance": "Lors du traitement des données personnelles, la Société respecte tous les actes normatifs applicables pour la protection des données personnelles applicables à ses activités, y compris, mais sans s'y limiter, le Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données (Règlement général sur la protection des données) (« Règlement ») et la loi sur la protection des données personnelles.",
+          "internalProcedures": "En application des dispositions du Règlement, la société applique des procédures internes pour la protection des données personnelles et pour le contrôle de leur respect par tous les employés.",
+          "legitimateInterest": "« DPH » JSC a un intérêt légitime à maintenir le fonctionnement de son site web électronique, et à cet égard traite les données de tous les visiteurs et de leur activité."
+        },
+        "purposes": {
+          "title": "FINALITÉS",
+          "principles": "Dans ses activités de traitement des données personnelles, « DPH » JSC suit les principes de licéité, d'équité et de transparence, de minimisation des données collectées, d'exactitude lors de la suppression ou de la correction rapide des données inexactes, de limitation de la conservation. La Société collecte des données personnelles à des fins spécifiques, explicitement énoncées et légitimes et ne traite pas davantage les données personnelles collectées d'une manière incompatible avec ces finalités.",
+          "dataSharing": "Lors de l'exercice d'activités de distribution de vignettes électroniques et de paiement d'autres taxes routières, vos données personnelles sont également fournies et traitées par l'Agence d'infrastructure routière et/ou « DSI » JSC.",
+          "dataCollection": "« DPH » JSC collecte vos données personnelles directement auprès de vous, vous décidez donc quel type d'informations nous fournir.",
+          "userProfile": "- Lorsque vous créez un profil d'utilisateur sur notre site web, vous nous envoyez votre adresse e-mail, votre prénom et votre nom de famille.",
+          "additionalInfo": "- Vous pouvez également ajouter des informations supplémentaires à votre profil d'utilisateur telles que : numéro de téléphone mobile, numéro de téléphone fixe et autres.",
+          "vignettePurchase": "- Lorsque vous effectuez un achat de vignette électronique via le site web, vous nous fournissez les informations suivantes : catégorie du véhicule ; pays d'immatriculation du véhicule ; numéro d'immatriculation du véhicule ; période de validité de la vignette électronique ; date de début de validité de la vignette électronique ; adresse e-mail pour la notification des vignettes électroniques expirant et des violations détectées.",
+          "contactForm": "- Lorsque vous avez demandé à recevoir des informations ou de l'aide en remplissant notre formulaire de contact, afin que nous puissions vous envoyer une réponse personnalisée ;",
+          "comments": "- Lorsque vous faites des commentaires ou nous fournissez des informations supplémentaires dans une section du site web qui le permet ;",
+          "socialMedia": "- Dans le cas où notre plateforme le permet, si vous utilisez votre profil sur des plateformes de réseaux sociaux tels que LinkedIn, Twitter, Facebook, Instagram et autres pour vous inscrire ou utiliser autrement la plateforme « DPH » JSC.",
+          "browsing": "- En plus des données personnelles mentionnées, « DPH » JSC a la capacité de collecter et de traiter ultérieurement certaines informations concernant votre comportement de navigation sur nos plateformes.",
+          "sensitiveData": "- Nous ne collectons pas ni ne traitons autrement les données sensibles incluses dans des catégories spéciales de données personnelles dans le Règlement général sur la protection des données."
+        },
+        "dataTransfer": {
+          "title": "TRANSFERT OU FOURNITURE D'ACCÈS AUX DONNÉES PERSONNELLES",
+          "recipients": "Selon le cas, nous pouvons transférer ou fournir l'accès à certaines de vos données personnelles aux catégories de destinataires suivantes :",
+          "dsiAd": "- « DSI » JSC – Les données de contact fournies sont traitées sur la base de l'art. 10, al. 2a - 2d et art. 10a, art. 4a - 4c de la loi sur les routes.",
+          "api": "- Agence d'infrastructure routière ;",
+          "courier": "- prestataires de services de messagerie ;",
+          "payment": "- prestataires de services de paiement/bancaires ;",
+          "legal": "- en cas d'obligation légale, ou si cela est nécessaire pour protéger les intérêts légitimes de « DPH » JSC, la société peut divulguer certaines données personnelles aux autorités publiques.",
+          "guarantee": "Nous garantissons que l'accès à vos données par des tiers privés est effectué conformément aux dispositions légales en matière de protection des données et de confidentialité des informations.",
+          "apiProcessing": "Indépendamment de ce qui précède, vos données collectées en lien avec l'utilisation du réseau routier payant en Bulgarie sont fournies à l'Agence d'infrastructure routière.",
+          "phoneRecording": "Dans les limites autorisées par la loi, « DPH » JSC peut enregistrer les conversations téléphoniques avec les centres d'appels et les lignes destinés au service clientèle."
+        },
+        "security": {
+          "title": "MESURES TECHNIQUES ET ORGANISATIONNELLES DE SÉCURITÉ POUR LE TRAITEMENT",
+          "intro": "Compte tenu de la nature, de la portée, du contexte et des finalités du traitement, ainsi que des risques pour les droits et libertés des utilisateurs, « DPH » JSC applique les mesures techniques et organisationnelles nécessaires.",
+          "measures": [
+            "Chiffrement des données personnelles ;",
+            "Utilisation uniquement de logiciels licenciés vérifiés et préalablement approuvés ;",
+            "Mesures restrictives empêchant l'installation et l'utilisation de logiciels non réglementés ;",
+            "Utilisation de logiciels antivirus, de pare-feu et de serveur proxy ;",
+            "Protection par mot de passe et droits d'accès personnels aux ordinateurs, équipements, bases de données ;",
+            "Verrouillage automatique des ordinateurs de travail inactifs sur le réseau ;",
+            "Protection des appareils qui quittent les locaux de la société ;",
+            "Contrôle de l'accès physique aux documents électroniques et papier contenant des données personnelles ;",
+            "Équipement avec des équipements de sécurité à signal ;",
+            "Application de règles internes adéquates et formation du personnel ;",
+            "Archivage de toutes les informations au moins une fois par jour ;",
+            "Vérification et surveillance régulières de l'efficacité de ses mesures de protection.",
+            "La protection physique des données personnelles des registres tenus par la Société est organisée.",
+            "Chaque ordinateur utilisé pour le traitement des données personnelles dispose d'un système d'exploitation verrouillable installé avec mot de passe.",
+            "Compte tenu des réalisations du progrès technique, la Société applique des mesures techniques et organisationnelles appropriées."
+          ],
+          "disclaimer": "Malgré les mesures que nous appliquons pour protéger vos données personnelles, nous sommes conscients qu'en principe, la transmission d'informations sur Internet ou d'autres réseaux publics n'est pas totalement sécurisée."
+        },
+        "retention": {
+          "title": "PÉRIODE DE CONSERVATION",
+          "period": "« DPH » JSC conserve toutes les données personnelles nécessaires à l'utilisation des services offerts sur la plateforme www.avtovia.bg pour la période nécessaire à l'accomplissement de la finalité spécifique pour laquelle elles sont traitées ou qui est prévue par la loi."
+        },
+        "rights": {
+          "title": "DROITS DES UTILISATEURS/CLIENTS",
+          "informationRight": "- Droit à l'information - la personne physique qui est une personne concernée a le droit de recevoir des informations sur « DPH » JSC en tant que responsable du traitement des données personnelles.",
+          "accessRight": "- Droit d'accès à ses propres données personnelles – la personne concernée a le droit d'obtenir de « DPH » JSC la confirmation que des données personnelles la concernant sont traitées.",
+          "rectificationRight": "- Droit de rectification des données personnelles (si les données sont inexactes) – la personne concernée a le droit de demander à « DPH » JSC de rectifier sans tarder les données personnelles inexactes la concernant.",
+          "erasureRight": {
+            "title": "- Droit à l'effacement des données personnelles (droit « à l'oubli ») – la personne concernée peut demander à « DPH » JSC d'effacer les données personnelles la concernant si l'une des conditions suivantes est remplie :",
+            "conditions": [
+              "les données personnelles ne sont plus nécessaires au regard des finalités pour lesquelles elles ont été collectées ou traitées ;",
+              "la personne concernée retire son consentement sur lequel le traitement est fondé ;",
+              "la personne concernée s'oppose au traitement et il n'existe pas de motif légitime impérieux pour le traitement ;",
+              "les données personnelles ont fait l'objet d'un traitement illicite ;",
+              "les données personnelles doivent être effacées pour respecter une obligation légale."
+            ],
+            "contact": "Vous pouvez nous contacter aux coordonnées mentionnées ci-dessus pour obtenir des informations supplémentaires concernant l'effacement de vos données personnelles."
+          },
+          "restrictionRight": {
+            "title": "- Droit à la limitation du traitement des données personnelles :",
+            "conditions": [
+              "- L'exactitude des données personnelles est contestée par la personne concernée ;",
+              "- Le traitement est illicite mais la personne concernée s'oppose à l'effacement ;",
+              "- Le responsable du traitement n'a plus besoin des données personnelles ;",
+              "- La personne concernée s'est opposée au traitement."
+            ]
+          },
+          "portabilityRight": "- Droit à la portabilité des données entre les responsables du traitement individuels – la personne concernée a le droit de recevoir les données personnelles la concernant dans un format structuré, couramment utilisé et lisible par machine.",
+          "objectionRight": "- Droit d'opposition au traitement de ses données personnelles - les personnes concernées ont le droit de s'opposer à « DPH » JSC au traitement de leurs données personnelles.",
+          "automatedDecisionRight": "- La personne concernée a le droit de ne pas faire l'objet d'une décision automatisée, y compris le profilage.",
+          "profilingDefinition": "Le profilage est défini à l'article 4, point 4 du Règlement comme toute forme de traitement automatisé de données à caractère personnel.",
+          "legalProtection": {
+            "title": "- Droit à la protection par voie judiciaire ou administrative :",
+            "supervisoryAuthority": "1) l'autorité de contrôle compétente - Commission pour la protection des données personnelles : https://www.cpdp.bg/",
+            "court": "2) devant la juridiction compétente.",
+            "email": "- par e-mail à l'adresse : hello@insurance.bg ; Délégué à la protection des données : Momchil Fotev",
+            "mail": "- ou par courrier ordinaire ou messagerie à l'adresse : Sofia, code postal 1113, quartier Izgrev, rue « Major Yuri Gagarin » n° 30, bâtiment B.",
+            "responseTime": "« DPH » JSC répondra à toutes les demandes valides dans un délai de 14 (quatorze) jours calendaires.",
+            "questions": "Si vous avez des questions ou des réclamations concernant notre conformité à cette politique de confidentialité, écrivez-nous aux coordonnées mentionnées ci-dessus.",
+            "effectiveDate": "Cette politique de confidentialité est approuvée par « DPH » JSC et est appliquée dans les activités de la Société à compter du 01.08.2025."
+          }
+        }
+      }
+    },
+    "cookiePolicy": {
+      "pageTitle": "Politique d'utilisation des cookies",
+      "pageDescription": "Politique d'utilisation des cookies de Vinetka.bg - informations sur l'utilisation des cookies.",
+      "title": "POLITIQUE D'UTILISATION DES COOKIES",
+      "introduction": "Cette politique d'utilisation des cookies est adoptée par « Digital Policy Hub » JSC, NIF 207623030 (ci-après dénommée « la Société » ou « DPH » JSC).",
+      "contactInfo": "Les utilisateurs du site web www.avtovia.bg peuvent contacter « Digital Policy Hub » JSC à l'adresse mentionnée ci-dessus, par téléphone : +359876995177 ou à l'adresse e-mail suivante : hello@insurance.bg",
+      "updatePolicy": "« Digital Policy Hub » JSC se réserve le droit de mettre à jour et de modifier périodiquement cette politique d'utilisation des cookies.",
+      "compliance": "Lors de l'utilisation des « cookies » sur le site web www.avtovia.bg, toutes les exigences de la législation nationale ainsi que de la législation de l'UE sont respectées.",
+      "purpose": "Cette politique vise à familiariser les utilisateurs du site web www.avtovia.bg avec les « cookies » utilisés, leur finalité et leur effet sur les utilisateurs.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "Que sont les « cookies » et à quoi servent-ils :",
+          "definition": "Les « cookies » sont de petits fichiers texte que les sites web stockent sur l'appareil de l'utilisateur pour stocker des informations sur leurs visites.",
+          "invitation": "Chaque fois que l'utilisateur visite le site web www.avtovia.bg, il reçoit une invitation à accepter ou à refuser les « cookies ».",
+          "types": "« DPH » JSC utilise deux types de cookies sur le site web www.avtovia.bg : de session et persistants."
+        },
+        "browserManagement": {
+          "title": "Gestion des « cookies » via le navigateur :",
+          "description": "Les navigateurs permettent à l'utilisateur de gérer, supprimer et/ou bloquer l'utilisation des cookies sur les sites web qu'ils visitent.",
+          "deletion": "Les utilisateurs ont la possibilité de supprimer tous les cookies stockés sur l'appareil qu'ils utilisent pour accéder à www.avtovia.bg.",
+          "browsers": [
+            {
+              "name": "Mozilla Firefox :",
+              "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer"
+            },
+            {
+              "name": "Internet Explorer :",
+              "url": "https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+            },
+            {
+              "name": "Google Chrome :",
+              "url": "https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=fr"
+            },
+            {
+              "name": "Safari :",
+              "url": "https://support.apple.com/en-us/HT201265"
+            },
+            {
+              "name": "Microsoft EDGE :",
+              "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+            }
+          ],
+          "moreInfo": "Plus d'informations sur la gestion des cookies pour différents types de navigateurs sont disponibles sur : https://www.aboutcookies.org/how-to-control-cookies/."
+        },
+        "blocking": {
+          "title": "Blocage des « cookies » :",
+          "consequences": "Si l'utilisateur bloque l'utilisation des cookies, certaines fonctions du site web www.avtovia.bg seront arrêtées.",
+          "settings": "La plupart des navigateurs sont configurés par défaut pour accepter les « cookies », mais vous pouvez modifier vos paramètres.",
+          "details": "Des informations détaillées sur les possibilités et les façons de gérer les cookies se trouvent dans la zone des paramètres de l'application (navigateur web)."
+        },
+        "contact": "Pour des questions supplémentaires concernant cette politique d'utilisation des cookies, veuillez nous contacter par téléphone : +359 876 99 51 77 ou par e-mail : hello@insurance.bg",
+        "effectiveDate": "Cette politique d'utilisation des cookies est approuvée par « DPH » JSC et est appliquée dans les activités de la Société à compter du 01.08.2025."
+      }
+    },
+    "termsOfUse": {
+      "pageTitle": "Conditions d'utilisation",
+      "pageDescription": "Conditions d'utilisation du site web www.avtovia.bg - règles d'achat de vignettes électroniques.",
+      "title": "CONDITIONS D'UTILISATION DU SITE WEB WWW.VINETKA.BG",
+      "introduction": "Ces conditions d'utilisation régissent les règles d'utilisation du site web www.avtovia.bg et la fourniture de services liés à l'achat et à la livraison de vignettes électroniques.",
+      "companyInfo": "« Digital Policy Hub » JSC (« DPH » JSC), également appelée « la Société », est une société par actions dont le siège social et l'adresse de gestion sont à Sofia, code postal 1113, quartier Izgrev, rue « Major Yuri Gagarin » n° 30, bâtiment B.",
+      "phone": "+359 876 99 51 77 ou à l'adresse e-mail suivante : hello@insurance.bg",
+      "partnership": "« Digital Policy Hub JSC » est partenaire de « Digital Smart Infrastructure » JSC (« DSI » JSC) NIF 205612035, société enregistrée comme prestataire de service national auprès de l'Agence d'infrastructure routière (RIA).",
+      "sections": {
+        "generalProvisions": {
+          "title": "I. DISPOSITIONS GÉNÉRALES. DÉFINITIONS.",
+          "description": "www.avtovia.bg est un site web (également appelé une page internet) via lequel « DPH » JSC exerce des activités.",
+          "termsRegulation": "Ces conditions d'utilisation régissent les relations de vente, de livraison et de paiement de produits/biens et services entre la Société en tant que vendeur et propriétaire du site web www.avtovia.bg et toute personne (ci-après dénommée « utilisateur »).",
+          "updateRights": "« Digital Policy Hub » JSC se réserve le droit de mettre à jour et de modifier périodiquement ces conditions d'utilisation."
+        },
+        "usageRules": {
+          "title": "II. RÈGLES D'UTILISATION DU SITE WEB WWW.VINETKA.BG.",
+          "registration": "L'inscription sur le site web www.avtovia.bg n'est pas une condition d'utilisation du site.",
+          "emailRequirement": "Chaque utilisateur est tenu de fournir une adresse e-mail valide pour la correspondance.",
+          "pricing": "À l'exception des taxes de vignette/vignettes électroniques, tous les autres prix des biens ou services sur le site web www.avtovia.bg sont définitifs, annoncés en leva (BGN) TVA incluse."
+        },
+        "intellectualProperty": {
+          "title": "III. DROITS DE PROPRIÉTÉ INTELLECTUELLE",
+          "content": "Tous les éléments du contenu du site, y compris la conception, le domaine, le nom, la marque, les bases de données, les textes, dessins, graphiques, sont des objets de propriété intellectuelle de « Digital Policy Hub » JSC."
+        },
+        "purchases": {
+          "title": "IV. ACHATS DE BIENS ET SERVICES",
+          "process": "L'utilisateur peut effectuer des achats en utilisant le site web www.avtovia.bg en ajoutant les biens et/ou services souhaités à « Mon panier ».",
+          "vignetteRequirements": "Les données minimales requises pour l'achat d'une vignette électronique sont : catégorie du véhicule ; pays d'immatriculation du véhicule ; numéro d'immatriculation du véhicule.",
+          "vignetteCheck": "Les données minimales requises pour vérifier la validité d'une vignette sont : numéro d'immatriculation du véhicule routier."
+        },
+        "withdrawalRights": {
+          "title": "V. BIENS ET SERVICES SANS DROIT DE RÉTRACTATION. RÉCLAMATIONS.",
+          "timeLimit": "Dans le cas où des services pour lesquels cela est applicable sont fournis, la Société offre aux utilisateurs la possibilité de se rétracter d'un service utilisé dans un délai de 14 (quatorze) jours à compter de la date d'utilisation du service.",
+          "noWithdrawal": "Le droit de rétractation du contrat ne s'applique pas dans les cas suivants : pour les vignettes électroniques achetées et activées, pour les taxes de « péage maximum journalier » payées ou les taxes compensatoires."
+        },
+        "dataProtection": {
+          "title": "VI. PROTECTION DES DONNÉES PERSONNELLES",
+          "policy": "L'utilisateur accepte, en fournissant ses données personnelles ou autres à « DPH » JSC, que ses données personnelles soient traitées par « DPH » JSC conformément à la politique de confidentialité."
+        },
+        "payments": {
+          "title": "VIII. PAIEMENTS",
+          "pricing": "Les prix des vignettes électroniques, des taxes de « péage maximum journalier » et des taxes compensatoires, tels qu'annoncés dans le Tarif des taxes perçues par la RIA, sont définitifs."
+        },
+        "forcemajeure": {
+          "title": "IX. CIRCONSTANCES IMPRÉVUES ET DE FORCE MAJEURE",
+          "definition": "Aucune partie ne sera responsable de l'inexécution de ses obligations contractuelles si cette inexécution est due à des circonstances de force majeure."
+        },
+        "applicableLaw": {
+          "title": "X. DROIT APPLICABLE",
+          "content": "Ces conditions d'utilisation sont conformes à la législation bulgare applicable. Tout litige survenant entre « Digital Policy Hub » JSC et les utilisateurs sera résolu à l'amiable ou, si cela est impossible, devant les tribunaux bulgares compétents.",
+          "effectiveDate": "Ces conditions d'utilisation sont adoptées par « Digital Policy Hub » JSC et entrent en vigueur à compter du 01.08.2025."
+        }
+      }
+    }
+  },
+  "registerCTA": {
+    "title": "Inscrivez-vous gratuitement et gérez vos vignettes en un seul endroit",
+    "subtitle": "Suivez les dates d'expiration, recevez des rappels à temps et voyagez sans soucis.",
+    "button": "Plus d'informations",
+    "feature1Title": "Vérification de validité",
+    "feature1Desc": "Jusqu'à quand chaque vignette est active",
+    "feature2Title": "Rappels",
+    "feature2Desc": "Alertes à temps pour les vignettes qui expirent",
+    "feature3Title": "Commande rapide",
+    "feature3Desc": "Renouvellement en quelques clics"
+  },
+  "faq": {
+    "title": "Questions fréquentes sur les vignettes",
+    "subtitle": "Réponses aux questions les plus fréquentes sur les vignettes électroniques en Bulgarie",
+    "items": [
+      {
+        "question": "Qu'est-ce qu'une vignette électronique ?",
+        "answer": "Une vignette électronique est un document électronique qui certifie la taxe payée pour l'utilisation du réseau routier républicain en Bulgarie. Elle remplace la vignette physique et est liée directement au numéro d'immatriculation du véhicule. Il n'est pas nécessaire de la placer sur le pare-brise."
+      },
+      {
+        "question": "Comment acheter une vignette électronique ?",
+        "answer": "Une vignette électronique peut être achetée en ligne via le site officiel de l'Agence d'infrastructure routière ou via des partenaires agréés comme Avtovia.bg. Vous avez besoin seulement du numéro d'immatriculation, du pays d'immatriculation et du choix de la période de validité. Le paiement s'effectue par carte bancaire ou autres méthodes électroniques."
+      },
+      {
+        "question": "Quand la vignette électronique est-elle activée ?",
+        "answer": "La vignette électronique est activée immédiatement après le paiement réussi. Pour les vignettes week-end et hebdomadaires, l'activation est instantanée. Pour les vignettes mensuelles, trimestrielles et annuelles, vous pouvez choisir une date de début dans les 30 jours à l'avance."
+      },
+      {
+        "question": "Comment vérifier la validité de ma vignette ?",
+        "answer": "Vous pouvez vérifier gratuitement la validité de votre vignette via notre service de vérification. Entrez le numéro d'immatriculation et le système indiquera si vous avez une vignette valide, son type et sa période de validité."
+      },
+      {
+        "question": "Quels types de vignettes existe-t-il ?",
+        "answer": "En Bulgarie, 5 types de vignettes électroniques sont disponibles pour les véhicules légers :\n• Week-end (2 jours) - 10 BGN\n• Hebdomadaire (7 jours) - 15 BGN\n• Mensuelle (30 jours) - 30 BGN\n• Trimestrielle (90 jours) - 60 BGN\n• Annuelle (365 jours) - 97 BGN\n\nChaque vignette couvre toutes les autoroutes à péage en Bulgarie."
+      },
+      {
+        "question": "Que se passe-t-il si je voyage sans vignette ?",
+        "answer": "Si vous circulez sur des routes à péage sans vignette valide, vous risquez de recevoir une taxe compensatoire. Son montant varie selon le type de véhicule et est nettement supérieur au prix de la vignette. Nous recommandons de toujours vérifier la validité de votre vignette avant de voyager."
+      },
+      {
+        "question": "Puis-je obtenir une vignette pour un véhicule immatriculé à l'étranger ?",
+        "answer": "Oui, une vignette électronique peut être achetée pour tous les véhicules, quel que soit le pays d'immatriculation. Lors de l'achat, vous devez indiquer le pays d'immatriculation et le numéro d'immatriculation. La vignette est valable sur toutes les routes à péage en Bulgarie."
+      },
+      {
+        "question": "Dois-je porter un document pour la vignette achetée ?",
+        "answer": "Il n'est pas obligatoire de porter un document pour la vignette électronique car elle est électronique et liée au numéro d'immatriculation. Le système reconnaît automatiquement la présence d'une vignette valide via des caméras. Cependant, nous vous recommandons de sauvegarder l'email ou la confirmation d'achat par précaution."
+      }
+    ]
+  }
+}

@@ -241,7 +241,7 @@
     "weekend": {
       "title": "Wochenend-Vignette - 60 Stunden und 2.5 Tage | Preis und Informationen",
       "description": "Ideal für spontane Reisen",
-      "pageDescription": "Wochenend-Vignette für 60 Stunden und 2.5 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 60 Stunden von Freitag Mittag bis Sonntag Mitternacht. Ideal für Reisen von Freitag bis Sonntag.",
+      "pageDescription": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
       "mainTitle": "Wochenend-Vignette",
       "subtitle": "Perfekt für kurze Ausflüge aus dem Alltag!",
       "duration": "2 Tage",
@@ -253,7 +253,6 @@
       "feature4": "Von Freitag bis Sonntag",
       "highlight": "Kurze Ausflüge",
       "pageTitle": "Wochenend-Vignette - 2 Tage | Preis und Informationen",
-      "pageDescription": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
       "price": "10,00 BGN",
       "priceEur": "5,11 €",
       "perfectFor": "Perfekt für kurze Ausflüge und spontane Reisen",
@@ -716,7 +715,7 @@
     },
     "cookiePolicy": {
       "title": "Cookie-Richtlinie",
-      "pageTitle": "Cookie-Richtlinie", 
+      "pageTitle": "Cookie-Richtlinie",
       "pageDescription": "Informationen zur Verwendung von Cookies auf unserer Website."
     },
     "termsOfService": {
@@ -1159,5 +1158,54 @@
         }
       }
     }
+  },
+  "registerCTA": {
+    "title": "Registrieren Sie sich kostenlos und verwalten Sie Ihre Vignetten an einem Ort",
+    "subtitle": "Verfolgen Sie Ablaufdaten, erhalten Sie rechtzeitige Erinnerungen und reisen Sie sorglos.",
+    "button": "Mehr Informationen",
+    "feature1Title": "Gültigkeitsprüfung",
+    "feature1Desc": "Wie lange jede Vignette aktiv ist",
+    "feature2Title": "Erinnerungen",
+    "feature2Desc": "Rechtzeitige Hinweise für ablaufende Vignetten",
+    "feature3Title": "Schnelle Bestellung",
+    "feature3Desc": "Verlängerung mit wenigen Klicks"
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen zu Vignetten",
+    "subtitle": "Antworten auf die häufigsten Fragen zu elektronischen Vignetten in Bulgarien",
+    "items": [
+      {
+        "question": "Was ist eine elektronische Vignette?",
+        "answer": "Eine elektronische Vignette ist ein elektronisches Dokument, das die bezahlte Gebühr für die Nutzung des Straßennetzes in Bulgarien bestätigt. Sie ersetzt die physische Vignette und ist direkt mit dem Kennzeichen des Fahrzeugs verknüpft. Sie muss nicht an der Windschutzscheibe angebracht werden."
+      },
+      {
+        "question": "Wie kaufe ich eine elektronische Vignette?",
+        "answer": "Eine elektronische Vignette kann online über die offizielle Website der Straßeninfrastrukturagentur oder über autorisierte Partner wie Avtovia.bg gekauft werden. Sie benötigen nur das Kennzeichen des Fahrzeugs, das Zulassungsland und die Wahl des Gültigkeitszeitraums. Die Zahlung erfolgt per Bankkarte oder anderen elektronischen Methoden."
+      },
+      {
+        "question": "Wann wird die elektronische Vignette aktiviert?",
+        "answer": "Die elektronische Vignette wird sofort nach der erfolgreichen Zahlung aktiviert. Bei Wochenend- und Wochenvignetten erfolgt die Aktivierung sofort. Bei Monats-, Quartals- und Jahresvignetten können Sie ein Startdatum innerhalb von 30 Tagen im Voraus wählen."
+      },
+      {
+        "question": "Wie kann ich die Gültigkeit meiner Vignette überprüfen?",
+        "answer": "Sie können die Gültigkeit Ihrer Vignette kostenlos über unseren Prüfservice überprüfen. Geben Sie das Kennzeichen des Fahrzeugs ein und das System zeigt an, ob Sie eine gültige Vignette haben, deren Typ und Gültigkeitszeitraum."
+      },
+      {
+        "question": "Welche Vignettenarten gibt es?",
+        "answer": "In Bulgarien gibt es 5 Arten von elektronischen Vignetten für Leichtfahrzeuge:\n• Wochenende (2 Tage) - 10 BGN\n• Wöchentlich (7 Tage) - 15 BGN\n• Monatlich (30 Tage) - 30 BGN\n• Vierteljährlich (90 Tage) - 60 BGN\n• Jährlich (365 Tage) - 97 BGN\n\nJede Vignette gilt für alle mautpflichtigen Autobahnen in Bulgarien."
+      },
+      {
+        "question": "Was passiert, wenn ich ohne Vignette fahre?",
+        "answer": "Wenn Sie auf mautpflichtigen Straßen ohne gültige Vignette fahren, riskieren Sie eine Kompensationsgebühr. Der Betrag variiert je nach Fahrzeugtyp und ist deutlich höher als der Preis der Vignette selbst. Wir empfehlen, die Gültigkeit Ihrer Vignette immer vor der Reise zu überprüfen."
+      },
+      {
+        "question": "Kann ich eine Vignette für ein ausländisch zugelassenes Fahrzeug bekommen?",
+        "answer": "Ja, eine elektronische Vignette kann für alle Fahrzeuge unabhängig vom Zulassungsland gekauft werden. Beim Kauf müssen Sie das Zulassungsland und das Kennzeichen angeben. Die Vignette gilt für alle mautpflichtigen Straßen in Bulgarien."
+      },
+      {
+        "question": "Muss ich ein Dokument für die gekaufte Vignette mitführen?",
+        "answer": "Sie müssen kein Dokument für die elektronische Vignette mitführen, da sie elektronisch ist und mit dem Kennzeichen verknüpft ist. Das System erkennt automatisch das Vorhandensein einer gültigen Vignette durch Kameras. Wir empfehlen jedoch, die E-Mail oder die Kaufbestätigung zur Sicherheit zu speichern."
+      }
+    ]
   }
 }

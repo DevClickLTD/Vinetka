@@ -130,180 +130,6 @@
     "description": "Discover the best prices for all types of electronic vignettes in Bulgaria! Competitive prices for weekend, weekly, monthly, quarterly and annual vignettes. No hidden fees.",
     "pageTitle": "Vignette Prices",
     "pageSubtitle": "Choose the most suitable vignette type for your needs",
-    "weekly": "Weekly",
-    "monthly": "Monthly",
-    "quarterly": "Quarterly",
-    "annual": "Annual",
-    "breadcrumb": {
-      "home": "Home",
-      "prices": "Prices"
-    },
-    "weekend": "Weekend",
-    "weekendTitle": "Weekend Vignette Price",
-    "weeklyTitle": "Weekly Vignette Price",
-    "monthlyTitle": "Monthly Vignette Price",
-    "quarterlyTitle": "Quarterly Vignette Price",
-    "annualTitle": "Annual Vignette Price",
-    "features": {
-      "instantIssue": "Instant Issue",
-      "securePayment": "Secure Payment",
-      "customerSupport": "Customer Support",
-      "mobileOptimized": "Mobile Optimized",
-      "noHiddenFees": "No Hidden Fees",
-      "fastDelivery": "Fast Delivery"
-    },
-    "buyNow": "Buy Now",
-    "validFor": "Valid for",
-    "days": "days",
-    "hero": {
-      "title": "Electronic Vignette Prices",
-      "subtitle": "Choose the most suitable option for your needs",
-      "viewPrices": "View Prices",
-      "benefits": "Benefits"
-    },
-    "intro": {
-      "title": "Competitive prices for all types of vignettes",
-      "description1": "At avtovia.bg we offer competitive prices for all types of vignettes. Our price list is always current and synchronized with the official tariffs of NA \"Avtomaginstrali\" EAD.",
-      "description2": "We offer various vignette options that cover all your needs - from short trips to full annual coverage. Every vignette is valid for all paid highways and expressways in Bulgaria."
-    },
-    "benefits": {
-      "competitive": {
-        "title": "Competitive Prices",
-        "description": "Best prices on the market synchronized with official tariffs"
-      },
-      "noHiddenFees": {
-        "title": "No Hidden Fees",
-        "description": "All prices include taxes and commissions - no additional costs"
-      },
-      "vatIncluded": {
-        "title": "VAT Included",
-        "description": "All prices include VAT and are valid for light vehicles up to 3.5 tons"
-      },
-      "instantActivation": {
-        "title": "Instant Activation",
-        "description": "Vignette is activated immediately after payment without waiting"
-      }
-    },
-    "daily": {
-      "title": "Daily Vignette - 1 day | Price and Information",
-      "description": "Ideal for one-day trips",
-      "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",
-      "mainTitle": "Daily Vignette",
-      "subtitle": "Most economical choice for one-day trips!",
-      "duration": "1 day",
-      "description1": "The daily vignette is specially created for one-day trips and covers the needs for short visits without unnecessary expenses. Valid for a period of 24 hours from the moment of activation, which makes it ideal for quick business trips or spontaneous one-day excursions.",
-      "description2": "The daily vignette offers the lowest price for short trips. Ideal for spontaneous one-day decisions and provides freedom of movement on all toll highways in Bulgaria for one full day.",
-      "feature1": "Valid 24 hours",
-      "feature2": "Lowest price",
-      "feature3": "Ideal for one-day trips",
-      "feature4": "Instant activation",
-      "highlight": "Most Economical",
-      "pageTitle": "Daily Vignette - 1 day | Price and Information",
-      "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",
-      "price": "8.00 BGN",
-      "priceEur": "4.09 €",
-      "perfectFor": "Perfect for one-day trips and spontaneous decisions",
-      "validFrom": "Valid for 24 hours from activation",
-      "valid24Hours": "Valid 1 day (24 hours)",
-      "features": {
-        "valid24": "Valid 24 hours",
-        "valid24Desc": "The vignette is active for exactly 24 hours from the moment of purchase",
-        "lowestPrice": "Lowest price",
-        "lowestPriceDesc": "Most economical option for one-day trips",
-        "quickTrips": "Quick trips",
-        "quickTripsDesc": "Perfect for business trips or short visits",
-        "allHighways": "All highways",
-        "allHighwaysDesc": "Valid for all toll highways in Bulgaria",
-        "title": "Why choose the daily vignette?",
-        "subtitle": "Advantages and characteristics of the one-day vignette"
-      },
-      "useCases": {
-        "title": "When to use a daily vignette?",
-        "oneDayTrips": "One-day trips",
-        "businessVisits": "Short business visits",
-        "quickMeetings": "Quick business meetings",
-        "dayTours": "One-day tours",
-        "familyVisits": "Visiting relatives for one day",
-        "shoppingTrips": "One-day shopping in a nearby city"
-      },
-      "info": {
-        "title": "Important Information",
-        "activationTitle": "Activation",
-        "activation": "The vignette is activated instantly after payment",
-        "validityTitle": "Validity",
-        "validity": "Exactly 24 hours from the moment of activation",
-        "coverageTitle": "Coverage",
-        "coverage": "All toll highways in Bulgaria",
-        "vehiclesTitle": "Vehicles",
-        "vehicles": "Light vehicles up to 3.5 tons"
-      },
-      "cta": {
-        "title": "Planning a one-day trip?",
-        "subtitle": "Buy a daily vignette now and hit the road in seconds.",
-        "button": "Buy Daily Vignette",
-        "allPrices": "All Prices"
-      }
-    },
-    "weekend": {
-      "title": "Weekend Vignette - 60 hours and 2.5 days | Price and Information",
-      "description": "Ideal for spontaneous travels",
-      "pageDescription": "Weekend vignette for 60 hours and 2.5 days - perfect for short trips and spontaneous travels. Valid for 60 hours from Friday noon to Sunday midnight. Ideal for Friday to Sunday travels.",
-      "mainTitle": "Weekend Vignette",
-      "subtitle": "Perfect for short escapes from everyday life!",
-      "duration": "2 days",
-      "description1": "The weekend vignette is specially created for two-day trips and covers the needs for short holidays without unnecessary expenses. Valid for a period of 48 hours from the moment of activation, which makes it ideal for Friday to Sunday trips or any other two-day period.",
-      "description2": "The weekend vignette offers the best value for money for short trips. Ideal for spontaneous decisions for short travel and provides complete freedom of movement on all highways and the Republican road network.",
-      "feature1": "Valid for 48 hours",
-      "feature2": "Ideal for spontaneous travels",
-      "feature3": "Best value for short trips",
-      "feature4": "Friday to Sunday",
-      "highlight": "Short Getaways",
-      "pageTitle": "Weekend Vignette - 2 days | Price and Information",
-      "pageDescription": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
-      "price": "10.00 BGN",
-      "priceEur": "5.11 €",
-      "perfectFor": "Perfect for short trips and spontaneous travels",
-      "validFrom": "Valid for 48 hours from activation",
-      "valid48Hours": "Valid 2 days (48 hours)",
-      "features": {
-        "valid48": "Valid 48 hours",
-        "valid48Desc": "The vignette is active for exactly 48 hours from the moment of purchase",
-        "idealWeekends": "Ideal for weekends",
-        "idealWeekendsDesc": "Specially created for two-day trips and short holidays",
-        "spontaneous": "Spontaneous decisions",
-        "spontaneousDesc": "Perfect for unexpected decisions for short travel",
-        "allHighways": "All highways",
-        "allHighwaysDesc": "Valid for all highways and the Republican road network",
-        "title": "Why choose the weekend vignette?",
-        "subtitle": "Advantages and characteristics of the 2-day vignette"
-      },
-      "useCases": {
-        "title": "When to use a weekend vignette?",
-        "fridayToSunday": "Travel from Friday to Sunday",
-        "shortHolidays": "Short holidays outside the city",
-        "twoDayTrips": "Two-day excursions",
-        "visitFriends": "Visiting friends and family",
-        "businessTrips2Days": "Business trips up to 2 days",
-        "spontaneousTrips": "Spontaneous trips to the sea or mountains"
-      },
-      "info": {
-        "title": "Important Information",
-        "activationTitle": "Activation",
-        "activation": "The vignette is activated instantly after payment",
-        "validityTitle": "Validity",
-        "validity": "Exactly 48 hours from the moment of activation",
-        "coverageTitle": "Coverage",
-        "coverage": "All highways and the Republican road network",
-        "vehiclesTitle": "Vehicles",
-        "vehicles": "Light vehicles up to 3.5 tons"
-      },
-      "cta": {
-        "title": "Ready for a short trip?",
-        "subtitle": "Buy a weekend vignette now and hit the road in seconds.",
-        "button": "Buy Weekend Vignette",
-        "allPrices": "All Prices"
-      }
-    },
     "weekly": {
       "title": "Weekly Vignette",
       "subtitle": "The ideal solution for short vacations and business trips!",
@@ -611,6 +437,173 @@
         "title": "Ready for a whole year of worry-free travel?",
         "subtitle": "Buy an annual vignette now and save up to 40% for 365 days of complete freedom.",
         "button": "Buy Annual Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "breadcrumb": {
+      "home": "Home",
+      "prices": "Prices"
+    },
+    "weekend": {
+      "title": "Weekend Vignette - 60 hours and 2.5 days | Price and Information",
+      "description": "Ideal for spontaneous travels",
+      "pageDescription": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
+      "mainTitle": "Weekend Vignette",
+      "subtitle": "Perfect for short escapes from everyday life!",
+      "duration": "2 days",
+      "description1": "The weekend vignette is specially created for two-day trips and covers the needs for short holidays without unnecessary expenses. Valid for a period of 48 hours from the moment of activation, which makes it ideal for Friday to Sunday trips or any other two-day period.",
+      "description2": "The weekend vignette offers the best value for money for short trips. Ideal for spontaneous decisions for short travel and provides complete freedom of movement on all highways and the Republican road network.",
+      "feature1": "Valid for 48 hours",
+      "feature2": "Ideal for spontaneous travels",
+      "feature3": "Best value for short trips",
+      "feature4": "Friday to Sunday",
+      "highlight": "Short Getaways",
+      "pageTitle": "Weekend Vignette - 2 days | Price and Information",
+      "price": "10.00 BGN",
+      "priceEur": "5.11 €",
+      "perfectFor": "Perfect for short trips and spontaneous travels",
+      "validFrom": "Valid for 48 hours from activation",
+      "valid48Hours": "Valid 2 days (48 hours)",
+      "features": {
+        "valid48": "Valid 48 hours",
+        "valid48Desc": "The vignette is active for exactly 48 hours from the moment of purchase",
+        "idealWeekends": "Ideal for weekends",
+        "idealWeekendsDesc": "Specially created for two-day trips and short holidays",
+        "spontaneous": "Spontaneous decisions",
+        "spontaneousDesc": "Perfect for unexpected decisions for short travel",
+        "allHighways": "All highways",
+        "allHighwaysDesc": "Valid for all highways and the Republican road network",
+        "title": "Why choose the weekend vignette?",
+        "subtitle": "Advantages and characteristics of the 2-day vignette"
+      },
+      "useCases": {
+        "title": "When to use a weekend vignette?",
+        "fridayToSunday": "Travel from Friday to Sunday",
+        "shortHolidays": "Short holidays outside the city",
+        "twoDayTrips": "Two-day excursions",
+        "visitFriends": "Visiting friends and family",
+        "businessTrips2Days": "Business trips up to 2 days",
+        "spontaneousTrips": "Spontaneous trips to the sea or mountains"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The vignette is activated instantly after payment",
+        "validityTitle": "Validity",
+        "validity": "Exactly 48 hours from the moment of activation",
+        "coverageTitle": "Coverage",
+        "coverage": "All highways and the Republican road network",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Ready for a short trip?",
+        "subtitle": "Buy a weekend vignette now and hit the road in seconds.",
+        "button": "Buy Weekend Vignette",
+        "allPrices": "All Prices"
+      }
+    },
+    "weekendTitle": "Weekend Vignette Price",
+    "weeklyTitle": "Weekly Vignette Price",
+    "monthlyTitle": "Monthly Vignette Price",
+    "quarterlyTitle": "Quarterly Vignette Price",
+    "annualTitle": "Annual Vignette Price",
+    "features": {
+      "instantIssue": "Instant Issue",
+      "securePayment": "Secure Payment",
+      "customerSupport": "Customer Support",
+      "mobileOptimized": "Mobile Optimized",
+      "noHiddenFees": "No Hidden Fees",
+      "fastDelivery": "Fast Delivery"
+    },
+    "buyNow": "Buy Now",
+    "validFor": "Valid for",
+    "days": "days",
+    "hero": {
+      "title": "Electronic Vignette Prices",
+      "subtitle": "Choose the most suitable option for your needs",
+      "viewPrices": "View Prices",
+      "benefits": "Benefits"
+    },
+    "intro": {
+      "title": "Competitive prices for all types of vignettes",
+      "description1": "At avtovia.bg we offer competitive prices for all types of vignettes. Our price list is always current and synchronized with the official tariffs of NA \"Avtomaginstrali\" EAD.",
+      "description2": "We offer various vignette options that cover all your needs - from short trips to full annual coverage. Every vignette is valid for all paid highways and expressways in Bulgaria."
+    },
+    "benefits": {
+      "competitive": {
+        "title": "Competitive Prices",
+        "description": "Best prices on the market synchronized with official tariffs"
+      },
+      "noHiddenFees": {
+        "title": "No Hidden Fees",
+        "description": "All prices include taxes and commissions - no additional costs"
+      },
+      "vatIncluded": {
+        "title": "VAT Included",
+        "description": "All prices include VAT and are valid for light vehicles up to 3.5 tons"
+      },
+      "instantActivation": {
+        "title": "Instant Activation",
+        "description": "Vignette is activated immediately after payment without waiting"
+      }
+    },
+    "daily": {
+      "title": "Daily Vignette - 1 day | Price and Information",
+      "description": "Ideal for one-day trips",
+      "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",
+      "mainTitle": "Daily Vignette",
+      "subtitle": "Most economical choice for one-day trips!",
+      "duration": "1 day",
+      "description1": "The daily vignette is specially created for one-day trips and covers the needs for short visits without unnecessary expenses. Valid for a period of 24 hours from the moment of activation, which makes it ideal for quick business trips or spontaneous one-day excursions.",
+      "description2": "The daily vignette offers the lowest price for short trips. Ideal for spontaneous one-day decisions and provides freedom of movement on all toll highways in Bulgaria for one full day.",
+      "feature1": "Valid 24 hours",
+      "feature2": "Lowest price",
+      "feature3": "Ideal for one-day trips",
+      "feature4": "Instant activation",
+      "highlight": "Most Economical",
+      "pageTitle": "Daily Vignette - 1 day | Price and Information",
+      "price": "8.00 BGN",
+      "priceEur": "4.09 €",
+      "perfectFor": "Perfect for one-day trips and spontaneous decisions",
+      "validFrom": "Valid for 24 hours from activation",
+      "valid24Hours": "Valid 1 day (24 hours)",
+      "features": {
+        "valid24": "Valid 24 hours",
+        "valid24Desc": "The vignette is active for exactly 24 hours from the moment of purchase",
+        "lowestPrice": "Lowest price",
+        "lowestPriceDesc": "Most economical option for one-day trips",
+        "quickTrips": "Quick trips",
+        "quickTripsDesc": "Perfect for business trips or short visits",
+        "allHighways": "All highways",
+        "allHighwaysDesc": "Valid for all toll highways in Bulgaria",
+        "title": "Why choose the daily vignette?",
+        "subtitle": "Advantages and characteristics of the one-day vignette"
+      },
+      "useCases": {
+        "title": "When to use a daily vignette?",
+        "oneDayTrips": "One-day trips",
+        "businessVisits": "Short business visits",
+        "quickMeetings": "Quick business meetings",
+        "dayTours": "One-day tours",
+        "familyVisits": "Visiting relatives for one day",
+        "shoppingTrips": "One-day shopping in a nearby city"
+      },
+      "info": {
+        "title": "Important Information",
+        "activationTitle": "Activation",
+        "activation": "The vignette is activated instantly after payment",
+        "validityTitle": "Validity",
+        "validity": "Exactly 24 hours from the moment of activation",
+        "coverageTitle": "Coverage",
+        "coverage": "All toll highways in Bulgaria",
+        "vehiclesTitle": "Vehicles",
+        "vehicles": "Light vehicles up to 3.5 tons"
+      },
+      "cta": {
+        "title": "Planning a one-day trip?",
+        "subtitle": "Buy a daily vignette now and hit the road in seconds.",
+        "button": "Buy Daily Vignette",
         "allPrices": "All Prices"
       }
     },
@@ -1165,5 +1158,54 @@
         }
       }
     }
+  },
+  "registerCTA": {
+    "title": "Register for free and manage your vignettes in one place",
+    "subtitle": "Track expiration dates, receive timely reminders and travel worry-free.",
+    "button": "More Information",
+    "feature1Title": "Validity Check",
+    "feature1Desc": "How long each vignette is active",
+    "feature2Title": "Reminders",
+    "feature2Desc": "Timely alerts for expiring vignettes",
+    "feature3Title": "Quick Order",
+    "feature3Desc": "Renewal with a few clicks"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions about Vignettes",
+    "subtitle": "Answers to the most common questions about electronic vignettes in Bulgaria",
+    "items": [
+      {
+        "question": "What is an electronic vignette?",
+        "answer": "An electronic vignette is an electronic document that certifies the paid fee for using the republican road network in Bulgaria. It replaces the physical vignette and is linked directly to the vehicle's registration number. It does not need to be placed on the vehicle's windshield."
+      },
+      {
+        "question": "How to purchase an electronic vignette?",
+        "answer": "An electronic vignette can be purchased online through the official website of the Road Infrastructure Agency or through authorized partners such as Avtovia.bg. All you need is the vehicle's registration number, country of registration and choice of validity period. Payment is made by bank card or other electronic methods."
+      },
+      {
+        "question": "When is the electronic vignette activated?",
+        "answer": "The electronic vignette is activated immediately after successful payment. For weekend and weekly vignettes, activation is instant. For monthly, quarterly and annual vignettes, you can choose a start date within 30 days in advance."
+      },
+      {
+        "question": "How can I check the validity of my vignette?",
+        "answer": "You can check the validity of your vignette for free through our verification service. Enter the vehicle's registration number and the system will show whether you have a valid vignette, its type and validity period. The check is synchronized in real time with the RIA database."
+      },
+      {
+        "question": "What types of vignettes are there?",
+        "answer": "In Bulgaria, 5 types of electronic vignettes are available for light vehicles:\n• Weekend (2 days) - BGN 10\n• Weekly (7 days) - BGN 15\n• Monthly (30 days) - BGN 30\n• Quarterly (90 days) - BGN 60\n• Annual (365 days) - BGN 97\n\nEach vignette covers all paid highways in Bulgaria."
+      },
+      {
+        "question": "What happens if I travel without a vignette?",
+        "answer": "If you travel on paid roads without a valid vignette, you risk receiving a compensatory charge. The amount varies depending on the type of vehicle and is significantly higher than the price of the vignette itself. We recommend always checking the validity of your vignette before traveling."
+      },
+      {
+        "question": "Can I get a vignette for a foreign-registered vehicle?",
+        "answer": "Yes, an electronic vignette can be purchased for all vehicles, regardless of the country of registration. When purchasing, you need to specify the country of registration and the vehicle's registration number. The vignette is valid for all paid roads in Bulgaria."
+      },
+      {
+        "question": "Do I need to carry a document for the purchased vignette?",
+        "answer": "You don't need to carry a document for the electronic vignette as it is electronic and linked to the vehicle's registration number. The system automatically recognizes the presence of a valid vignette through cameras. However, we recommend saving the email or purchase confirmation just in case."
+      }
+    ]
   }
 }

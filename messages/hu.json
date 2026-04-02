@@ -1,0 +1,1211 @@
+{
+  "meta": {
+    "title": "Online matrica - Elektronikus matrica információk",
+    "description": "Online matrica - Elektronikus matrica információk",
+    "titleTemplate": "%s | vinetka bg"
+  },
+  "navigation": {
+    "home": "Főoldal",
+    "services": "Szolgáltatások",
+    "prices": "Árak",
+    "blog": "Blog",
+    "contact": "Kapcsolat",
+    "vignetteChecker": "Matrica ellenőrzés",
+    "tollTax": "Útdíj",
+    "buyVignette": "Matrica vásárlás",
+    "dailyTitle": "Napi matrica",
+    "weekendTitle": "Hétvégi matrica",
+    "weeklyTitle": "Heti matrica",
+    "monthlyTitle": "Havi matrica",
+    "quarterlyTitle": "Negyedéves matrica",
+    "annualTitle": "Éves matrica",
+    "forYear": "évre",
+    "viewAllPrices": "Összes ár megtekintése"
+  },
+  "footer": {
+    "sections": {
+      "services": "Szolgáltatások",
+      "vignettes": "Matricák",
+      "support": "Támogatás",
+      "company": "Cég",
+      "legal": "Jogi"
+    },
+    "services": {
+      "vignetteCheck": "Matrica ellenőrzés",
+      "prices": "Árak",
+      "tollTax": "Útdíj"
+    },
+    "vignettes": {
+      "daily": "Napi matrica",
+      "weekend": "Hétvégi matrica",
+      "weekly": "Heti matrica",
+      "monthly": "Havi matrica",
+      "quarterly": "Negyedéves matrica",
+      "annual": "Éves matrica"
+    },
+    "support": {
+      "blog": "Blog",
+      "contact": "Kapcsolat",
+      "faq": "Gyakran ismételt kérdések"
+    },
+    "company": {
+      "aboutUs": "Rólunk"
+    },
+    "legal": {
+      "terms": "Felhasználási feltételek",
+      "privacy": "Adatvédelmi nyilatkozat",
+      "cookies": "Cookie-szabályzat"
+    },
+    "newsletter": {
+      "title": "Iratkozzon fel hírlevelünkre",
+      "description": "Hasznos tippeket, elemzéseket és aktuális híreket kap közvetlenül a postaládájába.",
+      "emailLabel": "E-mail cím",
+      "emailPlaceholder": "Adja meg e-mail címét",
+      "subscribe": "Feliratkozás"
+    },
+    "copyright": "Avtovia.bg, Inc. Minden jog fenntartva."
+  },
+  "home": {
+    "hero": {
+      "title": "Online matricák",
+      "subtitle": "Elektronikus matricák 3,5 t-ig terjedő személygépkocsikhoz",
+      "heroTitle": "Online matrica információk",
+      "heroSubtitle": "Ismerje meg egyszerűen és gyorsan az online matricákkal kapcsolatos tudnivalókat weboldalunkon."
+    },
+    "loading": "Szolgáltatások betöltése...",
+    "vignetteSection": {
+      "title": "Online matricák",
+      "subtitle": "Elektronikus matricák 3,5 t-ig terjedő személygépkocsikhoz"
+    },
+    "expandableInfoRow": {
+      "title": "Matrica Bulgáriához - Minden, amit tudnia kell",
+      "less": "Kevesebb",
+      "more": "Több megjelenítése",
+      "whatType": "Milyen típusú matricát válasszak?",
+      "howToBuy": "Hogyan vásároljak matricát?",
+      "check": "Matrica ellenőrzés",
+      "description": "Ha Bulgáriában városokon kívül autóval szeretne utazni, matricát kell vásárolnia, amely útdíj a 3,5 tonna alatti személygépkocsik és pótkocsik számára az országos közúthálózat használatáért.\n\nA motorkerékpárok, mezőgazdasági járművek és terepjárók mentesek.\n\nA 3,5 tonna feletti járműveknek nincs szükségük matricára, de útdíjat kell fizetniük, amelynek összegét a megtett távolság alapján számítják ki.\n\nÉrvényes matrica nélkül bírság kockáztatható, ezért fontos előzetesen tájékozódni.",
+      "whatTypeDescription": "Hatféle matrica létezik: napi, hétvégi, heti, havi, negyedéves és éves. Az elektronikus rendszer megkönnyíti a vásárlást, mivel a matricák személyesen és online is megvásárolhatók.",
+      "howToBuyDescription": "Elektronikus matricát itt vagy a Nemzeti Útdíj-adminisztráció hivatalos weboldalán, illetve valamely hivatalos partnerén keresztül vásárolhat, beleértve a benzinkutakat, bankfiókokat, postahivatalokat és mobilalkalmazásokat.\n\nMindössze a jármű rendszámára és a regisztráció országára van szükség.\n\nVásárlás előtt győződjön meg arról, hogy a megadott járműadatok helyesek, mivel az aktiválás után a rendszer nem tesz lehetővé módosítást.",
+      "checkDescription": "A matrica érvényességét automatikusan ellenőrzik az útikamerák és a BgToll mobil csapatok.\n\nForrás: Közúti Infrastruktúra Ügynökség a Közlekedési Minisztériumnál"
+    }
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "pageTitle": "Kapcsolat",
+    "pageDescription": "Vegye fel velünk a kapcsolatot kapcsolatfelvételi űrlapunkon keresztül, vagy keresse meg elérhetőségeinket.",
+    "officeType": "Vállalati iroda",
+    "address": "Cím",
+    "email": "E-mail",
+    "phone": "Telefon",
+    "form": {
+      "firstName": "Keresztnév",
+      "lastName": "Vezetéknév",
+      "company": "Cég",
+      "email": "E-mail",
+      "phone": "Telefon",
+      "subject": "Tárgy",
+      "message": "Üzenet",
+      "submit": "Megkeresés küldése",
+      "agree": "Elfogadom a",
+      "privacyPolicy": "adatvédelmi nyilatkozatot",
+      "success": {
+        "title": "Sikeresen elküldve!",
+        "message": "Hamarosan választ kap : )"
+      },
+      "error": {
+        "title": "Küldési hiba!",
+        "message": "Kérjük, próbálja meg később.",
+        "networkTitle": "Küldés sikertelen!",
+        "networkMessage": "Ellenőrizze internetkapcsolatát és próbálja újra."
+      },
+      "validation": {
+        "agreementRequired": "Hozzájárulás szükséges",
+        "agreementMessage": "Kérjük, fogadja el az adatvédelmi nyilatkozatot az űrlap beküldése előtt."
+      }
+    }
+  },
+  "prices": {
+    "title": "Elektronikus matrica árak - Válassza a legmegfelelőbbet",
+    "description": "Fedezze fel a legjobb árakat Bulgária összes elektronikus matricatípusához! Versenyképes árak hétvégi, heti, havi, negyedéves és éves matricákhoz. Rejtett díjak nélkül.",
+    "pageTitle": "Matrica árak",
+    "pageSubtitle": "Válassza az igényeinek leginkább megfelelő matricatípust",
+    "weekly": {
+      "title": "Heti matrica",
+      "subtitle": "Az ideális megoldás rövid nyaralásokhoz és üzleti utakhoz!",
+      "duration": "7 nap",
+      "description": "Ideális rövid kirándulásokhoz",
+      "description1": "A heti matrica 7 egymást követő napig érvényes és fedezi a bulgáriai rövid távú utazás minden igényét. A heti matrica a vásárlás pillanatában aktiválódik és pontosan 168 óráig (7 nap) érvényes az aktiválás pillanatától.",
+      "description2": "Tökéletes azoknak a turistáknak, akik hosszú hétvégére jönnek, vagy legfeljebb egy hétig tartó üzleti utakhoz. A heti matricát mindenkinek ajánljuk, aki autóval tervez menni a tengerhez, a hegyekbe vagy különböző városokat felkeresni az országban egy héten belül.",
+      "feature1": "Pontosan 168 óráig érvényes",
+      "feature2": "Tökéletes turistáknak",
+      "feature3": "Alkalmas üzleti utakhoz",
+      "feature4": "Hosszú hétvégét lefed",
+      "highlight": "Népszerű választás",
+      "pageTitle": "Heti matrica - 7 nap | Ár és információk",
+      "pageDescription": "Heti matrica 7 napra - az ideális megoldás rövid nyaralásokhoz és üzleti utakhoz. Az aktiválástól 168 óráig (7 nap) érvényes. Tökéletes turistáknak és üzleti utazáshoz.",
+      "mainTitle": "Heti matrica",
+      "price": "15,00 BGN",
+      "priceEur": "7,67 €",
+      "perfectFor": "Az ideális megoldás rövid nyaralásokhoz és üzleti utakhoz",
+      "validFrom": "Az aktiválástól 168 óráig (7 nap) érvényes",
+      "features": {
+        "valid168": "168 óráig érvényes",
+        "valid168Desc": "Pontosan 7 egymást követő nap az aktiválás pillanatától",
+        "perfectForTourists": "Tökéletes turistáknak",
+        "perfectForTouristsDesc": "Ideális hosszú hétvégére érkező látogatóknak",
+        "businessTravel": "Üzleti utazás",
+        "businessTravelDesc": "Alkalmas legfeljebb egy hétig tartó üzleti utakhoz",
+        "allDestinations": "Minden úticél",
+        "allDestinationsDesc": "Lefedi a tengerparti, hegyvidéki vagy különböző városokba tett utazásokat",
+        "title": "Miért válassza a heti matricát?",
+        "subtitle": "A 7 napos matrica előnyei és jellemzői"
+      },
+      "useCases": {
+        "title": "Mikor használjon heti matricát?",
+        "longWeekendTourists": "Hosszú hétvégére érkező turisták",
+        "businessTrips7Days": "Legfeljebb 7 napos üzleti utak",
+        "seaTravelWeek": "Egy hetes tengerparti utazás",
+        "mountainVacations": "Hegyvidéki nyaralások",
+        "cityVisits": "Különböző városok látogatása az országban",
+        "familyHolidays": "Legfeljebb egy hetes családi nyaralás",
+        "culturalTours": "Kulturális körút Bulgáriában",
+        "festivalsEvents": "Fesztiválok és rendezvények"
+      },
+      "benefits": {
+        "title": "Fő előnyök",
+        "instantActivation": "A vásárlás pillanatában aktiválódik",
+        "coversAllNeeds": "Lefedi a rövid távú utazás minden igényét",
+        "popularChoice": "Turisták körében legnépszerűbb választás",
+        "excellentValue": "Kiváló ár-érték arány",
+        "noWorries7Days": "7 teljes napig gondtalan"
+      },
+      "info": {
+        "title": "Fontos információk",
+        "activationTitle": "Aktiválás",
+        "activation": "A matrica a vásárlás pillanatában aktiválódik",
+        "validityTitle": "Érvényesség",
+        "validity": "Pontosan 7 egymást követő nap (168 óra)",
+        "coverageTitle": "Lefedettség",
+        "coverage": "Összes fizetős autópálya és gyorsforgalmi út",
+        "vehiclesTitle": "Járművek",
+        "vehicles": "3,5 tonna alatti személygépkocsik"
+      },
+      "cta": {
+        "title": "Heti utat tervez?",
+        "subtitle": "Vásároljon heti matricát most és élvezze a gondtalan utazást 7 napig.",
+        "button": "Heti matrica vásárlása",
+        "allPrices": "Összes ár"
+      }
+    },
+    "monthly": {
+      "title": "Havi matrica",
+      "subtitle": "A rendszeres utazók legnépszerűbb választása!",
+      "duration": "30 nap",
+      "description": "Megfelelő hosszabb utakhoz",
+      "description1": "A rendszeres munkába járók, üzleti utazással rendelkezők vagy az egyszerűen az országban utazni szeretők legnépszerűbb választása. Kiváló egyensúlyt kínál az ár és a rugalmasság között.",
+      "description2": "A havi matrica teljes szabadságot biztosít Bulgária összes fizetős útján 30 napig. A fizetés után azonnal aktiválódik és pontosan 30 napig érvényes az aktiválás pillanatától.",
+      "feature1": "Pontosan 30 napig érvényes",
+      "feature2": "Kiváló ár-rugalmasság egyensúly",
+      "feature3": "Rendszeres utazásokhoz",
+      "feature4": "Teljes közlekedési szabadság",
+      "highlight": "Legnépszerűbb",
+      "pageTitle": "Havi matrica - 30 nap | Ár és információk",
+      "pageDescription": "Havi matrica 30 napra - a sofőrök körében legnépszerűbb választás. Kiváló ár-érték arány rendszeres utazásokhoz. Az aktiválástól 720 óráig (30 nap) érvényes.",
+      "mainTitle": "Havi matrica",
+      "price": "30,00 BGN",
+      "priceEur": "15,34 €",
+      "perfectFor": "A sofőrök körében legnépszerűbb választás",
+      "validFrom": "Az aktiválástól 720 óráig (30 nap) érvényes",
+      "features": {
+        "valid30": "30 napig érvényes",
+        "valid30Desc": "Pontosan 30 nap az aktiválás pillanatától",
+        "excellentBalance": "Kiváló egyensúly",
+        "excellentBalanceDesc": "Tökéletes arány az ár és a rugalmasság között",
+        "forWorking": "Dolgozóknak",
+        "forWorkingDesc": "Ideális rendszeres üzleti utazással rendelkezőknek",
+        "fullFreedom": "Teljes szabadság",
+        "fullFreedomDesc": "Teljes közlekedési szabadság az összes fizetős úton",
+        "mostPopular": "Legnépszerűbb",
+        "title": "Miért válassza a havi matricát?",
+        "subtitle": "A 30 napos matrica előnyei és jellemzői"
+      },
+      "useCases": {
+        "title": "Mikor használjon havi matricát?",
+        "regularWork": "Rendszeres munkába járás",
+        "businessTrips": "Üzleti utazással rendelkezők",
+        "countryTravelers": "Az országban utazók",
+        "familyTrips": "Havi családi kirándulások",
+        "students": "Sűrűn utazó diákok",
+        "businessMeetings": "Üzleti megbeszélések és ügyfelek",
+        "tourists": "Hosszú nyaralásra érkező turisták",
+        "secondHome": "Második otthonnal rendelkezők"
+      },
+      "benefits": {
+        "title": "Fő előnyök",
+        "mostPopularChoice": "Az ügyfelek körében legnépszerűbb választás",
+        "excellentValue": "Kiváló ár-érték arány",
+        "idealForRegular": "Ideális rendszeres utazáshoz",
+        "fullCoverage": "Teljes lefedettség egy egész hónapra",
+        "instantActivation": "Azonnali aktiválás fizetéskor",
+        "noAdditionalPurchases": "Nincs szükség további vásárlásokra"
+      },
+      "info": {
+        "title": "Fontos információk",
+        "activationTitle": "Aktiválás",
+        "activation": "A matrica azonnal aktiválódik a fizetés után",
+        "validityTitle": "Érvényesség",
+        "validity": "Pontosan 30 nap az aktiválás pillanatától",
+        "coverageTitle": "Lefedettség",
+        "coverage": "Bulgária összes fizetős útja",
+        "vehiclesTitle": "Járművek",
+        "vehicles": "3,5 tonna alatti személygépkocsik"
+      },
+      "cta": {
+        "title": "Havi lefedettségre van szüksége?",
+        "subtitle": "Vásároljon havi matricát most és élvezze a teljes szabadságot 30 napig.",
+        "button": "Havi matrica vásárlása",
+        "allPrices": "Összes ár"
+      }
+    },
+    "quarterly": {
+      "title": "Negyedéves matrica",
+      "subtitle": "Biztosítson magának nyugalmat egy egész szezonra!",
+      "duration": "3 hónap",
+      "description": "Gazdaságos választás szezonális utazóknak",
+      "description1": "A negyedéves matrica tökéletes azoknak, akik 90 napig el akarják felejteni a matricákat. Ideális a nyári szezonra, amikor az utazások a legintenzívebbek, vagy a téli hónapokra a síturizmus kedvelőinek.",
+      "description2": "A negyedéves matrica lefedi minden igényét további vásárlások nélkül. Jelentős megtakarítás a külön-külön vásárolt havi matricákhoz képest - negyedéves időszak választásával akár 15%-ot takarít meg. Online rendeléssel azonnal aktiválódik és pontosan 90 napig érvényes.",
+      "feature1": "Pontosan 90 napig érvényes",
+      "feature2": "Akár 15% megtakarítás",
+      "feature3": "Ideális szezonokra",
+      "feature4": "Nincs további vásárlás",
+      "highlight": "15% megtakarítás",
+      "pageTitle": "Negyedéves matrica - 90 nap | Ár és információk",
+      "pageDescription": "Negyedéves matrica 90 napra - kiváló ár-érték arány a sűrűn utazóknak. Ideális szezonmunkásoknak és rendszeres üzleti utakhoz. 2160 óráig (90 nap) érvényes.",
+      "mainTitle": "Negyedéves matrica",
+      "duration90": "90 nap",
+      "price": "60,00 BGN",
+      "priceEur": "30,68 €",
+      "perfectFor": "Kiváló ár-érték arány a sűrűn utazóknak",
+      "validFrom": "Az aktiválástól 2160 óráig (90 nap) érvényes",
+      "features": {
+        "valid90": "90 napig érvényes",
+        "valid90Desc": "Pontosan 3 hónap az aktiválás pillanatától",
+        "save15": "15% megtakarítás",
+        "save15Desc": "Jelentős megtakarítás a külön-külön vásárolt havi matricákhoz képest",
+        "idealSeasons": "Ideális szezonokra",
+        "idealSeasonsDesc": "Tökéletes a nyári szezonra vagy a téli hónapokra",
+        "noPurchases": "Nincs további vásárlás",
+        "noPurchasesDesc": "Felejtse el a matricákat 90 napra",
+        "title": "Miért válassza a negyedéves matricát?",
+        "subtitle": "A 90 napos matrica előnyei és jellemzői"
+      },
+      "seasonInfo": {
+        "title": "Szezonális lefedettség",
+        "subtitle": "Ideális az év különböző évszakaira",
+        "summer": {
+          "title": "Nyári szezon",
+          "description": "Tökéletes a nyári hónapokra, amikor az utazások a legintenzívebbek",
+          "months": "Június - Augusztus"
+        },
+        "winter": {
+          "title": "Téli szezon",
+          "description": "Ideális a téli hónapokra a síturizmus kedvelőinek",
+          "months": "December - Február"
+        }
+      },
+      "useCases": {
+        "title": "Mikor használjon negyedéves matricát?",
+        "summerSeason": "Nyári turisztikai szezon",
+        "winterSki": "Téli hónapok síturizmushoz",
+        "seasonalWork": "Szezonmunka egy másik városban",
+        "longProjects": "Hosszú távú projektek és üzleti utak",
+        "familyHolidays": "Szezonális családi nyaralások",
+        "regular3Months": "Rendszeres utazás 3 hónapig",
+        "studentsSemester": "Diákok szemeszter alatt",
+        "resortResidents": "Szezonális üdülőlakók"
+      },
+      "benefits": {
+        "title": "Fő előnyök",
+        "seasonPeace": "Biztosítson nyugalmat egy egész szezonra",
+        "save15Percent": "Akár 15%-ot takarít meg az összes költségből",
+        "intensiveTravel": "Ideális intenzív utazáshoz",
+        "coversAllNeeds": "Lefedi minden igényét további vásárlások nélkül",
+        "instantActivation": "Azonnali aktiválás online rendeléssel",
+        "valid90Days": "Pontosan 90 napig érvényes az aktiválástól"
+      },
+      "info": {
+        "title": "Fontos információk",
+        "activationTitle": "Aktiválás",
+        "activation": "Azonnali aktiválás online rendeléssel",
+        "validityTitle": "Érvényesség",
+        "validity": "Pontosan 90 nap (3 hónap) az aktiválástól",
+        "savingsTitle": "Megtakarítás",
+        "savings": "Akár 15% megtakarítás a havi matricákhoz képest",
+        "vehiclesTitle": "Járművek",
+        "vehicles": "3,5 tonna alatti személygépkocsik"
+      },
+      "cta": {
+        "title": "Szezonális utazást tervez?",
+        "subtitle": "Vásároljon negyedéves matricát most és takarítson meg akár 15%-ot 90 napos gondtalan utazáshoz.",
+        "button": "Negyedéves matrica vásárlása",
+        "allPrices": "Összes ár"
+      }
+    },
+    "annual": {
+      "title": "Éves matrica",
+      "subtitle": "A legkedvezőbb megoldás mindenkinek, aki rendszeresen utazik!",
+      "duration": "12 hónap",
+      "description": "Rendszeres sofőröknek a legkedvezőbb",
+      "description1": "Az éves matrica kötelező minden rendszeresen fizetős utakat használó gépkocsi-tulajdonos számára Bulgáriában. A legjobb ár-érték arányt kínálja és megszünteti a sűrű vásárlás szükségességét.",
+      "description2": "Éves matricával akár 40%-ot takarít meg az egész évben vásárolt havi matricákhoz képest. Különösen kedvező mindazoknak, akik nem akarnak aggódni a matrica állapota miatt. Az éves matrica azonnal aktiválódik és pontosan 365 napig érvényes az aktiválás napjától.",
+      "feature1": "Pontosan 365 napig érvényes",
+      "feature2": "Akár 40% megtakarítás",
+      "feature3": "Maximális kényelem",
+      "feature4": "Nincs aggodalom az állapot miatt",
+      "highlight": "40% megtakarítás",
+      "pageTitle": "Éves matrica - 365 nap | Ár és információk",
+      "pageDescription": "Éves matrica 365 napra - a legkedvezőbb megoldás mindenkinek, aki rendszeresen utazik. Akár 40%-ot takarít meg a havi matricákhoz képest. Maximális kényelem aggodalom nélkül.",
+      "mainTitle": "Éves matrica",
+      "duration365": "365 nap",
+      "price": "97,00 BGN",
+      "priceEur": "49,60 €",
+      "perfectFor": "A leggazdaságosabb megoldás rendszeres utazóknak",
+      "validFrom": "A következő év január 31-ig érvényes",
+      "features": {
+        "valid365": "365 napig érvényes",
+        "valid365Desc": "Pontosan egy teljes év az aktiválás pillanatától",
+        "save40": "40% megtakarítás",
+        "bestValue": "Legjobb ár-érték arány",
+        "save40Desc": "Maximális megtakarítás a havi matricák vásárlásához képest",
+        "maxConvenience": "Maximális kényelem",
+        "maxConvenienceDesc": "A legkényelmesebb megoldás teljes 365 napra",
+        "noWorries": "Aggodalom nélkül",
+        "noWorriesDesc": "Felejtse el a matrica állapotát egy egész évre",
+        "title": "Miért válassza az éves matricát?",
+        "subtitle": "A 365 napos matrica előnyei és jellemzői"
+      },
+      "useCases": {
+        "title": "Kinek megfelelő az éves matrica?",
+        "regularUsers": "Rendszeresen használó gépkocsi-tulajdonosok",
+        "dailyCommuters": "Naponta munkába járók",
+        "businessOwners": "Sűrűn utazó vállalkozók",
+        "activeFamilies": "Aktív életstílusú családok",
+        "salesReps": "Kereskedelmi képviselők",
+        "multiCityResidents": "Különböző városokban otthonnal rendelkezők",
+        "professionalDrivers": "Hivatásos sofőrök",
+        "noWorryUsers": "Bárki, aki nem akar aggodalmakat"
+      },
+      "benefits": {
+        "title": "Fő előnyök",
+        "bestSolution": "A legkedvezőbb megoldás az egész évre",
+        "save40Percent": "Akár 40%-ot takarít meg a havi matricákhoz képest",
+        "eliminateFrequentPurchases": "Megszünteti a sűrű vásárlás szükségességét",
+        "instantActivation": "Azonnali aktiválás rendeléskor",
+        "valid365Days": "Pontosan 365 napig érvényes az aktiválástól",
+        "necessaryForRegular": "Elengedhetetlen rendszeres felhasználóknak",
+        "bestValueForMoney": "Legjobb ár-érték arány",
+        "fullPeaceOfMind": "Teljes nyugalom az egész évre"
+      },
+      "comparison": {
+        "title": "Költségösszehasonlítás",
+        "subtitle": "Nézze meg, mennyit takaríthat meg éves matricával",
+        "recommended": "Ajánlott",
+        "cost": "Költség",
+        "savings": "Megtakarítás",
+        "convenience": "Kényelem",
+        "monthly": "Havi matricák",
+        "monthlyCost": "12x havi ár",
+        "monthlyConvenience": "Sűrű csere",
+        "annual": "Éves matrica",
+        "annualCost": "Fix ár",
+        "annualSavings": "Akár 40%",
+        "annualConvenience": "Évente egyszer"
+      },
+      "info": {
+        "title": "Fontos információk",
+        "activationTitle": "Aktiválás",
+        "activation": "Az éves matrica azonnal aktiválódik",
+        "validityTitle": "Érvényesség",
+        "validity": "Pontosan 365 nap az aktiválás napjától",
+        "savingsTitle": "Megtakarítás",
+        "savings": "Akár 40% megtakarítás a havi matricákhoz képest",
+        "vehiclesTitle": "Járművek",
+        "vehicles": "3,5 tonna alatti személygépkocsik"
+      },
+      "cta": {
+        "title": "Kész egy egész éves gondtalan utazásra?",
+        "subtitle": "Vásároljon éves matricát most és takarítson meg akár 40%-ot 365 napos teljes szabadsághoz.",
+        "button": "Éves matrica vásárlása",
+        "allPrices": "Összes ár"
+      }
+    },
+    "breadcrumb": {
+      "home": "Főoldal",
+      "prices": "Árak"
+    },
+    "weekend": {
+      "title": "Hétvégi matrica - 60 óra és 2,5 nap | Ár és információk",
+      "description": "Ideális spontán utazásokhoz",
+      "pageDescription": "Hétvégi matrica 2 napra - tökéletes rövid utakhoz és spontán utazásokhoz. Az aktiválástól 48 óráig érvényes. Ideális péntektől vasárnapig tartó utazásokhoz.",
+      "mainTitle": "Hétvégi matrica",
+      "subtitle": "Tökéletes rövid kikapcsolódáshoz a mindennapi életből!",
+      "duration": "2 nap",
+      "description1": "A hétvégi matrica kifejezetten kétnapos utakhoz készült, és felesleges kiadások nélkül fedezi a rövid nyaralások igényeit. Az aktiválás pillanatától 48 óráig érvényes, így ideális péntektől vasárnapig tartó utakhoz vagy bármely más kétnapos időszakra.",
+      "description2": "A hétvégi matrica kínálja a legjobb ár-érték arányt a rövid utakhoz. Ideális spontán rövid utazási döntésekhez, és teljes szabadságot biztosít az összes autópályán és köztársasági úthálózaton.",
+      "feature1": "48 óráig érvényes",
+      "feature2": "Ideális spontán utazásokhoz",
+      "feature3": "Legjobb ár-érték arány rövid utakhoz",
+      "feature4": "Péntektől vasárnapig",
+      "highlight": "Rövid kikapcsolódás",
+      "pageTitle": "Hétvégi matrica - 2 nap | Ár és információk",
+      "price": "10,00 BGN",
+      "priceEur": "5,11 €",
+      "perfectFor": "Tökéletes rövid utakhoz és spontán utazásokhoz",
+      "validFrom": "Az aktiválástól 48 óráig érvényes",
+      "valid48Hours": "2 napig érvényes (48 óra)",
+      "features": {
+        "valid48": "48 óráig érvényes",
+        "valid48Desc": "A matrica pontosan 48 óráig aktív a vásárlás pillanatától",
+        "idealWeekends": "Ideális hétvégékre",
+        "idealWeekendsDesc": "Kifejezetten kétnapos utakhoz és rövid nyaralásokhoz készült",
+        "spontaneous": "Spontán döntések",
+        "spontaneousDesc": "Tökéletes váratlan rövid utazási döntésekhez",
+        "allHighways": "Összes autópálya",
+        "allHighwaysDesc": "Minden autópályán és a köztársasági úthálózaton érvényes",
+        "title": "Miért válassza a hétvégi matricát?",
+        "subtitle": "A 2 napos matrica előnyei és jellemzői"
+      },
+      "useCases": {
+        "title": "Mikor használjon hétvégi matricát?",
+        "fridayToSunday": "Péntektől vasárnapig tartó utazás",
+        "shortHolidays": "Rövid városon kívüli nyaralás",
+        "twoDayTrips": "Kétnapos kirándulások",
+        "visitFriends": "Barátok és rokonok látogatása",
+        "businessTrips2Days": "Legfeljebb 2 napos üzleti utak",
+        "spontaneousTrips": "Spontán tengerparti vagy hegyvidéki utak"
+      },
+      "info": {
+        "title": "Fontos információk",
+        "activationTitle": "Aktiválás",
+        "activation": "A matrica azonnal aktiválódik a fizetés után",
+        "validityTitle": "Érvényesség",
+        "validity": "Pontosan 48 óra az aktiválás pillanatától",
+        "coverageTitle": "Lefedettség",
+        "coverage": "Összes autópálya és köztársasági úthálózat",
+        "vehiclesTitle": "Járművek",
+        "vehicles": "3,5 tonna alatti személygépkocsik"
+      },
+      "cta": {
+        "title": "Készen áll egy rövid utazásra?",
+        "subtitle": "Vásároljon hétvégi matricát most és induljon el másodperceken belül.",
+        "button": "Hétvégi matrica vásárlása",
+        "allPrices": "Összes ár"
+      }
+    },
+    "weekendTitle": "Hétvégi matrica ára",
+    "weeklyTitle": "Heti matrica ára",
+    "monthlyTitle": "Havi matrica ára",
+    "quarterlyTitle": "Negyedéves matrica ára",
+    "annualTitle": "Éves matrica ára",
+    "features": {
+      "instantIssue": "Azonnali kiállítás",
+      "securePayment": "Biztonságos fizetés",
+      "customerSupport": "Ügyfélszolgálat",
+      "mobileOptimized": "Mobil optimalizált",
+      "noHiddenFees": "Rejtett díjak nélkül",
+      "fastDelivery": "Gyors kézbesítés"
+    },
+    "buyNow": "Vásároljon most",
+    "validFor": "Érvényes",
+    "days": "nap",
+    "hero": {
+      "title": "Elektronikus matrica árak",
+      "subtitle": "Válassza az igényeinek leginkább megfelelő lehetőséget",
+      "viewPrices": "Árak megtekintése",
+      "benefits": "Előnyök"
+    },
+    "intro": {
+      "title": "Versenyképes árak az összes matricatípushoz",
+      "description1": "Az avtovia.bg-n versenyképes árakat kínálunk minden típusú matricához. Árlistánk mindig aktuális és szinkronizált az NA \"Avtomaginstrali\" EAD hivatalos tarifáival.",
+      "description2": "Különféle matricalehetőségeket kínálunk, amelyek lefedik minden igényét - a rövid utaktól az éves teljes lefedettségig. Minden matrica érvényes Bulgária összes fizetős autópályáján és gyorsforgalmi útján."
+    },
+    "benefits": {
+      "competitive": {
+        "title": "Versenyképes árak",
+        "description": "Piaci legjobb árak szinkronizálva a hivatalos tarifákkal"
+      },
+      "noHiddenFees": {
+        "title": "Rejtett díjak nélkül",
+        "description": "Minden ár tartalmazza az adókat és jutalékokat - nincsenek további költségek"
+      },
+      "vatIncluded": {
+        "title": "ÁFA tartalmazza",
+        "description": "Minden ár tartalmazza az ÁFÁ-t és 3,5 tonna alatti személygépkocsikra érvényes"
+      },
+      "instantActivation": {
+        "title": "Azonnali aktiválás",
+        "description": "A matrica azonnal aktiválódik a fizetés után, várakozás nélkül"
+      }
+    },
+    "daily": {
+      "title": "Napi matrica - 1 nap | Ár és információk",
+      "description": "Ideális egynapos utakhoz",
+      "pageDescription": "Napi matrica 1 napra - tökéletes rövid egynapos utakhoz. 24 órától érvényes az aktiválástól. Leggazdaságosabb választás.",
+      "mainTitle": "Napi matrica",
+      "subtitle": "A leggazdaságosabb választás egynapos utakhoz!",
+      "duration": "1 nap",
+      "description1": "A napi matrica kifejezetten egynapos utakhoz készült, és felesleges kiadások nélkül fedezi a rövid látogatások igényeit. Az aktiválás pillanatától 24 óráig érvényes, így ideális gyors üzleti utakhoz vagy spontán egynapos kirándulásokhoz.",
+      "description2": "A napi matrica kínálja a legalacsonyabb árat a rövid utakhoz. Ideális spontán egynapos döntésekhez, és egész nap szabadon közlekedhet Bulgária összes fizetős autópályáján.",
+      "feature1": "24 óráig érvényes",
+      "feature2": "Legalacsonyabb ár",
+      "feature3": "Ideális egynapos utakhoz",
+      "feature4": "Azonnali aktiválás",
+      "highlight": "Leggazdaságosabb",
+      "pageTitle": "Napi matrica - 1 nap | Ár és információk",
+      "price": "8,00 BGN",
+      "priceEur": "4,09 €",
+      "perfectFor": "Tökéletes egynapos utakhoz és spontán döntésekhez",
+      "validFrom": "Az aktiválástól 24 óráig érvényes",
+      "valid24Hours": "1 napig érvényes (24 óra)",
+      "features": {
+        "valid24": "24 óráig érvényes",
+        "valid24Desc": "A matrica pontosan 24 óráig aktív a vásárlás pillanatától",
+        "lowestPrice": "Legalacsonyabb ár",
+        "lowestPriceDesc": "Leggazdaságosabb lehetőség egynapos utakhoz",
+        "quickTrips": "Gyors utak",
+        "quickTripsDesc": "Tökéletes üzleti utakhoz vagy rövid látogatásokhoz",
+        "allHighways": "Összes autópálya",
+        "allHighwaysDesc": "Bulgária összes fizetős autópályáján érvényes",
+        "title": "Miért válassza a napi matricát?",
+        "subtitle": "Az egynapos matrica előnyei és jellemzői"
+      },
+      "useCases": {
+        "title": "Mikor használjon napi matricát?",
+        "oneDayTrips": "Egynapos utak",
+        "businessVisits": "Rövid üzleti látogatások",
+        "quickMeetings": "Gyors üzleti megbeszélések",
+        "dayTours": "Egynapos kirándulások",
+        "familyVisits": "Rokonok látogatása egy napra",
+        "shoppingTrips": "Egynapos bevásárlás egy közeli városban"
+      },
+      "info": {
+        "title": "Fontos információk",
+        "activationTitle": "Aktiválás",
+        "activation": "A matrica azonnal aktiválódik a fizetés után",
+        "validityTitle": "Érvényesség",
+        "validity": "Pontosan 24 óra az aktiválás pillanatától",
+        "coverageTitle": "Lefedettség",
+        "coverage": "Bulgária összes fizetős autópályája",
+        "vehiclesTitle": "Járművek",
+        "vehicles": "3,5 tonna alatti személygépkocsik"
+      },
+      "cta": {
+        "title": "Egynapos utat tervez?",
+        "subtitle": "Vásároljon napi matricát most és induljon el másodperceken belül.",
+        "button": "Napi matrica vásárlása",
+        "allPrices": "Összes ár"
+      }
+    },
+    "backToPrices": "Vissza az árakhoz",
+    "chooseVignette": "Válassza ki matricáját",
+    "orderNow": "Rendelje most",
+    "benefitsSection": {
+      "title": "Miért válasszon minket?",
+      "subtitle": "Árpolitikánk előnyei"
+    },
+    "pricingSection": {
+      "title": "Válassza ki matricáját",
+      "subtitle": "Hasonlítsa össze a különböző lehetőségeket és válassza az igényeinek leginkább megfelelőt",
+      "validFor": "Érvényes",
+      "learnMore": "Tudjon meg többet"
+    },
+    "infoSection": {
+      "title": "Teljes és naprakész információk",
+      "description1": "Az avtovia.bg-n teljes és naprakész információkat talál Bulgária összes elektronikus matricatípusának árairól. Áraink tartalmazzák az összes adót és jutalékot - nincsenek rejtett költségek vagy extra díjak fizetéskor.",
+      "description2": "Hasonlítsa össze a különböző lehetőségeket és válassza az igényeinek leginkább megfelelőt. Minden ár tartalmazza az ÁFÁ-t és 3,5 tonna alatti személygépkocsikra érvényes.",
+      "paymentText": "Kártyás fizetés - gyors és biztonságos"
+    },
+    "ctaSection": {
+      "title": "Készen áll az utazásra?",
+      "subtitle": "Válassza a megfelelő matricát és fizessen online másodpercek alatt.",
+      "buyButton": "Matrica vásárlása",
+      "questionsText": "Kérdése van?"
+    }
+  },
+  "tollTax": {
+    "title": "Online útdíj - Nehézjárművek rendszere",
+    "description": "Vásároljon útdíjat online nehézjárműveknek és buszoknak Bulgáriában. Gyors és egyszerű hozzáférés az autópályákhoz. Fizessen előre és kerülje a fizikai útdíj-fizetőhelyeken való megállást.",
+    "pageTitle": "Útdíj nehézjárműveknek",
+    "pageSubtitle": "Gyors és kényelmes útdíj-fizetési mód",
+    "heroTitle": "Online útdíj",
+    "heroSubtitle": "Nehézjárművek és buszok módja",
+    "learnMore": "Tudjon meg többet",
+    "tollPointsNav": "Útdíj-fizetőhelyek",
+    "whatIsTollTax": {
+      "title": "Mi az útdíj?",
+      "subtitle": "Speciális díjszabási rendszer nehézjárműveknek",
+      "description1": "A személygépkocsiknak szánt elektronikus matricáktól eltérően a bulgáriai útdíjak nehézjárművekre és buszokra vonatkoznak.",
+      "description2": "Ez a rendszer a megtett távolságon és a jármű kategóriáján alapul, biztosítva az igazságos díjszabást a közúti infrastruktúrára nehezedő nagyobb terhelésért.",
+      "description3": "Ismerje meg az útdíj-fizetési rendszert, hogy hatékonyan tervezhesse útvonalait és kezelje a fizetéseket. Az útdíjakat bizonyos hidakon, alagutakon és a fő matrica-rendszeren kívüli egyes útszakaszokon való áthaladásért szedik."
+    },
+    "benefits": {
+      "title": "Miért válassza az online fizetést?",
+      "subtitle": "Az útdíj előrefizetésének előnyei",
+      "saveTime": "Időmegtakarítás",
+      "saveTimeDesc": "Kerülje a fizikai gyűjtőpontokon való megállást",
+      "onlinePayment": "Online fizetés",
+      "onlinePaymentDesc": "Fizessen előre kártyával otthona kényelméből",
+      "avoidFines": "Bírságok elkerülése",
+      "avoidFinesDesc": "Gondoskodjon az érvényes útdíjról és kerülje a büntetéseket",
+      "planRoute": "Útvonal tervezése",
+      "planRouteDesc": "Részletes információkat kaphat az összes útdíj-fizetőhelyről"
+    },
+    "tollPoints": {
+      "title": "Bulgária fő útdíj-fizetőhelyei",
+      "subtitle": "Helyek, ahol útdíjat szednek",
+      "vidinBridge": "Vidin híd",
+      "ruseBridge": "Ruse híd",
+      "topliDolTunnel": "Topli Dol alagút",
+      "otherObjects": "Egyéb létesítmények",
+      "vidinBridgeDesc": "Duna-híd 1",
+      "ruseBridgeDesc": "Duna-híd 2",
+      "topliDolTunnelDesc": "A1 autópálya",
+      "otherObjectsDesc": "Egyes útszakaszok"
+    },
+    "targetAudience": {
+      "title": "Kinek szól ez a szolgáltatás?",
+      "description1": "Akár fuvarozó cég tulajdonosa, akár nehézjármű-vezető, célunk megkönnyíteni munkáját és biztosítani a problémamentes áthaladást a fizetős útszakaszokon.",
+      "description2": "Platformunk lehetőséget biztosít az útdíjak előzetes online fizetésére, elkerülve a fizikai gyűjtőpontokon való megállást. Ez különösen kényelmes nagy forgalom esetén vagy munkaidőn kívüli utazáskor."
+    },
+    "cta": {
+      "title": "Takarítson időt - kerülje a bírságokat!",
+      "subtitle": "Részletes információkat nyújtunk az összes útdíj-fizetőhelyről és az aktuális árakról.",
+      "contactUs": "Lépjen kapcsolatba velünk",
+      "allServices": "Összes szolgáltatás"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "pageTitle": "Blog - Hírek és tippek a matricákról",
+    "pageDescription": "Legfrissebb hírek, tippek és információk az elektronikus matricákról és bulgáriai utazásról.",
+    "readMore": "Tovább",
+    "noArticles": "Jelenleg nincs elérhető cikk.",
+    "loading": "Cikkek betöltése...",
+    "pagination": {
+      "page": "Oldal",
+      "of": "/",
+      "previous": "Előző",
+      "next": "Következő"
+    }
+  },
+  "services": {
+    "title": "Szolgáltatások",
+    "pageTitle": "Szolgáltatások - Minden a matricákról és utazásról",
+    "pageDescription": "Böngésszen elektronikus matrica, útdíj és egyéb utazási szolgáltatásaink között.",
+    "loading": "Szolgáltatások betöltése...",
+    "noServices": "Jelenleg nincs elérhető szolgáltatás.",
+    "contactForPrice": "Lépjen kapcsolatba velünk az árért"
+  },
+  "legal": {
+    "privacyPolicy": {
+      "title": "Adatvédelmi nyilatkozat",
+      "pageTitle": "Adatvédelmi nyilatkozat",
+      "pageDescription": "Ismerje meg, hogyan gyűjtjük, használjuk és védjük személyes adatait."
+    },
+    "cookiePolicy": {
+      "title": "Cookie-szabályzat",
+      "pageTitle": "Cookie-szabályzat",
+      "pageDescription": "Információk a weboldalunkon használt cookie-król."
+    },
+    "termsOfService": {
+      "title": "Felhasználási feltételek",
+      "pageTitle": "Felhasználási feltételek",
+      "pageDescription": "Feltételek és kikötések szolgáltatásaink és weboldalunk használatához."
+    }
+  },
+  "vignetteChecker": {
+    "title": "Matrica ellenőrzés",
+    "pageTitle": "Matrica ellenőrzés",
+    "pageDescription": "Ellenőrizze gyorsan és egyszerűen elektronikus matricájának állapotát.",
+    "checkButton": "Matrica ellenőrzése",
+    "enterPlateNumber": "Adja meg a rendszámot",
+    "checkStatus": "Matrica állapotának ellenőrzése"
+  },
+  "vignetteCheckPage": {
+    "title": "Matrica ellenőrzés - Gyors, egyszerű és biztonságos",
+    "description": "Ellenőrizze matricáját másodpercek alatt! Az elektronikus matrica érvényességének gyors ellenőrzése 100%-os pontossággal. Valós időben szinkronizálva az NA Avtomaginstrali-val. Kerülje a bírságokat!",
+    "heroTitle": "Matrica ellenőrzés",
+    "heroSubtitle": "Gyors, egyszerű és biztonságos!",
+    "heroCallout": "Takarítson időt - kerülje a bírságokat!",
+    "introTitle": "Ellenőrizze matricáját másodpercek alatt",
+    "introDescription1": "Gyors matrica-ellenőrzésünkkel másodpercek alatt ellenőrizheti annak érvényességét! Adja meg a jármű rendszámát és a rendszer megmutatja, hogy van-e érvényes matricája és mikor aktív.",
+    "introDescription2": "Kerülje a bírságokat és a szükségtelen stresszt - ellenőrizze matricáját most!",
+    "featuresTitle": "Miért használja a matrica-ellenőrzésünket?",
+    "featuresSubtitle": "Megbízható és pontos információk matricájáról",
+    "features": {
+      "instantCheck": {
+        "title": "Másodpercek alatti ellenőrzés",
+        "description": "A matrica érvényességének azonnali ellenőrzése"
+      },
+      "realTime": {
+        "title": "Valós idő",
+        "description": "Szinkronizálva az NA 'Avtomaginstrali' EAD adatbázisával"
+      },
+      "accuracy": {
+        "title": "100%-os pontosság",
+        "description": "Az információk garantált pontossága"
+      },
+      "avoidFines": {
+        "title": "Bírságok elkerülése",
+        "description": "Megelőzi a szükségtelen büntetéseket és stresszt"
+      }
+    },
+    "accuracyTitle": "Garantált pontosság",
+    "accuracyDescription1": "Rendszerünk valós időben szinkronizálva van az NA \"Avtomaginstrali\" EAD adatbázisával, ami 100%-os pontosságot garantál.",
+    "accuracyDescription2": "Azonnal információt kap a matrica állapotáról - hogy aktív-e, mikor jár le az érvényessége és milyen típusú matricával rendelkezik.",
+    "benefitsTitle": "Mit kap?",
+    "benefits": {
+      "instant": "Azonnali információ a matrica állapotáról",
+      "validity": "Adatok az érvényességről és a matrica típusáról",
+      "prevention": "Bírságok és büntetések megelőzése",
+      "carChange": "Különösen hasznos jármű cseréjekor",
+      "tracking": "Lejáró matricák követése",
+      "fleets": "Járműflottával rendelkező cégeknek alkalmas"
+    },
+    "businessTitle": "Üzleti ügyfeleknek",
+    "businessDescription1": "A szolgáltatás különösen hasznos járműflottával rendelkező cégeknek, amelyek egyszerre több jármű matricájának állapotát kívánják követni.",
+    "businessDescription2": "Rendszeres ellenőrzéseket javaslunk, különösen jármű cseréjekor vagy amikor a matrica hamarosan lejár.",
+    "ctaTitle": "Új matricára van szüksége?",
+    "ctaDescription": "Ha az ellenőrzés azt mutatja, hogy matricája lejárt, vásároljon újat könnyen és gyorsan online.",
+    "ctaBuyButton": "Matrica vásárlása",
+    "ctaPricesButton": "Árak megtekintése"
+  },
+  "vignetteCheckerComponent": {
+    "title": "Matrica ellenőrzés",
+    "subtitle": "Adja meg a jármű rendszámát a matrica érvényességének ellenőrzéséhez",
+    "inputLabel": "Rendszám*",
+    "inputPlaceholder": "Például: CA1234AB",
+    "checkButton": "Matrica ellenőrzése",
+    "checkingButton": "Ellenőrzés...",
+    "errorRequired": "Kérjük, adja meg a rendszámot",
+    "errorServer": "Szerverhiba",
+    "errorGeneral": "Hiba az ellenőrzés során. Kérjük, próbálja újra.",
+    "resultsTitle": "Ellenőrzési eredmények",
+    "resultTitle": "Ellenőrzési eredmény",
+    "noValidVignette": "A jármű ma nem rendelkezik érvényes matricával.",
+    "fields": {
+      "status": "Állapot",
+      "validFrom": "Érvényes-tól",
+      "validTo": "Érvényes-ig",
+      "plateNumber": "Rendszám",
+      "country": "Ország",
+      "vehicleClass": "Jármű osztály",
+      "emissionsClass": "Kibocsátási osztály",
+      "price": "Ár"
+    },
+    "infoTitle": "Fontos információk",
+    "infoItems": {
+      "realtime": "Az ellenőrzés valós időben történik a hivatalos BG TOLL API-n keresztül",
+      "free": "A szolgáltatás ingyenes és nem igényel regisztrációt",
+      "format": "Csak a rendszámot adja meg szóközök vagy speciális karakterek nélkül",
+      "bulgarian": "Az ellenőrzés csak bolgár rendszámú járművekre érvényes"
+    }
+  },
+  "common": {
+    "readMore": "Tovább",
+    "contactUs": "Lépjen kapcsolatba velünk",
+    "learnMore": "Tudjon meg többet",
+    "buy": "Vásárlás",
+    "buyNow": "Vásároljon most",
+    "getStarted": "Kezdjen bele",
+    "loading": "Betöltés...",
+    "error": "Hiba történt",
+    "success": "Sikeres",
+    "close": "Bezárás",
+    "cancel": "Mégse",
+    "confirm": "Megerősítés",
+    "save": "Mentés",
+    "edit": "Szerkesztés",
+    "delete": "Törlés",
+    "back": "Vissza",
+    "next": "Következő",
+    "previous": "Előző",
+    "search": "Keresés",
+    "filter": "Szűrés",
+    "sort": "Rendezés",
+    "selectLanguage": "Nyelv kiválasztása"
+  },
+  "components": {
+    "hero": {
+      "title": "Szerezze be matricáját online",
+      "subtitle": "Egyszerű, gyors és biztonságos fizetéssel",
+      "ctaButton": "Kezdjen bele",
+      "learnMore": "Tudjon meg többet",
+      "buyButton": "Matrica vásárlása"
+    },
+    "cta": {
+      "title": "Készen áll a kezdésre?",
+      "subtitle": "Kezdje el használni szolgáltatásainkat még ma",
+      "button": "Kezdjen bele"
+    },
+    "vignetteChecker": {
+      "title": "Matrica ellenőrzés",
+      "subtitle": "Ellenőrizze elektronikus matricájának állapotát",
+      "inputPlaceholder": "Adja meg a rendszámot",
+      "checkButton": "Ellenőrzés",
+      "validVignette": "Érvényes matrica",
+      "invalidVignette": "Érvénytelen matrica",
+      "errorMessage": "Hiba történt az ellenőrzés során"
+    },
+    "newsletter": {
+      "title": "Iratkozzon fel hírlevelünkre",
+      "subtitle": "Kapja meg a legfrissebb híreket és frissítéseket",
+      "emailPlaceholder": "Adja meg e-mail címét",
+      "subscribeButton": "Feliratkozás",
+      "successMessage": "Sikeresen feliratkozott!",
+      "errorMessage": "Hiba történt. Kérjük, próbálja újra."
+    },
+    "latestPosts": {
+      "title": "Legfrissebb bejegyzések",
+      "viewAll": "Összes megtekintése",
+      "readMore": "Tovább",
+      "noArticles": "Nincs elérhető cikk"
+    },
+    "cardsRow": {
+      "title": "Elfogadunk minden nemzetközi és nemzeti Mastercard és VISA kártyát",
+      "altText": "Elfogadott kártyák - Visa, Mastercard"
+    },
+    "ctasRow": {
+      "cta1Title": "Lakásbiztosítás",
+      "cta1Description": "Lakásbiztosítás - teljesen online. Egyszerű eljárás, ingatlanértékelés és megfelelő fedezet tűz, természeti katasztrófák, földrengések és lopás ellen. Kiegészítő záradékok. Lakások, házak és nyaralók számára alkalmas.",
+      "cta1Button": "Tudjon meg többet",
+      "cta2Title": "Külföldi utazásbiztosítás",
+      "cta2Description": "Külföldi utazásbiztosítás garantált segítségnyújtással - online! Fedezet külföldi utakhoz - személyes, üzleti vagy sportversenyekhez. Kiegészítő záradékok, beleértve mentési költségeket, poggyász elvesztése, felelősség, COVID-19 fedezet.",
+      "cta2Button": "Biztosítson online",
+      "cta3Title": "Hegybiztosítás",
+      "cta3Description": "Biztosítás hegyi balesetekkel szembeni fedezettel - síeléshez, snowboardhoz, hegyikerékpározáshoz, hegymászáshoz, trekkinghez és egyéb extrém sportokhoz Bulgáriában. Egyszerű és biztonságos online regisztráció! Nyugalom minden hegyi kiránduláshoz.",
+      "cta3Button": "Biztosítson online",
+      "cta4Title": "Egészségbiztosítás",
+      "cta4Description": "Egészségbiztosítás fix csomagokkal és kártalanítással meghatározott orvosi esetekre: műtét, kórházi tartózkodás (beleértve szülést), törések. Egyszerű és gyors online regisztráció részletes egészségügyi nyilatkozat kitöltése nélkül.",
+      "cta4Button": "Biztosítson online"
+    },
+    "vignetteCheckerCTA": {
+      "title": "Ellenőrizze matricáját",
+      "subtitle": "Az elektronikus matrica érvényességének gyors és ingyenes ellenőrzése",
+      "realTimeCheck": "Valós idejű ellenőrzés",
+      "officialAPI": "Hivatalos BG Toll API",
+      "freeService": "Ingyenes szolgáltatás",
+      "noRegistration": "Regisztráció nélkül",
+      "checkVignette": "Matrica ellenőrzése most",
+      "enterRegistrationNumber": "Adja meg a rendszámot",
+      "registrationNumber": "Rendszám",
+      "vignetteValid": "Érvényes matrica",
+      "validityUntil": "Érvényes: 2024.12.31-ig",
+      "quickCheck": "Gyors ellenőrzés",
+      "resultShownInSeconds": "Eredmény másodperceken belül",
+      "dataDirectlyFromBGToll": "Adatok közvetlenül a BG Toll-tól",
+      "noTaxesOrHiddenFees": "Nincsenek adók vagy rejtett díjak"
+    },
+    "vignetteCheckerSidebar": {
+      "title": "Matrica ellenőrzés",
+      "subtitle": "Ellenőrizze az érvényességet másodpercek alatt",
+      "inputPlaceholder": "CA1234AB",
+      "checkButton": "Ellenőrzés",
+      "checkingButton": "Ellenőrzés...",
+      "errorRequired": "Adja meg a rendszámot",
+      "errorServer": "Kérési hiba",
+      "errorGeneral": "Hiba. Kérjük, próbálja újra.",
+      "validVignette": "Érvényes matrica",
+      "noValidVignette": "Nincs érvényes matrica",
+      "validTo": "Érvényes-ig",
+      "vehicleClass": "Osztály",
+      "viewFullPage": "Teljes ellenőrzéshez"
+    },
+    "sidebarLatestPosts": {
+      "title": "Legfrissebb cikkek",
+      "viewAll": "Összes cikk megtekintése"
+    },
+    "privacyPolicy": {
+      "pageTitle": "Adatvédelmi nyilatkozat",
+      "pageDescription": "Vinetka.bg adatvédelmi nyilatkozata - tudjon meg többet a személyes adatok kezeléséről.",
+      "title": "ADATVÉDELMI NYILATKOZAT",
+      "introduction": "Ezt az adatvédelmi nyilatkozatot a „Digital Policy Hub\" JSC, adószám 207623030 (továbbiakban „a Társaság\" vagy „DPH\" JSC) fogadta el, amelynek székhelye és irányítási címe: Sofia, irányítószám 1113, Izgrev kerület, „Major Yuri Gagarin\" u. 30., B épület - független adatkezelő és személyes adatok feldolgozója. A Társaság a „DIGITAL SMART INFRASTRUCTURE\" JSC, adószám 205612035 (továbbiakban „DSI\" JSC) partnere.",
+      "contactInfo": "A www.avtovia.bg weboldal felhasználói kapcsolatba léphetnek a „Digital Policy Hub\" JSC-vel a fent említett címen, telefonon: +359876995177 vagy a következő e-mail címen: hello@insurance.bg",
+      "updatePolicy": "A „Digital Policy Hub\" JSC fenntartja a jogot, hogy időszakosan frissítse és módosítsa ezt az adatvédelmi nyilatkozatot.",
+      "sections": {
+        "definitions": {
+          "title": "MEGHATÁROZÁSOK",
+          "personalData": "Személyes adat: azonosított vagy azonosítható természetes személyre vonatkozó bármely információ (\"érintett\");",
+          "processing": "Adatkezelés: a személyes adatokon vagy adatállományokon automatizált vagy nem automatizált módon végzett bármely művelet vagy műveletek összessége;",
+          "personalDataFile": "Személyesadat-nyilvántartási rendszer: a személyes adatok bármely strukturált, meghatározott szempontok alapján hozzáférhető készlete;",
+          "controller": "Adatkezelő: az a természetes vagy jogi személy, közhatalmi szerv, ügynökség vagy bármely egyéb szerv, amely a személyes adatok kezelésének céljait és eszközeit egyedül vagy másokkal együtt meghatározza;",
+          "processor": "Adatfeldolgozó: az a természetes vagy jogi személy, közhatalmi szerv, ügynökség vagy bármely egyéb szerv, amely az adatkezelő nevében személyes adatokat kezel;",
+          "dataSubject": "Érintett: az a természetes személy, aki azonosított vagy meghatározott információk alapján azonosítható;",
+          "consent": "Az érintett hozzájárulása: az érintett akaratának önkéntes, konkrét és megfelelő tájékoztatáson alapuló és egyértelmű kinyilvánítása;",
+          "dataBreach": "Személyesadat-sértés: a biztonság olyan sérülése, amely a személyes adatok véletlen vagy jogellenes megsemmisítéséhez, elvesztéséhez, megváltoztatásához vezet;",
+          "platform": "Platform: a weboldal, amelyen keresztül a „DPH\" JSC tevékenységét folytatja – www.avtovia.bg;",
+          "roadTaxes": "Útdíjak: gyűjtőfogalom, amely az útdíj-adókat, kompenzációs adókat és egyéb normatívan megállapított adókat jelenti;",
+          "electronicVignette": "Elektronikus matrica: elektronikus dokumentum, amely igazolja a kifizetett útdíj-adót;",
+          "compensatoryTax": "Kompenzációs adó: az utakon való közlekedés megállapításakor szedhető útdíj, ha az adott járműre nem fizették meg a megfelelő útdíj-adót."
+        },
+        "generalProvisions": {
+          "title": "ÁLTALÁNOS RENDELKEZÉSEK",
+          "compliance": "A személyes adatok kezelése során a Társaság betartja az összes alkalmazandó normatív aktust a személyes adatok védelméről.",
+          "internalProcedures": "A Rendelet rendelkezéseinek végrehajtásaképpen a társaság belső eljárásokat alkalmaz a személyes adatok védelméről.",
+          "legitimateInterest": "A „DPH\" JSC-nek jogos érdeke fűződik elektronikus weboldalának fenntartásához."
+        },
+        "purposes": {
+          "title": "CÉLOK",
+          "principles": "Személyes adatkezelési tevékenységei során a „DPH\" JSC a jogszerűség, méltányosság és átláthatóság elveit követi.",
+          "dataSharing": "Az elektronikus matricák terjesztésével és egyéb útdíjak fizetésével kapcsolatos tevékenységek végzése során személyes adatait a Közúti Infrastruktúra Ügynökség és/vagy a „DSI\" JSC is megkapja és kezeli.",
+          "dataCollection": "A „DPH\" JSC személyes adatait közvetlenül Öntől gyűjti.",
+          "userProfile": "- Amikor felhasználói profilt hoz létre weboldalunkon, e-mail címét, kereszt- és vezetéknevét küldi el nekünk.",
+          "additionalInfo": "- Felhasználói profiljához további információkat is hozzáadhat, például: mobiltelefonszám, vezetékes telefonszám stb.",
+          "vignettePurchase": "- Amikor elektronikus matricát vásárol a weboldalon keresztül, megadja a következő adatokat: jármű kategóriája; a jármű nyilvántartásba vételének országa; a jármű rendszáma; az elektronikus matrica érvényességi ideje.",
+          "contactForm": "- Amikor kapcsolatfelvételi űrlapunkat kitöltve kért tőlünk tájékoztatást vagy segítséget;",
+          "comments": "- Amikor megjegyzéseket tesz vagy kiegészítő tájékoztatást nyújt a weboldal egy erre lehetőséget biztosító részén;",
+          "socialMedia": "- Abban az esetben, ha platformunk lehetővé teszi, ha a „DPH\" JSC platformon való regisztráláshoz vagy egyéb használathoz közösségi média profiljait használja.",
+          "browsing": "- A fent említett személyes adatokon kívül a „DPH\" JSC-nek lehetősége van bizonyos, böngészési magatartásával kapcsolatos információk gyűjtésére és kezelésére.",
+          "sensitiveData": "- Nem gyűjtünk és nem kezelünk az Általános Adatvédelmi Rendeletben szereplő különleges kategóriájú személyes adatokba tartozó érzékeny adatokat."
+        },
+        "dataTransfer": {
+          "title": "SZEMÉLYES ADATOK ÁTADÁSA VAGY HOZZÁFÉRÉS BIZTOSÍTÁSA",
+          "recipients": "Az esettől függően személyes adatai egy részét a következő kategóriájú címzetteknek adhatjuk át vagy biztosíthatunk hozzáférést:",
+          "dsiAd": "- „DSI\" JSC – A megadott elérhetőségi adatokat a törvény alapján kezelik.",
+          "api": "- Közúti Infrastruktúra Ügynökség;",
+          "courier": "- futárszolgáltatók;",
+          "payment": "- fizetési/banki szolgáltatók;",
+          "legal": "- jogi kötelezettség esetén egyes személyes adatokat hatóságoknak adhatunk ki.",
+          "guarantee": "Garantáljuk, hogy magán harmadik felek adataihoz való hozzáférése az adatvédelmi jogszabályoknak megfelelően történik.",
+          "apiProcessing": "Ezektől függetlenül a bulgáriai fizetős úthálózat használatával kapcsolatban gyűjtött adatait a Közúti Infrastruktúra Ügynökségnek adjuk meg.",
+          "phoneRecording": "A törvény által megengedett keretek között a „DPH\" JSC rögzítheti az ügyfélszolgálati telefonhívásokat."
+        },
+        "security": {
+          "title": "A KEZELÉS TECHNIKAI ÉS SZERVEZETI BIZTONSÁGI INTÉZKEDÉSEI",
+          "intro": "Az adatkezelés jellegét, terjedelmét, összefüggéseit és céljait, valamint a felhasználók jogaira és szabadságaira vonatkozó kockázatokat figyelembe véve a „DPH\" JSC alkalmazza a szükséges technikai és szervezeti intézkedéseket.",
+          "measures": [
+            "Személyes adatok titkosítása;",
+            "Kizárólag ellenőrzött és előzetesen jóváhagyott licencelt szoftver használata;",
+            "Szabályozatlan szoftverek telepítését és használatát megakadályozó korlátozó intézkedések;",
+            "Vírusirtó szoftver, tűzfalak és proxyszerver használata;",
+            "Jelszóvédelem és személyes hozzáférési jogok a számítógépekhez;",
+            "Tétlen munkahelyi számítógépek automatikus zárolása a hálózaton;",
+            "A vállalati telephelyről eltávozó eszközök védelme;",
+            "Személyes adatokat tartalmazó elektronikus és papíralapú dokumentumokhoz való fizikai hozzáférés ellenőrzése;",
+            "Jelzésvédelmi berendezéssel való felszerelés;",
+            "Megfelelő belső szabályok alkalmazása és személyzet képzése;",
+            "Az összes információ naponta legalább egyszer történő archiválása;",
+            "Védelmi intézkedéseinek hatékonyságának rendszeres ellenőrzése és nyomon követése.",
+            "A Társaság által nyilvántartott személyes adatok fizikai védelme szervezett.",
+            "Minden személyes adatok kezelésére használt számítógépre jelszóval rendelkező zárolható operációs rendszer van telepítve.",
+            "A műszaki haladás eredményeit figyelembe véve a Társaság megfelelő technikai és szervezeti intézkedéseket alkalmaz."
+          ],
+          "disclaimer": "A személyes adatai védelmére alkalmazott intézkedések ellenére tisztában vagyunk azzal, hogy az interneten vagy más nyilvános hálózatokon keresztüli információtovábbítás elvben nem teljesen biztonságos."
+        },
+        "retention": {
+          "title": "MEGŐRZÉSI IDŐSZAK",
+          "period": "A „DPH\" JSC a www.avtovia.bg platformon kínált szolgáltatások igénybevételéhez szükséges összes személyes adatot az adott cél teljesítéséhez szükséges ideig tárolja."
+        },
+        "rights": {
+          "title": "FELHASZNÁLÓK/ÜGYFELEK JOGAI",
+          "informationRight": "- Tájékoztatáshoz való jog - az érintett természetes személynek joga van tájékoztatást kapni a „DPH\" JSC-ről mint személyesadat-kezelőről.",
+          "accessRight": "- Saját személyes adataihoz való hozzáférési jog - az érintettnek joga van megerősítést kapni a „DPH\" JSC-től arról, hogy az ő személyes adatait kezelik-e.",
+          "rectificationRight": "- Személyes adatok helyesbítéséhez való jog - az érintettnek joga van kérni a „DPH\" JSC-t, hogy indokolatlan késedelem nélkül helyesbítse a rá vonatkozó pontatlan személyes adatokat.",
+          "erasureRight": {
+            "title": "- Személyes adatok törléséhez való jog (az \"elfeledtetéshez\" való jog) – az érintett kérheti a „DPH\" JSC-t a rá vonatkozó személyes adatok törlésére, ha az alábbi feltételek egyike teljesül:",
+            "conditions": [
+              "a személyes adatokra már nincs szükség abból a célból, amelyből gyűjtötték vagy kezelték;",
+              "az érintett visszavonja a hozzájárulását;",
+              "az érintett tiltakozik az adatkezelés ellen;",
+              "a személyes adatokat jogellenesen kezelték;",
+              "a személyes adatokat jogi kötelezettség teljesítése érdekében törölni kell."
+            ],
+            "contact": "A személyes adatai törlésével kapcsolatos további tájékoztatásért vegye fel velünk a kapcsolatot a fent említett elérhetőségeken."
+          },
+          "restrictionRight": {
+            "title": "- Személyes adatok kezelésének korlátozásához való jog:",
+            "conditions": [
+              "- Az érintett vitatja a személyes adatok pontosságát;",
+              "- Az adatkezelés jogellenes, de az érintett nem kéri a személyes adatok törlését;",
+              "- Az adatkezelőnek már nincs szüksége a személyes adatokra kezelési célokból;",
+              "- Az érintett tiltakozott az adatkezelés ellen."
+            ]
+          },
+          "portabilityRight": "- Adathordozhatósághoz való jog - az érintettnek joga van strukturált, géppel olvasható formátumban megkapni a rá vonatkozó személyes adatokat.",
+          "objectionRight": "- A személyes adatok kezelése elleni tiltakozás joga - az érintetteknek joguk van tiltakozni a „DPH\" JSC-nél személyes adataik kezelése ellen.",
+          "automatedDecisionRight": "- Az érintettnek joga van ahhoz, hogy ne terjedjen ki rá automatizált döntéshozatal, ideértve a profilalkotást.",
+          "profilingDefinition": "A profilalkotás a Rendelet 4. cikke (4) bekezdésében van meghatározva, mint a személyes adatok automatizált kezelésének bármely formája.",
+          "legalProtection": {
+            "title": "- Bírósági vagy közigazgatási eljárás útján való védelemhez való jog:",
+            "supervisoryAuthority": "1) az illetékes felügyeleti hatóságnál - Személyes Adatvédelmi Bizottság: https://www.cpdp.bg/",
+            "court": "2) az illetékes bíróságon.",
+            "email": "- e-mailben a következő címre: hello@insurance.bg; Adatvédelmi tisztviselő: Momchil Fotev",
+            "mail": "- vagy postai úton vagy futárral a következő címre: Sofia, irányítószám 1113, Izgrev kerület, „Major Yuri Gagarin\" u. 30., B épület.",
+            "responseTime": "A „DPH\" JSC 14 (tizennégy) naptári napon belül válaszol minden érvényes megkeresésre.",
+            "questions": "Ha kérdése vagy panasza van ezen adatvédelmi nyilatkozatnak való megfelelésünkkel kapcsolatban, írjon nekünk a fent említett elérhetőségeken.",
+            "effectiveDate": "Ezt az adatvédelmi nyilatkozatot a „DPH\" JSC hagyta jóvá és 2025.08.01-től alkalmazza a Társaság tevékenységében."
+          }
+        }
+      }
+    },
+    "cookiePolicy": {
+      "pageTitle": "Cookie-használati szabályzat",
+      "pageDescription": "Vinetka.bg cookie-használati szabályzata - információk a cookie-k használatáról.",
+      "title": "COOKIE-HASZNÁLATI SZABÁLYZAT",
+      "introduction": "Ezt a cookie-használati szabályzatot a „Digital Policy Hub\" JSC, adószám 207623030 fogadta el.",
+      "contactInfo": "A www.avtovia.bg weboldal felhasználói kapcsolatba léphetnek a „Digital Policy Hub\" JSC-vel telefonon: +359876995177 vagy e-mailben: hello@insurance.bg",
+      "updatePolicy": "A „Digital Policy Hub\" JSC fenntartja a jogot, hogy időszakosan frissítse és módosítsa ezt a cookie-használati szabályzatot.",
+      "compliance": "A www.avtovia.bg weboldal cookie-jainak használatakor betartják a nemzeti és az uniós jogszabályok összes követelményét.",
+      "purpose": "Ez a szabályzat célja a www.avtovia.bg weboldal felhasználóinak megismertetése a használt cookie-kkal, azok céljával és hatásával.",
+      "sections": {
+        "whatAreCookies": {
+          "title": "Mik azok a „cookie-k\" és mire használják őket:",
+          "definition": "A „cookie-k\" olyan kis szövegfájlok, amelyeket a webhelyek tárolnak a felhasználó eszközén a látogatásaikról szóló információk tárolásához.",
+          "invitation": "Minden alkalommal, amikor a felhasználó felkeresi a www.avtovia.bg weboldalt, meghívást kap a „cookie-k\" elfogadására vagy elutasítására.",
+          "types": "A „DPH\" JSC kétféle cookie-t használ a www.avtovia.bg webhelyen: munkamenet- és állandó cookie-kat."
+        },
+        "browserManagement": {
+          "title": "A „cookie-k\" kezelése a böngészőn keresztül:",
+          "description": "A böngészők lehetővé teszik a felhasználó számára a cookie-k kezelését, törlését és/vagy blokkolását.",
+          "deletion": "A felhasználóknak lehetőségük van törölni az összes cookie-t a www.avtovia.bg weboldal eléréséhez használt eszközükről.",
+          "browsers": [
+            {
+              "name": "Mozilla Firefox:",
+              "url": "https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer"
+            },
+            {
+              "name": "Internet Explorer:",
+              "url": "https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d"
+            },
+            {
+              "name": "Google Chrome:",
+              "url": "https://support.google.com/chrome/answer/95647?co=GENIE.Platform%3DDesktop&hl=hu"
+            },
+            {
+              "name": "Safari:",
+              "url": "https://support.apple.com/en-us/HT201265"
+            },
+            {
+              "name": "Microsoft EDGE:",
+              "url": "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09"
+            }
+          ],
+          "moreInfo": "A különböző típusú böngészők cookie-kezelésével kapcsolatos további információk itt találhatók: https://www.aboutcookies.org/how-to-control-cookies/."
+        },
+        "blocking": {
+          "title": "„Cookie-k\" blokkolása:",
+          "consequences": "Ha a felhasználó blokkolja a cookie-k használatát, a www.avtovia.bg weboldal egyes funkciói leállnak.",
+          "settings": "A legtöbb böngésző alapértelmezés szerint a „cookie-k\" elfogadására van beállítva, de megváltoztathatja beállításait.",
+          "details": "Részletes információk a cookie-k kezelésének lehetőségeiről és módjairól az alkalmazás (webböngésző) beállítások területén találhatók."
+        },
+        "contact": "A cookie-használati szabályzattal kapcsolatos további kérdésekért lépjen kapcsolatba velünk telefonon: +359 876 99 51 77 vagy e-mailben: hello@insurance.bg",
+        "effectiveDate": "Ezt a cookie-használati szabályzatot a „DPH\" JSC hagyta jóvá és 2025.08.01-től alkalmazza a Társaság tevékenységében."
+      }
+    },
+    "termsOfUse": {
+      "pageTitle": "Felhasználási feltételek",
+      "pageDescription": "A www.avtovia.bg weboldal felhasználási feltételei - elektronikus matricák vásárlásának szabályai.",
+      "title": "A WWW.VINETKA.BG WEBOLDAL FELHASZNÁLÁSI FELTÉTELEI",
+      "introduction": "Ezek a felhasználási feltételek szabályozzák a www.avtovia.bg weboldal használatának szabályait és az elektronikus matricák vásárlásával és szállításával kapcsolatos szolgáltatások nyújtását.",
+      "companyInfo": "A „Digital Policy Hub\" JSC (\"DPH\" JSC), más névvel „a Társaság\", egy részvénytársaság, amelynek székhelye és irányítási címe: Sofia, irányítószám 1113, Izgrev kerület, „Major Yuri Gagarin\" u. 30., B épület.",
+      "phone": "+359 876 99 51 77 vagy a következő e-mail címen: hello@insurance.bg",
+      "partnership": "A „Digital Policy Hub JSC\" a „Digital Smart Infrastructure\" JSC (\"DSI\" JSC) adószám 205612035 partnere, amely társaság a Közúti Infrastruktúra Ügynökségnél Nemzeti szolgáltatóként van nyilvántartva.",
+      "sections": {
+        "generalProvisions": {
+          "title": "I. ÁLTALÁNOS RENDELKEZÉSEK. MEGHATÁROZÁSOK.",
+          "description": "A www.avtovia.bg egy weboldal, amelyen keresztül a „DPH\" JSC tevékenységet folytat.",
+          "termsRegulation": "Ezek a felhasználási feltételek az eladási, szállítási és fizetési kapcsolatokat szabályozzák.",
+          "updateRights": "A „Digital Policy Hub\" JSC fenntartja a jogot, hogy időszakosan frissítse és módosítsa ezeket a felhasználási feltételeket."
+        },
+        "usageRules": {
+          "title": "II. A WWW.VINETKA.BG WEBOLDAL HASZNÁLATÁNAK SZABÁLYAI.",
+          "registration": "A www.avtovia.bg weboldalon való regisztráció nem feltétele az oldal használatának.",
+          "emailRequirement": "Minden felhasználó köteles érvényes e-mail címet megadni a levelezéshez.",
+          "pricing": "Az elektronikus matricákra vonatkozó útdíj-adókat kivéve a www.avtovia.bg weboldal összes többi áruja és szolgáltatásának ára végleges, lévában (BGN) van megadva ÁFÁ-val együtt."
+        },
+        "intellectualProperty": {
+          "title": "III. SZELLEMI TULAJDONJOGOK",
+          "content": "Az oldaltartalom összes eleme, beleértve a design-t, a domaint, a nevet, a védjegyet, az adatbázisokat, szövegeket, rajzokat, grafikákat, a „Digital Policy Hub\" JSC szellemi tulajdona."
+        },
+        "purchases": {
+          "title": "IV. ÁRUK ÉS SZOLGÁLTATÁSOK VÁSÁRLÁSA",
+          "process": "A felhasználó vásárlást végezhet a www.avtovia.bg weboldal használatával a kívánt árukat és/vagy szolgáltatásokat a „Kosaram\"-ba helyezve.",
+          "vignetteRequirements": "Az elektronikus matrica vásárlásához szükséges minimális adatok: jármű kategóriája; a jármű nyilvántartásba vételének országa; a jármű rendszáma.",
+          "vignetteCheck": "A matrica érvényességének ellenőrzéséhez szükséges minimális adatok: a közúti jármű rendszáma."
+        },
+        "withdrawalRights": {
+          "title": "V. ELÁLLÁSI JOGATLAN ÁRUK ÉS SZOLGÁLTATÁSOK. REKLAMÁCIÓK.",
+          "timeLimit": "Amennyiben vonatkozó szolgáltatásokat nyújtanak, a Társaság a felhasználóknak lehetőséget biztosít a www.avtovia.bg-n igénybe vett szolgáltatástól való elállásra a szolgáltatás igénybevételétől számított legkésőbb 14 (tizennégy) napon belül.",
+          "noWithdrawal": "Az elállási jog nem alkalmazható a következő esetekben: megvásárolt és aktivált elektronikus matricák esetén, kifizetett útdíj-adók esetén."
+        },
+        "dataProtection": {
+          "title": "VI. SZEMÉLYES ADATOK VÉDELME",
+          "policy": "A felhasználó azzal, hogy személyes vagy egyéb adatait megadja a „DPH\" JSC-nek, elfogadja, hogy személyes adatait a „DPH\" JSC az adatvédelmi nyilatkozatnak megfelelően kezeli."
+        },
+        "payments": {
+          "title": "VIII. FIZETÉSEK",
+          "pricing": "Az elektronikus matricák, az útdíj-adók és a kompenzációs adók árai véglegesek."
+        },
+        "forcemajeure": {
+          "title": "IX. ELŐRE NEM LÁTHATÓ KÖRÜLMÉNYEK ÉS VIS MAIOR",
+          "definition": "Egyik fél sem felel szerződéses kötelezettségeinek nem teljesítéséért, ha az nem teljesítés vis maior körülményeknek tudható be."
+        },
+        "applicableLaw": {
+          "title": "X. ALKALMAZANDÓ JOG",
+          "content": "Ezek a felhasználási feltételek összhangban vannak az alkalmazandó bolgár jogszabályokkal. A „Digital Policy Hub\" JSC és a felhasználók közötti viták közös megegyezéssel, vagy ha ez lehetetlen, az illetékes bolgár bíróságok előtt rendezhetők.",
+          "effectiveDate": "Ezeket a felhasználási feltételeket a „DPH\" JSC fogadta el és 2025.08.01-től hatályos."
+        }
+      }
+    }
+  },
+  "registerCTA": {
+    "title": "Regisztráljon ingyenesen és kezelje matricáit egy helyen",
+    "subtitle": "Kövesse nyomon a lejárati dátumokat, kapjon időben emlékeztetőket és utazzon gondtalanul.",
+    "button": "Több Információ",
+    "feature1Title": "Érvényesség ellenőrzése",
+    "feature1Desc": "Meddig aktív minden matrica",
+    "feature2Title": "Emlékeztetők",
+    "feature2Desc": "Időben értesítés a lejáró matricákról",
+    "feature3Title": "Gyors megrendelés",
+    "feature3Desc": "Megújítás néhány kattintással"
+  },
+  "faq": {
+    "title": "Gyakran Ismételt Kérdések a Matricákról",
+    "subtitle": "Válaszok a bulgáriai elektronikus matricákkal kapcsolatos leggyakoribb kérdésekre",
+    "items": [
+      {
+        "question": "Mi az elektronikus matrica?",
+        "answer": "Az elektronikus matrica egy elektronikus dokumentum, amely igazolja a bolgár köztársasági úthálózat használatáért fizetett díjat. Helyettesíti a fizikai matricát és közvetlenül a jármű rendszámához kapcsolódik. Nem szükséges a szélvédőre ragasztani."
+      },
+      {
+        "question": "Hogyan vásároljak elektronikus matricát?",
+        "answer": "Elektronikus matrica vásárolható online a Közúti Infrastruktúra Ügynökség hivatalos weboldalán vagy felhatalmazott partnereken, például az Avtovia.bg-n keresztül. Csupán a jármű rendszámára, a regisztráció országára és az érvényességi időszak megválasztására van szükség."
+      },
+      {
+        "question": "Mikor aktiválódik az elektronikus matrica?",
+        "answer": "Az elektronikus matrica közvetlenül a sikeres fizetés után aktiválódik. Hétvégi és heti matricáknál az aktiválás azonnali. Havi, negyedéves és éves matricáknál 30 napon belüli kezdési dátumot választhat."
+      },
+      {
+        "question": "Hogyan ellenőrizhetem a matricám érvényességét?",
+        "answer": "Ingyenesen ellenőrizheti matricája érvényességét ellenőrzési szolgáltatásunkon keresztül. Adja meg a rendszámot, és a rendszer megmutatja, hogy van-e érvényes matricája, annak típusát és érvényességi idejét."
+      },
+      {
+        "question": "Milyen típusú matricák léteznek?",
+        "answer": "Bulgáriában 5 féle elektronikus matrica érhető el személygépkocsikhoz:\n• Hétvégi (2 nap) - 10 BGN\n• Heti (7 nap) - 15 BGN\n• Havi (30 nap) - 30 BGN\n• Negyedéves (90 nap) - 60 BGN\n• Éves (365 nap) - 97 BGN\n\nMinden matrica érvényes Bulgária összes fizetős autópályáján."
+      },
+      {
+        "question": "Mi történik, ha matrica nélkül utazom?",
+        "answer": "Ha érvényes matrica nélkül közlekedik fizetős utakon, kompenzációs díj kockázatának teszi ki magát. Az összeg a jármű típusától függően változik és jóval meghaladja a matrica árát. Javasoljuk, hogy utazás előtt mindig ellenőrizze matricája érvényességét."
+      },
+      {
+        "question": "Kaphatok matricát külföldi rendszámú járműhöz?",
+        "answer": "Igen, elektronikus matrica vásárolható minden járműhöz, a regisztráció országától függetlenül. Vásárláskor meg kell adni a regisztráció országát és a rendszámot. A matrica érvényes Bulgária összes fizetős útján."
+      },
+      {
+        "question": "Kell-e dokumentumot magammal vinnem a megvásárolt matricáról?",
+        "answer": "Nem kötelező dokumentumot vinnie az elektronikus matricáról, mivel elektronikus és a rendszámhoz kapcsolódik. A rendszer automatikusan felismeri az érvényes matrica jelenlétét kamerákon keresztül. Mégis javasoljuk, hogy mentse el az e-mailt vagy a vásárlási visszaigazolást."
+      }
+    ]
+  }
+}

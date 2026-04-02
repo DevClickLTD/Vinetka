@@ -506,7 +506,7 @@
     "weekend": {
       "title": "Викенд винета - 60 сати и 2.5 дана | Цена и информације",
       "description": "Идеална за спонтана путовања",
-      "pageDescription": "Викенд винета за 60 сати и 2.5 дана - савршена за кратке излете и спонтана путовања. Важи 60 сати од петка у подне до недеље у поноћ. Идеална за путовања од петка до недеље.",
+      "pageDescription": "Викенд винета за 2 дана - савршена за кратке излете и спонтана путовања. Важи 48 сати од тренутка активације. Идеална за путовања од петка до недеље.",
       "mainTitle": "Викенд винета",
       "subtitle": "Савршена за кратке бекства од свакодневице!",
       "duration": "2 дана",
@@ -518,7 +518,6 @@
       "feature4": "Од петка до недеље",
       "highlight": "Кратка бекства",
       "pageTitle": "Викенд винета - 2 дана | Цена и информације",
-      "pageDescription": "Викенд винета за 2 дана - савршена за кратке излете и спонтана путовања. Важи 48 сати од тренутка активације. Идеална за путовања од петка до недеље.",
       "price": "10,00 лв.",
       "priceEur": "5,11 €",
       "perfectFor": "Савршена за кратке излете и спонтана путовања",
@@ -1159,5 +1158,54 @@
         }
       }
     }
+  },
+  "registerCTA": {
+    "title": "Registrujte se besplatno i upravljajte svojim vignetama na jednom mestu",
+    "subtitle": "Pratite datume isteka, primajte pravovremene podsetike i putujte bez briga.",
+    "button": "Više Informacija",
+    "feature1Title": "Provera Važnosti",
+    "feature1Desc": "Koliko dugo je svaka vinjeta aktivna",
+    "feature2Title": "Podsetnici",
+    "feature2Desc": "Pravovremena upozorenja za vinjete kojima ističe rok",
+    "feature3Title": "Brza Narudžbina",
+    "feature3Desc": "Obnavljanje sa nekoliko klikova"
+  },
+  "faq": {
+    "title": "Česta Pitanja o Vignetama",
+    "subtitle": "Odgovori na najčešća pitanja o elektronskim vignetama u Bugarskoj",
+    "items": [
+      {
+        "question": "Šta je elektronska vinjeta?",
+        "answer": "Elektronska vinjeta je elektronski dokument koji potvrđuje plaćenu naknadu za korišćenje republičke putne mreže u Bugarskoj. Zamenjuje fizičku vinjetu i direktno se vezuje za registarski broj vozila. Nije potrebno lepiti je na vetrobran."
+      },
+      {
+        "question": "Kako da kupim elektronsku vinjetu?",
+        "answer": "Elektronska vinjeta može se kupiti online putem zvaničnog sajta Agencije za putnu infrastrukturu ili putem ovlašćenih partnera kao što je Avtovia.bg. Potrebni su samo registarski broj vozila, zemlja registracije i izbor perioda važnosti. Plaćanje se vrši bankovnom karticom ili drugim elektronskim metodama."
+      },
+      {
+        "question": "Kada se aktivira elektronska vinjeta?",
+        "answer": "Elektronska vinjeta se aktivira odmah nakon uspešnog plaćanja. Za vikenд i sedmične vinjete aktivacija je trenutna. Za mesečne, tromesečne i godišnje vinjete možete izabrati datum početka u roku od 30 dana unapred."
+      },
+      {
+        "question": "Kako mogu da proverim važnost moje vinjete?",
+        "answer": "Možete besplatno proveriti važnost vaše vinjete putem naše usluge provere. Unesite registarski broj vozila i sistem će pokazati da li imate važeću vinjetu, njen tip i period važnosti."
+      },
+      {
+        "question": "Koje vrste vinjeta postoje?",
+        "answer": "U Bugarskoj se nudi 5 vrsta elektronskih vinjeta za laka vozila:\n• Vikend (2 dana) - 10 BGN\n• Sedmična (7 dana) - 15 BGN\n• Mesečna (30 dana) - 30 BGN\n• Tromesečna (90 dana) - 60 BGN\n• Godišnja (365 dana) - 97 BGN\n\nSvaka vinjeta pokriva sve naplatne autoputeve u Bugarskoj."
+      },
+      {
+        "question": "Šta se dešava ako putujem bez vinjete?",
+        "answer": "Ako putujete po naplatnim putevima bez važeće vinjete, rizikujete da dobijete kompenzacionu naknadu. Njen iznos zavisi od tipa vozila i znatno je viši od cene same vinjete. Preporučujemo uvek da proverite važnost vinjete pre putovanja."
+      },
+      {
+        "question": "Mogu li da dobijem vinjetu za vozilo sa stranom registracijom?",
+        "answer": "Da, elektronska vinjeta može se kupiti za sva vozila, bez obzira na zemlju registracije. Prilikom kupovine morate navesti zemlju registracije i registarski broj. Vinjeta važi za sve naplatne puteve u Bugarskoj."
+      },
+      {
+        "question": "Moram li da nosim dokument o kupljnoj vinjeti?",
+        "answer": "Nije obavezno nositi dokument za elektronsku vinjetu jer je elektronska i vezana za registarski broj. Sistem automatski prepoznaje prisustvo važeće vinjete putem kamera. Ipak preporučujemo da sačuvate email ili potvrdu kupovine za svaki slučaj."
+      }
+    ]
   }
 }
