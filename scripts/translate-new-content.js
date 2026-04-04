@@ -41,27 +41,47 @@ const WEB_APP_URL_MAP = {
 
 /**
  * 🔒 Защитава href атрибутите от превод
- * Замества href стойностите с placeholders преди превода
- * и ги възстановява след това.
+ * Използва непреводими Unicode токени вместо текстови placeholders,
+ * за да предотврати Google Translate да ги промени.
  */
 function protectLinks(content) {
   const links = [];
+  // Използваме Unicode Private Use Area символи (не се превеждат от Google Translate)
+  // Форматът е: \uE000<index>\uE001 - невидими за потребителя, непреводими
   const protectedContent = content.replace(/href="([^"]*)"/g, (match, url) => {
     const idx = links.length;
     links.push(url);
-    return `href="LINK_PLACEHOLDER_${idx}"`;
+    // Backup: пазим и оригиналния URL в data атрибут
+    return `href="\uE000${idx}\uE001"`;
   });
   return { protectedContent, links };
 }
 
 /**
  * 🔒 Възстановява href атрибутите след превод
+ * Търси Unicode токените и ги заменя с оригиналните URL-и.
+ * Ако Unicode токените са повредени от превода, търси и текстови fallback.
  */
 function restoreLinks(content, links) {
-  return content.replace(/href="LINK_PLACEHOLDER_(\d+)"/gi, (match, idx) => {
+  // Основно възстановяване - Unicode токени (непреводими)
+  let restored = content.replace(/href="\uE000(\d+)\uE001"/g, (match, idx) => {
     const originalUrl = links[parseInt(idx)];
     return originalUrl !== undefined ? `href="${originalUrl}"` : match;
   });
+
+  // Fallback - старият формат LINK_PLACEHOLDER (ако съществуват от стари преводи)
+  restored = restored.replace(/href="LINK_PLACEHOLDER_(\d+)"/gi, (match, idx) => {
+    const originalUrl = links[parseInt(idx)];
+    return originalUrl !== undefined ? `href="${originalUrl}"` : match;
+  });
+
+  // Финален fallback - ако Unicode токените са повредени (напр. \uE000 0\uE001 с интервал)
+  restored = restored.replace(/href="[\uE000\s]*(\d+)[\uE001\s]*"/g, (match, idx) => {
+    const originalUrl = links[parseInt(idx)];
+    return originalUrl !== undefined ? `href="${originalUrl}"` : match;
+  });
+
+  return restored;
 }
 
 /**

@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
 import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
-import { getTranslatedContent, hasTranslation } from '../../../../lib/wordpress-helpers';
+import { getTranslatedContent, hasTranslation, injectImageAlts } from '../../../../lib/wordpress-helpers';
 import Script from "next/script";
 
 // ISR revalidate на всеки 5 минути за по-бързи обновления
@@ -12,6 +12,12 @@ export const revalidate = 300;
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
+
+  // Защита срещу placeholder URL-и от счупени преводи
+  if (slug.includes('LINK_PLACEHOLDER') || slug.includes('LINK_YER') || slug.includes('__HREF')) {
+    return { robots: { index: false, follow: false } };
+  }
+
   const post = await getPostBySlug(slug);
 
   if (!post || post.length === 0) {
@@ -69,6 +75,11 @@ export default async function PostPage({ params }) {
   try {
     const { slug, locale } = await params;
 
+    // Placeholder URL-и от счупени преводи → 404 веднага
+    if (slug.includes('LINK_PLACEHOLDER') || slug.includes('LINK_YER') || slug.includes('__HREF')) {
+      notFound();
+    }
+
     const post = await getPostBySlug(slug);
 
     if (!post || post.length === 0) {
@@ -78,7 +89,9 @@ export default async function PostPage({ params }) {
     // Get translated content
     const translatedContent = getTranslatedContent(slug, locale, 'post');
     const title = translatedContent?.title || post[0].title.rendered;
-    const content = translatedContent?.content || post[0].content.rendered;
+    const rawContent = translatedContent?.content || post[0].content.rendered;
+    // Inject alt text to images missing it (SEO fix)
+    const content = injectImageAlts(rawContent, title, locale);
 
     const meta = post[0].yoast_head_json;
     const ogImageObject =

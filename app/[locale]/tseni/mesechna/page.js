@@ -45,7 +45,9 @@ export async function generateMetadata({ params }) {
   return {
     ...metadata,
     title: {
-      absolute: `${t('title')} | avtovia bg`,
+      absolute: locale === 'bg'
+        ? `${t('title')} за България | avtovia bg`
+        : `${t('title')} | avtovia bg`,
     },
     robots: {
       index: true,

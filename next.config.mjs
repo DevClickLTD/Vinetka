@@ -5,8 +5,7 @@ const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   compress: true,
-  skipTrailingSlashRedirect: true, // Избягваме допълнителни trailing slash редиректи
-  trailingSlash: false, // Без trailing slashes
+  trailingSlash: false, // Без trailing slashes - Next.js автоматично ще редиректира /locale/ → /locale
   async redirects() {
     return [
       // Blog redirect: proverka-na-vinetka -> validnost-na-vinetka

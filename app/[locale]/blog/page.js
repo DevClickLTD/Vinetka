@@ -43,7 +43,7 @@ export async function generateMetadata({ params, searchParams }) {
     : baseDescription;
   
   const metadata = {
-    title: { absolute: `Блог | avtovia bg` },
+    title: { absolute: currentPage > 1 ? `${baseTitle} - ${pageText} ${currentPage}` : `${baseTitle} | avtovia bg` },
     description,
     alternates: {
       canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,
@@ -54,15 +54,13 @@ export async function generateMetadata({ params, searchParams }) {
     },
   };
   
-  // Add hreflang only for locales that have translations
-  if (hasTranslations && locale !== 'bg') {
-    const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
-    supportedLocales.forEach(lang => {
-      if (hasTranslatedPosts(lang)) {
-        metadata.alternates.languages[lang] = `${baseUrl}/${lang}/blog${pageSuffix}`;
-      }
-    });
-  }
+  // Add hreflang for ALL locales that have translated posts (regardless of current locale)
+  const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
+  supportedLocales.forEach(lang => {
+    if (hasTranslatedPosts(lang)) {
+      metadata.alternates.languages[lang] = `${baseUrl}/${lang}/blog${pageSuffix}`;
+    }
+  });
   
   // Add prev/next links for pagination
   if (currentPage > 1) {
