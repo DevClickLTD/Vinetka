@@ -227,9 +227,25 @@ export default async function DailyVignette({ params }) {
               <p className="text-gray-700 leading-relaxed text-lg">
                 {t('description1')}
               </p>
-              
               <p className="text-gray-700 leading-relaxed">
-                {t('description2')}
+                {t('description2Before')}
+                <Link href="/tseni/sedmichna" className="text-purple-700 hover:underline font-medium">{t('description2LinkText')}</Link>
+                {t('description2After')}
+              </p>
+              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                {t('contentH2')}
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                {t('description3')}
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                {t('description4')}
+              </p>
+              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                {t('contentH2b')}
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                {t('description5')}
               </p>
             </div>
           </div>

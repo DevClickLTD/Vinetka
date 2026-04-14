@@ -244,9 +244,22 @@ export default async function MesechnaVignette({ params }) {
               <p className="text-gray-700 leading-relaxed text-lg">
                 {t('description1')}
               </p>
-              
               <p className="text-gray-700 leading-relaxed">
                 {t('description2')}
+              </p>
+              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
+                {t('contentH2')}
+              </h2>
+              <p className="text-gray-700 leading-relaxed">
+                {t('description3Before')}
+                <Link href="/tseni/sedmichna" className="text-purple-700 hover:underline font-medium">{t('description3LinkText')}</Link>
+                {t('description3After')}
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                {t('description4')}
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                {t('description5')}
               </p>
             </div>
           </div>
