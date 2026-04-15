@@ -20,7 +20,8 @@
     "quarterlyTitle": "Negyedéves matrica",
     "annualTitle": "Éves matrica",
     "forYear": "évre",
-    "viewAllPrices": "Összes ár megtekintése"
+    "viewAllPrices": "Összes ár megtekintése",
+    "myVignettes": "Matricáim"
   },
   "footer": {
     "sections": {
@@ -1207,5 +1208,31 @@
         "answer": "Nem kötelező dokumentumot vinnie az elektronikus matricáról, mivel elektronikus és a rendszámhoz kapcsolódik. A rendszer automatikusan felismeri az érvényes matrica jelenlétét kamerákon keresztül. Mégis javasoljuk, hogy mentse el az e-mailt vagy a vásárlási visszaigazolást."
       }
     ]
+  },
+  "myVignettesPage": {
+    "title": "Matricáim - Kezelje és Ellenőrizze az Érvényességet Online",
+    "description": "Személyes profiljával teljes ellenőrzéssel rendelkezik elektronikus matricái felett. Kövesse nyomon a lejáró matricákat, kezelje az aktív járműveket matricákkal.",
+    "heroTitle": "Matricáim - Kezelje és Ellenőrizze az Érvényességet Online",
+    "heroSubtitle": "Személyes profiljával weboldalunkon teljes ellenőrzéssel rendelkezik elektronikus matricái felett bármikor és bármilyen eszközről. Kövesse nyomon a lejáró matricákat, kezelje az aktív járműveket matricákkal.",
+    "benefitsTitle": "Mit kap az ingyenes regisztrációval?",
+    "feature1Title": "Érvényesség Ellenőrzése",
+    "feature1Desc": "meddig aktív mindegyik matrica",
+    "feature2Title": "Vásárlási Előzmények",
+    "feature2Desc": "minden matrica egy helyen",
+    "feature3Title": "Lejárati Emlékeztetők",
+    "feature3Desc": "ne hagyja ki a határidőt és kerülje el a bírságokat",
+    "feature4Title": "Gyors Megrendelés",
+    "feature4Desc": "újítsa meg a lejáró matricát időben néhány kattintással",
+    "feature5Title": "Hozzáférés Telefonról és Számítógépről",
+    "feature5Desc": "kényelmes, gyors, bárhol",
+    "howToCheckTitle": "Hogyan ellenőrizze a matricáját?",
+    "step1Title": "Hozzon létre ingyenes profilt vagy jelentkezzen be fiókjába",
+    "step1Desc": "itt:",
+    "step2Title": "Tekintse meg az összes aktív és lejárt matricát pontos dátumokkal",
+    "step2Desc": "A rendszer automatikusan ellenőrzi és megjeleníti az összes matricájának állapotát valós időben",
+    "ctaTitle": "Készen áll a matricák kezelésére?",
+    "ctaSubtitle": "Regisztráljon ingyenesen és vegye át a teljes ellenőrzést az összes matricája felett egy helyen.",
+    "registerButton": "Regisztráljon Ingyenesen Most",
+    "loginText": "Ha van regisztrációja, jelentkezzen be itt:"
   }
 }

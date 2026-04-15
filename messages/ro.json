@@ -20,7 +20,8 @@
     "quarterlyTitle": "Vinieta Trimestrială",
     "annualTitle": "Vinieta Anuală",
     "forYear": "pentru",
-    "viewAllPrices": "Toate Prețurile"
+    "viewAllPrices": "Toate Prețurile",
+    "myVignettes": "Vignetele Mele"
   },
   "footer": {
     "sections": {
@@ -1207,5 +1208,31 @@
         "answer": "Nu este obligatoriu să purtați un document pentru vigneta electronică deoarece este electronică și legată de numărul de înmatriculare. Sistemul recunoaște automat prezența unei vignete valabile prin camere. Totuși, recomandăm să salvați emailul sau confirmarea achiziției pentru orice eventualitate."
       }
     ]
+  },
+  "myVignettesPage": {
+    "title": "Vignetele Mele - Gestionează și Verifică Valabilitatea Online",
+    "description": "Cu profilul tău personal ai control complet asupra vignetelor tale electronice. Urmărește vignetele care expiră, gestionează vehiculele active cu vignete.",
+    "heroTitle": "Vignetele Mele - Gestionează și Verifică Valabilitatea Online",
+    "heroSubtitle": "Cu profilul tău personal pe site-ul nostru ai control complet asupra vignetelor tale electronice oricând și de pe orice dispozitiv. Urmărește vignetele care expiră, gestionează vehiculele active cu vignete.",
+    "benefitsTitle": "Ce primești cu înregistrarea gratuită?",
+    "feature1Title": "Verificare Valabilitate",
+    "feature1Desc": "până când este activă fiecare vignetă",
+    "feature2Title": "Istoric Achiziții",
+    "feature2Desc": "toate vignetele într-un singur loc",
+    "feature3Title": "Reamintiri de Expirare",
+    "feature3Desc": "nu rata termenul și evită amenzile",
+    "feature4Title": "Comandă Rapidă",
+    "feature4Desc": "reînnoiește vigneta care expiră la timp cu doar câteva clicuri",
+    "feature5Title": "Acces de pe Telefon și Computer",
+    "feature5Desc": "convenabil, rapid, oriunde",
+    "howToCheckTitle": "Cum să verifici vigneta ta?",
+    "step1Title": "Creează un profil gratuit sau conectează-te la contul tău",
+    "step1Desc": "aici:",
+    "step2Title": "Vezi toate vignetele active și expirate cu date exacte",
+    "step2Desc": "Sistemul verifică și afișează automat statusul tuturor vignetelor tale în timp real",
+    "ctaTitle": "Gata să gestionezi vignetele tale?",
+    "ctaSubtitle": "Înregistrează-te gratuit și preia controlul complet asupra tuturor vignetelor tale într-un singur loc.",
+    "registerButton": "Înregistrează-te Gratuit Acum",
+    "loginText": "Dacă ai o înregistrare, conectează-te aici:"
   }
 }

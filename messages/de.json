@@ -20,7 +20,8 @@
     "quarterlyTitle": "Dreimonatsvignette",
     "annualTitle": "Jahresvignette",
     "forYear": "für",
-    "viewAllPrices": "Alle Preise anzeigen"
+    "viewAllPrices": "Alle Preise anzeigen",
+    "myVignettes": "Meine Vignetten"
   },
   "footer": {
     "sections": {
@@ -1207,5 +1208,31 @@
         "answer": "Sie müssen kein Dokument für die elektronische Vignette mitführen, da sie elektronisch ist und mit dem Kennzeichen verknüpft ist. Das System erkennt automatisch das Vorhandensein einer gültigen Vignette durch Kameras. Wir empfehlen jedoch, die E-Mail oder die Kaufbestätigung zur Sicherheit zu speichern."
       }
     ]
+  },
+  "myVignettesPage": {
+    "title": "Meine Vignetten - Verwalten und Gültigkeit online prüfen",
+    "description": "Mit Ihrem persönlichen Profil haben Sie die volle Kontrolle über Ihre elektronischen Vignetten. Verfolgen Sie ablaufende Vignetten, verwalten Sie aktive Fahrzeuge mit Vignetten.",
+    "heroTitle": "Meine Vignetten - Verwalten und Gültigkeit online prüfen",
+    "heroSubtitle": "Mit Ihrem persönlichen Profil auf unserer Website haben Sie jederzeit und von jedem Gerät aus die volle Kontrolle über Ihre elektronischen Vignetten. Verfolgen Sie ablaufende Vignetten, verwalten Sie aktive Fahrzeuge mit Vignetten.",
+    "benefitsTitle": "Was erhalten Sie mit der kostenlosen Registrierung?",
+    "feature1Title": "Gültigkeitsprüfung",
+    "feature1Desc": "bis wann jede Vignette aktiv ist",
+    "feature2Title": "Kaufhistorie",
+    "feature2Desc": "alle Vignetten an einem Ort",
+    "feature3Title": "Ablauferinnerungen",
+    "feature3Desc": "verpassen Sie nicht die Frist und vermeiden Sie Bußgelder",
+    "feature4Title": "Schnelle Bestellung",
+    "feature4Desc": "erneuern Sie ablaufende Vignette rechtzeitig mit nur wenigen Klicks",
+    "feature5Title": "Zugriff von Telefon und Computer",
+    "feature5Desc": "bequem, schnell, überall",
+    "howToCheckTitle": "Wie überprüfen Sie Ihre Vignette?",
+    "step1Title": "Erstellen Sie ein kostenloses Profil oder melden Sie sich bei Ihrem Konto an",
+    "step1Desc": "hier:",
+    "step2Title": "Sehen Sie alle aktiven und abgelaufenen Vignetten mit genauen Daten",
+    "step2Desc": "Das System prüft und zeigt automatisch den Status all Ihrer Vignetten in Echtzeit an",
+    "ctaTitle": "Bereit, Ihre Vignetten zu verwalten?",
+    "ctaSubtitle": "Registrieren Sie sich kostenlos und übernehmen Sie die volle Kontrolle über alle Ihre Vignetten an einem Ort.",
+    "registerButton": "Jetzt kostenlos registrieren",
+    "loginText": "Wenn Sie bereits registriert sind, melden Sie sich hier an:"
   }
 }

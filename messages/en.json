@@ -13,6 +13,7 @@
     "vignetteChecker": "Vignette Check",
     "tollTax": "Toll Tax",
     "buyVignette": "Buy Vignette",
+    "myVignettes": "My Vignettes",
     "dailyTitle": "Daily Vignette",
     "weekendTitle": "Weekend Vignette",
     "weeklyTitle": "Weekly Vignette",
@@ -1207,5 +1208,31 @@
         "answer": "You don't need to carry a document for the electronic vignette as it is electronic and linked to the vehicle's registration number. The system automatically recognizes the presence of a valid vignette through cameras. However, we recommend saving the email or purchase confirmation just in case."
       }
     ]
+  },
+  "myVignettesPage": {
+    "title": "My Vignettes - Manage and Check Validity Online",
+    "description": "With your personal profile, you have full control over your electronic vignettes. Track expiring vignettes, manage active vehicles with vignettes.",
+    "heroTitle": "My Vignettes - Manage and Check Validity Online",
+    "heroSubtitle": "With your personal profile on our site, you have full control over your electronic vignettes anytime and from any device. Track expiring vignettes, manage active vehicles with vignettes.",
+    "benefitsTitle": "What do you get with free registration?",
+    "feature1Title": "Validity Check",
+    "feature1Desc": "when each vignette is active until",
+    "feature2Title": "Purchase History",
+    "feature2Desc": "all vignettes in one place",
+    "feature3Title": "Expiration Reminders",
+    "feature3Desc": "don't miss the deadline and avoid fines",
+    "feature4Title": "Quick Order",
+    "feature4Desc": "renew expiring vignette on time with just a few clicks",
+    "feature5Title": "Access from Phone and Computer",
+    "feature5Desc": "convenient, fast, anywhere",
+    "howToCheckTitle": "How to check your vignette?",
+    "step1Title": "Create a free profile or log in to your account",
+    "step1Desc": "here:",
+    "step2Title": "See all active and expired vignettes with exact dates",
+    "step2Desc": "The system automatically checks and displays the status of all your vignettes in real time",
+    "ctaTitle": "Ready to manage your vignettes?",
+    "ctaSubtitle": "Register for free and take full control over all your vignettes in one place.",
+    "registerButton": "Register for Free Now",
+    "loginText": "If you have a registration, log in here:"
   }
 }

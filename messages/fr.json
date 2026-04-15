@@ -20,7 +20,8 @@
     "quarterlyTitle": "Vignette trimestrielle",
     "annualTitle": "Vignette annuelle",
     "forYear": "pour",
-    "viewAllPrices": "Voir tous les tarifs"
+    "viewAllPrices": "Voir tous les tarifs",
+    "myVignettes": "Mes Vignettes"
   },
   "footer": {
     "sections": {
@@ -1207,5 +1208,31 @@
         "answer": "Il n'est pas obligatoire de porter un document pour la vignette électronique car elle est électronique et liée au numéro d'immatriculation. Le système reconnaît automatiquement la présence d'une vignette valide via des caméras. Cependant, nous vous recommandons de sauvegarder l'email ou la confirmation d'achat par précaution."
       }
     ]
+  },
+  "myVignettesPage": {
+    "title": "Mes Vignettes - Gérer et Vérifier la Validité en Ligne",
+    "description": "Avec votre profil personnel, vous avez un contrôle total sur vos vignettes électroniques. Suivez les vignettes qui expirent, gérez les véhicules actifs avec des vignettes.",
+    "heroTitle": "Mes Vignettes - Gérer et Vérifier la Validité en Ligne",
+    "heroSubtitle": "Avec votre profil personnel sur notre site, vous avez un contrôle total sur vos vignettes électroniques à tout moment et depuis n'importe quel appareil. Suivez les vignettes qui expirent, gérez les véhicules actifs avec des vignettes.",
+    "benefitsTitle": "Qu'obtenez-vous avec l'inscription gratuite?",
+    "feature1Title": "Vérification de Validité",
+    "feature1Desc": "jusqu'à quand chaque vignette est active",
+    "feature2Title": "Historique des Achats",
+    "feature2Desc": "toutes les vignettes en un seul endroit",
+    "feature3Title": "Rappels d'Expiration",
+    "feature3Desc": "ne manquez pas la date limite et évitez les amendes",
+    "feature4Title": "Commande Rapide",
+    "feature4Desc": "renouvelez la vignette qui expire à temps en quelques clics seulement",
+    "feature5Title": "Accès depuis Téléphone et Ordinateur",
+    "feature5Desc": "pratique, rapide, partout",
+    "howToCheckTitle": "Comment vérifier votre vignette?",
+    "step1Title": "Créez un profil gratuit ou connectez-vous à votre compte",
+    "step1Desc": "ici:",
+    "step2Title": "Voir toutes les vignettes actives et expirées avec des dates exactes",
+    "step2Desc": "Le système vérifie et affiche automatiquement le statut de toutes vos vignettes en temps réel",
+    "ctaTitle": "Prêt à gérer vos vignettes?",
+    "ctaSubtitle": "Inscrivez-vous gratuitement et prenez le contrôle total de toutes vos vignettes en un seul endroit.",
+    "registerButton": "Inscrivez-vous Gratuitement Maintenant",
+    "loginText": "Si vous avez une inscription, connectez-vous ici:"
   }
 }

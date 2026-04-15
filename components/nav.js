@@ -33,7 +33,7 @@ export default function Navigation() {
   
   const pages = [
     { name: t('home'), href: "/" },
-    { name: 'Моите винетки', href: "/moite-vinetki" },
+    { name: t('myVignettes'), href: "/moite-vinetki" },
     { name: t('tollTax'), href: "/toll-taksi" },
     { name: t('blog'), href: "/blog" },
     { name: t('contact'), href: "/contact" },
