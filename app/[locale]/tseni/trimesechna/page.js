@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Script from "next/script";
 import { Link } from "../../../../lib/navigation";
+import QuarterlyVignetteExpandable from '../../../../components/QuarterlyVignetteExpandable';
 import { 
   FaCalendar, 
   FaCheckCircle, 
@@ -260,30 +261,11 @@ export default async function TrimesechnaVignette({ params }) {
           <div className="mx-auto max-w-3xl">
             <div className="prose prose-lg prose-purple mx-auto">
               <p className="text-gray-700 leading-relaxed text-lg">
-                {t('description1Before')}
-                <Link href="/tseni/godishna" className="text-purple-700 hover:underline font-medium">{t('description1LinkText')}</Link>
-                {t('description1After')}
+                {t('description1')}
               </p>
+              
               <p className="text-gray-700 leading-relaxed">
                 {t('description2')}
-              </p>
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                {t('contentH2')}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description3')}
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description4')}
-              </p>
-              <h3 className="text-xl font-bold text-gray-900 mt-8 mb-4">
-                {t('contentH3')}
-              </h3>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description5')}
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description6')}
               </p>
             </div>
           </div>
@@ -398,6 +380,9 @@ export default async function TrimesechnaVignette({ params }) {
           </div>
         </div>
       </div>
+
+      {/* Quarterly Vignette Expandable Section */}
+      <QuarterlyVignetteExpandable />
 
       {/* Important Info Section */}
       <div className="bg-purple-50 py-16 sm:py-24">

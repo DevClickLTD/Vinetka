@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Script from "next/script";
 import { Link } from "../../../../lib/navigation";
+import DailyVignetteExpandable from '../../../../components/DailyVignetteExpandable';
 import { 
   FaCalendarDay, 
   FaCheckCircle, 
@@ -227,25 +228,9 @@ export default async function DailyVignette({ params }) {
               <p className="text-gray-700 leading-relaxed text-lg">
                 {t('description1')}
               </p>
+              
               <p className="text-gray-700 leading-relaxed">
-                {t('description2Before')}
-                <Link href="/tseni/sedmichna" className="text-purple-700 hover:underline font-medium">{t('description2LinkText')}</Link>
-                {t('description2After')}
-              </p>
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                {t('contentH2')}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description3')}
-              </p>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description4')}
-              </p>
-              <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-                {t('contentH2b')}
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                {t('description5')}
+                {t('description2')}
               </p>
             </div>
           </div>
@@ -309,6 +294,9 @@ export default async function DailyVignette({ params }) {
           </div>
         </div>
       </div>
+
+      {/* Daily Vignette Expandable Section */}
+      <DailyVignetteExpandable />
 
       {/* Important Info Section */}
       <div className="bg-purple-50 py-16 sm:py-24">
