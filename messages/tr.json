@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vinyet Online - Elektronik Vinyet Bilgisi",
-    "description": "Vinyet Online - Elektronik Vinyet Bilgisi",
+    "description": "Vinyet Online - Güvenli ödemeyle Bulgaristan için elektronik vinyet satın alın",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -78,6 +78,18 @@
       "title": "Vinyetler Online",
       "subtitle": "3.5 tona kadar binek araçlar için elektronik vinyetler"
     },
+    "expandable": {
+      "title": "Online vinyet satın alma",
+      "intro": "Online vinyet satın almak, ulusal yol ağında huzurlu bir yolculuk sağlamanın hızlı, uygun ve güvenli bir yoludur. Fiziksel satış noktaları aramak için zaman harcamak yerine, birkaç tıklamayla uygun vinyet türünü seçebilirsiniz.",
+      "paragraph1": "Avtovia.bg platformu üzerinden mevcut tüm seçenekler hakkında net bilgi alırsınız – <weekendLink>hafta sonu</weekendLink>, <weeklyLink>haftalık</weeklyLink>, <monthlyLink>aylık</monthlyLink>, <quarterlyLink>üç aylık</quarterlyLink> veya <annualLink>yıllık vinyet</annualLink>. Ödeme güvenli bir şekilde kartla yapılır ve başarılı bir işlemin hemen ardından e-posta ile onay alırsınız.",
+      "imgAlt1": "Bulgaristan için online elektronik vinyet satın alma",
+      "sectionTitle": "Bir dakikada elektronik vinyet",
+      "paragraph2": "Elektronik vinyet, etiket ve kağıt belge ihtiyacını ortadan kaldırır – her şey dijital olarak depolanır ve aracın plakasına bağlıdır.",
+      "imgAlt2": "Online elektronik vinyet - hızlı ve kolay satın alın",
+      "paragraph3": "Avtovia.bg ile seyahat planlaması her zamankinden daha kolay hale gelir. Sık seyahat ediyor olun veya ara sıra, online vinyet satın almak size zaman ve emek tasarrufu sağlar.",
+      "more": "Daha fazla oku",
+      "less": "Daha az göster"
+    },
     "expandableInfoRow": {
       "title": "Bulgaristan için vinyet – bilmeniz gereken her şey",
       "less": "Daha az",
@@ -95,6 +107,14 @@
     "title": "İletişim",
     "pageTitle": "İletişim ",
     "pageDescription": "Bizimle iletişim formumuz aracılığıyla iletişime geçin veya iletişim bilgilerimizi bulun.",
+    "expandable": {
+      "title": "Bize nasıl ulaşabilirsiniz?",
+      "intro": "Bizimle iletişime geçmek için web sitemizdeki iletişim formunu kullanabilir, gerekli alanları bilgileriniz ve sorunuzla doldurabilirsiniz. Size en kısa sürede geri döneceğiz.",
+      "paragraph1": "Doğrudan iletişimi tercih ediyorsanız, bize <emailLink>hello@avtovia.bg</emailLink> adresinden e-posta gönderebilirsiniz. Ekibimiz hafta içi 9:00-17:00 saatleri arasında ulaşılabilir durumdadır.",
+      "paragraph2": "Her müşteriyi değer veriyoruz ve en iyi ve en güvenli hizmeti sunmaya çalışıyoruz!",
+      "more": "Daha fazla oku",
+      "less": "Daha az göster"
+    },
     "officeType": "Kurumsal Ofis",
     "address": "Adres",
     "email": "E-posta",
@@ -146,6 +166,19 @@
     "pageTitle": "Vinyet Fiyatları",
     "pageSubtitle": "İhtiyacınıza en uygun vinyet türünü seçin",
     "weekly": {
+      "expandable": {
+        "title": "Haftalık vinyet online",
+        "intro": "Haftalık vinyet, Bulgaristan'ın ücretli yol ağını kısa süre kullanan sürücüler için pratik bir çözümdür. Seçilen tarihten itibaren 7 ardışık gün boyunca geçerlidir.",
+        "paragraph1": "Kısa yolculuklar, tatiller ve iş seyahatleri için idealdir.",
+        "heading1": "Haftalık vinyetin avantajları",
+        "paragraph2": "Esneklik ve kolay satın alma. Online olarak dakikalar içinde satın alınabilir, anında veya gelecekteki bir tarihle aktive edilebilir.",
+        "imgAlt1": "Bulgaristan için haftalık vinyet online - 7 günlük satın alın",
+        "paragraph3": "<vignetteCheckerLink>Geçerlilik kontrolü</vignetteCheckerLink> de hızlıdır. Plaka numarasını online sisteme girin.",
+        "imgAlt2": "Bulgaristan için elektronik haftalık vinyet - fiyat ve 7 günlük geçerlilik",
+        "paragraph4": "Haftalık vinyet, kısa yolculuklar için mükemmel bir seçimdir.",
+        "more": "Daha fazla oku",
+        "less": "Daha az göster"
+      },
       "title": "Haftalık Vinyet",
       "subtitle": "Kısa tatiller ve iş seyahatleri için ideal çözüm!",
       "duration": "7 gün",
@@ -214,6 +247,19 @@
       }
     },
     "monthly": {
+      "expandable": {
+        "title": "Aylık vinyet online",
+        "intro": "Aylık vinyet, Bulgaristan'da en popüler seçeneklerden biridir. Bir ay boyunca seyahat için fiyat ve süre arasında mükemmel bir denge sunar.",
+        "paragraph1": "Belirli bir ay boyunca arabayı aktif olarak kullananlar için idealdir.",
+        "heading1": "En çok aranan elektronik vinyetlerden biri",
+        "paragraph2": "Esneklik temel avantajdır. <weeklyLink>Haftalık vinyetle</weeklyLink> karşılaştırıldığında, sık kullanım için daha iyi değer sunar.",
+        "imgAlt1": "Bulgaristan için aylık vinyet online - 1 ay için satın alın",
+        "paragraph3": "Satın alma tamamen online gerçekleşir ve yalnızca 1 dakika sürer.",
+        "imgAlt2": "Bulgaristan için elektronik aylık vinyet - fiyat ve geçerlilik",
+        "paragraph4": "Aylık vinyet, rahatlık ve esneklik arayan sürücüler için pratik bir seçimdir.",
+        "more": "Daha fazla oku",
+        "less": "Daha az göster"
+      },
       "title": "Aylık vinyet",
       "subtitle": "Düzenli yolculuklar için en popüler seçim!",
       "duration": "30 gün",
@@ -284,6 +330,21 @@
       }
     },
     "quarterly": {
+      "expandable": {
+        "title": "Üç aylık vinyet online",
+        "intro": "Üç aylık vinyet, Bulgaristan'ın ücretli yol ağını düzenli olarak kullanan ancak tüm yıl boyunca değil sürücüler için mükemmel bir seçimdir. 3 ardışık ay boyunca geçerlidir. Kısa vadeli ve <annualLink>yıllık vinyetler</annualLink> arasında dengeli bir çözümdür.",
+        "paragraph1": "Özellikle mevsimlik seyahat ve düzenli iş seyahatleri için uygundur.",
+        "heading1": "3 aylık vinyetin avantajları",
+        "paragraph2": "Birden fazla kısa vadeli vinyet satın almaya kıyasla maliyet etkinliği temel avantajdır.",
+        "paragraph3": "Satın alma hızlı ve kolaydır. Anında veya gelecekteki bir tarihle aktive edilebilir.",
+        "imgAlt1": "Bulgaristan için üç aylık vinyet online - 3 aylık fiyat",
+        "heading2": "Geçerlilik kontrolü tamamen online yapılır",
+        "paragraph4": "Güncel durumu görmek için doğrulama sistemine plaka numarasını girin.",
+        "imgAlt2": "Bulgaristan için elektronik üç aylık vinyet - 3 ay için online satın alın",
+        "paragraph5": "Üç aylık vinyet, rahat uzun süreli seyahat için pratik bir çözümdür.",
+        "more": "Daha fazla oku",
+        "less": "Daha az göster"
+      },
       "title": "Üç aylık vinyet",
       "subtitle": "Tüm sezon boyunca huzur sağlayın!",
       "duration": "3 ay",
@@ -368,6 +429,23 @@
       }
     },
     "annual": {
+      "expandable": {
+        "title": "Neden aylık yerine yıllık vinyet seçmelisiniz?",
+        "intro": "Yıllık vinyet, Bulgar yollarında sık seyahat eden ve zaman ve para tasarrufu yapmak isteyenler için ideal seçimdir.",
+        "heading1": "Para tasarrufu",
+        "paragraph1": "Yıllık vinyet, uzun vadede <monthlyLink>aylık vinyetten</monthlyLink> daha ekonomiktir.",
+        "heading2": "Yıllık vinyetin rahatlığı",
+        "paragraph2": "Yıllık vinyetle, aylık yenileme konusunda endişelenmenize gerek yoktur.",
+        "imgAlt1": "Bulgaristan için yıllık vinyet online - elektronik satın alın",
+        "heading3": "Düzenli seyahatler için uygun",
+        "paragraph3": "Bulgar yollarında sık seyahat ediyorsanız, yıllık vinyet daha pratiktir.",
+        "heading4": "Kolay satın alma",
+        "paragraph4": "Avtovia.bg gibi platformlarla, yıllık vinyet satın almak online olarak hızlı ve basittir.",
+        "imgAlt2": "Bulgaristan için elektronik yıllık vinyet - fiyat ve koşullar",
+        "paragraph5": "Yıllık vinyet seçerek, tüm yıl boyunca para ve zaman tasarrufu yaparsınız.",
+        "more": "Daha fazla oku",
+        "less": "Daha az göster"
+      },
       "title": "Yıllık vinyet",
       "subtitle": "Düzenli yolculuk yapanlar için en avantajlı çözüm!",
       "duration": "12 ay",
@@ -460,6 +538,20 @@
       "prices": "Fiyatlar"
     },
     "weekend": {
+      "expandable": {
+        "title": "Hafta sonu vinyetinin avantajları",
+        "intro": "Hafta sonu vinyeti, yolları yalnızca hafta sonları kullanan sürücüler için rahatlık ve ekonomi sunar. <monthlyLink>Aylık vinyetten</monthlyLink> daha ucuzdur.",
+        "heading1": "Uygun fiyat ve tasarruf",
+        "paragraph1": "Aylık vinyetten daha ucuz, nadiren seyahat edenler için idealdir. Cuma 12:00'dan Pazar 23:59'a kadar geçerlidir.",
+        "heading2": "Kolay ve hızlı satın alma",
+        "paragraph2": "Uzun vadeli taahhüt olmadan online veya benzin istasyonlarından satın alınabilir.",
+        "imgAlt1": "Hafta sonu vinyeti online - Bulgaristan'da Cuma, Cumartesi ve Pazar için satın alın",
+        "heading3": "Esneklik ve rahatlık",
+        "paragraph3": "Hafta sonu vinyeti, yolların yalnızca gerektiğinde kullanılmasına olanak tanır.",
+        "imgAlt2": "Bulgaristan için elektronik hafta sonu vinyeti - fiyat ve koşullar",
+        "more": "Daha fazla oku",
+        "less": "Daha az göster"
+      },
       "title": "Hafta Sonu Vinyeti - 60 saat ve 2.5 gün | Fiyat ve Bilgi",
       "description": "Ani yolculuklar için ideal",
       "pageDescription": "2 günlük hafta sonu vinyeti - kısa geziler ve ani yolculuklar için mükemmel. Aktivasyondan itibaren 48 saat geçerlidir. Cuma'dan Pazar'a yolculuklar için idealdir.",
@@ -564,6 +656,20 @@
       }
     },
     "daily": {
+      "expandable": {
+        "title": "Günlük vinyet online",
+        "intro": "Günlük vinyet online, Bulgaristan'ın ücretli yol ağını yalnızca tek bir gün kullanan sürücüler için ideal bir çözümdür. Otoyollarda 24 saatlik seyahat hakkı sağlar.",
+        "paragraph1": "Bu vinyet türü, tek seferlik yolculuklar için mükemmeldir. <weeklyLink>Haftalık vinyet</weeklyLink> için ödeme yapmak yerine, günlük vinyet giderlerinizi optimize etmenizi sağlar.",
+        "heading1": "Günlük vinyeti online satın almak hızlı ve kolaydır",
+        "paragraph2": "Plaka numarasını, kayıt ülkesini girin ve başlangıç tarihi seçin. Ödeme sonrasında vinyet otomatik olarak aktive olur.",
+        "imgAlt1": "Bulgaristan için günlük vinyet online - 24 saat için hızlıca satın alın",
+        "paragraph3": "Temel avantaj, kolaylıktır. Fiziksel satış noktaları aramanıza gerek yoktur.",
+        "imgAlt2": "Bulgaristan için elektronik günlük vinyet - fiyat ve koşullar",
+        "heading2": "Kısa günlük yolculuklar için en iyi seçim",
+        "paragraph4": "Günlük vinyet online, maksimum esnekliğe ihtiyaç duyduğunuzda en iyi seçimdir.",
+        "more": "Daha fazla oku",
+        "less": "Daha az göster"
+      },
       "title": "Günlük Vinyet - 1 gün | Fiyat ve Bilgi",
       "description": "Tek günlük yolculuklar için ideal",
       "pageDescription": "1 günlük vinyet - kısa tek günlük geziler için mükemmel. Aktivasyondan itibaren 24 saat geçerlidir. En ekonomik seçim.",

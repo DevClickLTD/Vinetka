@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vinietă online - Informații despre vinietă electronică",
-    "description": "Vinietă online - Informații despre vinietă electronică",
+    "description": "Vinietă online - Cumpărați o vinietă electronică pentru Bulgaria cu plată securizată",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -78,6 +78,18 @@
       "title": "Vinietele online",
       "subtitle": "Vinietele electronice pentru autoturisme până la 3.5 t"
     },
+    "expandable": {
+      "title": "Cumpărarea unei viniete online",
+      "intro": "Cumpărarea unei viniete online este o modalitate rapidă, convenabilă și sigură de a asigura o călătorie liniștită pe rețeaua rutieră națională. În loc să pierzi timp căutând puncte de vânzare fizice, cu câteva clicuri poți alege tipul potrivit de vinietă.",
+      "paragraph1": "Prin platforma avtovia.bg obții informații clare despre toate opțiunile disponibile – <weekendLink>de weekend</weekendLink>, <weeklyLink>săptămânală</weeklyLink>, <monthlyLink>lunară</monthlyLink>, <quarterlyLink>trimestrială</quarterlyLink> sau <annualLink>anuală</annualLink>. Plata se efectuează în siguranță cu cardul, iar imediat după o tranzacție reușită primești o confirmare pe email.",
+      "imgAlt1": "Cumpărarea unei viniete electronice online pentru Bulgaria",
+      "sectionTitle": "Vinietă electronică în un minut",
+      "paragraph2": "Vinieta electronică elimină nevoia de autocolante și documente pe hârtie – totul se stochează digital și este legat de numărul de înmatriculare al vehiculului.",
+      "imgAlt2": "Vinietă electronică online - cumpără rapid și ușor",
+      "paragraph3": "Cu avtovia.bg, planificarea călătoriilor devine mai ușoară ca niciodată. Indiferent dacă călătorești frecvent sau ocazional, cumpărarea online a vinietei îți economisește timp și efort.",
+      "more": "Citește mai mult",
+      "less": "Arată mai puțin"
+    },
     "expandableInfoRow": {
       "title": "Vinieta pentru Bulgaria – tot ce trebuie să știi",
       "less": "Mai puțin",
@@ -95,6 +107,14 @@
     "title": "Contact",
     "pageTitle": "Contact ",
     "pageDescription": "Contactează-ne prin formularul nostru sau găsește datele noastre de contact.",
+    "expandable": {
+      "title": "Cum să ne contactați?",
+      "intro": "Pentru a ne contacta, puteți folosi formularul de contact de pe site-ul nostru completând câmpurile necesare. Vă vom contacta cât mai curând posibil.",
+      "paragraph1": "Dacă preferați comunicarea directă, ne puteți trimite un e-mail la <emailLink>hello@avtovia.bg</emailLink>. Echipa noastră este disponibilă în zilele lucrătoare de la 9:00 la 17:00 și va răspunde la toate întrebările dvs.",
+      "paragraph2": "Apreciem fiecare client și ne străduim să oferim cel mai bun și mai sigur serviciu!",
+      "more": "Citește mai mult",
+      "less": "Arată mai puțin"
+    },
     "officeType": "Birou corporativ",
     "address": "Adresă",
     "email": "E-mail",
@@ -132,6 +152,19 @@
     "pageTitle": "Prețuri vignete",
     "pageSubtitle": "Alegeți tipul de vinietă potrivit pentru nevoile dvs.",
     "weekly": {
+      "expandable": {
+        "title": "Vinietă săptămânală online",
+        "intro": "Vinieta săptămânală este o soluție practică pentru șoferii care folosesc rețeaua rutieră din Bulgaria pentru o perioadă scurtă. Valabilă 7 zile consecutive de la data aleasă.",
+        "paragraph1": "Ideală pentru deplasări pe termen scurt, vacanțe și deplasări de afaceri.",
+        "heading1": "Avantajele vinietei săptămânale",
+        "paragraph2": "Flexibilitate și achiziție ușoară. Cumpărabilă online în câteva minute, activabilă imediat sau cu dată viitoare.",
+        "imgAlt1": "Vinietă săptămânală online pentru Bulgaria - cumpărați pentru 7 zile",
+        "paragraph3": "<vignetteCheckerLink>Verificarea valabilității</vignetteCheckerLink> este și ea rapidă. Introduceți numărul de înmatriculare în sistemul online.",
+        "imgAlt2": "Vinietă săptămânală electronică pentru Bulgaria - preț și valabilitate 7 zile",
+        "paragraph4": "Vinieta săptămânală este o opțiune excelentă pentru deplasări pe termen scurt.",
+        "more": "Citește mai mult",
+        "less": "Arată mai puțin"
+      },
       "title": "Vinieta săptămânală",
       "subtitle": "Soluția ideală pentru mini-vacanțe și deplasări de afaceri!",
       "duration": "7 zile",
@@ -200,6 +233,19 @@
       }
     },
     "monthly": {
+      "expandable": {
+        "title": "Vinietă lunară online",
+        "intro": "Vinieta lunară este una dintre opțiunile cele mai cumpărate în Bulgaria. Oferă un echilibru excelent între preț și durată pentru o lună de circulație.",
+        "paragraph1": "Ideală pentru cei care utilizează activ mașina în cursul unei luni specifice.",
+        "heading1": "Una dintre cele mai căutate viniete electronice",
+        "paragraph2": "Flexibilitatea este principalul avantaj. Comparativ cu <weeklyLink>vinieta săptămânală</weeklyLink>, oferă o valoare mai bună pentru utilizare frecventă.",
+        "imgAlt1": "Vinietă lunară online pentru Bulgaria - cumpărați pentru 1 lună",
+        "paragraph3": "Achiziția se face complet online și durează doar 1 minut.",
+        "imgAlt2": "Vinietă lunară electronică pentru Bulgaria - preț și valabilitate",
+        "paragraph4": "Vinieta lunară este o alegere practică pentru șoferii care caută comoditate și flexibilitate.",
+        "more": "Citește mai mult",
+        "less": "Arată mai puțin"
+      },
       "title": "Vinieta lunară",
       "subtitle": "Cea mai populară alegere pentru călătorii regulate!",
       "duration": "30 de zile",
@@ -270,6 +316,21 @@
       }
     },
     "quarterly": {
+      "expandable": {
+        "title": "Vinietă trimestrială online",
+        "intro": "Vinieta trimestrială este o alegere excelentă pentru șoferii care folosesc rețeaua rutieră din Bulgaria în mod regulat, dar nu tot anul. Valabilă 3 luni consecutive. O soluție echilibrată între viniete pe termen scurt și <annualLink>anuale</annualLink>.",
+        "paragraph1": "Deosebit de potrivită pentru călătorii sezoniere și deplasări de afaceri frecvente.",
+        "heading1": "Avantajele vinietei de 3 luni",
+        "paragraph2": "Eficiența economică este principalul avantaj față de mai multe viniete pe termen scurt consecutive.",
+        "paragraph3": "Achiziția este rapidă și ușoară. Activabilă imediat sau la o dată viitoare.",
+        "imgAlt1": "Vinietă trimestrială online pentru Bulgaria - preț pentru 3 luni",
+        "heading2": "Verificarea valabilității se face complet online",
+        "paragraph4": "Introduceți numărul de înmatriculare în sistemul de verificare pentru a vedea statusul curent.",
+        "imgAlt2": "Vinietă trimestrială electronică pentru Bulgaria - cumpărați online pentru 3 luni",
+        "paragraph5": "Vinieta trimestrială este o soluție practică pentru călătorii confortabile pe termen lung.",
+        "more": "Citește mai mult",
+        "less": "Arată mai puțin"
+      },
       "title": "Vinietă trimestrială",
       "subtitle": "Asigură-ți liniștea pentru tot sezonul!",
       "duration": "3 luni",
@@ -354,6 +415,23 @@
       }
     },
     "annual": {
+      "expandable": {
+        "title": "De ce să alegeți o vinietă anuală în loc de una lunară?",
+        "intro": "Vinieta anuală este alegerea ideală pentru cei care călătoresc frecvent pe drumurile bulgărești și vor să economisească timp și bani.",
+        "heading1": "Economie de bani",
+        "paragraph1": "Vinieta anuală este mai economică decât cea <monthlyLink>lunară</monthlyLink> pe termen lung.",
+        "heading2": "Comoditatea vinietei anuale",
+        "paragraph2": "Cu vinieta anuală, nu trebuie să vă faceți griji cu privire la reînnoirea lunară.",
+        "imgAlt1": "Vinietă anuală online pentru Bulgaria - cumpărați electronică",
+        "heading3": "Potrivită pentru călătorii regulate",
+        "paragraph3": "Dacă călătoriți frecvent pe drumurile bulgărești, vinieta anuală este mai practică.",
+        "heading4": "Achiziție ușoară",
+        "paragraph4": "Cu platforme precum avtovia.bg, achiziționarea este rapidă și simplă online.",
+        "imgAlt2": "Vinietă anuală electronică pentru Bulgaria - preț și condiții",
+        "paragraph5": "Alegând vinieta anuală, economisiți bani și timp pentru întregul an.",
+        "more": "Citește mai mult",
+        "less": "Arată mai puțin"
+      },
       "title": "Vinietă anuală",
       "subtitle": "Cea mai avantajoasă soluție pentru cei care călătoresc regulat!",
       "duration": "12 luni",
@@ -446,6 +524,20 @@
       "prices": "Prețuri"
     },
     "weekend": {
+      "expandable": {
+        "title": "Avantajele vinietei de weekend",
+        "intro": "Vinieta de weekend oferă comoditate și economii pentru șoferii care folosesc drumurile doar în weekend. Este mai ieftină decât <monthlyLink>vinieta lunară</monthlyLink>.",
+        "heading1": "Preț accesibil și economii",
+        "paragraph1": "Mai ieftină decât vinieta lunară, ideală pentru cei care călătoresc rar. Valabilă de vineri la 12:00 până duminică la 23:59.",
+        "heading2": "Cumpărare ușoară și rapidă",
+        "paragraph2": "Poate fi cumpărată online sau la benzinării fără angajamente pe termen lung.",
+        "imgAlt1": "Vinietă de weekend online - cumpărați pentru vineri, sâmbătă și duminică în Bulgaria",
+        "heading3": "Flexibilitate și comoditate",
+        "paragraph3": "Vinieta de weekend permite utilizarea drumurilor doar când este necesar.",
+        "imgAlt2": "Vinietă de weekend electronică pentru Bulgaria - preț și condiții",
+        "more": "Citește mai mult",
+        "less": "Arată mai puțin"
+      },
       "title": "Vinieta de weekend - 60 ore și 2.5 zile | Preț și informații",
       "description": "Ideală pentru călătorii spontane",
       "pageDescription": "Vinieta de weekend pentru 2 zile - perfectă pentru excursii scurte și călătorii spontane. Valabilă 48 de ore de la activare. Ideală pentru călătorii de vineri până duminică.",
@@ -550,6 +642,20 @@
       }
     },
     "daily": {
+      "expandable": {
+        "title": "Vinietă zilnică online",
+        "intro": "Vinieta zilnică online este soluția ideală pentru șoferii care folosesc rețeaua rutieră cu taxă din Bulgaria pentru o singură zi. Acordă dreptul de circulație pe autostrăzi și drumuri naționale timp de 24 de ore.",
+        "paragraph1": "Acest tip de vinietă este ideal pentru deplasări unice. În loc să plătiți pentru o <weeklyLink>vinietă săptămânală</weeklyLink>, cea zilnică vă permite să optimizați costurile.",
+        "heading1": "Achiziția online este rapidă și ușoară",
+        "paragraph2": "Introduceți numărul de înmatriculare, țara de înmatriculare și alegeți data de început. După plată, vinieta se activează automat.",
+        "imgAlt1": "Vinietă zilnică online pentru Bulgaria - cumpărați rapid pentru 24h",
+        "paragraph3": "Principalul avantaj este comoditatea. Nu este necesar să căutați puncte de vânzare fizice.",
+        "imgAlt2": "Vinietă zilnică electronică pentru Bulgaria - preț și condiții",
+        "heading2": "Alegerea optimă pentru deplasări scurte",
+        "paragraph4": "Vinieta zilnică online este cea mai bună alegere când aveți nevoie de flexibilitate maximă.",
+        "more": "Citește mai mult",
+        "less": "Arată mai puțin"
+      },
       "title": "Vinieta zilnică - 1 zi | Preț și informații",
       "description": "Ideală pentru călătorii de o zi",
       "pageDescription": "Vinieta zilnică pentru 1 zi - perfectă pentru călătorii scurte de o zi. Valabilă 24 de ore de la activare. Cea mai economică opțiune.",

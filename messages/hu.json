@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Online matrica - Elektronikus matrica információk",
-    "description": "Online matrica - Elektronikus matrica információk",
+    "description": "Online matrica - Vásároljon elektronikus matricát Bulgáriába biztonságos fizetéssel",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -78,6 +78,18 @@
       "title": "Online matricák",
       "subtitle": "Elektronikus matricák 3,5 t-ig terjedő személygépkocsikhoz"
     },
+    "expandable": {
+      "title": "Matrica vásárlása online",
+      "intro": "A matrica online vásárlása gyors, kényelmes és biztonságos módja annak, hogy kellemes utazást biztosítson magának az állami úthálózaton. Ahelyett, hogy időt vesztegetne fizikai értékesítési pontok keresésére, néhány kattintással kiválaszthatja a megfelelő matricatípust.",
+      "paragraph1": "Az avtovia.bg platformon keresztül világos információkat kap az összes elérhető lehetőségről – <weekendLink>hétvégi</weekendLink>, <weeklyLink>heti</weeklyLink>, <monthlyLink>havi</monthlyLink>, <quarterlyLink>negyedéves</quarterlyLink> vagy <annualLink>éves matrica</annualLink>. A fizetés biztonságosan kártyával történik, és a sikeres tranzakció után azonnal e-mailes visszaigazolást kap.",
+      "imgAlt1": "Elektronikus matrica online vásárlása Bulgáriába",
+      "sectionTitle": "Elektronikus matrica egy perc alatt",
+      "paragraph2": "Az elektronikus matrica kiküszöböli a matricák és papíralapú dokumentumok szükségességét – minden digitálisan tárolódik és a jármű rendszámához van kötve.",
+      "imgAlt2": "Elektronikus matrica online - vásároljon gyorsan és egyszerűen",
+      "paragraph3": "Az avtovia.bg segítségével az utazástervezés könnyebbé válik, mint valaha. Akár sokat utazik, akár csak alkalmanként, az online matricavásárlás időt és energiát takarít meg.",
+      "more": "Tovább olvasom",
+      "less": "Kevesebbet mutat"
+    },
     "expandableInfoRow": {
       "title": "Matrica Bulgáriához - Minden, amit tudnia kell",
       "less": "Kevesebb",
@@ -95,6 +107,14 @@
     "title": "Kapcsolat",
     "pageTitle": "Kapcsolat",
     "pageDescription": "Vegye fel velünk a kapcsolatot kapcsolatfelvételi űrlapunkon keresztül, vagy keresse meg elérhetőségeinket.",
+    "expandable": {
+      "title": "Hogyan léphet kapcsolatba velünk?",
+      "intro": "A kapcsolatfelvételhez használhatja a weboldalunkon lévő kapcsolatfelvételi űrlapot az adatai és kérdése megadásával. Mihamarabb felvesszük Önnel a kapcsolatot.",
+      "paragraph1": "Ha közvetlen kommunikációt részesít előnyben, e-mailt küldhet nekünk a <emailLink>hello@avtovia.bg</emailLink> címre. Csapatunk munkanapokon 9:00 és 17:00 óra között elérhető és válaszol minden kérdésére.",
+      "paragraph2": "Értékeljük minden ügyfelünket és a legjobb és legbiztonságosabb szolgáltatást kívánjuk nyújtani!",
+      "more": "Tovább olvasom",
+      "less": "Kevesebbet mutat"
+    },
     "officeType": "Vállalati iroda",
     "address": "Cím",
     "email": "E-mail",
@@ -132,6 +152,19 @@
     "pageTitle": "Matrica árak",
     "pageSubtitle": "Válassza az igényeinek leginkább megfelelő matricatípust",
     "weekly": {
+      "expandable": {
+        "title": "Heti matrica online",
+        "intro": "A heti matrica praktikus megoldás azoknak a sofőröknek, akik Bulgária útdíjköteles úthálózatát rövid ideig használják. Az aktiválástól számított 7 egymást követő napig érvényes.",
+        "paragraph1": "Ideális rövid utazásokhoz, nyaralásokhoz és üzleti utakhoz.",
+        "heading1": "A heti matrica előnyei",
+        "paragraph2": "Rugalmasság és egyszerű vásárlás. Online vásárolható percek alatt, azonnal vagy jövőbeli dátummal aktiválható.",
+        "imgAlt1": "Heti matrica online Bulgáriához - vásároljon 7 napra",
+        "paragraph3": "<vignetteCheckerLink>Az érvényesség ellenőrzése</vignetteCheckerLink> szintén gyors. Adja meg a rendszámot az online rendszerben.",
+        "imgAlt2": "Elektronikus heti matrica Bulgáriához - ár és 7 napos érvényesség",
+        "paragraph4": "A heti matrica kiváló választás rövid utakhoz.",
+        "more": "Tovább olvasom",
+        "less": "Kevesebbet mutass"
+      },
       "title": "Heti matrica",
       "subtitle": "Az ideális megoldás rövid nyaralásokhoz és üzleti utakhoz!",
       "duration": "7 nap",
@@ -200,6 +233,19 @@
       }
     },
     "monthly": {
+      "expandable": {
+        "title": "Havi matrica online",
+        "intro": "A havi matrica az egyik legnépszerűbb választás Bulgáriában. Kiváló ár-érték arányt kínál egy hónapos közlekedéshez.",
+        "paragraph1": "Ideális azoknak, akik aktívan használják az autót egy adott hónapban.",
+        "heading1": "Az egyik legkeresettebb elektronikus matrica",
+        "paragraph2": "A rugalmasság a fő előny. A <weeklyLink>heti matricával</weeklyLink> összehasonlítva jobb értéket kínál a rendszeres használathoz.",
+        "imgAlt1": "Havi matrica online Bulgáriához - vásároljon 1 hónapra",
+        "paragraph3": "A vásárlás teljesen online történik és mindössze 1 percet vesz igénybe.",
+        "imgAlt2": "Elektronikus havi matrica Bulgáriához - ár és érvényesség",
+        "paragraph4": "A havi matrica praktikus választás a kényelmet és rugalmasságot kereső sofőrök számára.",
+        "more": "Tovább olvasom",
+        "less": "Kevesebbet mutass"
+      },
       "title": "Havi matrica",
       "subtitle": "A rendszeres utazók legnépszerűbb választása!",
       "duration": "30 nap",
@@ -270,6 +316,21 @@
       }
     },
     "quarterly": {
+      "expandable": {
+        "title": "Negyedéves matrica online",
+        "intro": "A negyedéves matrica kiváló választás azoknak a sofőröknek, akik rendszeresen használják Bulgária útdíjköteles úthálózatát, de nem egész évben. 3 egymást követő hónapig érvényes. Kiegyensúlyozott megoldás a rövid távú és az <annualLink>éves matricák</annualLink> között.",
+        "paragraph1": "Különösen alkalmas szezonális utazásokhoz és rendszeres üzleti utakhoz.",
+        "heading1": "A 3 hónapos matrica előnyei",
+        "paragraph2": "A költséghatékonyság a fő előny a több rövid távú matrica vásárlásához képest.",
+        "paragraph3": "A vásárlás gyors és egyszerű. Azonnal vagy jövőbeli dátummal aktiválható.",
+        "imgAlt1": "Negyedéves matrica online Bulgáriához - ár 3 hónapra",
+        "heading2": "Az érvényesség ellenőrzése teljesen online történik",
+        "paragraph4": "Adja meg a rendszámot az ellenőrző rendszerben az aktuális státusz megtekintéséhez.",
+        "imgAlt2": "Elektronikus negyedéves matrica Bulgáriához - vásároljon online 3 hónapra",
+        "paragraph5": "A negyedéves matrica praktikus megoldás kényelmes hosszú távú utazásokhoz.",
+        "more": "Tovább olvasom",
+        "less": "Kevesebbet mutass"
+      },
       "title": "Negyedéves matrica",
       "subtitle": "Biztosítson magának nyugalmat egy egész szezonra!",
       "duration": "3 hónap",
@@ -354,6 +415,23 @@
       }
     },
     "annual": {
+      "expandable": {
+        "title": "Miért válasszon éves matricát a havi helyett?",
+        "intro": "Az éves matrica ideális választás azoknak, akik gyakran közlekednek a bolgár utakon, és időt és pénzt szeretnének megtakarítani.",
+        "heading1": "Pénzmegtakarítás",
+        "paragraph1": "Az éves matrica hosszú távon gazdaságosabb a <monthlyLink>havi matricánál</monthlyLink>.",
+        "heading2": "Az éves matrica kényelme",
+        "paragraph2": "Az éves matricával nem kell aggódnia a havi megújítás miatt.",
+        "imgAlt1": "Éves matrica online Bulgáriához - vásároljon elektronikusan",
+        "heading3": "Megfelelő rendszeres utazáshoz",
+        "paragraph3": "Ha rendszeresen közlekedik a bolgár utakon, az éves matrica praktikusabb.",
+        "heading4": "Könnyű vásárlás",
+        "paragraph4": "Az avtovia.bg-hez hasonló platformokon az éves matrica vásárlása gyors és egyszerű online.",
+        "imgAlt2": "Elektronikus éves matrica Bulgáriához - ár és feltételek",
+        "paragraph5": "Az éves matrica választásával egész évre pénzt és időt takarít meg.",
+        "more": "Tovább olvasom",
+        "less": "Kevesebbet mutass"
+      },
       "title": "Éves matrica",
       "subtitle": "A legkedvezőbb megoldás mindenkinek, aki rendszeresen utazik!",
       "duration": "12 hónap",
@@ -446,6 +524,20 @@
       "prices": "Árak"
     },
     "weekend": {
+      "expandable": {
+        "title": "A hétvégi matrica előnyei",
+        "intro": "A hétvégi matrica kényelmet és megtakarítást kínál azoknak a sofőröknek, akik csak hétvégén használják az utakat. Olcsóbb a <monthlyLink>havi matricánál</monthlyLink>.",
+        "heading1": "Megfizethető ár és megtakarítás",
+        "paragraph1": "Olcsóbb a havi matricánál, ideális azoknak, akik ritkán utaznak. Péntektől 12:00-tól vasárnap 23:59-ig érvényes.",
+        "heading2": "Egyszerű és gyors vásárlás",
+        "paragraph2": "Online vagy benzinkutakon vásárolható, hosszú távú kötelezettségvállalás nélkül.",
+        "imgAlt1": "Hétvégi matrica online - vásároljon péntekre, szombatra és vasárnapra Bulgáriában",
+        "heading3": "Rugalmasság és kényelem",
+        "paragraph3": "A hétvégi matrica lehetővé teszi az utak használatát csak akkor, amikor szükséges.",
+        "imgAlt2": "Elektronikus hétvégi matrica Bulgáriához - ár és feltételek",
+        "more": "Tovább olvasom",
+        "less": "Kevesebbet mutass"
+      },
       "title": "Hétvégi matrica - 60 óra és 2,5 nap | Ár és információk",
       "description": "Ideális spontán utazásokhoz",
       "pageDescription": "Hétvégi matrica 2 napra - tökéletes rövid utakhoz és spontán utazásokhoz. Az aktiválástól 48 óráig érvényes. Ideális péntektől vasárnapig tartó utazásokhoz.",
@@ -550,6 +642,20 @@
       }
     },
     "daily": {
+      "expandable": {
+        "title": "Napi matrica online",
+        "intro": "A napi matrica online ideális megoldás azoknak a sofőröknek, akik Bulgária útdíjköteles úthálózatát csak egyetlen napra használják. 24 órás közlekedési jogot biztosít az autópályákon.",
+        "paragraph1": "Ez a matricatípus tökéletes egyszeri utazásokhoz. Ahelyett, hogy <weeklyLink>heti matricáért</weeklyLink> fizetne, a napi matrica lehetővé teszi a kiadások optimalizálását.",
+        "heading1": "A napi matrica online vásárlása gyors és egyszerű",
+        "paragraph2": "Adja meg a rendszámot, a nyilvántartás szerinti országot, és válasszon kezdési dátumot. A fizetés után a matrica automatikusan aktiválódik.",
+        "imgAlt1": "Napi matrica online Bulgáriához - vásároljon gyorsan 24 órára",
+        "paragraph3": "A fő előny a kényelem. Nem kell fizikai értékesítési pontokat keresnie.",
+        "imgAlt2": "Elektronikus napi matrica Bulgáriához - ár és feltételek",
+        "heading2": "Az optimális választás rövid egynapos utazásokhoz",
+        "paragraph4": "A napi matrica online a legjobb választás, ha maximális rugalmasságra van szüksége.",
+        "more": "Tovább olvasom",
+        "less": "Kevesebbet mutass"
+      },
       "title": "Napi matrica - 1 nap | Ár és információk",
       "description": "Ideális egynapos utakhoz",
       "pageDescription": "Napi matrica 1 napra - tökéletes rövid egynapos utakhoz. 24 órától érvényes az aktiválástól. Leggazdaságosabb választás.",

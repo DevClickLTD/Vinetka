@@ -5,9 +5,11 @@ import Image from "next/image";
 import { Link } from "../lib/navigation";
 import { useTranslations } from "next-intl";
 
-export default function WeeklyVignetteExpandable() {
+export default function HomeExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const t = useTranslations("prices.weekly.expandable");
+  const t = useTranslations("home.expandable");
+
+  const linkClass = "text-[#803487] hover:underline font-medium";
 
   return (
     <div className="bg-gradient-to-br from-purple-50 to-indigo-50 py-16 sm:py-24">
@@ -28,21 +30,29 @@ export default function WeeklyVignetteExpandable() {
                   isExpanded ? "max-h-[10000px] opacity-100" : "max-h-0 opacity-0"
                 }`}
               >
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {t("paragraph1")}
-                </p>
-
-                <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  {t("heading1")}
-                </h3>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {t("paragraph2")}
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  {t.rich("paragraph1", {
+                    weekendLink: (chunks) => (
+                      <Link href="/tseni/uikend" className={linkClass}>{chunks}</Link>
+                    ),
+                    weeklyLink: (chunks) => (
+                      <Link href="/tseni/sedmichna" className={linkClass}>{chunks}</Link>
+                    ),
+                    monthlyLink: (chunks) => (
+                      <Link href="/tseni/mesechna" className={linkClass}>{chunks}</Link>
+                    ),
+                    quarterlyLink: (chunks) => (
+                      <Link href="/tseni/trimesechna" className={linkClass}>{chunks}</Link>
+                    ),
+                    annualLink: (chunks) => (
+                      <Link href="/tseni/godishna" className={linkClass}>{chunks}</Link>
+                    ),
+                  })}
                 </p>
 
                 <div className="my-8 rounded-xl overflow-hidden shadow-lg">
                   <Image
-                    src="/ednosedmichna-vinetka.jpg"
+                    src="/zakupuvane-na-vinetka-online.jpg"
                     alt={t("imgAlt1")}
                     width={800}
                     height={500}
@@ -52,19 +62,17 @@ export default function WeeklyVignetteExpandable() {
                   />
                 </div>
 
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {t.rich("paragraph3", {
-                    vignetteCheckerLink: (chunks) => (
-                      <Link href="/proverka-na-vinetka" className="text-[#803487] hover:underline font-medium">
-                        {chunks}
-                      </Link>
-                    ),
-                  })}
+                <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
+                  {t("sectionTitle")}
+                </h3>
+
+                <p className="text-gray-700 leading-relaxed mb-8">
+                  {t("paragraph2")}
                 </p>
 
                 <div className="my-8 rounded-xl overflow-hidden shadow-lg">
                   <Image
-                    src="/винетка-за-една-седмица.jpg"
+                    src="/Закупуване на винетка онлайн.jpg"
                     alt={t("imgAlt2")}
                     width={800}
                     height={500}
@@ -75,12 +83,12 @@ export default function WeeklyVignetteExpandable() {
                 </div>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  {t("paragraph4")}
+                  {t("paragraph3")}
                 </p>
               </div>
 
               {!isExpanded && (
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
               )}
             </div>
           </div>

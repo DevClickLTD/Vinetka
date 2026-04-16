@@ -8,6 +8,7 @@ import CardsRow from "@/components/CardsRow";
 import VignetteCheckerCTA from "@/components/VignetteCheckerCTA";
 import FAQ from "@/components/FAQ";
 import RegisterCTA from "@/components/RegisterCTA";
+import HomeExpandable from "@/components/HomeExpandable";
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Script from "next/script";
@@ -149,6 +150,7 @@ export default async function Home({ params }) {
         title={faqT('title')}
         subtitle={faqT('subtitle')}
       />
+      <HomeExpandable />
       <Lastestposts />
     </>
   );

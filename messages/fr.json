@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vignette en ligne - Informations sur la vignette électronique",
-    "description": "Vignette en ligne - Informations sur la vignette électronique",
+    "description": "Vignette en ligne - Achetez une vignette électronique pour la Bulgarie avec paiement sécurisé",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -78,6 +78,18 @@
       "title": "Vignettes en ligne",
       "subtitle": "Vignettes électroniques pour véhicules légers jusqu'à 3,5 t"
     },
+    "expandable": {
+      "title": "Acheter une vignette en ligne",
+      "intro": "Acheter une vignette en ligne est un moyen rapide, pratique et sécurisé de garantir un voyage tranquille sur le réseau routier national. Au lieu de perdre du temps à chercher des points de vente physiques, en quelques clics vous pouvez choisir le bon type de vignette selon la période et le type de véhicule.",
+      "paragraph1": "Via la plateforme avtovia.bg, vous obtenez des informations claires sur toutes les options disponibles – <weekendLink>week-end</weekendLink>, <weeklyLink>hebdomadaire</weeklyLink>, <monthlyLink>mensuelle</monthlyLink>, <quarterlyLink>trimestrielle</quarterlyLink> ou <annualLink>vignette annuelle</annualLink>. La saisie du numéro d'immatriculation prend quelques secondes, et le paiement s'effectue en toute sécurité par carte.",
+      "imgAlt1": "Achat d'une vignette électronique en ligne pour la Bulgarie",
+      "sectionTitle": "Vignette électronique en une minute",
+      "paragraph2": "La vignette électronique élimine le besoin d'autocollants et de documents papier – tout est stocké numériquement et lié au numéro d'immatriculation du véhicule.",
+      "imgAlt2": "Vignette électronique en ligne - achetez rapidement et facilement",
+      "paragraph3": "Avec avtovia.bg, la planification des voyages devient plus facile que jamais. Que vous voyagiez fréquemment ou occasionnellement, l'achat en ligne d'une vignette vous fait gagner du temps et vous épargne du stress inutile.",
+      "more": "Lire la suite",
+      "less": "Afficher moins"
+    },
     "expandableInfoRow": {
       "title": "Vignette pour la Bulgarie - Tout ce que vous devez savoir",
       "less": "Moins",
@@ -95,6 +107,14 @@
     "title": "Contact",
     "pageTitle": "Contact",
     "pageDescription": "Contactez-nous via notre formulaire de contact ou trouvez nos coordonnées.",
+    "expandable": {
+      "title": "Comment nous contacter?",
+      "intro": "Pour nous contacter, vous pouvez utiliser le formulaire de contact sur notre site web en remplissant les champs requis. Nous vous répondrons dans les plus brefs délais.",
+      "paragraph1": "Si vous préférez une communication directe, vous pouvez nous envoyer un e-mail à <emailLink>hello@avtovia.bg</emailLink>. Notre équipe est disponible les jours ouvrables de 9h00 à 17h00 et répondra à toutes vos questions.",
+      "paragraph2": "Nous valorisons chaque client et nous efforçons de fournir le meilleur service possible!",
+      "more": "Lire la suite",
+      "less": "Afficher moins"
+    },
     "officeType": "Bureau d'entreprise",
     "address": "Adresse",
     "email": "E-mail",
@@ -132,6 +152,19 @@
     "pageTitle": "Tarifs des vignettes",
     "pageSubtitle": "Choisissez le type de vignette le plus adapté à vos besoins",
     "weekly": {
+      "expandable": {
+        "title": "Vignette hebdomadaire en ligne",
+        "intro": "La vignette hebdomadaire est une solution pratique pour tous les conducteurs qui utilisent le réseau routier en Bulgarie pour une courte période. Elle est valable 7 jours consécutifs à partir de la date de début choisie.",
+        "paragraph1": "Idéale pour les courts séjours, vacances ou voyages d'affaires. Elle offre un équilibre optimal entre prix et commodité.",
+        "heading1": "Avantages de la vignette hebdomadaire",
+        "paragraph2": "La flexibilité et la facilité d'achat sont les principaux avantages. Achetable en ligne en quelques minutes, activable immédiatement ou à une date future.",
+        "imgAlt1": "Vignette hebdomadaire en ligne pour la Bulgarie - achetez pour 7 jours",
+        "paragraph3": "<vignetteCheckerLink>La vérification de validité</vignetteCheckerLink> est également rapide. Saisissez simplement le numéro d'immatriculation en ligne.",
+        "imgAlt2": "Vignette hebdomadaire électronique pour la Bulgarie - prix et validité 7 jours",
+        "paragraph4": "La vignette hebdomadaire est une excellente option pour les voyages de courte durée.",
+        "more": "Lire la suite",
+        "less": "Afficher moins"
+      },
       "title": "Vignette hebdomadaire",
       "subtitle": "La solution idéale pour les courtes vacances et les voyages d'affaires !",
       "duration": "7 jours",
@@ -200,6 +233,19 @@
       }
     },
     "monthly": {
+      "expandable": {
+        "title": "Vignette mensuelle en ligne",
+        "intro": "La vignette mensuelle est l'une des options les plus achetées en Bulgarie. Elle offre un excellent équilibre entre prix et durée pour un mois de circulation.",
+        "paragraph1": "Idéale pour ceux qui utilisent activement leur voiture pendant un mois donné – travail temporaire dans une autre ville ou vacances prolongées.",
+        "heading1": "L'une des vignettes électroniques les plus recherchées",
+        "paragraph2": "La flexibilité est l'avantage principal. Choisissez une date de début précise. Par rapport à la <weeklyLink>vignette hebdomadaire</weeklyLink>, elle offre une meilleure valeur pour une utilisation fréquente.",
+        "imgAlt1": "Vignette mensuelle en ligne pour la Bulgarie - achetez pour 1 mois",
+        "paragraph3": "L'achat se fait entièrement en ligne en seulement 1 minute. Saisissez le numéro d'immatriculation et le pays, puis choisissez une date de début.",
+        "imgAlt2": "Vignette mensuelle électronique pour la Bulgarie - prix et validité",
+        "paragraph4": "La vignette mensuelle est un choix pratique pour les conducteurs qui recherchent commodité et flexibilité.",
+        "more": "Lire la suite",
+        "less": "Afficher moins"
+      },
       "title": "Vignette mensuelle",
       "subtitle": "Le choix le plus populaire pour les voyageurs réguliers !",
       "duration": "30 jours",
@@ -270,6 +316,21 @@
       }
     },
     "quarterly": {
+      "expandable": {
+        "title": "Vignette trimestrielle en ligne",
+        "intro": "La vignette trimestrielle est un excellent choix pour les conducteurs qui utilisent le réseau routier en Bulgarie régulièrement, mais pas toute l'année. Valable 3 mois consécutifs. Une solution équilibrée entre les vignettes courtes et <annualLink>annuelles</annualLink>.",
+        "paragraph1": "Particulièrement adaptée aux voyages saisonniers ou aux déplacements professionnels fréquents.",
+        "heading1": "Avantages de la vignette 3 mois",
+        "paragraph2": "L'efficacité économique est le principal avantage par rapport à plusieurs vignettes courtes consécutives.",
+        "paragraph3": "L'achat est rapide et facile, activable immédiatement ou à une date future.",
+        "imgAlt1": "Vignette trimestrielle en ligne pour la Bulgarie - prix pour 3 mois",
+        "heading2": "Vérification de validité entièrement en ligne",
+        "paragraph4": "Saisissez le numéro d'immatriculation dans le système de vérification pour voir le statut actuel.",
+        "imgAlt2": "Vignette trimestrielle électronique pour la Bulgarie - achetez pour 3 mois",
+        "paragraph5": "La vignette trimestrielle est une solution pratique pour voyager confortablement sur une longue période.",
+        "more": "Lire la suite",
+        "less": "Afficher moins"
+      },
       "title": "Vignette trimestrielle",
       "subtitle": "Assurez-vous la tranquillité d'esprit pour toute une saison !",
       "duration": "3 mois",
@@ -354,6 +415,23 @@
       }
     },
     "annual": {
+      "expandable": {
+        "title": "Pourquoi choisir une vignette annuelle plutôt que mensuelle?",
+        "intro": "La vignette annuelle est le choix idéal pour ceux qui voyagent fréquemment sur les routes bulgares et veulent économiser du temps et de l'argent.",
+        "heading1": "Économies d'argent",
+        "paragraph1": "La vignette annuelle est plus économique que la <monthlyLink>mensuelle</monthlyLink> à long terme.",
+        "heading2": "Commodité de la vignette annuelle",
+        "paragraph2": "Avec la vignette annuelle, pas besoin de renouveler chaque mois. Cela offre tranquillité d'esprit et commodité.",
+        "imgAlt1": "Vignette annuelle en ligne pour la Bulgarie - achetez électronique",
+        "heading3": "Adaptée aux voyages réguliers",
+        "paragraph3": "Si vous voyagez fréquemment sur les routes bulgares, la vignette annuelle est plus pratique.",
+        "heading4": "Achat facile",
+        "paragraph4": "Avec des plateformes comme avtovia.bg, l'achat est rapide et simple en ligne.",
+        "imgAlt2": "Vignette annuelle électronique pour la Bulgarie - prix et conditions",
+        "paragraph5": "En choisissant la vignette annuelle, vous économisez de l'argent et du temps pour toute l'année.",
+        "more": "Lire la suite",
+        "less": "Afficher moins"
+      },
       "title": "Vignette annuelle",
       "subtitle": "La solution la plus avantageuse pour tous ceux qui voyagent régulièrement !",
       "duration": "12 mois",
@@ -446,6 +524,20 @@
       "prices": "Tarifs"
     },
     "weekend": {
+      "expandable": {
+        "title": "Avantages de la vignette week-end",
+        "intro": "La vignette week-end offre commodité et économies pour les conducteurs qui utilisent le réseau routier uniquement les week-ends. Elle est moins chère que la <monthlyLink>vignette mensuelle</monthlyLink>.",
+        "heading1": "Prix abordable et économies",
+        "paragraph1": "L'un des principaux avantages est son prix inférieur à la vignette mensuelle. Valable du vendredi à 12h00 au dimanche à 23h59.",
+        "heading2": "Achat facile et rapide",
+        "paragraph2": "La vignette week-end peut être achetée en ligne ou dans les stations-service sans engagement à long terme.",
+        "imgAlt1": "Vignette week-end en ligne - achetez pour vendredi, samedi et dimanche en Bulgarie",
+        "heading3": "Flexibilité et commodité",
+        "paragraph3": "La vignette week-end offre la flexibilité d'utiliser les routes uniquement en cas de besoin.",
+        "imgAlt2": "Vignette week-end électronique pour la Bulgarie - prix et conditions",
+        "more": "Lire la suite",
+        "less": "Afficher moins"
+      },
       "title": "Vignette week-end - 60 heures et 2,5 jours | Tarif et informations",
       "description": "Idéale pour les voyages spontanés",
       "pageDescription": "Vignette week-end pour 2 jours - parfaite pour les courts voyages et les déplacements spontanés. Valable 48 heures à partir de l'activation. Idéale pour les voyages du vendredi au dimanche.",
@@ -550,6 +642,20 @@
       }
     },
     "daily": {
+      "expandable": {
+        "title": "Vignette journalière en ligne",
+        "intro": "La vignette journalière en ligne est la solution idéale pour les conducteurs qui utilisent le réseau routier payant en Bulgarie pour une courte période – dans la journée. Elle autorise la circulation sur les autoroutes et routes nationales pendant exactement 24 heures.",
+        "paragraph1": "Ce type de vignette est idéal pour les trajets ponctuels. Au lieu de payer une <weeklyLink>vignette hebdomadaire</weeklyLink>, la vignette journalière vous permet d'optimiser vos coûts.",
+        "heading1": "L'achat en ligne est rapide et facile",
+        "paragraph2": "Saisissez le numéro d'immatriculation, le pays d'immatriculation et la date de début. Après le paiement, la vignette est automatiquement activée et valide pour les 24 heures suivantes.",
+        "imgAlt1": "Vignette journalière en ligne pour la Bulgarie - achetez rapidement pour 24h",
+        "paragraph3": "L'un des principaux avantages est la commodité. Pas besoin de chercher des points de vente physiques. Vous pouvez aussi acheter à l'avance.",
+        "imgAlt2": "Vignette journalière électronique pour la Bulgarie - prix et conditions",
+        "heading2": "Le choix optimal pour les courts trajets",
+        "paragraph4": "La vignette journalière en ligne est le meilleur choix quand vous avez besoin d'une flexibilité maximale.",
+        "more": "Lire la suite",
+        "less": "Afficher moins"
+      },
       "title": "Vignette journalière - 1 jour | Tarif et informations",
       "description": "Idéale pour les trajets d'une journée",
       "pageDescription": "Vignette journalière pour 1 jour - parfaite pour les courts trajets d'une journée. Valable 24 heures à partir de l'activation. Choix le plus économique.",

@@ -8,6 +8,7 @@ import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contactForm";
 import Script from "next/script";
 import { generateSEOMetadata } from '../../../lib/seo-utils';
+import ContactExpandable from '../../../components/ContactExpandable';
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
 // Force static generation
@@ -161,8 +162,11 @@ export default async function ContactPage() {
         </div>
       </div>
 
+      {/* Contact Expandable Section */}
+      <ContactExpandable />
+
       {/* Секция с iframe карта */}
-      <div className="w-full mt-16 sm:mt-24">
+      <div className="w-full mt-0">
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1ImMwCOgNe_xaP3Hv4naAce3bcml3uEo&ehbc=2E312F&noprof=1&z=12"
           width="100%"

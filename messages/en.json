@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Online Vignette - Electronic Vignette Information",
-    "description": "Online Vignette - Electronic Vignette Information",
+    "description": "Online Vignette - Buy an electronic vignette for Bulgaria with secure payment",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -78,6 +78,18 @@
       "title": "Online Vignettes",
       "subtitle": "Electronic vignettes for light vehicles up to 3.5 t"
     },
+    "expandable": {
+      "title": "Buying a Vignette Online",
+      "intro": "Buying a vignette online is a fast, convenient and secure way to ensure a peaceful journey on the national road network. Instead of wasting time looking for physical sales points, with a few clicks you can choose the right type of vignette based on the period and type of vehicle. The online process is designed with the user in mind – intuitive, easy to navigate and accessible at any time, regardless of where you are.",
+      "paragraph1": "Through the avtovia.bg platform you get clear information about all available options – <weekendLink>weekend</weekendLink>, <weeklyLink>weekly</weeklyLink>, <monthlyLink>monthly</monthlyLink>, <quarterlyLink>quarterly</quarterlyLink> or <annualLink>annual vignette</annualLink>. Entering the registration number and country of registration takes seconds, and the system automatically checks the correctness of the data to avoid errors. Payment is made securely by card, and immediately after a successful transaction you receive a confirmation by email.",
+      "imgAlt1": "Buying an electronic vignette online for Bulgaria",
+      "sectionTitle": "Electronic vignette in one minute",
+      "paragraph2": "The electronic vignette eliminates the need for stickers and paper documents – everything is stored digitally and linked to the vehicle registration number. This not only makes it easier for drivers, but also contributes to a more environmentally friendly solution.",
+      "imgAlt2": "Electronic vignette online - buy quickly and easily",
+      "paragraph3": "With avtovia.bg, trip planning becomes easier than ever. Whether you travel frequently or just occasionally, buying a vignette online saves you time, effort and unnecessary stress, so you can fully enjoy the road ahead.",
+      "more": "Read more",
+      "less": "Show less"
+    },
     "expandableInfoRow": {
       "title": "Vignette for Bulgaria - Everything You Need to Know",
       "less": "Less",
@@ -95,6 +107,14 @@
     "title": "Contact",
     "pageTitle": "Contact",
     "pageDescription": "Contact us through our contact form or find our contact information.",
+    "expandable": {
+      "title": "How to contact us?",
+      "intro": "To contact us, you can use the contact form on our website by filling in the required fields with your details and question. We will get back to you as soon as possible.",
+      "paragraph1": "If you prefer direct communication, you can send us an email at <emailLink>hello@avtovia.bg</emailLink>. Our team is available on working days from 9:00 to 17:00 and will answer all your questions. In addition, you can contact us through social media, where we actively monitor messages and comments.",
+      "paragraph2": "We value every customer and strive to provide the best and most secure service!",
+      "more": "Read more",
+      "less": "Show less"
+    },
     "officeType": "Corporate Office",
     "address": "Address",
     "email": "Email",
@@ -132,6 +152,19 @@
     "pageTitle": "Vignette Prices",
     "pageSubtitle": "Choose the most suitable vignette type for your needs",
     "weekly": {
+      "expandable": {
+        "title": "Online Weekly Vignette",
+        "intro": "The weekly vignette is a convenient solution for all drivers who use the national road network in Bulgaria for a short period. It allows travel on motorways and national roads for 7 consecutive days from the chosen start date.",
+        "paragraph1": "This type of vignette is particularly suitable for short-term trips – such as weekend trips, vacations, business trips or temporary stay in the country. The weekly vignette offers an optimal balance between price and convenience.",
+        "heading1": "Advantages of the weekly vignette",
+        "paragraph2": "Among the main advantages are flexibility and easy purchase. It can be purchased online in just a few minutes by entering the vehicle registration number and country of registration. It can be activated immediately or with a future date – up to 30 days in advance.",
+        "imgAlt1": "Online weekly vignette for Bulgaria - buy for 7 days quickly and easily",
+        "paragraph3": "<vignetteCheckerLink>Validity checking</vignetteCheckerLink> is also fast. Simply enter the vehicle registration number in the online system. Road control is done automatically through cameras and mobile teams.",
+        "imgAlt2": "Electronic weekly vignette for Bulgaria - price and validity 7 days",
+        "paragraph4": "The weekly vignette is an excellent option for anyone seeking convenience and efficiency for short-term travel. It saves unnecessary costs and ensures free movement on the main roads in the country.",
+        "more": "Read more",
+        "less": "Show less"
+      },
       "title": "Weekly Vignette",
       "subtitle": "The ideal solution for short vacations and business trips!",
       "duration": "7 days",
@@ -200,6 +233,19 @@
       }
     },
     "monthly": {
+      "expandable": {
+        "title": "Online Monthly Vignette",
+        "intro": "The monthly vignette is one of the most purchased and preferred options among drivers in Bulgaria. It offers an excellent balance between price and duration, providing the right to travel on the paid road network for a period of 1 month from the chosen start date.",
+        "paragraph1": "This type of vignette is extremely suitable for people who actively use their car within a specific month – for temporary work in another city, intensive business commitments or a longer vacation.",
+        "heading1": "One of the most sought-after electronic vignettes",
+        "paragraph2": "One of the main reasons for its popularity is flexibility. You can choose an exact start date and plan your expenses. Compared to the <weeklyLink>weekly vignette</weeklyLink>, the monthly vignette offers better value for more frequent use.",
+        "imgAlt1": "Online monthly vignette for Bulgaria - buy electronic vignette for 1 month",
+        "paragraph3": "Purchasing a monthly vignette is done entirely online and takes only 1 minute. Enter the registration number and country of registration, then select a start date – immediately or at a future time.",
+        "imgAlt2": "Electronic monthly vignette for Bulgaria - price, validity and purchase method",
+        "paragraph4": "The monthly vignette is a practical and sensible choice for drivers looking for convenience, flexibility and good value.",
+        "more": "Read more",
+        "less": "Show less"
+      },
       "title": "Monthly Vignette",
       "subtitle": "The most popular choice for regular travel!",
       "duration": "30 days",
@@ -270,6 +316,21 @@
       }
     },
     "quarterly": {
+      "expandable": {
+        "title": "Online Quarterly Vignette",
+        "intro": "The quarterly vignette is an excellent choice for drivers who use the national road network in Bulgaria regularly, but not year-round. It provides the right to travel for 3 consecutive months. A balanced solution between short-term and <annualLink>annual vignettes</annualLink>.",
+        "paragraph1": "This type of vignette is particularly suitable for seasonal travel, frequent business trips or people working in another city for a specific period.",
+        "heading1": "Advantages of the 3-month vignette",
+        "paragraph2": "One of the main advantages is economic efficiency. Compared to several consecutive short-term vignettes, it offers better value for money, while remaining more affordable than the annual one.",
+        "paragraph3": "Purchasing is fast and easy. You can activate it immediately or choose a future date. You only need to enter the vehicle registration number and country of registration.",
+        "imgAlt1": "Online quarterly vignette for Bulgaria - price and conditions for 3 months",
+        "heading2": "Validity checking is done entirely online",
+        "paragraph4": "Enter the registration number in the verification system to see the current status of the vignette. Road control is done automatically through cameras.",
+        "imgAlt2": "Electronic quarterly vignette for Bulgaria - buy online for 3 months",
+        "paragraph5": "The quarterly vignette is a practical and flexible solution for anyone who wants to travel comfortably for a longer period without committing to an annual subscription.",
+        "more": "Read more",
+        "less": "Show less"
+      },
       "title": "Quarterly Vignette",
       "subtitle": "Secure peace of mind for a whole season!",
       "duration": "3 months",
@@ -354,6 +415,23 @@
       }
     },
     "annual": {
+      "expandable": {
+        "title": "Why choose an annual vignette instead of a monthly one?",
+        "intro": "The annual vignette is the ideal choice for those who frequently travel on Bulgarian roads and want to save time and money. Here are some of the main reasons to prefer the annual vignette:",
+        "heading1": "Saving money",
+        "paragraph1": "The annual vignette is more economical than the <monthlyLink>monthly</monthlyLink> in the long run. By buying a vignette for a full year, you get significant savings compared to monthly fees.",
+        "heading2": "Convenience of the annual vignette",
+        "paragraph2": "With the annual vignette, you don't need to worry about renewing it every month. This provides convenience and peace of mind, eliminating the need for constant attention to deadlines.",
+        "imgAlt1": "Annual vignette online for Bulgaria - buy electronic annual vignette",
+        "heading3": "Suitable for regular travel",
+        "paragraph3": "If you frequently travel on Bulgarian roads, the annual vignette is more convenient and practical, as you don't need to deal with frequent renewal of monthly vignettes.",
+        "heading4": "Easy purchase",
+        "paragraph4": "With platforms like avtovia.bg, purchasing an annual vignette is fast and easy. You can buy it online and register it for your vehicle in no time.",
+        "imgAlt2": "Electronic annual vignette for Bulgaria - price and conditions",
+        "paragraph5": "By choosing the annual vignette, you not only ensure peace of mind for the entire year, but also save money and time, making this choice truly worthwhile.",
+        "more": "Read more",
+        "less": "Show less"
+      },
       "title": "Annual Vignette",
       "subtitle": "The most advantageous solution for everyone who travels regularly!",
       "duration": "12 months",
@@ -446,6 +524,20 @@
       "prices": "Prices"
     },
     "weekend": {
+      "expandable": {
+        "title": "Advantages of the Weekend Vignette",
+        "intro": "The weekend vignette offers convenience and savings for drivers who use the national road network only on weekends. It is extremely useful for people who travel mainly on days off, providing cost reduction compared to the <monthlyLink>monthly vignette</monthlyLink>.",
+        "heading1": "Affordable price and savings",
+        "paragraph1": "One of the main advantages is that it is available at a lower price than the monthly vignette, making it an attractive choice for those who travel sporadically or spontaneously. It is a more economical option for individuals or families who do not use their cars often during the week.",
+        "heading2": "Easy and fast purchase",
+        "paragraph2": "Another advantage is the easy and fast purchase, which requires no long-term commitments. Drivers can easily buy it online or at petrol stations. Its validity is always from 12:00 on Friday to 23:59 on Sunday.",
+        "imgAlt1": "Online weekend vignette - buy for Friday, Saturday and Sunday in Bulgaria",
+        "heading3": "Flexibility and convenience",
+        "paragraph3": "The weekend vignette provides flexibility and convenience, allowing travelers to use the roads only when needed, without additional costs for entire months or years.",
+        "imgAlt2": "Electronic weekend vignette for Bulgaria - price and conditions",
+        "more": "Read more",
+        "less": "Show less"
+      },
       "title": "Weekend Vignette - 60 hours and 2.5 days | Price and Information",
       "description": "Ideal for spontaneous travels",
       "pageDescription": "Weekend vignette for 2 days - perfect for short trips and spontaneous travels. Valid for 48 hours from activation. Ideal for Friday to Sunday travels.",
@@ -550,6 +642,20 @@
       }
     },
     "daily": {
+      "expandable": {
+        "title": "Online Daily Vignette",
+        "intro": "The online daily vignette is the latest solution for drivers who use the paid road network in Bulgaria for a short period – within one day. It allows travel on motorways and national roads for exactly 24 hours from the chosen start date and time.",
+        "paragraph1": "This type of vignette is ideal for one-time trips – such as a short business trip, a visit to another city or transit through the country. Instead of paying for a <weeklyLink>weekly vignette</weeklyLink>, the daily vignette allows you to optimize your costs and pay only for the time you will actually use.",
+        "heading1": "Purchasing a daily vignette online is fast and easy",
+        "paragraph2": "You need to enter the vehicle registration number, country of registration and select a start date and time. After payment, the vignette is automatically activated and valid for the next 24 hours. The whole process takes only a few minutes.",
+        "imgAlt1": "Online daily vignette for Bulgaria - buy quickly and easily for 24 hours",
+        "paragraph3": "One of the main advantages of online purchasing is convenience. There is no need to look for physical points or wait in queues. You can also plan in advance by purchasing the vignette for a future date.",
+        "imgAlt2": "Electronic daily vignette for Bulgaria - price and conditions",
+        "heading2": "The optimal choice for short daily trips and transits",
+        "paragraph4": "The online daily vignette is the best choice when you need maximum flexibility and minimum expense. It gives you the freedom to travel comfortably, without unnecessary commitments.",
+        "more": "Read more",
+        "less": "Show less"
+      },
       "title": "Daily Vignette - 1 day | Price and Information",
       "description": "Ideal for one-day trips",
       "pageDescription": "Daily vignette for 1 day - perfect for short one-day trips. Valid for 24 hours from activation. Most economical choice.",

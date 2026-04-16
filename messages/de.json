@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vignette online - Informationen zur elektronischen Vignette",
-    "description": "Vignette online - Informationen zur elektronischen Vignette",
+    "description": "Online-Vignette - Kaufen Sie eine elektronische Vignette für Bulgarien mit sicherer Zahlung",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -78,6 +78,18 @@
       "title": "Vignetten online",
       "subtitle": "Elektronische Vignetten für Pkw bis 3,5 t"
     },
+    "expandable": {
+      "title": "Online-Kauf einer Vignette",
+      "intro": "Der Online-Kauf einer Vignette ist ein schneller, bequemer und sicherer Weg, um eine ruhige Fahrt auf dem staatlichen Straßennetz zu gewährleisten. Anstatt Zeit mit der Suche nach Verkaufsstellen zu verbringen, können Sie mit wenigen Klicks den passenden Vignettentyp nach Zeitraum und Fahrzeugtyp auswählen. Der Online-Prozess wurde mit dem Benutzer im Sinn entwickelt – intuitiv, leicht zu navigieren und jederzeit zugänglich.",
+      "paragraph1": "Über die Plattform avtovia.bg erhalten Sie klare Informationen zu allen verfügbaren Optionen – <weekendLink>Wochenend</weekendLink>-, <weeklyLink>Wochen</weeklyLink>-, <monthlyLink>Monats</monthlyLink>-, <quarterlyLink>Quartals</quarterlyLink>- oder <annualLink>Jahresvignette</annualLink>. Die Eingabe des Kennzeichens und des Zulassungslandes dauert nur Sekunden, und das System überprüft automatisch die Richtigkeit der Daten. Die Zahlung erfolgt sicher mit Karte, und unmittelbar nach einer erfolgreichen Transaktion erhalten Sie eine Bestätigung per E-Mail.",
+      "imgAlt1": "Online-Kauf einer elektronischen Vignette für Bulgarien",
+      "sectionTitle": "Elektronische Vignette in einer Minute",
+      "paragraph2": "Die elektronische Vignette macht Aufkleber und Papierdokumente überflüssig – alles wird digital gespeichert und mit dem Kennzeichen des Fahrzeugs verknüpft. Dies erleichtert nicht nur Fahrern die Arbeit, sondern trägt auch zu einer umweltfreundlicheren Lösung bei.",
+      "imgAlt2": "Elektronische Vignette online – schnell und einfach kaufen",
+      "paragraph3": "Mit avtovia.bg wird die Reiseplanung einfacher denn je. Egal ob Sie häufig oder nur gelegentlich reisen, der Online-Kauf einer Vignette spart Ihnen Zeit, Mühe und unnötigen Stress.",
+      "more": "Mehr lesen",
+      "less": "Weniger anzeigen"
+    },
     "expandableInfoRow": {
       "title": "Vignette für Bulgarien – alles, was Sie wissen müssen",
       "less": "Weniger",
@@ -95,6 +107,14 @@
     "title": "Kontakt",
     "pageTitle": "Kontakt",
     "pageDescription": "Kontaktieren Sie uns über unser Kontaktformular oder finden Sie unsere Kontaktdaten.",
+    "expandable": {
+      "title": "Wie können Sie uns kontaktieren?",
+      "intro": "Um uns zu kontaktieren, können Sie das Kontaktformular auf unserer Website verwenden und die erforderlichen Felder mit Ihren Daten und Ihrer Frage ausfüllen. Wir werden uns so schnell wie möglich bei Ihnen melden.",
+      "paragraph1": "Wenn Sie eine direkte Kommunikation bevorzugen, können Sie uns eine E-Mail an <emailLink>hello@avtovia.bg</emailLink> senden. Unser Team steht an Werktagen von 9:00 bis 17:00 Uhr zur Verfügung und beantwortet alle Ihre Fragen.",
+      "paragraph2": "Wir schätzen jeden Kunden und streben danach, den besten und sichersten Service zu bieten!",
+      "more": "Mehr lesen",
+      "less": "Weniger anzeigen"
+    },
     "officeType": "Firmenbüro",
     "address": "Adresse",
     "email": "E-Mail",
@@ -181,6 +201,20 @@
       }
     },
     "daily": {
+      "expandable": {
+        "title": "Online-Tagesvignette",
+        "intro": "Die Online-Tagesvignette ist die ideale Lösung für Fahrer, die das mautpflichtige Straßennetz in Bulgarien nur für kurze Zeit – innerhalb eines Tages – nutzen. Sie berechtigt zur Fahrt auf Autobahnen und Nationalstraßen für genau 24 Stunden.",
+        "paragraph1": "Dieser Vignettentyp ist ideal für einmalige Fahrten – wie eine kurze Dienstreise oder ein Transitdurchgang. Statt für eine <weeklyLink>Wochenvignette</weeklyLink> zu zahlen, können Sie Kosten optimieren.",
+        "heading1": "Der Kauf einer Tagesvignette online ist schnell und einfach",
+        "paragraph2": "Sie müssen das Kennzeichen, das Zulassungsland und Startdatum/-uhrzeit eingeben. Nach der Zahlung wird die Vignette automatisch aktiviert und gilt für die nächsten 24 Stunden.",
+        "imgAlt1": "Online-Tagesvignette für Bulgarien - schnell und einfach kaufen",
+        "paragraph3": "Einer der Hauptvorteile des Online-Kaufs ist die Bequemlichkeit. Sie müssen keine Verkaufsstellen suchen oder Schlange stehen. Sie können auch im Voraus kaufen.",
+        "imgAlt2": "Elektronische Tagesvignette für Bulgarien - Preis und Bedingungen",
+        "heading2": "Die optimale Wahl für kurze Tagesfahrten und Transits",
+        "paragraph4": "Die Online-Tagesvignette ist die beste Wahl, wenn Sie maximale Flexibilität und minimale Ausgaben benötigen.",
+        "more": "Mehr lesen",
+        "less": "Weniger anzeigen"
+      },
       "title": "Tagesvignette - 1 Tag | Preis und Informationen",
       "description": "Ideal für Tagesausflüge",
       "pageDescription": "Tagesvignette für 1 Tag - perfekt für kurze Tagesausflüge. Gültig 24 Stunden ab Aktivierung. Die wirtschaftlichste Wahl.",
@@ -240,6 +274,20 @@
       }
     },
     "weekend": {
+      "expandable": {
+        "title": "Vorteile der Wochenend-Vignette",
+        "intro": "Die Wochenend-Vignette bietet Komfort und Einsparungen für Fahrer, die das Straßennetz nur an Wochenenden nutzen. Sie ist preiswerter als die <monthlyLink>Monatsvignette</monthlyLink>.",
+        "heading1": "Günstig und sparsam",
+        "paragraph1": "Sie ist deutlich günstiger als die Monatsvignette und ideal für Gelegenheitsfahrer. Gilt immer von Freitag 12:00 Uhr bis Sonntag 23:59 Uhr.",
+        "heading2": "Einfach und schnell kaufen",
+        "paragraph2": "Die Wochenend-Vignette kann online oder an Tankstellen ohne langfristige Verpflichtungen gekauft werden.",
+        "imgAlt1": "Online Wochenend-Vignette - für Freitag, Samstag und Sonntag in Bulgarien kaufen",
+        "heading3": "Flexibilität und Komfort",
+        "paragraph3": "Die Wochenend-Vignette ermöglicht die Nutzung der Straßen nur bei Bedarf, ohne zusätzliche Kosten für Monate oder Jahre.",
+        "imgAlt2": "Elektronische Wochenend-Vignette für Bulgarien - Preis und Bedingungen",
+        "more": "Mehr lesen",
+        "less": "Weniger anzeigen"
+      },
       "title": "Wochenend-Vignette - 60 Stunden und 2.5 Tage | Preis und Informationen",
       "description": "Ideal für spontane Reisen",
       "pageDescription": "Wochenend-Vignette für 2 Tage - perfekt für kurze Ausflüge und spontane Reisen. Gültig 48 Stunden ab dem Zeitpunkt der Aktivierung. Ideal für Reisen von Freitag bis Sonntag.",
@@ -299,6 +347,19 @@
       }
     },
     "weekly": {
+      "expandable": {
+        "title": "Online-Wochenvignette",
+        "intro": "Die Wochenvignette ist eine praktische Lösung für Fahrer, die das Straßennetz in Bulgarien für einen kurzen Zeitraum nutzen. Sie gilt für 7 aufeinanderfolgende Tage ab dem gewählten Startdatum.",
+        "paragraph1": "Ideal für Kurzreisen, Urlaub oder Dienstreisen. Die Wochenvignette bietet ein optimales Preis-Komfort-Verhältnis.",
+        "heading1": "Vorteile der Wochenvignette",
+        "paragraph2": "Flexibilität und einfacher Kauf sind die Hauptvorteile. Online in wenigen Minuten kaufbar, sofort oder mit zukünftigem Datum aktivierbar.",
+        "imgAlt1": "Online-Wochenvignette für Bulgarien - für 7 Tage kaufen",
+        "paragraph3": "<vignetteCheckerLink>Die Gültigkeitsprüfung</vignetteCheckerLink> ist schnell. Einfach das Kennzeichen im Online-System eingeben. Die Kontrolle erfolgt automatisch über Kameras.",
+        "imgAlt2": "Elektronische Wochenvignette für Bulgarien - Preis und Gültigkeit 7 Tage",
+        "paragraph4": "Die Wochenvignette ist eine ausgezeichnete Option für alle, die Komfort und Effizienz bei Kurzreisen suchen.",
+        "more": "Mehr lesen",
+        "less": "Weniger anzeigen"
+      },
       "title": "Wöchentliche Vignette",
       "subtitle": "Die ideale Lösung für kurze Urlaube und Geschäftsreisen!",
       "duration": "7 Tage",
@@ -367,6 +428,19 @@
       }
     },
     "monthly": {
+      "expandable": {
+        "title": "Online-Monatsvignette",
+        "intro": "Die Monatsvignette ist eine der beliebtesten Optionen unter Fahrern in Bulgarien. Sie bietet ein ausgezeichnetes Preis-Leistungs-Verhältnis für einen Monat Fahrtberechtigung.",
+        "paragraph1": "Ideal für Menschen, die das Auto aktiv nutzen – bei vorübergehender Arbeit in einer anderen Stadt oder längerem Urlaub.",
+        "heading1": "Eine der gefragtesten elektronischen Vignetten",
+        "paragraph2": "Flexibilität ist der Hauptvorteil. Wählen Sie ein genaues Startdatum und planen Sie Ihre Ausgaben. Verglichen mit der <weeklyLink>Wochenvignette</weeklyLink> bietet sie besseren Wert für häufige Nutzung.",
+        "imgAlt1": "Online-Monatsvignette für Bulgarien - für 1 Monat kaufen",
+        "paragraph3": "Der Kauf erfolgt komplett online und dauert nur 1 Minute. Geben Sie das Kennzeichen und das Zulassungsland ein, dann wählen Sie ein Startdatum.",
+        "imgAlt2": "Elektronische Monatsvignette für Bulgarien - Preis und Gültigkeit",
+        "paragraph4": "Die Monatsvignette ist eine praktische Wahl für Fahrer, die Komfort, Flexibilität und gutes Preis-Leistungs-Verhältnis suchen.",
+        "more": "Mehr lesen",
+        "less": "Weniger anzeigen"
+      },
       "title": "Monatliche Vignette",
       "subtitle": "Die beliebteste Wahl für regelmäßige Reisen!",
       "duration": "30 Tage",
@@ -437,6 +511,21 @@
       }
     },
     "quarterly": {
+      "expandable": {
+        "title": "Online-Quartalsvignette",
+        "intro": "Die Quartalsvignette ist eine ausgezeichnete Wahl für Fahrer, die das Straßennetz in Bulgarien regelmäßig, aber nicht ganzjährig nutzen. Sie gilt für 3 aufeinanderfolgende Monate. Eine ausgewogene Lösung zwischen kurzfristigen und <annualLink>Jahresvignetten</annualLink>.",
+        "paragraph1": "Besonders geeignet für saisonale Reisen, häufige Dienstreisen oder Menschen, die vorübergehend in einer anderen Stadt arbeiten.",
+        "heading1": "Vorteile der 3-Monats-Vignette",
+        "paragraph2": "Wirtschaftliche Effizienz ist der Hauptvorteil. Im Vergleich zu mehreren aufeinanderfolgenden Kurzzeit-Vignetten bietet sie besseres Preis-Leistungs-Verhältnis.",
+        "paragraph3": "Der Kauf ist schnell und einfach. Sofort oder mit zukünftigem Datum aktivierbar.",
+        "imgAlt1": "Online-Quartalsvignette für Bulgarien - Preis und Bedingungen für 3 Monate",
+        "heading2": "Gültigkeitsprüfung komplett online",
+        "paragraph4": "Geben Sie das Kennzeichen in das Prüfsystem ein, um den aktuellen Status der Vignette zu sehen.",
+        "imgAlt2": "Elektronische Quartalsvignette für Bulgarien - online für 3 Monate kaufen",
+        "paragraph5": "Die Quartalsvignette ist eine praktische und flexible Lösung für alle, die längere Zeiträume komfortabel reisen möchten.",
+        "more": "Mehr lesen",
+        "less": "Weniger anzeigen"
+      },
       "title": "Dreimonatliche Vignette",
       "subtitle": "Sichern Sie sich Ruhe für eine ganze Saison!",
       "duration": "3 Monate",
@@ -521,6 +610,23 @@
       }
     },
     "annual": {
+      "expandable": {
+        "title": "Warum eine Jahresvignette statt einer Monatsvignette wählen?",
+        "intro": "Die Jahresvignette ist die ideale Wahl für alle, die häufig auf bulgarischen Straßen unterwegs sind und Zeit und Geld sparen möchten.",
+        "heading1": "Geld sparen",
+        "paragraph1": "Die Jahresvignette ist langfristig günstiger als die <monthlyLink>Monatsvignette</monthlyLink>. Sie erhalten erhebliche Einsparungen im Vergleich zu monatlichen Gebühren.",
+        "heading2": "Komfort der Jahresvignette",
+        "paragraph2": "Mit der Jahresvignette müssen Sie sich keine Sorgen um monatliche Erneuerungen machen. Das bietet Komfort und Seelenfrieden.",
+        "imgAlt1": "Jahresvignette online für Bulgarien - elektronische Jahresvignette kaufen",
+        "heading3": "Geeignet für regelmäßige Reisen",
+        "paragraph3": "Wenn Sie häufig auf bulgarischen Straßen unterwegs sind, ist die Jahresvignette praktischer und bequemer.",
+        "heading4": "Einfacher Kauf",
+        "paragraph4": "Mit Plattformen wie avtovia.bg ist der Kauf einer Jahresvignette schnell und einfach online möglich.",
+        "imgAlt2": "Elektronische Jahresvignette für Bulgarien - Preis und Bedingungen",
+        "paragraph5": "Mit der Jahresvignette sparen Sie nicht nur Geld, sondern auch Zeit und Stress für das ganze Jahr.",
+        "more": "Mehr lesen",
+        "less": "Weniger anzeigen"
+      },
       "title": "Jährliche Vignette",
       "subtitle": "Die wirtschaftlichste Lösung für alle, die regelmäßig reisen!",
       "duration": "12 Monate",

@@ -3,9 +3,11 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Link } from "../lib/navigation";
+import { useTranslations } from "next-intl";
 
 export default function AnnualVignetteExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const t = useTranslations("prices.annual.expandable");
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
@@ -16,14 +18,12 @@ export default function AnnualVignetteExpandable() {
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8 text-center">
-            Защо да изберем годишна винетка вместо месечна?
+            {t("title")}
           </h2>
 
           <div className="prose prose-lg prose-purple mx-auto">
             <p className="text-gray-700 leading-relaxed mb-4">
-              Годишната винетка е идеалният избор за тези, които често пътуват
-              по българските пътища и искат да спестят време и средства. Ето
-              някои от основните причини да предпочетете годишната винетка:
+              {t("intro")}
             </p>
 
             <div className="relative">
@@ -35,70 +35,68 @@ export default function AnnualVignetteExpandable() {
                 }`}
               >
                 <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  Спестяване на пари
+                  {t("heading1")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Годишната винетка е по-изгодна от{" "}
-                  <Link
-                    href="/tseni/mesechna"
-                    className="text-[#803487] hover:underline"
-                  >
-                    месечната
-                  </Link>{" "}
-                  в дългосрочен план. Купувайки винетка за цяла
-                  година, получавате значителна икономия в сравнение с месечните
-                  такси, особено ако планирате повече от едно пътуване през
-                  годината.
+                  {t.rich("paragraph1", {
+                    monthlyLink: (chunks) => (
+                      <Link href="/tseni/mesechna" className="text-[#803487] hover:underline">
+                        {chunks}
+                      </Link>
+                    ),
+                  })}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                  Удобство на едногодишната винетка
+                  {t("heading2")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  С <b>годишната винетка</b> не се налага да се притеснявате за
-                  подновяване на винетката всеки месец. Това осигурява удобство
-                  и спокойствие, като елиминира нуждата от постоянно внимание
-                  към сроковете и платените такси.
+                  {t("paragraph2")}
                 </p>
 
-                {/* Снимка между параграфите */}
                 <div className="my-8 rounded-xl overflow-hidden shadow-lg">
                   <Image
-                    src="/godishna-vinetka.jpg"
-                    alt="Годишна винетка за България"
+                    src="/ednogodishna-vinetka.jpg"
+                    alt={t("imgAlt1")}
                     width={800}
                     height={500}
                     className="w-full h-auto object-cover"
-                    quality={90}
+                    quality={80}
+                    loading="lazy"
                   />
                 </div>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                  Подходяща за редовни пътувания
+                  {t("heading3")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Ако сте водач, който често пътува по пътищата в България,
-                  годишната винетка е по-удобна и практична, тъй като не е нужно
-                  да се занимавате с честото подновяване на месечни винетки.
+                  {t("paragraph3")}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mb-4">
-                  Лесна покупка
+                  {t("heading4")}
                 </h3>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  С платформите като avtovia.bg, закупуването на годишна винетка
-                  става бързо и лесно. Можете да я закупите онлайн и да я
-                  регистрирате за вашето превозно средство за кратко време.
+                  {t("paragraph4")}
                 </p>
 
+                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/винетка-за-една-година.jpg"
+                    alt={t("imgAlt2")}
+                    width={800}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
+
                 <p className="text-gray-700 leading-relaxed font-medium mt-6">
-                  Избирайки годишната винетка, вие не само че осигурявате
-                  спокойствие за цялата година, но и спестявате пари и време,
-                  което прави този избор наистина изгоден.
+                  {t("paragraph5")}
                 </p>
               </div>
 
-              {/* Fade effect overlay when collapsed */}
               {!isExpanded && (
                 <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
               )}
@@ -110,7 +108,7 @@ export default function AnnualVignetteExpandable() {
               onClick={toggleExpand}
               className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
             >
-              {isExpanded ? "По-малко" : "Вижте повече"}
+              {isExpanded ? t("less") : t("more")}
               <svg
                 className={`h-5 w-5 transform transition-transform duration-300 ${
                   isExpanded ? "rotate-180" : ""

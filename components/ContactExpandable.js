@@ -1,13 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
-import { Link } from "../lib/navigation";
 import { useTranslations } from "next-intl";
 
-export default function WeeklyVignetteExpandable() {
+export default function ContactExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
-  const t = useTranslations("prices.weekly.expandable");
+  const t = useTranslations("contact.expandable");
 
   return (
     <div className="bg-gradient-to-br from-purple-50 to-indigo-50 py-16 sm:py-24">
@@ -29,58 +27,25 @@ export default function WeeklyVignetteExpandable() {
                 }`}
               >
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  {t("paragraph1")}
-                </p>
-
-                <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  {t("heading1")}
-                </h3>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {t("paragraph2")}
-                </p>
-
-                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
-                  <Image
-                    src="/ednosedmichna-vinetka.jpg"
-                    alt={t("imgAlt1")}
-                    width={800}
-                    height={500}
-                    className="w-full h-auto object-cover"
-                    quality={80}
-                    loading="lazy"
-                  />
-                </div>
-
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {t.rich("paragraph3", {
-                    vignetteCheckerLink: (chunks) => (
-                      <Link href="/proverka-na-vinetka" className="text-[#803487] hover:underline font-medium">
+                  {t.rich("paragraph1", {
+                    emailLink: (chunks) => (
+                      <a
+                        href="mailto:hello@avtovia.bg"
+                        className="text-[#803487] hover:underline font-medium"
+                      >
                         {chunks}
-                      </Link>
+                      </a>
                     ),
                   })}
                 </p>
 
-                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
-                  <Image
-                    src="/винетка-за-една-седмица.jpg"
-                    alt={t("imgAlt2")}
-                    width={800}
-                    height={500}
-                    className="w-full h-auto object-cover"
-                    quality={80}
-                    loading="lazy"
-                  />
-                </div>
-
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  {t("paragraph4")}
+                <p className="text-gray-700 leading-relaxed mb-4 font-medium">
+                  {t("paragraph2")}
                 </p>
               </div>
 
               {!isExpanded && (
-                <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+                <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
               )}
             </div>
           </div>

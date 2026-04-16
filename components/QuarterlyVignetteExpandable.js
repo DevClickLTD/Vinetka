@@ -1,29 +1,31 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Link } from "../lib/navigation";
+import { useTranslations } from "next-intl";
 
 export default function QuarterlyVignetteExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const t = useTranslations("prices.quarterly.expandable");
 
   return (
     <div className="bg-gradient-to-br from-purple-50 to-indigo-50 py-16 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8 text-center">
-            Тримесечна винетка онлайн
+            {t("title")}
           </h2>
 
           <div className="prose prose-lg prose-purple mx-auto">
             <p className="text-gray-700 leading-relaxed mb-4">
-              Тримесечната винетка е отличен избор за шофьори, които използват Републиканската пътна мрежа в България редовно, но не целогодишно. Тя предоставя право на движение по автомагистрали и републикански пътища за период от 3 последователни месеца, считано от избраната начална дата. Това я прави балансирано решение между краткосрочните и{" "}
-              <Link
-                href="/tseni/godishna"
-                className="text-[#803487] hover:underline font-medium"
-              >
-                годишните винетки
-              </Link>
-              .
+              {t.rich("intro", {
+                annualLink: (chunks) => (
+                  <Link href="/tseni/godishna" className="text-[#803487] hover:underline font-medium">
+                    {chunks}
+                  </Link>
+                ),
+              })}
             </p>
 
             <div className="relative">
@@ -33,31 +35,55 @@ export default function QuarterlyVignetteExpandable() {
                 }`}
               >
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Този тип винетка е особено подходящ за сезонни пътувания, чести командировки или хора, които работят в друг град за определен период. Например, ако планирате активно шофиране през летните месеци или имате интензивни ангажименти за няколко месеца, тримесечната винетка ще ви осигури спокойствие и удобство без необходимост от често подновяване.
+                  {t("paragraph1")}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  Предимства на 3-месечната винетка
+                  {t("heading1")}
                 </h3>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Едно от основните предимства на тримесечната винетка е нейната икономическа ефективност. В сравнение с няколко последователни краткосрочни винетки, тя предлага по-добра стойност за парите, като същевременно остава по-достъпна от годишната. Това я прави предпочитан избор за шофьори, които търсят оптимален баланс между цена и продължителност.
+                  {t("paragraph2")}
                 </p>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Закупуването на тримесечна винетка е бързо и лесно. Можете да я активирате веднага или да изберете бъдеща дата, което е удобно при предварително планиране на пътувания. Необходимо е само да въведете регистрационния номер на автомобила и държавата на регистрация, като цялата процедура отнема само няколко минути.
+                  {t("paragraph3")}
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/trimesechna-vinetka-tsena.jpg"
+                    alt={t("imgAlt1")}
+                    width={800}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  Проверката на валидността се извършва изцяло онлайн
+                  {t("heading2")}
                 </h3>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Достатъчно е да въведете регистрационния номер в системата за проверка, където ще видите текущия статус на винетката. Освен това, контролът по пътищата се осъществява автоматично чрез камери, които разчитат регистрационните номера и засичат наличието на активна винетка в реално време.
+                  {t("paragraph4")}
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/винетка-за-3-месеца.jpg"
+                    alt={t("imgAlt2")}
+                    width={800}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Тримесечната винетка е практично и гъвкаво решение за всеки, който иска да пътува спокойно за по-дълъг период, без да се обвързва с годишен абонамент. Тя комбинира удобство, икономия и сигурност, като ви гарантира безпроблемно движение по платената пътна мрежа.
+                  {t("paragraph5")}
                 </p>
               </div>
 
@@ -72,7 +98,7 @@ export default function QuarterlyVignetteExpandable() {
               onClick={() => setIsExpanded(!isExpanded)}
               className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
             >
-              {isExpanded ? "По-малко" : "Вижте повече"}
+              {isExpanded ? t("less") : t("more")}
               <svg
                 className={`h-5 w-5 transform transition-transform duration-300 ${
                   isExpanded ? "rotate-180" : ""

@@ -1,22 +1,25 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Link } from "../lib/navigation";
+import { useTranslations } from "next-intl";
 
 export default function DailyVignetteExpandable() {
   const [isExpanded, setIsExpanded] = useState(false);
+  const t = useTranslations("prices.daily.expandable");
 
   return (
     <div className="bg-gradient-to-br from-purple-50 to-indigo-50 py-16 sm:py-24">
       <div className="mx-auto max-w-4xl px-6 lg:px-8">
         <div className="bg-white rounded-2xl shadow-xl p-8 sm:p-12">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-8 text-center">
-            Еднодневна винетка онлайн
+            {t("title")}
           </h2>
 
           <div className="prose prose-lg prose-purple mx-auto">
             <p className="text-gray-700 leading-relaxed mb-4">
-              Еднодневна винетка онлайн е най-новото решение за шофьори, които използват платената пътна мрежа в България само за кратко – в рамките на един ден. Тя дава право на движение по автомагистрали и републикански пътища за точно 24 часа от избраната начална дата и час.
+              {t("intro")}
             </p>
 
             <div className="relative">
@@ -26,34 +29,57 @@ export default function DailyVignetteExpandable() {
                 }`}
               >
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Този тип винетка е идеален при еднократни пътувания – например кратка командировка, посещение в друг град или преминаване транзитно през страната. Вместо да плащате за{" "}
-                  <Link
-                    href="/tseni/sedmichna"
-                    className="text-[#803487] hover:underline font-medium"
-                  >
-                    седмична винетка
-                  </Link>
-                  , еднодневната винетка ви позволява да оптимизирате разходите си и да платите само за времето, което реално ще използвате.
+                  {t.rich("paragraph1", {
+                    weeklyLink: (chunks) => (
+                      <Link href="/tseni/sedmichna" className="text-[#803487] hover:underline font-medium">
+                        {chunks}
+                      </Link>
+                    ),
+                  })}
                 </p>
 
                 <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  Закупуването на еднодневна винетка онлайн е бързо и лесно
+                  {t("heading1")}
                 </h3>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Нужно е да въведете регистрационния номер на автомобила, държавата на регистрация и да изберете начална дата и час. След плащане винетката се активира автоматично и е валидна за следващите 24 часа. Целият процес отнема само няколко минути и може да бъде направен от телефон, таблет или компютър.
+                  {t("paragraph2")}
                 </p>
+
+                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/ednodnevna-vinetka.jpg"
+                    alt={t("imgAlt1")}
+                    width={800}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
 
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Едно от основните предимства на онлайн покупката е удобството. Не се налага да търсите физически пунктове или да чакате на опашки. Освен това имате възможност да планирате предварително, като закупите винетката за бъдеща дата, което е особено полезно при организирани пътувания.
+                  {t("paragraph3")}
                 </p>
 
+                <div className="my-8 rounded-xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/еднодневна-винетка.jpg"
+                    alt={t("imgAlt2")}
+                    width={800}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                    quality={80}
+                    loading="lazy"
+                  />
+                </div>
+
                 <h3 className="text-2xl font-semibold text-gray-900 mt-6 mb-4">
-                  Оптималният избор за кратки дневни пътувания и транзити
+                  {t("heading2")}
                 </h3>
 
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  Еднодневната винетка онлайн е най-добрият избор, когато ви трябва максимална гъвкавост и минимален разход. Тя ви дава свобода да пътувате спокойно, без излишни ангажименти и без да плащате повече от необходимото.
+                  {t("paragraph4")}
                 </p>
               </div>
 
@@ -68,7 +94,7 @@ export default function DailyVignetteExpandable() {
               onClick={() => setIsExpanded(!isExpanded)}
               className="inline-flex items-center gap-x-2 rounded-md bg-[#803487] px-6 py-3 text-base font-semibold text-white shadow-sm hover:bg-[#037672] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#803487] transition-all duration-300"
             >
-              {isExpanded ? "По-малко" : "Вижте повече"}
+              {isExpanded ? t("less") : t("more")}
               <svg
                 className={`h-5 w-5 transform transition-transform duration-300 ${
                   isExpanded ? "rotate-180" : ""
