@@ -104,9 +104,14 @@ export default function FAQ({
                   {openIndex === index && (
                     <div className="px-6 pb-6">
                       <div className="pt-4 border-t border-gray-100">
-                        <p className="text-gray-700 leading-relaxed whitespace-pre-line">
-                          {faq.answer}
-                        </p>
+                        <p
+                          className="text-gray-700 leading-relaxed whitespace-pre-line"
+                          dangerouslySetInnerHTML={{
+                            __html: faq.answer
+                              .replace(/\((\d+(?:,\d+)? лв\.)\)/g, '<span class="text-gray-400 text-sm">($1)</span>')
+                              .replace(/\((\d+ BGN)\)/g, '<span class="text-gray-400 text-sm">($1)</span>'),
+                          }}
+                        />
                       </div>
                     </div>
                   )}

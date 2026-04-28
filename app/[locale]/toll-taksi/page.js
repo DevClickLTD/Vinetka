@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Link } from "../../../lib/navigation";
 import Script from "next/script";
-import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaTruck, FaRoute, FaCreditCard, FaClock, FaShieldAlt } from "react-icons/fa";
 import { getTranslations } from 'next-intl/server';
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 
@@ -43,13 +43,6 @@ export default async function TolTaksa() {
   const t = await getTranslations('tollTax');
   const siteUrl = 'https://www.avtovia.bg';
   
-  const tollPoints = [
-    { name: t('tollPoints.vidinBridge'), description: t('tollPoints.vidinBridgeDesc') },
-    { name: t('tollPoints.ruseBridge'), description: t('tollPoints.ruseBridgeDesc') },
-    { name: t('tollPoints.topliDolTunnel'), description: t('tollPoints.topliDolTunnelDesc') },
-    { name: t('tollPoints.otherObjects'), description: t('tollPoints.otherObjectsDesc') }
-  ];
-
   const benefits = [
     {
       icon: <FaClock className="w-8 h-8 text-purple-600" />,
@@ -121,12 +114,6 @@ export default async function TolTaksa() {
               >
                 {t('learnMore')}
               </Link>
-              <Link
-                href="#toll-points"
-                className="text-sm font-semibold leading-6 text-white hover:text-purple-100 transition-colors"
-              >
-                {t('tollPointsNav')} <span aria-hidden="true">→</span>
-              </Link>
             </div>
           </div>
         </div>
@@ -187,42 +174,6 @@ export default async function TolTaksa() {
                   <p className="mt-2 text-sm text-gray-600">
                     {benefit.description}
                   </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Toll Points Section */}
-      <div id="toll-points" className="bg-white py-16 sm:py-24">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              {t('tollPoints.title')}
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              {t('tollPoints.subtitle')}
-            </p>
-          </div>
-          
-          <div className="mx-auto mt-16 max-w-4xl">
-            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-              {tollPoints.map((point, index) => (
-                <div key={index} className="relative rounded-lg border border-gray-200 bg-white p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0">
-                      <FaMapMarkerAlt className="h-6 w-6 text-purple-600" />
-                    </div>
-                    <div className="ml-4">
-                      <h3 className="text-lg font-semibold text-gray-900">
-                        {point.name}
-                      </h3>
-                      <p className="mt-1 text-sm text-gray-600">
-                        {point.description}
-                      </p>
-                    </div>
-                  </div>
                 </div>
               ))}
             </div>
