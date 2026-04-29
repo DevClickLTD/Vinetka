@@ -156,9 +156,6 @@ export default async function TolTaksa() {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               {t('benefits.title')}
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
-              {t('benefits.subtitle')}
-            </p>
           </div>
           
           <div className="mx-auto mt-16 max-w-5xl">
@@ -191,9 +188,6 @@ export default async function TolTaksa() {
             </h2>
             <p className="mt-6 text-lg text-gray-700 leading-relaxed">
               {t('targetAudience.description1')}
-            </p>
-            <p className="mt-4 text-lg text-gray-700 leading-relaxed">
-              {t('targetAudience.description2')}
             </p>
           </div>
         </div>
