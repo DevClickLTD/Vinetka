@@ -11,8 +11,7 @@ import { generateSEOMetadata } from '../../../lib/seo-utils';
 import ContactExpandable from '../../../components/ContactExpandable';
 // import HeaderBreadcrumb from "@/components/HeaderBreadcrumb"; // Ще го добавим по-късно
 
-// Force static generation
-export const dynamic = 'force-static';
+export const revalidate = 3600;
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -34,7 +33,8 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default async function ContactPage() {
+export default async function ContactPage({ params }) {
+  const { locale } = await params;
   const t = await getTranslations("contact");
   const siteUrl = 'https://www.avtovia.bg';
 
