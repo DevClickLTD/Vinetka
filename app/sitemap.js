@@ -13,7 +13,6 @@ const staticPages = [
   { path: 'contact', priority: 0.8, changeFrequency: 'monthly' },
   { path: 'za-nas', priority: 0.7, changeFrequency: 'monthly' },
   { path: 'proverka-na-vinetka', priority: 0.9, changeFrequency: 'weekly' },
-  { path: 'toll-taksi', priority: 0.8, changeFrequency: 'monthly' },
   { path: 'obshti-usloviya', priority: 0.5, changeFrequency: 'yearly' },
   { path: 'privacy-policy', priority: 0.5, changeFrequency: 'yearly' },
   { path: 'politika-za-biskvitki', priority: 0.5, changeFrequency: 'yearly' },

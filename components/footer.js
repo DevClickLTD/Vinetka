@@ -24,7 +24,6 @@ export default function Footer() {
   const navigation = {
     services: [
       { name: t('services.vignetteCheck'), href: "/proverka-na-vinetka" },
-      { name: t('services.tollTax'), href: "/toll-taksi" },
     ],
     vignettes: [
       { name: t('vignettes.daily'), href: "/tseni/dnevna" },
