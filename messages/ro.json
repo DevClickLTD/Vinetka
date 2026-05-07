@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Vinietă online - Informații despre vinietă electronică",
+    "title": "Vinietă online - Vinietă electronică pentru Bulgaria",
     "description": "Vinietă online - Cumpărați o vinietă electronică pentru Bulgaria cu plată securizată",
     "titleTemplate": "%s | vinetka bg"
   },
@@ -68,14 +68,14 @@
   },
   "home": {
     "hero": {
-      "title": "Vinietele online",
+      "title": "Viniete pentru Bulgaria",
       "subtitle": "Vinietele electronice pentru autoturisme până la 3.5 t",
       "heroTitle": "Informații despre vinietă online",
       "heroSubtitle": "Află mai multe despre vinieta online rapid și ușor pe site-ul nostru."
     },
     "loading": "Se încarcă serviciile...",
     "vignetteSection": {
-      "title": "Vinietele online",
+      "title": "Viniete pentru Bulgaria",
       "subtitle": "Vinietele electronice pentru autoturisme până la 3.5 t"
     },
     "expandable": {
@@ -84,7 +84,7 @@
       "paragraph1": "Prin platforma avtovia.bg obții informații clare despre toate opțiunile disponibile – <weekendLink>de weekend</weekendLink>, <weeklyLink>săptămânală</weeklyLink>, <monthlyLink>lunară</monthlyLink>, <quarterlyLink>trimestrială</quarterlyLink> sau <annualLink>anuală</annualLink>. Plata se efectuează în siguranță cu cardul, iar imediat după o tranzacție reușită primești o confirmare pe email.",
       "imgAlt1": "Cumpărarea unei viniete electronice online pentru Bulgaria",
       "sectionTitle": "Vinietă electronică în un minut",
-      "paragraph2": "Vinieta electronică elimină nevoia de autocolante și documente pe hârtie – totul se stochează digital și este legat de numărul de înmatriculare al vehiculului.",
+      "paragraph2": "Vinieta electronică pentru Republica Bulgaria elimină nevoia de autocolante și documente pe hârtie – totul se stochează digital și este legat de numărul de înmatriculare al vehiculului.",
       "imgAlt2": "Vinietă electronică online - cumpără rapid și ușor",
       "paragraph3": "Cu avtovia.bg, planificarea călătoriilor devine mai ușoară ca niciodată. Indiferent dacă călătorești frecvent sau ocazional, cumpărarea online a vinietei îți economisește timp și efort.",
       "more": "Citește mai mult",
@@ -945,7 +945,7 @@
   },
   "components": {
     "hero": {
-      "title": "Informații despre vinieta online",
+      "title": "Obțineți vinieta pentru Bulgaria online",
       "subtitle": "Află rapid și ușor mai multe despre vinieta online pe site-ul nostru.",
       "ctaButton": "Începe acum",
       "learnMore": "Află mai mult",

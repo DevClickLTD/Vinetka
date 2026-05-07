@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Online matrica - Elektronikus matrica információk",
+    "title": "Matrica online - Elektronikus matrica Bulgáriához",
     "description": "Online matrica - Vásároljon elektronikus matricát Bulgáriába biztonságos fizetéssel",
     "titleTemplate": "%s | vinetka bg"
   },
@@ -68,14 +68,14 @@
   },
   "home": {
     "hero": {
-      "title": "Online matricák",
+      "title": "Matricák Bulgáriához",
       "subtitle": "Elektronikus matricák 3,5 t-ig terjedő személygépkocsikhoz",
       "heroTitle": "Online matrica információk",
       "heroSubtitle": "Ismerje meg egyszerűen és gyorsan az online matricákkal kapcsolatos tudnivalókat weboldalunkon."
     },
     "loading": "Szolgáltatások betöltése...",
     "vignetteSection": {
-      "title": "Online matricák",
+      "title": "Matricák Bulgáriához",
       "subtitle": "Elektronikus matricák 3,5 t-ig terjedő személygépkocsikhoz"
     },
     "expandable": {
@@ -84,7 +84,7 @@
       "paragraph1": "Az avtovia.bg platformon keresztül világos információkat kap az összes elérhető lehetőségről – <weekendLink>hétvégi</weekendLink>, <weeklyLink>heti</weeklyLink>, <monthlyLink>havi</monthlyLink>, <quarterlyLink>negyedéves</quarterlyLink> vagy <annualLink>éves matrica</annualLink>. A fizetés biztonságosan kártyával történik, és a sikeres tranzakció után azonnal e-mailes visszaigazolást kap.",
       "imgAlt1": "Elektronikus matrica online vásárlása Bulgáriába",
       "sectionTitle": "Elektronikus matrica egy perc alatt",
-      "paragraph2": "Az elektronikus matrica kiküszöböli a matricák és papíralapú dokumentumok szükségességét – minden digitálisan tárolódik és a jármű rendszámához van kötve.",
+      "paragraph2": "A Bolgár Köztársaság elektronikus matricája kiküszöböli a matricák és papíralapú dokumentumok szükségességét – minden digitálisan tárolódik és a jármű rendszámához van kötve.",
       "imgAlt2": "Elektronikus matrica online - vásároljon gyorsan és egyszerűen",
       "paragraph3": "Az avtovia.bg segítségével az utazástervezés könnyebbé válik, mint valaha. Akár sokat utazik, akár csak alkalmanként, az online matricavásárlás időt és energiát takarít meg.",
       "more": "Tovább olvasom",
@@ -945,7 +945,7 @@
   },
   "components": {
     "hero": {
-      "title": "Szerezze be matricáját online",
+      "title": "Szerezze be bulgáriai matricáját online",
       "subtitle": "Egyszerű, gyors és biztonságos fizetéssel",
       "ctaButton": "Kezdjen bele",
       "learnMore": "Tudjon meg többet",
