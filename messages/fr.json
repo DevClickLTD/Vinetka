@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Vignette en ligne - Informations sur la vignette électronique",
+    "title": "Vignette en ligne - Vignette électronique pour la Bulgarie",
     "description": "Vignette en ligne - Achetez une vignette électronique pour la Bulgarie avec paiement sécurisé",
     "titleTemplate": "%s | vinetka bg"
   },
@@ -68,14 +68,14 @@
   },
   "home": {
     "hero": {
-      "title": "Vignettes en ligne",
+      "title": "Vignettes pour la Bulgarie",
       "subtitle": "Vignettes électroniques pour véhicules légers jusqu'à 3,5 t",
       "heroTitle": "Informations sur la vignette en ligne",
       "heroSubtitle": "Découvrez facilement et rapidement tout sur les vignettes en ligne sur notre site."
     },
     "loading": "Chargement des services...",
     "vignetteSection": {
-      "title": "Vignettes en ligne",
+      "title": "Vignettes pour la Bulgarie",
       "subtitle": "Vignettes électroniques pour véhicules légers jusqu'à 3,5 t"
     },
     "expandable": {
@@ -84,7 +84,7 @@
       "paragraph1": "Via la plateforme avtovia.bg, vous obtenez des informations claires sur toutes les options disponibles – <weekendLink>week-end</weekendLink>, <weeklyLink>hebdomadaire</weeklyLink>, <monthlyLink>mensuelle</monthlyLink>, <quarterlyLink>trimestrielle</quarterlyLink> ou <annualLink>vignette annuelle</annualLink>. La saisie du numéro d'immatriculation prend quelques secondes, et le paiement s'effectue en toute sécurité par carte.",
       "imgAlt1": "Achat d'une vignette électronique en ligne pour la Bulgarie",
       "sectionTitle": "Vignette électronique en une minute",
-      "paragraph2": "La vignette électronique élimine le besoin d'autocollants et de documents papier – tout est stocké numériquement et lié au numéro d'immatriculation du véhicule.",
+      "paragraph2": "La vignette électronique pour la République de Bulgarie élimine le besoin d'autocollants et de documents papier – tout est stocké numériquement et lié au numéro d'immatriculation du véhicule.",
       "imgAlt2": "Vignette électronique en ligne - achetez rapidement et facilement",
       "paragraph3": "Avec avtovia.bg, la planification des voyages devient plus facile que jamais. Que vous voyagiez fréquemment ou occasionnellement, l'achat en ligne d'une vignette vous fait gagner du temps et vous épargne du stress inutile.",
       "more": "Lire la suite",
@@ -945,7 +945,7 @@
   },
   "components": {
     "hero": {
-      "title": "Obtenez votre vignette en ligne",
+      "title": "Obtenez votre vignette pour la Bulgarie en ligne",
       "subtitle": "Facile, rapide et avec paiement sécurisé",
       "ctaButton": "Commencer",
       "learnMore": "En savoir plus",

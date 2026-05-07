@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Online Vignette - Electronic Vignette Information",
+    "title": "Online Vignette - Electronic Vignette for Bulgaria",
     "description": "Online Vignette - Buy an electronic vignette for Bulgaria with secure payment",
     "titleTemplate": "%s | vinetka bg"
   },
@@ -68,14 +68,14 @@
   },
   "home": {
     "hero": {
-      "title": "Online Vignettes",
+      "title": "Vignettes for Bulgaria",
       "subtitle": "Electronic vignettes for light vehicles up to 3.5 t",
       "heroTitle": "Online Vignette Information",
       "heroSubtitle": "Learn more about online vignettes easily and quickly on our website."
     },
     "loading": "Loading services...",
     "vignetteSection": {
-      "title": "Online Vignettes",
+      "title": "Vignettes for Bulgaria",
       "subtitle": "Electronic vignettes for light vehicles up to 3.5 t"
     },
     "expandable": {
@@ -84,7 +84,7 @@
       "paragraph1": "Through the avtovia.bg platform you get clear information about all available options – <weekendLink>weekend</weekendLink>, <weeklyLink>weekly</weeklyLink>, <monthlyLink>monthly</monthlyLink>, <quarterlyLink>quarterly</quarterlyLink> or <annualLink>annual vignette</annualLink>. Entering the registration number and country of registration takes seconds, and the system automatically checks the correctness of the data to avoid errors. Payment is made securely by card, and immediately after a successful transaction you receive a confirmation by email.",
       "imgAlt1": "Buying an electronic vignette online for Bulgaria",
       "sectionTitle": "Electronic vignette in one minute",
-      "paragraph2": "The electronic vignette eliminates the need for stickers and paper documents – everything is stored digitally and linked to the vehicle registration number. This not only makes it easier for drivers, but also contributes to a more environmentally friendly solution.",
+      "paragraph2": "The electronic vignette for the Republic of Bulgaria eliminates the need for stickers and paper documents – everything is stored digitally and linked to the vehicle registration number. This not only makes it easier for drivers, but also contributes to a more environmentally friendly solution.",
       "imgAlt2": "Electronic vignette online - buy quickly and easily",
       "paragraph3": "With avtovia.bg, trip planning becomes easier than ever. Whether you travel frequently or just occasionally, buying a vignette online saves you time, effort and unnecessary stress, so you can fully enjoy the road ahead.",
       "more": "Read more",
@@ -945,7 +945,7 @@
   },
   "components": {
     "hero": {
-      "title": "Get your vignette online",
+      "title": "Get your Bulgaria vignette online",
       "subtitle": "Easy, fast and with secure payment",
       "ctaButton": "Get Started",
       "learnMore": "Learn More",

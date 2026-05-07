@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Vinyet Online - Elektronik Vinyet Bilgisi",
+    "title": "Vinyet Online - Bulgaristan için Elektronik Vinyet",
     "description": "Vinyet Online - Güvenli ödemeyle Bulgaristan için elektronik vinyet satın alın",
     "titleTemplate": "%s | vinetka bg"
   },
@@ -68,14 +68,14 @@
   },
   "home": {
     "hero": {
-      "title": "Vinyetler Online",
+      "title": "Bulgaristan için Vinyetler",
       "subtitle": "3.5 tona kadar binek araçlar için elektronik vinyetler",
       "heroTitle": "Online vinyet bilgisi",
       "heroSubtitle": "Sitemizde online vinyet hakkında kolayca ve hızlıca bilgi edinin."
     },
     "loading": "Hizmetler yükleniyor...",
     "vignetteSection": {
-      "title": "Vinyetler Online",
+      "title": "Bulgaristan için Vinyetler",
       "subtitle": "3.5 tona kadar binek araçlar için elektronik vinyetler"
     },
     "expandable": {
@@ -84,7 +84,7 @@
       "paragraph1": "Avtovia.bg platformu üzerinden mevcut tüm seçenekler hakkında net bilgi alırsınız – <weekendLink>hafta sonu</weekendLink>, <weeklyLink>haftalık</weeklyLink>, <monthlyLink>aylık</monthlyLink>, <quarterlyLink>üç aylık</quarterlyLink> veya <annualLink>yıllık vinyet</annualLink>. Ödeme güvenli bir şekilde kartla yapılır ve başarılı bir işlemin hemen ardından e-posta ile onay alırsınız.",
       "imgAlt1": "Bulgaristan için online elektronik vinyet satın alma",
       "sectionTitle": "Bir dakikada elektronik vinyet",
-      "paragraph2": "Elektronik vinyet, etiket ve kağıt belge ihtiyacını ortadan kaldırır – her şey dijital olarak depolanır ve aracın plakasına bağlıdır.",
+      "paragraph2": "Bulgaristan Cumhuriyeti elektronik vinyeti, etiket ve kağıt belge ihtiyacını ortadan kaldırır – her şey dijital olarak depolanır ve aracın plakasına bağlıdır.",
       "imgAlt2": "Online elektronik vinyet - hızlı ve kolay satın alın",
       "paragraph3": "Avtovia.bg ile seyahat planlaması her zamankinden daha kolay hale gelir. Sık seyahat ediyor olun veya ara sıra, online vinyet satın almak size zaman ve emek tasarrufu sağlar.",
       "more": "Daha fazla oku",
@@ -885,7 +885,7 @@
   },
   "components": {
     "hero": {
-      "title": "Online Vinyet Bilgisi",
+      "title": "Bulgaristan vinyetinizi online alın",
       "subtitle": "Sitemizde online vinyet hakkında kolay ve hızlı bilgi edinin.",
       "ctaButton": "Hemen başla",
       "learnMore": "Daha fazla bilgi",

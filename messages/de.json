@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Vignette online - Informationen zur elektronischen Vignette",
+    "title": "Vignette online - Elektronische Vignette für Bulgarien",
     "description": "Online-Vignette - Kaufen Sie eine elektronische Vignette für Bulgarien mit sicherer Zahlung",
     "titleTemplate": "%s | vinetka bg"
   },
@@ -68,14 +68,14 @@
   },
   "home": {
     "hero": {
-      "title": "Vignetten online",
+      "title": "Vignetten für Bulgarien",
       "subtitle": "Elektronische Vignetten für Pkw bis 3,5 t",
       "heroTitle": "Informationen zur Online-Vignette",
       "heroSubtitle": "Erfahren Sie mehr über Online-Vignetten einfach und schnell auf unserer Website."
     },
     "loading": "Lade Dienstleistungen...",
     "vignetteSection": {
-      "title": "Vignetten online",
+      "title": "Vignetten für Bulgarien",
       "subtitle": "Elektronische Vignetten für Pkw bis 3,5 t"
     },
     "expandable": {
@@ -84,7 +84,7 @@
       "paragraph1": "Über die Plattform avtovia.bg erhalten Sie klare Informationen zu allen verfügbaren Optionen – <weekendLink>Wochenend</weekendLink>-, <weeklyLink>Wochen</weeklyLink>-, <monthlyLink>Monats</monthlyLink>-, <quarterlyLink>Quartals</quarterlyLink>- oder <annualLink>Jahresvignette</annualLink>. Die Eingabe des Kennzeichens und des Zulassungslandes dauert nur Sekunden, und das System überprüft automatisch die Richtigkeit der Daten. Die Zahlung erfolgt sicher mit Karte, und unmittelbar nach einer erfolgreichen Transaktion erhalten Sie eine Bestätigung per E-Mail.",
       "imgAlt1": "Online-Kauf einer elektronischen Vignette für Bulgarien",
       "sectionTitle": "Elektronische Vignette in einer Minute",
-      "paragraph2": "Die elektronische Vignette macht Aufkleber und Papierdokumente überflüssig – alles wird digital gespeichert und mit dem Kennzeichen des Fahrzeugs verknüpft. Dies erleichtert nicht nur Fahrern die Arbeit, sondern trägt auch zu einer umweltfreundlicheren Lösung bei.",
+      "paragraph2": "Die elektronische Vignette für die Republik Bulgarien macht Aufkleber und Papierdokumente überflüssig – alles wird digital gespeichert und mit dem Kennzeichen des Fahrzeugs verknüpft. Dies erleichtert nicht nur Fahrern die Arbeit, sondern trägt auch zu einer umweltfreundlicheren Lösung bei.",
       "imgAlt2": "Elektronische Vignette online – schnell und einfach kaufen",
       "paragraph3": "Mit avtovia.bg wird die Reiseplanung einfacher denn je. Egal ob Sie häufig oder nur gelegentlich reisen, der Online-Kauf einer Vignette spart Ihnen Zeit, Mühe und unnötigen Stress.",
       "more": "Mehr lesen",
@@ -945,7 +945,7 @@
   },
   "components": {
     "hero": {
-      "title": "Informationen zur Online-Vignette",
+      "title": "Holen Sie sich Ihre Bulgarien-Vignette online",
       "subtitle": "Erfahren Sie mehr über Online-Vignetten einfach und schnell auf unserer Website.",
       "ctaButton": "Jetzt starten",
       "learnMore": "Mehr erfahren",
