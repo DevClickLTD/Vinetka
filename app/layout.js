@@ -84,6 +84,10 @@ export function generateMetadata() {
 export default function RootLayout({ children }) {
   return (
     <html lang="bg">
+      <head>
+        <link rel="llms" href="https://www.avtovia.bg/llms.txt" />
+        <link rel="llms-full" href="https://www.avtovia.bg/llms-full.txt" />
+      </head>
       <body className={roboto.className}>
         <CriticalCSS />
         
