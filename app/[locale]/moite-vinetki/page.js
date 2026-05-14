@@ -1,5 +1,6 @@
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import { getTranslations } from 'next-intl/server';
+import MyVignettesExpandable from '../../../components/MyVignettesExpandable';
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;
@@ -161,6 +162,9 @@ export default async function MyVignettesPage({ params }) {
           </div>
         </div>
       </section>
+
+      {/* Expandable Info Section */}
+      <MyVignettesExpandable />
 
       {/* CTA Section */}
       <section className="bg-gradient-to-br from-purple-600 via-purple-700 to-indigo-800 py-16 sm:py-24">
