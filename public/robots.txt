@@ -4,3 +4,6 @@ Disallow: /api/
 
 # Sitemaps
 Sitemap: https://www.avtovia.bg/sitemap.xml
+
+# LLMs
+LLMs: https://www.avtovia.bg/llms.txt

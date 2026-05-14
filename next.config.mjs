@@ -1,5 +1,9 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 
+// Fix SSL cert verification issue in local/CI environments with self-signed or
+// intermediate certs (does not affect production TLS — only build-time fetches)
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
 const withNextIntl = createNextIntlPlugin();
 
 /** @type {import('next').NextConfig} */

@@ -19,6 +19,11 @@ const intlMiddleware = createMiddleware({
 
 export default function middleware(request) {
   const { pathname, hostname } = request.nextUrl;
+
+  // Skip API routes entirely — no locale prefix needed
+  if (pathname.startsWith('/api/')) {
+    return NextResponse.next();
+  }
   
   // Пропускаме Next.js файлове и статични ресурси ПЪРВО
   if (pathname.startsWith('/_next') || pathname.startsWith('/_vercel') || pathname.includes('.')) {
@@ -69,6 +74,6 @@ export const config = {
     
     // Enable redirects that add missing locales
     // (e.g. `/pathnames` -> `/en/pathnames`)
-    '/((?!_next|_vercel|.*\\..*).*)'
+    '/((?!_next|_vercel|api|.*\\..*).*)'
   ]
 };

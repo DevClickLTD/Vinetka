@@ -15,9 +15,38 @@ export default function VignetteCheckerCTA() {
   const tChecker = useTranslations('vignetteCheckerComponent');
   
   const [plateNumber, setPlateNumber] = useState("");
+  const [countryCode, setCountryCode] = useState("BG");
   const [loading, setLoading] = useState(false);
   const [result, setResult] = useState(null);
   const [error, setError] = useState("");
+
+  const COUNTRIES = [
+    { code: "BG", label: "BG – България" },
+    { code: "DE", label: "DE – Германия" },
+    { code: "RO", label: "RO – Румъния" },
+    { code: "GR", label: "GR – Гърция" },
+    { code: "TR", label: "TR – Турция" },
+    { code: "RS", label: "RS – Сърбия" },
+    { code: "MK", label: "MK – Македония" },
+    { code: "GB", label: "GB – Великобритания" },
+    { code: "FR", label: "FR – Франция" },
+    { code: "NL", label: "NL – Нидерландия" },
+    { code: "BE", label: "BE – Белгия" },
+    { code: "IT", label: "IT – Италия" },
+    { code: "ES", label: "ES – Испания" },
+    { code: "PL", label: "PL – Полша" },
+    { code: "CZ", label: "CZ – Чехия" },
+    { code: "SK", label: "SK – Словакия" },
+    { code: "HU", label: "HU – Унгария" },
+    { code: "AT", label: "AT – Австрия" },
+    { code: "CH", label: "CH – Швейцария" },
+    { code: "SE", label: "SE – Швеция" },
+    { code: "NO", label: "NO – Норвегия" },
+    { code: "DK", label: "DK – Дания" },
+    { code: "FI", label: "FI – Финландия" },
+    { code: "UA", label: "UA – Украйна" },
+    { code: "MD", label: "MD – Молдова" },
+  ];
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,8 +61,8 @@ export default function VignetteCheckerCTA() {
     setResult(null);
 
     try {
-      const apiUrl = `https://check.bgtoll.bg/check/vignette/plate/BG/${plateNumber.trim()}`;
-      
+      const apiUrl = `/api/vinetka/validate?Lpn=${encodeURIComponent(plateNumber.trim())}&CountryCode=${encodeURIComponent(countryCode)}`;
+
       const response = await fetch(apiUrl, {
         method: 'GET',
         headers: {
@@ -41,12 +70,15 @@ export default function VignetteCheckerCTA() {
         }
       });
 
+      const data = await response.json();
+
       if (!response.ok) {
         throw new Error(tChecker('errorServer'));
       }
 
-      const data = await response.json();
-      setResult(data);
+      const vignette = Array.isArray(data) && data.length > 0 ? data[0] : null;
+      const isValid = vignette?.valid === true && vignette?.isActive === true;
+      setResult({ isValid, vignette });
     } catch (err) {
       console.error('Error occurred:', err);
       setError(tChecker('errorGeneral'));
@@ -131,25 +163,39 @@ export default function VignetteCheckerCTA() {
                         {/* Working Form */}
                         <form onSubmit={handleSubmit} className="space-y-4">
                           <div>
-                            <label htmlFor="plate-cta" className="block text-sm font-medium text-gray-700 mb-1">
-                              {t('registrationNumber')}
-                            </label>
-                            <div className="relative">
-                              <input
-                                id="plate-cta"
-                                name="plate"
-                                type="text"
-                                value={plateNumber}
-                                onChange={(e) => setPlateNumber(e.target.value.toUpperCase())}
-                                placeholder="CA1234AB"
-                                className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-[#803487] focus:ring-[#803487] uppercase"
-                                disabled={loading}
-                                maxLength={10}
-                              />
-                              <div className="absolute inset-y-0 right-0 flex items-center pr-3">
-                                <span className="text-xs text-gray-500 bg-gray-200 px-2 py-1 rounded">
-                                  BG
-                                </span>
+                            <div className="flex gap-2 items-end">
+                              <div className="min-w-0 flex-1">
+                                <label htmlFor="plate-cta" className="block text-sm font-medium text-gray-700 mb-1">
+                                  {t('registrationNumber')}
+                                </label>
+                                <input
+                                  id="plate-cta"
+                                  name="plate"
+                                  type="text"
+                                  value={plateNumber}
+                                  onChange={(e) => setPlateNumber(e.target.value.toUpperCase())}
+                                  placeholder="CA1234AB"
+                                  className="block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-[#803487] focus:ring-[#803487] uppercase"
+                                  disabled={loading}
+                                  maxLength={10}
+                                />
+                              </div>
+                              <div className="w-20 flex-shrink-0">
+                                <label htmlFor="country-cta" className="block text-sm font-medium text-gray-700 mb-1">
+                                  {t('countryCode')}
+                                </label>
+                                <select
+                                  id="country-cta"
+                                  name="countryCode"
+                                  value={countryCode}
+                                  onChange={(e) => { setCountryCode(e.target.value); setResult(null); }}
+                                  disabled={loading}
+                                  className="block w-full rounded-md border border-gray-300 px-2 py-2 text-sm focus:border-[#803487] focus:ring-[#803487] bg-white"
+                                >
+                                  {COUNTRIES.map(({ code }) => (
+                                    <option key={code} value={code}>{code}</option>
+                                  ))}
+                                </select>
                               </div>
                             </div>
                             {error && (
@@ -179,24 +225,19 @@ export default function VignetteCheckerCTA() {
                         {/* Result Display */}
                         {result && (
                           <div className="mt-6">
-                            {result.ok && result.vignette ? (
+                            {result.isValid ? (
                               <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-                                <div className="flex items-center mb-2">
-                                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2" />
+                                <div className="flex items-start">
+                                  <CheckCircleIcon className="h-5 w-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
                                   <span className="text-sm font-medium text-green-800">
-                                    {t('vignetteValid')}
+                                    {t('vignetteValid')}{result.vignette?.validityEndFormatted ? ` ${result.vignette.validityEndFormatted}` : ''}
                                   </span>
                                 </div>
-                                {result.vignette.validityDateToFormated && (
-                                  <div className="mt-2 text-xs text-green-700">
-                                    {tChecker('fields.validTo')}: {result.vignette.validityDateToFormated}
-                                  </div>
-                                )}
                               </div>
                             ) : (
                               <div className="p-4 bg-red-50 rounded-lg border border-red-200">
                                 <div className="flex items-center">
-                                  <XCircleIcon className="h-5 w-5 text-red-500 mr-2" />
+                                  <XCircleIcon className="h-5 w-5 text-red-500 mr-2 flex-shrink-0" />
                                   <span className="text-sm font-medium text-red-800">
                                     {tChecker('noValidVignette')}
                                   </span>
