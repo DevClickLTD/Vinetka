@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vignette en ligne - Vignette électronique pour la Bulgarie",
-    "description": "Vignette en ligne - Achetez une vignette électronique pour la Bulgarie avec paiement sécurisé",
+    "description": "Achetez votre vignette électronique pour la Bulgarie en ligne en 1 minute ! Journalière, hebdomadaire, mensuelle ou annuelle. Paiement sécurisé par carte. Sans frais cachés !",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -81,6 +81,7 @@
     "expandable": {
       "title": "Acheter une vignette en ligne",
       "intro": "Acheter une vignette en ligne est un moyen rapide, pratique et sécurisé de garantir un voyage tranquille sur le réseau routier national. Au lieu de perdre du temps à chercher des points de vente physiques, en quelques clics vous pouvez choisir le bon type de vignette selon la période et le type de véhicule.",
+      "heritageNote": "Avtovia.bg succède au site d'information Vinetka.bg et offre désormais aux utilisateurs la possibilité d'acheter eux-mêmes une vignette en ligne !",
       "paragraph1": "Via la plateforme avtovia.bg, vous obtenez des informations claires sur toutes les options disponibles – <weekendLink>week-end</weekendLink>, <weeklyLink>hebdomadaire</weeklyLink>, <monthlyLink>mensuelle</monthlyLink>, <quarterlyLink>trimestrielle</quarterlyLink> ou <annualLink>vignette annuelle</annualLink>. La saisie du numéro d'immatriculation prend quelques secondes, et le paiement s'effectue en toute sécurité par carte.",
       "imgAlt1": "Achat d'une vignette électronique en ligne pour la Bulgarie",
       "sectionTitle": "Vignette électronique en une minute",
@@ -1315,6 +1316,14 @@
         "answer": "Il n'est pas obligatoire de porter un document pour la vignette électronique car elle est électronique et liée au numéro d'immatriculation. Le système reconnaît automatiquement la présence d'une vignette valide via des caméras. Cependant, nous vous recommandons de sauvegarder l'email ou la confirmation d'achat par précaution."
       }
     ]
+  },
+  "myVignettesExpandable": {
+    "title": "Gérez vos vignettes en un seul endroit",
+    "paragraph1": "En vous inscrivant sur Avtovia.bg, vous disposez d'un espace pratique pour gérer toutes vos vignettes électroniques rapidement et facilement. Au lieu de conserver des e-mails, des reçus ou de consulter différents sites web, vous pouvez voir en un seul endroit toutes vos vignettes actives et expirées pour vos véhicules.",
+    "paragraph2": "La plateforme est particulièrement pratique pour les familles et les personnes possédant plusieurs véhicules. Vous pouvez ajouter des vignettes pour différentes plaques d'immatriculation et suivre leurs dates d'expiration dans un profil commun. Vous savez ainsi toujours quand une vignette expire et évitez le risque d'amendes ou d'oublis lors de vos déplacements.",
+    "paragraph3": "L'un des grands avantages est que vous pouvez ajouter des vignettes achetées auprès d'autres fournisseurs, pas seulement via la plateforme. Cela vous offre une flexibilité totale et une gestion centralisée de tous vos péages routiers. Vous recevrez également des notifications et des rappels en temps utile avant l'expiration de la validité.",
+    "more": "Lire plus",
+    "less": "Voir moins"
   },
   "myVignettesPage": {
     "title": "Mes Vignettes - Gérer et Vérifier la Validité en Ligne",

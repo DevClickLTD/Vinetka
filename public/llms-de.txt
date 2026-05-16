@@ -1,0 +1,46 @@
+# avtovia.bg — Elektronische Vignette für Bulgarien online
+
+> avtovia.bg ist eine lizenzierte Plattform für den Kauf elektronischer Vignetten für Bulgarien, die Prüfung der Vignettenvalidität und die Verwaltung Ihres Vignettenprofils. Schnell, sicher, 24/7 erreichbar.
+
+**Hinweis:** avtovia.bg ist der Nachfolger der Informationswebsite Vinetka.bg und ermöglicht es Nutzern nun, selbst eine Vignette online zu kaufen.
+
+avtovia.bg wird von Digital Policy Hub betrieben. Der Vignettenverkauf erfolgt durch „Digitoll Smart Infrastructure" AG (Digitoll) — nationaler Dienstleister, lizenziert von der bulgarischen Straßeninfrastrukturagency (API) seit 2019. Digitoll ist eine Tochtergesellschaft der amerikanischen Concord, Inc.
+
+## Hauptdienste
+
+- [Elektronische Vignette kaufen](https://web.avtovia.bg/): Web-App für den Kauf aller Arten von elektronischen Vignetten für Pkw bis 3,5 t. Nur Kennzeichen, Zulassungsland und Startdatum erforderlich. Kartenzahlung. Aktivierung innerhalb einer Minute.
+- [Vignette prüfen](https://avtovia.bg/de/proverka-na-vinetka): Kostenlose Echtzeit-Gültigkeitsprüfung über die offizielle API der bulgarischen Straßeninfrastrukturagentur. Ohne Registrierung. Unterstützt Fahrzeuge aus 25+ Ländern.
+- [Meine Vignetten](https://avtovia.bg/de/moite-vinetki): Persönliches Profil zur Verwaltung gekaufter Vignetten, Verfolgung von Ablaufdaten und Empfang von Verlängerungserinnerungen.
+
+## Vignettenarten und Preise (2026)
+
+- [Tagesvignette](https://avtovia.bg/de/tseni/dnevna): 4,09 € / 8,00 BGN — 24 Stunden gültig ab Aktivierung. Ideal für Tagesausflüge, Transit und kurze Geschäftsbesuche.
+- [Wochenendevignette](https://avtovia.bg/de/tseni/uikend): 5,11 € / 10,00 BGN — 60 Stunden gültig (Freitag 12:00 – Sonntag 23:59). Perfekt für spontane Wochenendausflüge.
+- [Wochenvignette](https://avtovia.bg/de/tseni/sedmichna): 7,67 € / 15,00 BGN — 168 Stunden (7 aufeinanderfolgende Tage) gültig. Für Touristen, Geschäftsreisen und lange Wochenenden.
+- [Monatsvignette](https://avtovia.bg/de/tseni/mesechna): 15,34 € / 30,00 BGN — 30 Tage gültig. Beliebteste Wahl für Pendler.
+- [Quartalsvignette](https://avtovia.bg/de/tseni/trimesechna): 27,61 € / 54,00 BGN — 90 Tage gültig. Bis zu 15% Ersparnis gegenüber drei Monatsvignetten.
+- [Jahresvignette](https://avtovia.bg/de/tseni/godishna): 49,60 € / 97,00 BGN — 365 Tage gültig. Bis zu 40% Ersparnis. Bestes Preis-Leistungs-Verhältnis für Vielfahrer.
+
+## Rechtliches
+
+- [AGB](https://avtovia.bg/de/obshti-usloviya)
+- [Datenschutzerklärung](https://avtovia.bg/de/privacy-policy)
+- [Cookie-Richtlinie](https://avtovia.bg/de/politika-za-biskvitki)
+
+## Kontakt & Unternehmen
+
+- E-Mail: hello@avtovia.bg
+- Adresse: Sofia, Major Yuri Gagarin Str. 30B
+- Geschäftszeiten: Montag–Freitag, 09:00–17:00 Uhr
+- Betreiber: Digital Policy Hub / Digitoll
+- Web-App (Kauf): https://web.avtovia.bg/
+- YouTube-Kanal: https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook: https://www.facebook.com/people/Vinetka-BG/61587222121605/
+
+## Wichtige Fakten zur bulgarischen elektronischen Vignette
+
+- Elektronische Vignette seit 2019 für alle Pkw bis 3,5 t auf bulgarischen Nationalstraßen Pflicht.
+- Kein physischer Aufkleber — vollständig digital, verknüpft mit dem Kfz-Kennzeichen.
+- Kontrolle: Automatische Kameras des Mautsystems rund um die Uhr.
+- Bußgeld ohne Vignette (Pkw): 153,30 € / 300 BGN; Kompensationsbetrag (bei Zahlung innerhalb 14 Tagen): 35,78 € / 70 BGN.
+- Kennzeichen muss exakt wie im Fahrzeugschein eingegeben werden (Großbuchstaben, keine Leerzeichen oder Bindestriche).

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vignette online - Elektronische Vignette für Bulgarien",
-    "description": "Online-Vignette - Kaufen Sie eine elektronische Vignette für Bulgarien mit sicherer Zahlung",
+    "description": "Kaufen Sie Ihre elektronische Vignette für Bulgarien online in 1 Minute! Tages-, Wochen-, Monats- oder Jahresvignette. Sichere Kartenzahlung. Keine versteckten Gebühren!",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -81,6 +81,7 @@
     "expandable": {
       "title": "Online-Kauf einer Vignette",
       "intro": "Der Online-Kauf einer Vignette ist ein schneller, bequemer und sicherer Weg, um eine ruhige Fahrt auf dem staatlichen Straßennetz zu gewährleisten. Anstatt Zeit mit der Suche nach Verkaufsstellen zu verbringen, können Sie mit wenigen Klicks den passenden Vignettentyp nach Zeitraum und Fahrzeugtyp auswählen. Der Online-Prozess wurde mit dem Benutzer im Sinn entwickelt – intuitiv, leicht zu navigieren und jederzeit zugänglich.",
+      "heritageNote": "Avtovia.bg ist der Nachfolger der Informationswebsite Vinetka.bg und ermöglicht es Nutzern nun, selbst eine Vignette online zu kaufen!",
       "paragraph1": "Über die Plattform avtovia.bg erhalten Sie klare Informationen zu allen verfügbaren Optionen – <weekendLink>Wochenend</weekendLink>-, <weeklyLink>Wochen</weeklyLink>-, <monthlyLink>Monats</monthlyLink>-, <quarterlyLink>Quartals</quarterlyLink>- oder <annualLink>Jahresvignette</annualLink>. Die Eingabe des Kennzeichens und des Zulassungslandes dauert nur Sekunden, und das System überprüft automatisch die Richtigkeit der Daten. Die Zahlung erfolgt sicher mit Karte, und unmittelbar nach einer erfolgreichen Transaktion erhalten Sie eine Bestätigung per E-Mail.",
       "imgAlt1": "Online-Kauf einer elektronischen Vignette für Bulgarien",
       "sectionTitle": "Elektronische Vignette in einer Minute",
@@ -1315,6 +1316,14 @@
         "answer": "Sie müssen kein Dokument für die elektronische Vignette mitführen, da sie elektronisch ist und mit dem Kennzeichen verknüpft ist. Das System erkennt automatisch das Vorhandensein einer gültigen Vignette durch Kameras. Wir empfehlen jedoch, die E-Mail oder die Kaufbestätigung zur Sicherheit zu speichern."
       }
     ]
+  },
+  "myVignettesExpandable": {
+    "title": "Vignetten an einem Ort verwalten",
+    "paragraph1": "Mit einer Registrierung bei Avtovia.bg erhalten Sie einen bequemen Ort, an dem Sie alle Ihre elektronischen Vignetten schnell und einfach verwalten können. Anstatt E-Mails oder Quittungen aufzubewahren oder verschiedene Websites zu überprüfen, können Sie an einem Ort alle aktiven und abgelaufenen Vignetten für Ihre Fahrzeuge einsehen.",
+    "paragraph2": "Die Plattform ist besonders praktisch für Familien und Personen mit mehr als einem Fahrzeug. Sie können Vignetten für verschiedene Kennzeichen hinzufügen und deren Ablaufdaten in einem gemeinsamen Profil verfolgen. So wissen Sie immer, wann eine Vignette abläuft, und vermeiden das Risiko unangenehmer Bußgelder oder Versäumnisse auf Reisen.",
+    "paragraph3": "Einer der großen Vorteile ist, dass Sie auch Vignetten hinzufügen können, die bei anderen Anbietern gekauft wurden, nicht nur über die Plattform. Dies gibt Ihnen volle Flexibilität und zentralisiertes Management aller Ihrer Straßengebühren. Außerdem erhalten Sie rechtzeitige Benachrichtigungen und Erinnerungen vor Ablauf der Gültigkeit.",
+    "more": "Mehr lesen",
+    "less": "Weniger anzeigen"
   },
   "myVignettesPage": {
     "title": "Meine Vignetten - Verwalten und Gültigkeit online prüfen",

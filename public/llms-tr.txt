@@ -1,0 +1,45 @@
+# avtovia.bg — Bulgaristan için Elektronik Vinyet Online
+
+> avtovia.bg, Bulgaristan için elektronik vinyet satın almak, geçerlilik kontrolü yapmak ve profilinizi yönetmek için lisanslı bir platformdur. Hızlı, güvenli, 7/24 erişilebilir.
+
+**Tarihçe:** avtovia.bg, Vinetka.bg bilgi sitesinin mirasçısıdır ve kullanıcılara çevrimiçi olarak kendi başlarına vinyet satın alma imkânı sunmaktadır.
+
+avtovia.bg, Digital Policy Hub tarafından işletilmektedir. Vinyet satışları, 2019'dan bu yana Bulgaristan Karayolu Altyapı Ajansı (API) tarafından lisanslanan Ulusal Hizmet Sağlayıcı „Digitoll Smart Infrastructure" A.Ş. (Digitoll) tarafından gerçekleştirilmektedir. Digitoll, Amerikan Concord, Inc.'in bağlı kuruluşudur.
+
+## Ana Hizmetler
+
+- [Elektronik Vinyet Satın Al](https://web.avtovia.bg/): 3,5 t'ye kadar olan araçlar için tüm elektronik vinyet türlerini satın almak için web uygulaması. Sadece plaka numarası, tescil ülkesi ve başlangıç tarihi gerekli. Kartla ödeme. Bir dakika içinde aktivasyon.
+- [Vinyet Kontrolü](https://avtovia.bg/tr/proverka-na-vinetka): Bulgaristan Karayolu Altyapı Ajansı'nın resmi API'si aracılığıyla ücretsiz gerçek zamanlı geçerlilik kontrolü. Kayıt gerekmez. 25'ten fazla ülkeden araç desteklenir.
+- [Vinjetlerim](https://avtovia.bg/tr/moite-vinetki): Satın alınan vinyetleri yönetmek, son kullanma tarihlerini takip etmek ve yenileme hatırlatıcıları almak için kişisel profil.
+
+## Vinyet Türleri ve Fiyatlar (2026)
+
+- [Günlük Vinyet](https://avtovia.bg/tr/tseni/dnevna): 4,09 € / 8,00 BGN — Aktivasyondan itibaren 24 saat geçerli.
+- [Hafta Sonu Vinyeti](https://avtovia.bg/tr/tseni/uikend): 5,11 € / 10,00 BGN — 60 saat geçerli (Cuma 12:00 – Pazar 23:59).
+- [Haftalık Vinyet](https://avtovia.bg/tr/tseni/sedmichna): 7,67 € / 15,00 BGN — 168 saat (7 ardışık gün) geçerli.
+- [Aylık Vinyet](https://avtovia.bg/tr/tseni/mesechna): 15,34 € / 30,00 BGN — 30 gün geçerli.
+- [Üç Aylık Vinyet](https://avtovia.bg/tr/tseni/trimesechna): 27,61 € / 54,00 BGN — 90 gün geçerli. %15'e kadar tasarruf.
+- [Yıllık Vinyet](https://avtovia.bg/tr/tseni/godishna): 49,60 € / 97,00 BGN — 365 gün geçerli. %40'a kadar tasarruf.
+
+## Yasal Bilgiler
+
+- [Kullanım Şartları](https://avtovia.bg/tr/obshti-usloviya)
+- [Gizlilik Politikası](https://avtovia.bg/tr/privacy-policy)
+- [Çerez Politikası](https://avtovia.bg/tr/politika-za-biskvitki)
+
+## İletişim ve Şirket
+
+- E-posta: hello@avtovia.bg
+- Adres: Sofya, Major Yuri Gagarin Cad. 30B
+- Çalışma saatleri: Pazartesi–Cuma, 09:00–17:00
+- Operatör: Digital Policy Hub / Digitoll
+- Web uygulaması (satın alma): https://web.avtovia.bg/
+- YouTube kanalı: https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook: https://www.facebook.com/people/Vinetka-BG/61587222121605/
+
+## Bulgaristan Elektronik Vinyeti Hakkında Önemli Bilgiler
+
+- Elektronik vinyet, 2019'dan bu yana Bulgaristan ulusal karayolu ağında 3,5 t'ye kadar tüm araçlar için zorunludur.
+- Fiziksel etiket verilmez — tamamen dijital, araç plakasıyla bağlantılı.
+- Denetim: Ücretli yol sisteminin otomatik kameraları 7/24.
+- Vinyetsiz ceza (otomobil): 153,30 € / 300 BGN; telafi ücreti (14 gün içinde ödeme): 35,78 € / 70 BGN.

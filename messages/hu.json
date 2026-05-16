@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Matrica online - Elektronikus matrica Bulgáriához",
-    "description": "Online matrica - Vásároljon elektronikus matricát Bulgáriába biztonságos fizetéssel",
+    "description": "Vásároljon elektronikus matricát Bulgáriába online, mindössze 1 perc alatt! Napi, heti, havi vagy éves opciók. Biztonságos bankkártyás fizetés. Nincsenek rejtett díjak!",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -81,6 +81,7 @@
     "expandable": {
       "title": "Matrica vásárlása online",
       "intro": "A matrica online vásárlása gyors, kényelmes és biztonságos módja annak, hogy kellemes utazást biztosítson magának az állami úthálózaton. Ahelyett, hogy időt vesztegetne fizikai értékesítési pontok keresésére, néhány kattintással kiválaszthatja a megfelelő matricatípust.",
+      "heritageNote": "Az Avtovia.bg az információs Vinetka.bg weboldal örököse, és lehetővé teszi a felhasználóknak, hogy önállóan vásároljanak útdíj-matricát online!",
       "paragraph1": "Az avtovia.bg platformon keresztül világos információkat kap az összes elérhető lehetőségről – <weekendLink>hétvégi</weekendLink>, <weeklyLink>heti</weeklyLink>, <monthlyLink>havi</monthlyLink>, <quarterlyLink>negyedéves</quarterlyLink> vagy <annualLink>éves matrica</annualLink>. A fizetés biztonságosan kártyával történik, és a sikeres tranzakció után azonnal e-mailes visszaigazolást kap.",
       "imgAlt1": "Elektronikus matrica online vásárlása Bulgáriába",
       "sectionTitle": "Elektronikus matrica egy perc alatt",
@@ -1315,6 +1316,14 @@
         "answer": "Nem kötelező dokumentumot vinnie az elektronikus matricáról, mivel elektronikus és a rendszámhoz kapcsolódik. A rendszer automatikusan felismeri az érvényes matrica jelenlétét kamerákon keresztül. Mégis javasoljuk, hogy mentse el az e-mailt vagy a vásárlási visszaigazolást."
       }
     ]
+  },
+  "myVignettesExpandable": {
+    "title": "Matricák kezelése egy helyen",
+    "paragraph1": "Az Avtovia.bg-re való regisztrációval kényelmes helyet kap, ahol gyorsan és egyszerűen kezelheti összes elektronikus matricáját. Ahelyett, hogy e-maileket, nyugtákat tartogatna, vagy különböző webhelyeket ellenőrizne, egy helyen láthatja az összes aktív és lejárt matricát az összes járművéhez.",
+    "paragraph2": "A platform különösen hasznos a több járművel rendelkező családok és személyek számára. Különböző rendszámokhoz adhat hozzá matricákat, és egy közös profilban követheti azok lejárati idejét. Így mindig tudja, mikor jár le egy matrica, és elkerülheti a kellemetlen bírságokat vagy utazás közbeni mulasztásokat.",
+    "paragraph3": "Az egyik nagy előny, hogy más szolgáltatóktól vásárolt matricákat is hozzáadhat, nemcsak a platformon keresztül vásároltakat. Ez teljes rugalmasságot és centralizált kezelést biztosít az összes útdíja felett. Emellett időben értesítéseket és emlékeztetőket kap az érvényesség lejárta előtt.",
+    "more": "Tovább olvasom",
+    "less": "Kevesebbet mutat"
   },
   "myVignettesPage": {
     "title": "Matricáim - Kezelje és Ellenőrizze az Érvényességet Online",

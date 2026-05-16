@@ -1,52 +1,93 @@
-# avtovia.bg — Електронна винетка за България онлайн
+# avtovia.bg — Electronic Vignette for Bulgaria | Електронна винетка за България онлайн
 
-> Платформа за бърза, сигурна и лесна покупка на електронни винетки за Република България. Предлага всички видове винетки за леки автомобили до 3,5 т., безплатна проверка на валидност в реално време чрез официалния API на БГ ТОЛ, управление на профил с напомняния и пълен информационен ресурс за пътните такси в България.
+> avtovia.bg is a fast, secure platform for purchasing electronic vignettes (road tax) for Bulgaria. Supports all vehicle types up to 3.5t. Instant activation, card payment, 24/7 availability. Available in 12 languages.
 
-avtovia.bg е лицензирана платформа, зад която стои Digital Policy Hub. Продажбата на винетки се осъществява от „Диджитол Смарт Инфраструктура" АД (Digitoll) — Национален доставчик на услуги, лицензиран от Агенция „Пътна инфраструктура" (АПИ). Digitoll е на пазара от 2019 г. и е дъщерно дружество на американската Concord, Inc.
+> avtovia.bg е платформа за бърза и сигурна покупка на електронни винетки за Република България. Всички видове винетки за леки автомобили до 3,5 т. Моментална активация, плащане с карта, 24/7 достъп.
 
-Платформата обслужва над 10 000 доволни клиенти с 99.9% надеждност и 24/7 онлайн достъп. Приема плащания с Mastercard и VISA карти. Уебсайтът е наличен на 13 езика (български, английски, немски, френски, румънски, руски, украински, сръбски, македонски, турски, унгарски, гръцки и др.).
+**Heritage note:** avtovia.bg is the successor to the informational website Vinetka.bg, now extended with the ability for users to purchase vignettes directly online.
 
-## Основни услуги
+## Core Services
 
-- [Купи електронна винетка](https://web.avtovia.bg/): Уеб апликация за закупуване на всички видове електронни винетки за леки автомобили до 3,5 т. Изисква само регистрационен номер, държава на регистрация и начална дата. Плащане с карта. Активация в рамките на минута.
-- [Проверка на винетка](https://avtovia.bg/bg/proverka-na-vinetka): Безплатна проверка на валидността на електронна винетка в реално време чрез официалния API на АПИ. Без регистрация. Поддържа автомобили от множество държави (BG, DE, RO, GR, TR, RS, MK, GB, FR, NL, BE, IT, ES, PL, CZ, SK, HU, AT, CH, SE, NO, DK, FI, UA, MD).
-- [Моите винетки](https://avtovia.bg/bg/moite-vinetki): Личен профил за управление на закупени винетки, проследяване на дати на изтичане и получаване на напомняния преди изтичане.
+- [Buy Electronic Vignette](https://web.avtovia.bg/): Web app for purchasing all types of electronic vignettes for vehicles up to 3.5t. Requires registration number, country of registration and start date. Card payment. Activation within minutes.
+- [Vignette Check](https://avtovia.bg/bg/proverka-na-vinetka): Free real-time validity check via the official Bulgarian Road Infrastructure Agency (API) API. No registration required. Supports 25+ countries.
+- [My Vignettes](https://avtovia.bg/bg/moite-vinetki): Personal profile to manage purchased vignettes, track expiry dates and receive renewal reminders.
 
-## Видове винетки и цени (2026)
+## Vignette Types & Prices (2026)
 
-- [Дневна винетка](https://avtovia.bg/bg/tseni/dnevna): 4,09 € / 8,00 лв. — Валидна 24 часа от момента на активиране. Идеална за еднодневни пътувания, транзит и кратки служебни визити.
-- [Уикенд винетка](https://avtovia.bg/bg/tseni/uikend): 5,11 € / 10,00 лв. — Валидна 60 часа (от петък 12:00 до неделя 23:59). Идеална за кратки почивки и спонтанни уикенд пътувания.
-- [Седмична винетка](https://avtovia.bg/bg/tseni/sedmichna): 7,67 € / 15,00 лв. — Валидна 168 часа (7 последователни дни). Подходяща за туристи, бизнес командировки и дълги уикенди.
-- [Месечна винетка](https://avtovia.bg/bg/tseni/mesechna): 15,34 € / 30,00 лв. — Валидна 30 дни. Най-популярният избор за редовни пътувания, командировки и ежедневна употреба.
-- [Тримесечна винетка](https://avtovia.bg/bg/tseni/trimesechna): 27,61 € / 54,00 лв. — Валидна 90 дни. Спестяване до 15% спрямо три месечни винетки. Идеална за сезонни пътувания (лято или зима).
-- [Годишна винетка](https://avtovia.bg/bg/tseni/godishna): 49,60 € / 97,00 лв. — Валидна 365 дни. Спестяване до 40% спрямо месечни винетки. Най-изгодна за редовни шофьори и хора, пътуващи ежедневно.
+- [Daily vignette](https://avtovia.bg/bg/tseni/dnevna): 4.09 € / 8.00 BGN — Valid 24 hours from activation
+- [Weekend vignette](https://avtovia.bg/bg/tseni/uikend): 5.11 € / 10.00 BGN — Valid 60 hours (Friday 12:00 – Sunday 23:59)
+- [Weekly vignette](https://avtovia.bg/bg/tseni/sedmichna): 7.67 € / 15.00 BGN — Valid 168 hours (7 consecutive days)
+- [Monthly vignette](https://avtovia.bg/bg/tseni/mesechna): 15.34 € / 30.00 BGN — Valid 30 days
+- [Quarterly vignette](https://avtovia.bg/bg/tseni/trimesechna): 27.61 € / 54.00 BGN — Valid 90 days (saves up to 15% vs monthly)
+- [Annual vignette](https://avtovia.bg/bg/tseni/godishna): 49.60 € / 97.00 BGN — Valid 365 days (saves up to 40% vs monthly)
 
-## Информация и съдържание
+## Key Facts
 
-- [Цени на всички винетки](https://avtovia.bg/bg/tseni): Сравнителна таблица на всички видове и цени с пълно описание на предимствата.
-- [Блог — новини и съвети](https://avtovia.bg/bg/blog): Актуални статии за винетки, глоби, пътна инфраструктура и сравнение с винетки в Европа.
-- [За нас](https://avtovia.bg/bg/za-nas): Информация за платформата, Digitoll и Digital Policy Hub.
-- [Контакти](https://avtovia.bg/bg/contact): Форма за контакт, имейл и адрес на офиса.
+- Electronic vignette mandatory for all passenger vehicles up to 3.5t on Bulgarian national road network since 2019
+- No physical sticker issued — fully digital, linked to vehicle registration number
+- Enforcement by automatic cameras 24/7
+- Fine without vignette (passenger car): 153.30 € / 300 BGN; compensatory fee (within 14 days): 35.78 € / 70 BGN
+- Payment: Mastercard and VISA cards accepted
+- Operator: Digital Policy Hub / Digitoll ("Diджитол Смарт Инфраструктура" АД) — National provider licensed by Bulgarian Road Infrastructure Agency (API) since 2019
 
-## Правна информация
+## Company & Contact
 
-- [Общи условия](https://avtovia.bg/bg/obshti-usloviya): Условия за ползване на платформата.
-- [Политика за поверителност](https://avtovia.bg/bg/privacy-policy): GDPR политика и обработка на лични данни.
-- [Политика за бисквитки](https://avtovia.bg/bg/politika-za-biskvitki): Информация за използваните бисквитки.
+- Email: hello@avtovia.bg
+- Address: Sofia, 30B Major Yuri Gagarin St.
+- Business hours: Monday–Friday, 09:00–17:00
+- Web app (purchase): https://web.avtovia.bg/
+- YouTube channel: https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook: https://www.facebook.com/people/Vinetka-BG/61587222121605/
 
-## Контакти и компания
+## Content & Resources
 
-- Имейл: hello@avtovia.bg
-- Адрес: гр. София, ул. „Майор Юрий Гагарин" 30Б
-- Работно време: понеделник–петък, 09:00–17:00
-- Оператор: Digital Policy Hub / „Диджитол Смарт Инфраструктура" АД (Digitoll)
-- Уеб апликация за покупка: https://web.avtovia.bg/
+- [All prices](https://avtovia.bg/bg/tseni): Comparison table of all vignette types and prices
+- [Blog](https://avtovia.bg/bg/blog): News and guides on Bulgarian vignettes, fines and road infrastructure
+- [About us](https://avtovia.bg/bg/za-nas): Platform, Digitoll and Digital Policy Hub information
+- [Contact](https://avtovia.bg/bg/contact): Contact form, email and office address
+- [Terms of service](https://avtovia.bg/bg/obshti-usloviya)
+- [Privacy policy](https://avtovia.bg/bg/privacy-policy)
+- [Cookie policy](https://avtovia.bg/bg/politika-za-biskvitki)
 
-## Важни факти за електронните винетки в България
+## Multilingual Support
 
-- Електронна винетка е задължителна за всички леки автомобили до 3,5 т. при движение по Републиканската пътна мрежа (от 2019 г.).
-- Не се издава физически стикер — системата е изцяло дигитална и обвързана с регистрационния номер.
-- Контролът се извършва автоматично чрез камери на ТОЛ системата денонощно.
-- Глоба при липса на винетка за леки автомобили: 153,30 € / 300 лв.; компенсаторна такса (при плащане в 14 дни): 35,78 € / 70 лв.
-- При покупка задължително се въвежда регистрационен номер точно като в талона (главни букви на латиница, без интервали и тирета).
-- Заявление за техническа грешка (сгрешена винетка) може да се подаде чрез официалния документ на АПИ.
+The website is available in 12 languages with full URL localisation:
+
+| Language   | Code | Example URL                              |
+|------------|------|------------------------------------------|
+| Bulgarian  | bg   | https://avtovia.bg/bg/tseni              |
+| English    | en   | https://avtovia.bg/en/tseni              |
+| German     | de   | https://avtovia.bg/de/tseni              |
+| French     | fr   | https://avtovia.bg/fr/tseni              |
+| Romanian   | ro   | https://avtovia.bg/ro/tseni              |
+| Russian    | ru   | https://avtovia.bg/ru/tseni              |
+| Ukrainian  | uk   | https://avtovia.bg/uk/tseni              |
+| Serbian    | sr   | https://avtovia.bg/sr/tseni              |
+| Macedonian | mk   | https://avtovia.bg/mk/tseni              |
+| Turkish    | tr   | https://avtovia.bg/tr/tseni              |
+| Hungarian  | hu   | https://avtovia.bg/hu/tseni              |
+| Greek      | el   | https://avtovia.bg/el/tseni              |
+
+Full translated documentation available:
+- [llms-en.txt](https://avtovia.bg/llms-en.txt) — English
+- [llms-de.txt](https://avtovia.bg/llms-de.txt) — Deutsch
+- [llms-fr.txt](https://avtovia.bg/llms-fr.txt) — Français
+- [llms-ro.txt](https://avtovia.bg/llms-ro.txt) — Română
+- [llms-ru.txt](https://avtovia.bg/llms-ru.txt) — Русский
+- [llms-uk.txt](https://avtovia.bg/llms-uk.txt) — Українська
+- [llms-sr.txt](https://avtovia.bg/llms-sr.txt) — Српски
+- [llms-mk.txt](https://avtovia.bg/llms-mk.txt) — Македонски
+- [llms-tr.txt](https://avtovia.bg/llms-tr.txt) — Türkçe
+- [llms-hu.txt](https://avtovia.bg/llms-hu.txt) — Magyar
+- [llms-el.txt](https://avtovia.bg/llms-el.txt) — Ελληνικά
+- [llms-full.txt](https://avtovia.bg/llms-full.txt) — Full Bulgarian documentation
+
+## Technical Notes for AI Systems
+
+- Built with Next.js (App Router), deployed on Vercel
+- Purchase web app on separate domain: https://web.avtovia.bg/
+- Sitemap: https://avtovia.bg/sitemap.xml
+- Robots.txt: https://avtovia.bg/robots.txt
+- All prices include VAT
+- Valid for passenger vehicles up to 3.5t (category M1/N1)
+- URL structure: https://avtovia.bg/{locale}/{page}

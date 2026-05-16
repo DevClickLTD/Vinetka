@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaYoutube } from "react-icons/fa";
 import { useTranslations, useLocale } from 'next-intl';
 import { Link } from '../lib/navigation';
 import Image from 'next/image';
@@ -47,6 +47,13 @@ export default function Footer() {
         name: "Facebook",
         href: "https://www.facebook.com/people/Vinetka-BG/61587222121605/",
         icon: FaFacebook,
+        target: "_blank",
+        rel: "noopener noreferrer",
+      },
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/@Avtovia.Bulgaria",
+        icon: FaYoutube,
         target: "_blank",
         rel: "noopener noreferrer",
       },
@@ -206,7 +213,11 @@ export default function Footer() {
                 href={item.href}
                 target={item.target}
                 rel={item.rel}
-                className="text-gray-600 hover:text-gray-800"
+                className={
+                  item.name === "YouTube"
+                    ? "text-red-600 hover:text-red-700 transition-colors"
+                    : "text-gray-600 hover:text-gray-800 transition-colors"
+                }
               >
                 <span className="sr-only">{item.name}</span>
                 <item.icon aria-hidden="true" className="size-6" />

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Online Vignette - Electronic Vignette for Bulgaria",
-    "description": "Online Vignette - Buy an electronic vignette for Bulgaria with secure payment",
+    "description": "Buy an electronic vignette for Bulgaria online in just 1 minute! Daily, weekly, monthly or annual options. Secure card payment. No hidden fees!",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -81,6 +81,7 @@
     "expandable": {
       "title": "Buying a Vignette Online",
       "intro": "Buying a vignette online is a fast, convenient and secure way to ensure a peaceful journey on the national road network. Instead of wasting time looking for physical sales points, with a few clicks you can choose the right type of vignette based on the period and type of vehicle. The online process is designed with the user in mind – intuitive, easy to navigate and accessible at any time, regardless of where you are.",
+      "heritageNote": "Avtovia.bg inherits the informational website Vinetka.bg and adds the ability for users to purchase a vignette online themselves!",
       "paragraph1": "Through the avtovia.bg platform you get clear information about all available options – <weekendLink>weekend</weekendLink>, <weeklyLink>weekly</weeklyLink>, <monthlyLink>monthly</monthlyLink>, <quarterlyLink>quarterly</quarterlyLink> or <annualLink>annual vignette</annualLink>. Entering the registration number and country of registration takes seconds, and the system automatically checks the correctness of the data to avoid errors. Payment is made securely by card, and immediately after a successful transaction you receive a confirmation by email.",
       "imgAlt1": "Buying an electronic vignette online for Bulgaria",
       "sectionTitle": "Electronic vignette in one minute",
@@ -1315,6 +1316,14 @@
         "answer": "You don't need to carry a document for the electronic vignette as it is electronic and linked to the vehicle's registration number. The system automatically recognizes the presence of a valid vignette through cameras. However, we recommend saving the email or purchase confirmation just in case."
       }
     ]
+  },
+  "myVignettesExpandable": {
+    "title": "Manage Vignettes in One Place",
+    "paragraph1": "With a registration on Avtovia.bg, you get a convenient place to manage all your electronic vignettes quickly and easily. Instead of keeping emails, receipts or checking various websites, you can see all active and expired vignettes for your vehicles in one place.",
+    "paragraph2": "The platform is especially convenient for families and people with more than one vehicle. You can add vignettes for different registration numbers and track their expiry dates in one shared profile. This way you always know when a vignette expires and avoid the risk of unpleasant fines or oversights while travelling.",
+    "paragraph3": "One of the great advantages is that you can add vignettes purchased from other providers too, not just through the platform. This gives you full flexibility and centralised management of all your road tolls, regardless of where they were purchased. You will also receive timely notifications and reminders before validity expires, saving you time and unnecessary worry.",
+    "more": "Read more",
+    "less": "Show less"
   },
   "myVignettesPage": {
     "title": "My Vignettes - Manage and Check Validity Online",

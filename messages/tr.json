@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vinyet Online - Bulgaristan için Elektronik Vinyet",
-    "description": "Vinyet Online - Güvenli ödemeyle Bulgaristan için elektronik vinyet satın alın",
+    "description": "Bulgaristan için elektronik vinyetinizi online olarak sadece 1 dakikada satın alın! Günlük, haftalık, aylık veya yıllık. Güvenli kart ödemesi. Gizli ücret yok!",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -81,6 +81,7 @@
     "expandable": {
       "title": "Online vinyet satın alma",
       "intro": "Online vinyet satın almak, ulusal yol ağında huzurlu bir yolculuk sağlamanın hızlı, uygun ve güvenli bir yoludur. Fiziksel satış noktaları aramak için zaman harcamak yerine, birkaç tıklamayla uygun vinyet türünü seçebilirsiniz.",
+      "heritageNote": "Avtovia.bg, Vinetka.bg bilgi sitesinin mirasçısıdır ve kullanıcılara çevrimiçi olarak kendi başlarına vinyet satın alma imkânı sunmaktadır!",
       "paragraph1": "Avtovia.bg platformu üzerinden mevcut tüm seçenekler hakkında net bilgi alırsınız – <weekendLink>hafta sonu</weekendLink>, <weeklyLink>haftalık</weeklyLink>, <monthlyLink>aylık</monthlyLink>, <quarterlyLink>üç aylık</quarterlyLink> veya <annualLink>yıllık vinyet</annualLink>. Ödeme güvenli bir şekilde kartla yapılır ve başarılı bir işlemin hemen ardından e-posta ile onay alırsınız.",
       "imgAlt1": "Bulgaristan için online elektronik vinyet satın alma",
       "sectionTitle": "Bir dakikada elektronik vinyet",
@@ -1255,6 +1256,14 @@
         "answer": "Elektronik vignet için belge taşımanıza gerek yoktur, çünkü elektroniktir ve plakaya bağlıdır. Sistem kameralar aracılığıyla geçerli vignetin varlığını otomatik olarak tanır. Ancak her ihtimale karşı e-postayı veya satın alma onayını kaydetmenizi öneririz."
       }
     ]
+  },
+  "myVignettesExpandable": {
+    "title": "Tüm Vinyetlerinizi Tek Bir Yerde Yönetin",
+    "paragraph1": "Avtovia.bg'ye kaydolarak, tüm elektronik vinyetlerinizi hızlı ve kolayca yönetebileceğiniz kullanışlı bir alana sahip olursunuz. E-postaları, makbuzları saklamak veya farklı web sitelerini kontrol etmek yerine, tüm araçlarınız için aktif ve süresi dolmuş vinyetleri tek bir yerde görebilirsiniz.",
+    "paragraph2": "Platform, birden fazla araç sahibi olan aileler ve kişiler için özellikle kullanışlıdır. Farklı plakalar için vinyet ekleyebilir ve son kullanma tarihlerini tek bir ortak profilde takip edebilirsiniz. Böylece bir vinyetin ne zaman sona ereceğini her zaman bilir ve seyahat sırasında hoş olmayan cezalardan kaçınırsınız.",
+    "paragraph3": "Büyük avantajlardan biri, yalnızca platform üzerinden değil, diğer sağlayıcılardan satın alınan vinyetleri de ekleyebilmenizdir. Bu size tam esneklik ve tüm yol ücretlerinin merkezi yönetimini sağlar. Ayrıca geçerliliğin sona ermesinden önce zamanında bildirimler ve hatırlatıcılar alacaksınız.",
+    "more": "Devamını oku",
+    "less": "Daha az göster"
   },
   "myVignettesPage": {
     "title": "Benim Vinyetlerim - Çevrimiçi Yönetin ve Geçerliliği Kontrol Edin",

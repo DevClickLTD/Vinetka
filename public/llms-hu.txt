@@ -1,0 +1,47 @@
+# avtovia.bg — Elektronikus matrica Bulgáriába online
+
+> Az avtovia.bg egy engedélyezett platform bulgáriai elektronikus matricák vásárlásához, érvényességük ellenőrzéséhez és profiljuk kezeléséhez. Gyors, biztonságos, 24/7 elérhető.
+
+**Megjegyzés:** Az avtovia.bg az információs Vinetka.bg weboldal örököse, és lehetővé teszi a felhasználóknak, hogy önállóan vásároljanak útdíj-matricát online.
+
+Az avtovia.bg-t a Digital Policy Hub üzemelteti. A matricák értékesítését a „Digitoll Smart Infrastructure" Zrt. (Digitoll) végzi — a Bolgár Úthálózati Ügynökség (API) által 2019 óta engedélyezett Nemzeti Szolgáltató. A Digitoll az amerikai Concord, Inc. leányvállalata.
+
+A platform több mint 10 000 elégedett ügyfelet szolgál ki 99,9%-os megbízhatósággal és 24/7 online hozzáféréssel. Mastercard és VISA kártyás fizetés elfogadott.
+
+## Fő szolgáltatások
+
+- [Elektronikus matrica vásárlása](https://web.avtovia.bg/): Webalkalmazás 3,5 t-ig terjedő személyautók számára szóló összes elektronikus matrica vásárlásához. Csak a rendszám, a regisztrációs ország és a kezdő dátum szükséges. Kártyás fizetés. Aktiválás egy percen belül.
+- [Matrica ellenőrzése](https://avtovia.bg/hu/proverka-na-vinetka): Ingyenes valós idejű érvényességi ellenőrzés a Bolgár Úthálózati Ügynökség hivatalos API-ján keresztül. Regisztráció nélkül. 25+ ország járműveit támogatja.
+- [Saját matricáim](https://avtovia.bg/hu/moite-vinetki): Személyes profil a megvásárolt matricák kezeléséhez, a lejárati dátumok követéséhez és megújítási emlékeztetők fogadásához.
+
+## Matrica típusok és árak (2026)
+
+- [Napi matrica](https://avtovia.bg/hu/tseni/dnevna): 4,09 € / 8,00 BGN — Aktiválástól számított 24 óráig érvényes.
+- [Hétvégi matrica](https://avtovia.bg/hu/tseni/uikend): 5,11 € / 10,00 BGN — 60 óráig érvényes (péntek 12:00 – vasárnap 23:59).
+- [Heti matrica](https://avtovia.bg/hu/tseni/sedmichna): 7,67 € / 15,00 BGN — 168 óráig (7 egymást követő nap) érvényes.
+- [Havi matrica](https://avtovia.bg/hu/tseni/mesechna): 15,34 € / 30,00 BGN — 30 napig érvényes.
+- [Negyedéves matrica](https://avtovia.bg/hu/tseni/trimesechna): 27,61 € / 54,00 BGN — 90 napig érvényes. Akár 15% megtakarítás.
+- [Éves matrica](https://avtovia.bg/hu/tseni/godishna): 49,60 € / 97,00 BGN — 365 napig érvényes. Akár 40% megtakarítás.
+
+## Jogi információk
+
+- [Felhasználási feltételek](https://avtovia.bg/hu/obshti-usloviya)
+- [Adatvédelmi irányelvek](https://avtovia.bg/hu/privacy-policy)
+- [Cookie-szabályzat](https://avtovia.bg/hu/politika-za-biskvitki)
+
+## Kapcsolat és cég
+
+- E-mail: hello@avtovia.bg
+- Cím: Szófia, Major Yuri Gagarin u. 30B
+- Munkaidő: hétfő–péntek, 09:00–17:00
+- Üzemeltető: Digital Policy Hub / Digitoll
+- Webalkalmazás (vásárlás): https://web.avtovia.bg/
+- YouTube-csatorna: https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook: https://www.facebook.com/people/Vinetka-BG/61587222121605/
+
+## Fontos tudnivalók a bulgáriai elektronikus matricáról
+
+- Az elektronikus matrica 2019 óta kötelező minden 3,5 t-ig terjedő jármű számára a bolgár nemzeti úthálózaton.
+- Nem adnak ki fizikai matricát — teljesen digitális, a rendszámhoz kötve.
+- Ellenőrzés: Az útdíj rendszer automatikus kamerái 24/7.
+- Bírság matrica nélkül (személyautó): 153,30 € / 300 BGN; kompenzációs díj (14 napon belüli fizetés esetén): 35,78 € / 70 BGN.

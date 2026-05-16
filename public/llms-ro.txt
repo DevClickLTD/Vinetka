@@ -1,0 +1,47 @@
+# avtovia.bg — Vinietă electronică pentru Bulgaria online
+
+> avtovia.bg este o platformă licențiată pentru cumpărarea vinietelor electronice pentru Bulgaria, verificarea valabilității și gestionarea profilului dvs. Rapid, sigur, disponibil 24/7.
+
+**Notă istorică:** avtovia.bg este succesorul site-ului informațional Vinetka.bg și adaugă acum posibilitatea ca utilizatorii să cumpere singuri o vinietă online.
+
+avtovia.bg este operat de Digital Policy Hub. Vânzarea vinietelor este realizată de „Digitoll Smart Infrastructure" SA (Digitoll) — Furnizor Național de Servicii, autorizat de Agenția Bulgară pentru Infrastructura Rutieră (API) din 2019. Digitoll este o filială a companiei americane Concord, Inc.
+
+Platforma deservește peste 10.000 de clienți mulțumiți cu o fiabilitate de 99,9% și acces online 24/7. Acceptă plăți cu carduri Mastercard și VISA.
+
+## Servicii principale
+
+- [Cumpără vinietă electronică](https://web.avtovia.bg/): Aplicație web pentru cumpărarea tuturor tipurilor de viniete electronice pentru vehicule până la 3,5 t. Necesită doar numărul de înmatriculare, țara de înmatriculare și data de început. Plată cu cardul. Activare în decurs de un minut.
+- [Verificare vinietă](https://avtovia.bg/ro/proverka-na-vinetka): Verificare gratuită în timp real a valabilității prin API-ul oficial al Agenției Bulgare pentru Infrastructura Rutieră. Fără înregistrare. Suportă vehicule din 25+ țări.
+- [Vinietele mele](https://avtovia.bg/ro/moite-vinetki): Profil personal pentru gestionarea vinietelor cumpărate, urmărirea datelor de expirare și primirea de mementouri de reînnoire.
+
+## Tipuri de viniete și prețuri (2026)
+
+- [Vinietă zilnică](https://avtovia.bg/ro/tseni/dnevna): 4,09 € / 8,00 BGN — Valabilă 24 ore de la activare. Ideală pentru excursii de o zi și tranzit.
+- [Vinietă de weekend](https://avtovia.bg/ro/tseni/uikend): 5,11 € / 10,00 BGN — Valabilă 60 ore (vineri 12:00 – duminică 23:59). Perfectă pentru escapade spontane de weekend.
+- [Vinietă săptămânală](https://avtovia.bg/ro/tseni/sedmichna): 7,67 € / 15,00 BGN — Valabilă 168 ore (7 zile consecutive). Pentru turiști și călătorii de afaceri.
+- [Vinietă lunară](https://avtovia.bg/ro/tseni/mesechna): 15,34 € / 30,00 BGN — Valabilă 30 zile. Cea mai populară alegere pentru navetiști.
+- [Vinietă trimestrială](https://avtovia.bg/ro/tseni/trimesechna): 27,61 € / 54,00 BGN — Valabilă 90 zile. Economie de până la 15% față de trei viniete lunare.
+- [Vinietă anuală](https://avtovia.bg/ro/tseni/godishna): 49,60 € / 97,00 BGN — Valabilă 365 zile. Economie de până la 40%. Cea mai avantajoasă pentru șoferii frecvenți.
+
+## Informații legale
+
+- [Termeni și condiții](https://avtovia.bg/ro/obshti-usloviya)
+- [Politica de confidențialitate](https://avtovia.bg/ro/privacy-policy)
+- [Politica de cookie-uri](https://avtovia.bg/ro/politika-za-biskvitki)
+
+## Contact & Companie
+
+- E-mail: hello@avtovia.bg
+- Adresă: Sofia, str. Major Yuri Gagarin 30B
+- Program: Luni–vineri, 09:00–17:00
+- Operator: Digital Policy Hub / Digitoll
+- Aplicație web (cumpărare): https://web.avtovia.bg/
+- Canal YouTube: https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook: https://www.facebook.com/people/Vinetka-BG/61587222121605/
+
+## Fapte importante despre vinieta electronică bulgară
+
+- Vinieta electronică obligatorie din 2019 pentru toate vehiculele până la 3,5 t pe rețeaua rutieră națională bulgară.
+- Nu se emite autocolant fizic — complet digital, legat de numărul de înmatriculare.
+- Control: Camere automate ale sistemului de taxare 24/7.
+- Amendă fără vinietă (autoturism): 153,30 € / 300 BGN; taxă compensatorie (plătită în 14 zile): 35,78 € / 70 BGN.

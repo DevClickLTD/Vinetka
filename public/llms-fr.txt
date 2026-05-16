@@ -1,0 +1,45 @@
+# avtovia.bg — Vignette électronique pour la Bulgarie en ligne
+
+> avtovia.bg est une plateforme agréée pour l'achat de vignettes électroniques pour la Bulgarie, la vérification de leur validité et la gestion de votre profil. Rapide, sécurisé, accessible 24h/24.
+
+**Note historique :** avtovia.bg est le successeur du site d'information Vinetka.bg et offre désormais aux utilisateurs la possibilité d'acheter eux-mêmes une vignette en ligne.
+
+avtovia.bg est exploité par Digital Policy Hub. La vente de vignettes est assurée par « Digitoll Smart Infrastructure » SA (Digitoll) — fournisseur national agréé par l'Agence bulgare de l'infrastructure routière (API) depuis 2019. Digitoll est une filiale de l'américaine Concord, Inc.
+
+## Services principaux
+
+- [Acheter une vignette électronique](https://web.avtovia.bg/) : Application web pour l'achat de tous les types de vignettes électroniques pour véhicules jusqu'à 3,5 t. Saisissez simplement la plaque d'immatriculation, le pays d'immatriculation et la date de début. Paiement par carte. Activation en une minute.
+- [Vérifier une vignette](https://avtovia.bg/fr/proverka-na-vinetka) : Vérification gratuite de la validité en temps réel via l'API officielle de l'Agence de l'infrastructure routière bulgare. Sans inscription. Supporte 25+ pays.
+- [Mes vignettes](https://avtovia.bg/fr/moite-vinetki) : Profil personnel pour gérer les vignettes achetées, suivre les dates d'expiration et recevoir des rappels de renouvellement.
+
+## Types de vignettes et tarifs (2026)
+
+- [Vignette journalière](https://avtovia.bg/fr/tseni/dnevna) : 4,09 € / 8,00 BGN — Valable 24 heures dès activation. Idéale pour les excursions d'une journée et le transit.
+- [Vignette week-end](https://avtovia.bg/fr/tseni/uikend) : 5,11 € / 10,00 BGN — Valable 60 heures (vendredi 12h – dimanche 23h59). Parfaite pour les escapades spontanées.
+- [Vignette hebdomadaire](https://avtovia.bg/fr/tseni/sedmichna) : 7,67 € / 15,00 BGN — Valable 168 heures (7 jours consécutifs). Pour les touristes et les voyages d'affaires.
+- [Vignette mensuelle](https://avtovia.bg/fr/tseni/mesechna) : 15,34 € / 30,00 BGN — Valable 30 jours. Choix le plus populaire pour les déplacements réguliers.
+- [Vignette trimestrielle](https://avtovia.bg/fr/tseni/trimesechna) : 27,61 € / 54,00 BGN — Valable 90 jours. Économie jusqu'à 15% par rapport à trois vignettes mensuelles.
+- [Vignette annuelle](https://avtovia.bg/fr/tseni/godishna) : 49,60 € / 97,00 BGN — Valable 365 jours. Économie jusqu'à 40%. Meilleur rapport qualité-prix pour les conducteurs réguliers.
+
+## Mentions légales
+
+- [Conditions générales d'utilisation](https://avtovia.bg/fr/obshti-usloviya)
+- [Politique de confidentialité](https://avtovia.bg/fr/privacy-policy)
+- [Politique de cookies](https://avtovia.bg/fr/politika-za-biskvitki)
+
+## Contact & Entreprise
+
+- E-mail : hello@avtovia.bg
+- Adresse : Sofia, rue Major Yuri Gagarin 30B
+- Horaires : Lundi–vendredi, 09h00–17h00
+- Opérateur : Digital Policy Hub / Digitoll
+- Application web (achat) : https://web.avtovia.bg/
+- Chaîne YouTube : https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook : https://www.facebook.com/people/Vinetka-BG/61587222121605/
+
+## Informations importantes sur la vignette électronique bulgare
+
+- Vignette électronique obligatoire depuis 2019 pour tous les véhicules jusqu'à 3,5 t sur le réseau routier national bulgare.
+- Pas d'autocollant physique — entièrement numérique, lié à la plaque d'immatriculation.
+- Contrôle : Caméras automatiques du système de péage 24h/24.
+- Amende sans vignette (voiture particulière) : 153,30 € / 300 BGN ; frais compensatoires (payés dans les 14 jours) : 35,78 € / 70 BGN.

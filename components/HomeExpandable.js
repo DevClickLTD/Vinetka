@@ -24,6 +24,10 @@ export default function HomeExpandable() {
               {t("intro")}
             </p>
 
+            <p className="text-gray-700 leading-relaxed mb-4 italic border-l-4 border-[#803487] pl-4">
+              {t("heritageNote")}
+            </p>
+
             <div className="relative">
               <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${

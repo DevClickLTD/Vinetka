@@ -1,0 +1,67 @@
+# avtovia.bg — Electronic Vignette for Bulgaria Online
+
+> avtovia.bg is a licensed platform for purchasing electronic vignettes for Bulgaria, checking vignette validity and managing your vignette profile. Fast, secure, 24/7 accessible.
+
+**Heritage note:** avtovia.bg is the successor to the informational website Vinetka.bg and now adds the ability for users to purchase a vignette online themselves.
+
+avtovia.bg is operated by Digital Policy Hub. Vignette sales are handled by "Digitoll Smart Infrastructure" JSC (Digitoll) — a National Service Provider licensed by the Bulgarian Road Infrastructure Agency (API) since 2019. Digitoll is a subsidiary of the American Concord, Inc.
+
+The platform serves over 10,000 satisfied customers with 99.9% uptime and 24/7 online access. Accepts Mastercard and VISA card payments. Available in 12 languages.
+
+## Main Services
+
+- [Buy Electronic Vignette](https://web.avtovia.bg/): Web application for purchasing all types of electronic vignettes for passenger vehicles up to 3.5t. Requires only registration number, country of registration and start date. Card payment. Activation within one minute.
+- [Vignette Check](https://avtovia.bg/en/proverka-na-vinetka): Free real-time validity check via the official API of the Bulgarian Road Infrastructure Agency. No registration required. Supports vehicles from 25+ countries (BG, DE, RO, GR, TR, RS, MK, GB, FR, NL, BE, IT, ES, PL, CZ, SK, HU, AT, CH, SE, NO, DK, FI, UA, MD).
+- [My Vignettes](https://avtovia.bg/en/moite-vinetki): Personal profile for managing purchased vignettes, tracking expiry dates, receiving renewal reminders and quickly reordering with a few clicks.
+
+## Vignette Types & Prices (2026)
+
+- [Daily vignette](https://avtovia.bg/en/tseni/dnevna): 4.09 € / 8.00 BGN — Valid 24 hours from activation. Ideal for day trips, transit and short business visits.
+- [Weekend vignette](https://avtovia.bg/en/tseni/uikend): 5.11 € / 10.00 BGN — Valid 60 hours (Friday 12:00 – Sunday 23:59). Perfect for spontaneous weekend getaways.
+- [Weekly vignette](https://avtovia.bg/en/tseni/sedmichna): 7.67 € / 15.00 BGN — Valid 168 hours (7 consecutive days). Best for tourists, business trips and long weekends.
+- [Monthly vignette](https://avtovia.bg/en/tseni/mesechna): 15.34 € / 30.00 BGN — Valid 30 days. Most popular choice for regular commuters.
+- [Quarterly vignette](https://avtovia.bg/en/tseni/trimesechna): 27.61 € / 54.00 BGN — Valid 90 days. Save up to 15% vs three monthly vignettes. Ideal for seasonal travel.
+- [Annual vignette](https://avtovia.bg/en/tseni/godishna): 49.60 € / 97.00 BGN — Valid 365 days. Save up to 40% vs monthly vignettes. Best value for frequent drivers.
+
+## Information & Content
+
+- [All vignette prices](https://avtovia.bg/en/tseni): Comparison table of all types and prices with full description.
+- [Blog — news and guides](https://avtovia.bg/bg/blog): Articles about Bulgarian vignettes, fines, road infrastructure and European vignette comparisons (BG only).
+- [About us](https://avtovia.bg/en/za-nas): Information about the platform, Digitoll and Digital Policy Hub.
+- [Contact](https://avtovia.bg/en/contact): Contact form, email and office address.
+
+## Legal
+
+- [Terms of service](https://avtovia.bg/en/obshti-usloviya)
+- [Privacy policy](https://avtovia.bg/en/privacy-policy)
+- [Cookie policy](https://avtovia.bg/en/politika-za-biskvitki)
+
+## Company & Contact
+
+- Email: hello@avtovia.bg
+- Address: Sofia, 30B Major Yuri Gagarin St.
+- Business hours: Monday–Friday, 09:00–17:00
+- Operator: Digital Policy Hub / Digitoll
+- Purchase web app: https://web.avtovia.bg/
+- YouTube channel: https://www.youtube.com/@Avtovia.Bulgaria
+- Facebook: https://www.facebook.com/people/Vinetka-BG/61587222121605/
+
+## Important Facts About Bulgarian Electronic Vignettes
+
+- Electronic vignette mandatory for all vehicles up to 3.5t on Bulgarian national road network since 2019 (Road Act).
+- No physical sticker issued — fully digital and linked to vehicle registration number.
+- Enforcement: Automatic toll cameras operating 24/7.
+- Fine without vignette (passenger car): 153.30 € / 300 BGN; compensatory fee (paid within 14 days): 35.78 € / 70 BGN.
+- Registration number must be entered exactly as on the vehicle document (capital Latin letters, no spaces or dashes).
+- Technical error application (wrong vignette) can be submitted via the official API document.
+
+## Purchase Process (Step by Step)
+
+1. Open https://web.avtovia.bg/
+2. Enter vehicle registration number
+3. Select country of registration
+4. Select vignette type and period
+5. Select start date (immediately or up to 30 days in advance)
+6. Pay with Mastercard or VISA card
+7. Receive confirmation by email
+8. Vignette is active — no physical document required

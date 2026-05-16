@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Vinietă online - Vinietă electronică pentru Bulgaria",
-    "description": "Vinietă online - Cumpărați o vinietă electronică pentru Bulgaria cu plată securizată",
+    "description": "Cumpărați o vinietă electronică pentru Bulgaria online în doar 1 minut! Zilnică, săptămânală, lunară sau anuală. Plată securizată cu cardul. Fără taxe ascunse!",
     "titleTemplate": "%s | vinetka bg"
   },
   "navigation": {
@@ -81,6 +81,7 @@
     "expandable": {
       "title": "Cumpărarea unei viniete online",
       "intro": "Cumpărarea unei viniete online este o modalitate rapidă, convenabilă și sigură de a asigura o călătorie liniștită pe rețeaua rutieră națională. În loc să pierzi timp căutând puncte de vânzare fizice, cu câteva clicuri poți alege tipul potrivit de vinietă.",
+      "heritageNote": "Avtovia.bg este succesorul site-ului informațional Vinetka.bg și adaugă posibilitatea ca utilizatorii să cumpere singuri o vinietă online!",
       "paragraph1": "Prin platforma avtovia.bg obții informații clare despre toate opțiunile disponibile – <weekendLink>de weekend</weekendLink>, <weeklyLink>săptămânală</weeklyLink>, <monthlyLink>lunară</monthlyLink>, <quarterlyLink>trimestrială</quarterlyLink> sau <annualLink>anuală</annualLink>. Plata se efectuează în siguranță cu cardul, iar imediat după o tranzacție reușită primești o confirmare pe email.",
       "imgAlt1": "Cumpărarea unei viniete electronice online pentru Bulgaria",
       "sectionTitle": "Vinietă electronică în un minut",
@@ -1315,6 +1316,14 @@
         "answer": "Nu este obligatoriu să purtați un document pentru vigneta electronică deoarece este electronică și legată de numărul de înmatriculare. Sistemul recunoaște automat prezența unei vignete valabile prin camere. Totuși, recomandăm să salvați emailul sau confirmarea achiziției pentru orice eventualitate."
       }
     ]
+  },
+  "myVignettesExpandable": {
+    "title": "Gestionați vinietele într-un singur loc",
+    "paragraph1": "Prin înregistrarea pe Avtovia.bg, obțineți un loc convenabil unde puteți gestiona rapid și ușor toate vinietele dvs. electronice. În loc să păstrați e-mailuri, chitanțe sau să verificați diferite site-uri web, puteți vedea într-un singur loc toate vinietele active și expirate pentru vehiculele dvs.",
+    "paragraph2": "Platforma este deosebit de utilă pentru familii și persoane cu mai mult de un vehicul. Puteți adăuga viniete pentru diferite numere de înmatriculare și urmări datele de expirare ale acestora într-un profil comun. Astfel știți întotdeauna când expiră o vinietă și evitați riscul de amenzi neplăcute sau omisiuni în timpul călătoriei.",
+    "paragraph3": "Unul dintre marile avantaje este că puteți adăuga viniete achiziționate și de la alți furnizori, nu doar prin platformă. Acest lucru vă oferă flexibilitate deplină și gestionare centralizată a tuturor taxelor rutiere. Veți primi, de asemenea, notificări și memento-uri în timp util înainte de expirarea valabilității.",
+    "more": "Citeste mai mult",
+    "less": "Arată mai puțin"
   },
   "myVignettesPage": {
     "title": "Vignetele Mele - Gestionează și Verifică Valabilitatea Online",
