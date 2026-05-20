@@ -132,10 +132,6 @@ export default function VignetteCheckerCTA() {
                     </div>
                     <div className="flex items-center text-white/90">
                       <CheckCircleIcon className="h-5 w-5 text-green-300 mr-3 flex-shrink-0" />
-                      <span>{t('officialAPI')}</span>
-                    </div>
-                    <div className="flex items-center text-white/90">
-                      <CheckCircleIcon className="h-5 w-5 text-green-300 mr-3 flex-shrink-0" />
                       <span>{t('freeService')}</span>
                     </div>
                     <div className="flex items-center text-white/90">
@@ -261,7 +257,7 @@ export default function VignetteCheckerCTA() {
 
         {/* Bottom Info */}
         <div className="mx-auto mt-12 max-w-4xl">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
             <div className="text-center">
               <div className="mx-auto w-12 h-12 bg-[#803487]/10 rounded-lg flex items-center justify-center mb-4">
                 <MagnifyingGlassIcon className="h-6 w-6 text-[#803487]" />
@@ -271,18 +267,6 @@ export default function VignetteCheckerCTA() {
               </h3>
               <p className="text-sm text-gray-600">
                 {t('resultShownInSeconds')}
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="mx-auto w-12 h-12 bg-[#037672]/10 rounded-lg flex items-center justify-center mb-4">
-                <ShieldCheckIcon className="h-6 w-6 text-[#037672]" />
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {t('officialAPI')}
-              </h3>
-              <p className="text-sm text-gray-600">
-                {t('dataDirectlyFromBGToll')}
               </p>
             </div>
 

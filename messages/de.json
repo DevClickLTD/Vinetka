@@ -938,7 +938,7 @@
     },
     "infoTitle": "Wichtige Informationen",
     "infoItems": {
-      "realtime": "Die Prüfung erfolgt in Echtzeit über die offizielle BG TOLL API",
+      "realtime": "Die Prüfung erfolgt in Echtzeit",
       "free": "Der Service ist kostenlos und erfordert keine Registrierung",
       "format": "Geben Sie nur das Kennzeichen ohne Leerzeichen oder Sonderzeichen ein",
       "bulgarian": "Die Prüfung gilt nur für Fahrzeuge mit bulgarischer Zulassung"
@@ -1215,7 +1215,7 @@
     "termsOfUse": {
       "pageTitle": "Allgemeine Nutzungsbedingungen",
       "pageDescription": "Allgemeine Nutzungsbedingungen der Website www.avtovia.bg – Regeln für den Kauf von elektronischen Vignetten.",
-      "title": "ALLGEMEINE NUTZUNGSBEDINGUNGEN DER WEBSITE WWW.VINETKA.BG",
+      "title": "ALLGEMEINE NUTZUNGSBEDINGUNGEN DER WEBSITE WWW.AVTOVIA.BG",
       "introduction": "Diese Allgemeinen Geschäftsbedingungen regeln die Nutzungsregeln der Website www.avtovia.bg und die Erbringung von Dienstleistungen im Zusammenhang mit dem Kauf und der Lieferung von elektronischen Vignetten sowie die Zahlung von „Maximal-Tagesmaut“- und Ausgleichsgebühren sowie anderer auf der Website www.avtovia.bg angebotener Waren und Dienstleistungen. Alle Nutzer erklären sich mit diesen Allgemeinen Geschäftsbedingungen sowie den geltenden Richtlinien und Dokumenten der Digital Policy Hub AG (im Folgenden „DPH“ AG oder das Unternehmen genannt) bei der Nutzung der Website einverstanden. Diese Allgemeinen Geschäftsbedingungen sind auf der Website www.avtovia.bg veröffentlicht und gelten als vom Nutzer mit der Nutzung der Website akzeptiert.",
       "companyInfo": "Die Digital Policy Hub AG („DPH“ AG), im Folgenden auch „das Unternehmen“ genannt, ist eine Aktiengesellschaft mit Sitz und Geschäftsadresse: Sofia, PLZ 1113, Bezirk Izgrev, ul. „Major Yuri Gagarin“ Nr. 30, Gebäude B, eingetragen im Handelsregister und im Register der juristischen Personen mit gemeinnützigen Zwecken bei der Registrierungsagentur mit USt-IdNr. 207623030 und Umsatzsteuer-Identifikationsnummer: BG207623030. Das Unternehmen ist Eigentümer und Betreiber der Website www.avtovia.bg. Nutzer der Website können die Digital Policy Hub AG unter der oben genannten Adresse oder telefonisch kontaktieren",
       "phone": "+359 876 99 51 77 oder per E-Mail an: hello@insurance.bg",
@@ -1228,7 +1228,7 @@
           "updateRights": "Die Digital Policy Hub AG behält sich das Recht vor, diese Allgemeinen Geschäftsbedingungen regelmäßig zu aktualisieren und zu ändern, um Änderungen in der Nutzung der Website oder im anwendbaren Recht zu berücksichtigen."
         },
         "usageRules": {
-          "title": "II. NUTZUNGSREGELN DER WEBSITE WWW.VINETKA.BG.",
+          "title": "II. NUTZUNGSREGELN DER WEBSITE WWW.AVTOVIA.BG.",
           "registration": "Eine Registrierung auf der Website www.avtovia.bg ist keine Voraussetzung für die Nutzung der Seite. Jeder Nutzer hat die Möglichkeit, sich auf der Website www.avtovia.bg zu registrieren, indem er das entsprechende elektronische Anmeldeformular ausfüllt und den Allgemeinen Geschäftsbedingungen zustimmt.",
           "emailRequirement": "Jeder Nutzer muss eine gültige E-Mail-Adresse für die Korrespondenz angeben und erklärt sich damit einverstanden, dass jede zukünftige Korrespondenz zwischen ihm und dem Unternehmen elektronisch an die von ihm angegebene E-Mail-Adresse erfolgt.",
           "pricing": "Mit Ausnahme der Vignettengebühren/elektronischen Vignetten sowie der Zahlung von „Maximal-Tagesmaut“- oder Ausgleichsgebühren, die eine staatliche Gebühr für die Nutzung des nationalen Straßennetzes darstellen und für die keine Mehrwertsteuer erhoben wird, sind alle anderen Preise für Waren oder Dienstleistungen auf der Website www.avtovia.bg Endpreise, die in Lew (BGN) angegeben sind und die Mehrwertsteuer sowie alle anderen gesetzlich vorgeschriebenen Steuern oder Gebühren enthalten."

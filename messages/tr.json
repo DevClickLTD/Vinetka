@@ -878,7 +878,7 @@
     },
     "infoTitle": "Önemli Bilgi",
     "infoItems": {
-      "realtime": "Kontrol, BG TOLL'un resmi API'si üzerinden gerçek zamanlı olarak yapılır",
+      "realtime": "Kontrol gerçek zamanlı olarak yapılır",
       "free": "Hizmet ücretsizdir ve kayıt gerektirmez",
       "format": "Sadece plaka numarasını, boşluk veya özel karakter olmadan girin",
       "bulgarian": "Kontrol sadece Bulgaristan plakalı araçlar için geçerlidir"
@@ -1155,7 +1155,7 @@
     "termsOfUse": {
       "pageTitle": "Kullanım Koşulları ",
       "pageDescription": "www.avtovia.bg web sitesi kullanım koşulları - elektronik vinyet satın alma kuralları.",
-      "title": "WWW.VINETKA.BG WEB SİTESİ KULLANIM KOŞULLARI",
+      "title": "WWW.AVTOVIA.BG WEB SİTESİ KULLANIM KOŞULLARI",
       "introduction": "Bu Kullanım Koşulları, www.avtovia.bg internet sitesinin kullanım kurallarını ve elektronik vinyetlerin satın alınması ve teslimatı ile 'günlük maksimum geçiş ücreti' ve telafi edici ücretlerin ödenmesi ve www.avtovia.bg internet sitesinde kullanıcılara sunulan diğer ürün ve hizmetlerin sağlanmasını düzenler. Tüm kullanıcılar, www.avtovia.bg internet sitesini kullanırken bu Kullanım Koşulları ile 'Dijital Policy Hub' AŞ'nin (kısaca 'DPH' AŞ veya Şirket) geçerli politika ve belgelerine onay vermiş sayılır. Bu Kullanım Koşulları www.avtovia.bg internet sitesinde yayımlanmıştır ve Kullanıcı tarafından web sitesinin kullanılmasıyla kabul edilmiş sayılır.",
       "companyInfo": "'Dijital Policy Hub' AŞ ('DPH' AŞ), ayrıca 'Şirket' olarak anılır, merkezi ve yönetim adresi Sofya, 1113, Izgrev, Mayor Yuri Gagarin Cad. No:30, B binası olan bir anonim şirkettir ve Bulgaristan Ticaret Sicili ve Kâr Amacı Gütmeyen Tüzel Kişiler Sicili'ne 207623030 EIK ile kayıtlıdır, KDV numarası: BG207623030. Şirket, www.avtovia.bg internet sitesinin sahibi ve yöneticisidir. İnternet sitesi kullanıcıları yukarıda belirtilen adresten, telefon",
       "phone": "+359 876 99 51 77 veya hello@insurance.bg e-posta adresinden 'Dijital Policy Hub' AŞ ile iletişime geçebilirler.",
@@ -1168,7 +1168,7 @@
           "updateRights": "'Dijital Policy Hub' AŞ, internet sitesinin kullanımında veya yürürlükteki mevzuatta meydana gelen değişiklikleri yansıtmak amacıyla bu Kullanım Koşullarını periyodik olarak güncelleme ve değiştirme hakkını saklı tutar."
         },
         "usageRules": {
-          "title": "II. WWW.VINETKA.BG WEB SİTESİ KULLANIM KURALLARI.",
+          "title": "II. WWW.AVTOVIA.BG WEB SİTESİ KULLANIM KURALLARI.",
           "registration": "www.avtovia.bg internet sitesinde kayıt olmak, siteyi kullanmak için bir şart değildir. Her Kullanıcı, www.avtovia.bg web sitesinde ilgili elektronik kayıt formunu doldurarak ve bu Kullanım Koşullarını kabul ederek kayıt olma imkanına sahiptir.",
           "emailRequirement": "Her Kullanıcı, iletişim için geçerli bir e-posta adresi belirtmek zorundadır ve kendisi ile Şirket arasındaki tüm gelecekteki yazışmaların, belirttiği e-posta adresi üzerinden elektronik ortamda yapılmasına onay verir.",
           "pricing": "Vinyet ücretleri/elektronik vinyetler ile 'günlük maksimum geçiş ücreti' veya telafi edici ücretlerin ödenmesi hariç (bunlar devlet yol ağı kullanım ücreti olup KDV uygulanmaz), www.avtovia.bg web sitesindeki diğer tüm ürün ve hizmet fiyatları nihai fiyatlardır, Bulgar Levası (BGN) cinsinden ilan edilmiştir ve KDV ile yasal olarak gerekli tüm vergi ve harçları içerir."

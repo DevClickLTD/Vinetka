@@ -938,7 +938,7 @@
     },
     "infoTitle": "Informații importante",
     "infoItems": {
-      "realtime": "Verificarea se face în timp real prin API-ul oficial BG Toll",
+      "realtime": "Verificarea se face în timp real",
       "free": "Serviciul este gratuit și nu necesită înregistrare",
       "format": "Introdu doar numărul de înmatriculare fără spații sau caractere speciale",
       "bulgarian": "Verificarea este valabilă doar pentru vehicule cu numere de Bulgaria"
@@ -1215,7 +1215,7 @@
     "termsOfUse": {
       "pageTitle": "Termeni și condiții de utilizare ",
       "pageDescription": "Termeni și condiții de utilizare a site-ului www.avtovia.bg - reguli pentru achiziționarea vinietelor electronice.",
-      "title": "TERMENI ȘI CONDIȚII DE UTILIZARE A SITE-ULUI WWW.VINETKA.BG",
+      "title": "TERMENI ȘI CONDIȚII DE UTILIZARE A SITE-ULUI WWW.AVTOVIA.BG",
       "introduction": "Prezenții Termeni și Condiții reglementează regulile de utilizare a site-ului www.avtovia.bg și furnizarea de servicii legate de achiziționarea și livrarea vinietelor electronice și plata taxei „maxim toll pentru ziua respectivă” și a taxelor compensatorii, precum și a altor bunuri și servicii oferite utilizatorilor site-ului www.avtovia.bg. Toți utilizatorii își exprimă acordul cu acești Termeni și Condiții și cu politicile și documentele aplicabile ale „Digital Policy Hub” SA (denumită pe scurt „DPH” SA sau Societatea) la utilizarea site-ului. Prezenții Termeni și Condiții sunt publicați pe site-ul www.avtovia.bg și se consideră acceptați de Utilizator la utilizarea site-ului.",
       "companyInfo": "„Digital Policy Hub” SA („DPH” SA), denumită și „Societatea”, este o societate pe acțiuni cu sediul și adresa de conducere în Sofia, cod poștal 1113, raion Izgrev, str. „Maior Iuri Gagarin” nr. 30, clădirea B, înregistrată la Registrul Comerțului și Registrul persoanelor juridice fără scop lucrativ la Agenția de Înregistrare cu CUI 207623030 și cod de TVA: BG207623030. Societatea este proprietarul și administratorul site-ului www.avtovia.bg. Utilizatorii site-ului pot contacta „Digital Policy Hub” SA la adresa menționată mai sus, la telefon",
       "phone": "+359 876 99 51 77 sau la următoarea adresă de e-mail: hello@insurance.bg",
@@ -1228,7 +1228,7 @@
           "updateRights": "„Digital Policy Hub” SA își rezervă dreptul de a actualiza și modifica periodic prezenții Termeni și Condiții, pentru a reflecta modificările survenite în modul de utilizare a site-ului sau în legătură cu modificări ale legislației aplicabile."
         },
         "usageRules": {
-          "title": "II. REGULI DE UTILIZARE A SITE-ULUI WWW.VINETKA.BG.",
+          "title": "II. REGULI DE UTILIZARE A SITE-ULUI WWW.AVTOVIA.BG.",
           "registration": "Înregistrarea pe site-ul www.avtovia.bg nu este o condiție pentru utilizarea site-ului. Fiecare Utilizator are posibilitatea de a se înregistra pe site-ul www.avtovia.bg completând formularul electronic de înregistrare și exprimându-și acordul cu prezenții Termeni și Condiții.",
           "emailRequirement": "Fiecare Utilizator trebuie să furnizeze o adresă de e-mail validă pentru corespondență și își dă acordul ca orice corespondență viitoare între el și Societate să se desfășoare pe cale electronică la adresa de e-mail furnizată.",
           "pricing": "Cu excepția taxelor de vinietă/vinietelor electronice, precum și la plata taxei „maxim toll pentru ziua respectivă” sau a taxelor compensatorii, care sunt taxe de stat pentru utilizarea rețelei rutiere naționale și pentru care nu se aplică TVA, toate celelalte prețuri ale bunurilor sau serviciilor de pe site-ul www.avtovia.bg sunt finale, exprimate în leva (BGN) cu TVA inclus și toate celelalte taxe sau impozite prevăzute de lege."

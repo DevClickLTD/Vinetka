@@ -914,7 +914,7 @@
     },
     "infoTitle": "Fontos információk",
     "infoItems": {
-      "realtime": "Az ellenőrzés valós időben történik a hivatalos BG TOLL API-n keresztül",
+      "realtime": "Az ellenőrzés valós időben történik",
       "free": "A szolgáltatás ingyenes és nem igényel regisztrációt",
       "format": "Csak a rendszámot adja meg szóközök vagy speciális karakterek nélkül",
       "bulgarian": "Az ellenőrzés csak bolgár rendszámú járművekre érvényes"
@@ -1215,7 +1215,7 @@
     "termsOfUse": {
       "pageTitle": "Felhasználási feltételek",
       "pageDescription": "A www.avtovia.bg weboldal felhasználási feltételei - elektronikus matricák vásárlásának szabályai.",
-      "title": "A WWW.VINETKA.BG WEBOLDAL FELHASZNÁLÁSI FELTÉTELEI",
+      "title": "A WWW.AVTOVIA.BG WEBOLDAL FELHASZNÁLÁSI FELTÉTELEI",
       "introduction": "Ezek a felhasználási feltételek szabályozzák a www.avtovia.bg weboldal használatának szabályait és az elektronikus matricák vásárlásával és szállításával kapcsolatos szolgáltatások nyújtását.",
       "companyInfo": "A „Digital Policy Hub\" JSC (\"DPH\" JSC), más névvel „a Társaság\", egy részvénytársaság, amelynek székhelye és irányítási címe: Sofia, irányítószám 1113, Izgrev kerület, „Major Yuri Gagarin\" u. 30., B épület.",
       "phone": "+359 876 99 51 77 vagy a következő e-mail címen: hello@insurance.bg",
@@ -1228,7 +1228,7 @@
           "updateRights": "A „Digital Policy Hub\" JSC fenntartja a jogot, hogy időszakosan frissítse és módosítsa ezeket a felhasználási feltételeket."
         },
         "usageRules": {
-          "title": "II. A WWW.VINETKA.BG WEBOLDAL HASZNÁLATÁNAK SZABÁLYAI.",
+          "title": "II. A WWW.AVTOVIA.BG WEBOLDAL HASZNÁLATÁNAK SZABÁLYAI.",
           "registration": "A www.avtovia.bg weboldalon való regisztráció nem feltétele az oldal használatának.",
           "emailRequirement": "Minden felhasználó köteles érvényes e-mail címet megadni a levelezéshez.",
           "pricing": "Az elektronikus matricákra vonatkozó útdíj-adókat kivéve a www.avtovia.bg weboldal összes többi áruja és szolgáltatásának ára végleges, lévában (BGN) van megadva ÁFÁ-val együtt."

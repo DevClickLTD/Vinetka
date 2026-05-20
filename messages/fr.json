@@ -914,7 +914,7 @@
     },
     "infoTitle": "Informations importantes",
     "infoItems": {
-      "realtime": "La vérification est effectuée en temps réel via l'API officielle BG TOLL",
+      "realtime": "La vérification est effectuée en temps réel",
       "free": "Le service est gratuit et ne nécessite pas d'inscription",
       "format": "Entrez uniquement le numéro d'immatriculation sans espaces ni caractères spéciaux",
       "bulgarian": "La vérification est valable uniquement pour les véhicules immatriculés en Bulgarie"
@@ -1215,7 +1215,7 @@
     "termsOfUse": {
       "pageTitle": "Conditions d'utilisation",
       "pageDescription": "Conditions d'utilisation du site web www.avtovia.bg - règles d'achat de vignettes électroniques.",
-      "title": "CONDITIONS D'UTILISATION DU SITE WEB WWW.VINETKA.BG",
+      "title": "CONDITIONS D'UTILISATION DU SITE WEB WWW.AVTOVIA.BG",
       "introduction": "Ces conditions d'utilisation régissent les règles d'utilisation du site web www.avtovia.bg et la fourniture de services liés à l'achat et à la livraison de vignettes électroniques.",
       "companyInfo": "« Digital Policy Hub » JSC (« DPH » JSC), également appelée « la Société », est une société par actions dont le siège social et l'adresse de gestion sont à Sofia, code postal 1113, quartier Izgrev, rue « Major Yuri Gagarin » n° 30, bâtiment B.",
       "phone": "+359 876 99 51 77 ou à l'adresse e-mail suivante : hello@insurance.bg",
@@ -1228,7 +1228,7 @@
           "updateRights": "« Digital Policy Hub » JSC se réserve le droit de mettre à jour et de modifier périodiquement ces conditions d'utilisation."
         },
         "usageRules": {
-          "title": "II. RÈGLES D'UTILISATION DU SITE WEB WWW.VINETKA.BG.",
+          "title": "II. RÈGLES D'UTILISATION DU SITE WEB WWW.AVTOVIA.BG.",
           "registration": "L'inscription sur le site web www.avtovia.bg n'est pas une condition d'utilisation du site.",
           "emailRequirement": "Chaque utilisateur est tenu de fournir une adresse e-mail valide pour la correspondance.",
           "pricing": "À l'exception des taxes de vignette/vignettes électroniques, tous les autres prix des biens ou services sur le site web www.avtovia.bg sont définitifs, annoncés en leva (BGN) TVA incluse."

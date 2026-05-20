@@ -914,7 +914,7 @@
     },
     "infoTitle": "Important Information",
     "infoItems": {
-      "realtime": "The check is performed in real time through the official BG TOLL API",
+      "realtime": "The check is performed in real time",
       "free": "The service is free and does not require registration",
       "format": "Enter only the license plate number without spaces or special characters",
       "bulgarian": "The check is valid only for vehicles with Bulgarian registration"
@@ -1215,7 +1215,7 @@
     "termsOfUse": {
       "pageTitle": "Terms of Use",
       "pageDescription": "Terms of use for the website www.avtovia.bg - rules for purchasing electronic vignettes.",
-      "title": "TERMS OF USE FOR THE WEBSITE WWW.VINETKA.BG",
+      "title": "TERMS OF USE FOR THE WEBSITE WWW.AVTOVIA.BG",
       "introduction": "These Terms of Use regulate the rules for using the website www.avtovia.bg and the provision of services related to the purchase and delivery of electronic vignettes and payment of \"maximum toll for the day\" taxes and compensatory taxes and other goods and services offered to users of the website www.avtovia.bg. All users provide consent to these Terms of Use and the applicable policies and documents of \"Digital Policy Hub\" JSC (referred to briefly as \"DPH\" JSC or the Company) when using the website. These Terms of Use are published on the website www.avtovia.bg and are considered accepted by the User when using the website.",
       "companyInfo": "\"Digital Policy Hub\" JSC (\"DPH\" JSC), also called \"the Company\", is a joint stock company with headquarters and management address in Sofia, zip code 1113, Izgrev district, \"Major Yuri Gagarin\" str. No. 30, building B, registered in the Commercial Register and the register of legal entities for non-profit purposes at the Registration Agency with UIC 207623030 and VAT identification number: BG207623030. The Company is the owner and administrator of the website www.avtovia.bg. Users of the website can contact \"Digital Policy Hub\" JSC at the above-mentioned address, by phone",
       "phone": "+359 876 99 51 77 or at the following email address: hello@insurance.bg",
@@ -1228,7 +1228,7 @@
           "updateRights": "\"Digital Policy Hub\" JSC reserves the right to periodically update and change these Terms of Use in order to reflect changes in the way the website is used or in connection with changes in applicable legislation."
         },
         "usageRules": {
-          "title": "II. RULES FOR USING THE WEBSITE WWW.VINETKA.BG.",
+          "title": "II. RULES FOR USING THE WEBSITE WWW.AVTOVIA.BG.",
           "registration": "Registration on the website www.avtovia.bg is not a condition for using the site. Every User has the opportunity to register on the website www.avtovia.bg by filling out the appropriate electronic application form for registration on www.avtovia.bg and expressing consent to these Terms of Use.",
           "emailRequirement": "Every User is required to provide a valid e-mail address for correspondence and give their consent that all future correspondence between them and the Company be carried out electronically at the e-mail address they have provided.",
           "pricing": "With the exception of vignette taxes/electronic vignettes, as well as when paying \"maximum toll for the day\" taxes or compensatory taxes, which are state taxes for using the republican road network and VAT is not charged for them, all other prices of goods or services on the website www.avtovia.bg are final, announced in leva (BGN) with included VAT and all other taxes or fees required by law."
