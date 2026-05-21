@@ -20,6 +20,56 @@ const TARGET_LANGUAGES = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
 // Delay между заявки за да не претоварим Google Translate API
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
+/**
+ * Converts a translated title into a clean, URL-friendly slug.
+ * Works for Latin, Cyrillic (RU/SR/MK/UK) and Greek (EL) scripts.
+ */
+function titleToSlug(title) {
+  if (!title) return '';
+  let slug = title
+    .toLowerCase()
+    // Normalize German umlauts before NFD decomposition
+    .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss')
+    // NFD strips combining diacritics from Latin letters (é → e, ñ → n, etc.)
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    // Keep: a-z, 0-9, spaces, Cyrillic (U+0400–U+04FF), Greek (U+0370–U+03FF), hyphens
+    .replace(/[^a-z0-9\s\u0400-\u04ff\u0370-\u03ff-]/g, '')
+    .trim()
+    .replace(/[\s_]+/g, '-')
+    .replace(/-+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 80);
+  return slug;
+}
+
+/**
+ * Scans all existing translations and fills in any slug_{lang} fields that are
+ * missing or still equal to the BG slug (i.e. were never properly translated).
+ * Generates slugs from the already-translated titles — NO API calls needed.
+ * Returns the number of entries fixed.
+ */
+function fixMissingSlugs(data) {
+  let fixed = 0;
+  for (const store of [data.posts, data.pages]) {
+    for (const [bgSlug, entry] of Object.entries(store)) {
+      for (const lang of TARGET_LANGUAGES) {
+        const currentSlug = entry[`slug_${lang}`];
+        const translatedTitle = entry[`title_${lang}`];
+        // Fix when: no slug yet, OR slug is still the BG slug (not translated)
+        if (translatedTitle && (!currentSlug || currentSlug === bgSlug)) {
+          const generated = titleToSlug(translatedTitle);
+          if (generated) {
+            entry[`slug_${lang}`] = generated;
+            fixed++;
+          }
+        }
+      }
+    }
+  }
+  return fixed;
+}
+
 // Slug mappings - ако имаш специфични slug преводи
 const slugMappings = {
   // Пример: "kak-da-kupim-vinetka": "how-to-buy-vignette",
@@ -203,20 +253,21 @@ async function translateItem(itemData, slug, type) {
   for (const lang of TARGET_LANGUAGES) {
     console.log(`\n   🌐 Translating to ${lang.toUpperCase()}...`);
     
-    // Slug превод
+    // Title превод (изпълнява се ПЪРВО — slug зависи от него)
+    console.log(`      → Title...`);
+    translated[`title_${lang}`] = await translateText(itemData.title_bg, lang);
+
+    // Slug — генерира се от преведеното заглавие
+    // Ако има ръчно дефиниран slug в slugMappings, той има приоритет
     const customSlug = slugMappings[itemData.slug_bg];
     if (customSlug && typeof customSlug === 'object' && customSlug[lang]) {
       translated[`slug_${lang}`] = customSlug[lang];
     } else if (typeof customSlug === 'string' && lang === 'en') {
       translated[`slug_${lang}`] = customSlug;
     } else {
-      // Автоматична транслитерация
-      translated[`slug_${lang}`] = itemData.slug_bg;
+      // Генерираме slug от преведеното заглавие
+      translated[`slug_${lang}`] = titleToSlug(translated[`title_${lang}`]) || itemData.slug_bg;
     }
-    
-    // Title превод
-    console.log(`      → Title...`);
-    translated[`title_${lang}`] = await translateText(itemData.title_bg, lang);
     await delay(500);
     
     // Meta description превод
@@ -296,6 +347,14 @@ async function main() {
       console.log('📊 Current state:');
       console.log(`   Pages translated: ${Object.keys(existingData.pages).length}`);
       console.log(`   Posts translated: ${Object.keys(existingData.posts).length}\n`);
+
+      // Patch any entries that have translated titles but still use the BG slug
+      const fixed = fixMissingSlugs(existingData);
+      if (fixed > 0) {
+        console.log(`🔧 Fixed ${fixed} missing/untranslated slug fields from existing titles`);
+        fs.writeFileSync(translationsPath, JSON.stringify(existingData, null, 2), 'utf-8');
+        console.log('   💾 Saved\n');
+      }
     } else {
       console.log('⚠️  No existing translations found, will translate all\n');
     }

@@ -2,15 +2,32 @@
 
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '../lib/navigation';
+import { useParams } from 'next/navigation';
 import { locales } from '../i18n/request';
 
 export default function LanguageSwitcher() {
   const locale = useLocale();
   const pathname = usePathname();
   const router = useRouter();
+  const params = useParams();
 
   const handleLocaleChange = (newLocale) => {
-    router.replace(pathname, { locale: newLocale });
+    const { slug } = params ?? {};
+
+    if (slug) {
+      // Dynamic blog post page — pass the slug param explicitly so next-intl
+      // can generate the correct localized URL. The [slug]/page.js redirect
+      // logic will convert the slug to the translated version for the new locale.
+      // Decode first to prevent double-encoding of non-ASCII (e.g. Cyrillic) slugs.
+      let decodedSlug = slug;
+      try { decodedSlug = decodeURIComponent(slug); } catch { /* already decoded */ }
+      router.replace(
+        { pathname: '/blog/[slug]', params: { slug: decodedSlug } },
+        { locale: newLocale }
+      );
+    } else {
+      router.replace(pathname, { locale: newLocale });
+    }
   };
 
   return (

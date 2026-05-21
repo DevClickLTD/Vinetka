@@ -1,60 +1,91 @@
 import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
 import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
-import { getTranslatedContent, hasTranslation, injectImageAlts } from '../../../../lib/wordpress-helpers';
+import {
+  getTranslatedContent,
+  hasTranslation,
+  injectImageAlts,
+  getBgSlugFromTranslatedSlug,
+  getTranslatedSlug,
+} from '../../../../lib/wordpress-helpers';
 import Script from "next/script";
 
-// ISR revalidate на всеки 5 минути за по-бързи обновления
+// ISR — revalidate every 5 minutes
 export const revalidate = 300;
+
+/**
+ * Resolves the URL slug to an actual BG slug and determines whether a
+ * permanent redirect to the translated URL is needed.
+ *
+ * Three cases:
+ *  1. BG locale → use slug as-is
+ *  2. Translated slug (new URL) → reverse-lookup BG slug, serve directly
+ *  3. BG slug on non-BG locale (old URL) → redirect to translated slug (301)
+ */
+function resolveSlug(urlSlug, locale) {
+  if (locale === 'bg') {
+    return { bgSlug: urlSlug, shouldRedirect: false, translatedSlug: urlSlug };
+  }
+
+  // Case 2: Is the URL slug already the translated slug for this locale?
+  const bgSlugFromTranslated = getBgSlugFromTranslatedSlug(urlSlug, locale);
+  if (bgSlugFromTranslated) {
+    return { bgSlug: bgSlugFromTranslated, shouldRedirect: false, translatedSlug: urlSlug };
+  }
+
+  // Case 3: The URL contains the BG slug — check if a translated slug exists
+  const translatedSlug = getTranslatedSlug(urlSlug, locale);
+  if (translatedSlug && translatedSlug !== urlSlug) {
+    return { bgSlug: urlSlug, shouldRedirect: true, translatedSlug };
+  }
+
+  // No translated slug available yet — serve BG slug directly
+  return { bgSlug: urlSlug, shouldRedirect: false, translatedSlug: urlSlug };
+}
 
 export async function generateMetadata({ params }) {
   const { slug, locale } = await params;
 
-  // Защита срещу placeholder URL-и от счупени преводи
   if (slug.includes('LINK_PLACEHOLDER') || slug.includes('LINK_YER') || slug.includes('__HREF')) {
     return { robots: { index: false, follow: false } };
   }
 
-  const post = await getPostBySlug(slug);
+  const { bgSlug } = resolveSlug(slug, locale);
 
-  if (!post || post.length === 0) {
-    return {};
-  }
+  const post = await getPostBySlug(bgSlug);
+  if (!post || post.length === 0) return {};
 
   const baseUrl = 'https://www.avtovia.bg';
-
   const meta = post[0].yoast_head_json;
-  const ogImageObject =
-    meta.og_image && meta.og_image.length > 0 ? meta.og_image[0] : null;
-  const ogImage = ogImageObject ? ogImageObject.url : null;
-  const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
-  const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
+  const ogImageObject = meta.og_image?.[0] ?? null;
+  const ogImage = ogImageObject?.url ?? null;
+  const ogImageWidth = ogImageObject?.width ?? 1200;
+  const ogImageHeight = ogImageObject?.height ?? 630;
 
-  // Get translated content
-  const translatedContent = getTranslatedContent(slug, locale, 'post');
+  const translatedContent = getTranslatedContent(bgSlug, locale, 'post');
   const title = translatedContent?.title || meta.title;
   const description = translatedContent?.metaDescription || meta.description;
 
-  const canonicalUrl = getCanonicalUrl(locale, `blog/${slug}`);
-  const absoluteOgImage = ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp');
-  
-  // Build hreflang links only for translated versions
+  // Canonical uses the resolved (translated) slug for this locale
+  const { translatedSlug } = resolveSlug(slug, locale);
+  const canonicalUrl = `${baseUrl}/${locale}/blog/${translatedSlug}`;
+
+  // Hreflang: each locale gets its own translated slug
   const languages = {
-    'x-default': `${baseUrl}/bg/blog/${slug}`,
-    bg: `${baseUrl}/bg/blog/${slug}`,
+    'x-default': `${baseUrl}/bg/blog/${bgSlug}`,
+    bg: `${baseUrl}/bg/blog/${bgSlug}`,
   };
-  
-  // Add other languages if they have translations
   const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
   supportedLocales.forEach(lang => {
-    if (hasTranslation(slug, lang, 'post')) {
-      languages[lang] = `${baseUrl}/${lang}/blog/${slug}`;
+    if (hasTranslation(bgSlug, lang, 'post')) {
+      const tSlug = getTranslatedSlug(bgSlug, lang);
+      languages[lang] = `${baseUrl}/${lang}/blog/${tSlug}`;
     }
   });
-  
+
   return {
     title: { absolute: `${post[0].title.rendered} | avtovia bg` },
     description,
@@ -62,7 +93,7 @@ export async function generateMetadata({ params }) {
       title,
       description,
       url: canonicalUrl,
-      images: [{ url: absoluteOgImage, width: ogImageWidth, height: ogImageHeight }],
+      images: [{ url: ogImage ? getAbsoluteImageUrl(ogImage) : getAbsoluteImageUrl('/default.webp'), width: ogImageWidth, height: ogImageHeight }],
     },
     alternates: {
       canonical: canonicalUrl,
@@ -72,36 +103,38 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function PostPage({ params }) {
+  const { slug, locale } = await params;
+
+  if (slug.includes('LINK_PLACEHOLDER') || slug.includes('LINK_YER') || slug.includes('__HREF')) {
+    notFound();
+  }
+
+  const { bgSlug, shouldRedirect, translatedSlug } = resolveSlug(slug, locale);
+
+  // permanentRedirect/notFound throw special Next.js errors — they must stay
+  // OUTSIDE any try-catch so they propagate correctly to the framework.
+  if (shouldRedirect) {
+    permanentRedirect(`/${locale}/blog/${translatedSlug}`);
+  }
+
   try {
-    const { slug, locale } = await params;
-
-    // Placeholder URL-и от счупени преводи → 404 веднага
-    if (slug.includes('LINK_PLACEHOLDER') || slug.includes('LINK_YER') || slug.includes('__HREF')) {
-      notFound();
-    }
-
-    const post = await getPostBySlug(slug);
-
+    const post = await getPostBySlug(bgSlug);
     if (!post || post.length === 0) {
       notFound();
     }
 
-    // Get translated content
-    const translatedContent = getTranslatedContent(slug, locale, 'post');
+    const translatedContent = getTranslatedContent(bgSlug, locale, 'post');
     const title = translatedContent?.title || post[0].title.rendered;
     const rawContent = translatedContent?.content || post[0].content.rendered;
-    // Inject alt text to images missing it (SEO fix)
     const content = injectImageAlts(rawContent, title, locale);
 
     const meta = post[0].yoast_head_json;
-    const ogImageObject =
-      meta.og_image && meta.og_image.length > 0 ? meta.og_image[0] : null;
-    const ogImage = ogImageObject ? ogImageObject.url : null;
-    const ogImageWidth = ogImageObject ? ogImageObject.width : 1200;
-    const ogImageHeight = ogImageObject ? ogImageObject.height : 630;
+    const ogImageObject = meta.og_image?.[0] ?? null;
+    const ogImage = ogImageObject?.url ?? null;
+    const ogImageWidth = ogImageObject?.width ?? 1200;
+    const ogImageHeight = ogImageObject?.height ?? 630;
 
     const siteUrl = 'https://www.avtovia.bg';
-
     const blogPostingSchema = getBlogPostingSchema(post[0], locale, siteUrl);
 
     return (
@@ -109,9 +142,7 @@ export default async function PostPage({ params }) {
         <Script
           id="blog-posting-schema"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(blogPostingSchema),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingSchema) }}
         />
         {/* Hero Section */}
         <div className="bg-white">
@@ -149,7 +180,7 @@ export default async function PostPage({ params }) {
         <div className="bg-white py-12 lg:py-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
-              {/* Main Article Content */}
+              {/* Article */}
               <div className="lg:col-span-8">
                 <article className="w-full">
                   {ogImage && (
@@ -168,17 +199,14 @@ export default async function PostPage({ params }) {
                     dateTime={new Date(post[0].date).toISOString()}
                     className="block mt-2 text-sm text-gray-500 mb-6"
                   >
-                    {new Date(post[0].date).toLocaleDateString(locale === 'bg' ? 'bg-BG' : locale === 'en' ? 'en-US' : locale, {
-                      day: "numeric",
-                      month: "long",
-                      year: "numeric",
-                    })}
+                    {new Date(post[0].date).toLocaleDateString(
+                      locale === 'bg' ? 'bg-BG' : locale === 'en' ? 'en-US' : locale,
+                      { day: 'numeric', month: 'long', year: 'numeric' }
+                    )}
                   </time>
                   <div
                     className="wordpress-content prose max-w-none leading-relaxed"
-                    dangerouslySetInnerHTML={{
-                      __html: content,
-                    }}
+                    dangerouslySetInnerHTML={{ __html: content }}
                   />
                 </article>
               </div>
@@ -186,7 +214,7 @@ export default async function PostPage({ params }) {
               {/* Sidebar */}
               <div className="lg:col-span-4">
                 <div className="lg:sticky lg:top-8">
-                  <BlogSidebar currentPostSlug={slug} />
+                  <BlogSidebar currentPostSlug={bgSlug} />
                 </div>
               </div>
             </div>

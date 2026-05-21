@@ -1,5 +1,5 @@
 import { fetchAPI } from '../services/api';
-import { getLocalizedPath, locales } from '../lib/pathnames.js';
+import { getLocalizedPath, locales } from '../lib/pathnames.mjs';
 
 const baseUrl = 'https://www.avtovia.bg';
 

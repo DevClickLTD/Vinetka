@@ -11,15 +11,10 @@ export default function Footer() {
   const locale = useLocale();
   const [year, setYear] = useState(new Date().getFullYear());
 
-  const allSupportItems = [
+  const supportItems = [
     { name: t('support.blog'), href: "/blog" },
     { name: t('support.contact'), href: "/contact" },
   ];
-
-  // Filter out blog for non-bg locales
-  const supportItems = allSupportItems.filter(item => 
-    item.href !== "/blog" || locale === 'bg'
-  );
 
   const navigation = {
     services: [

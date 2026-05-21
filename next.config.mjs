@@ -1,5 +1,5 @@
 import createNextIntlPlugin from 'next-intl/plugin';
-import { pathnames, locales } from './lib/pathnames.js';
+import { pathnames, locales } from './lib/pathnames.mjs';
 
 // Fix SSL cert verification issue in local/CI environments with self-signed or
 // intermediate certs (does not affect production TLS — only build-time fetches)
