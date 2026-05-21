@@ -30,20 +30,39 @@ function resolveSlug(urlSlug, locale) {
     return { bgSlug: urlSlug, shouldRedirect: false, translatedSlug: urlSlug };
   }
 
-  // Case 2: Is the URL slug already the translated slug for this locale?
-  const bgSlugFromTranslated = getBgSlugFromTranslatedSlug(urlSlug, locale);
-  if (bgSlugFromTranslated) {
-    return { bgSlug: bgSlugFromTranslated, shouldRedirect: false, translatedSlug: urlSlug };
+  // Decode the incoming slug — Next.js usually decodes params, but in some
+  // client-side navigation scenarios with non-ASCII slugs it may stay encoded.
+  let decodedSlug = urlSlug;
+  try { decodedSlug = decodeURIComponent(urlSlug); } catch { /* already decoded */ }
+
+  // Case 2: Is the URL slug a known translated slug (for this locale OR any other)?
+  // The cross-locale fallback handles switching from e.g. /ru/ → /tr/ where the
+  // URL still carries the Russian slug until the page resolves it.
+  const bgSlugRaw = getBgSlugFromTranslatedSlug(decodedSlug, locale);
+  if (bgSlugRaw) {
+    // The JSON keys are URL-encoded (%d0%b4%d0%bd...) — decode for the WP API
+    let bgSlug = bgSlugRaw;
+    try { bgSlug = decodeURIComponent(bgSlugRaw); } catch { /* already decoded */ }
+
+    // If the URL slug is NOT the correct translation for this locale, redirect.
+    // This happens when switching between non-BG locales (e.g. RU → TR passes
+    // the Russian slug to the Turkish page).
+    const correctSlug = getTranslatedSlug(bgSlug, locale);
+    if (correctSlug && correctSlug !== decodedSlug) {
+      return { bgSlug, shouldRedirect: true, translatedSlug: correctSlug };
+    }
+
+    return { bgSlug, shouldRedirect: false, translatedSlug: decodedSlug };
   }
 
   // Case 3: The URL contains the BG slug — check if a translated slug exists
-  const translatedSlug = getTranslatedSlug(urlSlug, locale);
-  if (translatedSlug && translatedSlug !== urlSlug) {
-    return { bgSlug: urlSlug, shouldRedirect: true, translatedSlug };
+  const translatedSlug = getTranslatedSlug(decodedSlug, locale);
+  if (translatedSlug && translatedSlug !== decodedSlug) {
+    return { bgSlug: decodedSlug, shouldRedirect: true, translatedSlug };
   }
 
   // No translated slug available yet — serve BG slug directly
-  return { bgSlug: urlSlug, shouldRedirect: false, translatedSlug: urlSlug };
+  return { bgSlug: decodedSlug, shouldRedirect: false, translatedSlug: decodedSlug };
 }
 
 export async function generateMetadata({ params }) {
@@ -70,19 +89,20 @@ export async function generateMetadata({ params }) {
   const description = translatedContent?.metaDescription || meta.description;
 
   // Canonical uses the resolved (translated) slug for this locale
+  // Encode non-ASCII slugs (Cyrillic, Greek) for valid canonical URLs
   const { translatedSlug } = resolveSlug(slug, locale);
-  const canonicalUrl = `${baseUrl}/${locale}/blog/${translatedSlug}`;
+  const canonicalUrl = `${baseUrl}/${locale}/blog/${encodeURIComponent(translatedSlug)}`;
 
-  // Hreflang: each locale gets its own translated slug
+  // Hreflang: each locale gets its own translated slug (encoded for validity)
   const languages = {
-    'x-default': `${baseUrl}/bg/blog/${bgSlug}`,
-    bg: `${baseUrl}/bg/blog/${bgSlug}`,
+    'x-default': `${baseUrl}/bg/blog/${encodeURIComponent(bgSlug)}`,
+    bg: `${baseUrl}/bg/blog/${encodeURIComponent(bgSlug)}`,
   };
   const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
   supportedLocales.forEach(lang => {
     if (hasTranslation(bgSlug, lang, 'post')) {
       const tSlug = getTranslatedSlug(bgSlug, lang);
-      languages[lang] = `${baseUrl}/${lang}/blog/${tSlug}`;
+      languages[lang] = `${baseUrl}/${lang}/blog/${encodeURIComponent(tSlug)}`;
     }
   });
 
@@ -113,8 +133,10 @@ export default async function PostPage({ params }) {
 
   // permanentRedirect/notFound throw special Next.js errors — they must stay
   // OUTSIDE any try-catch so they propagate correctly to the framework.
+  // Encode the translated slug so the Location header is valid ASCII
+  // (raw Cyrillic/Greek in redirect URLs breaks client-side navigation).
   if (shouldRedirect) {
-    permanentRedirect(`/${locale}/blog/${translatedSlug}`);
+    permanentRedirect(`/${locale}/blog/${encodeURIComponent(translatedSlug)}`);
   }
 
   try {
@@ -223,6 +245,9 @@ export default async function PostPage({ params }) {
       </>
     );
   } catch (error) {
-    return <p>Error: {error.message}</p>;
+    // Re-throw Next.js internal signals (notFound, redirect) so the framework
+    // handles them correctly instead of displaying them as text errors.
+    if (error?.digest) throw error;
+    return <p>Error loading post.</p>;
   }
 }
