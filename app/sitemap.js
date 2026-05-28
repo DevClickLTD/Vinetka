@@ -1,6 +1,7 @@
 import { fetchAPI } from '../services/api';
 import { getLocalizedPath, locales, translationLocales } from '../lib/pathnames.mjs';
 import { getTranslatedSlug, hasTranslation } from '../lib/wordpress-helpers';
+import { buildBlogPostUrl } from '../lib/seo-utils';
 
 const baseUrl = 'https://www.avtovia.bg';
 
@@ -65,7 +66,7 @@ export default async function sitemap() {
     const blogPosts = await getBlogPosts();
     for (const post of blogPosts) {
       urls.push({
-        url: `${baseUrl}/bg/blog/${post.slug}`,
+        url: buildBlogPostUrl('bg', post.slug),
         lastModified: new Date(post.modified),
         changeFrequency: 'weekly',
         priority: 0.7,
@@ -76,7 +77,7 @@ export default async function sitemap() {
 
         const translatedSlug = getTranslatedSlug(post.slug, locale, 'post');
         urls.push({
-          url: `${baseUrl}/${locale}/blog/${encodeURIComponent(translatedSlug)}`,
+          url: buildBlogPostUrl(locale, translatedSlug),
           lastModified: new Date(post.modified),
           changeFrequency: 'weekly',
           priority: 0.65,

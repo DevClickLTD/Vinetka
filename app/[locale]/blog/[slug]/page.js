@@ -2,7 +2,7 @@ import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
 import { notFound, permanentRedirect } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
-import { getAbsoluteImageUrl, getBlogPostHreflangLinks } from '../../../../lib/seo-utils';
+import { getAbsoluteImageUrl, getBlogPostHreflangLinks, buildBlogPostUrl, normalizeBlogSlug } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import {
   getTranslatedContent,
@@ -91,7 +91,7 @@ export async function generateMetadata({ params }) {
   // Canonical uses the resolved (translated) slug for this locale
   // Encode non-ASCII slugs (Cyrillic, Greek) for valid canonical URLs
   const { translatedSlug } = resolveSlug(slug, locale);
-  const canonicalUrl = `${baseUrl}/${locale}/blog/${encodeURIComponent(translatedSlug)}`;
+  const canonicalUrl = buildBlogPostUrl(locale, translatedSlug);
 
   const languages = getBlogPostHreflangLinks(bgSlug, hasTranslation, getTranslatedSlug);
 
@@ -118,14 +118,19 @@ export default async function PostPage({ params }) {
     notFound();
   }
 
+  // Old links may use percent-encoded Cyrillic slugs — redirect to decoded canonical URL
+  const normalizedParamSlug = normalizeBlogSlug(slug);
+  if (slug !== normalizedParamSlug) {
+    permanentRedirect(`/${locale}/blog/${normalizedParamSlug}`);
+  }
+
   const { bgSlug, shouldRedirect, translatedSlug } = resolveSlug(slug, locale);
 
   // permanentRedirect/notFound throw special Next.js errors — they must stay
   // OUTSIDE any try-catch so they propagate correctly to the framework.
-  // Encode the translated slug so the Location header is valid ASCII
-  // (raw Cyrillic/Greek in redirect URLs breaks client-side navigation).
+  // Redirect to the canonical decoded slug (matches hreflang + sitemap URLs)
   if (shouldRedirect) {
-    permanentRedirect(`/${locale}/blog/${encodeURIComponent(translatedSlug)}`);
+    permanentRedirect(`/${locale}/blog/${normalizeBlogSlug(translatedSlug)}`);
   }
 
   try {
