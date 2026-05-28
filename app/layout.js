@@ -63,21 +63,6 @@ export function generateMetadata() {
         "max-snippet": -1,
       },
     },
-    alternates: {
-      canonical: "/",
-      languages: {
-        'x-default': "/bg",
-        bg: "/bg",
-        en: "/en",
-        de: "/de",
-        ru: "/ru",
-        tr: "/tr",
-        el: "/el",
-        sr: "/sr",
-        ro: "/ro",
-        mk: "/mk",
-      },
-    },
   };
 }
 

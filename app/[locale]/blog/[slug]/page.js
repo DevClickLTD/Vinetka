@@ -2,7 +2,7 @@ import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
 import { notFound, permanentRedirect } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
-import { getCanonicalUrl, getAbsoluteImageUrl } from '../../../../lib/seo-utils';
+import { getAbsoluteImageUrl, getBlogPostHreflangLinks } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import {
   getTranslatedContent,
@@ -93,21 +93,10 @@ export async function generateMetadata({ params }) {
   const { translatedSlug } = resolveSlug(slug, locale);
   const canonicalUrl = `${baseUrl}/${locale}/blog/${encodeURIComponent(translatedSlug)}`;
 
-  // Hreflang: each locale gets its own translated slug (encoded for validity)
-  const languages = {
-    'x-default': `${baseUrl}/bg/blog/${encodeURIComponent(bgSlug)}`,
-    bg: `${baseUrl}/bg/blog/${encodeURIComponent(bgSlug)}`,
-  };
-  const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
-  supportedLocales.forEach(lang => {
-    if (hasTranslation(bgSlug, lang, 'post')) {
-      const tSlug = getTranslatedSlug(bgSlug, lang);
-      languages[lang] = `${baseUrl}/${lang}/blog/${encodeURIComponent(tSlug)}`;
-    }
-  });
+  const languages = getBlogPostHreflangLinks(bgSlug, hasTranslation, getTranslatedSlug);
 
   return {
-    title: { absolute: `${post[0].title.rendered} | avtovia bg` },
+    title: { absolute: `${title} | avtovia bg` },
     description,
     openGraph: {
       title,

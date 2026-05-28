@@ -1,5 +1,6 @@
 import { fetchAPI } from '../services/api';
-import { getLocalizedPath, locales } from '../lib/pathnames.mjs';
+import { getLocalizedPath, locales, translationLocales } from '../lib/pathnames.mjs';
+import { getTranslatedSlug, hasTranslation } from '../lib/wordpress-helpers';
 
 const baseUrl = 'https://www.avtovia.bg';
 
@@ -59,7 +60,7 @@ export default async function sitemap() {
     }
   }
 
-  // Blog posts — BG locale only (content is in Bulgarian)
+  // Blog posts — BG + translated locale URLs
   try {
     const blogPosts = await getBlogPosts();
     for (const post of blogPosts) {
@@ -69,6 +70,18 @@ export default async function sitemap() {
         changeFrequency: 'weekly',
         priority: 0.7,
       });
+
+      for (const locale of translationLocales) {
+        if (!hasTranslation(post.slug, locale, 'post')) continue;
+
+        const translatedSlug = getTranslatedSlug(post.slug, locale, 'post');
+        urls.push({
+          url: `${baseUrl}/${locale}/blog/${encodeURIComponent(translatedSlug)}`,
+          lastModified: new Date(post.modified),
+          changeFrequency: 'weekly',
+          priority: 0.65,
+        });
+      }
     }
   } catch (error) {
     console.error('Error adding blog posts to sitemap:', error);

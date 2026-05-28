@@ -2,7 +2,8 @@ import Image from "next/image";
 import { Link } from "../../../lib/navigation";
 import { getTranslations } from 'next-intl/server';
 import { getBlogListingSchema } from '../../../lib/schemas/blogSchemas';
-import { formatBlogPost, hasTranslatedPosts } from '../../../lib/wordpress-helpers';
+import { getHreflangLinksWithSuffix } from '../../../lib/seo-utils';
+import { formatBlogPost } from '../../../lib/wordpress-helpers';
 import Script from "next/script";
 import { redirect } from 'next/navigation';
 
@@ -22,9 +23,6 @@ export async function generateMetadata({ params, searchParams }) {
   );
   const totalPages = response.ok ? Number(response.headers.get("x-wp-totalpages")) || 1 : 1;
   
-  // Check if we have translated posts for this locale
-  const hasTranslations = hasTranslatedPosts(locale);
-  
   // Build pagination suffix for URLs
   const pageSuffix = currentPage > 1 ? `?page=${currentPage}` : '';
   
@@ -33,10 +31,6 @@ export async function generateMetadata({ params, searchParams }) {
   const baseDescription = t('pageDescription');
   const pageText = t('pagination.page');
   const ofText = t('pagination.of');
-  
-  const title = currentPage > 1 
-    ? `${baseTitle} - ${pageText} ${currentPage}` 
-    : baseTitle;
   
   const description = currentPage > 1 
     ? `${baseDescription} - ${pageText} ${currentPage} ${ofText} ${totalPages}.`
@@ -47,20 +41,9 @@ export async function generateMetadata({ params, searchParams }) {
     description,
     alternates: {
       canonical: currentPage === 1 ? blogUrl : `${blogUrl}?page=${currentPage}`,
-      languages: {
-        'x-default': `${baseUrl}/bg/blog${pageSuffix}`,
-        bg: `${baseUrl}/bg/blog${pageSuffix}`,
-      },
+      languages: getHreflangLinksWithSuffix('blog', pageSuffix),
     },
   };
-  
-  // Add hreflang for ALL locales that have translated posts (regardless of current locale)
-  const supportedLocales = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
-  supportedLocales.forEach(lang => {
-    if (hasTranslatedPosts(lang)) {
-      metadata.alternates.languages[lang] = `${baseUrl}/${lang}/blog${pageSuffix}`;
-    }
-  });
   
   // Add prev/next links for pagination
   if (currentPage > 1) {

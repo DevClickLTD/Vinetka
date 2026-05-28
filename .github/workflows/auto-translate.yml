@@ -35,6 +35,7 @@ jobs:
         run: npm run translate
         env:
           NODE_ENV: production
+        # Превежда нов/променен WP content + backfill на липсващи locale полета (fr/hu/uk и др.)
       
       # 5. Провери дали има промени
       - name: 🔍 Check for changes

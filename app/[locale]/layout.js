@@ -62,21 +62,6 @@ export async function generateMetadata({ params }) {
       description: messages.meta.description,
       images: [ogImage],
     },
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        "x-default": getCanonicalUrl("bg", ""),
-        bg: getCanonicalUrl("bg", ""),
-        en: getCanonicalUrl("en", ""),
-        de: getCanonicalUrl("de", ""),
-        ru: getCanonicalUrl("ru", ""),
-        tr: getCanonicalUrl("tr", ""),
-        el: getCanonicalUrl("el", ""),
-        sr: getCanonicalUrl("sr", ""),
-        ro: getCanonicalUrl("ro", ""),
-        mk: getCanonicalUrl("mk", ""),
-      },
-    },
   };
 }
 

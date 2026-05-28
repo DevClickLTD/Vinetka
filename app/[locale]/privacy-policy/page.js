@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   return {
     ...metadata,
     title: {
-      absolute: `${t('title')} | avtovia bg`,
+      absolute: `${t('pageTitle')} | avtovia bg`,
     },
   };
 }

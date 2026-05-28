@@ -4,7 +4,7 @@
  * ✅ UPDATE DETECTION: Автоматично засича промени в съдържанието
  * 
  * Използва: translate-google за безплатни преводи
- * Превежда на: EN, DE, RU, TR, EL, SR, RO, MK (всички поддържани езици)
+ * Превежда на: всички translationLocales от lib/pathnames.mjs (без BG)
  */
 
 const fs = require('fs');
@@ -13,9 +13,6 @@ const translate = require('translate-google');
 
 // WordPress API endpoint
 const WORDPRESS_API = 'https://vinetka.admin-panels.com/wp-json/wp/v2';
-
-// Поддържани езици за превод (без BG - това е източникът)
-const TARGET_LANGUAGES = ['en', 'de', 'ru', 'tr', 'el', 'sr', 'ro', 'mk'];
 
 // Delay между заявки за да не претоварим Google Translate API
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
@@ -49,11 +46,11 @@ function titleToSlug(title) {
  * Generates slugs from the already-translated titles — NO API calls needed.
  * Returns the number of entries fixed.
  */
-function fixMissingSlugs(data) {
+function fixMissingSlugs(data, targetLanguages) {
   let fixed = 0;
   for (const store of [data.posts, data.pages]) {
     for (const [bgSlug, entry] of Object.entries(store)) {
-      for (const lang of TARGET_LANGUAGES) {
+      for (const lang of targetLanguages) {
         const currentSlug = entry[`slug_${lang}`];
         const translatedTitle = entry[`title_${lang}`];
         // Fix when: no slug yet, OR slug is still the BG slug (not translated)
@@ -86,7 +83,10 @@ const WEB_APP_URL_MAP = {
   'el': 'https://web.avtovia.bg/?lang=gr', // Greek uses 'gr' in web app
   'sr': 'https://web.avtovia.bg/?lang=sr',
   'ro': 'https://web.avtovia.bg/?lang=ro',
-  'mk': 'https://web.avtovia.bg/?lang=mk'
+  'mk': 'https://web.avtovia.bg/?lang=mk',
+  'fr': 'https://web.avtovia.bg/?lang=fr',
+  'hu': 'https://web.avtovia.bg/?lang=hu',
+  'uk': 'https://web.avtovia.bg/?lang=uk',
 };
 
 /**
@@ -241,16 +241,17 @@ function prepareForTranslation(item) {
 }
 
 /**
- * Превежда един item на всички езици
+ * Превежда един item на избрани езици (по подразбиране — всички)
  */
-async function translateItem(itemData, slug, type) {
+async function translateItem(itemData, slug, type, targetLanguages, langsToTranslate = null) {
   console.log(`\n📄 Translating ${type}: ${slug}`);
   console.log(`   Title: ${itemData.title_bg}`);
-  
+
+  const langs = langsToTranslate || targetLanguages;
   const translated = { ...itemData };
   
   // Превод на всеки език
-  for (const lang of TARGET_LANGUAGES) {
+  for (const lang of langs) {
     console.log(`\n   🌐 Translating to ${lang.toUpperCase()}...`);
     
     // Title превод (изпълнява се ПЪРВО — slug зависи от него)
@@ -323,11 +324,39 @@ async function translateItem(itemData, slug, type) {
   return translated;
 }
 
+function itemDataFromExisting(entry, slug) {
+  return {
+    slug_bg: entry.slug_bg || slug,
+    title_bg: entry.title_bg,
+    content_bg: entry.content_bg,
+    meta_description_bg: entry.meta_description_bg || '',
+    modified: entry.modified,
+  };
+}
+
+function collectMissingLocaleBackfill(existingData, targetLanguages) {
+  const items = [];
+
+  for (const [storeKey, type] of [['pages', 'page'], ['posts', 'post']]) {
+    for (const [slug, entry] of Object.entries(existingData[storeKey])) {
+      const missingLangs = targetLanguages.filter((lang) => !entry[`title_${lang}`]);
+      if (missingLangs.length > 0) {
+        items.push({ storeKey, slug, entry, type, missingLangs });
+      }
+    }
+  }
+
+  return items;
+}
+
 /**
  * Main function
  */
 async function main() {
   try {
+    const { translationLocales } = await import('../lib/pathnames.mjs');
+    const targetLanguages = translationLocales;
+
     // ✅ Check for --force flag
     const forceMode = process.argv.includes('--force');
     
@@ -349,7 +378,7 @@ async function main() {
       console.log(`   Posts translated: ${Object.keys(existingData.posts).length}\n`);
 
       // Patch any entries that have translated titles but still use the BG slug
-      const fixed = fixMissingSlugs(existingData);
+      const fixed = fixMissingSlugs(existingData, targetLanguages);
       if (fixed > 0) {
         console.log(`🔧 Fixed ${fixed} missing/untranslated slug fields from existing titles`);
         fs.writeFileSync(translationsPath, JSON.stringify(existingData, null, 2), 'utf-8');
@@ -415,12 +444,23 @@ async function main() {
     console.log(`   ✨ New posts: ${newPosts.length}`);
     console.log(`   🔄 Updated posts: ${updatedPosts.length}`);
     console.log(`   📊 Total: ${newPages.length + updatedPages.length + newPosts.length + updatedPosts.length}`);
-    console.log(`   🌐 Languages: ${TARGET_LANGUAGES.join(', ').toUpperCase()}\n`);
-    
-    if (newPages.length === 0 && updatedPages.length === 0 && newPosts.length === 0 && updatedPosts.length === 0) {
+    console.log(`   🌐 Languages: ${targetLanguages.join(', ').toUpperCase()}\n`);
+
+    const backfillItems = forceMode ? [] : collectMissingLocaleBackfill(existingData, targetLanguages);
+    const hasWpWork = newPages.length + updatedPages.length + newPosts.length + updatedPosts.length > 0;
+
+    if (!hasWpWork && backfillItems.length === 0) {
       console.log('✅ Everything is up to date! No new or updated content.');
       console.log('\n💡 All WordPress content is synced with translations.\n');
       return;
+    }
+
+    if (backfillItems.length > 0) {
+      console.log(`   🔁 Missing locale backfill: ${backfillItems.length} item(s)\n`);
+    }
+    
+    if (!hasWpWork && backfillItems.length > 0) {
+      console.log('ℹ️ No new WordPress content — running locale backfill only.\n');
     }
     
     // Translate NEW pages
@@ -432,7 +472,7 @@ async function main() {
       for (let i = 0; i < newPages.length; i++) {
         console.log(`\n[${i + 1}/${newPages.length}] ═════════════════════════════════════`);
         const pageData = prepareForTranslation(newPages[i]);
-        const translated = await translateItem(pageData, pageData.slug_bg, 'page');
+        const translated = await translateItem(pageData, pageData.slug_bg, 'page', targetLanguages);
         
         existingData.pages[pageData.slug_bg] = translated;
         
@@ -454,7 +494,7 @@ async function main() {
         console.log(`\n[${i + 1}/${updatedPages.length}] ═════════════════════════════════════`);
         console.log(`   ⚡ DETECTED CHANGES in WordPress`);
         const pageData = prepareForTranslation(updatedPages[i]);
-        const translated = await translateItem(pageData, pageData.slug_bg, 'page');
+        const translated = await translateItem(pageData, pageData.slug_bg, 'page', targetLanguages);
         
         existingData.pages[pageData.slug_bg] = translated;
         
@@ -475,7 +515,7 @@ async function main() {
       for (let i = 0; i < newPosts.length; i++) {
         console.log(`\n[${i + 1}/${newPosts.length}] ═════════════════════════════════════`);
         const postData = prepareForTranslation(newPosts[i]);
-        const translated = await translateItem(postData, postData.slug_bg, 'post');
+        const translated = await translateItem(postData, postData.slug_bg, 'post', targetLanguages);
         
         existingData.posts[postData.slug_bg] = translated;
         
@@ -497,7 +537,7 @@ async function main() {
         console.log(`\n[${i + 1}/${updatedPosts.length}] ═════════════════════════════════════`);
         console.log(`   ⚡ DETECTED CHANGES in WordPress`);
         const postData = prepareForTranslation(updatedPosts[i]);
-        const translated = await translateItem(postData, postData.slug_bg, 'post');
+        const translated = await translateItem(postData, postData.slug_bg, 'post', targetLanguages);
         
         existingData.posts[postData.slug_bg] = translated;
         
@@ -508,6 +548,37 @@ async function main() {
         await delay(1500);
       }
     }
+
+    if (backfillItems.length > 0) {
+      console.log('\n\n═══════════════════════════════════════════════════');
+      console.log('🔁 BACKFILLING MISSING LOCALES');
+      console.log('═══════════════════════════════════════════════════\n');
+
+      for (let i = 0; i < backfillItems.length; i++) {
+        const item = backfillItems[i];
+        console.log(`\n[${i + 1}/${backfillItems.length}] ═════════════════════════════════════`);
+        console.log(`   Missing: ${item.missingLangs.join(', ').toUpperCase()}`);
+
+        const itemData = itemDataFromExisting(item.entry, item.slug);
+        const translated = await translateItem(
+          itemData,
+          item.slug,
+          item.type,
+          targetLanguages,
+          item.missingLangs
+        );
+
+        existingData[item.storeKey][item.slug] = {
+          ...item.entry,
+          ...translated,
+        };
+
+        fs.writeFileSync(translationsPath, JSON.stringify(existingData, null, 2), 'utf-8');
+        console.log('   💾 Saved to disk');
+
+        await delay(1500);
+      }
+    }
     
     console.log('\n\n═══════════════════════════════════════════════════');
     console.log('✅ TRANSLATION COMPLETE!');
@@ -515,7 +586,13 @@ async function main() {
     console.log(`📁 Saved to: ${translationsPath}`);
     console.log(`📊 Total pages: ${Object.keys(existingData.pages).length}`);
     console.log(`📊 Total posts: ${Object.keys(existingData.posts).length}`);
-    console.log(`🌐 Languages: BG (source) + ${TARGET_LANGUAGES.join(', ').toUpperCase()}`);
+    console.log(`🌐 Languages: BG (source) + ${targetLanguages.join(', ').toUpperCase()}`);
+    
+    if (backfillItems.length > 0) {
+      console.log('\n🔁 LOCALE BACKFILL SUMMARY:');
+      console.log(`   Items updated: ${backfillItems.length}`);
+      console.log(`   ✅ Missing locale fields filled automatically`);
+    }
     
     if (updatedPages.length > 0 || updatedPosts.length > 0) {
       console.log('\n🔄 UPDATE DETECTION SUMMARY:');
