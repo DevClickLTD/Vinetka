@@ -7,8 +7,16 @@ import { cache } from "react";
  * @returns {Promise<Object|null>} - Post data
  */
 export const getPostBySlug = cache(async (slug) => {
+  const normalizedSlug = (() => {
+    try {
+      return decodeURIComponent(slug);
+    } catch {
+      return slug;
+    }
+  })();
+
   return await fetchAPI(
-    `posts?slug=${slug}&_fields=id,slug,yoast_head_json,date,title,content`
+    `posts?slug=${encodeURIComponent(normalizedSlug)}&_fields=id,slug,yoast_head_json,date,title,content`
   );
 });
 

@@ -5,6 +5,7 @@ import { Link } from "../lib/navigation";
 import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { NewspaperIcon } from "@heroicons/react/24/outline";
+import { getTranslatedSlug } from "../lib/wordpress-helpers";
 import wordpressContent from "../messages/wordpress-content.json";
 
 export default function SidebarLatestPosts({ currentPostSlug }) {
@@ -28,13 +29,20 @@ export default function SidebarLatestPosts({ currentPostSlug }) {
         filteredPosts = filteredPosts.slice(0, 3);
         
         // Форматираме за показване
-        const formattedPosts = filteredPosts.map(post => ({
-          id: post.id,
-          slug: post.slug_bg,
-          title: post[`title_${locale}`] || post.title_bg,
-          date: post.modified,
-          featuredImage: null // Ще използваме placeholder
-        }));
+        const formattedPosts = filteredPosts.map(post => {
+          const bgSlug = post.slug_bg;
+          const linkSlug = locale === 'bg'
+            ? bgSlug
+            : (getTranslatedSlug(bgSlug, locale, 'post') || bgSlug);
+
+          return {
+            id: post.id,
+            slug: linkSlug,
+            title: post[`title_${locale}`] || post.title_bg,
+            date: post.modified,
+            featuredImage: null,
+          };
+        });
 
         setPosts(formattedPosts);
       } catch (error) {
@@ -85,7 +93,10 @@ export default function SidebarLatestPosts({ currentPostSlug }) {
             'el': 'el-GR',
             'sr': 'sr-RS',
             'ro': 'ro-RO',
-            'mk': 'mk-MK'
+            'mk': 'mk-MK',
+            'fr': 'fr-FR',
+            'hu': 'hu-HU',
+            'uk': 'uk-UA',
           };
 
           return (

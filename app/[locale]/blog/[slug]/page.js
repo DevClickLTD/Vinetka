@@ -2,7 +2,7 @@ import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
 import { notFound, permanentRedirect } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
-import { getAbsoluteImageUrl, getBlogPostHreflangLinks, buildBlogPostUrl, normalizeBlogSlug } from '../../../../lib/seo-utils';
+import { getAbsoluteImageUrl, getBlogPostHreflangLinks, buildBlogPostUrl, buildBlogPostPath, normalizeBlogSlug } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import {
   getTranslatedContent,
@@ -118,19 +118,18 @@ export default async function PostPage({ params }) {
     notFound();
   }
 
-  // Old links may use percent-encoded Cyrillic slugs — redirect to decoded canonical URL
+  // Percent-encoded slug in params → redirect to canonical encoded path
   const normalizedParamSlug = normalizeBlogSlug(slug);
   if (slug !== normalizedParamSlug) {
-    permanentRedirect(`/${locale}/blog/${normalizedParamSlug}`);
+    permanentRedirect(buildBlogPostPath(locale, normalizedParamSlug));
   }
 
   const { bgSlug, shouldRedirect, translatedSlug } = resolveSlug(slug, locale);
 
   // permanentRedirect/notFound throw special Next.js errors — they must stay
   // OUTSIDE any try-catch so they propagate correctly to the framework.
-  // Redirect to the canonical decoded slug (matches hreflang + sitemap URLs)
   if (shouldRedirect) {
-    permanentRedirect(`/${locale}/blog/${normalizeBlogSlug(translatedSlug)}`);
+    permanentRedirect(buildBlogPostPath(locale, translatedSlug));
   }
 
   try {
