@@ -9,7 +9,6 @@ import VignetteCheckerCTA from "@/components/VignetteCheckerCTA";
 import FAQ from "@/components/FAQ";
 import RegisterCTA from "@/components/RegisterCTA";
 import HomeExpandable from "@/components/HomeExpandable";
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import Script from "next/script";
 
@@ -120,7 +119,7 @@ export default async function Home({ params }) {
         }}
       />
       <WebVitals />
-      <HeroSection />
+      <HeroSection locale={locale} />
       {/* <Incentives /> */}
       <section className="py-12 sm:py-16 bg-gray-50">
         <div className="mx-auto w-full">
