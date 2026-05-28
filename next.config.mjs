@@ -8,7 +8,7 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 const withNextIntl = createNextIntlPlugin();
 
 /**
- * Generate 301 redirects from old BG-slug URLs to new localized URLs.
+ * Generate permanent redirects from old BG-slug URLs to new localized URLs.
  *
  * Before localized routing was added, every locale used the same BG slug
  * (e.g. /ro/tseni/dnevna). Now each locale has its own translated URL
@@ -33,7 +33,7 @@ function buildLocaleRedirects() {
       redirects.push({
         source: `/${locale}${internalPath}`,
         destination: `/${locale}${newPath}`,
-        permanent: true, // 301
+        permanent: true, // 308 in Next.js (permanent; SEO-equivalent to 301 for GET)
       });
     }
   }

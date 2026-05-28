@@ -1,5 +1,6 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './routing';
+import { defaultLocale } from './lib/pathnames.mjs';
 import { NextResponse } from 'next/server';
 import { encodeBlogSlug } from './lib/seo-utils';
 
@@ -51,6 +52,13 @@ export default function middleware(request) {
 
   const blogRewrite = canonicalizeBlogSlugRequest(request);
   if (blogRewrite) return blogRewrite;
+
+  // next-intl redirects / → /{locale} with 307 by default; we want a permanent signal.
+  if (pathname === '/') {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${defaultLocale}`;
+    return NextResponse.redirect(url, 301);
+  }
 
   return intlMiddleware(request);
 }
