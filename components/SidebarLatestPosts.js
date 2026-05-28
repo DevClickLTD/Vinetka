@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import { NewspaperIcon } from "@heroicons/react/24/outline";
 import { getTranslatedSlug } from "../lib/wordpress-helpers";
+import { getBlogPostHref } from "../lib/seo-utils";
 import wordpressContent from "../messages/wordpress-content.json";
 
 export default function SidebarLatestPosts({ currentPostSlug }) {
@@ -102,7 +103,7 @@ export default function SidebarLatestPosts({ currentPostSlug }) {
           return (
             <Link
               key={post.id}
-              href={`/blog/${post.slug}`}
+              href={getBlogPostHref(post.slug)}
               className="block p-4 hover:bg-gray-50 transition-colors duration-200 group"
             >
               <article className="flex gap-3">

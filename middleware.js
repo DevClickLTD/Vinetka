@@ -1,66 +1,57 @@
 import createMiddleware from 'next-intl/middleware';
 import { routing } from './routing';
 import { NextResponse } from 'next/server';
-import { encodeBlogSlug, normalizeBlogSlug } from './lib/seo-utils';
+import { encodeBlogSlug } from './lib/seo-utils';
 
 const intlMiddleware = createMiddleware(routing);
 const LOCALE_PATTERN = 'bg|en|de|ru|tr|el|sr|ro|mk|fr|hu|uk';
 
 /**
- * Redirects raw Unicode blog slugs to percent-encoded canonical paths.
- * Next.js/Vercel return 500 for unencoded Cyrillic/Greek in URL paths.
+ * Rewrites non-canonical blog slug paths internally (raw Unicode → percent-encoded).
+ * Uses rewrite (not redirect) to avoid infinite 308 loops on Vercel, which
+ * decodes URL paths before middleware runs.
  */
-function canonicalizeBlogSlugRedirect(request) {
+function canonicalizeBlogSlugRequest(request) {
   const { pathname } = request.nextUrl;
   const match = pathname.match(new RegExp(`^/(${LOCALE_PATTERN})/blog/([^/?#]+)$`));
 
   if (!match) return null;
 
   const [, locale, slugSegment] = match;
-  const decoded = normalizeBlogSlug(slugSegment);
   const encoded = encodeBlogSlug(slugSegment);
+  const canonicalPath = `/${locale}/blog/${encoded}`;
 
-  // Raw Unicode in the path → redirect to encoded canonical URL
-  if (slugSegment !== encoded && /[^\x00-\x7F]/.test(slugSegment)) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/${locale}/blog/${encoded}`;
-    return NextResponse.redirect(url, { status: 301 });
+  // Already at the canonical encoded path — serve directly
+  if (slugSegment === encoded) {
+    return null;
   }
 
-  // Already encoded but not normalized (e.g. mixed casing) → normalize encoding
-  if (slugSegment !== encoded && slugSegment === decoded) {
-    const url = request.nextUrl.clone();
-    url.pathname = `/${locale}/blog/${encoded}`;
-    return NextResponse.redirect(url, { status: 301 });
-  }
-
-  return null;
+  // Rewrite internally to encoded path (no redirect response → no loop)
+  const url = request.nextUrl.clone();
+  url.pathname = canonicalPath;
+  return NextResponse.rewrite(url);
 }
 
 export default function middleware(request) {
   const { pathname, hostname } = request.nextUrl;
 
-  // Skip API routes entirely — no locale prefix needed
   if (pathname.startsWith('/api/')) {
     return NextResponse.next();
   }
 
-  // Skip Next.js internals and static assets
   if (pathname.startsWith('/_next') || pathname.startsWith('/_vercel') || pathname.includes('.')) {
     return NextResponse.next();
   }
 
-  // vinetka.bg → avtovia.bg 301 permanent redirect (global SEO)
   if (hostname.includes('vinetka.bg')) {
     const newUrl = new URL(pathname, 'https://www.avtovia.bg');
     newUrl.search = request.nextUrl.search;
     return NextResponse.redirect(newUrl, { status: 301 });
   }
 
-  const blogRedirect = canonicalizeBlogSlugRedirect(request);
-  if (blogRedirect) return blogRedirect;
+  const blogRewrite = canonicalizeBlogSlugRequest(request);
+  if (blogRewrite) return blogRewrite;
 
-  // next-intl handles: locale prefix, localized pathname rewrites, missing-locale redirects
   return intlMiddleware(request);
 }
 

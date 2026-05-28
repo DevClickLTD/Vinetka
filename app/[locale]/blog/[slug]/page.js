@@ -2,7 +2,7 @@ import { getPostBySlug } from "../../../../services/posts";
 import Image from "next/image";
 import { notFound, permanentRedirect } from "next/navigation";
 import BlogSidebar from "../../../../components/BlogSidebar";
-import { getAbsoluteImageUrl, getBlogPostHreflangLinks, buildBlogPostUrl, buildBlogPostPath, normalizeBlogSlug } from '../../../../lib/seo-utils';
+import { getAbsoluteImageUrl, getBlogPostHreflangLinks, buildBlogPostUrl, buildBlogPostPath } from '../../../../lib/seo-utils';
 import { getBlogPostingSchema } from '../../../../lib/schemas/blogSchemas';
 import {
   getTranslatedContent,
@@ -118,12 +118,6 @@ export default async function PostPage({ params }) {
     notFound();
   }
 
-  // Percent-encoded slug in params → redirect to canonical encoded path
-  const normalizedParamSlug = normalizeBlogSlug(slug);
-  if (slug !== normalizedParamSlug) {
-    permanentRedirect(buildBlogPostPath(locale, normalizedParamSlug));
-  }
-
   const { bgSlug, shouldRedirect, translatedSlug } = resolveSlug(slug, locale);
 
   // permanentRedirect/notFound throw special Next.js errors — they must stay
@@ -150,7 +144,7 @@ export default async function PostPage({ params }) {
     const ogImageHeight = ogImageObject?.height ?? 630;
 
     const siteUrl = 'https://www.avtovia.bg';
-    const blogPostingSchema = getBlogPostingSchema(post[0], locale, siteUrl);
+    const blogPostingSchema = getBlogPostingSchema(post[0], locale);
 
     return (
       <>

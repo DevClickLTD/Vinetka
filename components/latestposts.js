@@ -5,6 +5,7 @@ import { getLatestPosts } from "../services/posts";
 import { Link } from "../lib/navigation";
 import Image from "next/image";
 import { useLocale } from 'next-intl';
+import { getBlogPostHref } from '../lib/seo-utils';
 
 export default function LatestPosts() {
   const locale = useLocale();
@@ -51,7 +52,7 @@ export default function LatestPosts() {
                 {posts.length > 0 ? (
                   posts.map((post, index) => (
                     <Link
-                      href={`/blog/${post.slug}`}
+                      href={getBlogPostHref(post.slug)}
                       key={post.id}
                       prefetch={true}
                     >

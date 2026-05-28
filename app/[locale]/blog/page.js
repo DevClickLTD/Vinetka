@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server';
 import { getBlogListingSchema } from '../../../lib/schemas/blogSchemas';
 import { getHreflangLinksWithSuffix } from '../../../lib/seo-utils';
 import { formatBlogPost } from '../../../lib/wordpress-helpers';
+import { getBlogPostHref } from '../../../lib/seo-utils';
 import Script from "next/script";
 import { redirect } from 'next/navigation';
 
@@ -139,7 +140,7 @@ export default async function Blog({ searchParams, params }) {
           {formattedPosts.length > 0 ? (
             <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
               {formattedPosts.map((post) => (
-                <Link href={`/blog/${post.slug}`} key={post.id} prefetch={true}>
+                <Link href={getBlogPostHref(post.slug)} key={post.id} prefetch={true}>
                   <article className="flex flex-col items-start justify-between">
                     <div className="relative w-full">
                       <Image
