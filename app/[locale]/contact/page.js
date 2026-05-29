@@ -6,6 +6,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { getTranslations } from "next-intl/server";
 import ContactForm from "@/components/contactForm";
+import ReCaptchaProvider from "@/components/ReCaptchaProvider";
 import Script from "next/script";
 import { generateSEOMetadata } from '../../../lib/seo-utils';
 import ContactExpandable from '../../../components/ContactExpandable';
@@ -120,7 +121,9 @@ export default async function ContactPage({ params }) {
           </p> */}
         </div>
         <div className="w-full xl:max-w-[80%] mx-auto mt-2 sm:mt-6">
-          <ContactForm />
+          <ReCaptchaProvider>
+            <ContactForm />
+          </ReCaptchaProvider>
         </div>
 
         {/* Секция с информация за офиси */}

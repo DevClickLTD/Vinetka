@@ -1,12 +1,12 @@
 import Script from "next/script";
 import { CriticalCSS } from "./critical-css";
-import NextTopLoader from "nextjs-toploader";
+import DeferredTopLoader from "../components/DeferredTopLoader";
 import "../styles/globals.css";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
-  weight: ["400", "700"],
+  weight: ["400"],
   style: ["normal"],
   display: "swap",
   preload: true,
@@ -123,7 +123,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={roboto.className}>
         <CriticalCSS />
-        <NextTopLoader showSpinner={false} color="#803487" />
+        <DeferredTopLoader />
         <main>{children}</main>
 
         <script

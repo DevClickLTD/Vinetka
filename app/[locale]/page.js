@@ -1,12 +1,11 @@
 import HeroSection from "../../components/hero";
 import HomeBelowFold from "@/components/HomeBelowFold";
-import dynamic from "next/dynamic";
 import { getTranslations } from "next-intl/server";
 import { generateSEOMetadata } from "../../lib/seo-utils";
 
-const CTA = dynamic(() => import("../../components/cta"), { ssr: true });
-
 export const revalidate = 3600;
+
+const HERO_LCP_IMAGE = "/купи-винетка.webp";
 
 function buildFaqSchema(faqs) {
   return {
@@ -74,7 +73,7 @@ export default async function Home({ params }) {
     },
     primaryImageOfPage: {
       "@type": "ImageObject",
-      url: `${siteUrl}/default.webp`,
+      url: `${siteUrl}${HERO_LCP_IMAGE}`,
     },
     datePublished: "2024-01-01T00:00:00+00:00",
     dateModified: new Date().toISOString(),
@@ -110,6 +109,13 @@ export default async function Home({ params }) {
 
   return (
     <>
+      <link
+        rel="preload"
+        as="image"
+        href={HERO_LCP_IMAGE}
+        type="image/webp"
+        fetchPriority="high"
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -125,18 +131,13 @@ export default async function Home({ params }) {
         />
       )}
       <HeroSection locale={locale} />
-      <section className="py-12 sm:py-16 bg-gray-50">
-        <div className="mx-auto w-full">
-          <div className="text-center">
-            <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl font-display">
-              {t("hero.title")}
-            </h2>
-            <p className="mt-4 text-lg text-gray-600">{t("hero.subtitle")}</p>
-          </div>
-        </div>
-      </section>
-      <CTA />
-      <HomeBelowFold faqs={faqs} faqTitle={faqT("title")} faqSubtitle={faqT("subtitle")} />
+      <HomeBelowFold
+        faqs={faqs}
+        faqTitle={faqT("title")}
+        faqSubtitle={faqT("subtitle")}
+        introTitle={t("hero.title")}
+        introSubtitle={t("hero.subtitle")}
+      />
     </>
   );
 }

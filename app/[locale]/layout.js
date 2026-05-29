@@ -5,7 +5,6 @@ import { locales } from "../../i18n/request";
 import Navigation from "../../components/nav";
 import Footer from "../../components/footer";
 import DynamicCookieConsentBanner from "../../components/DynamicCookieConsentBanner";
-import ReCaptchaProvider from "../../components/ReCaptchaProvider";
 import { getCanonicalUrl, getAbsoluteImageUrl } from "../../lib/seo-utils";
 
 export function generateStaticParams() {
@@ -113,21 +112,17 @@ export default async function LocaleLayout({ children, params }) {
   if (isComingSoon) {
     return (
       <NextIntlClientProvider messages={messages}>
-        <ReCaptchaProvider>
-          <ComingSoonPage />
-        </ReCaptchaProvider>
+        <ComingSoonPage />
       </NextIntlClientProvider>
     );
   }
 
   return (
     <NextIntlClientProvider messages={messages}>
-      <ReCaptchaProvider>
-        <Navigation />
-        {children}
-        <DynamicCookieConsentBanner />
-        <Footer />
-      </ReCaptchaProvider>
+      <Navigation />
+      {children}
+      <DynamicCookieConsentBanner />
+      <Footer />
     </NextIntlClientProvider>
   );
 }

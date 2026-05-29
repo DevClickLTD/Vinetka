@@ -15,7 +15,7 @@ export default async function HeroSection({ locale }) {
           className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-gray-900 shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:-mr-80 lg:-mr-96"
         />
         <div className="mx-auto max-w-7xl px-6 py-6 sm:py-10 lg:px-8">
-          <div className="max-w-2xl mx-auto lg:max-w-none lg:mx-0 lg:flex lg:flex-row lg:items-start lg:gap-x-16">
+          <div className="mx-auto flex max-w-2xl flex-col-reverse gap-10 lg:max-w-none lg:flex-row lg:items-start lg:gap-x-16 lg:mx-0">
             <div className="lg:w-1/2 lg:flex-shrink-0">
               <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
                 {title}
@@ -43,7 +43,7 @@ export default async function HeroSection({ locale }) {
                 </a>
               </div>
             </div>
-            <div className="mt-10 lg:mt-0 lg:w-1/2 lg:flex-shrink-0">
+            <div className="lg:w-1/2 lg:flex-shrink-0">
               <Image
                 src="/купи-винетка.webp"
                 alt={title}
@@ -53,6 +53,7 @@ export default async function HeroSection({ locale }) {
                 className="aspect-[6/5] w-full rounded-2xl object-cover"
                 priority
                 fetchPriority="high"
+                unoptimized
               />
             </div>
           </div>
