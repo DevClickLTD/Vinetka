@@ -14,14 +14,36 @@ import ContactExpandable from '../../../components/ContactExpandable';
 
 export const revalidate = 3600;
 
+/** Native language names — uniquify contact <title> across similar translations (Semrush). */
+const LOCALE_DISPLAY_NAMES = {
+  bg: 'Български',
+  en: 'English',
+  de: 'Deutsch',
+  ru: 'Русский',
+  tr: 'Türkçe',
+  el: 'Ελληνικά',
+  sr: 'Српски',
+  ro: 'Română',
+  mk: 'Македонски',
+  fr: 'Français',
+  hu: 'Magyar',
+  uk: 'Українська',
+};
+
+function buildContactTitle(pageTitle, locale) {
+  const label = LOCALE_DISPLAY_NAMES[locale] || locale.toUpperCase();
+  return `${pageTitle.trim()} (${label}) | avtovia bg`;
+}
+
 export async function generateMetadata({ params }) {
   const { locale } = await params;
   const t = await getTranslations("contact");
+  const title = buildContactTitle(t("pageTitle"), locale);
 
   const metadata = generateSEOMetadata({
     locale,
     path: 'contact',
-    title: t("pageTitle"),
+    title,
     description: t("pageDescription"),
     image: '/default.webp',
   });
@@ -29,7 +51,7 @@ export async function generateMetadata({ params }) {
   return {
     ...metadata,
     title: {
-      absolute: `${t("pageTitle")} | avtovia bg`,
+      absolute: title,
     },
   };
 }
