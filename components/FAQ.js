@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Script from "next/script";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 /**
@@ -34,34 +33,12 @@ export default function FAQ({
     setOpenIndex(openIndex === index ? null : index);
   };
 
-  // Generate FAQPage Schema
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map((faq) => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
-
   if (!faqs || faqs.length === 0) {
     return null;
   }
 
   return (
     <>
-      <Script
-        id={`faq-schema-${Math.random().toString(36).substr(2, 9)}`}
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqSchema),
-        }}
-      />
-      
       <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-4xl">
